@@ -215,7 +215,8 @@ app:
       descriptionInclusion: "A list of process names/paths that Windhawk will inject into, even if they're in the exclusion list."
       processListPlaceholder: "Process names/paths, one per line, for example:\nnotepad.exe\nC:\\Program Files\\Notepad++\\notepad++.exe\nC:\\Windows\\system32\\*"
   about:
-    title: "{{program}} v{{version}} beta"
+    title: "Windhawk v{{version}}"
+    beta: "beta"
     subtitle: "The customization marketplace for Windows programs"
     credit: "By <0>{{author}}</0>"
     update:
