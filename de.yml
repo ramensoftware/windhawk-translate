@@ -129,7 +129,7 @@ app:
       title: "Änderungsprotokoll (Changelog)"
       loadingFailed: "Laden des Änderungsprotokolls fehlgeschlagen. <0>Hier klicken</0> um das Änderungsprotokoll auf GitHub zu lesen."
     advanced:
-      title: "erweitert"
+      title: "Erweitert"
       debugLogging:
         title: "Debug Protokollierung"
         description: "Kann nützlich sein, um Probleme mit dem Mod zu beheben."
