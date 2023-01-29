@@ -1,6 +1,6 @@
 setup:
   ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Setup"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} deinstallieren"
+  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Deinstallieren"
   SECTION_MAIN: "$(^NameDA) (benötigt)"
   SECTION_STARTMENU: "Eintrag im Startmenü erstellen"
   SECTION_DESKTOP: "Desktop-Verknüpfung erstellen"
@@ -26,7 +26,7 @@ setup:
   INSTTYPE_PORTABLE_DESC: "Installiere eine portable Version von $(^NameDA). Im portablen Modus werden alle Konfigurationsdaten im Anwendungsordner gespeichert und es werden keine Informationen in die Registrierung geschrieben."
 tray:
   TRAY_OPEN: "&Windhawk öffnen"
-  TRAY_LOADED_MODS: "geladene &Mods"
+  TRAY_LOADED_MODS: "Geladene &Mods"
   TRAY_EXIT: "&Exit"
   TRAY_EMERGENCY_EXIT: "Sende &Service Exit"
   EXITDLG_TITLE: "Beende Windhawk"
