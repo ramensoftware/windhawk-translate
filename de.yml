@@ -188,7 +188,7 @@ app:
     devMode:
       title: "Entwickler-Modus"
       description: "Aktionen für Entwickler anzeigen, z. B. das Erstellen und Ändern von Mods"
-    advancedSettings: "Erweiterte Einstellungen
+    advancedSettings: "Erweiterte Einstellungen"
     hideTrayIcon:
       title: "Taskleistensymbol ausblenden"
       description: "Diese Option muss deaktiviert sein, um Windhawk zu beenden."
