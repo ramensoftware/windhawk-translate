@@ -217,7 +217,7 @@ app:
       descriptionInclusion: "A list of process names/paths that Windhawk will inject into, even if they're in the exclusion list."
       inclusionWithoutExclusionNotice: "The process inclusion list has no effect with an empty process exclusion list. If you meant to exclude all processes but these, you can set \"*\" in the process exclusion list."
       titleThreadAttachExempt: "Process list for the \"light threads\" injection method"
-      descriptionThreadAttachExempt: "Skip some of the initialization of Windhawk threads (skips TLS initialization, TLS and DLLMain callbacks, and more). This might fix compatibility with some programs, but might break compatibility with others."
+      descriptionThreadAttachExempt: "Skip some of the initialization of Windhawk threads (skips TLS initialization, TLS and DllMain callbacks, and more). This might fix compatibility with some programs, but might break compatibility with others. <0>More information</0>."
       processListPlaceholder: "Process names/paths, one per line, for example:"
     injectIntoCriticalProcesses:
       title: "Inject into critical system processes"

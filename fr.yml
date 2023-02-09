@@ -217,7 +217,7 @@ app:
       descriptionInclusion: "Une liste de noms/chemins de processus dans lesquels Windhawk vas pouvoir injecter du code, même s'ils sont dans la liste d'exclusion."
       inclusionWithoutExclusionNotice: "La liste d'inclusion de processus n'a aucun effet avec une liste d'exclusion de processus vide. Si vous vouliez exclure tous les processus sauf ceux-ci, vous pouvez définir \"*\" dans la liste des processus exclus."
       titleThreadAttachExempt: "Liste de processus pour la méthode d'injection \"threads légés\""
-      descriptionThreadAttachExempt: "Ignore une partie de l'initialisation des threads Windhawk (ignore l'initialisation TLS, les routs TLS et DLLMain, etc.). Cela peut corriger la compatibilité avec certains programmes, mais peut rompre la compatibilité avec d'autres."
+      descriptionThreadAttachExempt: "Ignore une partie de l'initialisation des threads Windhawk (ignore l'initialisation TLS, les routs TLS et DllMain, etc.). Cela peut corriger la compatibilité avec certains programmes, mais peut rompre la compatibilité avec d'autres. <0>Plus d'information</0>."
       processListPlaceholder: "Noms/chemins des processus, un par ligne, par exemple :"
     injectIntoCriticalProcesses:
       title: "Injecter du code dans des processus critiques du système"

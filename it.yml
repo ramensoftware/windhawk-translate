@@ -217,7 +217,7 @@ app:
       descriptionInclusion: "Un elenco di nomi/percorsi di processo in cui Windhawk verrà eseguito, anche se sono nell'elenco di esclusione."
       inclusionWithoutExclusionNotice: "L'elenco di inclusione processi non ha effetto con un elenco di esclusione processi vuoto. Se intendevi escludere tutti i processi tranne questi, puoi impostare \"*\" nell'elenco di esclusione dei processi."
       titleThreadAttachExempt: "Elenco dei processi per il metodo di iniezione \"thread leggeri\"."
-      descriptionThreadAttachExempt: "Salta parte dell'inizializzazione dei thread Windhawk (salta l'inizializzazione TLS, le richiamate TLS e DLLMain e altro). Ciò potrebbe correggere la compatibilità con alcuni programmi, ma potrebbe interrompere la compatibilità con altri."
+      descriptionThreadAttachExempt: "Salta parte dell'inizializzazione dei thread Windhawk (salta l'inizializzazione TLS, le richiamate TLS e DllMain e altro). Ciò potrebbe correggere la compatibilità con alcuni programmi, ma potrebbe interrompere la compatibilità con altri. <0>Maggiori informazioni</0>."
       processListPlaceholder: "Nomi/percorsi dei processi, uno per riga, ad esempio:"
     injectIntoCriticalProcesses:
       title: "Inietta nei processi critici di sistema"

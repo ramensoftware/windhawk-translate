@@ -217,7 +217,7 @@ app:
       descriptionInclusion: "Eine Liste von Prozessnamen/-pfaden, in die Windhawk einfügt, selbst wenn sie in der Ausschlussliste stehen."
       inclusionWithoutExclusionNotice: "Bei einer leeren Prozessausschlussliste hat die Prozessaufnahmeliste keine Wirkung. Wenn Sie alle Prozesse außer diesen ausschließen wollten, können Sie \"*\" in der Prozessausschlussliste setzen."
       titleThreadAttachExempt: "Prozessliste für die Injektionsmethode \"light threads\""
-      descriptionThreadAttachExempt: "Überspringt einen Teil der Initialisierung von Windhawk-Threads (TLS-Initialisierung, TLS- und DLLMain-Callbacks und mehr). Dies kann die Inkompatibilität mit einigen Programmen beheben, aber die Kompatibilität mit anderen beeinträchtigen."
+      descriptionThreadAttachExempt: "Überspringt einen Teil der Initialisierung von Windhawk-Threads (TLS-Initialisierung, TLS- und DllMain-Callbacks und mehr). Dies kann die Inkompatibilität mit einigen Programmen beheben, aber die Kompatibilität mit anderen beeinträchtigen. <0>Mehr Informationen</0>."
       processListPlaceholder: "Prozessnamen/-pfade, einer pro Zeile, z.B.:"
     injectIntoCriticalProcesses:
       title: "Code in kritische Systemprozesse injizieren"

@@ -217,7 +217,7 @@ app:
       descriptionInclusion: "Windhawk将注入的进程名/路径列表，即使它们在排除列表中。"
       inclusionWithoutExclusionNotice: "进程包含列表对于空进程排除列表无效。如果您打算排除除这些之外的所有进程，您可以用“*”在进程排除列表中设置。"
       titleThreadAttachExempt: "进程列表 \"light threads\" 方法注入"
-      descriptionThreadAttachExempt: "跳过一些Windhawk线程的初始化(跳过TLS初始化，TLS和DLLMain回调等等)。这可能会修复与某些程序的兼容性，但可能会破坏与其他程序的兼容性。"
+      descriptionThreadAttachExempt: "跳过一些Windhawk线程的初始化(跳过TLS初始化，TLS和DllMain回调等等)。这可能会修复与某些程序的兼容性，但可能会破坏与其他程序的兼容性。<0>更多信息</0>。"
       processListPlaceholder: "进程名/路径，每行一个，例如:"
     injectIntoCriticalProcesses:
       title: "注入到重要的系统进程中"
