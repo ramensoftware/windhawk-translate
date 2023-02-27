@@ -116,7 +116,7 @@ app:
       noData: "Mancano i dettagli della mod."
     settings:
       title: "Impostazioni"
-      noData: "Non sono disponibili impostazioni delle mod."
+      noData: "In questa mod non sono disponibili le impostazioni."
       saveButton: "Salva impostazioni"
       sampleValue: "Valore campione"
       arrayItemAdd: "Aggiungi un nuovo elemento"
