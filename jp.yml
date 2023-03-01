@@ -1,7 +1,7 @@
 setup:
   ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} セットアップ"
   ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} アンインストール"
-  SECTION_MAIN: "$(^NameDA) (required)"
+  SECTION_MAIN: "$(^NameDA) (必須)"
   SECTION_STARTMENU: "スタートメニューショートカット"
   SECTION_DESKTOP: "デスクトップショートカット"
   INSTALLER_RUNNING: "$(^Name) セットアップ中"
@@ -44,13 +44,13 @@ tray:
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Modのタスクが進行中"
   TASKDLG_BUTTON_OPEN_APP: "&Windhawk を開く"
   TASKDLG_COLUMN_MOD: "Mod"
-  TASKDLG_COLUMN_PROCESS: "Process"
+  TASKDLG_COLUMN_PROCESS: "プロセス"
   TASKDLG_COLUMN_PID: "PID"
   TASKDLG_COLUMN_STATUS: "状態"
   TASKDLG_STATUS_PENDING: "保留..."
   TASKDLG_STATUS_LOADING: "ロード中..."
-  TASKDLG_STATUS_LOADED: "Loaded"
-  TASKDLG_STATUS_UNLOADED: "Unloaded"
+  TASKDLG_STATUS_LOADED: "ロードされた"
+  TASKDLG_STATUS_UNLOADED: "アンロードされた"
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルをロード中..."
 app:
@@ -99,9 +99,9 @@ app:
         allBut: "All but {{list}}"
         except: "{{included}} except {{excluded}}"
         tooltip:
-          target: "Target process"
-          targets: "Target processes:"
-          excluded: "Excluded:"
+          target: "ターゲットプロセス"
+          targets: "ターゲットプロセス:"
+          excluded: "除外された:"
       update: "アップデート"
       updateNotNeeded: "インストールされたバージョンは、最新です"
       install: "インストール"
@@ -131,12 +131,12 @@ app:
     advanced:
       title: "詳細"
       debugLogging:
-        title: "Debug logging"
+        title: " デバッグロギング"
         description: "modのトラブルシューティングに役立ちます。"
         none: "なし"
-        modLogs: "Mod logs"
-        detailedLogs: "Detailed debug logs"
-        showLogButton: "Show log output"
+        modLogs: "Modログ"
+        detailedLogs: "詳細なデバッグログ"
+        showLogButton: "ログ出力を表示"
       modSettings:
         title: "Modの設定"
         description: "modの設定を簡単にエクスポートまたは共有できます。"
@@ -180,7 +180,7 @@ app:
       title: "言語"
       description: "Windhawkのお好みの表示言語を選択してください。"
       contribute: "<0>新しい翻訳に貢献する</0>."
-      credits: "<0>lmncaj</0>によって日本語翻訳されました。"
+      credits: "lmncaj によって日本語翻訳されました。"
       creditsLink: "mailto:john.smith@example.com"
     updates:
       title: "アップデートを確認する"
@@ -267,7 +267,7 @@ app:
   sidebar:
     modId: "Mod識別子"
     enableMod: "modを有効化"
-    enableLogging: "Enable logging"
+    enableLogging: "ロギング有効化"
     notCompiled: "Modのコンパイルが必要"
     compile: "Modをコンパイル"
     compilationFailed: "コンパイル失敗"
