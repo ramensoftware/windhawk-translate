@@ -216,7 +216,7 @@ app:
       titleInclusion: "包含的進程列表"
       descriptionInclusion: "Windhawk 將注入的進程名稱/路徑列表，即使它們在排除列表中。"
       inclusionWithoutExclusionNotice: "進程包含列表對於空進程排除列表無效。如果您打算排除除這些之外的所有進程，您可以用 \"*\" 在進程排除列表中設定。"
-      titleThreadAttachExempt: "進程列表\「light threads\」方法注入"
+      titleThreadAttachExempt: "進程列表「light threads」方法注入"
       descriptionThreadAttachExempt: "跳過一些 Windhawk 線程的初始化（跳過 TLS 初始化， TLS 和 DllMain 回調等）。這可能會修復與某些程式的相容性，但也可能會破壞與其他程式的相容性。<0>更多資訊</0>。"
       processListPlaceholder: "進程名稱/路徑，每行一個，例如："
     injectIntoCriticalProcesses:
