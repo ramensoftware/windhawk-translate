@@ -19,7 +19,7 @@ setup:
   NO_UNINSTALL: "&アンインストールしないでください"
   INSTTYPE_HEADER: "インストールタイプ"
   INSTTYPE_TEXT: "インストールタイプを選択してください。"
-  INSTTYPE_INTRO: " $(^NameDA) のセットアップウィザードへようこそ。 はじめに、ご希望のインストールタイプを選択してください。"
+  INSTTYPE_INTRO: "$(^NameDA) のセットアップウィザードへようこそ。 はじめに、ご希望のインストールタイプを選択してください。"
   INSTTYPE_STANDARD: "&標準インストール (推奨)"
   INSTTYPE_STANDARD_DESC: "$(^NameDA)全てのユーザーにインストールします。"
   INSTTYPE_PORTABLE: "&ポータブルインストール"
@@ -95,9 +95,9 @@ app:
         github: "GitHub"
         twitter: "Twitter"
       processes:
-        all: "All processes"
-        allBut: "All but {{list}}"
-        except: "{{included}} except {{excluded}}"
+        all: "全てのプロセス"
+        allBut: "全てだが、{{list}}"
+        except: "{{excluded}} を除いた {{included}}"
         tooltip:
           target: "ターゲットプロセス"
           targets: "ターゲットプロセス:"
@@ -131,7 +131,7 @@ app:
     advanced:
       title: "詳細"
       debugLogging:
-        title: " デバッグロギング"
+        title: "デバッグロギング"
         description: "modのトラブルシューティングに役立ちます。"
         none: "なし"
         modLogs: "Modログ"
