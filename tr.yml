@@ -96,12 +96,12 @@ app:
         twitter: "Twitter"
       processes:
         all: "Tüm işlemler"
-        allBut: "All but {{list}}"
-        except: "{{included}} except {{excluded}}"
+        allBut: "Tümü ama {{list}}"
+        except: "{{included}} hariç {{excluded}}"
         tooltip:
           target: "Hedef işlem"
           targets: "Hedef işlemler:"
-          excluded: "Hariç::"
+          excluded: "Hariç:"
       update: "Güncelle"
       updateNotNeeded: "Yüklü sürüm, en son sürümle aynı"
       install: "Yükle"
@@ -109,7 +109,7 @@ app:
       disable: "Devre dışı bırak"
       enable: "Etkinleştir"
       edit: "Düzenle"
-      fork: "Fork"
+      fork: "Çatal"
       remove: "Kaldır"
     details:
       title: "Ayrıntılar"
@@ -141,7 +141,7 @@ app:
         title: "Mod ayarları"
         description: "Mod ayarlarınızı kolayca dışa aktarın veya paylaşın."
         loadButton: "Yükle"
-        loadFormattedButton: "Load formatted"
+        loadFormattedButton: "Biçimlendirilmiş yükle"
         saveButton: "Kaydet"
         invalidData: "Geçersiz JSON verileri"
       customList:
@@ -181,7 +181,7 @@ app:
       description: "Windhawk için tercih ettiğiniz görüntüleme dilini seçin."
       contribute: "<0>Yeni bir çeviriye katkıda bulunun</0>."
       credits: "Türkçe çeviri: <0>Fatih Fırıncı</0>."
-      creditsLink: "mailto:john.smith@example.com"
+      creditsLink: "mailto:fatihfirinci@gmail.com"
     updates:
       title: "Güncellemeleri denetle"
       description: "Windhawk'ın ve yüklü modların yeni sürümlerini düzenli olarak denetle."
