@@ -143,7 +143,7 @@ app:
         loadButton: "ロード"
         loadFormattedButton: "フォーマットされたものをロード"
         saveButton: "保存"
-        invalidData: "無効なJSONデータです"
+        invalidData: "JSONデータが無効です"
       customList:
         titleInclusion: "カスタムプロセス包含リスト"
         descriptionInclusion: "modがターゲットとする追加の実行ファイル名/パスのカスタムリストです。このリストは、どのプロセスをターゲットにするかを決定するために、 modの作者が定義した包含リストに追加されます。各プロセスについて、実行ファイルパスがインクルードエントリの一つにマッチし、かつ、 除外エントリにマッチしない場合に、modがロードされます。"
@@ -180,8 +180,8 @@ app:
       title: "言語"
       description: "Windhawk表示言語を選択してください。"
       contribute: "<0>新しい翻訳に貢献する</0>."
-      credits: "lmncaj によって日本語翻訳されました。"
-      creditsLink: "mailto:john.smith@example.com"
+      credits: "lmncaj と <0>Keita Kunishi</0>によって日本語翻訳されました。"
+      creditsLink: "https://github.com/Keitan924111"
     updates:
       title: "アップデートを確認"
       description: "定期的に新バージョンのWindhawkとインストールされているmodを確認する。"
