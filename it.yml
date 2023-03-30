@@ -27,8 +27,8 @@ setup:
 tray:
   TRAY_OPEN: "Apri &Windhawk"
   TRAY_LOADED_MODS: "Carica le &mod"
+  TRAY_TOOLKIT: ~
   TRAY_EXIT: "&Esci"
-  TRAY_EMERGENCY_EXIT: "Signal &service exit"
   EXITDLG_TITLE: "Esci da Windhawk"
   EXITDLG_CONTENT: "Windhawk verrà chiuso e tutte le mod non verranno caricate. Windhawk verrà avviato automaticamente al successivo avvio del sistema, a meno che non sia selezionata l'opzione seguente."
   EXITDLG_CHECKBOX_AUTOSTART: "Non avviare automaticamente al successivo avvio del sistema"
@@ -53,6 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Non caricato"
   TASKDLG_TASK_INITIALIZING: "Inizializzazione..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Simboli di caricamento..."
+  TOOLKITDLG_TITLE: ~
+  TOOLKITDLG_BUTTON_OPEN: ~
+  TOOLKITDLG_BUTTON_LOADED_MODS: ~
+  TOOLKITDLG_BUTTON_EXIT: ~
+  TOOLKITDLG_BUTTON_SAFE_MODE: ~
+  TOOLKITDLG_BUTTON_CLOSE: ~
+  SAFE_MODE_TITLE: ~
+  SAFE_MODE_TEXT: ~
 app:
   general:
     loading: "Caricamento..."
@@ -63,6 +71,10 @@ app:
     updating: "Aggiornamento..."
     installing: "Installazione..."
     compiling: "Compilazione..."
+    cut: ~
+    copy: ~
+    paste: ~
+    selectAll: ~
   appHeader:
     home: "Home"
     explore: "Esplora"
@@ -195,6 +207,9 @@ app:
     requireElevation:
       title: "Richiedi l'elevazione UAC per l'esecuzione di Windhawk"
       description: "Windhawk richiede i diritti di amministratore, ma per un computer con un solo utente, aprire il prompt UAC ogni volta può essere fastidioso, ma puoi scegliere di far ignorare questa opzione a  Windhawk. Abilita questa opzione per richiedere l'elevazione UAC per l'esecuzione di Windhawk."
+    dontAutoShowToolkit:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Ritardo nella finestra di dialogo di inizializzazione delle mod"
       description: "Quantità di millisecondi da attendere prima di mostrare la finestra di dialogo di avanzamento per l'inizializzazione della mod."
@@ -261,6 +276,12 @@ app:
     hideOptionsButton: "Nascondi opzioni"
     beginCodingButton: "Inizia la codifica"
     cancelButton: "Annulla"
+  safeMode:
+    alert: ~
+    offButton: ~
+    offConfirm: ~
+    offConfirmOk: ~
+    offConfirmCancel: ~
   modPreview:
     actionUnavailable: "L'azione non è disponibile in modalità anteprima"
     notCompiled: "La mod deve essere compilata prima di poter essere visualizzata in anteprima"

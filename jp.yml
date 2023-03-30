@@ -27,8 +27,8 @@ setup:
 tray:
   TRAY_OPEN: "&Windhawk を開く"
   TRAY_LOADED_MODS: "ロードされた &mods"
+  TRAY_TOOLKIT: ~
   TRAY_EXIT: "&終了"
-  TRAY_EMERGENCY_EXIT: "Signal &service exit"
   EXITDLG_TITLE: "Windhawkを終了"
   EXITDLG_CONTENT: "Windhawkが終了し、すべてのmodをアンロードします。次回のシステム起動時にWindhawkを自動起動させたくない場合は、以下のオプションを有効にします。"
   EXITDLG_CHECKBOX_AUTOSTART: "次回のシステム起動時に自動起動しない"
@@ -53,6 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "アンロードしました"
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルをロード中..."
+  TOOLKITDLG_TITLE: ~
+  TOOLKITDLG_BUTTON_OPEN: ~
+  TOOLKITDLG_BUTTON_LOADED_MODS: ~
+  TOOLKITDLG_BUTTON_EXIT: ~
+  TOOLKITDLG_BUTTON_SAFE_MODE: ~
+  TOOLKITDLG_BUTTON_CLOSE: ~
+  SAFE_MODE_TITLE: ~
+  SAFE_MODE_TEXT: ~
 app:
   general:
     loading: "ロード中..."
@@ -63,6 +71,10 @@ app:
     updating: "アップデート中..."
     installing: "インストール中..."
     compiling: "コンパイル中..."
+    cut: ~
+    copy: ~
+    paste: ~
+    selectAll: ~
   appHeader:
     home: "ホーム"
     explore: "探す"
@@ -195,6 +207,9 @@ app:
     requireElevation:
       title: "Windhawkの実行にはUACの昇格が必要です"
       description: "シングルユーザーのコンピュータでのUACプロンプトの煩わしさを回避します。このオプションを有効にすると、Windhawkの実行にUACの昇格が必要になります。"
+    dontAutoShowToolkit:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod初期化ダイアログの遅延"
       description: "modの初期化時にプログレスダイアログを表示するまでの待ち時間(ミリ秒)を指定します。"
@@ -215,8 +230,8 @@ app:
       descriptionExclusion: "Windhawkがインジェクトしないプロセス名/パスのリストです。Windhawkが特定のプログラムと互換性がない場合に便利です。このリストにプロセスを追加すると、Windhawkがそれをカスタマイズするのを防ぐだけでなく、このプロセスが作成する子プロセスをWindhawkが傍受するのを防ぐことに注意してください。このため、このような場合、Windhawkはmodの読み込みに若干の遅れを生じます。"
       titleInclusion: "プロセス包含リスト"
       descriptionInclusion: "除外リストにある場合でも、Windhawkがインジェクトするプロセス名/パスのリストです。"
-      inclusionWithoutExclusionNotice: 'プロセス包含リストは、プロセス除外リストが空である場合には、何の効果もありません。これらのプロセス以外を除外したい場合は、プロセス除外リストに "*"を設定します。'
-      titleThreadAttachExempt: '"light threads"インジェクションメソッドのプロセスリストです'
+      inclusionWithoutExclusionNotice: "プロセス包含リストは、プロセス除外リストが空である場合には、何の効果もありません。これらのプロセス以外を除外したい場合は、プロセス除外リストに \"*\"を設定します。"
+      titleThreadAttachExempt: "\"light threads\"インジェクションメソッドのプロセスリストです"
       descriptionThreadAttachExempt: "Windhawkスレッドの初期化の一部をスキップします（TLSの初期化、TLSおよびDllMainコールバックなどをスキップします）。これにより、一部のプログラムとの互換性が修正されるかもしれませんが、他のプログラムとの互換性が壊れるかもしれません。 <0>さらなる情報</0>."
       processListPlaceholder: "プロセス名/パス、1行に1つずつ、例:"
     injectIntoCriticalProcesses:
@@ -261,6 +276,12 @@ app:
     hideOptionsButton: "オプションを非表示"
     beginCodingButton: "コーディング開始"
     cancelButton: "キャンセル"
+  safeMode:
+    alert: ~
+    offButton: ~
+    offConfirm: ~
+    offConfirmOk: ~
+    offConfirmCancel: ~
   modPreview:
     actionUnavailable: "プレビューモードでは使用できません"
     notCompiled: "プレビューする前にModをコンパイルする必要があります"

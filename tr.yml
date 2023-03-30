@@ -27,8 +27,8 @@ setup:
 tray:
   TRAY_OPEN: "&Windhawk'ı aç"
   TRAY_LOADED_MODS: "Yüklü &mod'lar"
+  TRAY_TOOLKIT: ~
   TRAY_EXIT: "&Çıkış"
-  TRAY_EMERGENCY_EXIT: "Signal &service exit"
   EXITDLG_TITLE: "Windhawk'tan Çık"
   EXITDLG_CONTENT: "Windhawk'tan çıkılacak ve tüm modlar kaldırılacak. Aşağıdaki seçenek işaretlenmedikçe, Windhawk bir sonraki sistem başlangıcında otomatik olarak başlatılacaktır."
   EXITDLG_CHECKBOX_AUTOSTART: "Sonraki sistem başlangıcında otomatik olarak başlama"
@@ -53,6 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Yüklenmedi"
   TASKDLG_TASK_INITIALIZING: "Başlatılıyor..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Semboller yükleniyor..."
+  TOOLKITDLG_TITLE: ~
+  TOOLKITDLG_BUTTON_OPEN: ~
+  TOOLKITDLG_BUTTON_LOADED_MODS: ~
+  TOOLKITDLG_BUTTON_EXIT: ~
+  TOOLKITDLG_BUTTON_SAFE_MODE: ~
+  TOOLKITDLG_BUTTON_CLOSE: ~
+  SAFE_MODE_TITLE: ~
+  SAFE_MODE_TEXT: ~
 app:
   general:
     loading: "Yükleniyor..."
@@ -63,6 +71,10 @@ app:
     updating: "Güncelleniyor..."
     installing: "Yükleniyor..."
     compiling: "Derleniyor..."
+    cut: ~
+    copy: ~
+    paste: ~
+    selectAll: ~
   appHeader:
     home: "Ana Sayfa"
     explore: "Keşfet"
@@ -195,6 +207,9 @@ app:
     requireElevation:
       title: "Windhawk'ı çalıştırmak için UAC yükseltmesi gerektir"
       description: "Windhawk, yönetici hakları gerektirir, ancak tek kullanıcılı bir bilgisayar için, her seferinde UAC istemini almak can sıkıcı olabilir, bu nedenle Windhawk bunu atlar. Windhawk'ı çalıştırmak için UAC yükseltmesi gerektirmek üzere bu seçeneği etkinleştirin."
+    dontAutoShowToolkit:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod başlatma ekranı gecikmesi"
       description: "Mod başlatma için ilerleme iletişim kutusunu göstermeden önce beklenecek milisaniye miktarı."
@@ -261,6 +276,12 @@ app:
     hideOptionsButton: "Seçenekleri gizle"
     beginCodingButton: "Kodlamaya başla"
     cancelButton: "İptal"
+  safeMode:
+    alert: ~
+    offButton: ~
+    offConfirm: ~
+    offConfirmOk: ~
+    offConfirmCancel: ~
   modPreview:
     actionUnavailable: "Eylem önizleme modunda kullanılamaz"
     notCompiled: "Önizleme yapılmadan önce modun derlenmesi gerekir"

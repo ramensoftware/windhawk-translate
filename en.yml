@@ -27,8 +27,8 @@ setup:
 tray:
   TRAY_OPEN: "Open &Windhawk"
   TRAY_LOADED_MODS: "Loaded &mods"
+  TRAY_TOOLKIT: "&Toolkit"
   TRAY_EXIT: "&Exit"
-  TRAY_EMERGENCY_EXIT: "Signal &service exit"
   EXITDLG_TITLE: "Exit Windhawk"
   EXITDLG_CONTENT: "Windhawk will exit and all mods will be unloaded. Windhawk will be started automatically on the next system startup, unless the option below is checked."
   EXITDLG_CHECKBOX_AUTOSTART: "Don't start automatically on the next system startup"
@@ -42,7 +42,7 @@ tray:
   TRAYICON_TOOLTIP_UPDATE: "A new version is available"
   TASKDLG_TITLE_LOADED_MODS: "Loaded mods"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod tasks in progress"
-  TASKDLG_BUTTON_OPEN_APP: "&Open Windhawk"
+  TASKDLG_BUTTON_OPEN_APP: "Open &Windhawk"
   TASKDLG_COLUMN_MOD: "Mod"
   TASKDLG_COLUMN_PROCESS: "Process"
   TASKDLG_COLUMN_PID: "PID"
@@ -53,6 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Unloaded"
   TASKDLG_TASK_INITIALIZING: "Initializing..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Loading symbols..."
+  TOOLKITDLG_TITLE: "Windhawk toolkit"
+  TOOLKITDLG_BUTTON_OPEN: "&Open Windhawk"
+  TOOLKITDLG_BUTTON_LOADED_MODS: "Loaded &mods"
+  TOOLKITDLG_BUTTON_EXIT: "&Exit Windhawk"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "&Safe mode"
+  TOOLKITDLG_BUTTON_CLOSE: "&Close toolkit"
+  SAFE_MODE_TITLE: "Relaunch in safe mode"
+  SAFE_MODE_TEXT: "Windhawk will be relaunched with all the code injection functionality turned off."
 app:
   general:
     loading: "Loading..."
@@ -63,6 +71,10 @@ app:
     updating: "Updating..."
     installing: "Installing..."
     compiling: "Compiling..."
+    cut: "Cut"
+    copy: "Copy"
+    paste: "Paste"
+    selectAll: "Select all"
   appHeader:
     home: "Home"
     explore: "Explore"
@@ -195,6 +207,9 @@ app:
     requireElevation:
       title: "Require UAC elevation for running Windhawk"
       description: "Windhawk requires administrator rights, but for a single-user computer, getting the UAC prompt every time can be annoying, so Windhawk bypasses it. Enable this option to require UAC elevation for running Windhawk."
+    dontAutoShowToolkit:
+      title: "Don't automatically show the toolkit dialog"
+      description: "By default, Windhawk automatically shows the toolkit dialog when it detects that the taskbar isn't accessible, either due to system instability or for another reason. The toolkit dialog allows to exit Windhawk, switch to safe mode, and make other operations. The toolkit dialog can also be shown with the Ctrl+Win+W keyboard shortcut."
     modInitDialogDelay:
       title: "Mod initialization dialog delay"
       description: "Amount of milliseconds to wait before showing progress dialog for mod initialization."
@@ -261,6 +276,12 @@ app:
     hideOptionsButton: "Hide options"
     beginCodingButton: "Begin coding"
     cancelButton: "Cancel"
+  safeMode:
+    alert: "Windhawk is running in safe mode, all code injection functionality is turned off."
+    offButton: "Turn off safe mode"
+    offConfirm: "Windhawk will be restated to apply the settings."
+    offConfirmOk: "Restart Windhawk"
+    offConfirmCancel: "Cancel"
   modPreview:
     actionUnavailable: "Action is not available in preview mode"
     notCompiled: "Mod needs to be compiled before it can be previewed"

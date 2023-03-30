@@ -27,8 +27,8 @@ setup:
 tray:
   TRAY_OPEN: "開啟 &Windhawk"
   TRAY_LOADED_MODS: "已載入的 &Mod"
+  TRAY_TOOLKIT: ~
   TRAY_EXIT: "&離開"
-  TRAY_EMERGENCY_EXIT: "&服務離開"
   EXITDLG_TITLE: "離開 Windhawk"
   EXITDLG_CONTENT: "Windhawk 將會離開並且已載入的模組會失效。Windhawk 將會在下次開機後自動啟動，除非您勾選以下選項。"
   EXITDLG_CHECKBOX_AUTOSTART: "不要在下次開機後自動啟動"
@@ -53,6 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "未載入"
   TASKDLG_TASK_INITIALIZING: "初始化中……"
   TASKDLG_TASK_LOADING_SYMBOLS: "載入符號中……"
+  TOOLKITDLG_TITLE: ~
+  TOOLKITDLG_BUTTON_OPEN: ~
+  TOOLKITDLG_BUTTON_LOADED_MODS: ~
+  TOOLKITDLG_BUTTON_EXIT: ~
+  TOOLKITDLG_BUTTON_SAFE_MODE: ~
+  TOOLKITDLG_BUTTON_CLOSE: ~
+  SAFE_MODE_TITLE: ~
+  SAFE_MODE_TEXT: ~
 app:
   general:
     loading: "載入中……"
@@ -63,6 +71,10 @@ app:
     updating: "更新中……"
     installing: "安裝中……"
     compiling: "編譯中……"
+    cut: ~
+    copy: ~
+    paste: ~
+    selectAll: ~
   appHeader:
     home: "首頁"
     explore: "搜尋"
@@ -195,6 +207,9 @@ app:
     requireElevation:
       title: "需要系統管理員操作來執行 Windhawk"
       description: "Windhawk 需要系統管理員權限，但對於一般使用者，每次都提示使用者帳戶控制（UAC）或許很影響您的正常使用，所以 Windhawk 繞過了它。啟用此選項需要使用者帳戶控制（UAC）來執行 Windhawk。"
+    dontAutoShowToolkit:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "模組初始化對話延遲"
       description: "在顯示模組初始化進度對話框之前等待的毫秒數。"
@@ -261,6 +276,12 @@ app:
     hideOptionsButton: "隱藏選項"
     beginCodingButton: "開始編寫代碼"
     cancelButton: "取消"
+  safeMode:
+    alert: ~
+    offButton: ~
+    offConfirm: ~
+    offConfirmOk: ~
+    offConfirmCancel: ~
   modPreview:
     actionUnavailable: "預覽模式下此操作無法使用"
     notCompiled: "模組需要編譯後才可預覽"

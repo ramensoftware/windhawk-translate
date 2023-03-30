@@ -27,8 +27,8 @@ setup:
 tray:
   TRAY_OPEN: "打开 &Windhawk"
   TRAY_LOADED_MODS: "已加载的 &Mods"
+  TRAY_TOOLKIT: ~
   TRAY_EXIT: "&退出"
-  TRAY_EMERGENCY_EXIT: " &服务退出"
   EXITDLG_TITLE: "退出Windhawk"
   EXITDLG_CONTENT: "Windhawk将会退出并且已加载的Mods会失效。Windhawk 将会在下次开机后自动启动，除非您勾选以下选项。"
   EXITDLG_CHECKBOX_AUTOSTART: "不要在下次开机后自启"
@@ -53,6 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "未加载"
   TASKDLG_TASK_INITIALIZING: "初始化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "加载符号中..."
+  TOOLKITDLG_TITLE: ~
+  TOOLKITDLG_BUTTON_OPEN: ~
+  TOOLKITDLG_BUTTON_LOADED_MODS: ~
+  TOOLKITDLG_BUTTON_EXIT: ~
+  TOOLKITDLG_BUTTON_SAFE_MODE: ~
+  TOOLKITDLG_BUTTON_CLOSE: ~
+  SAFE_MODE_TITLE: ~
+  SAFE_MODE_TEXT: ~
 app:
   general:
     loading: "加载中..."
@@ -63,6 +71,10 @@ app:
     updating: "更新中..."
     installing: "安装中..."
     compiling: "编译中..."
+    cut: ~
+    copy: ~
+    paste: ~
+    selectAll: ~
   appHeader:
     home: "主页"
     explore: "搜索"
@@ -195,6 +207,9 @@ app:
     requireElevation:
       title: "需要管理员操作来运行Windhawk"
       description: "Windhawk需要管理员权限，但对于单用户，每次都提示用户账户控制（UAC）或许很影响您的正常使用，所以Windhawk绕过了它。启用此选项需要用户账户控制（UAC）来运行Windhawk。"
+    dontAutoShowToolkit:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod初始化对话延迟"
       description: "在显示mod初始化进度对话框之前等待的毫秒数。"
@@ -261,6 +276,12 @@ app:
     hideOptionsButton: "隐藏选项"
     beginCodingButton: "开始编写代码"
     cancelButton: "取消"
+  safeMode:
+    alert: ~
+    offButton: ~
+    offConfirm: ~
+    offConfirmOk: ~
+    offConfirmCancel: ~
   modPreview:
     actionUnavailable: "预览模式下该操作不可用"
     notCompiled: "Mod需要编译后才可预览"
