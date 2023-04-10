@@ -1,12 +1,12 @@
 setup:
   ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} 安裝"
   ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} 解除安裝"
-  SECTION_MAIN: "$(^NameDA)（可選）"
-  SECTION_STARTMENU: "開始選單快捷方式"
-  SECTION_DESKTOP: "桌面快捷方式"
-  INSTALLER_RUNNING: "$(^Name) 安裝程式執行中"
-  NON_EMPTY_FOLDER_ERROR: "$(^Name) 無法安裝在非空資料夾中"
-  CLEANCONFIRM: "&刪除程式的設定"
+  SECTION_MAIN: "$(^NameDA)（必要）"
+  SECTION_STARTMENU: "開始選單快速鍵"
+  SECTION_DESKTOP: "桌面快速鍵"
+  INSTALLER_RUNNING: "$(^Name) 安裝程式已正在執行"
+  NON_EMPTY_FOLDER_ERROR: "$(^Name) 無法安裝在不是空的資料夾中"
+  CLEANCONFIRM: "&移除程式的設定"
   INSTALLED_HEADER: "已經安裝"
   INSTALLED_TEXT: "選擇需要執行的操作。"
   INSTALLED_SAME: "$(^NameDA) v${VERSION} 已安裝在此電腦中，選擇您想要執行的操作。"
@@ -27,7 +27,7 @@ setup:
 tray:
   TRAY_OPEN: "開啟 &Windhawk"
   TRAY_LOADED_MODS: "已載入的 &Mod"
-  TRAY_TOOLKIT: ~
+  TRAY_TOOLKIT: "&工具組"
   TRAY_EXIT: "&離開"
   EXITDLG_TITLE: "離開 Windhawk"
   EXITDLG_CONTENT: "Windhawk 將會離開並且已載入的模組會失效。Windhawk 將會在下次開機後自動啟動，除非您勾選以下選項。"
@@ -42,7 +42,7 @@ tray:
   TRAYICON_TOOLTIP_UPDATE: "新版本可供使用"
   TASKDLG_TITLE_LOADED_MODS: "已載入的模組"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "模組使用中"
-  TASKDLG_BUTTON_OPEN_APP: "&開啟 Windhawk"
+  TASKDLG_BUTTON_OPEN_APP: "開啟 &Windhawk"
   TASKDLG_COLUMN_MOD: "Mod"
   TASKDLG_COLUMN_PROCESS: "進程"
   TASKDLG_COLUMN_PID: "PID"
@@ -53,28 +53,28 @@ tray:
   TASKDLG_STATUS_UNLOADED: "未載入"
   TASKDLG_TASK_INITIALIZING: "初始化中……"
   TASKDLG_TASK_LOADING_SYMBOLS: "載入符號中……"
-  TOOLKITDLG_TITLE: ~
-  TOOLKITDLG_BUTTON_OPEN: ~
-  TOOLKITDLG_BUTTON_LOADED_MODS: ~
-  TOOLKITDLG_BUTTON_EXIT: ~
-  TOOLKITDLG_BUTTON_SAFE_MODE: ~
-  TOOLKITDLG_BUTTON_CLOSE: ~
-  SAFE_MODE_TITLE: ~
-  SAFE_MODE_TEXT: ~
+  TOOLKITDLG_TITLE: "Windhawk 工具組"
+  TOOLKITDLG_BUTTON_OPEN: "&開啟 Windhawk"
+  TOOLKITDLG_BUTTON_LOADED_MODS: "已載入&模組"
+  TOOLKITDLG_BUTTON_EXIT: "&離開 Windhawk"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "&安全模式"
+  TOOLKITDLG_BUTTON_CLOSE: "&關閉工具包"
+  SAFE_MODE_TITLE: "在安全模式中啟動"
+  SAFE_MODE_TEXT: "Windhawk 將在關閉所有代碼注入功能的情況下重新啟動。"
 app:
   general:
     loading: "載入中……"
-    loadingFailed: "載入失敗，請檢查您的網路連接"
+    loadingFailed: "載入失敗，請檢查您的網路連線"
     loadingFailedTitle: "載入失敗"
-    loadingFailedSubtitle: "請檢查您的網路連接並重試"
+    loadingFailedSubtitle: "請檢查您的網路連線並重試"
     tryAgain: "重試"
     updating: "更新中……"
     installing: "安裝中……"
     compiling: "編譯中……"
-    cut: ~
-    copy: ~
-    paste: ~
-    selectAll: ~
+    cut: "剪下"
+    copy: "複製"
+    paste: "貼上"
+    selectAll: "全選"
   appHeader:
     home: "首頁"
     explore: "搜尋"
@@ -208,8 +208,8 @@ app:
       title: "需要系統管理員操作來執行 Windhawk"
       description: "Windhawk 需要系統管理員權限，但對於一般使用者，每次都提示使用者帳戶控制（UAC）或許很影響您的正常使用，所以 Windhawk 繞過了它。啟用此選項需要使用者帳戶控制（UAC）來執行 Windhawk。"
     dontAutoShowToolkit:
-      title: ~
-      description: ~
+      title: "停用自動顯示工具組對話框"
+      description: "預設情況下，當 Windhawk 檢測到系統不穩定或其他原因無法訪問工作列時，它會自動顯示工具組對話框。工具組對話框可以退出 Windhawk、切換到安全模式以及進行其他操作。也可以使用 Ctrl+Win+W 鍵盤快速鍵顯示工具組對話框。"
     modInitDialogDelay:
       title: "模組初始化對話延遲"
       description: "在顯示模組初始化進度對話框之前等待的毫秒數。"
@@ -277,11 +277,11 @@ app:
     beginCodingButton: "開始編寫代碼"
     cancelButton: "取消"
   safeMode:
-    alert: ~
-    offButton: ~
-    offConfirm: ~
-    offConfirmOk: ~
-    offConfirmCancel: ~
+    alert: "Windhawk 執行在安全模式，所有代碼注入功能已被關閉。"
+    offButton: "關閉安全模式"
+    offConfirm: "Windhawk 將被重新啟動以套用設定。"
+    offConfirmOk: "重新啟動 Windhawk"
+    offConfirmCancel: "取消"
   modPreview:
     actionUnavailable: "預覽模式下此操作無法使用"
     notCompiled: "模組需要編譯後才可預覽"
