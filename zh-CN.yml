@@ -27,7 +27,7 @@ setup:
 tray:
   TRAY_OPEN: "打开 &Windhawk"
   TRAY_LOADED_MODS: "已加载的 &Mods"
-  TRAY_TOOLKIT: ~
+  TRAY_TOOLKIT: "打开 &Toolkit"
   TRAY_EXIT: "&退出"
   EXITDLG_TITLE: "退出Windhawk"
   EXITDLG_CONTENT: "Windhawk将会退出并且已加载的Mods会失效。Windhawk 将会在下次开机后自动启动，除非您勾选以下选项。"
@@ -53,14 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "未加载"
   TASKDLG_TASK_INITIALIZING: "初始化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "加载符号中..."
-  TOOLKITDLG_TITLE: ~
-  TOOLKITDLG_BUTTON_OPEN: ~
-  TOOLKITDLG_BUTTON_LOADED_MODS: ~
-  TOOLKITDLG_BUTTON_EXIT: ~
-  TOOLKITDLG_BUTTON_SAFE_MODE: ~
-  TOOLKITDLG_BUTTON_CLOSE: ~
-  SAFE_MODE_TITLE: ~
-  SAFE_MODE_TEXT: ~
+  TOOLKITDLG_TITLE: "Windhawk Toolkit"
+  TOOLKITDLG_BUTTON_OPEN: "(&O)打开Windhawk"
+  TOOLKITDLG_BUTTON_LOADED_MODS: "(&M)已加载Mods"
+  TOOLKITDLG_BUTTON_EXIT: "(&E)退出Windhawk"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "(&S)安全模式"
+  TOOLKITDLG_BUTTON_CLOSE: "(&C)关闭Toolkit"
+  SAFE_MODE_TITLE: "以安全模式启动"
+  SAFE_MODE_TEXT: "Windhawk将重新启动，所有代码注入功能都将被关闭。"
 app:
   general:
     loading: "加载中..."
@@ -71,10 +71,10 @@ app:
     updating: "更新中..."
     installing: "安装中..."
     compiling: "编译中..."
-    cut: ~
-    copy: ~
-    paste: ~
-    selectAll: ~
+    cut: "剪切"
+    copy: "复制"
+    paste: "粘贴"
+    selectAll: "全选"
   appHeader:
     home: "主页"
     explore: "搜索"
@@ -208,8 +208,8 @@ app:
       title: "需要管理员操作来运行Windhawk"
       description: "Windhawk需要管理员权限，但对于单用户，每次都提示用户账户控制（UAC）或许很影响您的正常使用，所以Windhawk绕过了它。启用此选项需要用户账户控制（UAC）来运行Windhawk。"
     dontAutoShowToolkit:
-      title: ~
-      description: ~
+      title: "禁止自动显示Toolkit窗口。"
+      description: "默认情况下，当Windhawk检测到任务栏无法访问时（可能是由于系统不稳定或其他原因），会自动显示Toolkit窗口。 Toolkit窗口允许退出Windhawk，切换到安全模式和进行其他操作。 禁用后仍可以使用Ctrl + Win + W键盘快捷键显示Toolkit窗口。"
     modInitDialogDelay:
       title: "Mod初始化对话延迟"
       description: "在显示mod初始化进度对话框之前等待的毫秒数。"
@@ -277,11 +277,11 @@ app:
     beginCodingButton: "开始编写代码"
     cancelButton: "取消"
   safeMode:
-    alert: ~
-    offButton: ~
-    offConfirm: ~
-    offConfirmOk: ~
-    offConfirmCancel: ~
+    alert: "Windhawk正在安全模式下运行，所有代码注入功能已关闭。"
+    offButton: "退出安全模式"
+    offConfirm: "应用后Windhawk将会重启"
+    offConfirmOk: "重启Windhawk"
+    offConfirmCancel: "取消"
   modPreview:
     actionUnavailable: "预览模式下该操作不可用"
     notCompiled: "Mod需要编译后才可预览"
