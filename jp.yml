@@ -55,12 +55,12 @@ tray:
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルをロード中..."
   TOOLKITDLG_TITLE: "Windhawkツールキット"
   TOOLKITDLG_BUTTON_OPEN: "(&O) Windhawkを開く"
-  TOOLKITDLG_BUTTON_LOADED_MODS: "(&M) ロード済みのMod
+  TOOLKITDLG_BUTTON_LOADED_MODS: "(&M) ロード済みのMod"
   TOOLKITDLG_BUTTON_EXIT: "(&E) Windhawkを終了"
   TOOLKITDLG_BUTTON_SAFE_MODE: "(&S) セーフモード"
   TOOLKITDLG_BUTTON_CLOSE: "(&C) ツールキットを閉じる"
   SAFE_MODE_TITLE: "セーフモードで再起動する"
-  SAFE_MODE_TEXT: "Windhawkをコードインジェクションの機能をすべてオフにした状態で再起動します。
+  SAFE_MODE_TEXT: "Windhawkをコードインジェクションの機能をすべてオフにした状態で再起動します。"
 app:
   general:
     loading: "ロード中..."
