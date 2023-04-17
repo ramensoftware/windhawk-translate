@@ -9,7 +9,7 @@ setup:
   CLEANCONFIRM: "&プログラムの設定を削除する"
   INSTALLED_HEADER: "既にインストールされています"
   INSTALLED_TEXT: "実行する操作を選択してください。"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} は既にインストールされています。 実行する操作を選択してください。"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION} が既にインストールされています。 実行する操作を選択してください。"
   INSTALLED_OLD: "古いバージョンの $(^NameDA) がシステムにインストールされています。 実行する操作を選択してください。"
   INSTALLED_NEW: "新しいバージョンの $(^NameDA) がインストールされています。 古いバージョンのインストールは推奨されていません。 古いバージョンをインストールしたい場合は、現在のバージョンをアンインストールしてください。 実行する操作を選択してください。"
   REINSTALL: "&再インストール"
@@ -19,9 +19,9 @@ setup:
   NO_UNINSTALL: "&アンインストールしないでください"
   INSTTYPE_HEADER: "インストールタイプ"
   INSTTYPE_TEXT: "インストールタイプを選択してください。"
-  INSTTYPE_INTRO: "$(^NameDA) のセットアップウィザードへようこそ。 はじめに、インストールタイプを選択します。"
+  INSTTYPE_INTRO: "$(^NameDA) セットアップウィザードへようこそ。 はじめに、インストールタイプを選択してください。"
   INSTTYPE_STANDARD: "&標準インストール (推奨)"
-  INSTTYPE_STANDARD_DESC: "$(^NameDA)全ユーザーにインストールします。"
+  INSTTYPE_STANDARD_DESC: "$(^NameDA)を全てのユーザーにインストールします。"
   INSTTYPE_PORTABLE: "&ポータブルインストール"
   INSTTYPE_PORTABLE_DESC: "ポータブル版の$(^NameDA)を展開します。ポータブルモードでは、すべての構成データをアプリケーションフォルダに格納し、レジストリに情報を書き込みせん。"
 tray:
@@ -30,7 +30,7 @@ tray:
   TRAY_TOOLKIT: ~
   TRAY_EXIT: "&終了"
   EXITDLG_TITLE: "Windhawkを終了"
-  EXITDLG_CONTENT: "Windhawkが終了し、すべてのmodをアンロードします。次回のシステム起動時にWindhawkを自動起動させたくない場合は、以下のオプションを有効にします。"
+  EXITDLG_CONTENT: "Windhawkを終了し、すべてのmodをアンロードします。次回のシステム起動時にWindhawkを自動起動させたくない場合は、以下のオプションを有効にします。"
   EXITDLG_CHECKBOX_AUTOSTART: "次回のシステム起動時に自動起動しない"
   EXITDLG_BUTTON_EXIT: "&Windhawkを終了"
   EXITDLG_BUTTON_CANCEL: "キャンセル"
@@ -53,14 +53,14 @@ tray:
   TASKDLG_STATUS_UNLOADED: "アンロードしました"
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルをロード中..."
-  TOOLKITDLG_TITLE: ~
-  TOOLKITDLG_BUTTON_OPEN: ~
-  TOOLKITDLG_BUTTON_LOADED_MODS: ~
-  TOOLKITDLG_BUTTON_EXIT: ~
-  TOOLKITDLG_BUTTON_SAFE_MODE: ~
-  TOOLKITDLG_BUTTON_CLOSE: ~
-  SAFE_MODE_TITLE: ~
-  SAFE_MODE_TEXT: ~
+  TOOLKITDLG_TITLE: "Windhawkツールキット"
+  TOOLKITDLG_BUTTON_OPEN: "(&O) Windhawkを開く"
+  TOOLKITDLG_BUTTON_LOADED_MODS: "(&M) ロード済みのMod
+  TOOLKITDLG_BUTTON_EXIT: "(&E) Windhawkを終了"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "(&S) セーフモード"
+  TOOLKITDLG_BUTTON_CLOSE: "(&C) ツールキットを閉じる"
+  SAFE_MODE_TITLE: "セーフモードで再起動する"
+  SAFE_MODE_TEXT: "Windhawkをコードインジェクションの機能をすべてオフにした状態で再起動します。
 app:
   general:
     loading: "ロード中..."
@@ -71,10 +71,10 @@ app:
     updating: "アップデート中..."
     installing: "インストール中..."
     compiling: "コンパイル中..."
-    cut: ~
-    copy: ~
-    paste: ~
-    selectAll: ~
+    cut: "切り取り"
+    copy: "コピー"
+    paste: "貼り付け"
+    selectAll: "すべて選択"
   appHeader:
     home: "ホーム"
     explore: "探す"
@@ -181,22 +181,22 @@ app:
   explore:
     search:
       placeholder: "mod検索中..."
-      popularAndTopRated: "人気で評価が高い"
+      popularAndTopRated: "人気かつ高評価"
       popular: "人気"
-      topRated: "評価が高い"
+      topRated: "高評価"
       newest: "最新"
       lastUpdated: "最終更新日"
       alphabeticalOrder: "アルファベット順"
   settings:
     language:
       title: "言語"
-      description: "Windhawk表示言語を選択してください。"
-      contribute: "<0>新しい翻訳に貢献する</0>."
+      description: "Windhawkの表示言語を選択できます"
+      contribute: "<0>新しい翻訳に貢献する</0>"
       credits: "lmncaj と <0>Keita Kunishi</0>によって日本語翻訳されました。"
       creditsLink: "https://github.com/Keitan924111"
     updates:
       title: "アップデートを確認"
-      description: "定期的に新バージョンのWindhawkとインストールされているmodを確認する。"
+      description: "定期的に新しいバージョンのWindhawkとインストールされているmodを確認する。"
     devMode:
       title: "開発者モード"
       description: "modの作成・修正など、開発者向けのオプションを表示します。"
@@ -205,11 +205,11 @@ app:
       title: "トレイアイコンを隠す"
       description: "Windhawkを終了するには、このオプションを無効にする必要があります。"
     requireElevation:
-      title: "Windhawkの実行にはUACの昇格が必要です"
+      title: "Windhawkの実行にUACの昇格を必要とする"
       description: "シングルユーザーのコンピュータでのUACプロンプトの煩わしさを回避します。このオプションを有効にすると、Windhawkの実行にUACの昇格が必要になります。"
     dontAutoShowToolkit:
-      title: ~
-      description: ~
+      title: "ツールキットダイアログを自動表示しない"
+      description: "デフォルトの状態では、Windhawkがシステムの不安定化やその他の理由でタスクバーにアクセスできないことを検出すると、自動的にツールキットダイアログを表示します。ツールキットダイアログでは、Windhawkの終了、セーフモードへの切り替え、その他の操作を行うことができます。ツールキットダイアログは、Ctrl+Win+Wのキーボードショートカットでも表示することができます。"
     modInitDialogDelay:
       title: "Mod初期化ダイアログの遅延"
       description: "modの初期化時にプログレスダイアログを表示するまでの待ち時間(ミリ秒)を指定します。"
