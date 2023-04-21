@@ -271,7 +271,7 @@ app:
   createNewModButton:
     title: "Creează un mod"
   devModeAction:
-    message: "Creearea și modificarea modurilor necesită niște cunoștințe de dezvoltare Windows C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
+    message: "Crearea și modificarea modurilor necesită niște cunoștințe de dezvoltare Windows C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
     hideOptionsCheckbox: "Ascunde toate opțiunile relevante dezvoltării"
     hideOptionsButton: "Ascunde opțiunile"
     beginCodingButton: "Începe să programezi"
