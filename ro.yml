@@ -191,8 +191,8 @@ app:
     language:
       title: "Limbă"
       description: "Selectează limba ta preferată de afișare pentru Windhawk."
-      contribute: "<0>Contribuie pentru o traducere nouă</0>."
-      credits: "Traducere în limba română de <0>Valer100</0>."
+      contribute: "<0>Contribuie pentru o nouă traducere</0>."
+      credits: "Tradus în limba română de <0>Valer100</0>."
       creditsLink: "https://github.com/Valer100"
     updates:
       title: "Verifică pentru actualizări"
