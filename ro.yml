@@ -141,7 +141,7 @@ app:
       title: "Jurnal de modificări"
       loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Clic aici</0> pentru a-l vedea pe GitHub."
     advanced:
-      title: "Advansat"
+      title: "Avansat"
       debugLogging:
         title: "Jurnal de depanare"
         description: "Poate fi folositor pentru a depana modul."
