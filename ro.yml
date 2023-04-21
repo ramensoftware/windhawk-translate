@@ -125,7 +125,7 @@ app:
       remove: "Elimină"
     details:
       title: "Detalii"
-      noData: "Detalile modului lipsesc."
+      noData: "Detaliile modului lipsesc."
     settings:
       title: "Setări"
       noData: "Nu sunt disponibile setări pentru acest mod."
