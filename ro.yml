@@ -271,7 +271,7 @@ app:
   createNewModButton:
     title: "Creează un mod"
   devModeAction:
-    message: "Creearea și modificarea modurilor necesită niște cunoștințe de dezvoltare C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
+    message: "Creearea și modificarea modurilor necesită niște cunoștințe de dezvoltare Windows C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
     hideOptionsCheckbox: "Ascunde toate opțiunile relevante dezvoltării"
     hideOptionsButton: "Ascunde opțiunile"
     beginCodingButton: "Începe să programezi"
@@ -284,7 +284,7 @@ app:
     offConfirmCancel: "Anulare"
   modPreview:
     actionUnavailable: "Acțiunea nu este disponibilă în modul de previzualizare"
-    notCompiled: "Modul trebuie să fie compilat înainte de a putea fi previzualizat"
+    notCompiled: "Modul trebuie să fie compilat pentru a-l putea previzualiza"
   sidebar:
     modId: "Identificator mod"
     enableMod: "Activează modul"
