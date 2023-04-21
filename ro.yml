@@ -135,7 +135,7 @@ app:
       arrayItemRemove: "Elimină element"
     code:
       title: "Cod sursă"
-      noData: "Sursa codului lipsește."
+      noData: "Codul sursă lipsește."
       collapseExtra: "Restrânge Readme și Setări"
     changelog:
       title: "Jurnal de modificări"
