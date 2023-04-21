@@ -139,7 +139,7 @@ app:
       collapseExtra: "Restrânge Readme și Setări"
     changelog:
       title: "Jurnal de modificări"
-      loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Clic aici</0> să-l vezi pe GitHub."
+      loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Clic aici</0> pentru a-l vedea pe GitHub."
     advanced:
       title: "Advansat"
       debugLogging:
@@ -202,7 +202,7 @@ app:
       description: "Arată acțiuni pentru dezvoltatori, cum ar fi crearea și modificarea modurilor."
     advancedSettings: "Setări avansate"
     hideTrayIcon:
-      title: "Ascunde pictograma din bara de activități"
+      title: "Ascunde pictograma Windhawk din bara de activități"
       description: "Va trebui să dezactivezi această opțiune pentru a închide Windhawk."
     requireElevation:
       title: "Cere elevare UAC pentru a rula Windhawk"
@@ -255,7 +255,7 @@ app:
       vscodium: "O distribuție a editorului VSCode de la Microsoft, condusă de comunitate"
       llvmMingw: "Un lanț de instrumente mingw-w64 bazat pe LLVM/Clang/LLD"
       minHook: "Biblioteca minimalistă de API hooking pentru Windows"
-      others: "Alte moduri și biblioteci și un pic de cod"
+      others: "Alte moduri și biblioteci și puțin cod"
   installModal:
     title: "Instalează {{mod}}"
     warningTitle: "Continuă cu prudență"
@@ -265,7 +265,7 @@ app:
     github: "GitHub"
     twitter: "Twitter"
     verified: "verificat"
-    verifiedTooltip: "Am verificat că acest profil îi aparține autorului modului, dar <0>să fi verificat</0> nu este același lucru ca și <0>să fi de încredere</0>. Asigură-te că autorul acestui mod este de încredere sau inspectează cu atenție codul sursă înainte de instalare."
+    verifiedTooltip: "Am verificat că acest profil îi aparține autorului modului, dar <0>să fii verificat</0> nu este același lucru ca și <0>să fii de încredere</0>. Asigură-te că autorul acestui mod este de încredere sau inspectează cu atenție codul sursă înainte de instalare."
     acceptButton: "Acceptă riscul și instalează"
     cancelButton: "Anulare"
   createNewModButton:
