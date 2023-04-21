@@ -60,7 +60,7 @@ tray:
   TOOLKITDLG_BUTTON_SAFE_MODE: "Mod de &siguranță"
   TOOLKITDLG_BUTTON_CLOSE: "În&chide trusa de unelte"
   SAFE_MODE_TITLE: "Repornire în modul de siguranță"
-  SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcțiile de injectat cod oprite."
+  SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcțiile de injectat cod dezactivate."
 app:
   general:
     loading: "Se încarcă..."
@@ -144,7 +144,7 @@ app:
       title: "Advansat"
       debugLogging:
         title: "Jurnal de depanare"
-        description: "Poate fi folositor pentru a depana problemele modului."
+        description: "Poate fi folositor pentru a depana modul."
         none: "Nimic"
         modLogs: "Jurnalul modului"
         detailedLogs: "Jurnal detaliat de depanare"
