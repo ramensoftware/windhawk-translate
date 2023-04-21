@@ -206,13 +206,13 @@ app:
       description: "Va trebui să dezactivezi această opțiune pentru a închide Windhawk."
     requireElevation:
       title: "Cere elevare UAC pentru a rula Windhawk"
-      description: "Windhawk necesită drepturi de administrator, dar pentru un calculator folosit de o singură persoană, afișarea ecranului UAC de fiecare dată poate fi enervantă, așa că Windhawk ocolește acest lucru. Activează această opțiune de a cere elevare UAC pentru a rula Windhawk."
+      description: "Windhawk necesită drepturi de administrator, dar pentru un calculator folosit de o singură persoană, afișarea ecranului UAC de fiecare dată poate fi enervantă, așa că Windhawk ocolește acest lucru. Activează această opțiune pentru a cere elevare UAC pentru a rula Windhawk."
     dontAutoShowToolkit:
       title: "Nu arăta automat dialogul cu trusa de unelte"
       description: "În mod normal, Windhawk arată automat dialogul cu trusa de unelte când detectează că bara de activități nu este accesibilă, fie din motive de instabilitate a sistemului sau din alt motiv. Dialogul cu trusa de unelte îți permite să închizi Windhawk, să activezi modul de siguranță și să faci alte operațiuni. Dialogul cu trusa de unelte poate fi de asemenea afișat folosind combinația de taste Ctrl+Win+W."
     modInitDialogDelay:
       title: "Întârzierea dialogului de inițializare a modului"
-      description: "Numarul de millisecunde de așteptat înainte de a arăta dialogul de progres pentru inițializarea modului."
+      description: "Numărul de millisecunde de așteptat înainte de a arăta dialogul de progres pentru inițializarea modului."
     moreAdvancedSettings:
       title: "Mai multe setări avansate"
       restartNotice: "Windhawk va fi repornit pentru a aplica setările."
@@ -277,7 +277,7 @@ app:
     beginCodingButton: "Începe să programezi"
     cancelButton: "Anulare"
   safeMode:
-    alert: "Windhawk rulează în modul de siguranță, toate funcțiile de injectat cod sunt dezactivate."
+    alert: "Windhawk rulează în modul de siguranță. Toate funcțiile de injectat cod sunt dezactivate."
     offButton: "Oprește modul de siguranță"
     offConfirm: "Windhawk va fi repornit pentru a aplica setările."
     offConfirmOk: "Repornește Windhawk"
