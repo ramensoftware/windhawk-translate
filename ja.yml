@@ -27,7 +27,7 @@ setup:
 tray:
   TRAY_OPEN: "&Windhawk を開く"
   TRAY_LOADED_MODS: "ロードされた &mods"
-  TRAY_TOOLKIT: ~
+  TRAY_TOOLKIT: "ツールキット"
   TRAY_EXIT: "&終了"
   EXITDLG_TITLE: "Windhawkを終了"
   EXITDLG_CONTENT: "Windhawkを終了し、すべてのmodをアンロードします。次回のシステム起動時にWindhawkを自動起動させたくない場合は、以下のオプションを有効にします。"
