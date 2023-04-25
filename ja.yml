@@ -27,7 +27,7 @@ setup:
 tray:
   TRAY_OPEN: "&Windhawk を開く"
   TRAY_LOADED_MODS: "ロードされた &mods"
-  TRAY_TOOLKIT: ~
+  TRAY_TOOLKIT: "ツールキット"
   TRAY_EXIT: "&終了"
   EXITDLG_TITLE: "Windhawkを終了"
   EXITDLG_CONTENT: "Windhawkを終了し、すべてのmodをアンロードします。次回のシステム起動時にWindhawkを自動起動させたくない場合は、以下のオプションを有効にします。"
@@ -277,11 +277,11 @@ app:
     beginCodingButton: "コーディング開始"
     cancelButton: "キャンセル"
   safeMode:
-    alert: ~
-    offButton: ~
-    offConfirm: ~
-    offConfirmOk: ~
-    offConfirmCancel: ~
+    alert: "Windhawkがセーフモードで動作中です。すべてのコードインジェクション機能はオフになっています。"
+    offButton: "セーフモードを終了"
+    offConfirm: "設定を適用するため、Windhawkを再起動します。"
+    offConfirmOk: "Windhawkを再起動"
+    offConfirmCancel: "キャンセル"
   modPreview:
     actionUnavailable: "プレビューモードでは使用できません"
     notCompiled: "プレビューする前にModをコンパイルする必要があります"
