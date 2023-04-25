@@ -192,7 +192,7 @@ app:
       title: "언어"
       description: "Windhawk의 기본 표시 언어를 선택하세요."
       contribute: "<0>새 번역 기여하기</0>."
-      credits: "한국어 번역 v0 for v1.3.1 beta and below by <0>근육질푸키</0>."
+      credits: "한국어 번역 by <0>근육질푸키</0>."
       creditsLink: "mailto:muscular.puky@gmail.com"
     updates:
       title: "업데이트 확인"
