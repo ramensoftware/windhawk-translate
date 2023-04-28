@@ -89,7 +89,7 @@ app:
     removeConfirmOk: "모드 삭제"
     removeConfirmCancel: "취소"
     notCompiled: "모드 컴파일이 필요합니다"
-    editedLocally: "모드가 국소적으로 편집되었습니다"
+    editedLocally: "모드가 로컬로 편집되었습니다"
     noDescription: "(설명 없음)"
     users_one: "사용자 {{formattedCount}}명"
     users_other: "사용자 {{formattedCount}}명"
@@ -102,7 +102,7 @@ app:
       modId: "모드 식별자"
       modVersion: "모드 버전"
       modAuthor:
-        title: "모드 자작성자"
+        title: "모드 작성자"
         homepage: "홈페이지"
         github: "GitHub"
         twitter: "Twitter"
@@ -113,7 +113,7 @@ app:
         tooltip:
           target: "대상 프로세스"
           targets: "대상 프로세스:"
-          excluded: "제제외 프로세스:"
+          excluded: "제외 프로세스:"
       update: "업데이트"
       updateNotNeeded: "설치되어 있는 버전이 최신 버전입니다"
       install: "설치"
@@ -121,7 +121,7 @@ app:
       disable: "비활성화"
       enable: "활성화"
       edit: "편집"
-      fork: "끌어오기"
+      fork: "끌어오기(포크)"
       remove: "삭제"
     details:
       title: "세부 정보"
@@ -221,7 +221,7 @@ app:
     loggingVerbosity:
       appLoggingTitle: "Windhawk 로깅 수준"
       engineLoggingTitle: "Windhawk 엔진 로깅 수준"
-      description: "로그는 DebugView와 같은 도구로 볼 수 있습니다."
+      description: "로그는 DebugView 같은 도구로 볼 수 있습니다."
       none: "없음"
       error: "오류"
       verbose: "자세히"
