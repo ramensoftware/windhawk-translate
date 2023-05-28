@@ -136,7 +136,7 @@ app:
     code:
       title: "Вихідний код"
       noData: "Вихідний код моду відсутній."
-      collapseExtra: "Поєднати Readme та Налаштування"
+      collapseExtra: "Приховати Readme та Налаштування"
     changelog:
       title: "Журнал змін"
       loadingFailed: "Не вдалося завантажити журнал змін. <0>Натисніть тут</0> щоб переглянути його на GitHub."
