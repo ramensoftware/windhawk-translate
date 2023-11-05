@@ -24,6 +24,14 @@ setup:
   INSTTYPE_STANDARD_DESC: "Instalar $(^NameDA) para todos los usuarios en este ordenador."
   INSTTYPE_PORTABLE: "&Instalación portátil"
   INSTTYPE_PORTABLE_DESC: "Extraiga una versión portátil de $(^NameDA). En el modo portátil, todos los datos de configuración se almacenan en la carpeta de la aplicación y no se escribe información en el registro."
+  EXTRACTING_FILES: "Extracting files... %s"
+  INETC_DOWNLOADING: "Downloading %s"
+  INETC_CONNECTING: "Connecting..."
+  INETC_SECOND: "seconds"
+  INETC_MINUTE: "minutes"
+  INETC_HOUR: "hours"
+  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s remaining)"
 tray:
   TRAY_OPEN: "Abre &Windhawk"
   TRAY_LOADED_MODS: "Carga el &mods"
@@ -61,6 +69,7 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Cerrar kit de herramientas"
   SAFE_MODE_TITLE: "Reiniciar en modo seguro"
   SAFE_MODE_TEXT: "Windhawk se relanzará con todas las funciones de inyección de código desactivadas."
+  TASKDLG_PROCESS_SUSPENDED: ~
 app:
   general:
     loading: "Cargando..."
@@ -163,6 +172,9 @@ app:
         descriptionExclusion: "Una lista personalizada de nombres/rutas de archivos ejecutables adicionales que el mod excluirá de la orientación. La lista se agrega a la lista de exclusión que el autor del mod definió para determinar a qué procesos apuntar. Para cada proceso, el mod se carga si la ruta del archivo ejecutable coincide con una de las entradas de inclusión y no coincide con ninguna entrada de exclusión."
         processListPlaceholder: "Nombres/rutas de procesos, uno por línea, por ejemplo:"
         saveButton: "Guardar"
+      includeExcludeCustomOnly:
+        title: "Ignore mod inclusion/exclusion lists"
+        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
     changes:
       title: "Últimos cambios de versión"
       noData: "La versión instalada es idéntica a la última versión."
@@ -228,15 +240,18 @@ app:
     processList:
       titleExclusion: "Lista de exclusión de procesos"
       descriptionExclusion: "Una lista de nombres de procesos/rutas en las que Windhawk no inyectará. Puede ser útil para casos en los que Windhawk no es compatible con un programa específico. Tenga en cuenta que agregar un proceso a esta lista no solo evitará que Windhawk lo personalice, sino que también evitará que Windhawk intercepte los procesos secundarios que crea este proceso. Esto hará que Windhawk cargue mods con un ligero retraso en tales casos."
+      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
       titleInclusion: "Lista de inclusión de procesos"
       descriptionInclusion: "Una lista de nombres de procesos/rutas en las que se inyectará Windhawk, incluso si están en la lista de exclusión."
-      inclusionWithoutExclusionNotice: "La lista de inclusión de procesos no tiene efecto con una lista de exclusión de procesos vacía. Si pretendía excluir todos los procesos menos estos, puede establecer \"*\" en la lista de exclusión de procesos."
-      titleThreadAttachExempt: "Lista de procesos para el método de inyección \"hilos ligeros\"."
-      descriptionThreadAttachExempt: "Omita parte de la inicialización de subprocesos de Windhawk (omite la inicialización de TLS, las devoluciones de llamada de TLS y DllMain, y más). Esto podría solucionar la compatibilidad con algunos programas, pero podría romper la compatibilidad con otros. <0>Más información</0>."
+      inclusionWithoutExclusionNotice: "La lista de inclusión de procesos no tiene efecto con una lista de exclusión de procesos vacía."
+      inclusionWithoutTotalExclusionNotice: "Si pretendía excluir todos los procesos menos estos, puede establecer \"*\" en la lista de exclusión de procesos."
       processListPlaceholder: "Nombres/rutas de procesos, uno por línea, por ejemplo:"
-    injectIntoCriticalProcesses:
-      title: "Inyectar código en procesos críticos del sistema"
-      description: "De forma predeterminada, Windhawk no inyecta código en los procesos críticos del sistema. Use esta opción con cuidado, ya que bloquear uno de estos procesos podría provocar un BSOD."
+    loadModsInCriticalSystemProcesses:
+      title: "Load mods in critical system processes"
+      description: "By default, Windhawk only loads mods in critical system processes if the process is targeted explicitly, i.e. is listed without wildcards in the mod's process inclusion list."
+      never: "Never"
+      onlyExplicitMatch: "Only if targeted explicitly"
+      always: "If targeted"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

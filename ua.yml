@@ -24,6 +24,14 @@ setup:
   INSTTYPE_STANDARD_DESC: "Встановити $(^NameDA) для всіх користувачів на цього пристрою."
   INSTTYPE_PORTABLE: "&Портативне встановлення"
   INSTTYPE_PORTABLE_DESC: "Розпакувати портативну версію $(^NameDA). У портативній версії усі конфігураційні файли зберігаються у теці застосунку та ніяка інформація не записується у системний реєстр."
+  EXTRACTING_FILES: "Extracting files... %s"
+  INETC_DOWNLOADING: "Downloading %s"
+  INETC_CONNECTING: "Connecting..."
+  INETC_SECOND: "seconds"
+  INETC_MINUTE: "minutes"
+  INETC_HOUR: "hours"
+  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s remaining)"
 tray:
   TRAY_OPEN: "Відкрити &Windhawk"
   TRAY_LOADED_MODS: "Запущені &моди"
@@ -61,6 +69,7 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Закрити меню"
   SAFE_MODE_TITLE: "Перезапустити у безпечному режимі"
   SAFE_MODE_TEXT: "Windhawk буде перезавантажено без можливості ін'єкцій коду."
+  TASKDLG_PROCESS_SUSPENDED: ~
 app:
   general:
     loading: "Завантаження..."
@@ -163,6 +172,9 @@ app:
         descriptionExclusion: "Користувацький список додаткових імен/шляхів до виконуваних файлів, на які НЕ буде спрямовано мод. Цей список додається до списку винятків, який автор моду визначив для визначення процесів, на які вона буде націлена. Мод буде увімкнено для кожного процесу, якщо шлях до виконуваного файлу збігається зі списком цілей і не збігається з жодним зі списків винятків."
         processListPlaceholder: "Назви/шляхи процесів, по одному в рядку, наприклад:"
         saveButton: "Зберегти"
+      includeExcludeCustomOnly:
+        title: "Ignore mod inclusion/exclusion lists"
+        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
     changes:
       title: "Зміни в останній версії:"
       noData: "Встановлена версія ідентична останній"
@@ -228,15 +240,18 @@ app:
     processList:
       titleExclusion: "Список виняткових процесів"
       descriptionExclusion: "Список додаткових імен/шляхів до виконуваних файлів, які Windhawk буде ігнорувати. Може бути корисно, коли Windhawk не сумісний з окремим застосунком. Зауважте, що додавання процесу до цього списку не тільки забезпечить цей процес не тільки від модифікації його Windhawk'ом, а й всіх його дочірніх процесів. Це призведе до невеликої затримки у ініціалізації модів у деяких випадках."
+      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
       titleInclusion: "Список цільових процесів"
       descriptionInclusion: "Список додаткових імен/шляхів до виконуваних файлів, у які Windhawk буде вживлятися, навіть якщо вони в списку виключень."
-      inclusionWithoutExclusionNotice: "Список цільових процесів нічого не робить, якщо список виняткових процесів порожній. Якщо ви хочете виключити всі процеси, окрім цих, ви можете задати \"*\" у списку виняткових процесів."
-      titleThreadAttachExempt: "Список процесів для методу вживлення \"light threads\""
-      descriptionThreadAttachExempt: "Пропустити деякі з потоків ініціалізації Windhawk (пропускає ініціалізацію TLS, зворотні виклики TLS та DllMain, та інше). Це може допомогти покращити сумісність з деякими застосунками, але, також, може погіршити її з іншими. <0>Докладніше</0>."
+      inclusionWithoutExclusionNotice: "Список цільових процесів нічого не робить, якщо список виняткових процесів порожній."
+      inclusionWithoutTotalExclusionNotice: "Якщо ви хочете виключити всі процеси, окрім цих, ви можете задати \"*\" у списку виняткових процесів."
       processListPlaceholder: "Назви/шляхи процесів, по одному в рядку, наприклад:"
-    injectIntoCriticalProcesses:
-      title: "Вживлятися у критичні системні процеси"
-      description: "За замовчуванням, Windhawk не вживляє код у критичні системні процеси. Застосовуйте цей параметр із обережністю, тому що помилка у хоча б одному з них може призвести до BSOD."
+    loadModsInCriticalSystemProcesses:
+      title: "Load mods in critical system processes"
+      description: "By default, Windhawk only loads mods in critical system processes if the process is targeted explicitly, i.e. is listed without wildcards in the mod's process inclusion list."
+      never: "Never"
+      onlyExplicitMatch: "Only if targeted explicitly"
+      always: "If targeted"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

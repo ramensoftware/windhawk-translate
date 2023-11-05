@@ -24,6 +24,14 @@ setup:
   INSTTYPE_STANDARD_DESC: "이 장치의 모든 사용자용으로 $(^NameDA)을(를) 설치합니다."
   INSTTYPE_PORTABLE: "포터블 설치(&P)"
   INSTTYPE_PORTABLE_DESC: "$(^NameDA)의 포터블 버전을 압축 해제합니다. 포터블 모드에서는 모든 구성 데이터가 application 폴더에 저장되고 레지스트리에 정보를 쓰지 않습니다."
+  EXTRACTING_FILES: "Extracting files... %s"
+  INETC_DOWNLOADING: "Downloading %s"
+  INETC_CONNECTING: "Connecting..."
+  INETC_SECOND: "seconds"
+  INETC_MINUTE: "minutes"
+  INETC_HOUR: "hours"
+  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s remaining)"
 tray:
   TRAY_OPEN: "Windhawk 열기(&W)"
   TRAY_LOADED_MODS: "불러온 모드(&M)"
@@ -61,6 +69,7 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "툴킷 닫기(&C)"
   SAFE_MODE_TITLE: "안전 모드로 다시 실행"
   SAFE_MODE_TEXT: "Windhawk가 코드 인젝션 기능이 꺼진 채로 다시 시작됩니다."
+  TASKDLG_PROCESS_SUSPENDED: ~
 app:
   general:
     loading: "불러오는 중..."
@@ -163,6 +172,9 @@ app:
         descriptionExclusion: "모드가 대상에서 제외할 추가 실행 파일 이름 / 경로의 사용자 지정 목록입니다. 이 목록은 모드 작성자가 대상 프로세스를 결정하기 위해 정의한 제외 목록에 추가됩니다. 각 프로세스에 대해 실행 파일 경로가 포함 항목 중 하나와 일치하고 제외 항목과 일치하지 않으면 모드가 로드됩니다."
         processListPlaceholder: "한 줄당 프로세스 이름 / 경로 1개, 예:"
         saveButton: "저장"
+      includeExcludeCustomOnly:
+        title: "Ignore mod inclusion/exclusion lists"
+        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
     changes:
       title: "최근 버전 변경"
       noData: "설치되어 있는 버전이 최신 버전입니다."
@@ -228,15 +240,18 @@ app:
     processList:
       titleExclusion: "프로세스 제외 목록"
       descriptionExclusion: "Windhawk가 인젝션하지 않는 프로세스 이름 / 경로 목록입니다. Windhawk가 특정 프로그램과 호환되지 않는 경우에 유용할 수 있습니다. 이 목록에 프로세스를 추가하면 Windhawk가 해당 프로세스를 사용자 지정하지 못할 뿐만 아니라 Windhawk가 이 프로세스가 생성하는 자식 프로세스를 가로채는 것도 방지됩니다. 이렇게 하면 Windhawk가 모드를 불러오는 데 약간의 지연이 생깁니다."
+      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
       titleInclusion: "프로세스 포함 목록"
       descriptionInclusion: "제외 목록에 있어도 Windhawk가 인젝션할 프로세스 이름 / 경로 목록입니다."
-      inclusionWithoutExclusionNotice: "프로세스 포함 목록은 빈 프로세스 제외 목록에 영향을 주지 않습니다. 여기 프로세스들 외의 모든 프로세스를 제외하려면 프로세스 제외 목록에서 \"*\"를 설정할 수 있습니다."
-      titleThreadAttachExempt: "\"라이트 스레드\" 방식으로 인섹션할 프로세스 목록"
-      descriptionThreadAttachExempt: "Windhawk 스레드의 일부 초기화를 건너뜁니다(TLS 초기화, TLS 및 DllMain 콜백 등을 건너뜁니다). 이로 인해 일부 프로그램과의 호환성이 고쳐질 수 있지만 다른 프로그램과의 호환성이 충돌할 수 있습니다. <0>자세한 정보</0>."
+      inclusionWithoutExclusionNotice: "프로세스 포함 목록은 빈 프로세스 제외 목록에 영향을 주지 않습니다."
+      inclusionWithoutTotalExclusionNotice: "여기 프로세스들 외의 모든 프로세스를 제외하려면 프로세스 제외 목록에서 \"*\"를 설정할 수 있습니다."
       processListPlaceholder: "1줄당 프로세스 이름 / 경로 1개, 예:"
-    injectIntoCriticalProcesses:
-      title: "중요한 시스템 프로세스 인젝션"
-      description: "기본값으로는 Windhawk는 중요한 시스템 프로세스 코드를 인젝션하지 않습니다. 이러한 프로세스 중 하나가 충돌하면 블루스크린이 발생할 수 있으니 이 옵션을 신중히 사용하세요."
+    loadModsInCriticalSystemProcesses:
+      title: "Load mods in critical system processes"
+      description: "By default, Windhawk only loads mods in critical system processes if the process is targeted explicitly, i.e. is listed without wildcards in the mod's process inclusion list."
+      never: "Never"
+      onlyExplicitMatch: "Only if targeted explicitly"
+      always: "If targeted"
   about:
     title: "Windhawk v{{version}}"
     beta: "베타"

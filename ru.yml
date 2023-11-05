@@ -5,7 +5,7 @@ setup:
   SECTION_STARTMENU: "Ярлык меню Пуск"
   SECTION_DESKTOP: "Ярлык рабочего стола"
   INSTALLER_RUNNING: "$(^Name) Установка уже запущена"
-  NON_EMPTY_FOLDER_ERROR: "$(^Name) can't be installed in a non-empty folder"
+  NON_EMPTY_FOLDER_ERROR: "$(^Name) не может быть установлено в непустую папку"
   CLEANCONFIRM: "&Удалить настройки программы"
   INSTALLED_HEADER: "Установлено"
   INSTALLED_TEXT: "Выберите действие."
@@ -24,6 +24,14 @@ setup:
   INSTTYPE_STANDARD_DESC: "Установить $(^NameDA) для всех пользователей компьютера."
   INSTTYPE_PORTABLE: "&Портативная установка"
   INSTTYPE_PORTABLE_DESC: "Извлечь портативную версию $(^NameDA). В портативной версии все файлы настроек хранятся в папке установки и не пишутся в реестр."
+  EXTRACTING_FILES: "Extracting files... %s"
+  INETC_DOWNLOADING: "Downloading %s"
+  INETC_CONNECTING: "Connecting..."
+  INETC_SECOND: "seconds"
+  INETC_MINUTE: "minutes"
+  INETC_HOUR: "hours"
+  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s remaining)"
 tray:
   TRAY_OPEN: "Открыть &Windhawk"
   TRAY_LOADED_MODS: "Загруженные &модификации"
@@ -61,6 +69,7 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Закрыть меню"
   SAFE_MODE_TITLE: "Перезапустить в безопасном режиме"
   SAFE_MODE_TEXT: "Windhawk будет перезапущен с отключенным функционалом внедрением кода."
+  TASKDLG_PROCESS_SUSPENDED: ~
 app:
   general:
     loading: "Загрузка..."
@@ -163,6 +172,9 @@ app:
         descriptionExclusion: "Пользовательский список с дополнительными файлами exe или путями к ним, которые модификация НЕ затронет. Этот список будет добавлен к списку исключения от автора модификации. F То есть, модификация загружается для каждого процесса, только если путь совпадает с одним из списка целевых и не совпадает с любым из списка исключенных."
         processListPlaceholder: "Имя процесса (exe)/пути, по одному в строке, например:"
         saveButton: "Сохранить"
+      includeExcludeCustomOnly:
+        title: "Ignore mod inclusion/exclusion lists"
+        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
     changes:
       title: "Изменения в последней версии"
       noData: "Установлена самая последняя версия."
@@ -228,15 +240,18 @@ app:
     processList:
       titleExclusion: "Список исключенных процессов"
       descriptionExclusion: "Список процессов/пути, в которые Windhawk не будет внедрять код. Может быть полезно в случаях, когда Windhawk несовместим с определенной программой. Обратите внимание, что добавление процесса в этот список не только не даст Windhawk его изменять, но и предотвратит Windhawk от перехвата дочерних процессов, созданных исключенным. Это вызовет задержку при загрузке модификаций в Windhawk."
+      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
       titleInclusion: "Список целевых процессов"
       descriptionInclusion: "Список целевых процессов/путей , в которые Windhawk будет внедрять код, даже если они в списке исключенных."
-      inclusionWithoutExclusionNotice: "Список целевых процессов ничего не делает, если список исключенных процессов пуст. Если вы хотите исключить все процессы, кроме этих, вы можете задать \"*\" в списке исключенных процессов."
-      titleThreadAttachExempt: "Список процессов с методом внедрения кода \"light threads\""
-      descriptionThreadAttachExempt: "Пропустить инициализацию некоторых потоков Windhawk (пропустить TLS инициализацию, обратные вызовы TLS и DllMain, и др.). Это может исправить совместимость с некоторыми программами, но сломать совместимость с другими. <0>Подробнее</0>."
+      inclusionWithoutExclusionNotice: "Список целевых процессов ничего не делает, если список исключенных процессов пуст."
+      inclusionWithoutTotalExclusionNotice: "Если вы хотите исключить все процессы, кроме этих, вы можете задать \"*\" в списке исключенных процессов."
       processListPlaceholder: "Имя процесса (exe)/пути, по одному в строке, например:"
-    injectIntoCriticalProcesses:
-      title: "Внедрять код в критические системные процессы"
-      description: "По умолчанию, Windhawk не внедряет код в критические системные процессы. Используйте эту опцию с осторожностью, так как остановка одного из этих процессов может привести к синему экрану смерти (BSOD)."
+    loadModsInCriticalSystemProcesses:
+      title: "Load mods in critical system processes"
+      description: "By default, Windhawk only loads mods in critical system processes if the process is targeted explicitly, i.e. is listed without wildcards in the mod's process inclusion list."
+      never: "Never"
+      onlyExplicitMatch: "Only if targeted explicitly"
+      always: "If targeted"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

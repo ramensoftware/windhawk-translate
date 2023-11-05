@@ -24,6 +24,14 @@ setup:
   INSTTYPE_STANDARD_DESC: "$(^NameDA)を全てのユーザーにインストールします。"
   INSTTYPE_PORTABLE: "&ポータブルインストール"
   INSTTYPE_PORTABLE_DESC: "ポータブル版の$(^NameDA)を展開します。ポータブルモードでは、すべての構成データをアプリケーションフォルダに格納し、レジストリに情報を書き込みせん。"
+  EXTRACTING_FILES: "Extracting files... %s"
+  INETC_DOWNLOADING: "Downloading %s"
+  INETC_CONNECTING: "Connecting..."
+  INETC_SECOND: "seconds"
+  INETC_MINUTE: "minutes"
+  INETC_HOUR: "hours"
+  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s remaining)"
 tray:
   TRAY_OPEN: "&Windhawk を開く"
   TRAY_LOADED_MODS: "ロードされた &mods"
@@ -61,6 +69,7 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "(&C) ツールキットを閉じる"
   SAFE_MODE_TITLE: "セーフモードで再起動する"
   SAFE_MODE_TEXT: "Windhawkをコードインジェクションの機能をすべてオフにした状態で再起動します。"
+  TASKDLG_PROCESS_SUSPENDED: ~
 app:
   general:
     loading: "ロード中..."
@@ -163,6 +172,9 @@ app:
         descriptionExclusion: "modがターゲットから除外する追加の実行ファイル名/パスのカスタムリストです。このリストは、どのプロセスをターゲットにするかを決定するために、 modの作者が定義した除外リストに追加されます。各プロセスについて、実行可能ファイルパスがインクルードエントリの一つにマッチし、除外エントリにマッチしない場合に、modがロードされます。"
         processListPlaceholder: "プロセス名/パス、1行に1つずつ、 例:"
         saveButton: "保存"
+      includeExcludeCustomOnly:
+        title: "Ignore mod inclusion/exclusion lists"
+        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
     changes:
       title: "最新バージョンの変更点"
       noData: "インストールされたバージョンは最新です。"
@@ -228,15 +240,18 @@ app:
     processList:
       titleExclusion: "プロセス除外リスト"
       descriptionExclusion: "Windhawkがインジェクトしないプロセス名/パスのリストです。Windhawkが特定のプログラムと互換性がない場合に便利です。このリストにプロセスを追加すると、Windhawkがそれをカスタマイズするのを防ぐだけでなく、このプロセスが作成する子プロセスをWindhawkが傍受するのを防ぐことに注意してください。このため、このような場合、Windhawkはmodの読み込みに若干の遅れを生じます。"
+      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
       titleInclusion: "プロセス包含リスト"
       descriptionInclusion: "除外リストにある場合でも、Windhawkがインジェクトするプロセス名/パスのリストです。"
-      inclusionWithoutExclusionNotice: "プロセス包含リストは、プロセス除外リストが空である場合には、何の効果もありません。これらのプロセス以外を除外したい場合は、プロセス除外リストに \"*\"を設定します。"
-      titleThreadAttachExempt: "\"light threads\"インジェクションメソッドのプロセスリストです"
-      descriptionThreadAttachExempt: "Windhawkスレッドの初期化の一部をスキップします（TLSの初期化、TLSおよびDllMainコールバックなどをスキップします）。これにより、一部のプログラムとの互換性が修正されるかもしれませんが、他のプログラムとの互換性が壊れるかもしれません。 <0>さらなる情報</0>."
+      inclusionWithoutExclusionNotice: "プロセス包含リストは、プロセス除外リストが空である場合には、何の効果もありません。"
+      inclusionWithoutTotalExclusionNotice: "これらのプロセス以外を除外したい場合は、プロセス除外リストに \"*\"を設定します。"
       processListPlaceholder: "プロセス名/パス、1行に1つずつ、例:"
-    injectIntoCriticalProcesses:
-      title: "重要なシステムプロセスにインジェクトする"
-      description: "デフォルトでは、Windhawkは重要なシステムプロセスにはコードをインジェクトしません。これらのプロセスの1つをクラッシュさせるとBSODにつながる可能性があるため、このオプションは注意して使用してください。"
+    loadModsInCriticalSystemProcesses:
+      title: "Load mods in critical system processes"
+      description: "By default, Windhawk only loads mods in critical system processes if the process is targeted explicitly, i.e. is listed without wildcards in the mod's process inclusion list."
+      never: "Never"
+      onlyExplicitMatch: "Only if targeted explicitly"
+      always: "If targeted"
   about:
     title: "Windhawk v{{version}}"
     beta: "ベータ"
