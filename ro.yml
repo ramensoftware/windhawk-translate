@@ -31,7 +31,7 @@ setup:
   INETC_MINUTE: "minute"
   INETC_HOUR: "ore"
   INETC_PROGRESS: "%dkB (%d%%) din %dkB @ %d.%01dkB/s"
-  INETC_REMAINING: " (%d %s%s rămas)"
+  INETC_REMAINING: " (%d %s%s rămase)"
 tray:
   TRAY_OPEN: "Deschide &Windhawk"
   TRAY_LOADED_MODS: "&Moduri încărcate"
