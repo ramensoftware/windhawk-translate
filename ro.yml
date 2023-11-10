@@ -167,9 +167,9 @@ app:
         invalidData: "Date JSON invalide"
       customList:
         titleInclusion: "Listă personalizată de includere a proceselor"
-        descriptionInclusion: "A custom list of additional executable file names/paths that the mod will target. The list is added to the inclusion list that the mod author defined to determine which processes to target. For each process, the mod is loaded if the executable file path matches one of the include entries and doesn't match any exclude entry."
+        descriptionInclusion: "O listă personalizată de nume/căi de fișiere executabile suplimentare pe care modul le va viza. Lista este adăugată la lista de includere definită de autorul modului pentru a determina ce procese trebuie să fie vizate. Pentru fiecare proces, modul este încărcat dacă calea fișierului executabil se potrivește cu una dintre intrările de includere și nu se potrivește cu nicio intrare de excludere."
         titleExclusion: "Listă personalizată de excludere a proceselor"
-        descriptionExclusion: "A custom list of additional executable file names/paths that the mod will excluded from targeting. The list is added to the exclusion list that the mod author defined to determine which processes to target. For each process, the mod is loaded if the executable file path matches one of the include entries and doesn't match any exclude entry."
+        descriptionExclusion: "O listă personalizată de nume/căi de fișiere executabile suplimentare pe care modul nu le va lua în considerare. Lista se adaugă la lista de excludere definită de autorul modului pentru a determina ce procese să fie vizate. Pentru fiecare proces, modul este încărcat dacă calea fișierului executabil se potrivește cu una dintre intrările de includere și nu se potrivește cu nicio intrare de excludere."
         processListPlaceholder: "Numele/calea procesului, câte unul/una pe o singură linie, de exemplu:"
         saveButton: "Salvează"
       includeExcludeCustomOnly:
