@@ -69,7 +69,7 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "În&chide trusa de unelte"
   SAFE_MODE_TITLE: "Repornire în modul de siguranță"
   SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcțiile de injectat cod dezactivate."
-  TASKDLG_PROCESS_SUSPENDED: ~
+  TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
 app:
   general:
     loading: "Se încarcă..."
