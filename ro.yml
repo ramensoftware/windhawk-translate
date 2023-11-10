@@ -244,7 +244,7 @@ app:
       titleInclusion: "Lista de includere a proceselor"
       descriptionInclusion: "O listă de nume/căi de procese pe care Windhawk le va putea injecta, chiar dacă ele sunt în lista de excludere."
       inclusionWithoutExclusionNotice: "Lista proceselor incluse nu are niciun efect dacă lista de procese excluse este goală."
-      inclusionWithoutTotalExclusionNotice: "Dacă te refereai la excluderea tuturor proceselor, dar nu astea, poți adăuga \"*\" în lista de excludere a proceselor."
+      inclusionWithoutTotalExclusionNotice: "Dacă te refereai la excluderea tuturor proceselor, dar nu acestea, poți adăuga \"*\" în lista de excludere a proceselor."
       processListPlaceholder: "Numele/căile proceselor, câte unul/una pe un singur rând, de exemplu:"
     loadModsInCriticalSystemProcesses:
       title: "Încarcă moduri în procesele de sistem critice"
