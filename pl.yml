@@ -34,7 +34,7 @@ setup:
   INETC_REMAINING: " (%d %s%s remaining)"
 tray:
   TRAY_OPEN: "Otwórz &Windhawk"
-  TRAY_LOADED_MODS: "Załadowane &mods"
+  TRAY_LOADED_MODS: "Załadowane &mody"
   TRAY_TOOLKIT: "&Narzędzia"
   TRAY_EXIT: "&Wyjście"
   EXITDLG_TITLE: "Wyjdź z Windhawk"
@@ -85,7 +85,7 @@ app:
     paste: "Wklej"
     selectAll: "Zaznacz Wszystko"
   appHeader:
-    home: "Strona Główna"
+    home: "Strona główna"
     explore: "Eksploruj"
     settings: "Ustawienia"
     about: "O aplikacji"
