@@ -26,7 +26,7 @@ setup:
   INSTTYPE_PORTABLE_DESC: "Wyodrębnij przenośną wersję $(^NameDA). W trybie przenośnym wszystkie dane konfiguracyjne są przechowywane w folderze aplikacji i żadne informacje nie są zapisywane w rejestrze."
 tray:
   TRAY_OPEN: "Otwórz &Windhawk"
-  TRAY_LOADED_MODS: "Załadowane &mods"
+  TRAY_LOADED_MODS: "Załadowane &mody"
   TRAY_TOOLKIT: "&Narzędzia"
   TRAY_EXIT: "&Wyjście"
   EXITDLG_TITLE: "Wyjdź z Windhawk"
@@ -76,7 +76,7 @@ app:
     paste: "Wklej"
     selectAll: "Zaznacz Wszystko"
   appHeader:
-    home: "Strona Główna"
+    home: "Strona główna"
     explore: "Eksploruj"
     settings: "Ustawienia"
     about: "O aplikacji"
