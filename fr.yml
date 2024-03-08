@@ -27,9 +27,9 @@ setup:
   EXTRACTING_FILES: "Extraction des fichiers... %s"
   INETC_DOWNLOADING: "Téléchargement %s"
   INETC_CONNECTING: "Connexion..."
-  INETC_SECOND: "Secondes"
-  INETC_MINUTE: "Minutes"
-  INETC_HOUR: "Heures"
+  INETC_SECOND: "secondes"
+  INETC_MINUTE: "minutes"
+  INETC_HOUR: "heures"
   INETC_PROGRESS: "%dkB (%d%%) sur %dkB @ %d.%01dkB/s"
   INETC_REMAINING: " (%d %s%s restant)"
 tray:
@@ -228,7 +228,7 @@ app:
     moreAdvancedSettings:
       title: "Plus de paramètres avancés"
       restartNotice: "Windhawk va être redémarré pour appliquer les paramètres."
-      saveButton: "Sauvegarder et Redémarrer Windhawk"
+      saveButton: "Sauvegarder et redémarrer Windhawk"
       cancelButton: "Annuler"
     loggingVerbosity:
       appLoggingTitle: "Verbosité de la journalisation Windhawk"
@@ -279,7 +279,7 @@ app:
     homepage: "Page d'accueil"
     github: "GitHub"
     twitter: "Twitter"
-    verified: "Vérifié"
+    verified: "vérifié"
     verifiedTooltip: "Nous avons vérifié que ce profil appartient à l'auteur du mod, mais prenez en considération que la note <0>verifié</0> n'est pas la même que la note <0>créateur de confiance</0>. Soyez sûr d'avoir confiance en l'auteur du mod, or d'analyser avec soin le code source du mod avant de l'installer."
     acceptButton: "Accepter les risques et installer"
     cancelButton: "Annuler"
