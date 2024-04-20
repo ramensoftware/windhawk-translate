@@ -204,9 +204,8 @@ app:
       title: "Język"
       description: "Wybierz preferowany język wyświetlania dla aplikacji Windhawk."
       contribute: "<0>Współtwórz nowe tłumaczenie</0>."
-      credits: "Polskie tłumaczenie stworzył <0>Inkatail</0> oraz <0>CyprinusCarpio</0>."
+      credits: "Polskie tłumaczenie stworzył <0>Inkatail</0> oraz CyprinusCarpio (https://github.com/CyprinusCarpio)."
       creditsLink: "https://github.com/Inkatail"
-      creditsLink: "https://github.com/CyprinusCarpio"
     updates:
       title: "Sprawdź aktualizacje"
       description: "Okresowo sprawdzaj dostępność nowych wersji Windhawk i zainstalowanych modów."
