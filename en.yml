@@ -294,7 +294,7 @@ app:
   safeMode:
     alert: "Windhawk is running in safe mode, all code injection functionality is turned off."
     offButton: "Turn off safe mode"
-    offConfirm: "Windhawk will be restated to apply the settings."
+    offConfirm: "Windhawk will be restarted to apply the settings."
     offConfirmOk: "Restart Windhawk"
     offConfirmCancel: "Cancel"
   modPreview:
