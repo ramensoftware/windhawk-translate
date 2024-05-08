@@ -38,8 +38,8 @@ tray:
   TRAY_TOOLKIT: "&Меню"
   TRAY_EXIT: "&Выход"
   EXITDLG_TITLE: "Закрыть Windhawk"
-  EXITDLG_CONTENT: "Windhawk будет закрыт и все модификации будут выгружены. Windhawk автоматически запустится при следующей загрузке системы, если только не включите параметр ниже."
-  EXITDLG_CHECKBOX_AUTOSTART: "Не запускать автоматически при следующем запуске системы"
+  EXITDLG_CONTENT: "Windhawk будет закрыт и все модификации будут выгружены. Windhawk автоматически запустится после перезагрузки системы, если параметр ниже не включён."
+  EXITDLG_CHECKBOX_AUTOSTART: "Не запускать при старте системы"
   EXITDLG_BUTTON_EXIT: "&Выйти из Windhawk"
   EXITDLG_BUTTON_CANCEL: "Отмена"
   NOTIFICATION_UPDATE_APP: "Доступна новая версия Windhawk"
@@ -69,7 +69,7 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Закрыть меню"
   SAFE_MODE_TITLE: "Перезапустить в безопасном режиме"
   SAFE_MODE_TEXT: "Windhawk будет перезапущен с отключённым функционалом внедрением кода."
-  TASKDLG_PROCESS_SUSPENDED: ~
+  TASKDLG_PROCESS_SUSPENDED: "(приостановлен)"
 app:
   general:
     loading: "Загрузка..."
@@ -85,9 +85,9 @@ app:
     paste: "Вставить"
     selectAll: "Выбрать все"
   appHeader:
-    home: "Главное"
-    explore: "Искать"
-    settings: "Настройки"
+    home: "Главная"
+    explore: "Поиск"
+    settings: "Параметры"
     about: "О программе"
   mod:
     updateAvailable: "Доступно обновление"
@@ -197,14 +197,14 @@ app:
       popular: "Популярные"
       topRated: "С наивысшим рейтингом"
       newest: "Новые"
-      lastUpdated: "Последние обновления"
+      lastUpdated: "Недавно обновлено"
       alphabeticalOrder: "Алфавитный порядок"
   settings:
     language:
       title: "Язык"
       description: "Выберите желаемый язык интерфейса для Windhawk."
       contribute: "<0>Добавить новый перевод</0>."
-      credits: "Русский перевод от <0>Сергея Крылова</0> с некоторыми правками от berry."
+      credits: "Русский перевод от <0>Сергея Крылова</0> с некоторыми правками от berry, а также от других членов сообщества."
       creditsLink: "mailto:krylov.sn@nxt.ru"
     updates:
       title: "Проверить обновления"
@@ -292,7 +292,7 @@ app:
     beginCodingButton: "Начать писать код"
     cancelButton: "Отмена"
   safeMode:
-    alert: "Windhawk работает в безопасном режиме, весь функционал внедрения кода отключён."
+    alert: "Windhawk работает в безопасном режиме, все расширения отключены."
     offButton: "Выключить безопасный режим"
     offConfirm: "Windhawk будет перезапущен для применения настроек."
     offConfirmOk: "Перезапустить Windhawk"
