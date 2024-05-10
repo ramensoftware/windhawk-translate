@@ -68,7 +68,7 @@ tray:
   TOOLKITDLG_BUTTON_SAFE_MODE: "&Безопасный режим"
   TOOLKITDLG_BUTTON_CLOSE: "&Закрыть меню"
   SAFE_MODE_TITLE: "Перезапустить в безопасном режиме"
-  SAFE_MODE_TEXT: "Windhawk будет перезапущен с отключённым функционалом внедрением кода."
+  SAFE_MODE_TEXT: "Windhawk будет перезапущен с отключённым функционалом кастомизации программ."
   TASKDLG_PROCESS_SUSPENDED: "(приостановлен)"
 app:
   general:
@@ -197,7 +197,7 @@ app:
       popular: "Популярные"
       topRated: "С наивысшим рейтингом"
       newest: "Новые"
-      lastUpdated: "Недавно обновлено"
+      lastUpdated: "Недавно обновленные"
       alphabeticalOrder: "Алфавитный порядок"
   settings:
     language:
@@ -212,7 +212,7 @@ app:
     devMode:
       title: "Режим разработчика"
       description: "Показать действия для разработчиков, например создание и редактирование модификаций."
-    advancedSettings: "Продвинутые настройки"
+    advancedSettings: "Продвинутые параметры"
     hideTrayIcon:
       title: "Скрыть иконку в трее"
       description: "Вам нужно отключить этот параметр для выхода из Windhawk."
@@ -226,7 +226,7 @@ app:
       title: "Задержка диалога инициализации модификации"
       description: "Количество миллисекунд ожидания перед показом диалогового окна прогресса инициализации модификации."
     moreAdvancedSettings:
-      title: "Более продвинутые настройки"
+      title: "Дополнительные продвинутые параметры"
       restartNotice: "Windhawk будет перезапущен для применения настроек."
       saveButton: "Сохранить и перезапустить Windhawk"
       cancelButton: "Отмена"
@@ -292,7 +292,7 @@ app:
     beginCodingButton: "Начать писать код"
     cancelButton: "Отмена"
   safeMode:
-    alert: "Windhawk работает в безопасном режиме, все расширения отключены."
+    alert: "Windhawk работает в безопасном режиме, кастомизация программ отключена."
     offButton: "Выключить безопасный режим"
     offConfirm: "Windhawk будет перезапущен для применения настроек."
     offConfirmOk: "Перезапустить Windhawk"
