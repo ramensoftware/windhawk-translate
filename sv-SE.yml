@@ -294,7 +294,7 @@ app:
   safeMode:
     alert: "Windhawk körs i felsäkert läge och all kodinjektion är avstängd."
     offButton: "Stäng av felsäkert läge"
-    offConfirm: "Windhawk will be restarted to apply the settings."
+    offConfirm: "Windhawk kommer att startas om för att verkställa inställningarna."
     offConfirmOk: "Starta om Windhawk"
     offConfirmCancel: "Avbryt"
   modPreview:
