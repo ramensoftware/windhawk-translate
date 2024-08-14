@@ -31,7 +31,7 @@ setup:
   INETC_MINUTE: "分"
   INETC_HOUR: "時間"
   INETC_PROGRESS: "%dkB (%d%%) - %dkB @ %d.%01dkB/s"
-  INETC_REMAINING: " (残り %d %s%s)"
+  INETC_REMAINING: "(残り %d %s%s)"
 tray:
   TRAY_OPEN: "Windhawk を開く(&W)"
   TRAY_LOADED_MODS: "読み込まれた Mod(&M)"
@@ -215,10 +215,10 @@ app:
     advancedSettings: "高度な設定"
     hideTrayIcon:
       title: "トレイアイコンを隠す"
-      description: "You will have to disable this option to exit Windhawk."
+      description: "Windhawk を終了するには、このオプションを無効化する必要があります。"
     requireElevation:
-      title: "Require UAC elevation for running Windhawk"
-      description: "Windhawk requires administrator rights, but for a single-user computer, getting the UAC prompt every time can be annoying, so Windhawk bypasses it. Enable this option to require UAC elevation for running Windhawk."
+      title: "Windhawk の実行時に UAC の昇格を要求"
+      description: "Windhawk の実行には管理者権限が必要ですが、シングルユーザーコンピューターの環境で毎回 UAC のプロンプトが表示されるのは煩わしいため、Windhawk はこれを回避しています。Windhawk の実行に UAC の昇格を要求させるには、このオプションを有効化してください。"
     dontAutoShowToolkit:
       title: "Don't automatically show the toolkit dialog"
       description: "By default, Windhawk automatically shows the toolkit dialog when it detects that the taskbar isn't accessible, either due to system instability or for another reason. The toolkit dialog allows to exit Windhawk, switch to safe mode, and make other operations. The toolkit dialog can also be shown with the Ctrl+Win+W keyboard shortcut."
