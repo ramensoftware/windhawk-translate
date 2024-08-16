@@ -227,7 +227,7 @@ app:
       description: "Mod の初期化でプログレスダイアログを表示するまでの待機時間 (ミリ秒) を設定できます。"
     moreAdvancedSettings:
       title: "その他の高度な設定"
-      restartNotice: "Windhawk を再起動して設定を適用します。"
+      restartNotice: "Windhawk を再起動すると設定が適用されます。"
       saveButton: "保存をして Windhawk を再起動"
       cancelButton: "キャンセル"
     loggingVerbosity:
