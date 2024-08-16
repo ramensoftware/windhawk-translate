@@ -224,7 +224,7 @@ app:
       description: "既定では、システムが不安定な状態やその他の理由でタスクバーにアクセスできない状態を検出すると、Windhawk は自動的にツールキットダイアログを表示します。ツールキットダイアログは、Windhawk の終了、セーフモードの切り替え、その他の操作を行なうことができます。ツールキットダイアログは、Ctrl+Win+W のキーボードショートカットでも表示できます。"
     modInitDialogDelay:
       title: "Mod 初期化ダイアログの遅延"
-      description: "Mod の初期化でプログレスダイアログを表示するまでの待機時間を設定できます。"
+      description: "Mod の初期化でプログレスダイアログを表示するまでの待機時間 (ミリ秒) を設定できます。"
     moreAdvancedSettings:
       title: "その他の高度な設定"
       restartNotice: "Windhawk を再起動して設定を適用します。"
