@@ -6,6 +6,7 @@ setup:
   SECTION_DESKTOP: "Collegamento al Desktop"
   INSTALLER_RUNNING: "$(^Name) Un altra installazione è già in esecuzione"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) non può essere installato in una cartella vuota"
+  OPEN_PROGRAM: "Esegui $(^NameDA)"
   CLEANCONFIRM: "&Rimuovi le impostazioni del programma"
   INSTALLED_HEADER: "Già installato"
   INSTALLED_TEXT: "Selezionare l'operazione da eseguire."

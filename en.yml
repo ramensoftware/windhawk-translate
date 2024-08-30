@@ -6,6 +6,7 @@ setup:
   SECTION_DESKTOP: "Desktop Shortcut"
   INSTALLER_RUNNING: "$(^Name) Setup is already running"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) can't be installed in a non-empty folder"
+  OPEN_PROGRAM: "&Open $(^NameDA)"
   CLEANCONFIRM: "&Remove the program's settings"
   INSTALLED_HEADER: "Already Installed"
   INSTALLED_TEXT: "Select the operation to perform."
@@ -255,7 +256,7 @@ app:
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
-    subtitle: "The customization marketplace for Windows programs"
+    subtitle: "The customization marketplace for Windows and programs"
     credit: "By <0>{{author}}</0>"
     update:
       title: "An update is available"

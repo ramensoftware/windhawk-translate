@@ -6,6 +6,7 @@ setup:
   SECTION_DESKTOP: "Raccourci Bureau"
   INSTALLER_RUNNING: "Une installation de $(^Name) est déjà en cours"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) doit être installé dans un dossier vide"
+  OPEN_PROGRAM: "Lancer $(^NameDA)"
   CLEANCONFIRM: "&Supprimer les paramètres du programme"
   INSTALLED_HEADER: "Déjà installé"
   INSTALLED_TEXT: "Selectionnez l'action à effectuer"

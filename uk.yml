@@ -6,6 +6,7 @@ setup:
   SECTION_DESKTOP: "Ярлик на робочому столі"
   INSTALLER_RUNNING: "Інсталяція $(^Name) вже виконується"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) не можна встановити у непорожню теку"
+  OPEN_PROGRAM: "&Запустити $(^NameDA)"
   CLEANCONFIRM: "&Видалити налаштування програми"
   INSTALLED_HEADER: "Вже встановлено"
   INSTALLED_TEXT: "Оберіть потрібну Вам дію."

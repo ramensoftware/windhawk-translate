@@ -6,6 +6,7 @@ setup:
   SECTION_DESKTOP: "Acceso directo de escritorio"
   INSTALLER_RUNNING: "$(^Name) La instalación ya se está ejecutando"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) no se puede instalar en una carpeta no vacía"
+  OPEN_PROGRAM: "&Ejecutar $(^NameDA)"
   CLEANCONFIRM: "&Eliminar la configuración del programa"
   INSTALLED_HEADER: "Ya instalado"
   INSTALLED_TEXT: "Seleccionar la operación a realizar."

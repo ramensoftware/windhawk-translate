@@ -6,6 +6,7 @@ setup:
   SECTION_DESKTOP: "桌面捷徑"
   INSTALLER_RUNNING: "$(^Name) 安裝程式已在執行中"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) 無法安裝在非空資料夾中"
+  OPEN_PROGRAM: "執行 $(^NameDA)(&R)"
   CLEANCONFIRM: "移除程式設定(&R)"
   INSTALLED_HEADER: "已安裝"
   INSTALLED_TEXT: "選擇要執行的操作。"
