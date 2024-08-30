@@ -222,7 +222,7 @@ app:
       description: "Windhawk requière des droits administrateur, mais pour un ordinateur ne comportant qu'un seul utilisateur, avoir l'invite de contrôle du compte d'utilisateur (UAC) à chaque fois peut être ennuyant, donc Windhawk la contourne. Activer cette option pour exiger l'invite de contrôle du compte de l'utilisateur (UAC) pour lancer Windhawk."
     dontAutoShowToolkit:
       title: "Ne pas automatiquement afficher la boîte de dialogue de la boîte à outils"
-      description: "Par défaut, Windhawk affiche automatiquement la boîte de dialogue de la boîte à outils quand il détecte que la barre des tâches n'est pas accessible, à cause d'instabilités système ou autre. La boîte de dialogue permet de quitter Windhawk, passer en mode sans échec and effectuer d'autres opérations. Elle peut également être afficher à l'aide du raccourci clavier Ctrl+Win+W."
+      description: "Par défaut, Windhawk affiche automatiquement la boîte de dialogue de la boîte à outils quand il détecte que la barre des tâches n'est pas accessible, à cause d'instabilités système ou autre. La boîte de dialogue permet de quitter Windhawk, passer en mode sans échec et effectuer d'autres opérations. Elle peut également être afficher à l'aide du raccourci clavier Ctrl+Win+W."
     modInitDialogDelay:
       title: "Délai de dialogue d'initialisation du mod"
       description: "Temps en millisecondes à attendre avant d'afficher les boîte de dialogue de progression pour initialiser le mod."
