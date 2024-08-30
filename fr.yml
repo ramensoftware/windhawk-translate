@@ -9,9 +9,9 @@ setup:
   OPEN_PROGRAM: "Lancer $(^NameDA)"
   CLEANCONFIRM: "&Supprimer les paramètres du programme"
   INSTALLED_HEADER: "Déjà installé"
-  INSTALLED_TEXT: "Selectionnez l'action à effectuer"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} est déjà installé. Selectionnez l'action que vous voulez effectuer."
-  INSTALLED_OLD: "Une ancienne version de $(^NameDA) est installée sur votre système. Selectionnez l'action que vous voulez effectuer."
+  INSTALLED_TEXT: "Sélectionnez l'action à effectuer"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION} est déjà installé. Sélectionnez l'action que vous voulez effectuer."
+  INSTALLED_OLD: "Une ancienne version de $(^NameDA) est installée sur votre système. Sélectionnez l'action que vous voulez effectuer."
   INSTALLED_NEW: "Une version plus récente de $(^NameDA) est déjà installée ! Il n'est pas recommandé d'installer une version plus ancienne. Si vous voulez réellement installer cette version plus ancienne, il est recommandé de désinstaller en premier la version actuelle. Sélectionnez l'action que vous voulez effectuer."
   REINSTALL: "&Réinstaller"
   UPDATE: "&Mettre à jour"
@@ -24,7 +24,7 @@ setup:
   INSTTYPE_STANDARD: "&Installation standard (recommandé)"
   INSTTYPE_STANDARD_DESC: "Installer $(^NameDA) pour tous les utilisateurs de cette machine."
   INSTTYPE_PORTABLE: "&Installation portable"
-  INSTTYPE_PORTABLE_DESC: "Extraire une version portable de $(^NameDA). En mode portable, toutes les données de configuration sont stockées dans le dossier de l'application et aucune des informations n'est écrite dans le registre."
+  INSTTYPE_PORTABLE_DESC: "Extraire une version portable de $(^NameDA). En mode portable, toutes les données de configuration sont stockées dans le dossier de l'application et aucune information n'est écrite dans le registre."
   EXTRACTING_FILES: "Extraction des fichiers... %s"
   INETC_DOWNLOADING: "Téléchargement %s"
   INETC_CONNECTING: "Connexion..."
@@ -171,7 +171,7 @@ app:
         descriptionInclusion: "Une liste personnalisée de noms/chemins de processus supplémentaires que le mod va inclure dans le ciblage. Cette liste est ajoutée à la liste d'inclusion que l'auteur du mod a défini pour déterminer quel processus cibler. Pour chaque processus, le mod est chargé si le chemin du processus correspond à l'un de ceux inclus et ne correspond à aucune de ceux exclus."
         titleExclusion: "Liste de processus exclus personnalisée"
         descriptionExclusion: "Une liste personnalisée de noms/chemins de processus supplémentaires que le mod va exclure du ciblage. Cete liste est ajoutée à la liste d'exclusion que l'auteur du mod a défini pour déterminer quel processus cibler. Pour chaque processus, le mod est chargé si le chemin du processus correspond à l'un de ceux inclus et ne correspond à aucune de ceux exclus."
-        processListPlaceholder: "Noms/Chemins des processus, un par ligne, par exemple :"
+        processListPlaceholder: "Noms/chemins des processus, un par ligne, par exemple :"
         saveButton: "Sauvegarder"
       includeExcludeCustomOnly:
         title: "Ignorer les listes d'inclusion/exclusion de mods"
@@ -179,7 +179,7 @@ app:
     changes:
       title: "Changements de la dernière version"
       noData: "La version installée est identique à la dernière version."
-      splitView: "Séparer les vue"
+      splitView: "Séparer les vues"
       expandLines_one: "Développer une ligne cachée"
       expandLines_other: "Développer {{count}} lignes cachées"
   home:
@@ -215,7 +215,7 @@ app:
       description: "Afficher les actions pour développeur, comme créer et modifier des mods."
     advancedSettings: "Paramètres avancés"
     hideTrayIcon:
-      title: "Cacher l'icone de la zone de notification"
+      title: "Cacher l'icône de la zone de notification"
       description: "Vous devez désactiver cette option pour quitter Windhawk."
     requireElevation:
       title: "Contrôle de compte d’utilisateur (UAC) requis pour lancer Windhawk"
@@ -240,7 +240,7 @@ app:
       verbose: "Verbosité"
     processList:
       titleExclusion: "Liste d'exclusion de processus"
-      descriptionExclusion: "Une liste personnalisée de noms/chemins des processus dans lesquels Windhawk ne pourra rien injecter. Cela peut être utile dans les cas où Windhawk n'est pas compatible avec un programme spécifique. Notez qu'ajouter un processus à cette liste empêchera non seulement Windhawk de le personnaliser, mais empêchera également Windhawk d'intercepter les processus enfants créés par ce processus. Cela forcera Windhawk à charger les mods avec un léger retardement dans de tels cas."
+      descriptionExclusion: "Une liste personnalisée de noms/chemins de processus dans lesquels Windhawk ne pourra rien injecter. Cela peut être utile dans les cas où Windhawk n'est pas compatible avec un programme spécifique. Notez qu'ajouter un processus à cette liste empêchera non seulement Windhawk de le personnaliser, mais empêchera également Windhawk d'intercepter les processus enfants créés par ce processus. Cela forcera Windhawk à charger les mods avec un léger retardement dans de tels cas."
       exclusionCriticalProcessesNotice: "La valeur spéciale <0>{{critical_system_processes}}</0> peut être ajoutée à la liste d'exclusion des processus système critiques. Supprimez-le avec précaution, car faire crasher l'un de ces processus peut conduire à un BOSD (écran bleu)."
       titleInclusion: "Liste d'exclusion de processus"
       descriptionInclusion: "Une liste de noms/chemins de processus dans lesquels Windhawk vas pouvoir injecter du code, même s'ils sont dans la liste d'exclusion."
@@ -311,6 +311,6 @@ app:
     preview: "Prévisualier le mod"
     showLogOutput: "Montrer les sorties de log"
     exit: "Quitter le mode d'édition"
-    exitConfirmation: "Les changement effectués depuis la dernière compilation réussie vont être perdues"
+    exitConfirmation: "Les changements effectués depuis la dernière compilation réussie vont être perdus"
     exitButtonOk: "Quitter"
     exitButtonCancel: "Rester"
