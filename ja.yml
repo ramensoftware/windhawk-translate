@@ -62,7 +62,7 @@ tray:
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルを読み込み中..."
   TOOLKITDLG_TITLE: "Windhawk ツールキット"
-  TOOLKITDLG_BUTTON_OPEN: "Windhawk を開く(&O)
+  TOOLKITDLG_BUTTON_OPEN: "Windhawk を開く(&O)"
   TOOLKITDLG_BUTTON_LOADED_MODS: "読み込まれた Mod(&M)"
   TOOLKITDLG_BUTTON_EXIT: "Windhawk を終了(&E)"
   TOOLKITDLG_BUTTON_SAFE_MODE: "セーフモード(&S)"

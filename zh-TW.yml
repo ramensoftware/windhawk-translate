@@ -244,7 +244,7 @@ app:
       titleInclusion: "包含程序清單"
       descriptionInclusion: "即使程序在排除清單中，Windhawk 也會注入的程序名稱或路徑清單。"
       inclusionWithoutExclusionNotice: "沒有空的程序排除清單時，程序包含清單無效。"
-      inclusionWithoutTotalExclusionNotice: "如果您想要排除所有程序，除了這些程序，可以在程序排除清單中設定 \"*\""。
+      inclusionWithoutTotalExclusionNotice: "如果您想要排除所有程序，除了這些程序，可以在程序排除清單中設定 \"*\"。"
       processListPlaceholder: "程序名稱或路徑，每行一個，例如："
     loadModsInCriticalSystemProcesses:
       title: "在關鍵系統程序中載入模組"
