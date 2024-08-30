@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Desktop-Verknüpfung erstellen"
   INSTALLER_RUNNING: "$(^Name) Setup läuft bereits!"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) kann nur in einem leeren Ordner installiert werden."
-  OPEN_PROGRAM: "$(^NameDA) ausführen"
+  OPEN_PROGRAM: "$(^NameDA) öffnen"
   CLEANCONFIRM: "&Programmeinstellungen entfernen"
   INSTALLED_HEADER: "Bereits installiert!"
   INSTALLED_TEXT: "Wählen Sie den auszuführenden Vorgang aus."

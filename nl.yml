@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Bureaublad snelkoppelingen"
   INSTALLER_RUNNING: "$(^Name) Installatie wordt al uitgevoerd"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) kan niet worden geïnstalleerd in een niet-lege map"
-  OPEN_PROGRAM: "$(^NameDA) &starten"
+  OPEN_PROGRAM: "$(^NameDA) &openen"
   CLEANCONFIRM: "&Programma-instellingen verwijderen"
   INSTALLED_HEADER: "Al geïnstalleerd"
   INSTALLED_TEXT: "Selecteer de bewerking om uit te voeren."

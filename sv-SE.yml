@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Skrivbordsgenväg"
   INSTALLER_RUNNING: "$(^Name) Installationen körs redan"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) måste installeras i en tom mapp"
-  OPEN_PROGRAM: "&Kör $(^NameDA)"
+  OPEN_PROGRAM: "&Öppna $(^NameDA)"
   CLEANCONFIRM: "Ta bo&rt programmets inställningar"
   INSTALLED_HEADER: "Redan installerad"
   INSTALLED_TEXT: "Välj operationen som ska utföras."

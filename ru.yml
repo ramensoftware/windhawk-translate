@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Ярлык рабочего стола"
   INSTALLER_RUNNING: "$(^Name) - Установка уже запущена"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) не может быть установлено в непустую папку"
-  OPEN_PROGRAM: "&Запустить $(^NameDA)"
+  OPEN_PROGRAM: "&Открыть $(^NameDA)"
   CLEANCONFIRM: "&Удалить настройки программы"
   INSTALLED_HEADER: "Установлено"
   INSTALLED_TEXT: "Выберите действие."

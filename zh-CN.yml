@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "桌面快捷方式"
   INSTALLER_RUNNING: "$(^Name) 安装程序运行中"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) 无法安装在非空文件夹中"
-  OPEN_PROGRAM: "运行 $(^NameDA)(&R)"
+  OPEN_PROGRAM: "打开 $(^NameDA)(&O)"
   CLEANCONFIRM: "&删除程序的设置"
   INSTALLED_HEADER: "已经安装"
   INSTALLED_TEXT: "选择需要执行的操作。"

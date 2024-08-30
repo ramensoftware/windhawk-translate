@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Comandă rapidă pe Desktop"
   INSTALLER_RUNNING: "Instalatorul $(^Name) rulează deja"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) nu poate fi instalat într-un folder care nu este gol"
-  OPEN_PROGRAM: "Executare $(^NameDA)"
+  OPEN_PROGRAM: "Deschide $(^NameDA)"
   CLEANCONFIRM: "&Șterge setările programului"
   INSTALLED_HEADER: "Deja instalat"
   INSTALLED_TEXT: "Selectează operația de efectuat."

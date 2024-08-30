@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Masaüstü Kısayolu"
   INSTALLER_RUNNING: "$(^Name) Kurulumu zaten çalışıyor"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) boş olmayan bir klasöre kurulamaz"
-  OPEN_PROGRAM: "$(^NameDA) programını çalıştır"
+  OPEN_PROGRAM: "$(^NameDA)'ı aç"
   CLEANCONFIRM: "&Programın ayarlarını kaldır"
   INSTALLED_HEADER: "Zaten Yüklenmiş"
   INSTALLED_TEXT: "Gerçekleştirmek istediğiniz işlemi seçin."

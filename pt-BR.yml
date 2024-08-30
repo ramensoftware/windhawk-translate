@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Atalhos da Área de Trabalho"
   INSTALLER_RUNNING: "Instalação do $(^Name) em andamento"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) não pode ser instalado em uma pasta que não esteja vazia"
-  OPEN_PROGRAM: "&Executar o $(^NameDA)"
+  OPEN_PROGRAM: "&Abrir $(^NameDA)"
   CLEANCONFIRM: "&Remover as configurações do programa"
   INSTALLED_HEADER: "Já instalado"
   INSTALLED_TEXT: "Selecione a operação a ser executado."

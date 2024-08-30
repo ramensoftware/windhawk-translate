@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "デスクトップのショートカット"
   INSTALLER_RUNNING: "$(^Name) のセットアップは実行中です"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) は空ではないフォルダーにインストールできません"
-  OPEN_PROGRAM: "$(^NameDA) を実行(&R)"
+  OPEN_PROGRAM: "$(^NameDA) を開く(&O)"
   CLEANCONFIRM: "プログラムの設定を削除する(&R)"
   INSTALLED_HEADER: "インストール済み"
   INSTALLED_TEXT: "実行する操作を選択してください。"

@@ -6,7 +6,7 @@ setup:
   SECTION_DESKTOP: "Skrót pulpitu"
   INSTALLER_RUNNING: "$(^Name) Instalacja jest już uruchomiona"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) musi być zainstalowany w pustym folderze"
-  OPEN_PROGRAM: "&Uruchom $(^NameDA)"
+  OPEN_PROGRAM: "&Otwórz $(^NameDA)"
   CLEANCONFIRM: "&Usuń ustawienia programu"
   INSTALLED_HEADER: "Już zainstalowane"
   INSTALLED_TEXT: "Wybierz operację do wykonania."
