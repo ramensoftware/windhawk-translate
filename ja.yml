@@ -241,6 +241,7 @@ app:
       titleExclusion: "プロセス除外リスト"
       descriptionExclusion: "Windhawk がインジェクションをしないプロセスとパスのリストです。Windhawk が特定のプログラムと互換性がない場合に役立ちます。このリストにプロセスを追加すると、Windhawk がそのプロセスをカスタマイズしなくなるだけでなくそのプロセスが作成する、子プロセスを Windhawk が傍受できなくなることに注意してください。場合によっては Windhawk の Mod の読み込みに若干の遅延が発生します。"
       exclusionCriticalProcessesNotice: "<0>{{critical_system_processes}}</0> という特別な値をリストに追加することで、重要なシステムプロセスを除外することができます。これらのプロセスをクラッシュさせた場合、BSOD が発生する可能性があるので、削除しないように注意してください。"
+      titleInclusion: "プロセス包含リスト"
       descriptionInclusion: "除外リストに含んでいても Windhawk がインジェクションをするプロセス名とパスのリスト"
       inclusionWithoutExclusionNotice: "プロセス除外リストが空の場合、プロセス対象リストには効果がありません。"
       inclusionWithoutTotalExclusionNotice: "これら以外のすべてのプロセスを除外する場合は、プロセス除外リストに｢*(ワイルドカード)｣を設定できます。"
