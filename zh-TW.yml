@@ -114,7 +114,7 @@ app:
         title: "模組作者"
         homepage: "主頁"
         github: "GitHub"
-        twitter: "Twitter"
+        twitter: "X (Twitter)"
       processes:
         all: "所有程序"
         allBut: "除了 {{list}} 之外的所有程序"
@@ -278,7 +278,7 @@ app:
     modAuthor: "模組作者"
     homepage: "首頁"
     github: "GitHub"
-    twitter: "Twitter"
+    twitter: "X (Twitter)"
     verified: "已驗證"
     verifiedTooltip: "我們已驗證此帳戶屬於模組作者，但請注意 <0>已驗證</0> 不等於 <0>信任</0>。請確保您信任模組作者，或在安裝前仔細檢查原始碼。"
     acceptButton: "接受風險並安裝"

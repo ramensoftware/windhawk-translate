@@ -114,7 +114,7 @@ app:
         title: "Mod yapımcısı"
         homepage: "Ana Sayfa"
         github: "GitHub"
-        twitter: "Twitter"
+        twitter: "X (Twitter)"
       processes:
         all: "Tüm işlemler"
         allBut: "Tümü ama {{list}}"
@@ -278,7 +278,7 @@ app:
     modAuthor: "Mod yapımcısı"
     homepage: "Ana sayfa"
     github: "GitHub"
-    twitter: "Twitter"
+    twitter: "X (Twitter)"
     verified: "doğrulanmış"
     verifiedTooltip: "Bu profilin modun yapımcısına ait olduğunu doğruladık ancak <0>doğrulanmış</0> olması <0>güvenilir</0> olduğu anlamına gelmiyor. Mod yapımcısına güvendiğinizden emin olun veya yüklemeden önce kaynak kodunu dikkatlice inceleyin."
     acceptButton: "Riski Kabul Et ve Yükle"

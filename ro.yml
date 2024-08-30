@@ -114,7 +114,7 @@ app:
         title: "Autorul modului"
         homepage: "Pagina de pornire"
         github: "GitHub"
-        twitter: "Twitter"
+        twitter: "X (Twitter)"
       processes:
         all: "Toate procesele"
         allBut: "Toate, cu excepția {{list}}"
@@ -278,7 +278,7 @@ app:
     modAuthor: "Autorul modului"
     homepage: "Pagina de pornire"
     github: "GitHub"
-    twitter: "Twitter"
+    twitter: "X (Twitter)"
     verified: "verificat"
     verifiedTooltip: "Am verificat că acest profil îi aparține autorului modului, dar <0>persoanele verificate</0> nu pot fi întotdeauna <0>de încredere</0>. Asigură-te că autorul acestui mod este de încredere sau inspectează cu atenție codul sursă înainte de instalare."
     acceptButton: "Acceptă riscul și instalează"

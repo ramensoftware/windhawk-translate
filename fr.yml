@@ -114,7 +114,7 @@ app:
         title: "Auteur du mod"
         homepage: "Page d'accueil"
         github: "GitHub"
-        twitter: "Twitter"
+        twitter: "X (Twitter)"
       processes:
         all: "Tous les processus"
         allBut: "Tous sauf {{list}}"
@@ -278,7 +278,7 @@ app:
     modAuthor: "Auteur du mod"
     homepage: "Page d'accueil"
     github: "GitHub"
-    twitter: "Twitter"
+    twitter: "X (Twitter)"
     verified: "vérifié"
     verifiedTooltip: "Nous avons vérifié que ce profil appartient à l'auteur du mod, mais prenez en considération que la note <0>verifié</0> n'est pas la même que la note <0>créateur de confiance</0>. Soyez sûr d'avoir confiance en l'auteur du mod, or d'analyser avec soin le code source du mod avant de l'installer."
     acceptButton: "Accepter les risques et installer"

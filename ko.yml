@@ -114,7 +114,7 @@ app:
         title: "모드 작성자"
         homepage: "홈페이지"
         github: "GitHub"
-        twitter: "Twitter"
+        twitter: "X (Twitter)"
       processes:
         all: "모든 프로세스"
         allBut: "{{list}} 외의 모든 프로세스"
@@ -278,7 +278,7 @@ app:
     modAuthor: "모드 작성자"
     homepage: "홈페이지"
     github: "GitHub"
-    twitter: "Twitter"
+    twitter: "X (Twitter)"
     verified: "인증됨"
     verifiedTooltip: "이 프로필이 모드 작성자의 것임을 확인했지만 <0>인증됨</0>은 <0>신뢰할 수 있음</0>과 다릅니다. 모드 작성자를 신뢰하는지 확인하거나 설치하기 전에 소스 코드를 신중히 검사하세요."
     acceptButton: "위험을 감수하고 설치"

@@ -114,7 +114,7 @@ app:
         title: "Modd-upphovsman"
         homepage: "Hemsida"
         github: "GitHub"
-        twitter: "Twitter (X)"
+        twitter: "X (Twitter)"
       processes:
         all: "Alla processor"
         allBut: "Alla utom {{list}}"
@@ -278,7 +278,7 @@ app:
     modAuthor: "Modd-utvecklare"
     homepage: "Hemsida"
     github: "GitHub"
-    twitter: "Twitter (X)"
+    twitter: "X (Twitter)"
     verified: "verifierad"
     verifiedTooltip: "Vi har verifierat att den här profilen tillhör modd-utvecklaren, men notera att <0>verifierad</0> inte är detsamma som <0>betrodd</0>. Se till att du litar på modd-utvecklaren eller inspektera källkoden noggrant innan du installerar."
     acceptButton: "Acceptera risken och installera"
