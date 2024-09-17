@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "Repornire în modul de siguranță"
   SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcțiile de injectat cod dezactivate."
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "Se încarcă..."

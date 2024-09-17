@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "以安全模式重新啟動"
   SAFE_MODE_TEXT: "Windhawk 將以所有程式碼注入功能關閉的狀態重新啟動。"
   TASKDLG_PROCESS_SUSPENDED: "（已暫停）"
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "正在載入..."

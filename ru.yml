@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "Перезапустить в безопасном режиме"
   SAFE_MODE_TEXT: "Windhawk будет перезапущен с отключённым функционалом кастомизации программ."
   TASKDLG_PROCESS_SUSPENDED: "(приостановлен)"
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "Загрузка..."

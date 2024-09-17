@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "Redémarrer en mode sans échec"
   SAFE_MODE_TEXT: "Windhawk va être relancé mais toutes les fonctions d'injection de code seront désactivées"
   TASKDLG_PROCESS_SUSPENDED: "(suspendu)"
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "Chargement..."

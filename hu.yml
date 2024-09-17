@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "Újraindítás biztonságos módban"
   SAFE_MODE_TEXT: "A Windhawk újraindul, és minden kódbefecskendezési funkció ki lesz kapcsolva."
   TASKDLG_PROCESS_SUSPENDED: "(felfüggesztve)"
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "Betöltés..."

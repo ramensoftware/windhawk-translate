@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "Starta om i säkert läge"
   SAFE_MODE_TEXT: "Windhawk kommer att startas om med all kodinjektion avstängd."
   TASKDLG_PROCESS_SUSPENDED: "(avstängda)"
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "Laddar..."

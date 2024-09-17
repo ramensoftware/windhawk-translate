@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "Relaunch in safe mode"
   SAFE_MODE_TEXT: "Windhawk will be relaunched with all the code injection functionality turned off."
   TASKDLG_PROCESS_SUSPENDED: "(suspended)"
+  SAFE_MODE_DETECTED_TITLE: "Safe mode"
+  SAFE_MODE_DETECTED_TEXT: "Windows is running in safe mode. Would you like to enable safe mode in Windhawk? All code injection functionality will be turned off."
 app:
   general:
     loading: "Loading..."

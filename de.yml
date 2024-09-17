@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: ~
   SAFE_MODE_TEXT: ~
   TASKDLG_PROCESS_SUSPENDED: ~
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "Lade..."

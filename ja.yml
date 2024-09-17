@@ -71,6 +71,8 @@ tray:
   SAFE_MODE_TITLE: "セーフモードで再起動"
   SAFE_MODE_TEXT: "Windhawk のコードインジェクション機能をオフにした状態で再起動します。"
   TASKDLG_PROCESS_SUSPENDED: "(一時停止中)"
+  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "読み込み中..."
