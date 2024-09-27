@@ -265,7 +265,7 @@ app:
       subtitle: "Ia în considerare să actualizezi Windhawk pentru a obține cele mai noi funcții și remedieri de bug-uri"
       button: "Mai multe detalii"
     links:
-      title: "Link-uri"
+      title: "Linkuri"
       homepage: "Pagina de pornire"
       documentation: "Documentație"
     builtWith:
