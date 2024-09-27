@@ -292,7 +292,7 @@ app:
     message: "Crearea și modificarea modurilor necesită niște cunoștințe de dezvoltare Windows C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
     hideOptionsCheckbox: "Ascunde toate opțiunile relevante dezvoltării"
     hideOptionsButton: "Ascunde opțiunile"
-    beginCodingButton: "Începe să programezi"
+    beginCodingButton: "Începe să codezi"
     cancelButton: "Anulare"
   safeMode:
     alert: "Windhawk rulează în modul de siguranță. Toate funcționalitățile de injectat cod sunt dezactivate."
