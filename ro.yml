@@ -69,10 +69,10 @@ tray:
   TOOLKITDLG_BUTTON_SAFE_MODE: "Mod de &siguranță"
   TOOLKITDLG_BUTTON_CLOSE: "În&chide trusa de unelte"
   SAFE_MODE_TITLE: "Repornire în modul de siguranță"
-  SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcțiile de injectat cod dezactivate."
+  SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcționalitățile de injectat cod dezactivate."
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  SAFE_MODE_DETECTED_TITLE: "Mod de siguranță"
+  SAFE_MODE_DETECTED_TEXT: "Windows rulează în modul de siguranță. Ai dori să activezi modul de siguranță în Windhawk? Toate funcționalitățile de injectat cod vor fi dezactivate."
 app:
   general:
     loading: "Se încarcă..."
