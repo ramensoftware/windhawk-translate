@@ -44,10 +44,10 @@ tray:
   EXITDLG_BUTTON_EXIT: "&Închide Windhawk"
   EXITDLG_BUTTON_CANCEL: "Anulare"
   NOTIFICATION_UPDATE_APP: "O nouă versiune de Windhawk este disponibilă"
-  NOTIFICATION_UPDATE_APP_MOD: "O nouă versiune de Windhawk este disponibilă, și un mod poate fi actualizat"
-  NOTIFICATION_UPDATE_APP_MODS: "O nouă versiune de Windhawk este disponibilă, și %d moduri pot fi actualizate"
+  NOTIFICATION_UPDATE_APP_MOD: "O nouă versiune de Windhawk este disponibilă și un mod poate fi actualizat"
+  NOTIFICATION_UPDATE_APP_MODS: "O nouă versiune de Windhawk este disponibilă și %d (de) moduri pot fi actualizate"
   NOTIFICATION_UPDATE_MOD: "Un mod Windhawk poate fi actualizat"
-  NOTIFICATION_UPDATE_MODS: "%d moduri Windhawk pot fi actualizate"
+  NOTIFICATION_UPDATE_MODS: "%d (de) moduri Windhawk pot fi actualizate"
   TRAYICON_TOOLTIP_UPDATE: "O nouă versiune este disponibilă"
   TASKDLG_TITLE_LOADED_MODS: "Moduri încărcate"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Sarcini ale unui mod în progres"
@@ -69,10 +69,10 @@ tray:
   TOOLKITDLG_BUTTON_SAFE_MODE: "Mod de &siguranță"
   TOOLKITDLG_BUTTON_CLOSE: "În&chide trusa de unelte"
   SAFE_MODE_TITLE: "Repornire în modul de siguranță"
-  SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcțiile de injectat cod dezactivate."
+  SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcționalitățile de injectat cod dezactivate."
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  SAFE_MODE_DETECTED_TITLE: "Mod de siguranță"
+  SAFE_MODE_DETECTED_TEXT: "Windows rulează în modul de siguranță. Ai dori să activezi modul de siguranță în Windhawk? Toate funcționalitățile de injectat cod vor fi dezactivate."
 app:
   general:
     loading: "Se încarcă..."
@@ -265,7 +265,7 @@ app:
       subtitle: "Ia în considerare să actualizezi Windhawk pentru a obține cele mai noi funcții și remedieri de bug-uri"
       button: "Mai multe detalii"
     links:
-      title: "Link-uri"
+      title: "Linkuri"
       homepage: "Pagina de pornire"
       documentation: "Documentație"
     builtWith:
@@ -292,10 +292,10 @@ app:
     message: "Crearea și modificarea modurilor necesită niște cunoștințe de dezvoltare Windows C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
     hideOptionsCheckbox: "Ascunde toate opțiunile relevante dezvoltării"
     hideOptionsButton: "Ascunde opțiunile"
-    beginCodingButton: "Începe să programezi"
+    beginCodingButton: "Începe să codezi"
     cancelButton: "Anulare"
   safeMode:
-    alert: "Windhawk rulează în modul de siguranță. Toate funcțiile de injectat cod sunt dezactivate."
+    alert: "Windhawk rulează în modul de siguranță. Toate funcționalitățile de injectat cod sunt dezactivate."
     offButton: "Oprește modul de siguranță"
     offConfirm: "Windhawk va fi repornit pentru a aplica setările."
     offConfirmOk: "Repornește Windhawk"
