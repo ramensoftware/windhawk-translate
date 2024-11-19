@@ -140,7 +140,7 @@ app:
       noData: "Les détails du mod sont manquants."
     settings:
       title: "Paramètres"
-      noData: "Aucun de mod ne possède de paramètres"
+      noData: "Aucun paramètre disponible pour ce mod"
       saveButton: "Sauvegarder les paramètres"
       sampleValue: "Valeur de l'échantillon"
       arrayItemAdd: "Ajouter un nouvel élément"
