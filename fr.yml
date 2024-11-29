@@ -71,8 +71,8 @@ tray:
   SAFE_MODE_TITLE: "Redémarrer en mode sans échec"
   SAFE_MODE_TEXT: "Windhawk va être relancé mais toutes les fonctions d'injection de code seront désactivées"
   TASKDLG_PROCESS_SUSPENDED: "(suspendu)"
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  SAFE_MODE_DETECTED_TITLE: "Mode sans échec"
+  SAFE_MODE_DETECTED_TEXT: "Windows est en mode sans échec. Voulez-vous activer le mode sans échec dans Windhawk ? Toutes les fonctionnalités d'injection de code seront désactivées"
 app:
   general:
     loading: "Chargement..."
@@ -140,7 +140,7 @@ app:
       noData: "Les détails du mod sont manquants."
     settings:
       title: "Paramètres"
-      noData: "Aucun de mod ne possède de paramètres"
+      noData: "Aucun paramètre disponible pour ce mod"
       saveButton: "Sauvegarder les paramètres"
       sampleValue: "Valeur de l'échantillon"
       arrayItemAdd: "Ajouter un nouvel élément"
@@ -287,7 +287,7 @@ app:
     acceptButton: "Accepter les risques et installer"
     cancelButton: "Annuler"
   createNewModButton:
-    title: "Créer une nouveau mod"
+    title: "Créer un nouveau mod"
   devModeAction:
     message: "Créer et modifier des mods demande quelques connaissances de développement dans les langages C/C++ pour Windows. Si vous n'êtes pas sûr de ce que cela signfie, ces options ne sont peut-être pas pour vous."
     hideOptionsCheckbox: "Cacher toutes les options de développement"
