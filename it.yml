@@ -222,7 +222,7 @@ app:
       description: "Dovrai disabilitare questa opzione per uscire da Windhawk."
     requireElevation:
       title: "Richiedi l'elevazione UAC per l'esecuzione di Windhawk"
-      description: "Windhawk richiede i diritti di amministratore, ma per un computer con un solo utente, aprire il prompt UAC ogni volta può essere fastidioso, ma puoi scegliere di far ignorare questa opzione a  Windhawk. Abilita questa opzione per richiedere l'elevazione UAC per l'esecuzione di Windhawk."
+      description: "Windhawk richiede i diritti di amministratore, ma per un computer con un solo utente, aprire il prompt UAC ogni volta può essere fastidioso, ma puoi scegliere di far ignorare questa opzione a Windhawk. Abilita questa opzione per richiedere l'elevazione UAC per l'esecuzione di Windhawk."
     dontAutoShowToolkit:
       title: ~
       description: ~

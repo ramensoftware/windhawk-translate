@@ -22,7 +22,7 @@ setup:
   INSTTYPE_TEXT: "选择您想要安装的类型。"
   INSTTYPE_INTRO: "欢迎您来到 $(^NameDA) 的安装程序。选择您的安装类型。"
   INSTTYPE_STANDARD: "&标准安装 (强烈建议)"
-  INSTTYPE_STANDARD_DESC: " $(^NameDA) 将为此电脑所有用户安装。"
+  INSTTYPE_STANDARD_DESC: "$(^NameDA) 将为此电脑所有用户安装。"
   INSTTYPE_PORTABLE: "&便携版安装"
   INSTTYPE_PORTABLE_DESC: "解压便携版 $(^NameDA)。 在便携版模式中，所有的配置文件都会存放在当前文件夹中并且不会写入注册表文件。"
   EXTRACTING_FILES: "Extracting files... %s"
