@@ -175,10 +175,14 @@ app:
         titleExclusion: "Egyéni folyamat kizárási lista"
         descriptionExclusion: "Egy egyéni lista további végrehajtható fájlnevekről/útvonalakról, amelyeket a mod kizár a célzásból."
         processListPlaceholder: "Folyamat nevek/útvonalak, egy sorban, például:"
+        invalidCharactersWarning: ~
         saveButton: "Mentés"
       includeExcludeCustomOnly:
         title: "Mod bevonási/kizárási listák figyelmen kívül hagyása"
         description: "A mod folyamat bevonási/kizárási listáinak figyelmen kívül hagyása, és csak a fentiek használata."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Legújabb verzió változásai"
       noData: "A telepített verzió megegyezik a legújabb verzióval."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Folyamat kizárási lista"
       descriptionExclusion: "A Windhawk nem fog injektálni az itt megadott folyamatokba."
-      exclusionCriticalProcessesNotice: "A <0>{{critical_system_processes}}</0> érték különleges, és hozzáadható a listához a kritikus rendszerfolyamatok kizárásához."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Folyamat bevonási lista"
       descriptionInclusion: "Lista folyamatokról, amelyekbe a Windhawk injektál, még akkor is, ha azok a kizárási listán vannak."
       inclusionWithoutExclusionNotice: "A folyamat bevonási lista nem működik üres folyamat kizárási listával."
       inclusionWithoutTotalExclusionNotice: "Ha azt szeretné, hogy minden folyamat kizárva legyen, kivéve ezeket, állítsa be a „*” értéket a folyamat kizárási listában."
       processListPlaceholder: "Folyamat nevek/útvonalak, egy sorban, például:"
-    loadModsInCriticalSystemProcesses:
-      title: "Modok betöltése kritikus rendszerfolyamatokban"
-      description: "Alapértelmezés szerint a Windhawk csak akkor tölt be modokat kritikus rendszerfolyamatokban, ha a folyamat célzottan van megadva."
-      never: "Soha"
-      onlyExplicitMatch: "Csak ha kifejezetten célozva van"
-      always: "Ha kifejezetten vagy implicit módon célzott (nem ajánlott)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "béta"

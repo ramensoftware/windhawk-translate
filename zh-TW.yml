@@ -175,10 +175,14 @@ app:
         titleExclusion: "自訂程序排除清單"
         descriptionExclusion: "模組將排除的額外可執行檔名稱或路徑的自訂清單。此清單會添加到模組作者定義的排除清單中，以決定要鎖定的程序。對於每個程序，如果可執行檔路徑符合其中一個包含項目且不符合任何排除項目，則會載入模組。"
         processListPlaceholder: "程序名稱或路徑，每行一個，例如："
+        invalidCharactersWarning: ~
         saveButton: "儲存"
       includeExcludeCustomOnly:
         title: "忽略模組的包含/排除清單"
         description: "忽略模組的程序包含/排除清單，僅使用上面的自訂清單。"
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "最新版本變更"
       noData: "已安裝的版本與最新版本相同。"
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "排除程序清單"
       descriptionExclusion: "不希望 Windhawk 注入的程序名稱或路徑清單。當 Windhawk 與特定程式不相容時，可以派上用場。請注意，將程序添加到此清單不僅會阻止 Windhawk 自訂它，還會阻止 Windhawk 攔截該程序建立的子程序。這將導致 Windhawk 在這種情況下稍後載入模組。"
-      exclusionCriticalProcessesNotice: "可以將特殊的 <0>{{critical_system_processes}}</0> 值添加到清單中以排除關鍵系統程序。小心移除它，因為其中一個程序發生異常可能會導致系統當機。"
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "包含程序清單"
       descriptionInclusion: "即使程序在排除清單中，Windhawk 也會注入的程序名稱或路徑清單。"
       inclusionWithoutExclusionNotice: "沒有空的程序排除清單時，程序包含清單無效。"
       inclusionWithoutTotalExclusionNotice: "如果您想要排除所有程序，除了這些程序，可以在程序排除清單中設定 \"*\"。"
       processListPlaceholder: "程序名稱或路徑，每行一個，例如："
-    loadModsInCriticalSystemProcesses:
-      title: "在關鍵系統程序中載入模組"
-      description: "預設情況下，Windhawk 只會在明確指定程序時，才在關鍵系統程序中載入模組，也就是說，程序必須在模組的程序包含清單中列出，且不使用萬用字元。"
-      never: "永不"
-      onlyExplicitMatch: "僅在明確指定時"
-      always: "在明確或隱含指定時（不建議）"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "測試版"

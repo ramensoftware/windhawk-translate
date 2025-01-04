@@ -175,10 +175,14 @@ app:
         titleExclusion: "Danh sách loại trừ quy trình tùy chỉnh"
         descriptionExclusion: "Danh sách tùy chỉnh của tên tệp thực thi/đường dẫn bổ sung mà mod sẽ loại trừ khỏi mục tiêu. Danh sách này được thêm vào danh sách loại trừ mà tác giả mod đã xác định để quyết định quy trình nào sẽ nhắm mục tiêu. Đối với mỗi quy trình, mod sẽ được tải nếu đường dẫn tệp thực thi khớp với một trong các mục bao gồm và không khớp với bất kỳ mục loại trừ nào."
         processListPlaceholder: "Tên/đường dẫn quy trình, mỗi dòng một, ví dụ:"
+        invalidCharactersWarning: ~
         saveButton: "Lưu"
       includeExcludeCustomOnly:
         title: "Bỏ qua danh sách bao gồm/loại trừ của mod"
         description: "Bỏ qua danh sách bao gồm/loại trừ quy trình của mod và chỉ sử dụng các danh sách tùy chỉnh bên trên."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Thay đổi phiên bản mới nhất"
       noData: "Phiên bản đã cài đặt giống hệt với phiên bản mới nhất."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Danh sách loại trừ quy trình"
       descriptionExclusion: "Danh sách tên/đường dẫn quy trình mà Windhawk sẽ không tiêm vào. Có thể hữu ích trong trường hợp Windhawk không tương thích với một chương trình cụ thể. Lưu ý rằng việc thêm một quy trình vào danh sách này không chỉ ngăn Windhawk tùy chỉnh nó mà còn ngăn Windhawk chặn các quy trình con mà quy trình này tạo ra. Điều này sẽ khiến Windhawk tải mod với một độ trễ nhẹ trong những trường hợp như vậy."
-      exclusionCriticalProcessesNotice: "Giá trị đặc biệt <0>{{critical_system_processes}}</0> có thể được thêm vào danh sách để loại trừ các quy trình hệ thống quan trọng. Cẩn thận khi xóa nó, vì việc hỏng một trong những quy trình này có thể dẫn đến màn hình xanh."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Danh sách bao gồm quy trình"
       descriptionInclusion: "Danh sách tên/đường dẫn quy trình mà Windhawk sẽ tiêm vào, ngay cả khi chúng nằm trong danh sách loại trừ."
       inclusionWithoutExclusionNotice: "Danh sách bao gồm quy trình không có tác dụng với danh sách loại trừ quy trình rỗng."
       inclusionWithoutTotalExclusionNotice: "Nếu bạn định loại trừ tất cả các quy trình trừ những quy trình này, bạn có thể đặt \"*\" trong danh sách loại trừ quy trình."
       processListPlaceholder: "Tên/đường dẫn quy trình, mỗi dòng một, ví dụ:"
-    loadModsInCriticalSystemProcesses:
-      title: "Tải mod trong các quy trình hệ thống quan trọng"
-      description: "Theo mặc định, Windhawk chỉ tải mod trong các quy trình hệ thống quan trọng nếu quy trình đó được nhắm mục tiêu rõ ràng, tức là được liệt kê mà không có ký tự đại diện trong danh sách bao gồm quy trình của mod."
-      never: "Không bao giờ"
-      onlyExplicitMatch: "Chỉ khi được nhắm mục tiêu rõ ràng"
-      always: "Nếu được nhắm mục tiêu rõ ràng hoặc ngầm định (không khuyến nghị)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

@@ -175,10 +175,14 @@ app:
         titleExclusion: "Aangepaste proces-uitsluitingslijst"
         descriptionExclusion: "Een aangepaste lijst met extra uitvoerbare bestandsnamen/-paden die de mod zal uitsluiten van targeten. De lijst wordt toegevoegd aan de uitsluitingslijst die de auteur van de mod heeft gedefinieerd om te bepalen welke processen moeten worden getarget. Voor elk proces wordt de mod geladen als het pad van het uitvoerbare bestand overeenkomt met een van de opnamevermeldingen en niet overeenkomt met een uitsluitingsvermelding."
         processListPlaceholder: "Procesnamen/-paden, één per regel, bijvoorbeeld:"
+        invalidCharactersWarning: ~
         saveButton: "Opslaan"
       includeExcludeCustomOnly:
         title: "Mod opname-/uitsluitingslijsten negeren"
         description: "Negeer de opname- en uitsluitingslijsten van de mod en gebruik alleen de aangepaste lijsten hierboven."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Wijzigingen laatste versie"
       noData: "De geïnstalleerde versie is identiek aan de nieuwste versie."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Uitsluitingslijst verwerken"
       descriptionExclusion: "Een lijst met procesnamen/-paden waarin Windhawk niet zal injecteren. Kan handig zijn voor gevallen waarin Windhawk niet compatibel is met een specifiek programma. Let er op dat het toevoegen van een proces aan deze lijst niet alleen voorkomt dat Windhawk het aanpast, maar ook voorkomt dat Windhawk subprocessen onderschept die dit proces aanmaakt. Hierdoor zal Windhawk in zulke gevallen mods met een kleine vertraging laden."
-      exclusionCriticalProcessesNotice: "De speciale <0>{{critical_system_processes}}</0> waarde kan aan de lijst worden toegevoegd om kritieke systeemprocessen uit te sluiten. Pas op met het verwijderen ervan, want het crashen van een van deze processen kan leiden tot een BSOD."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Proces-opnamelijst"
       descriptionInclusion: "Een lijst met procesnamen/-paden waarin Windhawk zal injecteren, zelfs als ze in de uitsluitingslijst staan."
       inclusionWithoutExclusionNotice: "De proces-opnameijst heeft geen effect met een lege proces-uitsluitingslijst."
       inclusionWithoutTotalExclusionNotice: "Als je alle processen wilt uitsluiten behalve deze, kun je \"*\" in de proces-uitsluitingslijst zetten."
       processListPlaceholder: "Procesnamen/-paden, één per regel, bijvoorbeeld:"
-    loadModsInCriticalSystemProcesses:
-      title: "Mods laden in kritieke systeemprocessen"
-      description: "Standaard laadt Windhawk alleen mods in kritieke systeemprocessen als het proces expliciet wordt vermeld, d.w.z. zonder jokertekens in de proces-opnamelijst van de mod."
-      never: "Nooit"
-      onlyExplicitMatch: "Alleen indien expliciet getarget"
-      always: "Indien expliciet of impliciet getarget (niet aanbevolen)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "bèta"

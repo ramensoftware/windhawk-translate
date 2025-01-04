@@ -175,10 +175,14 @@ app:
         titleExclusion: "自定义进程排除列表"
         descriptionExclusion: "Mod将作用于不在此自定义列表中的可执行文件/路径。该列表被添加到Mod作者定义的包含列表中，以确定目标进程。对于每个进程，如果可执行文件/路径匹配一个包含项，而不匹配任何排除项，则加载Mod。"
         processListPlaceholder: "进程名称/路径，每行一条内容，例如："
+        invalidCharactersWarning: ~
         saveButton: "保存"
       includeExcludeCustomOnly:
         title: "Ignore mod inclusion/exclusion lists"
         description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "新版本更新内容"
       noData: "安装的版本与最新版本相同。"
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "排除的进程列表"
       descriptionExclusion: "Windhawk不会注入的进程名/路径列表。在Windhawk与特定程序不兼容的情况下十分有用。请您注意，向这个列表中添加一个进程不仅会阻止Windhawk对它进行定制化处理，还会阻止Windhawk拦截该进程创建的子进程。这将导致Windhawk加载Mod的时候有轻微延迟。"
-      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "包含的进程列表"
       descriptionInclusion: "Windhawk将注入的进程名/路径列表，即使它们在排除列表中。"
       inclusionWithoutExclusionNotice: "进程包含列表对于空进程排除列表无效。"
       inclusionWithoutTotalExclusionNotice: "如果您打算排除除这些之外的所有进程，您可以用“*”在进程排除列表中设置。"
       processListPlaceholder: "进程名/路径，每行一个，例如:"
-    loadModsInCriticalSystemProcesses:
-      title: "Load mods in critical system processes"
-      description: "By default, Windhawk only loads mods in critical system processes if the process is targeted explicitly, i.e. is listed without wildcards in the mod's process inclusion list."
-      never: "Never"
-      onlyExplicitMatch: "Only if targeted explicitly"
-      always: "If targeted explicitly or implicitly (not recommended)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk版本{{version}}"
     beta: "beta版本"

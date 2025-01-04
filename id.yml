@@ -175,10 +175,14 @@ app:
         titleExclusion: "Daftar proses pengecualian kustom"
         descriptionExclusion: "Daftar kustom berisi nama/jalur file yang dapat dieksekusi tambahan yang akan dikecualikan mod dari penargetan. Daftar tersebut ditambahkan ke daftar pengecualian yang ditetapkan oleh pembuat mod untuk menentukan proses mana yang akan ditargetkan. Untuk setiap proses, mod dimuat jika jalur file yang dapat dieksekusi cocok dengan salah satu entri yang disertakan dan tidak cocok dengan entri yang dikecualikan."
         processListPlaceholder: "Nama proses/jalur, satu per baris, sebagai contoh:"
+        invalidCharactersWarning: ~
         saveButton: "Simpan"
       includeExcludeCustomOnly:
         title: "Abaikan daftar penyertaan/pengecualian mod"
         description: "Abaikan daftar penyertaan/pengecualian proses mod dan gunakan hanya daftar kustom di atas."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Perubahan Versi Saat Ini"
       noData: "Versi yang terpasang identik dengan versi saat ini."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Proses pengecualian daftar"
       descriptionExclusion: "Daftar nama/jalur proses yang tidak akan diinject Windhawk. Dapat berguna untuk kasus-kasus ketika Windhawk tidak kompatibel dengan program tertentu. Perhatikan bahwa menambahkan proses ke daftar ini tidak hanya akan mencegah Windhawk untuk menyesuaikannya, tetapi juga akan mencegah Windhawk untuk mencegat proses anak yang dibuat oleh proses ini. Ini akan menyebabkan Windhawk memuat mod dengan sedikit keterlambatan dalam kasus-kasus seperti itu."
-      exclusionCriticalProcessesNotice: "Value <0>{{critical_system_processes}}</0> spesial bisa ditambahkan ke daftar untuk pengecualian kritis proses sistem. Hati-hati saat mau menghapus, karena crash pada salah satu proses ini dapat mengakibatkan BSOD."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Proses penyertaan daftar"
       descriptionInclusion: "Daftar nama proses/jalur yang akan diinject Windhawk, bahkan jika mereka ada dalam daftar pengecualian."
       inclusionWithoutExclusionNotice: "Proses penyertaan daftar tidak berefek dengan proses kosong daftar pengecualian."
       inclusionWithoutTotalExclusionNotice: "Jika anda bermaksud untuk mengecualikan semua proses kecuali ini, anda bisa mengatur \"*\" di daftar proses pengecualian."
       processListPlaceholder: "Nama proses/jalur, satu per baris, sebagai contoh:"
-    loadModsInCriticalSystemProcesses:
-      title: "Memuat mod dalam proses sistem kritis"
-      description: "Secara default, Windhawk hanya memuat mod dalam proses sistem kritis jika proses ditargetkan eksplisit, misalnya tercantum tanpa karakter pengganti dalam daftar penyertaan proses mod."
-      never: "Jangan Pernah"
-      onlyExplicitMatch: "Hanya jika ditargetkan secara eksplisit"
-      always: "Jika ditergatkan secara eksplisit atau implisit (tidak direkomendasikan)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

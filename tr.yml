@@ -175,10 +175,14 @@ app:
         titleExclusion: "Özel işlem hariç tutma listesi"
         descriptionExclusion: "Modun hedefleme dışında bırakacağı ek yürütülebilir dosya adlarının/yollarının özel bir listesi. Liste, hangi işlemlerin hedefleneceğini belirlemek için mod yazarının tanımladığı dışlama listesine eklenir. Her işlem için, yürütülebilir dosya yolu dahil etme girişlerinden biriyle eşleşirse ve herhangi bir hariç tutma girişiyle eşleşmezse mod yüklenir."
         processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
+        invalidCharactersWarning: ~
         saveButton: "Kaydet"
       includeExcludeCustomOnly:
         title: "Mod ekleme/hariç tutma listelerini yoksay"
         description: "Modun işlem dahil etme/hariç tutma listelerini göz ardı et ve yalnızca yukarıdaki özel listeleri kullan."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Son Sürüm Değişiklikleri"
       noData: "Yüklü sürüm, en son sürümle aynı."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "İşlem hariç etme listesi"
       descriptionExclusion: "Windhawk'ın enjekte etmeyeceği işlem adlarının/yollarının bir listesi. Windhawk'ın belirli bir programla uyumlu olmadığı durumlarda yararlı olabilir. Bu listeye bir süreç eklemenin Windhawk'ın onu özelleştirmesini engellemenin yanı sıra Windhawk'ın bu sürecin oluşturduğu alt süreçleri yakalamasını da engelleyeceğini unutmayın. Bu, Windhawk'ın bu gibi durumlarda modları hafif bir gecikmeyle yüklemesine neden olacaktır."
-      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "İşlem dahil etme listesi"
       descriptionInclusion: "Dışlama listesinde olsalar bile Windhawk'ın enjekte edeceği işlem adlarının/yollarının bir listesi."
       inclusionWithoutExclusionNotice: "İşlem dahil etme listesinin, boş bir işlem hariç tutma listesi ile hiçbir etkisi yoktur."
       inclusionWithoutTotalExclusionNotice: "Bunlar dışındaki tüm işlemleri hariç tutmak istiyorsanız, işlem dışlama listesinde \"*\" ayarını yapabilirsiniz."
       processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
-    loadModsInCriticalSystemProcesses:
-      title: "Kritik sistem işlemlerinde modları yükle"
-      description: "Varsayılan olarak Windhawk, kritik sistem işlemlerindeki modları yalnızca işlem açıkça hedefleniyorsa, yani modun işlem dahil etme listesinde joker karakterler olmadan listeleniyorsa yükler."
-      never: "Asla"
-      onlyExplicitMatch: "Yalnızca açıkça hedeflenmişse"
-      always: "Açıkça veya örtülü olarak hedefleniyorsa (önerilmez)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

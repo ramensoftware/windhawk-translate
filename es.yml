@@ -175,10 +175,14 @@ app:
         titleExclusion: "Lista de exclusión de procesos personalizados"
         descriptionExclusion: "Una lista personalizada de nombres/rutas de archivos ejecutables adicionales que el mod excluirá de la orientación. La lista se agrega a la lista de exclusión que el autor del mod definió para determinar a qué procesos apuntar. Para cada proceso, el mod se carga si la ruta del archivo ejecutable coincide con una de las entradas de inclusión y no coincide con ninguna entrada de exclusión."
         processListPlaceholder: "Nombres/rutas de procesos, uno por línea, por ejemplo:"
+        invalidCharactersWarning: ~
         saveButton: "Guardar"
       includeExcludeCustomOnly:
         title: "Ignore mod inclusion/exclusion lists"
         description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Últimos cambios de versión"
       noData: "La versión instalada es idéntica a la última versión."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Lista de exclusión de procesos"
       descriptionExclusion: "Una lista de nombres de procesos/rutas en las que Windhawk no inyectará. Puede ser útil para casos en los que Windhawk no es compatible con un programa específico. Tenga en cuenta que agregar un proceso a esta lista no solo evitará que Windhawk lo personalice, sino que también evitará que Windhawk intercepte los procesos secundarios que crea este proceso. Esto hará que Windhawk cargue mods con un ligero retraso en tales casos."
-      exclusionCriticalProcessesNotice: "The special <0>{{critical_system_processes}}</0> value can be added to the list to exclude critical system processes. Beware of removing it, as crashing one of these processes might lead to a BSOD."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Lista de inclusión de procesos"
       descriptionInclusion: "Una lista de nombres de procesos/rutas en las que se inyectará Windhawk, incluso si están en la lista de exclusión."
       inclusionWithoutExclusionNotice: "La lista de inclusión de procesos no tiene efecto con una lista de exclusión de procesos vacía."
       inclusionWithoutTotalExclusionNotice: "Si pretendía excluir todos los procesos menos estos, puede establecer \"*\" en la lista de exclusión de procesos."
       processListPlaceholder: "Nombres/rutas de procesos, uno por línea, por ejemplo:"
-    loadModsInCriticalSystemProcesses:
-      title: "Load mods in critical system processes"
-      description: "By default, Windhawk only loads mods in critical system processes if the process is targeted explicitly, i.e. is listed without wildcards in the mod's process inclusion list."
-      never: "Never"
-      onlyExplicitMatch: "Only if targeted explicitly"
-      always: "If targeted explicitly or implicitly (not recommended)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

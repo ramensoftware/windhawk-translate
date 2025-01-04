@@ -175,10 +175,14 @@ app:
         titleExclusion: "Anpassad undantagslista för processer"
         descriptionExclusion: "En anpassad lista med ytterligare körbara filnamn/sökvägar som modden inte kommer att fungera med. Listan läggs till i undantagslistan som mod-utvecklaren definierade för att bestämma vilka processer den inte ska fungera med. För varje process laddas modden om den körbara filsökvägen matchar en av inkluderingsposterna och inte matchar någon undantagspost."
         processListPlaceholder: "Processnamn/sökvägar, en per rad, till exempel:"
+        invalidCharactersWarning: ~
         saveButton: "Spara"
       includeExcludeCustomOnly:
         title: "Ignorera modd-inkluderings-/exkluderingslistor"
         description: "Ignorera moddens processinkluderings-/exkluderingslistor och använd endast de anpassade listorna ovan."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Senaste versionsändringar"
       noData: "Den installerade versionen är identisk med den senaste versionen."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Processundantagslista"
       descriptionExclusion: "En lista över processnamn/sökvägar som Windhawk inte kommer att injiceras i. Kan vara användbart när Windhawk inte är kompatibel med ett specifikt program. Observera att om du lägger till en process i den här listan hindrars Windhawk från att anpassa den, men Windhawk hindras även från att fånga upp underordnade processer som den här processen skapar. Detta kommer i sådana fall att få Windhawk att ladda moddar med en liten fördröjning."
-      exclusionCriticalProcessesNotice: "Det speciella värdet <0>{{critical_system_processes}}</0> kan läggas till i listan för att utesluta kritiska systemprocesser. Var försiktig med att ta bort det eftersom kraschar en av dessa processer kan det leda till en BSOD."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Processinkluderingslista"
       descriptionInclusion: "En lista över processnamn/sökvägar som Windhawk kommer att injicera i även om de finns i undantagslistan."
       inclusionWithoutExclusionNotice: "Processinkluderingslistan har ingen effekt med en tom processundantagslista."
       inclusionWithoutTotalExclusionNotice: "Om du menade att utesluta alla processer utom dessa, då kan du ställa in \"*\" i listan över processuteslutningar."
       processListPlaceholder: "Processnamn/sökvägar, en per rad, till exempel:"
-    loadModsInCriticalSystemProcesses:
-      title: "Ladda moddar i kritiska systemprocesser"
-      description: "Som standard laddar Windhawk endast moddar i kritiska systemprocesser om processen är explicit inriktad, det vill säga är listad utan jokertecken i moddens processinkluderingslista."
-      never: "Aldrig"
-      onlyExplicitMatch: "Endast om målinriktningen uttryckligen"
-      always: "Om den riktas explicit eller implicit (rekommenderas inte)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"

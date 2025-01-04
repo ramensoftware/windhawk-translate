@@ -175,10 +175,14 @@ app:
         titleExclusion: "Listă personalizată de excludere a proceselor"
         descriptionExclusion: "O listă personalizată de nume/căi de fișiere executabile suplimentare pe care modul nu le va lua în considerare. Lista se adaugă la lista de excludere definită de autorul modului pentru a determina ce procese să fie vizate. Pentru fiecare proces, modul este încărcat dacă calea fișierului executabil se potrivește cu una dintre intrările de includere și nu se potrivește cu nicio intrare de excludere."
         processListPlaceholder: "Numele/calea procesului, câte unul/una pe o singură linie, de exemplu:"
+        invalidCharactersWarning: ~
         saveButton: "Salvează"
       includeExcludeCustomOnly:
         title: "Ignoră listele de includeri/excluderi a modurilor"
         description: "Ignoră listele de includeri/excluderi a proceselor modului și folosește numai listele personalizate de mai sus."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Modificări în cea mai recentă versiune"
       noData: "Versiunea instalată este identică cu cea mai recentă."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Lista de excludere a proceselor"
       descriptionExclusion: "O listă de nume/căi de procese pe care Windhawk nu le va putea injecta. Poate fi utilă pentru cazurile în care Windhawk nu este compatibil cu un anumit program. Ține minte că adăugând un proces în această listă nu va doar preveni Windhawk de a-l personaliza, dar va preveni de asemenea Windhawk din a intercepta procesele pe care acesta le creează. Acest lucru va cauza ca Windhawk să încarce modurile cu o mică întârziere în astfel de cazuri."
-      exclusionCriticalProcessesNotice: "Valoarea specială <0>{{critical_system_processes}}</0> poate fi adăugată în listă pentru a exclude procesele de sistem critice. Ai grijă la eliminarea ei, deoarece blocarea unor astfel de procese poate duce la un BSOD."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Lista de includere a proceselor"
       descriptionInclusion: "O listă de nume/căi de procese pe care Windhawk le va putea injecta, chiar dacă ele sunt în lista de excludere."
       inclusionWithoutExclusionNotice: "Lista proceselor incluse nu are niciun efect dacă lista de procese excluse este goală."
       inclusionWithoutTotalExclusionNotice: "Dacă te refereai la excluderea tuturor proceselor, dar nu acestea, poți adăuga \"*\" în lista de excludere a proceselor."
       processListPlaceholder: "Numele/căile proceselor, câte unul/una pe un singur rând, de exemplu:"
-    loadModsInCriticalSystemProcesses:
-      title: "Încarcă moduri în procesele de sistem critice"
-      description: "În mod normal, Windhawk încarcă moduri în procesele critice de sistem numai dacă procesul este vizat în mod explicit, ex. este listat fără wildcard-uri în lista de procese incluse a modului."
-      never: "Niciodată"
-      onlyExplicitMatch: "Numai dacă sunt vizate în mod explicit"
-      always: "Dacă sunt vizate în mod explicit sau implicit (nerecomandat)"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
