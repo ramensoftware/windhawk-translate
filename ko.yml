@@ -73,6 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: ~
   SAFE_MODE_DETECTED_TITLE: ~
   SAFE_MODE_DETECTED_TEXT: ~
+  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "불러오는 중..."

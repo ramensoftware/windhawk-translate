@@ -73,6 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
   SAFE_MODE_DETECTED_TITLE: "Mod de siguranță"
   SAFE_MODE_DETECTED_TEXT: "Windows rulează în modul de siguranță. Ai dori să activezi modul de siguranță în Windhawk? Toate funcționalitățile de injectat cod vor fi dezactivate."
+  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "Se încarcă..."

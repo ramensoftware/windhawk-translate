@@ -73,6 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: "（已暫停）"
   SAFE_MODE_DETECTED_TITLE: ~
   SAFE_MODE_DETECTED_TEXT: ~
+  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "正在載入..."

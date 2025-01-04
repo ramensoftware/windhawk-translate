@@ -73,6 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: "(suspended)"
   SAFE_MODE_DETECTED_TITLE: "Safe mode"
   SAFE_MODE_DETECTED_TEXT: "Windows is running in safe mode. Would you like to enable safe mode in Windhawk? All code injection functionality will be turned off."
+  TOOLKITDLG_EXPLANATION_CRASH: "System instability was detected, which might be caused by one of the Windhawk mods. Exiting Windhawk or relaunching it in safe mode might help resolve the problem."
 app:
   general:
     loading: "Loading..."

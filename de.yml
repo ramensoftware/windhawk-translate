@@ -73,6 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: "(angehalten)"
   SAFE_MODE_DETECTED_TITLE: "Abgesicherter Modus"
   SAFE_MODE_DETECTED_TEXT: "Windows läuft im abgesicherten Modus. Möchten Sie den abgesicherten Modus in Windhawk aktivieren? Alle Code-Injektionsfunktionen werden deaktiviert."
+  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "Lade..."
