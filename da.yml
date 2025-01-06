@@ -73,7 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: "(Suspenderet)"
   SAFE_MODE_DETECTED_TITLE: "Sikker tilstand"
   SAFE_MODE_DETECTED_TEXT: "Windows kører i sikker tilstand. Vil du slå sikker tilstand til i Windhawk? mode in Windhawk? Al kodeinjections-funktionalitet vil blive slået fra."
-  TOOLKITDLG_EXPLANATION_CRASH: "Systemustabilitet blev opdaget, hvilket kan være forårsaget af en af ​​Windhawk-modsene.  At afslutte Windhawk eller genstarte den i sikker tilstand kan hjælpe med at løse problemet."
+  TOOLKITDLG_EXPLANATION_CRASH: "Systemustabilitet blev opdaget, hvilket kan være forårsaget af en af ​​Windhawk-modsene. At afslutte Windhawk eller genstarte den i sikker tilstand kan hjælpe med at løse problemet."
 app:
   general:
     loading: "Indlæser..."
@@ -175,10 +175,14 @@ app:
         titleExclusion: "Tilpasset procesekslusionsliste"
         descriptionExclusion: "En tilpasset liste over yderligere eksekverbare filnavne/stier, som modifikationen vil udelukke fra målretning. Listen føjes til ekskluderingslisten, som modifikations-forfatteren definerede for at bestemme, hvilke processer der skal målrettes mod. For hver proces indlæses modifikationen, hvis den eksekverbare filsti matcher en af ​​inkluderingsposterne og ikke matcher nogen ekskluderingsindgang."
         processListPlaceholder: "Proces-navne/stige, en per linje, for eksempel:"
+        invalidCharactersWarning: ~
         saveButton: "Gem"
       includeExcludeCustomOnly:
         title: "Ignorer modifikations-inkluderings-/ekskluderingslister"
         description: "Ignorer modifikationens procesinkluderings-/ekskluderingslister og brug kun de tilpassede lister herover."
+      patternsMatchCriticalSystemProcesses:
+        title: ~
+        description: ~
     changes:
       title: "Seneste versionsændringer"
       noData: "Den installerede version er identisk med den seneste version."
@@ -244,18 +248,16 @@ app:
     processList:
       titleExclusion: "Procesinklusionsliste"
       descriptionExclusion: "En liste over procesnavne/stier, som Windhawk ikke vil injicere i. Kan være nyttigt i tilfælde, hvor Windhawk ikke er kompatibel med et specifikt program. Bemærk, at tilføjelse af en proces til denne liste ikke kun forhindrer Windhawk i at tilpasse den, men også forhindrer Windhawk i at opfange underprocesser, som denne proces opretter. Dette vil forårsage en lille forsinkelse, når Windhawk indlæser mods i sådanne tilfælde."
-      exclusionCriticalProcessesNotice: "Den specielle <0>{{critical_system_processes}}</0>-værdi kan tilføjes til listen for at udelukke kritiske systemprocesser. Pas på med at fjerne den, da nedbrud af en af ​​disse processer kan føre til en Blue Screen of Death."
+      descriptionExclusionWiki: ~
+      excludeCriticalProcesses: ~
+      excludeIncompatiblePrograms: ~
+      excludeGames: ~
       titleInclusion: "Proceseksklusionsliste"
       descriptionInclusion: "En liste over procesnavne/stier, som Windhawk vil injicere i, selvom de er på ekskluderingslisten."
       inclusionWithoutExclusionNotice: "Procesinkluderingslisten har ingen effekt med en tom procesekskluderingsliste."
       inclusionWithoutTotalExclusionNotice: "Hvis du havde til hensigt at ekskludere alle processer undtagen disse, kan du indstille \"*\" i procesekskluderingslisten."
-      processListPlaceholder: "Procesnavne/stier, én pr. linje, for eksempel:" 
-    loadModsInCriticalSystemProcesses:
-      title: "Indlæs modifikationer i kritiske systemprocesser"
-      description: "Som standard indlæser Windhawk kun modifikationer i kritiske systemprocesser, hvis processen er målrettet eksplicit, dvs. er opført uden jokertegn i modifikationens procesinkluderingsliste."
-      never: "Aldrig"
-      onlyExplicitMatch: "Kun hvis målrettet eksplicit"
-      always: "Hvis målrettet eksplicit eller implicit (anbefales ikke)"
+      processListPlaceholder: "Procesnavne/stier, én pr. linje, for eksempel:"
+      invalidCharactersWarning: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
