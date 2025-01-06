@@ -51,7 +51,7 @@ tray:
   TRAYICON_TOOLTIP_UPDATE: "En ny version er tilgængelig"
   TASKDLG_TITLE_LOADED_MODS: "Indlæste modifikationer"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Modifikationsopgaver i gang"
-  TASKDLG_BUTTON_OPEN_APP: "Åben %Windhawk"
+  TASKDLG_BUTTON_OPEN_APP: "Åben &Windhawk"
   TASKDLG_COLUMN_MOD: "Modifikation"
   TASKDLG_COLUMN_PROCESS: "Proces"
   TASKDLG_COLUMN_PID: "PID"
@@ -66,13 +66,14 @@ tray:
   TOOLKITDLG_BUTTON_OPEN: "Åben Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Indlæste &modifikationer"
   TOOLKITDLG_BUTTON_EXIT: "Afslut Windhawk"
-  TOOLKITDLG_BUTTON_SAFE_MODE: "%Sikker tilstand"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "&Sikker tilstand"
   TOOLKITDLG_BUTTON_CLOSE: "&Luk værktøjskasse"
   SAFE_MODE_TITLE: "Genåbn i sikker tilstand"
   SAFE_MODE_TEXT: "Windhawk vil blive genåbnet med al kodeinjections-funktionaliteten slået fra."
   TASKDLG_PROCESS_SUSPENDED: "(Suspenderet)"
   SAFE_MODE_DETECTED_TITLE: "Sikker tilstand"
   SAFE_MODE_DETECTED_TEXT: "Windows kører i sikker tilstand. Vil du slå sikker tilstand til i Windhawk? mode in Windhawk? Al kodeinjections-funktionalitet vil blive slået fra."
+  TOOLKITDLG_EXPLANATION_CRASH: "Systemustabilitet blev opdaget, hvilket kan være forårsaget af en af ​​Windhawk-modsene.  At afslutte Windhawk eller genstarte den i sikker tilstand kan hjælpe med at løse problemet."
 app:
   general:
     loading: "Indlæser..."
@@ -248,7 +249,7 @@ app:
       descriptionInclusion: "En liste over procesnavne/stier, som Windhawk vil injicere i, selvom de er på ekskluderingslisten."
       inclusionWithoutExclusionNotice: "Procesinkluderingslisten har ingen effekt med en tom procesekskluderingsliste."
       inclusionWithoutTotalExclusionNotice: "Hvis du havde til hensigt at ekskludere alle processer undtagen disse, kan du indstille \"*\" i procesekskluderingslisten."
-      processListPlaceholder: "Procesnavne/stier, én pr. linje, for eksempel:
+      processListPlaceholder: "Procesnavne/stier, én pr. linje, for eksempel:" 
     loadModsInCriticalSystemProcesses:
       title: "Indlæs modifikationer i kritiske systemprocesser"
       description: "Som standard indlæser Windhawk kun modifikationer i kritiske systemprocesser, hvis processen er målrettet eksplicit, dvs. er opført uden jokertegn i modifikationens procesinkluderingsliste."
@@ -283,7 +284,8 @@ app:
     github: "GitHub"
     twitter: "X (Twitter)"
     verified: "verificeret"
-    verifiedTooltip: "Vi har bekræftet, at denne profil tilhører modifikationsforfatteren, men bemærk, at <0>verificeret</0> ikke er det samme som <0>trusted</0>. Sørg for, at du stoler på modifikationsforfatteren, eller inspicer omhyggeligt kildekoden før installation."    acceptButton: "Accept Risk and Install"
+    verifiedTooltip: "Vi har bekræftet, at denne profil tilhører modifikationsforfatteren, men bemærk, at <0>verificeret</0> ikke er det samme som <0>trusted</0>. Sørg for, at du stoler på modifikationsforfatteren, eller inspicer omhyggeligt kildekoden før installation."
+    acceptButton: "Accepter risiko og installer"
     cancelButton: "Annuller"
   createNewModButton:
     title: "Skab en ny modifikation"
