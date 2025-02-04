@@ -60,7 +60,7 @@ tray:
   TASKDLG_STATUS_LOADING: "加载中..."
   TASKDLG_STATUS_LOADED: "已加载"
   TASKDLG_STATUS_UNLOADED: "未加载"
-  TASKDLG_TASK_INITIALIZING: "初始化中..."
+  TASKDLG_TASK_INITIALIZING: "正在初始化..."
   TASKDLG_TASK_LOADING_SYMBOLS: "加载符号中..."
   TOOLKITDLG_TITLE: "Windhawk Toolkit"
   TOOLKITDLG_BUTTON_OPEN: "(&O)打开Windhawk"
@@ -178,8 +178,8 @@ app:
         invalidCharactersWarning: ~
         saveButton: "保存"
       includeExcludeCustomOnly:
-        title: "Ignore mod inclusion/exclusion lists"
-        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
+        title: "忽略 Mod 包含/排除列表"
+        description: "忽略 Mod 包含/排除列表，只使用上面的自定义列表。"
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
