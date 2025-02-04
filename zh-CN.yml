@@ -179,7 +179,7 @@ app:
         saveButton: "保存"
       includeExcludeCustomOnly:
         title: "忽略 Mod 包含/排除列表"
-        description: "忽略 Mod 包含/排除列表，只使用上面的自定义列表。"
+        description: "忽略 Mod 的程序包含/排除列表，只使用上面的自定义列表。"
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
