@@ -182,7 +182,7 @@ app:
         description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
       patternsMatchCriticalSystemProcesses:
         title: "Consider inclusion list patterns for critical system processes"
-        description: "By default, Windhawk only loads mods in critical system processes if the process is included without patters, e.g. <0>critical.exe</0>, not <0>*</0> or <0>*.exe</0>. For more details about critical system processes, please refer to <1>the documentation</1>."
+        description: "By default, Windhawk only loads mods in critical system processes if the process is included without patterns, e.g. <0>critical.exe</0>, not <0>*</0> or <0>*.exe</0>. For more details about critical system processes, please refer to <1>the documentation</1>."
     changes:
       title: "Latest Version Changes"
       noData: "The installed version is identical to the latest version."
