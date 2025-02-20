@@ -255,7 +255,7 @@ app:
       titleInclusion: "Danh sách bao gồm quy trình"
       descriptionInclusion: "Danh sách tên/đường dẫn quy trình mà Windhawk sẽ tiêm vào, ngay cả khi chúng nằm trong danh sách loại trừ."
       inclusionWithoutExclusionNotice: "Danh sách bao gồm quy trình không có tác dụng với danh sách loại trừ quy trình rỗng."
-      inclusionWithoutTotalExclusionNotice: 'Nếu bạn định loại trừ tất cả các quy trình trừ những quy trình này, bạn có thể đặt "*" trong danh sách loại trừ quy trình.'
+      inclusionWithoutTotalExclusionNotice: "Nếu bạn định loại trừ tất cả các quy trình trừ những quy trình này, bạn có thể đặt \"*\" trong danh sách loại trừ quy trình."
       processListPlaceholder: "Tên/đường dẫn quy trình, mỗi dòng một, ví dụ:"
       invalidCharactersWarning: "Danh sách quy trình chứa các ký tự không hợp lệ sẽ bị xóa: {{invalidCharacters}}"
   about:
