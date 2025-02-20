@@ -71,9 +71,9 @@ tray:
   SAFE_MODE_TITLE: "Khởi động lại ở chế độ an toàn"
   SAFE_MODE_TEXT: "Windhawk sẽ được khởi động lại với tất cả các chức năng tiêm mã đã tắt."
   TASKDLG_PROCESS_SUSPENDED: "(bị tạm dừng)"
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
-  TOOLKITDLG_EXPLANATION_CRASH: ~
+  SAFE_MODE_DETECTED_TITLE: "Chế độ an toàn"
+  SAFE_MODE_DETECTED_TEXT: "Windows đang chạy ở chế độ an toàn. Bạn có muốn bật chế độ an toàn trong Windhawk không? Tất cả chức năng tiêm mã sẽ bị tắt."
+  TOOLKITDLG_EXPLANATION_CRASH: "Đã phát hiện hệ thống không ổn định, có thể do một trong các bản mod Windhawk gây ra. Thoát Windhawk hoặc khởi chạy lại ở chế độ an toàn có thể giúp giải quyết vấn đề."
 app:
   general:
     loading: "Đang tải..."
@@ -175,14 +175,14 @@ app:
         titleExclusion: "Danh sách loại trừ quy trình tùy chỉnh"
         descriptionExclusion: "Danh sách tùy chỉnh của tên tệp thực thi/đường dẫn bổ sung mà mod sẽ loại trừ khỏi mục tiêu. Danh sách này được thêm vào danh sách loại trừ mà tác giả mod đã xác định để quyết định quy trình nào sẽ nhắm mục tiêu. Đối với mỗi quy trình, mod sẽ được tải nếu đường dẫn tệp thực thi khớp với một trong các mục bao gồm và không khớp với bất kỳ mục loại trừ nào."
         processListPlaceholder: "Tên/đường dẫn quy trình, mỗi dòng một, ví dụ:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "Danh sách quy trình chứa các ký tự không hợp lệ sẽ bị xóa: {{invalidCharacters}}"
         saveButton: "Lưu"
       includeExcludeCustomOnly:
         title: "Bỏ qua danh sách bao gồm/loại trừ của mod"
         description: "Bỏ qua danh sách bao gồm/loại trừ quy trình của mod và chỉ sử dụng các danh sách tùy chỉnh bên trên."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Xem xét các mẫu danh sách bao gồm cho các quy trình hệ thống quan trọng"
+        description: "Theo mặc định, Windhawk chỉ tải các bản mod trong các quy trình hệ thống quan trọng nếu quy trình được bao gồm mà không có mẫu, ví dụ: <0>critical.exe</0>, không phải <0>*</0> hoặc <0>*.exe</0>. Để biết thêm chi tiết về các quy trình hệ thống quan trọng, vui lòng tham khảo <1>the documentation</1>."
     changes:
       title: "Thay đổi phiên bản mới nhất"
       noData: "Phiên bản đã cài đặt giống hệt với phiên bản mới nhất."
@@ -248,16 +248,16 @@ app:
     processList:
       titleExclusion: "Danh sách loại trừ quy trình"
       descriptionExclusion: "Danh sách tên/đường dẫn quy trình mà Windhawk sẽ không tiêm vào. Có thể hữu ích trong trường hợp Windhawk không tương thích với một chương trình cụ thể. Lưu ý rằng việc thêm một quy trình vào danh sách này không chỉ ngăn Windhawk tùy chỉnh nó mà còn ngăn Windhawk chặn các quy trình con mà quy trình này tạo ra. Điều này sẽ khiến Windhawk tải mod với một độ trễ nhẹ trong những trường hợp như vậy."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Để biết thêm thông tin về danh sách loại trừ quy trình, vui lòng tham khảo <0>the documentation</0>."
+      excludeCriticalProcesses: "Loại trừ các quy trình hệ thống quan trọng"
+      excludeIncompatiblePrograms: "Loại trừ các chương trình không tương thích"
+      excludeGames: "Loại trừ các trò chơichơi"
       titleInclusion: "Danh sách bao gồm quy trình"
       descriptionInclusion: "Danh sách tên/đường dẫn quy trình mà Windhawk sẽ tiêm vào, ngay cả khi chúng nằm trong danh sách loại trừ."
       inclusionWithoutExclusionNotice: "Danh sách bao gồm quy trình không có tác dụng với danh sách loại trừ quy trình rỗng."
-      inclusionWithoutTotalExclusionNotice: "Nếu bạn định loại trừ tất cả các quy trình trừ những quy trình này, bạn có thể đặt \"*\" trong danh sách loại trừ quy trình."
+      inclusionWithoutTotalExclusionNotice: 'Nếu bạn định loại trừ tất cả các quy trình trừ những quy trình này, bạn có thể đặt "*" trong danh sách loại trừ quy trình.'
       processListPlaceholder: "Tên/đường dẫn quy trình, mỗi dòng một, ví dụ:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "Danh sách quy trình chứa các ký tự không hợp lệ sẽ bị xóa: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
