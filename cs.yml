@@ -127,7 +127,7 @@ app:
           target: "Cílový proces"
           targets: "Cílové procesy:"
           excluded: "Vyloučeno:"
-      update: Aktualizovat"
+      update: "Aktualizovat"
       updateNotNeeded: "Je nainstalována nejnovější verze"
       install: "Instalovat"
       compile: "kompilovat"
