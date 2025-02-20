@@ -73,7 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
   SAFE_MODE_DETECTED_TITLE: "Mod de siguranță"
   SAFE_MODE_DETECTED_TEXT: "Windows rulează în modul de siguranță. Ai dori să activezi modul de siguranță în Windhawk? Toate funcționalitățile de injectat cod vor fi dezactivate."
-  TOOLKITDLG_EXPLANATION_CRASH: ~
+  TOOLKITDLG_EXPLANATION_CRASH: "A fost detectată instabilitatea sistemului, ceea ce ar putea fi cauzată de unul dintre modurile Windhawk. Închiderea sau relansarea Windhawk în modul de siguranță ar putea ajuta la rezolvarea problemei."
 app:
   general:
     loading: "Se încarcă..."
@@ -175,14 +175,14 @@ app:
         titleExclusion: "Listă personalizată de excludere a proceselor"
         descriptionExclusion: "O listă personalizată de nume/căi de fișiere executabile suplimentare pe care modul nu le va lua în considerare. Lista se adaugă la lista de excludere definită de autorul modului pentru a determina ce procese să fie vizate. Pentru fiecare proces, modul este încărcat dacă calea fișierului executabil se potrivește cu una dintre intrările de includere și nu se potrivește cu nicio intrare de excludere."
         processListPlaceholder: "Numele/calea procesului, câte unul/una pe o singură linie, de exemplu:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "Lista de procese conține caractere nevalide ce vor fi eliminate: {{invalidCharacters}}"
         saveButton: "Salvează"
       includeExcludeCustomOnly:
         title: "Ignoră listele de includeri/excluderi a modurilor"
         description: "Ignoră listele de includeri/excluderi a proceselor modului și folosește numai listele personalizate de mai sus."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Ia în considerare pattern-urile pentru lista de includere a procesele de sistem critice"
+        description: "În mod normal, Windhawk încarcă moduri în procesele de sistem critice numai dacă procesul este inclus fără pattern-uri, de exemplu <0>proces_critic.exe</0>, nu <0>*</0> sau <0>*.exe</0>. Pentru mai multe detalii despre procesele de sistem critice, consultă <1>documentația</1>."
     changes:
       title: "Modificări în cea mai recentă versiune"
       noData: "Versiunea instalată este identică cu cea mai recentă."
@@ -232,7 +232,7 @@ app:
       description: "În mod normal, Windhawk arată automat dialogul cu trusa de unelte când detectează că bara de activități nu este accesibilă, fie din motive de instabilitate a sistemului sau din alt motiv. Dialogul cu trusa de unelte îți permite să închizi Windhawk, să activezi modul de siguranță și să faci alte operațiuni. Dialogul cu trusa de unelte poate fi de asemenea afișat folosind combinația de taste Ctrl+Win+W."
     modInitDialogDelay:
       title: "Întârzierea dialogului de inițializare a modului"
-      description: "Numărul de millisecunde de așteptat înainte de a arăta dialogul de progres pentru inițializarea modului."
+      description: "Numărul de milisecunde de așteptat înainte de a arăta dialogul de progres pentru inițializarea modului."
     moreAdvancedSettings:
       title: "Mai multe setări avansate"
       restartNotice: "Windhawk va fi repornit pentru a aplica setările."
@@ -241,23 +241,23 @@ app:
     loggingVerbosity:
       appLoggingTitle: "Verbozitatea scrierii în jurnal pentru Windhawk"
       engineLoggingTitle: "Verbozitatea engine-ului de scriere în jurnal Windhawk"
-      description: "Jurnalurile pot fi văzute cu o unealtă, cum ar fi DebugView."
+      description: "Jurnalurile pot fi văzute cu o unealtă precum DebugView."
       none: "Nimic"
       error: "Eroare"
       verbose: "Verbose"
     processList:
       titleExclusion: "Lista de excludere a proceselor"
       descriptionExclusion: "O listă de nume/căi de procese pe care Windhawk nu le va putea injecta. Poate fi utilă pentru cazurile în care Windhawk nu este compatibil cu un anumit program. Ține minte că adăugând un proces în această listă nu va doar preveni Windhawk de a-l personaliza, dar va preveni de asemenea Windhawk din a intercepta procesele pe care acesta le creează. Acest lucru va cauza ca Windhawk să încarce modurile cu o mică întârziere în astfel de cazuri."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Pentru mai multe detalii despre excluderea proceselor și despre listele incluse de excludere a proceselor, consultă <0>documentația</0>."
+      excludeCriticalProcesses: "Exclude procesele de sistem critice"
+      excludeIncompatiblePrograms: "Exclude programele incompatibile cunoscute"
+      excludeGames: "Exclude jocuri bine cunoscute"
       titleInclusion: "Lista de includere a proceselor"
       descriptionInclusion: "O listă de nume/căi de procese pe care Windhawk le va putea injecta, chiar dacă ele sunt în lista de excludere."
       inclusionWithoutExclusionNotice: "Lista proceselor incluse nu are niciun efect dacă lista de procese excluse este goală."
       inclusionWithoutTotalExclusionNotice: "Dacă te refereai la excluderea tuturor proceselor, dar nu acestea, poți adăuga \"*\" în lista de excludere a proceselor."
       processListPlaceholder: "Numele/căile proceselor, câte unul/una pe un singur rând, de exemplu:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "Lista de procese conține caractere nevalide ce vor fi eliminate: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
