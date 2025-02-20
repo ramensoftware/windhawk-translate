@@ -182,7 +182,7 @@ app:
         description: "Bỏ qua danh sách bao gồm/loại trừ quy trình của mod và chỉ sử dụng các danh sách tùy chỉnh bên trên."
       patternsMatchCriticalSystemProcesses:
         title: "Xem xét các mẫu danh sách bao gồm cho các quy trình hệ thống quan trọng"
-        description: "Theo mặc định, Windhawk chỉ tải các bản mod trong các quy trình hệ thống quan trọng nếu quy trình được bao gồm mà không có mẫu, ví dụ: <0>critical.exe</0>, không phải <0>*</0> hoặc <0>*.exe</0>. Để biết thêm chi tiết về các quy trình hệ thống quan trọng, vui lòng tham khảo <1>the documentation</1>."
+        description: "Theo mặc định, Windhawk chỉ tải các bản mod trong các quy trình hệ thống quan trọng nếu quy trình được bao gồm mà không có mẫu, ví dụ: <0>critical.exe</0>, không phải <0>*</0> hoặc <0>*.exe</0>. Để biết thêm chi tiết về các quy trình hệ thống quan trọng, vui lòng tham khảo <1>tài liệu</1>."
     changes:
       title: "Thay đổi phiên bản mới nhất"
       noData: "Phiên bản đã cài đặt giống hệt với phiên bản mới nhất."
@@ -248,7 +248,7 @@ app:
     processList:
       titleExclusion: "Danh sách loại trừ quy trình"
       descriptionExclusion: "Danh sách tên/đường dẫn quy trình mà Windhawk sẽ không tiêm vào. Có thể hữu ích trong trường hợp Windhawk không tương thích với một chương trình cụ thể. Lưu ý rằng việc thêm một quy trình vào danh sách này không chỉ ngăn Windhawk tùy chỉnh nó mà còn ngăn Windhawk chặn các quy trình con mà quy trình này tạo ra. Điều này sẽ khiến Windhawk tải mod với một độ trễ nhẹ trong những trường hợp như vậy."
-      descriptionExclusionWiki: "Để biết thêm thông tin về danh sách loại trừ quy trình, vui lòng tham khảo <0>the documentation</0>."
+      descriptionExclusionWiki: "Để biết thêm thông tin về danh sách loại trừ quy trình, vui lòng tham khảo <0>tài liệu</0>."
       excludeCriticalProcesses: "Loại trừ các quy trình hệ thống quan trọng"
       excludeIncompatiblePrograms: "Loại trừ các chương trình không tương thích"
       excludeGames: "Loại trừ các trò chơichơi"
