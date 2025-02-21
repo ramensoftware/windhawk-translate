@@ -71,9 +71,9 @@ tray:
   SAFE_MODE_TITLE: "Restartovat v nouzovém režimu"
   SAFE_MODE_TEXT: "Windhawk bude restartován s vypnutou funkcí přizpůsobení programu."
   TASKDLG_PROCESS_SUSPENDED: "(pozastaveno)"
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
-  TOOLKITDLG_EXPLANATION_CRASH: ~
+  SAFE_MODE_DETECTED_TITLE: "Nouzový režim"
+  SAFE_MODE_DETECTED_TEXT: "Windows běží v nouzovém režimu. Chcete povolit nouzový režim ve Windhawku? Všechny funkce vkládání kódu budou vypnuty."
+  TOOLKITDLG_EXPLANATION_CRASH: "Byla zjištěna nestabilita systému, která může být způsobena některým z modifikací Windhawk. Ukončení Windhawk nebo jeho opětovné spuštění v nouzovém režimu může pomoci problém vyřešit."
 app:
   general:
     loading: "Načítání..."
@@ -175,18 +175,18 @@ app:
         titleExclusion: "Vlastní seznam vyloučení"
         descriptionExclusion: "Vlastní seznam dalších exe souborů nebo cest k nim, které modifikace NEovlivní. Tento seznam bude přidán do seznamu vyloučení od autora modifikace. To znamená, že modifikace se načte pro každý proces pouze v případě, že cesta odpovídá jednomu z cílového seznamu a neodpovídá žádnému ze seznamu vyloučených."
         processListPlaceholder: "Název/cesty procesu (exe), jedna na řádek, např.:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "Seznam procesů obsahuje neplatné znaky, které budou odstraněny: {{invalidCharacters}}"
         saveButton: "Uložit"
       includeExcludeCustomOnly:
         title: "Ignorovat cílové/vyloučit seznamy úprav"
         description: "Ignorujte seznamy cílů/vylučujících seznamy nastavené v modu a používejte pouze vlastní seznamy výše."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Zvažte vzory seznamu zahrnutí pro kritické systémové procesy"
+        description: "Ve výchozím nastavení Windhawk načítá mody pouze v kritických systémových procesech, pokud je proces zahrnut bez vzorů, např. <0>critical.exe</0>, nikoli <0>*</0> nebo <0>*.exe</0>. Další podrobnosti o kritických systémových procesech naleznete v <1>dokumentace</1>."
     changes:
       title: "Změny v nejnovější verzi"
       noData: "Je nainstalována nejnovější verze."
-      splitView: "Split View"
+      splitView: "Oddělené prohlížení"
       expandLines_one: "Rozbalit jeden skrytý řádek"
       expandLines_other: "Rozbalit skryté řádky: {{count}}"
   home:
@@ -248,16 +248,16 @@ app:
     processList:
       titleExclusion: "Seznam vyloučených procesů"
       descriptionExclusion: "Seznam procesů/cest, do kterých Windhawk nevloží kód. To může být užitečné v případech, kdy Windhawk není kompatibilní s konkrétním programem. Upozorňujeme, že přidání procesu do tohoto seznamu nejen zabrání Windhawku v jeho úpravě, ale také zabrání Windhawku v zachycení podřízených procesů vytvořených vyloučeným procesem. To způsobí zpoždění při načítání úprav do Windhaw."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Další podrobnosti o vyloučení procesů a o integrovaných seznamech vyloučení procesů naleznete v <0>dokumentace</0>."
+      excludeCriticalProcesses: "Vyloučit kritické systémové procesy"
+      excludeIncompatiblePrograms: "Vyloučit známé nekompatibilní programy"
+      excludeGames: "Vyloučit známé hry"
       titleInclusion: "Seznam cílových procesů"
       descriptionInclusion: "Seznam cílových procesů/cest, do kterých Windhawk vloží kód, i když jsou na seznamu vyloučených."
       inclusionWithoutExclusionNotice: "Seznam cílových procesů nedělá nic, pokud je seznam vyloučených procesů prázdný."
       inclusionWithoutTotalExclusionNotice: "Pokud chcete vyloučit všechny procesy kromě těchto, můžete zadat \"*\" v seznamu vyloučených procesů."
       processListPlaceholder: "Název/cesty procesu (exe), jedna na řádek, např.:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "Seznam procesů obsahuje neplatné znaky, které budou odstraněny: {{invalidCharacters}}"
   about:
     title: "Windhawk ver. {{version}}"
     beta: "beta"
@@ -278,7 +278,7 @@ app:
       minHook: "Minimalistická knihovna pro připojení API pro Windows"
       others: "Další nástroje a knihovny a nějaký psaný kód"
   installModal:
-    title: "Install {{mod}}"
+    title: "Instalovat {{mod}}"
     warningTitle: "Postupujte opatrně"
     warningDescription: "Škodlivé úpravy mohou poškodit váš počítač a narušit vaše soukromí. Instalujte úpravy pouze od autorů, kterým důvěřujete."
     modAuthor: "Autor úpravy"
@@ -301,7 +301,7 @@ app:
     alert: "Windhawk běží v nouzovém režimu, přizpůsobení programu je zakázáno."
     offButton: "Vypnout nouzový režim"
     offConfirm: "Windhawk bude restartován pro použití nastavení."
-    offConfirmOk: "Restart Windhawk"
+    offConfirmOk: "Restartovat Windhawk"
     offConfirmCancel: "Zrušit"
   modPreview:
     actionUnavailable: "Akce není dostupná v režimu zobrazení"
@@ -317,5 +317,5 @@ app:
     showLogOutput: "Zobrazit protokoly"
     exit: "Ukončit režim úprav"
     exitConfirmation: "Změny od poslední úspěšné kompilace budou ztraceny"
-    exitButtonOk: "Exit"
+    exitButtonOk: "Konec"
     exitButtonCancel: "Zůstat"
