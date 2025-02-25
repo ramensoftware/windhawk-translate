@@ -74,7 +74,6 @@ tray:
   SAFE_MODE_DETECTED_TITLE: "Sigurni način rada"
   SAFE_MODE_DETECTED_TEXT: "Windows je pokrenut u sigurnom načinu rada. Želite li omogućiti sigurni način rada u Windhawku? Svaka funkcionalnost presretanja koda bit će isključena."
   TOOLKITDLG_EXPLANATION_CRASH: "Otkrivena je nestabilnost sustava, koja može biti uzrokovana jednim od Windhawk dodataka. Zatvaranje Windhawka ili ponovno pokretanje u sigurnom načinu rada može pomoći u rješavanju problema."
-
 app:
   general:
     loading: "Učitavam..."
