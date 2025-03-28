@@ -4,8 +4,8 @@ setup:
   SECTION_MAIN: "$(^NameDA) (必須)"
   SECTION_STARTMENU: "スタートメニューのショートカット"
   SECTION_DESKTOP: "デスクトップのショートカット"
-  INSTALLER_RUNNING: "$(^Name) のセットアップは実行中です"
-  NON_EMPTY_FOLDER_ERROR: "$(^Name) は空ではないフォルダーにインストールできません"
+  INSTALLER_RUNNING: "$(^Name) のセットアップを実行中です"
+  NON_EMPTY_FOLDER_ERROR: "$(^Name) を空ではないフォルダーにインストールできません"
   OPEN_PROGRAM: "$(^NameDA) を開く(&O)"
   CLEANCONFIRM: "プログラムの設定を削除する(&R)"
   INSTALLED_HEADER: "インストール済み"
@@ -44,8 +44,8 @@ tray:
   EXITDLG_BUTTON_EXIT: "Windhawk を終了(&E)"
   EXITDLG_BUTTON_CANCEL: "キャンセル"
   NOTIFICATION_UPDATE_APP: "最新バージョンの Windhawk が利用可能です"
-  NOTIFICATION_UPDATE_APP_MOD: "Windhawk の最新のバージョンが利用可能です。1 個の Mod が更新可能です。"
-  NOTIFICATION_UPDATE_APP_MODS: "Windhawk の最新のバージョンが利用可能です。%d 個の Mod が更新可能です。"
+  NOTIFICATION_UPDATE_APP_MOD: "Windhawk の最新バージョンが利用可能です。1 個の Mod が更新できます。"
+  NOTIFICATION_UPDATE_APP_MODS: "Windhawk の最新バージョンが利用可能です。%d 個の Mod が更新できます。"
   NOTIFICATION_UPDATE_MOD: "1 個の Windhawk Mod が更新可能です。"
   NOTIFICATION_UPDATE_MODS: "%d 個の Windhawk Mod が更新可能です。"
   TRAYICON_TOOLTIP_UPDATE: "最新のバージョンが利用可能です"
@@ -73,7 +73,7 @@ tray:
   TASKDLG_PROCESS_SUSPENDED: "(一時停止中)"
   SAFE_MODE_DETECTED_TITLE: "セーフモード"
   SAFE_MODE_DETECTED_TEXT: "現在Windowsがセーフモードで起動中です。Windhawkでもセーフモードを有効にしますか？これにより、すべてのコード インジェクション機能が無効化されます。"
-  TOOLKITDLG_EXPLANATION_CRASH: ~
+  TOOLKITDLG_EXPLANATION_CRASH: "システムの不安定化を検出しました。これは Windhawk 内の 1 個の Mod が原因である可能性があります。Windhawk を終了するか、セーフモードで再起動すると問題が解決できる可能性があります。"
 app:
   general:
     loading: "読み込み中..."
@@ -175,16 +175,16 @@ app:
         titleExclusion: "カスタムプロセス除外リスト"
         descriptionExclusion: "Mod がターゲットから除外する実行ファイルまたは、パスのカスタムリストです。このリストは、Mod の作者が定義した除外リスト上に追加されます。各プロセスにおいて実行可能なファイルパスが対象エントリのどれかマッチし、除外エントリにマッチしない場合に Mod が読み込まれます。"
         processListPlaceholder: "プロセス名またはパス (1 行に 1 つずつ)"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "プロセスリストに無効な文字が含まれています。これらは削除されます: {{invalidCharacters}}"
         saveButton: "保存"
       includeExcludeCustomOnly:
         title: "Mod の対象リスト、除外リストを無視する"
         description: "Mod の対象リストまたは除外リストを無視し、上記のカスタムリストのみを使用します。"
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "重要なシステムプロセスの内包リストパターンを考慮"
+        description: "説明: 既定では Windhawk はプロセスのパターンなし (例: <0>*</0> または <0>*.exe</0> ではなく <0>critical.exe</0>) で内包されている場合でのみ、重要なシステムプロセスに Mod を読み込みます。重要なシステムプロセスの詳細については<1>ドキュメント</1>を参照してください。"
     changes:
-      title: "最新のバージョンの変更点"
+      title: "最新バージョンの変更点"
       noData: "インストールされているバージョンは最新です。"
       splitView: "分割表示"
       expandLines_one: "1 個の隠れた行を展開"
@@ -235,8 +235,8 @@ app:
       description: "Mod の初期化でプログレスダイアログを表示するまでの待機時間 (ミリ秒) を設定できます。"
     moreAdvancedSettings:
       title: "その他の高度な設定"
-      restartNotice: "Windhawkを再起動すると設定が適用されます。"
-      saveButton: "保存してWindhawkを再起動"
+      restartNotice: "Windhawk を再起動すると設定が適用されます。"
+      saveButton: "保存して Windhawk を再起動"
       cancelButton: "キャンセル"
     loggingVerbosity:
       appLoggingTitle: "Windhawk ログの冗長性"
@@ -248,16 +248,16 @@ app:
     processList:
       titleExclusion: "プロセス除外リスト"
       descriptionExclusion: "Windhawk がインジェクションをしないプロセスとパスのリストです。Windhawk が特定のプログラムと互換性がない場合に役立ちます。このリストにプロセスを追加すると、Windhawk がそのプロセスをカスタマイズしなくなるだけでなくそのプロセスが作成する、子プロセスを Windhawk が傍受できなくなることに注意してください。場合によっては Windhawk の Mod の読み込みに若干の遅延が発生します。"
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "プロセスの除外と内蔵のプロセス除外リストの詳細については、<0>ドキュメント</0>を参照してください。"
+      excludeCriticalProcesses: "重要なシステムプロセスを除外"
+      excludeIncompatiblePrograms: "互換性のない既知のプログラムを除外"
+      excludeGames: "有名なゲームを除外"
       titleInclusion: "プロセス包含リスト"
       descriptionInclusion: "除外リストに含んでいても Windhawk がインジェクションをするプロセス名とパスのリスト"
       inclusionWithoutExclusionNotice: "プロセス除外リストが空の場合、プロセス対象リストには効果がありません。"
       inclusionWithoutTotalExclusionNotice: "これら以外のすべてのプロセスを除外する場合は、プロセス除外リストに｢*(ワイルドカード)｣を設定できます。"
       processListPlaceholder: "プロセス名またはパス (1 行に 1 つずつ):"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "プロセスリストに無効な文字が含まれています。これらは削除されます: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "ベータ版"
@@ -265,7 +265,7 @@ app:
     credit: "作者: <0>{{author}}</0>"
     update:
       title: "更新が利用可能です"
-      subtitle: "最新の機能、バグ修正を入手するために、Windhawkを更新することをご検討ください。"
+      subtitle: "最新の機能を使用、バグの修正を適用するために Windhawk を更新することをご検討ください。"
       button: "その他の詳細"
     links:
       title: "リンク"
@@ -312,7 +312,7 @@ app:
     enableLogging: "ログの出力を有効化"
     notCompiled: "Mod のコンパイルが必要です"
     compile: "Mod をコンパイル"
-    compilationFailed: "コンパイルが失敗しました"
+    compilationFailed: "コンパイルに失敗しました"
     preview: "Mod をプレビュー"
     showLogOutput: "出力されたログを表示"
     exit: "編集モードを終了"
