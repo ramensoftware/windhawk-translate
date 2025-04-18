@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Nicht geladen"
   TASKDLG_TASK_INITIALIZING: "Initialisiere..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Lade Symbole..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(angehalten)"
   TOOLKITDLG_TITLE: "Windhawk-Toolkit"
+  TOOLKITDLG_EXPLANATION_CRASH: "Systeminstabilität festgestellt, die möglicherweise durch eine Windhawk-Mod verursacht wird. Das Beenden von Windhawk oder Neustarten im abgesicherten Modus kann das Problem lösen."
   TOOLKITDLG_BUTTON_OPEN: "&Windhawk öffnen"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Geladene &Mods"
   TOOLKITDLG_BUTTON_EXIT: "Windhawk be&enden"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Toolkit schließen"
   SAFE_MODE_TITLE: "Im abgesicherten Modus neu starten"
   SAFE_MODE_TEXT: "Windhawk wird neu gestartet, wobei alle Code-Injektionsfunktionen deaktiviert sind."
-  TASKDLG_PROCESS_SUSPENDED: "(angehalten)"
   SAFE_MODE_DETECTED_TITLE: "Abgesicherter Modus"
   SAFE_MODE_DETECTED_TEXT: "Windows läuft im abgesicherten Modus. Möchten Sie den abgesicherten Modus in Windhawk aktivieren? Alle Code-Injektionsfunktionen werden deaktiviert."
-  TOOLKITDLG_EXPLANATION_CRASH: "Systeminstabilität festgestellt, die möglicherweise durch eine Windhawk-Mod verursacht wird. Das Beenden von Windhawk oder Neustarten im abgesicherten Modus kann das Problem lösen."
 app:
   general:
     loading: "Lade..."

@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Tidak Dimuat"
   TASKDLG_TASK_INITIALIZING: "Menginisialisasi..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Memuat simbol..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(ditangguhkan)"
   TOOLKITDLG_TITLE: "Toolkit Windhawk"
+  TOOLKITDLG_EXPLANATION_CRASH: ~
   TOOLKITDLG_BUTTON_OPEN: "&Buka Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Mod &dimuat"
   TOOLKITDLG_BUTTON_EXIT: "T&utup Windhawk"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Tutup toolkit"
   SAFE_MODE_TITLE: "Luncurkan ulang di mode aman"
   SAFE_MODE_TEXT: "Windhawk akan diluncurkan ulang dengan semua fungsi kode injeksi dimatikan."
-  TASKDLG_PROCESS_SUSPENDED: "(ditangguhkan)"
   SAFE_MODE_DETECTED_TITLE: "Mode aman"
   SAFE_MODE_DETECTED_TEXT: "Windows berjalan di mode aman. Apakah anda ingin untuk mengaktifkan mode aman di Windhawk? Semua fungsi kode injeksi akan dimatikan."
-  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "Memuat..."

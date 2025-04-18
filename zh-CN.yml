@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "未加载"
   TASKDLG_TASK_INITIALIZING: "初始化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "加载符号中..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(已中止)"
   TOOLKITDLG_TITLE: "Windhawk Toolkit"
+  TOOLKITDLG_EXPLANATION_CRASH: "检测到系统不稳定，这可能是由其中某个Mod导致的。退出Windhawk或者在安全模式下重新启动可能有助于解决该问题。"
   TOOLKITDLG_BUTTON_OPEN: "(&O)打开Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "(&M)已加载的Mods"
   TOOLKITDLG_BUTTON_EXIT: "(&E)退出Windhawk"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "(&C)关闭Toolkit"
   SAFE_MODE_TITLE: "以安全模式重新启动"
   SAFE_MODE_TEXT: "Windhawk将重新启动，所有代码注入功能都将被关闭。"
-  TASKDLG_PROCESS_SUSPENDED: "(已中止)"
   SAFE_MODE_DETECTED_TITLE: "安全模式"
   SAFE_MODE_DETECTED_TEXT: "Windows正在安全模式下运行。您是否要在Windhawk中启用安全模式？所有代码注入功能将被关闭。"
-  TOOLKITDLG_EXPLANATION_CRASH: "检测到系统不稳定，这可能是由其中某个Mod导致的。退出Windhawk或者在安全模式下重新启动可能有助于解决该问题。"
 app:
   general:
     loading: "加载中..."

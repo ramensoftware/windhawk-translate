@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Unloaded"
   TASKDLG_TASK_INITIALIZING: "Initializing..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Loading symbols..."
+  TASKDLG_TASK_UNINITIALIZING: "Uninitializing..."
+  TASKDLG_PROCESS_SUSPENDED: "(suspended)"
   TOOLKITDLG_TITLE: "Windhawk toolkit"
+  TOOLKITDLG_EXPLANATION_CRASH: "System instability was detected, which might be caused by one of the Windhawk mods. Exiting Windhawk or relaunching it in safe mode might help resolve the problem."
   TOOLKITDLG_BUTTON_OPEN: "&Open Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Loaded &mods"
   TOOLKITDLG_BUTTON_EXIT: "E&xit Windhawk"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Close toolkit"
   SAFE_MODE_TITLE: "Relaunch in safe mode"
   SAFE_MODE_TEXT: "Windhawk will be relaunched with all the code injection functionality turned off."
-  TASKDLG_PROCESS_SUSPENDED: "(suspended)"
   SAFE_MODE_DETECTED_TITLE: "Safe mode"
   SAFE_MODE_DETECTED_TEXT: "Windows is running in safe mode. Would you like to enable safe mode in Windhawk? All code injection functionality will be turned off."
-  TOOLKITDLG_EXPLANATION_CRASH: "System instability was detected, which might be caused by one of the Windhawk mods. Exiting Windhawk or relaunching it in safe mode might help resolve the problem."
 app:
   general:
     loading: "Loading..."

@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Eltávolítva"
   TASKDLG_TASK_INITIALIZING: "Inicializálás..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Szimbólumok betöltése..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(felfüggesztve)"
   TOOLKITDLG_TITLE: "Windhawk eszközkészlet"
+  TOOLKITDLG_EXPLANATION_CRASH: ~
   TOOLKITDLG_BUTTON_OPEN: "&Windhawk megnyitása"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Betöltött &modok"
   TOOLKITDLG_BUTTON_EXIT: "&Kilépés a Windhawkból"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Eszközkészlet bezárása"
   SAFE_MODE_TITLE: "Újraindítás biztonságos módban"
   SAFE_MODE_TEXT: "A Windhawk újraindul, és minden kódbefecskendezési funkció ki lesz kapcsolva."
-  TASKDLG_PROCESS_SUSPENDED: "(felfüggesztve)"
   SAFE_MODE_DETECTED_TITLE: ~
   SAFE_MODE_DETECTED_TEXT: ~
-  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "Betöltés..."

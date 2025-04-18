@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Udlæst"
   TASKDLG_TASK_INITIALIZING: "Initialiserer..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Indlæser symboler..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(Suspenderet)"
   TOOLKITDLG_TITLE: "Windhawk værktøjskasse"
+  TOOLKITDLG_EXPLANATION_CRASH: "Systemustabilitet blev opdaget, hvilket kan være forårsaget af en af ​​Windhawk-modsene. At afslutte Windhawk eller genstarte den i sikker tilstand kan hjælpe med at løse problemet."
   TOOLKITDLG_BUTTON_OPEN: "Åben Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Indlæste &modifikationer"
   TOOLKITDLG_BUTTON_EXIT: "Afslut Windhawk"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Luk værktøjskasse"
   SAFE_MODE_TITLE: "Genåbn i sikker tilstand"
   SAFE_MODE_TEXT: "Windhawk vil blive genåbnet med al kodeinjections-funktionaliteten slået fra."
-  TASKDLG_PROCESS_SUSPENDED: "(Suspenderet)"
   SAFE_MODE_DETECTED_TITLE: "Sikker tilstand"
   SAFE_MODE_DETECTED_TEXT: "Windows kører i sikker tilstand. Vil du slå sikker tilstand til i Windhawk? mode in Windhawk? Al kodeinjections-funktionalitet vil blive slået fra."
-  TOOLKITDLG_EXPLANATION_CRASH: "Systemustabilitet blev opdaget, hvilket kan være forårsaget af en af ​​Windhawk-modsene. At afslutte Windhawk eller genstarte den i sikker tilstand kan hjælpe med at løse problemet."
 app:
   general:
     loading: "Indlæser..."

@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Isključeno"
   TASKDLG_TASK_INITIALIZING: "Inicijaliziram..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Učitavam simbole..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(pauziran)"
   TOOLKITDLG_TITLE: "Windhawk – alatni komplet"
+  TOOLKITDLG_EXPLANATION_CRASH: "Otkrivena je nestabilnost sustava, koja može biti uzrokovana jednim od Windhawk dodataka. Zatvaranje Windhawka ili ponovno pokretanje u sigurnom načinu rada može pomoći u rješavanju problema."
   TOOLKITDLG_BUTTON_OPEN: "&Otvori Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Učitani &dodaci"
   TOOLKITDLG_BUTTON_EXIT: "I&zađi iz Windhawka"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Zatvori alatni komplet"
   SAFE_MODE_TITLE: "Ponovno pokretanje u sigurnom načinu rada"
   SAFE_MODE_TEXT: "Windhawk će se ponovno pokrenuti s isključenom funkcionalnošću presretanja koda."
-  TASKDLG_PROCESS_SUSPENDED: "(pauziran)"
   SAFE_MODE_DETECTED_TITLE: "Sigurni način rada"
   SAFE_MODE_DETECTED_TEXT: "Windows je pokrenut u sigurnom načinu rada. Želite li omogućiti sigurni način rada u Windhawku? Svaka funkcionalnost presretanja koda bit će isključena."
-  TOOLKITDLG_EXPLANATION_CRASH: "Otkrivena je nestabilnost sustava, koja može biti uzrokovana jednim od Windhawk dodataka. Zatvaranje Windhawka ili ponovno pokretanje u sigurnom načinu rada može pomoći u rješavanju problema."
 app:
   general:
     loading: "Učitavam..."

@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Não carregado"
   TASKDLG_TASK_INITIALIZING: "Inicializando..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Carregando simbolos..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: ~
   TOOLKITDLG_TITLE: "Windhawk toolkit"
+  TOOLKITDLG_EXPLANATION_CRASH: ~
   TOOLKITDLG_BUTTON_OPEN: "&Abrir Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "&Mods Carregados"
   TOOLKITDLG_BUTTON_EXIT: "&Sair Windhawk"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Fechar toolkit"
   SAFE_MODE_TITLE: "Reiniciar no modo de segurança"
   SAFE_MODE_TEXT: "O Windhawk será reiniciado com toda a funcionalidade de injeção de código desativada."
-  TASKDLG_PROCESS_SUSPENDED: ~
   SAFE_MODE_DETECTED_TITLE: ~
   SAFE_MODE_DETECTED_TEXT: ~
-  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "Carregando..."

@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "解放しました"
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルを読み込み中..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(一時停止中)"
   TOOLKITDLG_TITLE: "Windhawk ツールキット"
+  TOOLKITDLG_EXPLANATION_CRASH: "システムの不安定化を検出しました。これは Windhawk 内の 1 個の Mod が原因である可能性があります。Windhawk を終了するか、セーフモードで再起動すると問題が解決できる可能性があります。"
   TOOLKITDLG_BUTTON_OPEN: "Windhawk を開く(&O)"
   TOOLKITDLG_BUTTON_LOADED_MODS: "読み込まれた Mod(&M)"
   TOOLKITDLG_BUTTON_EXIT: "Windhawk を終了(&E)"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "ツールキットを閉じる(&C)"
   SAFE_MODE_TITLE: "セーフモードで再起動"
   SAFE_MODE_TEXT: "Windhawk のコードインジェクション機能をオフにした状態で再起動します。"
-  TASKDLG_PROCESS_SUSPENDED: "(一時停止中)"
   SAFE_MODE_DETECTED_TITLE: "セーフモード"
   SAFE_MODE_DETECTED_TEXT: "現在Windowsがセーフモードで起動中です。Windhawkでもセーフモードを有効にしますか？これにより、すべてのコード インジェクション機能が無効化されます。"
-  TOOLKITDLG_EXPLANATION_CRASH: "システムの不安定化を検出しました。これは Windhawk 内の 1 個の Mod が原因である可能性があります。Windhawk を終了するか、セーフモードで再起動すると問題が解決できる可能性があります。"
 app:
   general:
     loading: "読み込み中..."

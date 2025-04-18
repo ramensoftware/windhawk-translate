@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Uvolněno"
   TASKDLG_TASK_INITIALIZING: "Inicializace..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Načítání symbolů..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(pozastaveno)"
   TOOLKITDLG_TITLE: "Nabídka Windhawk"
+  TOOLKITDLG_EXPLANATION_CRASH: "Byla zjištěna nestabilita systému, která může být způsobena některým z modifikací Windhawk. Ukončení Windhawk nebo jeho opětovné spuštění v nouzovém režimu může pomoci problém vyřešit."
   TOOLKITDLG_BUTTON_OPEN: "&Otevřít Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Načteno &mody"
   TOOLKITDLG_BUTTON_EXIT: "&Ukončit Windhawk"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Zavřít nabídku"
   SAFE_MODE_TITLE: "Restartovat v nouzovém režimu"
   SAFE_MODE_TEXT: "Windhawk bude restartován s vypnutou funkcí přizpůsobení programu."
-  TASKDLG_PROCESS_SUSPENDED: "(pozastaveno)"
   SAFE_MODE_DETECTED_TITLE: "Nouzový režim"
   SAFE_MODE_DETECTED_TEXT: "Windows běží v nouzovém režimu. Chcete povolit nouzový režim ve Windhawku? Všechny funkce vkládání kódu budou vypnuty."
-  TOOLKITDLG_EXPLANATION_CRASH: "Byla zjištěna nestabilita systému, která může být způsobena některým z modifikací Windhawk. Ukončení Windhawk nebo jeho opětovné spuštění v nouzovém režimu může pomoci problém vyřešit."
 app:
   general:
     loading: "Načítání..."

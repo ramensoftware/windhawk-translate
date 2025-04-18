@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Εκφορτώθηκε"
   TASKDLG_TASK_INITIALIZING: "Αρχικοποίηση..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Φόρτωση συμβόλων..."
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(ανεστάλη)"
   TOOLKITDLG_TITLE: "Εργαλειοθήκη Windhawk"
+  TOOLKITDLG_EXPLANATION_CRASH: "Εντοπίστηκε αστάθεια συστήματος, η οποία μπορεί να προκλήθηκε από ένα από τα mod του Windhawk. Η έξοδος από το Windhawk ή η επανεκκίνηση του σε ασφαλή λειτουργία μπορεί να βοηθήσει στην επίλυση του προβλήματος."
   TOOLKITDLG_BUTTON_OPEN: "&Άνοιγμα του Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Φορτώθηκαν &mods"
   TOOLKITDLG_BUTTON_EXIT: "Έ&οδος του Windhawk"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Κλείσιμο την εργαλειοθήκη"
   SAFE_MODE_TITLE: "Επανεκκίνηση σε ασφαλή λειτουργία"
   SAFE_MODE_TEXT: "Το Windhawk θα επανεκκινηθεί με απενεργοποιημένη όλη τη λειτουργία εισαγωγής κώδικα."
-  TASKDLG_PROCESS_SUSPENDED: "(ανεστάλη)"
   SAFE_MODE_DETECTED_TITLE: "Ασφαλής λειτουργία"
   SAFE_MODE_DETECTED_TEXT: "Τα Windows εκτελούνται σε ασφαλή λειτουργία. Θέλετε να ενεργοποιήσετε την ασφαλή λειτουργία στο Windhawk; Όλες οι λειτουργίες εισαγωγής κώδικα θα απενεργοποιηθούν."
-  TOOLKITDLG_EXPLANATION_CRASH: "Εντοπίστηκε αστάθεια συστήματος, η οποία μπορεί να προκλήθηκε από ένα από τα mod του Windhawk. Η έξοδος από το Windhawk ή η επανεκκίνηση του σε ασφαλή λειτουργία μπορεί να βοηθήσει στην επίλυση του προβλήματος."
 app:
   general:
     loading: "Φόρτωση..."

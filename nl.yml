@@ -62,7 +62,10 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Ontladen"
   TASKDLG_TASK_INITIALIZING: "Bezig met initialiseren…"
   TASKDLG_TASK_LOADING_SYMBOLS: "Bezig met symbolen laden…"
+  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_PROCESS_SUSPENDED: "(geschorst)"
   TOOLKITDLG_TITLE: "Windhawk toolkit"
+  TOOLKITDLG_EXPLANATION_CRASH: ~
   TOOLKITDLG_BUTTON_OPEN: "Windhawk &openen"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Geladen &mods"
   TOOLKITDLG_BUTTON_EXIT: "Windhawk &afsluiten"
@@ -70,10 +73,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "Toolkit &sluiten"
   SAFE_MODE_TITLE: "Herstarten in veilige modus"
   SAFE_MODE_TEXT: "Windhawk zal opnieuw worden gestart met alle code-injectie functionaliteit uitgeschakeld."
-  TASKDLG_PROCESS_SUSPENDED: "(geschorst)"
   SAFE_MODE_DETECTED_TITLE: ~
   SAFE_MODE_DETECTED_TEXT: ~
-  TOOLKITDLG_EXPLANATION_CRASH: ~
 app:
   general:
     loading: "Bezig met laden…"
