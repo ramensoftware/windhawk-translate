@@ -212,8 +212,8 @@ app:
       title: "மொழி"
       description: "விண்ட்ஹாக் க்கான விருப்பமான காட்சிமொழியைத் தேர்ந்தெடுக்கவும்."
       contribute: "<0>புதிய மொழிபெயர்ப்பை பங்களிக்கவும்</0>."
-      credits: "ஆங்கில மொழிபெயர்ப்பு செய்தவர்: <0>John Smith</0>."
-      creditsLink: "mailto:john.smith@example.com"
+      credits: "தமிழ் மொழிபெயர்ப்பு செய்தவர்: <0>JeevabharathiRK</0>."
+      creditsLink: "https://github.com/JeevabharathiRK"
     updates:
       title: "புதுப்பிப்புகளை சரிபார்க்கவும்"
       description: "விண்ட்ஹாக் மற்றும் நிறுவப்பட்ட மாற்றங்களின் புதிய பதிப்புகளைக் காண மையமாகத்தோறும் சரிபார்க்கவும்."
