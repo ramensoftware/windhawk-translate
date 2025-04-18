@@ -31,7 +31,7 @@ setup:
   INETC_SECOND: "வினாடிகள்"
   INETC_MINUTE: "நிமிடம்"
   INETC_HOUR: "மணிநேரம்"
-  INETC_PROGRESS: "%dகேபி (%d%%) of %கேபி @ %d.%01dகேபி/நொடி"
+  INETC_PROGRESS: "%dகேபி (%d%%) of %dகேபி @ %d.%01dகேபி/நொடி"
   INETC_REMAINING: " (%d %s%s மீதமுள்ள)"
 tray:
   TRAY_OPEN: "விண்ட்ஹாக் ஐத் திற"
