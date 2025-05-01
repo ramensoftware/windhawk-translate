@@ -58,8 +58,8 @@ tray:
   TASKDLG_COLUMN_STATUS: "状態"
   TASKDLG_STATUS_PENDING: "保留中..."
   TASKDLG_STATUS_LOADING: "読み込み中..."
-  TASKDLG_STATUS_LOADED: "読み込みました"
-  TASKDLG_STATUS_UNLOADED: "解放しました"
+  TASKDLG_STATUS_LOADED: "読み込み済み"
+  TASKDLG_STATUS_UNLOADED: "解放済み"
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルを読み込み中..."
   TASKDLG_TASK_UNINITIALIZING: ~
@@ -74,7 +74,7 @@ tray:
   SAFE_MODE_TITLE: "セーフモードで再起動"
   SAFE_MODE_TEXT: "Windhawk のコードインジェクション機能をオフにした状態で再起動します。"
   SAFE_MODE_DETECTED_TITLE: "セーフモード"
-  SAFE_MODE_DETECTED_TEXT: "現在Windowsがセーフモードで起動中です。Windhawkでもセーフモードを有効にしますか？これにより、すべてのコード インジェクション機能が無効化されます。"
+  SAFE_MODE_DETECTED_TEXT: "現在 Windows がセーフモードで起動中です。Windhawk も同様にセーフモードにしますか？これにより、すべてのコードインジェクション機能が無効化されます。"
 app:
   general:
     loading: "読み込み中..."
@@ -187,7 +187,7 @@ app:
     changes:
       title: "最新バージョンの変更点"
       noData: "インストールされているバージョンは最新です。"
-      splitView: "分割表示"
+      splitView: "分割で表示"
       expandLines_one: "1 個の隠れた行を展開"
       expandLines_other: "{{count}} 個の隠れた行を展開"
   home:
