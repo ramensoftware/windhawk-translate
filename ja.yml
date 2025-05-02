@@ -212,7 +212,7 @@ app:
     language:
       title: "言語"
       description: "Windhawk の表示言語を選択してください。"
-      contribute: "<0>新しい翻訳に貢献する</0>。"
+      contribute: "新しい<0>翻訳に貢献</0>する。"
       credits: "lmncaj と Keita Kunishi と <0>Re*Index.(ot_inc)</0> によって日本語翻訳されました。"
       creditsLink: "https://reindex-ot.github.io/"
     updates:
