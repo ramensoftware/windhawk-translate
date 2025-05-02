@@ -212,7 +212,7 @@ app:
     language:
       title: "言語"
       description: "Windhawk の表示言語を選択してください。"
-      contribute: "新しい<0>翻訳に貢献</0>する。"
+      contribute: "Windhawk の<0>翻訳に貢献</0>する。"
       credits: "lmncaj と Keita Kunishi と <0>Re*Index.(ot_inc)</0> によって日本語翻訳されました。"
       creditsLink: "https://reindex-ot.github.io/"
     updates:
@@ -227,10 +227,10 @@ app:
       description: "Windhawk を終了するには、このオプションを無効化する必要があります。"
     requireElevation:
       title: "Windhawk の実行時に UAC の昇格を要求"
-      description: "Windhawk の実行には管理者権限が必要ですが、シングルユーザーコンピューターの環境で毎回 UAC のプロンプトが表示されるのは煩わしいため、Windhawk はこれを回避しています。Windhawk の実行に UAC の昇格を要求させるには、このオプションを有効化してください。"
+      description: "Windhawk の実行には管理者権限が必要ですが、シングルユーザーコンピューターの環境で毎回 UAC のプロンプトが表示されるのは煩わしいため、Windhawk はこれを回避しています。Windhawk の実行に UAC の昇格を要求させるにはこのオプションを有効化してください。"
     dontAutoShowToolkit:
       title: "ツールキットダイアログを自動で表示しない"
-      description: "既定では、システムが不安定な状態やその他の理由でタスクバーにアクセスできない状態を検出すると、Windhawk は自動的にツールキットダイアログを表示します。ツールキットダイアログは、Windhawk の終了、セーフモードの切り替え、その他の操作を行なうことができます。ツールキットダイアログは、Ctrl+Win+W のキーボードショートカットでも表示できます。"
+      description: "既定では、システムが不安定な状態やその他の理由でタスクバーにアクセスできない状態を検出すると、Windhawk は自動的にツールキットダイアログを表示します。ツールキットダイアログは、「Windhawk の終了」「セーフモードの切り替え」「その他の操作」を行なうことができます。ツールキットダイアログは、Ctrl+Win+W のキーボードショートカットでも表示できます。"
     modInitDialogDelay:
       title: "Mod 初期化ダイアログの遅延"
       description: "Mod の初期化でプログレスダイアログを表示するまでの待機時間 (ミリ秒) を設定できます。"
