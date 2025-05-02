@@ -58,11 +58,11 @@ tray:
   TASKDLG_COLUMN_STATUS: "状態"
   TASKDLG_STATUS_PENDING: "保留中..."
   TASKDLG_STATUS_LOADING: "読み込み中..."
-  TASKDLG_STATUS_LOADED: "読み込みました"
-  TASKDLG_STATUS_UNLOADED: "解放しました"
+  TASKDLG_STATUS_LOADED: "読み込み済み"
+  TASKDLG_STATUS_UNLOADED: "解放済み"
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルを読み込み中..."
-  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_TASK_UNINITIALIZING: "未初期化中..."
   TASKDLG_PROCESS_SUSPENDED: "(一時停止中)"
   TOOLKITDLG_TITLE: "Windhawk ツールキット"
   TOOLKITDLG_EXPLANATION_CRASH: "システムの不安定化を検出しました。これは Windhawk 内の 1 個の Mod が原因である可能性があります。Windhawk を終了するか、セーフモードで再起動すると問題が解決できる可能性があります。"
@@ -74,7 +74,7 @@ tray:
   SAFE_MODE_TITLE: "セーフモードで再起動"
   SAFE_MODE_TEXT: "Windhawk のコードインジェクション機能をオフにした状態で再起動します。"
   SAFE_MODE_DETECTED_TITLE: "セーフモード"
-  SAFE_MODE_DETECTED_TEXT: "現在Windowsがセーフモードで起動中です。Windhawkでもセーフモードを有効にしますか？これにより、すべてのコード インジェクション機能が無効化されます。"
+  SAFE_MODE_DETECTED_TEXT: "現在 Windows がセーフモードで起動中です。Windhawk も同様にセーフモードにしますか？これにより、すべてのコードインジェクション機能が無効化されます。"
 app:
   general:
     loading: "読み込み中..."
@@ -105,8 +105,8 @@ app:
     notCompiled: "Mod のコンパイルが必要です"
     editedLocally: "Mod はローカルで編集されました"
     noDescription: "(説明はありません)"
-    users_one: "{{formattedCount}} 人のユーザー"
-    users_other: "{{formattedCount}} 人のユーザー"
+    users_one: "{{formattedCount}} 名のユーザー"
+    users_other: "{{formattedCount}} 名のユーザー"
   modDetails:
     header:
       installedVersion: "インストール済みのバージョン"
@@ -187,7 +187,7 @@ app:
     changes:
       title: "最新バージョンの変更点"
       noData: "インストールされているバージョンは最新です。"
-      splitView: "分割表示"
+      splitView: "分割で表示"
       expandLines_one: "1 個の隠れた行を展開"
       expandLines_other: "{{count}} 個の隠れた行を展開"
   home:
@@ -212,9 +212,9 @@ app:
     language:
       title: "言語"
       description: "Windhawk の表示言語を選択してください。"
-      contribute: "<0>新しい翻訳に貢献する</0>."
+      contribute: "Windhawk の<0>翻訳に貢献</0>する。"
       credits: "lmncaj と Keita Kunishi と <0>Re*Index.(ot_inc)</0> によって日本語翻訳されました。"
-      creditsLink: "https://github.com/reindex-ot"
+      creditsLink: "https://reindex-ot.github.io/"
     updates:
       title: "更新を確認"
       description: "Windhawk とインストールされている Mod の新しいバージョンを定期的に確認します。"
@@ -227,10 +227,10 @@ app:
       description: "Windhawk を終了するには、このオプションを無効化する必要があります。"
     requireElevation:
       title: "Windhawk の実行時に UAC の昇格を要求"
-      description: "Windhawk の実行には管理者権限が必要ですが、シングルユーザーコンピューターの環境で毎回 UAC のプロンプトが表示されるのは煩わしいため、Windhawk はこれを回避しています。Windhawk の実行に UAC の昇格を要求させるには、このオプションを有効化してください。"
+      description: "Windhawk の実行には管理者権限が必要ですが、シングルユーザーコンピューターの環境で毎回 UAC のプロンプトが表示されるのは煩わしいため、Windhawk はこれを回避しています。Windhawk の実行に UAC の昇格を要求させるにはこのオプションを有効化してください。"
     dontAutoShowToolkit:
       title: "ツールキットダイアログを自動で表示しない"
-      description: "既定では、システムが不安定な状態やその他の理由でタスクバーにアクセスできない状態を検出すると、Windhawk は自動的にツールキットダイアログを表示します。ツールキットダイアログは、Windhawk の終了、セーフモードの切り替え、その他の操作を行なうことができます。ツールキットダイアログは、Ctrl+Win+W のキーボードショートカットでも表示できます。"
+      description: "既定では、システムが不安定な状態やその他の理由でタスクバーにアクセスできない状態を検出すると、Windhawk は自動的にツールキットダイアログを表示します。ツールキットダイアログは、「Windhawk の終了」「セーフモードの切り替え」「その他の操作」を行なうことができます。ツールキットダイアログは、Ctrl+Win+W のキーボードショートカットでも表示できます。"
     modInitDialogDelay:
       title: "Mod 初期化ダイアログの遅延"
       description: "Mod の初期化でプログレスダイアログを表示するまでの待機時間 (ミリ秒) を設定できます。"
