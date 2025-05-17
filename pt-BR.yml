@@ -191,7 +191,7 @@ app:
       expandLines_one: "Expandir uma linha oculta"
       expandLines_other: "Expandir {{count}} linhas ocultas"
   home:
-    browse: "Presquisar Mods"
+    browse: "Pesquisar Mods"
     installedMods:
       title: "Mods Instalados"
       noMods: "Nenhum mod instalado"
@@ -201,7 +201,7 @@ app:
       explore: "Explorar outros Mods"
   explore:
     search:
-      placeholder: "Presquisar Mods..."
+      placeholder: "Pesquisar Mods..."
       popularAndTopRated: "Popular e Melhor Avaliado"
       popular: "Popular"
       topRated: "Melhor Avaliado"
