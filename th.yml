@@ -260,7 +260,7 @@ app:
       invalidCharactersWarning: "รายการกระบวนการมีตัวอักษรที่ไม่ถูกต้อง ซึ่งจะถูกตัดออก: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
-    beta: "beta"
+    beta: "เบต้า"
     subtitle: "โปรแกรมรวบรวมการปรับแต่งสำหรับ Windows และโปรแกรมต่าง ๆ"
     credit: "โดย <0>{{author}}</0>"
     update:
