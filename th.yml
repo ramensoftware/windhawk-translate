@@ -52,7 +52,7 @@ tray:
   TASKDLG_TITLE_LOADED_MODS: "&ม็อดที่โหลดเอาไว้"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "งานของม็อดกำลังดำเนินการอยู่"
   TASKDLG_BUTTON_OPEN_APP: "เปิด &Windhawk"
-  TASKDLG_COLUMN_MOD: "ม็อด
+  TASKDLG_COLUMN_MOD: "ม็อด"
   TASKDLG_COLUMN_PROCESS: "กระบวนการ"
   TASKDLG_COLUMN_PID: "PID"
   TASKDLG_COLUMN_STATUS: "สถานะ"
