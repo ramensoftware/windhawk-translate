@@ -273,10 +273,10 @@ app:
       documentation: "เอกสาร"
     builtWith:
       title: "สร้างด้วย"
-      vscodium: "A community-driven distribution of Microsoft's VSCode editor"
-      llvmMingw: "An LLVM/Clang/LLD based mingw-w64 toolchain"
-      minHook: "The minimalistic API hooking library for Windows"
-      others: "Other tools and libraries, and a bit of code"
+      vscodium: "การกระจาย VSCode Editor ของ Microsoft ที่ขับเคลื่อนโดยชุมชน"
+      llvmMingw: "ชุดเครื่องมือ mingw-w64 ที่ใช้ LLVM/Clang/LLD"
+      minHook: "ไลบรารีการเชื่อมต่อ API ที่เรียบง่ายสำหรับ Windows"
+      others: "เครื่องมือและไลบรารี่อื่นๆ กับโค้ดอีกเล็กน้อย"
   installModal:
     title: "ติดตั้ง {{mod}}"
     warningTitle: "ดำเนินการอย่างมีสติ"
