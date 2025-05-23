@@ -179,8 +179,8 @@ app:
         invalidCharactersWarning: ~
         saveButton: "Salva"
       includeExcludeCustomOnly:
-        title: "Ignore mod inclusion/exclusion lists"
-        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
+        title: ~
+        description: ~
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
