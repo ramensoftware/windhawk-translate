@@ -65,7 +65,7 @@ tray:
   TASKDLG_TASK_UNINITIALIZING: "Cerrando..."
   TASKDLG_PROCESS_SUSPENDED: "(suspendido)"
   TOOLKITDLG_TITLE: "Kit de herramientas Windhawk"
-  TOOLKITDLG_EXPLANATION_CRASH: Se detectó inestabilidad en el sistema, que pudo ser causada por uno de los mods de Windhawk. Salir de Windhawk o reiniciarlo en modo seguro podría ayudar a resolver el problema.
+  TOOLKITDLG_EXPLANATION_CRASH: "Se detectó inestabilidad en el sistema, que pudo ser causada por uno de los mods de Windhawk. Salir de Windhawk o reiniciarlo en modo seguro podría ayudar a resolver el problema."
   TOOLKITDLG_BUTTON_OPEN: "&Abrir Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "&Mods cargados"
   TOOLKITDLG_BUTTON_EXIT: "&Salir de Windhawk"
@@ -183,7 +183,7 @@ app:
         description: "Ignora las listas de inclusión/exclusión del mod y utiliza solo las listas personalizadas anteriores."
       patternsMatchCriticalSystemProcesses:
         title: "Considerar patrones de lista de inclusión para procesos críticos del sistema."
-        description: "Por defecto, Windhawk solo carga mods en procesos críticos si solo está incluido en la lista sin *, por ejemplo: <0>critico.exe</0> pero no <0>*</0> o <0>*.exe</0>. Para más detalles, por favor consulte <1>la documentación</1>.
+        description: "Por defecto, Windhawk solo carga mods en procesos críticos si solo está incluido en la lista sin *, por ejemplo: <0>critico.exe</0> pero no <0>*</0> o <0>*.exe</0>. Para más detalles, por favor consulte <1>la documentación</1>."
     changes:
       title: "Últimos cambios de versión"
       noData: "La versión instalada es idéntica a la última versión."
