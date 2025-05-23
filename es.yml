@@ -67,14 +67,14 @@ tray:
   TOOLKITDLG_TITLE: "Kit de herramientas Windhawk"
   TOOLKITDLG_EXPLANATION_CRASH: Se detectó inestabilidad en el sistema, que pudo ser causada por uno de los mods de Windhawk. Salir de Windhawk o reiniciarlo en modo seguro podría ayudar a resolver el problema.
   TOOLKITDLG_BUTTON_OPEN: "&Abrir Windhawk"
-  TOOLKITDLG_BUTTON_LOADED_MODS: "&Mods cargado"
+  TOOLKITDLG_BUTTON_LOADED_MODS: "&Mods cargados"
   TOOLKITDLG_BUTTON_EXIT: "&Salir de Windhawk"
   TOOLKITDLG_BUTTON_SAFE_MODE: "&Modo seguro"
   TOOLKITDLG_BUTTON_CLOSE: "&Cerrar kit de herramientas"
   SAFE_MODE_TITLE: "Reiniciar en modo seguro"
   SAFE_MODE_TEXT: "Windhawk se relanzará con todas las funciones de inyección de código desactivadas."
   SAFE_MODE_DETECTED_TITLE: "Modo Seguro"
-  SAFE_MODE_DETECTED_TEXT: "Windows se esta ejecutando en modo seguro. Deseas habilitar el modo seguro en Windhawk? La funcionalidad de inyección de código sera deshabilitada."
+  SAFE_MODE_DETECTED_TEXT: "Windows se está ejecutando en modo seguro. Deseas habilitar el modo seguro en Windhawk? La funcionalidad de inyección de código será deshabilitada."
 app:
   general:
     loading: "Cargando..."
@@ -176,14 +176,14 @@ app:
         titleExclusion: "Lista de exclusión de procesos personalizados"
         descriptionExclusion: "Una lista personalizada de nombres/rutas de archivos ejecutables adicionales que el mod excluirá de la orientación. La lista se agrega a la lista de exclusión que el autor del mod definió para determinar a qué procesos apuntar. Para cada proceso, el mod se carga si la ruta del archivo ejecutable coincide con una de las entradas de inclusión y no coincide con ninguna entrada de exclusión."
         processListPlaceholder: "Nombres/rutas de procesos, uno por línea, por ejemplo:"
-        invalidCharactersWarning: "La lista de procesos incluye carácteres inválidos, que serán eliminados: {{invalidCharacters}}"
+        invalidCharactersWarning: "La lista de procesos incluye caracteres inválidos, que serán eliminados: {{invalidCharacters}}"
         saveButton: "Guardar"
       includeExcludeCustomOnly:
         title: "Ignorar listas de inclusión/exclusión del mod."
         description: "Ignora las listas de inclusión/exclusión del mod y utiliza solo las listas personalizadas anteriores."
       patternsMatchCriticalSystemProcesses:
         title: "Considerar patrones de lista de inclusión para procesos críticos del sistema."
-        description: "Por defecto, Windhawk solo carga mods en procesos crítcos si solo está incluido en la lista sin *, por ejemplo: <0>critico.exe</0> pero no <0>*</0> ó <0>*.exe</0>. Para más detalles, por favor vea <1>la documentación</1>.
+        description: "Por defecto, Windhawk solo carga mods en procesos críticos si solo está incluido en la lista sin *, por ejemplo: <0>critico.exe</0> pero no <0>*</0> o <0>*.exe</0>. Para más detalles, por favor consulte <1>la documentación</1>.
     changes:
       title: "Últimos cambios de versión"
       noData: "La versión instalada es idéntica a la última versión."
@@ -250,7 +250,7 @@ app:
       titleExclusion: "Lista de exclusión de procesos"
       descriptionExclusion: "Una lista de nombres de procesos/rutas en las que Windhawk no inyectará. Puede ser útil para casos en los que Windhawk no es compatible con un programa específico. Tenga en cuenta que agregar un proceso a esta lista no solo evitará que Windhawk lo personalice, sino que también evitará que Windhawk intercepte los procesos secundarios que crea este proceso. Esto hará que Windhawk cargue mods con un ligero retraso en tales casos."
       descriptionExclusionWiki: "Para más detalles sobre la exclusión de procesos y sobre las listas de exclusión de procesos integradas, consulte <0>la documentación</0>."
-      excludeCriticalProcesses: "Exluir programas del sistema críticos"
+      excludeCriticalProcesses: "Excluir programas críticos del sistema"
       excludeIncompatiblePrograms: "Excluir programas incompatibles conocidos"
       excludeGames: "Excluir juegos conocidos"
       titleInclusion: "Lista de inclusión de procesos"
@@ -258,7 +258,7 @@ app:
       inclusionWithoutExclusionNotice: "La lista de inclusión de procesos no tiene efecto con una lista de exclusión de procesos vacía."
       inclusionWithoutTotalExclusionNotice: "Si pretendía excluir todos los procesos menos estos, puede establecer \"*\" en la lista de exclusión de procesos."
       processListPlaceholder: "Nombres/rutas de procesos, uno por línea, por ejemplo:"
-      invalidCharactersWarning: "La lista de programas contiene caracteres no válidos que serán eliminados: {{invalidCharacters}}"
+      invalidCharactersWarning: "La lista de procesos contiene caracteres no válidos que serán eliminados: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
