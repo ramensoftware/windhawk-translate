@@ -25,14 +25,14 @@ setup:
   INSTTYPE_STANDARD_DESC: "Instalar $(^NameDA) para todos los usuarios en este ordenador."
   INSTTYPE_PORTABLE: "&Instalación portátil"
   INSTTYPE_PORTABLE_DESC: "Extraiga una versión portátil de $(^NameDA). En el modo portátil, todos los datos de configuración se almacenan en la carpeta de la aplicación y no se escribe información en el registro."
-  EXTRACTING_FILES: "Extracting files... %s"
-  INETC_DOWNLOADING: "Downloading %s"
-  INETC_CONNECTING: "Connecting..."
-  INETC_SECOND: "seconds"
-  INETC_MINUTE: "minutes"
-  INETC_HOUR: "hours"
-  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
-  INETC_REMAINING: " (%d %s%s remaining)"
+  EXTRACTING_FILES: "Extrayendo archivos... %s"
+  INETC_DOWNLOADING: "Descargando %s"
+  INETC_CONNECTING: "Conectando..."
+  INETC_SECOND: "segundos"
+  INETC_MINUTE: "minutos"
+  INETC_HOUR: "horas"
+  INETC_PROGRESS: "%dkB (%d%%) de %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s restantes)"
 tray:
   TRAY_OPEN: "Abre &Windhawk"
   TRAY_LOADED_MODS: "Carga el &mods"
@@ -179,8 +179,8 @@ app:
         invalidCharactersWarning: ~
         saveButton: "Guardar"
       includeExcludeCustomOnly:
-        title: "Ignore mod inclusion/exclusion lists"
-        description: "Ignore the mod's process inclusion/exclusion lists and use only the custom lists above."
+        title: "Ignorar listas de inclusión/exclusión del mod."
+        description: "Ignora las listas de inclusión/exclusión del mod y utiliza solo las listas personalizadas anteriores."
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
