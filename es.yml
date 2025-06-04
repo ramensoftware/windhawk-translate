@@ -62,6 +62,7 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Descargado"
   TASKDLG_TASK_INITIALIZING: "Inicializando..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Cargando símbolos..."
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
   TASKDLG_TASK_UNINITIALIZING: "Cerrando..."
   TASKDLG_PROCESS_SUSPENDED: "(suspendido)"
   TOOLKITDLG_TITLE: "Kit de herramientas Windhawk"

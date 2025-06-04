@@ -62,6 +62,7 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Unloaded"
   TASKDLG_TASK_INITIALIZING: "Initializing..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Loading symbols..."
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Waiting for symbols..."
   TASKDLG_TASK_UNINITIALIZING: "Uninitializing..."
   TASKDLG_PROCESS_SUSPENDED: "(suspended)"
   TOOLKITDLG_TITLE: "Windhawk toolkit"

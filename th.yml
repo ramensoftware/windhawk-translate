@@ -62,6 +62,7 @@ tray:
   TASKDLG_STATUS_UNLOADED: "ไม่ได้โหลด"
   TASKDLG_TASK_INITIALIZING: "กำลังเริ่ม..."
   TASKDLG_TASK_LOADING_SYMBOLS: "กำลังโหลด symbol..."
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
   TASKDLG_TASK_UNINITIALIZING: "กำลังปิด..."
   TASKDLG_PROCESS_SUSPENDED: "(ถูกระงับ)"
   TOOLKITDLG_TITLE: "กล่องเครื่องมือ Windhawk"

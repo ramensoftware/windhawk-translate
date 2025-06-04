@@ -62,6 +62,7 @@ tray:
   TASKDLG_STATUS_UNLOADED: "ஏற்றப்படவில்லை"
   TASKDLG_TASK_INITIALIZING: "துவக்குகிறது..."
   TASKDLG_TASK_LOADING_SYMBOLS: "சின்னங்களை ஏற்றுகிறது..."
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
   TASKDLG_TASK_UNINITIALIZING: ~
   TASKDLG_PROCESS_SUSPENDED: "(இடைநிறுத்தப்பட்டுள்ளது)"
   TOOLKITDLG_TITLE: "விண்ட்ஹாக் கருவித்தொகுப்பு"
