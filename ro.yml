@@ -17,7 +17,7 @@ setup:
   UPDATE: "Act&ualizare"
   UNINSTALL: "&Dezinstalare"
   UNINSTALL_CURRENT: "&Dezinstalează versiunea curentă"
-  NO_UNINSTALL: "&Nu dezinstalați"
+  NO_UNINSTALL: "&Nu dezinstala"
   INSTTYPE_HEADER: "Tipul instalării"
   INSTTYPE_TEXT: "Selectează tipul de instalare pe care vrei să o faci."
   INSTTYPE_INTRO: "Bun venit la instalatorul $(^NameDA). Pentru a începe, selectează modul de instalare dorit."
@@ -62,7 +62,7 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Dezactivat"
   TASKDLG_TASK_INITIALIZING: "Inițializare..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Se încarcă simbolurile..."
-  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_TASK_UNINITIALIZING: "Dezinițializare..."
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
   TOOLKITDLG_TITLE: "Trusă de unelte Windhawk"
   TOOLKITDLG_EXPLANATION_CRASH: "A fost detectată instabilitatea sistemului, ceea ce ar putea fi cauzată de unul dintre modurile Windhawk. Închiderea sau relansarea Windhawk în modul de siguranță ar putea ajuta la rezolvarea problemei."
@@ -274,10 +274,10 @@ app:
       documentation: "Documentație"
     builtWith:
       title: "Construit cu"
-      vscodium: "O distribuție a editorului VSCode de la Microsoft, condusă de comunitate"
+      vscodium: "O distribuție a editorului VSCode de la Microsoft condusă de comunitate"
       llvmMingw: "Un lanț de instrumente mingw-w64 bazat pe LLVM/Clang/LLD"
       minHook: "Biblioteca minimalistă de API hooking pentru Windows"
-      others: "Alte moduri și biblioteci și puțin cod"
+      others: "Alte unelte și biblioteci și puțin cod"
   installModal:
     title: "Instalează {{mod}}"
     warningTitle: "Continuă cu prudență"
