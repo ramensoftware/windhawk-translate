@@ -214,8 +214,8 @@ app:
             title: "भाषा"
             description: "विंडहॉक के लिए अपनी पसंदीदा प्रदर्शन भाषा चुनें।"
             contribute: "<0>नया अनुवाद योगदान करें</0>।"
-            credits: "<0>जॉन स्मिथ</0> द्वारा अंग्रेजी अनुवाद।"
-            creditsLink: "mailto:john.smith@example.com"
+            credits: "<0>Sathwik Hejamady Bhat</0> द्वारा अंग्रेजी अनुवाद।"
+            creditsLink: "mailto:sathwikhbhat@gmail.com"
         updates:
             title: "अपडेट के लिए जांचें"
             description: "विंडहॉक और स्थापित मॉड्स के नए संस्करणों की समय-समय पर जांच करें।"
