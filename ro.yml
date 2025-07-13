@@ -24,7 +24,7 @@ setup:
   INSTTYPE_STANDARD: "&Instalare standard (recomandat)"
   INSTTYPE_STANDARD_DESC: "Instalează $(^NameDA) pentru toți utilizatorii acestui computer."
   INSTTYPE_PORTABLE: "&Instalare portabilă"
-  INSTTYPE_PORTABLE_DESC: "Extrage o versiune portabilă de $(^NameDA). În modul portabil, toate datele de configurare sunt stocate în folderul aplicației și nicio altă informație nu este stocată în regiștrii."
+  INSTTYPE_PORTABLE_DESC: "Extrage o versiune portabilă de $(^NameDA). În modul portabil, toate datele de configurare sunt stocate în folderul aplicației și nicio altă informație nu este stocată în regiștri."
   EXTRACTING_FILES: "Se extrag fișierele... %s"
   INETC_DOWNLOADING: "Se descarcă %s"
   INETC_CONNECTING: "Se conectează..."
