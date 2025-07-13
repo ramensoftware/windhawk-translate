@@ -62,7 +62,7 @@ tray:
   TASKDLG_STATUS_UNLOADED: "解放済み"
   TASKDLG_TASK_INITIALIZING: "初期化中..."
   TASKDLG_TASK_LOADING_SYMBOLS: "シンボルを読み込み中..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "シンボルを待機中..."
   TASKDLG_TASK_UNINITIALIZING: "未初期化中..."
   TASKDLG_PROCESS_SUSPENDED: "(一時停止中)"
   TOOLKITDLG_TITLE: "Windhawk ツールキット"
@@ -214,7 +214,7 @@ app:
       title: "言語"
       description: "Windhawk の表示言語を選択してください。"
       contribute: "Windhawk の<0>翻訳に貢献</0>する。"
-      credits: "lmncaj と Keita Kunishi と <0>Re*Index.(ot_inc)</0> によって日本語翻訳されました。"
+      credits: "lmncaj と Keita Kunishi と <0>Re*Index.(ot_inc)</0> によって日本語訳されました。"
       creditsLink: "https://reindex-ot.github.io/"
     updates:
       title: "更新を確認"
