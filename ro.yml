@@ -62,7 +62,7 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Dezactivat"
   TASKDLG_TASK_INITIALIZING: "Inițializare..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Se încarcă simbolurile..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Se așteaptă simbolurile..."
   TASKDLG_TASK_UNINITIALIZING: "Dezinițializare..."
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
   TOOLKITDLG_TITLE: "Trusă de unelte Windhawk"
