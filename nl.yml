@@ -62,11 +62,11 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Ontladen"
   TASKDLG_TASK_INITIALIZING: "Bezig met initialiseren…"
   TASKDLG_TASK_LOADING_SYMBOLS: "Bezig met symbolen laden…"
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
-  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Aan het wachten op symbolen…"
+  TASKDLG_TASK_UNINITIALIZING: "Bezig met de-initialiseren…"
   TASKDLG_PROCESS_SUSPENDED: "(geschorst)"
   TOOLKITDLG_TITLE: "Windhawk toolkit"
-  TOOLKITDLG_EXPLANATION_CRASH: ~
+  TOOLKITDLG_EXPLANATION_CRASH: "Er is systeeminstabiliteit gedetecteerd, die mogelijk wordt veroorzaakt door een van de Windhawk mods. Het probleem kan mogelijk worden opgelost door Windhawk af te sluiten of opnieuw te starten in de veilige modus."
   TOOLKITDLG_BUTTON_OPEN: "Windhawk &openen"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Geladen &mods"
   TOOLKITDLG_BUTTON_EXIT: "Windhawk &afsluiten"
@@ -74,8 +74,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "Toolkit &sluiten"
   SAFE_MODE_TITLE: "Herstarten in veilige modus"
   SAFE_MODE_TEXT: "Windhawk zal opnieuw worden gestart met alle code-injectie functionaliteit uitgeschakeld."
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  SAFE_MODE_DETECTED_TITLE: "Veilige modus"
+  SAFE_MODE_DETECTED_TEXT: "Windows wordt uitgevoerd in de veilige modus. Wil je de veilige modus inschakelen in Windhawk? Alle code-injectiefuncties worden uitgeschakeld."
 app:
   general:
     loading: "Bezig met laden…"
@@ -177,14 +177,14 @@ app:
         titleExclusion: "Aangepaste proces-uitsluitingslijst"
         descriptionExclusion: "Een aangepaste lijst met extra uitvoerbare bestandsnamen/-paden die de mod zal uitsluiten van targeten. De lijst wordt toegevoegd aan de uitsluitingslijst die de auteur van de mod heeft gedefinieerd om te bepalen welke processen moeten worden getarget. Voor elk proces wordt de mod geladen als het pad van het uitvoerbare bestand overeenkomt met een van de opnamevermeldingen en niet overeenkomt met een uitsluitingsvermelding."
         processListPlaceholder: "Procesnamen/-paden, één per regel, bijvoorbeeld:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "De proceslijst bevat ongeldige tekens die zullen worden verwijderd: {{invalidCharacters}}"
         saveButton: "Opslaan"
       includeExcludeCustomOnly:
         title: "Mod opname-/uitsluitingslijsten negeren"
         description: "Negeer de opname- en uitsluitingslijsten van de mod en gebruik alleen de aangepaste lijsten hierboven."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Overweeg opnamelijst-patronen voor kritieke systeemprocessen"
+        description: "Standaard laadt Windhawk alleen mods in kritieke systeemprocessen als het proces zonder patronen is opgenomen, bijv. <0>critical.exe</0>, niet <0>*</0> of <0>*.exe</0>. Raadpleeg <1>de documentatie</1> voor meer informatie over kritieke systeemprocessen."
     changes:
       title: "Wijzigingen laatste versie"
       noData: "Geïnstalleerde versie is identiek aan de nieuwste versie."
@@ -250,16 +250,16 @@ app:
     processList:
       titleExclusion: "Uitsluitingslijst verwerken"
       descriptionExclusion: "Een lijst met procesnamen/-paden waarin Windhawk niet zal injecteren. Kan handig zijn voor gevallen waarin Windhawk niet compatibel is met een specifiek programma. Let er op dat het toevoegen van een proces aan deze lijst niet alleen voorkomt dat Windhawk het aanpast, maar ook voorkomt dat Windhawk subprocessen onderschept die dit proces aanmaakt. Hierdoor zal Windhawk in zulke gevallen mods met een kleine vertraging laden."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Raadpleeg <0>de documentatie</0> voor meer informatie over het uitsluiten van processen en over de ingebouwde lijsten met uitgesloten processen."
+      excludeCriticalProcesses: "Kritieke systeemprocessen uitsluiten"
+      excludeIncompatiblePrograms: "Bekende incompatibele programma's uitsluiten"
+      excludeGames: "Bekende spellen uitsluiten"
       titleInclusion: "Proces-opnamelijst"
       descriptionInclusion: "Een lijst met procesnamen/-paden waarin Windhawk zal injecteren, zelfs als ze in de uitsluitingslijst staan."
       inclusionWithoutExclusionNotice: "Proces-opnameijst heeft geen effect met een lege proces-uitsluitingslijst."
       inclusionWithoutTotalExclusionNotice: "Als je alle processen wilt uitsluiten behalve deze, kun je \"*\" in de proces-uitsluitingslijst zetten."
       processListPlaceholder: "Procesnamen/-paden, één per regel, bijvoorbeeld:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "De proceslijst bevat ongeldige tekens die zullen worden verwijderd: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "bèta"
