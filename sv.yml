@@ -214,7 +214,7 @@ app:
       title: "Språk"
       description: "Välj önskat visningsspråk för Windhawk."
       contribute: "<0>Bidra med en ny översättning</0>."
-      credits: "Svensk översöttning av <0>Sopor</0>."
+      credits: "Svensk översättning av <0>Sopor</0>."
       creditsLink: "mailto:sopor@users.noreply.github.com"
     updates:
       title: "Sök efter uppdateringar"
