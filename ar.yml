@@ -214,7 +214,7 @@ app:
       title: "اللغة"
       description: "اختر لغة العرض المفضلة لديك لـ Windhawk."
       contribute: "<0>ساهم بترجمة جديدة</0>."
-      credits: "الترجمة الإنجليزية بواسطة <0>عبد الحق العمراوي</0>."
+      credits: "الترجمة العربية بواسطة <0>عبد الحق العمراوي</0>."
       creditsLink: "mailto:abdelhaq1080@gmail.com"
     updates:
       title: "التحقق من التحديثات"
