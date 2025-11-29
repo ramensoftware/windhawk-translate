@@ -90,6 +90,7 @@ app:
     copy: "Salin"
     paste: "Tempel"
     selectAll: "Pilih semua"
+    loggingEnabled: ~
   appHeader:
     home: "Beranda"
     explore: "Jelajahi"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "Pembaruan tersedia"
     installed: "Terpasang"
     details: "Rincian"
+    update: "Perbarui"
+    downgrade: ~
+    install: "Pasang"
+    compile: "Kompilasi"
+    disable: "Nonaktifkan"
+    enable: "Diaktifkan"
+    edit: "Sunting"
+    fork: "Fork"
     remove: "Hapus"
     removeConfirm: "Apakah anda yakin ingin menghapus mod ini?"
     removeConfirmOk: "Hapus mod"
     removeConfirmCancel: "Batal"
+    donate: ~
     notCompiled: "Mod needs to be compiled"
     editedLocally: "Mod sudah disunting lokal"
     noDescription: "(tidak ada deskripsi)"
     users_one: "{{formattedCount}} pengguna"
     users_other: "{{formattedCount}} pengguna"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Versi yang terpasang"
       latestVersion: "Versi saat ini"
       loading: "memuat..."
       loadingFailed: "gagal dimuat"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Pengenal Mod"
       modVersion: "Versi Mod"
+      lastUpdated: ~
       modAuthor:
         title: "Pembuat Mod"
         homepage: "Homepage"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} kecuali {{excluded}}"
         tooltip:
           target: "Target proses"
-          targets: "Target pemrosesan:"
-          excluded: "Dikecualikan:"
-      update: "Perbarui"
+          targets: "Target pemrosesan"
+          excluded: "Dikecualikan"
+          customListsNote: ~
       updateNotNeeded: "Versi yang terinstal identik dengan versi terbaru"
-      install: "Pasang"
-      compile: "Kompilasi"
-      disable: "Nonaktifkan"
-      enable: "Diaktifkan"
-      edit: "Sunting"
-      fork: "Fork"
-      remove: "Hapus"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Rincian"
       noData: "Rincian mod hilang."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Contoh value"
       arrayItemAdd: "Tambahkan item baru"
       arrayItemRemove: "Hapus item"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Kode Sumber"
       noData: "Sumber mod hilang."
@@ -191,24 +214,45 @@ app:
       splitView: "Tampilan berbagi"
       expandLines_one: "Perlebar salah satu baris tersembunyi"
       expandLines_other: "Perlebar {{count}} baris tersembunyi"
+  modSearch:
+    placeholder: "Cari untuk mod..."
+    noResults: ~
   home:
     browse: "Jelajahi untuk Mod"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Mod yang terpasang"
       noMods: "Tidak ada mod yang terpasang"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Mod yang difiturkan"
       noMods: "Tidak ada mod difiturkan yang belum terpasang"
       explore: "Jelajahi Mod Lainnya"
   explore:
     search:
-      placeholder: "Cari untuk mod..."
       popularAndTopRated: "Populer dan rating tertinggi"
       popular: "Populer"
       topRated: "Rating tertinggi"
       newest: "Terbaru"
       lastUpdated: "Terakhir diperbarui"
       alphabeticalOrder: "Urutkan secara abjad"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Bahasa"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Sembunyikan ikon baki"
       description: "Anda akan menonaktifkan opsi ini untuk menutup Windhawk."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Dibutuhkan elevasi UAC untuk menjalankan Windhawk"
       description: "Windhawk memerlukan administrator, tetapi untuk komputer single-user, mendapatkan prompt UAC setiap waktu bisa jadi menyebalkan, jadi Windhawk melewatinya. Aktifkan opsi ini untuk membutuhkan elevasi UAC untuk menjalankan Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "Pembaruan tersedia"
       subtitle: "Pastikan memperbarui Windhawk untuk mendapatkan fitur terbaru dan perbaikan bug"
-      button: "Rincian lengkapnya"
+      changelogButton: ~
+      updateButton: "Rincian lengkapnya"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Tautan"
       homepage: "Homepage"
@@ -315,6 +373,7 @@ app:
     notCompiled: "Mod harus di kompilasi"
     compile: "Kompilasi Mod"
     compilationFailed: "Kompilasi gagal"
+    stopCompilation: ~
     preview: "Pratinjau Mod"
     showLogOutput: "Tampilkan Log Output"
     exit: "Tutup Mode Penyuntingan"

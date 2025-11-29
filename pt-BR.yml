@@ -90,6 +90,7 @@ app:
     copy: "Copiar"
     paste: "Colar"
     selectAll: "Selecionar tudo"
+    loggingEnabled: ~
   appHeader:
     home: "Início"
     explore: "Explorar"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "Atualização disponivel"
     installed: "Instalado"
     details: "Detalhes"
+    update: "Atualizar"
+    downgrade: ~
+    install: "Instalar"
+    compile: "Compilar"
+    disable: "Desabilitar"
+    enable: "Habilitar"
+    edit: "Editar"
+    fork: "Parar"
     remove: "Remover"
     removeConfirm: "Tem certeza de que deseja remover este Mod?"
     removeConfirmOk: "Remover Mod"
     removeConfirmCancel: "Cancelar"
+    donate: ~
     notCompiled: "O Mod precisa ser compilado"
     editedLocally: "O Mod foi editado localmente"
     noDescription: "(sem descrição)"
     users_one: "{{formattedCount}} usuário"
     users_other: "{{formattedCount}} usuários"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Versão instalada"
       latestVersion: "Última versão"
       loading: "Carregando..."
       loadingFailed: "Falha ao Carregar"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Identificador de Mod"
       modVersion: "Versão do Mod"
+      lastUpdated: ~
       modAuthor:
         title: "Autor do Mod"
         homepage: "Site Pessoal"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} exeto {{excluded}}"
         tooltip:
           target: "Processo alvo"
-          targets: "Processos alvo:"
-          excluded: "Excluído:"
-      update: "Atualizar"
+          targets: "Processos alvo"
+          excluded: "Excluído"
+          customListsNote: ~
       updateNotNeeded: "A versão instalada é idêntica à versão mais recente"
-      install: "Instalar"
-      compile: "Compilar"
-      disable: "Desabilitar"
-      enable: "Habilitar"
-      edit: "Editar"
-      fork: "Parar"
-      remove: "Remover"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Detalhes"
       noData: "Faltam detalhes do Mod."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Valor da amostra"
       arrayItemAdd: "Adicionar novo item"
       arrayItemRemove: "Remover item"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Código fonte"
       noData: "A fonte do Mod está ausente."
@@ -191,24 +214,45 @@ app:
       splitView: "Viualização dividida"
       expandLines_one: "Expandir uma linha oculta"
       expandLines_other: "Expandir {{count}} linhas ocultas"
+  modSearch:
+    placeholder: "Pesquisar Mods..."
+    noResults: ~
   home:
     browse: "Pesquisar Mods"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Mods Instalados"
       noMods: "Nenhum mod instalado"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Mods em Destaque"
       noMods: "Não há Mods em destaque que ainda não foram instalados"
       explore: "Explorar outros Mods"
   explore:
     search:
-      placeholder: "Pesquisar Mods..."
       popularAndTopRated: "Popular e Melhor Avaliado"
       popular: "Popular"
       topRated: "Melhor Avaliado"
       newest: "Recente"
       lastUpdated: "Recem Atualizados"
       alphabeticalOrder: "Ordem Alfabetica"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Idioma"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Ocultar ícone da bandeja"
       description: "Você terá que desabilitar esta opção para sair do Windhawk."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Exigir elevação UAC para executar Windhawk"
       description: "O Windhawk requer direitos de administrador, mas para um computador de usuário único, obter o prompt do UAC toda vez pode ser irritante, então o Windhawk o ignora. Ative esta opção para exigir a elevação do UAC para executar o Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "Nova atualização disponível"
       subtitle: "Atualize o Windhawk para obter novos recursos e correções de bugs"
-      button: "Mais detalhes"
+      changelogButton: ~
+      updateButton: "Mais detalhes"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Links"
       homepage: "Site Oficial"
@@ -315,6 +373,7 @@ app:
     notCompiled: "O mod precisa ser compilado"
     compile: "Compilar Mod"
     compilationFailed: "Falha na compilação"
+    stopCompilation: ~
     preview: "Vizualizar Mod"
     showLogOutput: "Mostrar Log de saida"
     exit: "Sair do modo de edição"

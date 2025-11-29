@@ -90,6 +90,7 @@ app:
     copy: "복사"
     paste: "붙여넣기"
     selectAll: "모두 선택"
+    loggingEnabled: ~
   appHeader:
     home: "홈"
     explore: "탐색"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "업데이트 사용 가능"
     installed: "설치됨"
     details: "세부 정보"
+    update: "업데이트"
+    downgrade: ~
+    install: "설치"
+    compile: "컴파일"
+    disable: "비활성화"
+    enable: "활성화"
+    edit: "편집"
+    fork: "끌어오기(포크)"
     remove: "삭제"
     removeConfirm: "이 모드를 삭제할까요?"
     removeConfirmOk: "모드 삭제"
     removeConfirmCancel: "취소"
+    donate: ~
     notCompiled: "모드 컴파일이 필요합니다"
     editedLocally: "모드가 로컬로 편집되었습니다"
     noDescription: "(설명 없음)"
     users_one: "사용자 {{formattedCount}}명"
     users_other: "사용자 {{formattedCount}}명"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "설치된 버전"
       latestVersion: "최신 버전"
       loading: "불러오는 중..."
       loadingFailed: "불러오기 실패"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "모드 식별자"
       modVersion: "모드 버전"
+      lastUpdated: ~
       modAuthor:
         title: "모드 작성자"
         homepage: "홈페이지"
@@ -127,17 +142,15 @@ app:
         except: "{{excluded}} 외의 {{included}}"
         tooltip:
           target: "대상 프로세스"
-          targets: "대상 프로세스:"
-          excluded: "제외 프로세스:"
-      update: "업데이트"
+          targets: "대상 프로세스"
+          excluded: "제외 프로세스"
+          customListsNote: ~
       updateNotNeeded: "설치되어 있는 버전이 최신 버전입니다"
-      install: "설치"
-      compile: "컴파일"
-      disable: "비활성화"
-      enable: "활성화"
-      edit: "편집"
-      fork: "끌어오기(포크)"
-      remove: "삭제"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "세부 정보"
       noData: "모드 세부 정보가 없습니다."
@@ -148,6 +161,16 @@ app:
       sampleValue: "샘플 값"
       arrayItemAdd: "새 항목 추가"
       arrayItemRemove: "항목 삭제"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "소스 코드"
       noData: "모드 소스가 없습니다."
@@ -191,24 +214,45 @@ app:
       splitView: "분할 보기"
       expandLines_one: "숨겨진 줄 1개 확장"
       expandLines_other: "숨겨진 줄 {{count}}개 확장"
+  modSearch:
+    placeholder: "모드 검색..."
+    noResults: ~
   home:
     browse: "모드 탐색"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "설치된 모드"
       noMods: "설치된 모드가 없습니다"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "추천 모드"
       noMods: "아직 설치하지 않은 추천 모드가 없습니다"
       explore: "다른 모드 탐색"
   explore:
     search:
-      placeholder: "모드 검색..."
       popularAndTopRated: "인기와 평점"
       popular: "인기"
       topRated: "평점"
       newest: "최신"
       lastUpdated: "최근 업데이트"
       alphabeticalOrder: "알파벳순"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "언어"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "트레이 아이콘 숨기기"
       description: "이 옵션을 비활성화하려면 Windhawk를 종료해야 합니다."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Windhawk를 실행하려면 UAC 권한 상승 필요"
       description: "Windhawk가 관리자 권한을 요구하지만 단일 사용자 컴퓨터에서는 매번 UAC 프롬프트가 표시되어 성가실 수 있습니다. 그래서 Windhawk는 이것을 우회합니다. 이 옵션을 활성화하면 Windhawk를 실행하는 데 UAC 권한 상승을 요구하게 됩니다."
@@ -268,7 +315,18 @@ app:
     update:
       title: "업데이트를 사용할 수 있음"
       subtitle: "최신 기능 및 버그 수정을 받으려면 Windhawk를 업데이트하세요."
-      button: "자세한 정보"
+      changelogButton: ~
+      updateButton: "자세한 정보"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "링크"
       homepage: "홈페이지"
@@ -315,6 +373,7 @@ app:
     notCompiled: "모드를 컴파일해야 합니다"
     compile: "모드 컴파일"
     compilationFailed: "컴파일 실패"
+    stopCompilation: ~
     preview: "모드 미리 보기"
     showLogOutput: "로그 출력 표시"
     exit: "편집 모드 나가기"

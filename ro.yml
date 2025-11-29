@@ -90,6 +90,7 @@ app:
     copy: "Copiere"
     paste: "Lipire"
     selectAll: "Selectează tot"
+    loggingEnabled: ~
   appHeader:
     home: "Acasă"
     explore: "Explorează"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "Actualizare disponibilă"
     installed: "Instalat"
     details: "Detalii"
+    update: "Actualizare"
+    downgrade: ~
+    install: "Instalează"
+    compile: "Compilează"
+    disable: "Dezactivează"
+    enable: "Activează"
+    edit: "Editează"
+    fork: "Fork"
     remove: "Elimină"
     removeConfirm: "Sigur elimini acest mod?"
     removeConfirmOk: "Elimină modul"
     removeConfirmCancel: "Anulează"
+    donate: ~
     notCompiled: "Modul trebuie să fie compilat"
     editedLocally: "Modul a fost editat local"
     noDescription: "(fără descriere)"
     users_one: "{{formattedCount}} utilizator"
-    users_other: "{{formattedCount}} (de) utilizatori"
+    users_other: "{{formattedCount}} de utilizatori"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Versiune instalată"
       latestVersion: "Cea mai recentă versiune"
       loading: "Se încarcă..."
       loadingFailed: "Nu s-a putut încărca"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Identificator mod"
       modVersion: "Versiune mod"
+      lastUpdated: ~
       modAuthor:
         title: "Autorul modului"
         homepage: "Pagina de pornire"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} exceptând {{excluded}}"
         tooltip:
           target: "Proces țintă"
-          targets: "Procese țintă:"
-          excluded: "Excluse:"
-      update: "Actualizare"
+          targets: "Procese țintă"
+          excluded: "Excluse"
+          customListsNote: ~
       updateNotNeeded: "Versiunea instalată este identică cu cea recentă"
-      install: "Instalează"
-      compile: "Compilează"
-      disable: "Dezactivează"
-      enable: "Activează"
-      edit: "Editează"
-      fork: "Fork"
-      remove: "Elimină"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Detalii"
       noData: "Detaliile modului lipsesc."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Valoarea eșantionului"
       arrayItemAdd: "Adaugă un nou element"
       arrayItemRemove: "Elimină element"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Cod sursă"
       noData: "Codul sursă lipsește."
@@ -190,25 +213,46 @@ app:
       noData: "Versiunea instalată este identică cu cea mai recentă."
       splitView: "Vizualizare divizată"
       expandLines_one: "Extinde o linie ascunsă"
-      expandLines_other: "Extinde {{count}} (de) linii ascunse"
+      expandLines_other: "Extinde {{count}} de linii ascunse"
+  modSearch:
+    placeholder: "Caută moduri..."
+    noResults: ~
   home:
     browse: "Răsfoiește moduri"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Moduri instalate"
       noMods: "Niciun mod instalat"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Moduri promovate"
       noMods: "Nu există moduri promovate care n-au fost încă instalate"
       explore: "Explorează alte moduri"
   explore:
     search:
-      placeholder: "Caută moduri..."
       popularAndTopRated: "Populare și top evaluate"
       popular: "Populare"
       topRated: "Top evaluate"
       newest: "Cele mai noi"
       lastUpdated: "Actualizate recent"
       alphabeticalOrder: "Ordine alfabetică"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Limbă"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Ascunde pictograma Windhawk din bara de activități"
       description: "Va trebui să dezactivezi această opțiune pentru a închide Windhawk."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Cere elevare UAC pentru a rula Windhawk"
       description: "Windhawk necesită drepturi de administrator, dar pentru un calculator folosit de o singură persoană, afișarea ecranului UAC de fiecare dată poate fi enervantă, așa că Windhawk ocolește acest lucru. Activează această opțiune pentru a cere elevare UAC pentru a rula Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "O actualizare este disponibilă"
       subtitle: "Ia în considerare să actualizezi Windhawk pentru a obține cele mai noi funcții și remedieri de bug-uri"
-      button: "Mai multe detalii"
+      changelogButton: ~
+      updateButton: "Mai multe detalii"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Linkuri"
       homepage: "Pagina de pornire"
@@ -315,6 +373,7 @@ app:
     notCompiled: "Modul trebuie să fie compilat"
     compile: "Compilează modul"
     compilationFailed: "Compilare eșuată"
+    stopCompilation: ~
     preview: "Previzualizează modul"
     showLogOutput: "Arată ieșirea în jurnal"
     exit: "Ieșire din modul de editare"

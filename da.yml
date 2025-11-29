@@ -90,6 +90,7 @@ app:
     copy: "Kopier"
     paste: "Indsæt"
     selectAll: "Vælg alt"
+    loggingEnabled: ~
   appHeader:
     home: "Hjem"
     explore: "Udforsk"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "Opdatering tilgængelig"
     installed: "Installeret"
     details: "Detaljer"
+    update: "Opdater"
+    downgrade: ~
+    install: "Installer"
+    compile: "Kompiler"
+    disable: "Slå fra"
+    enable: "Slå til"
+    edit: "Rediger"
+    fork: "Fork"
     remove: "Fjern"
     removeConfirm: "Er du sikker på at du vil fjerne denne modifikation?"
     removeConfirmOk: "Fjern modifikation"
     removeConfirmCancel: "Annuller"
+    donate: ~
     notCompiled: "Modifikation skal kompileres"
     editedLocally: "Modifikation var redigeret lokalt"
     noDescription: "(ingen beskrivelse)"
     users_one: "{{formattedCount}} bruger"
     users_other: "{{formattedCount}} brugers"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Installeret version"
       latestVersion: "Seneste version"
       loading: "indlæser..."
       loadingFailed: "indlæsning fejlede"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Modfikations-identifikator"
       modVersion: "Modifikations-version"
+      lastUpdated: ~
       modAuthor:
         title: "Modifikations-forfatter"
         homepage: "Forside"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} undtagen {{excluded}}"
         tooltip:
           target: "Målproces"
-          targets: "Målprocesser:"
-          excluded: "Ekskluderede:"
-      update: "Opdater"
+          targets: "Målprocesser"
+          excluded: "Ekskluderede"
+          customListsNote: ~
       updateNotNeeded: "Den installerede version er identisk med den seneste version"
-      install: "Installer"
-      compile: "Kompiler"
-      disable: "Slå fra"
-      enable: "Slå til"
-      edit: "Rediger"
-      fork: "Fork"
-      remove: "Fjern"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Detaljer"
       noData: "Modifikationsdetaljer mangler."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Eksempelværdi"
       arrayItemAdd: "Tilføj ny genstand"
       arrayItemRemove: "Fjern genstand"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Kildekode"
       noData: "Modifikationskilde mangler."
@@ -191,24 +214,45 @@ app:
       splitView: "Delt visning"
       expandLines_one: "Udvid en gemt linje"
       expandLines_other: "Udvid {{count}} gemte linjer"
+  modSearch:
+    placeholder: "Søg efter modifikationer..."
+    noResults: ~
   home:
     browse: "Gennemse modifikationer"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Installerede modifikationer"
       noMods: "Ingen modifikationer er installerede"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Fremhævede modifikationer"
       noMods: "Der er ingen fremhævede modifikationer der ikke er installerede"
       explore: "Udforsk andre modifikationer"
   explore:
     search:
-      placeholder: "Søg efter modifikationer..."
       popularAndTopRated: "Populær og topbedømte"
       popular: "Populær"
       topRated: "Topbedømte"
       newest: "Nyeste"
       lastUpdated: "Seneste opdaterede"
       alphabeticalOrder: "Alfabetisk rækkefølge"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Sprog"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Skjul systembakkeikon"
       description: "Du bliver nødt til at deaktivere denne indstilling for at afslutte Windhawk."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Kræv UAC-elevation for at køre Windhawk"
       description: "Windhawk kræver administratorrettigheder, men for en enkeltbrugercomputer kan det være irriterende at få UAC-prompten hver gang, så Windhawk omgår den. Aktiver denne mulighed for at kræve UAC elevation for at køre Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "En opdatering er tilgængelig"
       subtitle: "Overvej at opdatere Windhawk for at få de nyeste funktioner og fejlrettelser"
-      button: "Flere detaljer"
+      changelogButton: ~
+      updateButton: "Flere detaljer"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Links"
       homepage: "Forside"
@@ -315,6 +373,7 @@ app:
     notCompiled: "Modifikation skal kompileres"
     compile: "Kompiler modifikation"
     compilationFailed: "Kompiliation fejlede"
+    stopCompilation: ~
     preview: "Forhåndsvis modifikation"
     showLogOutput: "Vis logoutput"
     exit: "Afslut redigeringstilstand"

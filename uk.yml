@@ -90,6 +90,7 @@ app:
     copy: "Копіювати"
     paste: "Вставити"
     selectAll: "Вибрати все"
+    loggingEnabled: ~
   appHeader:
     home: "Домашня"
     explore: "Шукати"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "Доступне оновлення"
     installed: "Встановлено"
     details: "Деталі"
+    update: "Оновити"
+    downgrade: ~
+    install: "Встановити"
+    compile: "Компілювати"
+    disable: "Вимкнути"
+    enable: "Увімкнути"
+    edit: "Редагувати"
+    fork: "Форкнути"
     remove: "Видалити"
     removeConfirm: "Ви дійсно бажаєте видалити цей мод?"
     removeConfirmOk: "Видалити мод"
     removeConfirmCancel: "Скасувати"
+    donate: ~
     notCompiled: "Мод повинен бути скомпільованим"
     editedLocally: "Мод відредаговано локально"
     noDescription: "(Опис порожній)"
     users_one: "{{formattedCount}} користувач"
     users_other: "{{formattedCount}} користувачів"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Встановлена версія"
       latestVersion: "Остання версія"
       loading: "завантаження..."
       loadingFailed: "Помилка завантаження"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Ідентифікатор моду"
       modVersion: "Версія моду"
+      lastUpdated: ~
       modAuthor:
         title: "Автори моду"
         homepage: "Домашня сторінка"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} крім {{excluded}}"
         tooltip:
           target: "Цільовий процес"
-          targets: "Цільові процеси:"
-          excluded: "Винятки:"
-      update: "Оновити"
+          targets: "Цільові процеси"
+          excluded: "Винятки"
+          customListsNote: ~
       updateNotNeeded: "Встановлена версія ідентична останній"
-      install: "Встановити"
-      compile: "Компілювати"
-      disable: "Вимкнути"
-      enable: "Увімкнути"
-      edit: "Редагувати"
-      fork: "Форкнути"
-      remove: "Видалити"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Деталі"
       noData: "Деталі відсутні."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Стандартне значення"
       arrayItemAdd: "Додати"
       arrayItemRemove: "Видалити"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Вихідний код"
       noData: "Вихідний код моду відсутній."
@@ -191,24 +214,45 @@ app:
       splitView: "Розділити вид"
       expandLines_one: "Розгорнути один прихований рядок"
       expandLines_other: "Розгорнути {{count}} прихованих рядків"
+  modSearch:
+    placeholder: "Шукати моди..."
+    noResults: ~
   home:
     browse: "Шукати моди:"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Встановлені моди:"
       noMods: "Не встановлено жодного моду"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Рекомендовані моди"
       noMods: "Всі рекомендовані моди вже встановлені"
       explore: "Шукати інші моди"
   explore:
     search:
-      placeholder: "Шукати моди..."
       popularAndTopRated: "Популярні та з найкращим рейтингом"
       popular: "Популярні"
       topRated: "З найкращим рейтингом"
       newest: "Найновіші"
       lastUpdated: "Останні оновленні"
       alphabeticalOrder: "Алфавітний порядок"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Мова"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Сховати іконку у системному треї"
       description: "Вам доведеться вимкнути цю опцію, щоб вийти з Windhawk."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Запрошувати UAC дозвіл для запуску Windhawk"
       description: "Windhawk потребує права адміністратора, але для комп'ютерів з одним користувачем постійні запити від UAC набридають, тому Windhawk обходить їх. Увімкніть цей параметр щоб повернути UAC запити на запуск Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "Доступне оновлення"
       subtitle: "Поміркуйте про оновлення Windhawk для отримання найновіших функцій та усунення багів"
-      button: "Більше деталей"
+      changelogButton: ~
+      updateButton: "Більше деталей"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Посилання"
       homepage: "Домашня сторінка"
@@ -315,6 +373,7 @@ app:
     notCompiled: "Мод повинен бути скомпільованим"
     compile: "Компілювати мод"
     compilationFailed: "Помилка компіляції"
+    stopCompilation: ~
     preview: "Переглянуті Мод"
     showLogOutput: "Показати вивід логу"
     exit: "Вийти з режиму редагування"

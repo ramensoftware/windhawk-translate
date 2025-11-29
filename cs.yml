@@ -90,6 +90,7 @@ app:
     copy: "Kopírovat"
     paste: "vložit"
     selectAll: "Vybrat vše"
+    loggingEnabled: ~
   appHeader:
     home: "Hlavní"
     explore: "Hledat"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "K dispozici aktualizace"
     installed: "Instalováno"
     details: "Popis"
+    update: "Aktualizovat"
+    downgrade: ~
+    install: "Instalovat"
+    compile: "kompilovat"
+    disable: "Zakázat"
+    enable: "Povolit"
+    edit: "Upravit"
+    fork: "Vytvořit kopii"
     remove: "smazat"
     removeConfirm: "Opravdu chcete odstranit tuto úpravu?"
     removeConfirmOk: "Odstranit úpravu"
     removeConfirmCancel: "Zrušit"
+    donate: ~
     notCompiled: "Modifikace musí být zkompilována"
     editedLocally: "Úprava upravena místně"
     noDescription: "(žádný popis)"
     users_one: "{{formattedCount}} uživatel"
     users_other: "{{formattedCount}} uživatelů"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Instalovaná verze"
       latestVersion: "Nejnovější verze"
       loading: "načítání..."
       loadingFailed: "načítání se nezdařilo"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "ID modifikace"
       modVersion: "Verze modifikace"
+      lastUpdated: ~
       modAuthor:
         title: "Autor úpravy"
         homepage: "Domovská stránka"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} kromě {{excluded}}"
         tooltip:
           target: "Cílový proces"
-          targets: "Cílové procesy:"
-          excluded: "Vyloučeno:"
-      update: "Aktualizovat"
+          targets: "Cílové procesy"
+          excluded: "Vyloučeno"
+          customListsNote: ~
       updateNotNeeded: "Je nainstalována nejnovější verze"
-      install: "Instalovat"
-      compile: "kompilovat"
-      disable: "Zakázat"
-      enable: "Povolit"
-      edit: "Upravit"
-      fork: "Vytvořit kopii"
-      remove: "smazat"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Popis"
       noData: "Chybí popis úpravy."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Standardní hodnota"
       arrayItemAdd: "Přidat novou položku"
       arrayItemRemove: "Odstranit položku"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Zdrojový kód"
       noData: "Chybí zdrojový kód."
@@ -190,25 +213,46 @@ app:
       noData: "Je nainstalována nejnovější verze."
       splitView: "Oddělené prohlížení"
       expandLines_one: "Rozbalit jeden skrytý řádek"
-      expandLines_other: "Rozbalit skryté řádky: {{count}}"
+      expandLines_other: "Rozbalit {{count}} skrytých řádků"
+  modSearch:
+    placeholder: "Hledat úpravy..."
+    noResults: ~
   home:
     browse: "Vyhledat úpravy"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Instalované úpravy"
       noMods: "Není nainstalovány žádné mody"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Doporučené úpravy"
       noMods: "Neexistují žádné doporučené úpravy, které ještě nejsou nainstalovány"
       explore: "Vyhledat další úpravy"
   explore:
     search:
-      placeholder: "Hledat úpravy..."
       popularAndTopRated: "Populární a nejlépe hodnocené"
       popular: "Populární"
       topRated: "Nejlépe hodnocené"
       newest: "Nové"
       lastUpdated: "Nedávno aktualizováno"
       alphabeticalOrder: "Abecední pořadí"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Jazyk"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Skrýt ikonu na liště"
       description: "Pro ukončení Windhawk musíte toto nastavení zakázat."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Vyžadovat UAC ke spuštění Windhawk"
       description: "Windhawk vyžaduje administrátorská práva, ale pro jednouživatelské počítače jsou neustálé výzvy UAC otravné, takže je Windhawk obchází. Povolte toto nastavení, chcete-li vrátit výzvy UAC ke spuštění Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "K dispozici aktualizace"
       subtitle: "Aktualizujte Windhawk pro nejnovější funkce a opravy chyb"
-      button: "Další podrobnosti"
+      changelogButton: ~
+      updateButton: "Další podrobnosti"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Odkazy"
       homepage: "Domovská stránka"
@@ -315,6 +373,7 @@ app:
     notCompiled: "je třeba zkompilovat úpravu"
     compile: "Zkompilovat modifikaci"
     compilationFailed: "Kompilace se nezdařila"
+    stopCompilation: ~
     preview: "Zobrazit modifikaci"
     showLogOutput: "Zobrazit protokoly"
     exit: "Ukončit režim úprav"

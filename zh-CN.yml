@@ -90,6 +90,7 @@ app:
     copy: "复制"
     paste: "粘贴"
     selectAll: "全选"
+    loggingEnabled: ~
   appHeader:
     home: "主页"
     explore: "搜索"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "更新可用"
     installed: "已安装"
     details: "详情"
+    update: "更新"
+    downgrade: ~
+    install: "安装"
+    compile: "编译"
+    disable: "禁用"
+    enable: "启用"
+    edit: "编辑"
+    fork: "克隆"
     remove: "移除"
     removeConfirm: "您确定要移除此Mod吗？"
     removeConfirmOk: "确认移除"
     removeConfirmCancel: "取消"
+    donate: ~
     notCompiled: "Mod需要编译"
     editedLocally: "Mod已在本地编辑"
     noDescription: "（无描述）"
     users_one: "{{formattedCount}} 用户"
     users_other: "{{formattedCount}} 用户"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "已安装版本"
       latestVersion: "最新版本"
       loading: "加载中..."
       loadingFailed: "加载失败"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Mod ID"
       modVersion: "Mod版本"
+      lastUpdated: ~
       modAuthor:
         title: "Mod开发者"
         homepage: "主页"
@@ -126,18 +141,16 @@ app:
         allBut: "全部进程，除了{{list}}"
         except: "{{included}}除了{{excluded}}"
         tooltip:
-          target: "目标进程："
-          targets: "目标进程："
-          excluded: "不包括："
-      update: "更新"
+          target: "目标进程"
+          targets: "目标进程"
+          excluded: "不包括"
+          customListsNote: ~
       updateNotNeeded: "安装的版本与最新版本相同"
-      install: "安装"
-      compile: "编译"
-      disable: "禁用"
-      enable: "启用"
-      edit: "编辑"
-      fork: "克隆"
-      remove: "移除"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "详情"
       noData: "无详情"
@@ -148,6 +161,16 @@ app:
       sampleValue: "示例值"
       arrayItemAdd: "增加新的条目"
       arrayItemRemove: "移除条目"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "源代码"
       noData: "无源代码"
@@ -191,24 +214,45 @@ app:
       splitView: "拆分视图"
       expandLines_one: "展开1行隐藏行"
       expandLines_other: "展开{{count}}行隐藏行"
+  modSearch:
+    placeholder: "搜索您想要的Mods..."
+    noResults: ~
   home:
     browse: "浏览Mods"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "已安装的Mods"
       noMods: "尚未安装任何Mods"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "精选Mods"
       noMods: "尚未安装任何精选Mods"
       explore: "浏览更多Mods"
   explore:
     search:
-      placeholder: "搜索您想要的Mods..."
       popularAndTopRated: "高分受欢迎的"
       popular: "受欢迎的"
       topRated: "高分的"
       newest: "最新的"
       lastUpdated: "上次更新"
       alphabeticalOrder: "按字母排序"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "语言"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "隐藏托盘图标"
       description: "您必须禁用此选项才能退出Windhawk。"
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "需要管理员权限（UAC）来运行Windhawk"
       description: "Windhawk需要管理员权限，但当您电脑只有一个账户时，每次都弹出用户账户控制（UAC）或许很影响您的正常使用，所以Windhawk选择绕过它。启用此选项可在运行Windhawk时要求用户账户控制（UAC）提升权限。"
@@ -268,7 +315,18 @@ app:
     update:
       title: "一项更新可用"
       subtitle: "更新Windhawk以获得最新的功能"
-      button: "更多详情"
+      changelogButton: ~
+      updateButton: "更多详情"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "官方链接"
       homepage: "官方主页"
@@ -315,6 +373,7 @@ app:
     notCompiled: "Mod需要编译"
     compile: "编译Mod"
     compilationFailed: "编译失败"
+    stopCompilation: ~
     preview: "预览Mod"
     showLogOutput: "显示输出的日志"
     exit: "退出编辑模式"

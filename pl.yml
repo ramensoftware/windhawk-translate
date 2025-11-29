@@ -90,6 +90,7 @@ app:
     copy: "Kopiuj"
     paste: "Wklej"
     selectAll: "Zaznacz Wszystko"
+    loggingEnabled: ~
   appHeader:
     home: "Strona główna"
     explore: "Eksploruj"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "Aktualizacja dostępna"
     installed: "Zainstalowane"
     details: "Informacje"
+    update: "Zaktualizuj"
+    downgrade: ~
+    install: "Zainstaluj"
+    compile: "Kompiluj"
+    disable: "Deaktywuj"
+    enable: "Aktywuj"
+    edit: "Edytuj"
+    fork: "Forkuj"
     remove: "Usuń"
     removeConfirm: "Czy jesteś pewny że chcesz usunąć tego moda?"
     removeConfirmOk: "Usuń moda"
     removeConfirmCancel: "Anuluj"
+    donate: ~
     notCompiled: "Mod musi być skompilowany"
     editedLocally: "Mod był edytowany lokalnie"
     noDescription: "(brak opisu)"
     users_one: "{{formattedCount}} użytkownik"
     users_other: "{{formattedCount}} użytkowników"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Zainstalowana wersja"
       latestVersion: "Najnowsza wersja"
       loading: "Ładowanie..."
       loadingFailed: "Ładowanie zakończone niepowodzeniem"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Identyfikacja moda"
       modVersion: "Wersja moda"
+      lastUpdated: ~
       modAuthor:
         title: "Autor moda"
         homepage: "Strona główna"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} oprócz {{excluded}}"
         tooltip:
           target: "Proces docelowy"
-          targets: "Procesy docelowe:"
-          excluded: "Wyjątki:"
-      update: "Zaktualizuj"
+          targets: "Procesy docelowe"
+          excluded: "Wyjątki"
+          customListsNote: ~
       updateNotNeeded: "Zainstalowana wersja jest identyczna z najnowszą wersją"
-      install: "Zainstaluj"
-      compile: "Kompiluj"
-      disable: "Deaktywuj"
-      enable: "Aktywuj"
-      edit: "Edytuj"
-      fork: "Forkuj"
-      remove: "Usuń"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Informacje"
       noData: "Informacje o modzie są niedostępne."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Przykładowa Wartość"
       arrayItemAdd: "Dodaj element"
       arrayItemRemove: "Usuń element"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Kod źródłowy"
       noData: "Kod źródłowy moda jest niedostępny."
@@ -191,24 +214,45 @@ app:
       splitView: "Widok podzielony"
       expandLines_one: "Rozwiń jedną ukrytą linię"
       expandLines_other: "Rozwiń {{count}} ukrytych linii"
+  modSearch:
+    placeholder: "Szukaj modów.."
+    noResults: ~
   home:
     browse: "Przeglądaj w poszukiwaniu modów"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Zainstalowane mody"
       noMods: "Nie zainstalowano żadnych modów"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Wyróżnione mody"
       noMods: "Nie ma żadnych polecanych modów, które nie zostały jeszcze zainstalowane"
       explore: "Eksploruj inne mody"
   explore:
     search:
-      placeholder: "Szukaj modów.."
       popularAndTopRated: "Popularne i najbardziej ocenianie"
       popular: "Popularne"
       topRated: "Najbardziej oceniane"
       newest: "Najnowsze"
       lastUpdated: "Ostatnio aktualizowane"
       alphabeticalOrder: "Kolejność alfabetyczna"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Język"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Ukryj ikonę w zasobniku"
       description: "Będziesz musiał wyłączyć tę opcję, aby wyjść z Windhawk."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Wymagaj uprawnień UAC do uruchomienia Windhawk"
       description: "Windhawk wymaga uprawnień administratora, ale dla komputera z jednym użytkownikiem wyświetlanie komunikatu UAC za każdym razem może być irytujące, więc Windhawk go omija. Włącz tę opcję, aby wymagać uprawnień UAC do uruchamiania Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "Aktualizacja jest dostępna"
       subtitle: "Rozważ aktualizację Windhawk, aby uzyskać najnowsze funkcje i poprawki błędów"
-      button: "Więcej informacji"
+      changelogButton: ~
+      updateButton: "Więcej informacji"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Linki"
       homepage: "Strona główna"
@@ -315,6 +373,7 @@ app:
     notCompiled: "Mod musi być skompilowany"
     compile: "Kompiluj moda"
     compilationFailed: "Kompilacja zakończyła się sukcesem"
+    stopCompilation: ~
     preview: "Podgląd modu"
     showLogOutput: "Pokaż dane dziennika"
     exit: "Wyjdź z trybu edycji"

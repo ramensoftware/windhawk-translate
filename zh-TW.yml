@@ -90,6 +90,7 @@ app:
     copy: "複製"
     paste: "貼上"
     selectAll: "全選"
+    loggingEnabled: ~
   appHeader:
     home: "首頁"
     explore: "探索"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "有可用更新"
     installed: "已安裝"
     details: "詳細資訊"
+    update: "更新"
+    downgrade: ~
+    install: "安裝"
+    compile: "編譯"
+    disable: "停用"
+    enable: "啟用"
+    edit: "編輯"
+    fork: "分支"
     remove: "移除"
     removeConfirm: "您確定要移除此模組嗎？"
     removeConfirmOk: "移除模組"
     removeConfirmCancel: "取消"
+    donate: ~
     notCompiled: "模組需要編譯"
     editedLocally: "模組已在本地編輯"
     noDescription: "（無描述）"
     users_one: "{{formattedCount}} 位使用者"
     users_other: "{{formattedCount}} 位使用者"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "已安裝版本"
       latestVersion: "最新版本"
       loading: "正在載入..."
       loadingFailed: "載入失敗"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "模組識別碼"
       modVersion: "模組版本"
+      lastUpdated: ~
       modAuthor:
         title: "模組作者"
         homepage: "主頁"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} 除了 {{excluded}}"
         tooltip:
           target: "目標程序"
-          targets: "目標程序："
-          excluded: "排除："
-      update: "更新"
+          targets: "目標程序"
+          excluded: "排除"
+          customListsNote: ~
       updateNotNeeded: "已安裝的版本與最新版本相同"
-      install: "安裝"
-      compile: "編譯"
-      disable: "停用"
-      enable: "啟用"
-      edit: "編輯"
-      fork: "分支"
-      remove: "移除"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "詳細資訊"
       noData: "模組詳細資訊缺失。"
@@ -148,6 +161,16 @@ app:
       sampleValue: "範例值"
       arrayItemAdd: "新增項目"
       arrayItemRemove: "移除項目"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "原始碼"
       noData: "模組原始碼缺失。"
@@ -191,24 +214,45 @@ app:
       splitView: "分割視窗"
       expandLines_one: "展開一條隱藏的行"
       expandLines_other: "展開 {{count}} 條隱藏的行"
+  modSearch:
+    placeholder: "搜尋模組..."
+    noResults: ~
   home:
     browse: "瀏覽模組"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "已安裝的模組"
       noMods: "未安裝任何模組"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "精選模組"
       noMods: "沒有尚未安裝的精選模組"
       explore: "探索其他模組"
   explore:
     search:
-      placeholder: "搜尋模組..."
       popularAndTopRated: "熱門與高評價"
       popular: "熱門"
       topRated: "高評價"
       newest: "最新"
       lastUpdated: "最近更新"
       alphabeticalOrder: "字母順序"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "語言"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "隱藏系統匣圖示"
       description: "您將需要禁用此選項才能退出 Windhawk。"
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "需要系統管理員操作來執行 Windhawk"
       description: "Windhawk 需要系統管理員權限，但對於一般使用者，每次都提示使用者帳戶控制（UAC）或許很影響您的正常使用，所以 Windhawk 繞過了它。啟用此選項需要使用者帳戶控制（UAC）來執行 Windhawk。"
@@ -268,7 +315,18 @@ app:
     update:
       title: "有新版本可用"
       subtitle: "考慮更新 Windhawk 以獲得最新功能和錯誤修正"
-      button: "更多詳細資訊"
+      changelogButton: ~
+      updateButton: "更多詳細資訊"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "連結"
       homepage: "首頁"
@@ -315,6 +373,7 @@ app:
     notCompiled: "模組需要編譯"
     compile: "編譯模組"
     compilationFailed: "編譯失敗"
+    stopCompilation: ~
     preview: "預覽模組"
     showLogOutput: "顯示記錄輸出"
     exit: "退出編輯模式"

@@ -90,6 +90,7 @@ app:
     copy: "Kopiera"
     paste: "Klistra in"
     selectAll: "Markera allt"
+    loggingEnabled: ~
   appHeader:
     home: "Hem"
     explore: "Utforska"
@@ -99,23 +100,37 @@ app:
     updateAvailable: "Uppdatering tillgänglig"
     installed: "Installerad"
     details: "Detaljer"
+    update: "Uppdatering"
+    downgrade: ~
+    install: "Installera"
+    compile: "Kompilera"
+    disable: "Inaktivera"
+    enable: "Aktivera"
+    edit: "Redigera"
+    fork: "Fork"
     remove: "Ta bort"
     removeConfirm: "Är du säker på att du vill ta bort denna mod?"
     removeConfirmOk: "Ta bort mod"
     removeConfirmCancel: "Avbryt"
+    donate: ~
     notCompiled: "Modden måste kompileras"
     editedLocally: "Modden har redigerats lokalt"
     noDescription: "(ingen beskrivning)"
     users_one: "{{formattedCount}} användare"
     users_other: "{{formattedCount}} användare"
+    notRated: ~
+    loggingEnabledInAdvancedTab: ~
   modDetails:
     header:
       installedVersion: "Installerad version"
       latestVersion: "Senaste version"
       loading: "laddar..."
       loadingFailed: "laddningen misslyckades"
+      otherVersions: ~
+      selectedVersion: ~
       modId: "Modd-identifierare"
       modVersion: "Modd-version"
+      lastUpdated: ~
       modAuthor:
         title: "Modd-upphovsman"
         homepage: "Hemsida"
@@ -127,17 +142,15 @@ app:
         except: "{{included}} utom {{excluded}}"
         tooltip:
           target: "Målprocess"
-          targets: "Målprocesser:"
-          excluded: "Uteslutna:"
-      update: "Uppdatering"
+          targets: "Målprocesser"
+          excluded: "Uteslutna"
+          customListsNote: ~
       updateNotNeeded: "Den installerade versionen är identisk med den senaste versionen"
-      install: "Installera"
-      compile: "Kompilera"
-      disable: "Inaktivera"
-      enable: "Aktivera"
-      edit: "Redigera"
-      fork: "Fork"
-      remove: "Ta bort"
+    version:
+      preRelease: ~
+      select: ~
+      cancel: ~
+      chooseVersion: ~
     details:
       title: "Detaljer"
       noData: "Modd-detaljer saknas."
@@ -148,6 +161,16 @@ app:
       sampleValue: "Exempelvärde"
       arrayItemAdd: "Lägg till nytt objekt"
       arrayItemRemove: "Ta bort objekt"
+      yamlMode: ~
+      uiMode: ~
+      yamlInvalid: ~
+      yamlParseError: ~
+      yamlInvalidKey: ~
+      yamlTypeMismatch: ~
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     code:
       title: "Källkod"
       noData: "Modd-källa saknas."
@@ -191,24 +214,45 @@ app:
       splitView: "Delad vy"
       expandLines_one: "Expandera en dold rad"
       expandLines_other: "Expandera {{count}} dolda rader"
+  modSearch:
+    placeholder: "Sök efter moddar..."
+    noResults: ~
   home:
     browse: "Bläddra efter moddar"
+    filter:
+      enabled: ~
+      disabled: ~
+      updateAvailable: ~
+      clearFilters: ~
     installedMods:
       title: "Installerade moddar"
       noMods: "Inga moddar är installerade"
+      grid:
+        name: ~
+        description: ~
+        author: ~
+        version: ~
+        status: ~
     featuredMods:
       title: "Utvalda moddar"
       noMods: "Det finns inga utvalda moddar som inte har installerats ännu"
       explore: "Utforska andra moddar"
   explore:
     search:
-      placeholder: "Sök efter moddar..."
       popularAndTopRated: "Populär och högst rankad"
       popular: "Populär"
       topRated: "Högst rankad"
       newest: "Nyaste"
       lastUpdated: "Senast uppdaterade"
       alphabeticalOrder: "Alfabetisk ordning"
+    filter:
+      installationStatus: ~
+      installed: ~
+      notInstalled: ~
+      author: ~
+      process: ~
+      showMore: ~
+      clearFilters: ~
   settings:
     language:
       title: "Språk"
@@ -226,6 +270,9 @@ app:
     hideTrayIcon:
       title: "Dölj meddelandefältsikonen"
       description: "Du måste inaktivera det här alternativet för att avsluta Windhawk."
+    alwaysCompileModsLocally:
+      title: ~
+      description: ~
     requireElevation:
       title: "Kräv UAC-förhöjda rättigheter för att köra Windhawk"
       description: "Windhawk kräver administratörsrättigheter, men för en enanvändardator kan det vara irriterande att se UAC-prompten varje gång, så Windhawk går förbi den. Aktivera det här alternativet för att kräva UAC-förhöjda rättigheter för att köra Windhawk."
@@ -268,7 +315,18 @@ app:
     update:
       title: "En uppdatering är tillgänglig"
       subtitle: "Överväg att uppdatera Windhawk för att få de senaste funktionerna och buggfixarna"
-      button: "Fler detaljer"
+      changelogButton: ~
+      updateButton: "Fler detaljer"
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
+    changelog:
+      title: ~
+      close: ~
     links:
       title: "Länkar"
       homepage: "Hemsida"
@@ -315,6 +373,7 @@ app:
     notCompiled: "Modden måste kompileras"
     compile: "Kompilera modden"
     compilationFailed: "Kompileringen misslyckades"
+    stopCompilation: ~
     preview: "Förhandsgranska modden"
     showLogOutput: "Visa loggutdata"
     exit: "Avsluta redigeringsläge"
