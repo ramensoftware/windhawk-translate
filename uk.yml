@@ -118,6 +118,8 @@ app:
     noDescription: "(Опис порожній)"
     users_one: "{{formattedCount}} користувач"
     users_other: "{{formattedCount}} користувачів"
+    users_few: "{{formattedCount}} користувачі"
+    users_many: "{{formattedCount}} користувачів"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +216,8 @@ app:
       splitView: "Розділити вид"
       expandLines_one: "Розгорнути один прихований рядок"
       expandLines_other: "Розгорнути {{count}} прихованих рядків"
+      expandLines_few: "Розгорнути {{count}} приховані рядки"
+      expandLines_many: "Розгорнути {{count}} прихованих рядків"
   modSearch:
     placeholder: "Шукати моди..."
     noResults: ~

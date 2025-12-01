@@ -118,6 +118,7 @@ app:
     noDescription: "(sem descrição)"
     users_one: "{{formattedCount}} usuário"
     users_other: "{{formattedCount}} usuários"
+    users_many: "{{formattedCount}} usuários"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +215,7 @@ app:
       splitView: "Viualização dividida"
       expandLines_one: "Expandir uma linha oculta"
       expandLines_other: "Expandir {{count}} linhas ocultas"
+      expandLines_many: "Expandir {{count}} linhas ocultas"
   modSearch:
     placeholder: "Pesquisar Mods..."
     noResults: ~

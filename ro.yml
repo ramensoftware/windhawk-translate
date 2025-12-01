@@ -118,6 +118,7 @@ app:
     noDescription: "(fără descriere)"
     users_one: "{{formattedCount}} utilizator"
     users_other: "{{formattedCount}} de utilizatori"
+    users_few: "{{formattedCount}} utilizatori"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +215,7 @@ app:
       splitView: "Vizualizare divizată"
       expandLines_one: "Extinde o linie ascunsă"
       expandLines_other: "Extinde {{count}} de linii ascunse"
+      expandLines_few: "Extinde {{count}} linii ascunse"
   modSearch:
     placeholder: "Caută moduri..."
     noResults: ~

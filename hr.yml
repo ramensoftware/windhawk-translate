@@ -118,6 +118,7 @@ app:
     noDescription: "(nema opisa)"
     users_one: "{{formattedCount}} korisnik"
     users_other: "{{formattedCount}} korisnika"
+    users_few: "{{formattedCount}} korisnika"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +215,7 @@ app:
       splitView: "Podijeljeni prikaz"
       expandLines_one: "Proširi jednu skrivenu liniju"
       expandLines_other: "Proširi {{count}} skrivenih linija"
+      expandLines_few: "Proširi {{count}} skrivene linije"
   modSearch:
     placeholder: "Pretraži dodatke..."
     noResults: ~

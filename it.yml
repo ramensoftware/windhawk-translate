@@ -118,6 +118,7 @@ app:
     noDescription: "(nessuna descizione)"
     users_one: "{{formattedCount}} utente"
     users_other: "{{formattedCount}} utenti"
+    users_many: "{{formattedCount}} utenti"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +215,7 @@ app:
       splitView: "Dividi vista"
       expandLines_one: "Espandi una linea nascosta"
       expandLines_other: "Espandi {{count}} linee nascoste"
+      expandLines_many: "Espandi {{count}} linee nascoste"
   modSearch:
     placeholder: "Cerca mod..."
     noResults: ~

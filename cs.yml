@@ -118,6 +118,8 @@ app:
     noDescription: "(žádný popis)"
     users_one: "{{formattedCount}} uživatel"
     users_other: "{{formattedCount}} uživatelů"
+    users_few: "{{formattedCount}} uživatelé"
+    users_many: "{{formattedCount}} uživatelů"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +216,8 @@ app:
       splitView: "Oddělené prohlížení"
       expandLines_one: "Rozbalit jeden skrytý řádek"
       expandLines_other: "Rozbalit {{count}} skrytých řádků"
+      expandLines_few: "Rozbalit {{count}} skryté řádky"
+      expandLines_many: "Rozbalit {{count}} skrytých řádků"
   modSearch:
     placeholder: "Hledat úpravy..."
     noResults: ~

@@ -118,6 +118,8 @@ app:
     noDescription: "(brak opisu)"
     users_one: "{{formattedCount}} użytkownik"
     users_other: "{{formattedCount}} użytkowników"
+    users_few: "{{formattedCount}} użytkownicy"
+    users_many: "{{formattedCount}} użytkowników"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +216,8 @@ app:
       splitView: "Widok podzielony"
       expandLines_one: "Rozwiń jedną ukrytą linię"
       expandLines_other: "Rozwiń {{count}} ukrytych linii"
+      expandLines_few: "Rozwiń {{count}} ukryte linie"
+      expandLines_many: "Rozwiń {{count}} ukrytych linii"
   modSearch:
     placeholder: "Szukaj modów.."
     noResults: ~

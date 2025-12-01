@@ -118,6 +118,8 @@ app:
     noDescription: "(нет описания)"
     users_one: "{{formattedCount}} пользователь"
     users_other: "{{formattedCount}} пользователей"
+    users_few: "{{formattedCount}} пользователя"
+    users_many: "{{formattedCount}} пользователей"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,6 +216,8 @@ app:
       splitView: "Раздельный просмотр"
       expandLines_one: "Раскрыть одну скрытую линию"
       expandLines_other: "Раскрыть {{count}} скрытых линий"
+      expandLines_few: "Раскрыть {{count}} скрытые линии"
+      expandLines_many: "Раскрыть {{count}} скрытых линий"
   modSearch:
     placeholder: "Искать модификации..."
     noResults: ~
