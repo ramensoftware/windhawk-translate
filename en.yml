@@ -141,7 +141,6 @@ app:
         allBut: "All but {{list}}"
         except: "{{included}} except {{excluded}}"
         tooltip:
-          target: "Target process"
           targets: "Target processes"
           excluded: "Excluded"
           customListsNote: "Custom process inclusion/exclusion lists were defined for this mod in the Advanced tab"

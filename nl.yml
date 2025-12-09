@@ -141,7 +141,6 @@ app:
         allBut: "Alle, behalve {{list}}"
         except: "{{included}} behalve {{excluded}}"
         tooltip:
-          target: "Doelproces"
           targets: "Doelprocessen"
           excluded: "Uitgesloten"
           customListsNote: ~

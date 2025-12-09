@@ -141,7 +141,6 @@ app:
         allBut: "{{list}} 以外すべて"
         except: "{{excluded}} を除く {{included}}"
         tooltip:
-          target: "ターゲットのプロセス"
           targets: "ターゲットのプロセス"
           excluded: "除外"
           customListsNote: "この Mod は高度タブのカスタムプロセス対象/除外リストに定義されています"

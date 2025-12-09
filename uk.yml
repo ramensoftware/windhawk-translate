@@ -143,7 +143,6 @@ app:
         allBut: "Всі крім {{list}}"
         except: "{{included}} крім {{excluded}}"
         tooltip:
-          target: "Цільовий процес"
           targets: "Цільові процеси"
           excluded: "Винятки"
           customListsNote: ~

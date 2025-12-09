@@ -142,7 +142,6 @@ app:
         allBut: "Toate, cu excepția {{list}}"
         except: "{{included}} exceptând {{excluded}}"
         tooltip:
-          target: "Proces țintă"
           targets: "Procese țintă"
           excluded: "Excluse"
           customListsNote: ~

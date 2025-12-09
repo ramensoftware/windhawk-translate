@@ -142,7 +142,6 @@ app:
         allBut: "Tutto ma {{list}}"
         except: "{{included}} eccetto {{excluded}}"
         tooltip:
-          target: "Processo incluso nel targeting"
           targets: "Processi inclusi nel targeting"
           excluded: "Esclusi"
           customListsNote: ~

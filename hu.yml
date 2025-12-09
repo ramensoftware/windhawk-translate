@@ -141,7 +141,6 @@ app:
         allBut: "Minden, kivéve {{list}}"
         except: "{{included}} kivéve {{excluded}}"
         tooltip:
-          target: "Cél folyamat"
           targets: "Cél folyamatok"
           excluded: "Kizárva"
           customListsNote: ~

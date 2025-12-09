@@ -141,7 +141,6 @@ app:
         allBut: "Alle undtagen {{list}}"
         except: "{{included}} undtagen {{excluded}}"
         tooltip:
-          target: "Målproces"
           targets: "Målprocesser"
           excluded: "Ekskluderede"
           customListsNote: ~
