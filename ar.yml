@@ -118,10 +118,10 @@ app:
     noDescription: "(لا يوجد وصف)"
     users_one: "{{formattedCount}} مستخدم"
     users_other: "{{formattedCount}} مستخدم"
-    users_two: "{{formattedCount}} مستخدمان"
     users_few: "{{formattedCount}} مستخدمون"
-    users_zero: "لا يوجد مستخدمون"
     users_many: "{{formattedCount}} مستخدم"
+    users_two: "{{formattedCount}} مستخدمان"
+    users_zero: "لا يوجد مستخدمون"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -217,10 +217,10 @@ app:
       splitView: "عرض مقسم"
       expandLines_one: "توسيع سطر مخفي واحد"
       expandLines_other: "توسيع {{count}} سطر مخفي"
-      expandLines_two: "توسيع سطرين مخفيين"
-      expandLines_zero: "لا توجد أسطر مخفية"
       expandLines_few: "توسيع {{count}} أسطر مخفية"
       expandLines_many: "توسيع {{count}} سطراً مخفياً"
+      expandLines_two: "توسيع سطرين مخفيين"
+      expandLines_zero: "لا توجد أسطر مخفية"
   modSearch:
     placeholder: "ابحث عن المودات..."
     noResults: ~
