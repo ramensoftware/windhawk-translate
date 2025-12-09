@@ -320,7 +320,7 @@ app:
       title: "K dispozici aktualizace"
       subtitle: "Aktualizujte Windhawk pro nejnovější funkce a opravy chyb"
       changelogButton: ~
-      updateButton: "Další podrobnosti"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

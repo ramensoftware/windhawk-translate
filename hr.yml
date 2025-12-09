@@ -318,7 +318,7 @@ app:
       title: "Dostupno je ažuriranje"
       subtitle: "Preporučuje se ažuriranje Windhawka radi najnovijih značajki i ispravki"
       changelogButton: ~
-      updateButton: "Više detalja"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

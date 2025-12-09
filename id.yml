@@ -316,7 +316,7 @@ app:
       title: "Pembaruan tersedia"
       subtitle: "Pastikan memperbarui Windhawk untuk mendapatkan fitur terbaru dan perbaikan bug"
       changelogButton: ~
-      updateButton: "Rincian lengkapnya"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

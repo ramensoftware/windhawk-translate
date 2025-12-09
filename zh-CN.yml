@@ -316,7 +316,7 @@ app:
       title: "一项更新可用"
       subtitle: "更新Windhawk以获得最新的功能"
       changelogButton: ~
-      updateButton: "更多详情"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

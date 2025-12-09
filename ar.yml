@@ -324,7 +324,7 @@ app:
       title: "يتوفر تحديث"
       subtitle: "فكر في تحديث Windhawk للحصول على أحدث الميزات وإصلاحات الأخطاء"
       changelogButton: ~
-      updateButton: "مزيد من التفاصيل"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

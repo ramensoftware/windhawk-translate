@@ -316,7 +316,7 @@ app:
       title: "Có bản cập nhật"
       subtitle: "Cân nhắc cập nhật Windhawk để có các tính năng mới nhất và sửa lỗi"
       changelogButton: ~
-      updateButton: "Chi tiết thêm"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

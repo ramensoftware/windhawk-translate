@@ -316,7 +316,7 @@ app:
       title: "एक अपडेट उपलब्ध है"
       subtitle: "नवीनतम सुविधाओं और बग फिक्स प्राप्त करने के लिए विंडहॉक को अपडेट करने पर विचार करें"
       changelogButton: ~
-      updateButton: "अधिक विवरण"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

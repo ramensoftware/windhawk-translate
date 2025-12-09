@@ -318,7 +318,7 @@ app:
       title: "O actualizare este disponibilă"
       subtitle: "Ia în considerare să actualizezi Windhawk pentru a obține cele mai noi funcții și remedieri de bug-uri"
       changelogButton: ~
-      updateButton: "Mai multe detalii"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

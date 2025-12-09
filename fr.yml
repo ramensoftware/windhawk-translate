@@ -318,7 +318,7 @@ app:
       title: "Une mise à jour est disponible"
       subtitle: "Mettez à jour Windhawk pour obtenir les dernières fonctionnalités et les corrections de bugs"
       changelogButton: ~
-      updateButton: "Plus de détails"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

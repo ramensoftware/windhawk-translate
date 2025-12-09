@@ -316,7 +316,7 @@ app:
       title: "புதுப்பிப்பு கிடைக்கிறது"
       subtitle: "புதிய அம்சங்கள் மற்றும் பிழை திருத்தங்களுக்கு விண்ட்ஹாக் ஐ புதுப்பிக்க பரிந்துரை செய்யப்படுகிறது"
       changelogButton: ~
-      updateButton: "மேலும் விபரங்கள்"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~

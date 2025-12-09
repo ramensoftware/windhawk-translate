@@ -320,7 +320,7 @@ app:
       title: "Доступно обновление"
       subtitle: "Обновите Windhawk для получения доступа к новейшим функциям и исправления ошибок"
       changelogButton: ~
-      updateButton: "Подробнее"
+      updateButton: ~
       modal:
         title: ~
         downloading: ~
