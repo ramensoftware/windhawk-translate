@@ -144,6 +144,7 @@ app:
           targets: "Cél folyamatok"
           excluded: "Kizárva"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "A telepített verzió megegyezik a legújabb verzióval"
     version:
       preRelease: ~

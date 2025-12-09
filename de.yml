@@ -144,6 +144,7 @@ app:
           targets: "Zielprozesse"
           excluded: "Ausgeschlossen"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Die installierte Version ist identisch mit der neusten Version."
     version:
       preRelease: ~

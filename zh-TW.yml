@@ -144,6 +144,7 @@ app:
           targets: "目標程序"
           excluded: "排除"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "已安裝的版本與最新版本相同"
     version:
       preRelease: ~

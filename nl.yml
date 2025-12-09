@@ -144,6 +144,7 @@ app:
           targets: "Doelprocessen"
           excluded: "Uitgesloten"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Geïnstalleerde versie is identiek aan de nieuwste versie"
     version:
       preRelease: ~

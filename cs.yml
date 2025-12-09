@@ -146,6 +146,7 @@ app:
           targets: "Cílové procesy"
           excluded: "Vyloučeno"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Je nainstalována nejnovější verze"
     version:
       preRelease: ~

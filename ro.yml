@@ -145,6 +145,7 @@ app:
           targets: "Procese țintă"
           excluded: "Excluse"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Versiunea instalată este identică cu cea recentă"
     version:
       preRelease: ~

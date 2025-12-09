@@ -144,6 +144,7 @@ app:
           targets: "लक्ष्य प्रक्रियाएँ"
           excluded: "बहिष्कृत"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "स्थापित संस्करण नवीनतम संस्करण के समान है"
     version:
       preRelease: ~

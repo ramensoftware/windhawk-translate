@@ -144,6 +144,7 @@ app:
           targets: "Target pemrosesan"
           excluded: "Dikecualikan"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Versi yang terinstal identik dengan versi terbaru"
     version:
       preRelease: ~

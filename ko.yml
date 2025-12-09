@@ -144,6 +144,7 @@ app:
           targets: "대상 프로세스"
           excluded: "제외 프로세스"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "설치되어 있는 버전이 최신 버전입니다"
     version:
       preRelease: "프리릴리스"

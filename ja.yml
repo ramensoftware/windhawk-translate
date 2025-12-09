@@ -144,6 +144,7 @@ app:
           targets: "ターゲットのプロセス"
           excluded: "除外"
           customListsNote: "この Mod は高度タブのカスタムプロセス対象/除外リストに定義されています"
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "インストールされているバージョンは最新です。"
     version:
       preRelease: "プレリリース"

@@ -144,6 +144,7 @@ app:
           targets: "இலக்கு செயல்முறைகள்"
           excluded: "விலக்கப்பட்டது"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "நிறுவப்பட்ட பதிப்பு மற்றும் புதிய பதிப்பு ஒரே மாதிரியானவை"
     version:
       preRelease: ~

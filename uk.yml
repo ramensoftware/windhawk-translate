@@ -146,6 +146,7 @@ app:
           targets: "Цільові процеси"
           excluded: "Винятки"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Встановлена версія ідентична останній"
     version:
       preRelease: ~

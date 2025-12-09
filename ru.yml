@@ -146,6 +146,7 @@ app:
           targets: "Целевые процессы"
           excluded: "Исключённые"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Установлена самая последняя версия"
     version:
       preRelease: ~

@@ -148,6 +148,7 @@ app:
           targets: "العمليات المستهدفة"
           excluded: "مستبعد"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "الإصدار المثبت مطابق لأحدث إصدار"
     version:
       preRelease: ~

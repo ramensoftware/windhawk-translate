@@ -144,6 +144,7 @@ app:
           targets: "Målprocesser"
           excluded: "Ekskluderede"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Den installerede version er identisk med den seneste version"
     version:
       preRelease: ~

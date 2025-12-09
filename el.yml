@@ -144,6 +144,7 @@ app:
           targets: "Στοχευμένες διαδικασίες"
           excluded: "Εξαιρείται"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Η εγκατεστημένη έκδοση είναι πανομοιότυπη με την πιο πρόσφατη έκδοση"
     version:
       preRelease: ~

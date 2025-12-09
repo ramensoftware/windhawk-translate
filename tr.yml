@@ -144,6 +144,7 @@ app:
           targets: "Hedef işlemler"
           excluded: "Hariç"
           customListsNote: ~
+          patternsMatchCriticalSystemProcessesNote: ~
       updateNotNeeded: "Yüklü sürüm, en son sürümle aynı"
     version:
       preRelease: ~
