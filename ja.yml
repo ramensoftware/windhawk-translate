@@ -90,7 +90,7 @@ app:
     copy: "コピー"
     paste: "貼り付け"
     selectAll: "すべて選択"
-    loggingEnabled: ~
+    loggingEnabled: "デバッグログが有効です"
   appHeader:
     home: "ホーム"
     explore: "探す"
@@ -101,7 +101,7 @@ app:
     installed: "インストール済み"
     details: "詳細"
     update: "更新"
-    downgrade: ~
+    downgrade: "ダウングレード"
     install: "インストール"
     compile: "コンパイル"
     disable: "無効化"
@@ -109,28 +109,28 @@ app:
     edit: "編集"
     fork: "フォーク"
     remove: "削除"
-    removeConfirm: "この Mod を削除してもよろしいですか?"
+    removeConfirm: "この Mod を削除してもよろしいですか？"
     removeConfirmOk: "Mod を削除"
     removeConfirmCancel: "キャンセル"
-    donate: ~
+    donate: "寄付"
     notCompiled: "Mod のコンパイルが必要です"
     editedLocally: "Mod はローカルで編集されました"
     noDescription: "(説明はありません)"
     users_one: "{{formattedCount}} 名のユーザー"
     users_other: "{{formattedCount}} 名のユーザー"
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+    notRated: "この Mod はまだ評価されていません"
+    loggingEnabledInAdvancedTab: "デバッグログは Mod の高度タブで有効になっています"
   modDetails:
     header:
       installedVersion: "インストール済みのバージョン"
       latestVersion: "最新のバージョン"
       loading: "読み込み中..."
       loadingFailed: "読み込みに失敗しました"
-      otherVersions: ~
-      selectedVersion: ~
+      otherVersions: "その他のバージョン"
+      selectedVersion: "選択済み: {{version}}"
       modId: "Mod の識別子"
       modVersion: "Mod のバージョン"
-      lastUpdated: ~
+      lastUpdated: "最終更新"
       modAuthor:
         title: "Mod の作者"
         homepage: "ホームページ"
@@ -144,13 +144,13 @@ app:
           target: "ターゲットのプロセス"
           targets: "ターゲットのプロセス"
           excluded: "除外"
-          customListsNote: ~
+          customListsNote: "この Mod は高度タブのカスタムプロセス対象/除外リストに定義されています"
       updateNotNeeded: "インストールされているバージョンは最新です。"
     version:
-      preRelease: ~
-      select: ~
-      cancel: ~
-      chooseVersion: ~
+      preRelease: "プレリリース"
+      select: "選択"
+      cancel: "キャンセル"
+      chooseVersion: "バージョンを選択..."
     details:
       title: "詳細"
       noData: "Mod の詳細がありません。"
@@ -161,16 +161,16 @@ app:
       sampleValue: "サンプルの値"
       arrayItemAdd: "新規項目を追加"
       arrayItemRemove: "項目を削除"
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
+      yamlMode: "Textual モード"
+      uiMode: "ビジュアルモード"
+      yamlInvalid: "無効な YAML 形式"
+      yamlParseError: "YAML 解析エラー: {{error}}"
+      yamlInvalidKey: "YAML 内の無効なキー: 「{{key}}」は有効な設定ではありません"
+      yamlTypeMismatch: "「{{key}}」のタイプが一致しません: 期待されるタイプは「{{expected}}」ですが、実際は「{{actual}}」です"
+      unsavedChangesTitle: "保存されていない設定"
+      unsavedChangesMessage: "設定が保存されていません。変更を破棄しますか？"
+      unsavedChangesLeave: "変更を破棄"
+      unsavedChangesStay: "編集を続行"
     code:
       title: "ソースコード"
       noData: "Mod のソースはありません。"
@@ -216,23 +216,23 @@ app:
       expandLines_other: "{{count}} 個の隠れた行を展開"
   modSearch:
     placeholder: "Mod を検索..."
-    noResults: ~
+    noResults: "現在のフィルターに一致する Mod はありません"
   home:
     browse: "Mod を探す"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "有効化された Mod"
+      disabled: "無効化された Mod"
+      updateAvailable: "更新が利用可能な Mod"
+      clearFilters: "フィルターを消去"
     installedMods:
       title: "インストール済みの Mod"
       noMods: "Mod はインストールされていません"
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "名前"
+        description: "説明"
+        author: "作者"
+        version: "バージョン"
+        status: "状態"
     featuredMods:
       title: "注目の Mod"
       noMods: "まだインストールされていない注目の Mod はありません"
@@ -246,13 +246,13 @@ app:
       lastUpdated: "最終更新"
       alphabeticalOrder: "アルファベット順"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "インストールの状態"
+      installed: "インストール済み"
+      notInstalled: "未インストール"
+      author: "Mod の作者"
+      process: "ターゲットのプロセス"
+      showMore: "詳細を表示..."
+      clearFilters: "フィルターを消去"
   settings:
     language:
       title: "言語"
@@ -271,8 +271,8 @@ app:
       title: "トレイアイコンを隠す"
       description: "Windhawk を終了するには、このオプションを無効化する必要があります。"
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "常にローカルで Mod をコンパイルする"
+      description: "既定では Windhawk が Windhawk のサーバーからプリコンパイル済みの Mod バイナリをダウンロードします (利用可能な場合)。このオプションを有効化すると常にローカルで Mod をコンパイルします。"
     requireElevation:
       title: "Windhawk の実行時に UAC の昇格を要求"
       description: "Windhawk の実行には管理者権限が必要ですが、シングルユーザーコンピューターの環境で毎回 UAC のプロンプトが表示されるのは煩わしいため、Windhawk はこれを回避しています。Windhawk の実行に UAC の昇格を要求させるにはこのオプションを有効化してください。"
@@ -309,24 +309,24 @@ app:
       invalidCharactersWarning: "プロセスリストに無効な文字が含まれています。これらは削除されます: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
-    beta: "ベータ版"
+    beta: "Beta"
     subtitle: "Windows プログラムのカスタマイズマーケットプレイス"
     credit: "作者: <0>{{author}}</0>"
     update:
       title: "更新が利用可能です"
       subtitle: "最新の機能を使用、バグの修正を適用するために Windhawk を更新することをご検討ください。"
-      changelogButton: ~
-      updateButton: "その他の詳細"
+      changelogButton: "更新履歴"
+      updateButton: "更新"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Windhawk を更新中"
+        downloading: "更新をダウンロード中..."
+        installing: "更新をインストール中..."
+        installingNote: "インストールの完了後に Windhawk は自動的に再起動します。"
+        failed: "更新に失敗しました"
+        cancel: "キャンセル"
     changelog:
-      title: ~
-      close: ~
+      title: "Windhawk の新着情報"
+      close: "閉じる"
     links:
       title: "リンク"
       homepage: "ホームページ"
@@ -373,7 +373,7 @@ app:
     notCompiled: "Mod のコンパイルが必要です"
     compile: "Mod をコンパイル"
     compilationFailed: "コンパイルに失敗しました"
-    stopCompilation: ~
+    stopCompilation: "コンパイルを停止"
     preview: "Mod をプレビュー"
     showLogOutput: "出力されたログを表示"
     exit: "編集モードを終了"
