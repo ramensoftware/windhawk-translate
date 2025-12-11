@@ -66,16 +66,16 @@ tray:
   TASKDLG_TASK_UNINITIALIZING: "Odinicjalizowanie..."
   TASKDLG_PROCESS_SUSPENDED: "(uśpiony)"
   TOOLKITDLG_TITLE: "Narzędzia Windhawk"
-  TOOLKITDLG_EXPLANATION_CRASH: "Wykryto niestabilność systemu, która może być spowodowana przez jeden z modów. Wyjście z Windhawk lub ponowne uruchomienie go w trybie bezpiecznym może pomóc rozwiązać problem."
+  TOOLKITDLG_EXPLANATION_CRASH: "Wykryto niestabilność systemu, która może być spowodowana przez jeden z modów. Wyjście z Windhawk lub ponowne uruchomienie go w trybie awaryjnym może pomóc rozwiązać problem."
   TOOLKITDLG_BUTTON_OPEN: "&Otwórz Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Załadowano &mods"
   TOOLKITDLG_BUTTON_EXIT: "&Wyjdź z Windhawk"
-  TOOLKITDLG_BUTTON_SAFE_MODE: "&Tryb bezpieczny"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "&Tryb awaryjny"
   TOOLKITDLG_BUTTON_CLOSE: "&Zamknij Narzędzia"
-  SAFE_MODE_TITLE: "Uruchom ponownie w trybie bezpiecznym"
+  SAFE_MODE_TITLE: "Uruchom ponownie w trybie awaryjnym"
   SAFE_MODE_TEXT: "Windhawk zostanie ponownie uruchomiony z wyłączoną funkcją wstrzykiwania kodu."
-  SAFE_MODE_DETECTED_TITLE: "Tryb bezpieczny"
-  SAFE_MODE_DETECTED_TEXT: "Windows jest uruchomiony w trybie bezpiecznym. Czy chcesz aby włączyć tryb bezpieczny również w Windhawk? Wszystkie funkcje wstrzykiwania kodu zostaną wyłączone."
+  SAFE_MODE_DETECTED_TITLE: "Tryb awaryjny"
+  SAFE_MODE_DETECTED_TEXT: "Windows jest uruchomiony w trybie awaryjnym. Czy chcesz włączyć tryb awaryjny również w Windhawk? Wszystkie funkcje wstrzykiwania kodu zostaną wyłączone."
 app:
   general:
     loading: "Ładowanie..."
@@ -90,7 +90,7 @@ app:
     copy: "Kopiuj"
     paste: "Wklej"
     selectAll: "Zaznacz Wszystko"
-    loggingEnabled: ~
+    loggingEnabled: "Logi debugowania są włączone"
   appHeader:
     home: "Strona główna"
     explore: "Eksploruj"
@@ -101,7 +101,7 @@ app:
     installed: "Zainstalowane"
     details: "Informacje"
     update: "Zaktualizuj"
-    downgrade: ~
+    downgrade: "Zdezaktualizuj"
     install: "Zainstaluj"
     compile: "Kompiluj"
     disable: "Deaktywuj"
@@ -112,7 +112,7 @@ app:
     removeConfirm: "Czy jesteś pewny że chcesz usunąć tego moda?"
     removeConfirmOk: "Usuń moda"
     removeConfirmCancel: "Anuluj"
-    donate: ~
+    donate: "Wesprzyj"
     notCompiled: "Mod musi być skompilowany"
     editedLocally: "Mod był edytowany lokalnie"
     noDescription: "(brak opisu)"
@@ -120,19 +120,19 @@ app:
     users_other: "{{formattedCount}} użytkowników"
     users_few: "{{formattedCount}} użytkownicy"
     users_many: "{{formattedCount}} użytkowników"
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+    notRated: "Ten mod nie został jeszcze oceniony"
+    loggingEnabledInAdvancedTab: "Logi debugowania są włączone w karcie Zaawansowane moda"
   modDetails:
     header:
       installedVersion: "Zainstalowana wersja"
       latestVersion: "Najnowsza wersja"
       loading: "Ładowanie..."
       loadingFailed: "Ładowanie zakończone niepowodzeniem"
-      otherVersions: ~
-      selectedVersion: ~
+      otherVersions: "Inne wersje"
+      selectedVersion: "Wybrano: {{version}}"
       modId: "Identyfikacja moda"
       modVersion: "Wersja moda"
-      lastUpdated: ~
+      lastUpdated: "Ostatnio zaaktualizowano"
       modAuthor:
         title: "Autor moda"
         homepage: "Strona główna"
@@ -145,14 +145,14 @@ app:
         tooltip:
           targets: "Procesy docelowe"
           excluded: "Wyjątki"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "Niestandardowa lista uwzględnień/wykluczeń procesów została zdefiniowana dla tego moda w karcie Zaawansowane"
+          patternsMatchCriticalSystemProcessesNote: ""
       updateNotNeeded: "Zainstalowana wersja jest identyczna z najnowszą wersją"
     version:
-      preRelease: ~
-      select: ~
-      cancel: ~
-      chooseVersion: ~
+      preRelease: "wersja przedpremierowa"
+      select: "Wybierz"
+      cancel: "Anuluj"
+      chooseVersion: "Wybierz wersję..."
     details:
       title: "Informacje"
       noData: "Informacje o modzie są niedostępne."
@@ -260,8 +260,8 @@ app:
   settings:
     language:
       title: "Język"
-      description: "Wybierz preferowany język wyświetlania dla aplikacji Windhawk."
-      contribute: "<0>Współtwórz nowe tłumaczenie</0>."
+      description: "Wybierz preferowany język dla Windhawk."
+      contribute: "<0>Współtwórz nowe tłumaczenia</0>."
       credits: "Polskie tłumaczenie stworzył <0>Inkatail</0> oraz CyprinusCarpio (https://github.com/CyprinusCarpio), a funn-hue poprawił."
       creditsLink: "https://github.com/Inkatail"
     updates:
@@ -275,8 +275,8 @@ app:
       title: "Ukryj ikonę w zasobniku"
       description: "Będziesz musiał wyłączyć tę opcję, aby wyjść z Windhawk."
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "Zawsze kompiluj mody lokalnie"
+      description: "Domyślnie Windhawk pobiera wstępnie kompilowane wersje binarne modów z serwerów gdy dostępne. Włącz tą opcje jeśli zawsze chcesz kompilować je lokalnie."
     requireElevation:
       title: "Wymagaj uprawnień UAC do uruchomienia Windhawk"
       description: "Windhawk wymaga uprawnień administratora, ale dla komputera z jednym użytkownikiem wyświetlanie komunikatu UAC za każdym razem może być irytujące, więc Windhawk go omija. Włącz tę opcję, aby wymagać uprawnień UAC do uruchamiania Windhawk."
@@ -315,22 +315,22 @@ app:
     title: "Windhawk v{{version}}"
     beta: "beta"
     subtitle: "Rynek personalizacji dla programów Windows"
-    credit: "Stworzył <0>{{author}}</0>"
+    credit: "Stworzone przez <0>{{author}}</0>"
     update:
       title: "Aktualizacja jest dostępna"
       subtitle: "Rozważ aktualizację Windhawk, aby uzyskać najnowsze funkcje i poprawki błędów"
-      changelogButton: ~
-      updateButton: ~
+      changelogButton: "Lista zmian"
+      updateButton: "Zaaktualizuj"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Aktualizowanie Windhawk"
+        downloading: "Pobieranie aktualizacji..."
+        installing: "Instalowanie aktualizacji..."
+        installingNote: "Windhawk uruchomi się ponownie automatycznie gdy instalacja się zakończy."
+        failed: "Aktualizacja zakończona niepowodzeniem"
+        cancel: "Anuluj"
     changelog:
-      title: ~
-      close: ~
+      title: "Co nowego w Windhawk"
+      close: "Zamknij"
     links:
       title: "Linki"
       homepage: "Strona główna"
@@ -362,8 +362,8 @@ app:
     beginCodingButton: "Rozpocznij kodowanie"
     cancelButton: "Anuluj"
   safeMode:
-    alert: "Windhawk działa w trybie bezpiecznym, wszystkie funkcje wstrzykiwania kodu są wyłączone."
-    offButton: "Wyłącz tryb bezpieczny"
+    alert: "Windhawk działa w trybie awaryjnym, wszystkie funkcje wstrzykiwania kodu są wyłączone."
+    offButton: "Wyłącz tryb awaryjny"
     offConfirm: "Windhawk zostanie uruchomiony ponownie, aby zastosować ustawienia."
     offConfirmOk: "Zrestartuj Windhawk"
     offConfirmCancel: "Anuluj"
@@ -373,11 +373,11 @@ app:
   sidebar:
     modId: "Identyfikator moda"
     enableMod: "Włącz moda"
-    enableLogging: "Włącz dziennik zdarzeń"
+    enableLogging: "Włącz logi"
     notCompiled: "Mod musi być skompilowany"
     compile: "Kompiluj moda"
-    compilationFailed: "Kompilacja zakończyła się sukcesem"
-    stopCompilation: ~
+    compilationFailed: "Kompilacja zakończyła się niepowodzeniem"
+    stopCompilation: "Zatrzymaj kompilacje"
     preview: "Podgląd modu"
     showLogOutput: "Pokaż dane dziennika"
     exit: "Wyjdź z trybu edycji"
