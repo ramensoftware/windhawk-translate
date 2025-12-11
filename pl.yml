@@ -163,16 +163,16 @@ app:
       sampleValue: "Przykładowa Wartość"
       arrayItemAdd: "Dodaj element"
       arrayItemRemove: "Usuń element"
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
+      yamlMode: "Tryb tekstowy"
+      uiMode: "Tryb wizualny"
+      yamlInvalid: "Nieprawidłowy format YAML"
+      yamlParseError: "Błąd parsowania YAML: {{error}}"
+      yamlInvalidKey: "Nieprawidłowy klucz w YAML: '{{key}}' nie jest poprawnym ustawieniem"
+      yamlTypeMismatch: "Niezgodność typu dla '{{key}}': oczekiwano {{expected}}, a otrzymano {{actual}}"
+      unsavedChangesTitle: "Niezapisane ustawienia"
+      unsavedChangesMessage: "Masz niezapisane zmiany ustawień. Czy na pewno chcesz je porzucić?"
+      unsavedChangesLeave: "Porzuć zmiany"
+      unsavedChangesStay: "Zmieniaj dalej"
     code:
       title: "Kod źródłowy"
       noData: "Kod źródłowy moda jest niedostępny."
@@ -202,14 +202,14 @@ app:
         titleExclusion: "Niestandardowa lista wykluczonych procesów"
         descriptionExclusion: "Niestandardowa lista dodatkowych nazw/ścieżek plików wykonywalnych, które mod wykluczy z namierzania. Lista ta jest dodawana do listy wykluczeń zdefiniowanej przez autora moda w celu określenia, które procesy mają być docelowe. Dla każdego procesu mod jest ładowany, jeśli ścieżka pliku wykonywalnego pasuje do jednego z wpisów włączenia i nie pasuje do żadnego wpisu wyłączenia."
         processListPlaceholder: "Nazwy/ścieżki procesów, po jednej w wierszu, na przykład:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "Lista procesów zawiera nieprawidłowe znaki, które zostaną usunięte: {{invalidCharacters}}"
         saveButton: "Zapisz"
       includeExcludeCustomOnly:
         title: "Ignoruj listy włączeń/wykluczeń modów"
         description: "Używaj powyższych list włączeń/wykluczeń zamiast list ustawionych przez mody."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Rozważ zawarcie dozwolonych list wzorców dla procesów krytycznych"
+        description: "Domyślnie Windhawk ładuje mody tylko w krytycznych procesach systemowych, jeśli proces jest uwzględniony bez użycia wzorców, np. <0>critical.exe</0>, a nie <0>*</0> lub <0>*.exe</0>. Po więcej informacji o krytycznych procesach systemowych, prosimy o zapoznanie się z <1>dokumentacją</1>."
     changes:
       title: "Zmiany w Najnowszej Wersji"
       noData: "Zainstalowana wersja jest identyczna z najnowszą wersją"
@@ -220,23 +220,23 @@ app:
       expandLines_many: "Rozwiń {{count}} ukrytych linii"
   modSearch:
     placeholder: "Szukaj modów.."
-    noResults: ~
+    noResults: "Żadne mody nie pasują do aktualnych filtrów"
   home:
     browse: "Przeglądaj w poszukiwaniu modów"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "Włączone mody"
+      disabled: "Wyłączone mody"
+      updateAvailable: "Mody z dostępną aktualizacją"
+      clearFilters: "Wyczyść filtry"
     installedMods:
       title: "Zainstalowane mody"
       noMods: "Nie zainstalowano żadnych modów"
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "Nazwa"
+        description: "Opis"
+        author: "Autor"
+        version: "Wersja"
+        status: "Status"
     featuredMods:
       title: "Wyróżnione mody"
       noMods: "Nie ma żadnych polecanych modów, które nie zostały jeszcze zainstalowane"
@@ -250,13 +250,13 @@ app:
       lastUpdated: "Ostatnio aktualizowane"
       alphabeticalOrder: "Kolejność alfabetyczna"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "Status instalacji"
+      installed: "Zainstalowane"
+      notInstalled: "Nie zainstalowane"
+      author: "Autor moda"
+      process: "Proces docelowy"
+      showMore: "Pokaż więcej..."
+      clearFilters: "Wyczyść filtry"
   settings:
     language:
       title: "Język"
@@ -301,16 +301,16 @@ app:
     processList:
       titleExclusion: "Lista wykluczonych procesów"
       descriptionExclusion: "Lista nazw procesów/ścieżek, do których Windhawk nie będzie wstrzykiwał. Może być przydatna w przypadkach, gdy Windhawk nie jest kompatybilny z określonym programem. Należy pamiętać, że dodanie procesu do tej listy nie tylko uniemożliwi Windhawk dostosowanie go, ale także uniemożliwi Windhawk przechwytywanie procesów potomnych tworzonych przez ten proces. Spowoduje to, że w takich przypadkach Windhawk będzie ładował mody z niewielkim opóźnieniem."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Po więcej informacji o wykluczaniu procesów oraz wbudowanych listach wykluczeń procesów, prosimy o zapoznanie się z <0>dokumentacją</0>."
+      excludeCriticalProcesses: "Wyklucz krytyczne procesy systemowe"
+      excludeIncompatiblePrograms: "Wyklucz znane niekompatybilne programy"
+      excludeGames: "Wyklucz znane gry"
       titleInclusion: "Lista uwzględnionych procesów"
       descriptionInclusion: "Lista nazw/ścieżek procesów, do których Windhawk będzie wstrzykiwał dane, nawet jeśli znajdują się one na liście wykluczeń."
       inclusionWithoutExclusionNotice: "Lista uwzględnionych procesów nie ma wpływu na pustą listę wykluczania procesów."
       inclusionWithoutTotalExclusionNotice: "Jeśli chcesz wykluczyć wszystkie procesy oprócz tych, możesz ustawić \"*\" na liście wykluczeń procesów."
       processListPlaceholder: "Nazwy/ścieżki procesów, po jednej w wierszu, na przykład:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "Lista procesów zawiera nieprawidłowe znaki, które zostaną usunięte: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -378,7 +378,7 @@ app:
     compile: "Kompiluj moda"
     compilationFailed: "Kompilacja zakończyła się niepowodzeniem"
     stopCompilation: "Zatrzymaj kompilacje"
-    preview: "Podgląd modu"
+    preview: "Podgląd moda"
     showLogOutput: "Pokaż dane dziennika"
     exit: "Wyjdź z trybu edycji"
     exitConfirmation: "Zmiany wprowadzone od ostatniej udanej kompilacji zostaną utracone"
