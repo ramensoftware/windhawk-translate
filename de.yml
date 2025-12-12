@@ -303,7 +303,7 @@ app:
       excludeGames: "Bekannte Spiele ausschließen"
       titleInclusion: "Prozess-Einschlussliste"
       descriptionInclusion: "Eine Liste von Prozessnamen/-pfaden, in die Windhawk eingreift, selbst wenn sie in der Ausschlussliste stehen."
-      inclusionWithoutExclusionNotice: "Bei einer leeren Prozess-Ausschlussliste hat die Prozess-Ausschlussliste keine Wirkung."
+      inclusionWithoutExclusionNotice: "Bei einer leeren Prozess-Ausschlussliste hat die Prozess-Einschlussliste keine Wirkung."
       inclusionWithoutTotalExclusionNotice: "Wenn beabsichtigt ist, alle Prozesse außer diesen auszuschließen, kann \"*\" in der Prozess-Ausschlussliste gesetzt werden."
       processListPlaceholder: "Prozessnamen/-pfade, einer pro Zeile, z. B.:"
       invalidCharactersWarning: "Die Prozessliste enthält ungültige Zeichen, die entfernt werden: {{invalidCharacters}}"
