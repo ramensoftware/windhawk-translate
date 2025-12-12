@@ -79,7 +79,7 @@ tray:
 app:
   general:
     loading: "Lade..."
-    loadingFailed: "Laden nicht erfolgreich, bitte überprüfe die Internetverbindung."
+    loadingFailed: "Laden fehlgeschlagen, bitte überprüfe die Internetverbindung."
     loadingFailedTitle: "Laden fehlgeschlagen"
     loadingFailedSubtitle: "Bitte überprüfe die Internetverbindung und versuche es erneut."
     tryAgain: "Erneut versuchen"
@@ -195,16 +195,16 @@ app:
         saveButton: "Speichern"
         invalidData: "Ungültige JSON-Daten!"
       customList:
-        titleInclusion: "Benutzerdefinierte Liste einbezogener Prozesse"
-        descriptionInclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, auf die die Mod abzielt. Die Liste wird der Aufnahmeliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Include-Einträge übereinstimmt und mit keinem Exclude-Eintrag übereinstimmt."
-        titleExclusion: "Benutzerdefinierte Liste ausgeschlossener Prozesse"
-        descriptionExclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, die die Mod vom Targeting ausschließt. Die Liste wird der Ausschlussliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Include-Einträge übereinstimmt und mit keinem Exclude-Eintrag übereinstimmt."
+        titleInclusion: "Benutzerdefinierte Prozess-Einschlussliste"
+        descriptionInclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, auf die die Mod abzielt. Die Liste wird der Aufnahmeliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Include-Einträge übereinstimmt und mit keinem Ausschluss-Eintrag übereinstimmt."
+        titleExclusion: "Benutzerdefinierte Prozess-Ausschlussliste"
+        descriptionExclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, die die Mod von der Zielauswahl ausschließt. Die Liste wird der Ausschlussliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Include-Einträge übereinstimmt und mit keinem Ausschluss-Eintrag übereinstimmt."
         processListPlaceholder: "Prozessnamen/-pfade, einer pro Zeile, z. B.:"
         invalidCharactersWarning: "Die Prozessliste enthält ungültige Zeichen, die entfernt werden: {{invalidCharacters}}"
         saveButton: "Speichern"
       includeExcludeCustomOnly:
-        title: "Mod-Einschluss-/Ausschlusslisten ignorieren"
-        description: "Ignoriere die Einschluss-/Ausschlusslisten der Mod und verwende nur die benutzerdefinierten Listen oben."
+        title: "Mod-Ein-/Ausschlusslisten ignorieren"
+        description: "Ignoriere die Prozess-Ein-/Ausschlusslisten der Mod und verwende nur die benutzerdefinierten Listen oben."
       patternsMatchCriticalSystemProcesses:
         title: "Berücksichtige Einschlusslistenmuster für kritische Systemprozesse"
         description: "Standardmäßig lädt Windhawk Mods in kritischen Systemprozessen nur, wenn der Prozess ohne Muster angegeben wird, z.B. <0>critical.exe</0>, nicht <0>*</0> oder <0>*.exe</0>. Weitere Details zu kritischen Systemprozessen sind in <1>der Dokumentation</1> zu finden."
@@ -295,7 +295,7 @@ app:
       error: "Fehler"
       verbose: "Ausführlich"
     processList:
-      titleExclusion: "Liste der ausgeschlossenen Prozesse"
+      titleExclusion: "Prozess-Ausschlussliste"
       descriptionExclusion: "Eine Liste mit Prozessnamen/-pfaden, in die Windhawk nicht eingreift. Kann nützlich sein, wenn Windhawk mit einem bestimmten Programm nicht kompatibel ist. Beachte, dass das Hinzufügen eines Prozesses zu dieser Liste Windhawk nicht nur daran hindert, ihn anzupassen, sondern auch, untergeordnete Prozesse abzufangen, die dieser Prozess erstellt. Dies führt in solchen Fällen zu einer leichten Verzögerung beim Laden der Windhawk Mods."
       descriptionExclusionWiki: "Weitere Details zum Ausschluss von Prozessen und zu den integrierten Prozess-Ausschlusslisten sind in <0>der Dokumentation</0> zu finden."
       excludeCriticalProcesses: "Kritische Systemprozesse ausschließen"
@@ -303,7 +303,7 @@ app:
       excludeGames: "Bekannte Spiele ausschließen"
       titleInclusion: "Prozess-Einschlussliste"
       descriptionInclusion: "Eine Liste von Prozessnamen/-pfaden, in die Windhawk eingreift, selbst wenn sie in der Ausschlussliste stehen."
-      inclusionWithoutExclusionNotice: "Bei einer leeren Prozessausschlussliste hat die Prozessaufnahmeliste keine Wirkung."
+      inclusionWithoutExclusionNotice: "Bei einer leeren Prozess-Ausschlussliste hat die Prozess-Ausschlussliste keine Wirkung."
       inclusionWithoutTotalExclusionNotice: "Wenn beabsichtigt ist, alle Prozesse außer diesen auszuschließen, kann \"*\" in der Prozess-Ausschlussliste gesetzt werden."
       processListPlaceholder: "Prozessnamen/-pfade, einer pro Zeile, z. B.:"
       invalidCharactersWarning: "Die Prozessliste enthält ungültige Zeichen, die entfernt werden: {{invalidCharacters}}"
