@@ -31,13 +31,13 @@ setup:
   INETC_SECOND: "Sekunden"
   INETC_MINUTE: "Minuten"
   INETC_HOUR: "Stunden"
-  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
+  INETC_PROGRESS: "%dkB (%d%%) von %dkB @ %d.%01dkB/s"
   INETC_REMAINING: " (%d %s%s verbleibend)"
 tray:
   TRAY_OPEN: "&Windhawk öffnen"
   TRAY_LOADED_MODS: "Geladene &Mods"
   TRAY_TOOLKIT: "&Toolkit"
-  TRAY_EXIT: "&Exit"
+  TRAY_EXIT: "B&eenden"
   EXITDLG_TITLE: "Beende Windhawk"
   EXITDLG_CONTENT: "Windhawk wird beendet und alle Mods werden entladen. Windhawk wird beim nächsten Systemstart automatisch gestartet, es sei denn, die unten stehende Option ist aktiviert."
   EXITDLG_CHECKBOX_AUTOSTART: "Beim nächsten Systemstart nicht automatisch starten."
@@ -59,7 +59,7 @@ tray:
   TASKDLG_STATUS_PENDING: "Wartet"
   TASKDLG_STATUS_LOADING: "Lädt"
   TASKDLG_STATUS_LOADED: "Geladen"
-  TASKDLG_STATUS_UNLOADED: "Nicht geladen"
+  TASKDLG_STATUS_UNLOADED: "Entladen"
   TASKDLG_TASK_INITIALIZING: "Initialisiere..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Lade Symbole..."
   TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Warte auf Symbole..."
@@ -181,11 +181,11 @@ app:
     advanced:
       title: "Erweitert"
       debugLogging:
-        title: "Debug Protokollierung"
+        title: "Debug-Protokollierung"
         description: "Kann nützlich sein, um Probleme mit dem Mod zu beheben."
         none: "Nichts"
         modLogs: "Mod-Protokolle"
-        detailedLogs: "Detailierte Debugprotokolle"
+        detailedLogs: "Detaillierte Debugprotokolle"
         showLogButton: "Protokoll anzeigen"
       modSettings:
         title: "Mod-Einstellungen"
@@ -292,12 +292,12 @@ app:
       engineLoggingTitle: "Art der Windhawk-Engine-Protokollierung"
       description: "Protokolle können mit einem Tool wie DebugView angezeigt werden."
       none: "Keine"
-      error: "Error"
+      error: "Fehler"
       verbose: "Ausführlich"
     processList:
       titleExclusion: "Liste der ausgeschlossenen Prozesse"
       descriptionExclusion: "Eine Liste von Prozessnamen/-pfaden, in die Windhawk nicht einfügt. Kann nützlich sein, wenn Windhawk nicht mit einem bestimmten Programm kompatibel ist. Beachten Sie, dass das Hinzufügen eines Prozesses zu dieser Liste Windhawk nicht nur daran hindert, ihn anzupassen, sondern auch daran hindert, untergeordnete Prozesse abzufangen, die dieser Prozess erstellt. Dies führt dazu, dass Windhawk Mods in solchen Fällen mit einer leichten Verzögerung lädt."
-      descriptionExclusionWiki: "Weitere Details zum Ausschluss von Prozessen und zu den eingebauten Listen der aufgeschlossenen Prozesse sind in <0>der Dokumentation</0> zu finden."
+      descriptionExclusionWiki: "Weitere Details zum Ausschluss von Prozessen und zu den integrierten Prozess-Ausschlusslisten sind in <0>der Dokumentation</0> zu finden."
       excludeCriticalProcesses: "Kritische Systemprozesse ausschließen"
       excludeIncompatiblePrograms: "Bekannte inkompatible Programme ausschließen"
       excludeGames: "Bekannte Spiele ausschließen"
@@ -329,7 +329,7 @@ app:
       close: "Schließen"
     links:
       title: "Links"
-      homepage: "Startseite"
+      homepage: "Homepage"
       documentation: "Dokumentation"
     builtWith:
       title: "Erstellt mit..."
