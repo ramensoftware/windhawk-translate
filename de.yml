@@ -62,8 +62,8 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Nicht geladen"
   TASKDLG_TASK_INITIALIZING: "Initialisiere..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Lade Symbole..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
-  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Warte auf Symbole..."
+  TASKDLG_TASK_UNINITIALIZING: "Deinitialisiere..."
   TASKDLG_PROCESS_SUSPENDED: "(angehalten)"
   TOOLKITDLG_TITLE: "Windhawk-Toolkit"
   TOOLKITDLG_EXPLANATION_CRASH: "Systeminstabilität festgestellt, die möglicherweise durch eine Windhawk-Mod verursacht wird. Das Beenden von Windhawk oder Neustarten im abgesicherten Modus kann das Problem lösen."
@@ -90,7 +90,7 @@ app:
     copy: "Kopieren"
     paste: "Einfügen"
     selectAll: "Alles auswählen"
-    loggingEnabled: ~
+    loggingEnabled: "Debug-Protokollierung ist aktiviert"
   appHeader:
     home: "Startseite"
     explore: "Durchsuchen"
@@ -101,7 +101,7 @@ app:
     installed: "Installiert"
     details: "Details"
     update: "Aktualisierung"
-    downgrade: ~
+    downgrade: "Downgraden"
     install: "Installiere"
     compile: "Kompiliere"
     disable: "Deaktivieren"
@@ -112,25 +112,25 @@ app:
     removeConfirm: "Sind Sie sicher, dass Sie diese Mod entfernen wollen?"
     removeConfirmOk: "Entferne Mod"
     removeConfirmCancel: "Abbrechen"
-    donate: ~
+    donate: "Spende"
     notCompiled: "Mod muss kompiliert werden."
     editedLocally: "Mod wurde lokal bearbeitet."
     noDescription: "Leider keine Beschreibung vorhanden."
     users_one: "{{formattedCount}} Benutzer"
     users_other: "{{formattedCount}} Benutzer"
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+    notRated: "Diese Mod wurde bisher nicht bewertet"
+    loggingEnabledInAdvancedTab: "Debug-Protokollierung ist im Erweitert-Register der Mod aktiviert"
   modDetails:
     header:
       installedVersion: "Installierte Version"
       latestVersion: "Neueste Version"
       loading: "Lade..."
       loadingFailed: "Laden fehlgeschlagen."
-      otherVersions: ~
-      selectedVersion: ~
+      otherVersions: "Andere Versionen"
+      selectedVersion: "Gewählt: {{version}}"
       modId: "Mod-Id"
       modVersion: "Mod-Version"
-      lastUpdated: ~
+      lastUpdated: "Zuletzt aktualisiert"
       modAuthor:
         title: "Mod-Autor"
         homepage: "Homepage"
@@ -143,14 +143,14 @@ app:
         tooltip:
           targets: "Zielprozesse"
           excluded: "Ausgeschlossen"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "Benutzerdefinierte Prozess-Ein-/Ausschlusslisten wurden für diese Mod im Erweitert-Register definiert"
+          patternsMatchCriticalSystemProcessesNote: "Einschlusslistenmuster werden für kritische Systemprozesse für diesen Mod berücksichtigt (festgelegt im Erweitert-Register)"
       updateNotNeeded: "Die installierte Version ist identisch mit der neusten Version."
     version:
-      preRelease: ~
-      select: ~
-      cancel: ~
-      chooseVersion: ~
+      preRelease: "Vorabversion"
+      select: "Wählen"
+      cancel: "Abbrechen"
+      chooseVersion: "Eine Version wählen..."
     details:
       title: "Details"
       noData: "Mod-Details fehlen."
@@ -161,16 +161,16 @@ app:
       sampleValue: "Beispielwert"
       arrayItemAdd: "Neues Element hinzufügen"
       arrayItemRemove: "Element entfernen"
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
+      yamlMode: "Text-Modus"
+      uiMode: "Visueller Modus"
+      yamlInvalid: "Ungültiges YAML-Format"
+      yamlParseError: "YAML Parserfehler: {{error}}"
+      yamlInvalidKey: "Ungültiger Schlüssel in YAML: '{{key}}' ist keine gültige Angabe"
+      yamlTypeMismatch: "Typkonflikt für '{{key}}': erwartet {{expected}}, aber erhalten {{actual}}"
+      unsavedChangesTitle: "Ungespeicherte Einstellungen"
+      unsavedChangesMessage: "Es gibt ungespeicherte Einstellungsänderungen. Sollen diese wirklich verworfen werden?"
+      unsavedChangesLeave: "Änderungen verwerfen"
+      unsavedChangesStay: "Weiter bearbeiten"
     code:
       title: "Quellcode"
       noData: "Mod-Quellcode fehlt."
@@ -216,23 +216,23 @@ app:
       expandLines_other: "Zeige {{count}} versteckte Zeilen"
   modSearch:
     placeholder: "Suche nach Mods..."
-    noResults: ~
+    noResults: "Keine Mods stimmen mit den aktuellen Filtern überein"
   home:
     browse: "Nach Mods suchen"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "Aktivierte Mods"
+      disabled: "Deaktivierte Mods"
+      updateAvailable: "Mods mit verfügbarer Aktualisierung"
+      clearFilters: "Filter zurücksetzen"
     installedMods:
       title: "Installierte Mods"
       noMods: "Keine Mods installiert."
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "Name"
+        description: "Beschreibung"
+        author: "Autor"
+        version: "Version"
+        status: "Status"
     featuredMods:
       title: "Vorgestellte Mods"
       noMods: "Es gibt keine vorgestellten Mods, die noch nicht installiert wurden."
@@ -246,13 +246,13 @@ app:
       lastUpdated: "Zuletzt aktualisiert"
       alphabeticalOrder: "Alphabetisch sortiert"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "Installationsstatus"
+      installed: "Installiert"
+      notInstalled: "Nicht installiert"
+      author: "Mod-Autor"
+      process: "Zielprozess"
+      showMore: "Mehr anzeigen..."
+      clearFilters: "Filter zurücksetzen"
   settings:
     language:
       title: "Sprache"
@@ -271,8 +271,8 @@ app:
       title: "Taskleistensymbol ausblenden"
       description: "Diese Option muss deaktiviert sein, um Windhawk zu beenden."
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "Mods immer lokal kompilieren"
+      description: "Standardmäßig lädt Windhawk vorkompilierte Mod-Binärdateien vom Windhawk-Server herunter, sofern diese verfügbar sind. Aktiviere diese Option, um Mods stattdessen immer lokal zu kompilieren."
     requireElevation:
       title: "Die Erhöhung der Benutzerrechte (user account control elevation) wird zum Ausführen von Windhawk benötigt"
       description: "Windhawk erfordert Administratorrechte, aber auf einem Einzelbenutzer-Computer kann es lästig sein, jedes Mal die Rechteerhöhung zu bestätigen, sodass Windhawk die Bestätung umgeht. Aktivieren Sie diese Option, um eine Bestätigung der Rechteerhöhung (UAC elevation) durch den Benutzer für die Ausführung von Windhawk anzufordern."
@@ -315,18 +315,18 @@ app:
     update:
       title: "Aktualisierung verfügbar"
       subtitle: "Erwägen Sie, Windhawk zu aktualisieren, um die neuesten Funktionen und Fehlerbehebungen zu erhalten."
-      changelogButton: ~
-      updateButton: ~
+      changelogButton: "Änderungsprotokoll"
+      updateButton: "Aktualisieren"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Aktualisierung von Windhawk"
+        downloading: "Update laden..."
+        installing: "Update installieren..."
+        installingNote: "Windhawk startet automatisch neu, sobald die Installation abgeschlossen ist"
+        failed: "Aktualisierung fehlgeschlagen"
+        cancel: "Abbrechen"
     changelog:
-      title: ~
-      close: ~
+      title: "Was gibt es Neues bei Windhawk?"
+      close: "Schließen"
     links:
       title: "Links"
       homepage: "Startseite"
@@ -373,7 +373,7 @@ app:
     notCompiled: "Mod muss kompiliert werden."
     compile: "Kompiliere Mod..."
     compilationFailed: "Kompilierung fehlgeschlagen"
-    stopCompilation: ~
+    stopCompilation: "Kompilierung stoppen"
     preview: "Mod Vorschau"
     showLogOutput: "Zeige Protokoll"
     exit: "Beende Bearbeitungsmodus"
