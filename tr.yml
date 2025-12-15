@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Kaynak Kodu"
       noData: "Mod kaynağı eksik."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "Son başarılı derlemeden bu yana yapılan değişiklikler kaybolacak"
     exitButtonOk: "Çık"
     exitButtonCancel: "Kal"
+  website:
+    appHeader:
+      mods: ~
+      links: "Bağlantılar"
+      contributeTranslation: "Yeni bir çeviriye katkıda bulunun"
+    home:
+      tagline: "Windows programları için özelleştirme pazarı"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

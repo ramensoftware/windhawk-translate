@@ -172,6 +172,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Izvorni kôd"
       noData: "Nedostaje izvorni kôd dodatka."
@@ -382,3 +383,46 @@ app:
     exitConfirmation: "Izmjene od zadnje uspješne kompilacije bit će izgubljene"
     exitButtonOk: "Izađi"
     exitButtonCancel: "Ostani"
+  website:
+    appHeader:
+      mods: ~
+      links: "Poveznice"
+      contributeTranslation: "Doprinesite novom prijevodu"
+    home:
+      tagline: "Tržište prilagodbi za Windows i programe"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

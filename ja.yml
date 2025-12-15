@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: "設定が保存されていません。変更を破棄しますか？"
       unsavedChangesLeave: "変更を破棄"
       unsavedChangesStay: "編集を続行"
+      readOnlyPreview: ~
     code:
       title: "ソースコード"
       noData: "Mod のソースはありません。"
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "最後にコンパイルしてからの変更は失われます"
     exitButtonOk: "終了"
     exitButtonCancel: "キャンセル"
+  website:
+    appHeader:
+      mods: ~
+      links: "リンク"
+      contributeTranslation: "翻訳に貢献"
+    home:
+      tagline: "Windows プログラムのカスタマイズマーケットプレイス"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

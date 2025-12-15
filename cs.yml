@@ -173,6 +173,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Zdrojový kód"
       noData: "Chybí zdrojový kód."
@@ -384,3 +385,46 @@ app:
     exitConfirmation: "Změny od poslední úspěšné kompilace budou ztraceny"
     exitButtonOk: "Konec"
     exitButtonCancel: "Zůstat"
+  website:
+    appHeader:
+      mods: ~
+      links: "Odkazy"
+      contributeTranslation: "Přidat nový překlad"
+    home:
+      tagline: "Tržiště pro přizpůsobení programů Windows"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: "저장하지 않은 변경사항이 있습니다. 변경사항을 버리시겠어요?"
       unsavedChangesLeave: "변경사항 버리기"
       unsavedChangesStay: "계속 편집"
+      readOnlyPreview: ~
     code:
       title: "소스 코드"
       noData: "모드 소스가 없습니다."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "마지막 컴파일 성공 후의 변경이 사라집니다"
     exitButtonOk: "나가기"
     exitButtonCancel: "남아 있기"
+  website:
+    appHeader:
+      mods: ~
+      links: "링크"
+      contributeTranslation: "새 번역 기여하기"
+    home:
+      tagline: "Windows 프로그램용 사용자 정의 마켓플레이스"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

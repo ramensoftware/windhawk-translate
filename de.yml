@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Quellcode"
       noData: "Mod-Quellcode fehlt."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "Alle Änderungen seit der letzten erfolgreichen Kompilierung gehen verloren!"
     exitButtonOk: "Verlassen"
     exitButtonCancel: "Bleiben"
+  website:
+    appHeader:
+      mods: ~
+      links: "Links"
+      contributeTranslation: "Eine neue Übersetzung erstellen"
+    home:
+      tagline: "Der Marktplatz mit Anpassungen für Windowsprogramme"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

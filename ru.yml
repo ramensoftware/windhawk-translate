@@ -173,6 +173,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Исходный код"
       noData: "Исходный код отсутствует."
@@ -384,3 +385,46 @@ app:
     exitConfirmation: "Изменения после последней успешной компиляции будут потеряны"
     exitButtonOk: "Выйти"
     exitButtonCancel: "Остаться"
+  website:
+    appHeader:
+      mods: ~
+      links: "Ссылки"
+      contributeTranslation: "Добавить новый перевод"
+    home:
+      tagline: "Маркетплейс для кастомизации программ Windows"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

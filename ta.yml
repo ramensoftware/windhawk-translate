@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "மூல குறியீடு"
       noData: "மாற்றத்தின் மூலக்குறியீடு இல்லை."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "கடைசி வெற்றிகரமான கணக்கீட்டுக்கு பிறகு செய்யப்பட்ட மாற்றங்கள் இழக்கப்படும்"
     exitButtonOk: "வெளியேறு"
     exitButtonCancel: "தங்கு"
+  website:
+    appHeader:
+      mods: ~
+      links: "இணைப்புகள்"
+      contributeTranslation: "புதிய மொழிபெயர்ப்பை பங்களிக்கவும்"
+    home:
+      tagline: "Windows மற்றும் நிரல்களுக்கான தனிப்பயனாக்க சந்தை"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

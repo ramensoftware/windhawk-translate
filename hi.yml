@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "स्रोत कोड"
       noData: "मॉड स्रोत अनुपस्थित है।"
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "आखिरी सफल कंपाइलेशन के बाद के परिवर्तन खो जाएंगे"
     exitButtonOk: "बाहर निकलें"
     exitButtonCancel: "रहें"
+  website:
+    appHeader:
+      mods: ~
+      links: "लिंक्स"
+      contributeTranslation: "नया अनुवाद योगदान करें।"
+    home:
+      tagline: "विंडोज और प्रोग्राम्स के लिए अनुकूलन मार्केटप्लेस"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

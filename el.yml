@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Πηγαίος κώδικας"
       noData: "Η πηγή mod λείπει."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "Οι αλλαγές από την τελευταία επιτυχημένη συλλογή θα χαθούν"
     exitButtonOk: "Εξοδος"
     exitButtonCancel: "Παραμονή"
+  website:
+    appHeader:
+      mods: ~
+      links: "Συνδέσεις"
+      contributeTranslation: "Συνεισφέρετε σε μια νέα μετάφραση"
+    home:
+      tagline: "Η αγορά προσαρμογής για Windows και προγράμματα"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~
