@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Forráskód"
       noData: "Hiányzik a mod forrása."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "A legutóbbi sikeres fordítás óta történt változtatások elvesznek"
     exitButtonOk: "Kilépés"
     exitButtonCancel: "Mégse"
+  website:
+    appHeader:
+      mods: ~
+      links: "Linkek"
+      contributeTranslation: "Járuljon hozzá egy új fordítással"
+    home:
+      tagline: "Testreszabási piactér Windowsra és programokra"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "โค้ดต้นฉบับ"
       noData: "ไม่มีโค้ดต้นฉบับของม็อดนี้"
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "การเปลี่ยนแปลงนับตั้งแต่การคอมไพล์ครั้งล่าสุดที่สำเร็จจะหายไป"
     exitButtonOk: "ออก"
     exitButtonCancel: "อยู่ต่อ"
+  website:
+    appHeader:
+      mods: ~
+      links: "ลิงก์"
+      contributeTranslation: "ร่วมแปลภาษาใหม่"
+    home:
+      tagline: "โปรแกรมรวบรวมการปรับแต่งสำหรับ Windows และโปรแกรมต่าง ๆ"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

@@ -175,6 +175,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "كود المصدر"
       noData: "مصدر المود مفقود."
@@ -388,3 +389,46 @@ app:
     exitConfirmation: "سيتم فقدان التغييرات منذ آخر تجميع ناجح"
     exitButtonOk: "خروج"
     exitButtonCancel: "البقاء"
+  website:
+    appHeader:
+      mods: ~
+      links: "روابط"
+      contributeTranslation: "ساهم بترجمة جديدة"
+    home:
+      tagline: "سوق التخصيص لنظام ويندوز والبرامج"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Kode Sumber"
       noData: "Sumber mod hilang."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "Perubahan sejak kompilasi terakhir yang berhasil akan hilang"
     exitButtonOk: "Tutup"
     exitButtonCancel: "Stay"
+  website:
+    appHeader:
+      mods: ~
+      links: "Tautan"
+      contributeTranslation: "Kontribusi untuk terjemahan Baru"
+    home:
+      tagline: "Marketplace kustomisasi untuk Windows dan program"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

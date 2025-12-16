@@ -173,6 +173,7 @@ app:
       unsavedChangesMessage: "Masz niezapisane zmiany ustawień. Czy na pewno chcesz je porzucić?"
       unsavedChangesLeave: "Porzuć zmiany"
       unsavedChangesStay: "Zmieniaj dalej"
+      readOnlyPreview: ~
     code:
       title: "Kod źródłowy"
       noData: "Kod źródłowy moda jest niedostępny."
@@ -384,3 +385,46 @@ app:
     exitConfirmation: "Zmiany wprowadzone od ostatniej udanej kompilacji zostaną utracone"
     exitButtonOk: "Wyjdź"
     exitButtonCancel: "Pozostań"
+  website:
+    appHeader:
+      mods: ~
+      links: "Linki"
+      contributeTranslation: "Współtwórz nowe tłumaczenie"
+    home:
+      tagline: "Rynek personalizacji dla programów Windows"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

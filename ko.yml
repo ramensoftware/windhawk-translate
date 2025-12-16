@@ -119,7 +119,7 @@ app:
     users_one: "사용자 {{formattedCount}}명"
     users_other: "사용자 {{formattedCount}}명"
     notRated: "이 모드는 아직 평점이 없습니다"
-    loggingEnabledInAdvancedTab: "이 모드의 고급 탭에서 디버그 로깅이 활성화됨"
+    loggingEnabledInAdvancedTab: "이 모드의 [고급] 탭에서 디버그 로깅이 활성화됨"
   modDetails:
     header:
       installedVersion: "설치된 버전"
@@ -143,14 +143,14 @@ app:
         tooltip:
           targets: "대상 프로세스"
           excluded: "제외 프로세스"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "사용자 지정 프로세스 포함/제외 목록은 모드의 [고급] 탭에서 정의됩니다"
+          patternsMatchCriticalSystemProcessesNote: "포함 목록 패턴은 이 모드의 중대한 시스템 프로세스를 위해 고려됩니다 ([고급] 탭에서 설정)"
       updateNotNeeded: "설치되어 있는 버전이 최신 버전입니다"
     version:
       preRelease: "프리릴리스"
       select: "선택"
       cancel: "취소"
-      chooseVersion: "버전을 선택하세요..."
+      chooseVersion: "버전을 선택..."
     details:
       title: "세부 정보"
       noData: "모드 세부 정보가 없습니다."
@@ -162,7 +162,7 @@ app:
       arrayItemAdd: "새 항목 추가"
       arrayItemRemove: "항목 삭제"
       yamlMode: "텍스트 모드"
-      uiMode: "시각 모드"
+      uiMode: "비주얼 모드"
       yamlInvalid: "올바르지 않은 YAML 형식입니다"
       yamlParseError: "YAML 구문분석 오류: {{error}}"
       yamlInvalidKey: "YAML의 올바르지 않은 키: '{{key}}'(은)는 잘못된 키입니다"
@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: "저장하지 않은 변경사항이 있습니다. 변경사항을 버리시겠어요?"
       unsavedChangesLeave: "변경사항 버리기"
       unsavedChangesStay: "계속 편집"
+      readOnlyPreview: ~
     code:
       title: "소스 코드"
       noData: "모드 소스가 없습니다."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "마지막 컴파일 성공 후의 변경이 사라집니다"
     exitButtonOk: "나가기"
     exitButtonCancel: "남아 있기"
+  website:
+    appHeader:
+      mods: ~
+      links: "링크"
+      contributeTranslation: "새 번역 기여하기"
+    home:
+      tagline: "Windows 프로그램용 사용자 정의 마켓플레이스"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~
