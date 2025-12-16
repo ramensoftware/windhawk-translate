@@ -144,7 +144,7 @@ app:
           targets: "Zielprozesse"
           excluded: "Ausgeschlossen"
           customListsNote: "Benutzerdefinierte Prozess-Ein-/Ausschlusslisten wurden für diese Mod im Erweitert-Register definiert"
-          patternsMatchCriticalSystemProcessesNote: "Einschlusslistenmuster werden für kritische Systemprozesse für diesen Mod berücksichtigt (festgelegt im Erweitert-Register)"
+          patternsMatchCriticalSystemProcessesNote: "Einschlusslistenmuster werden für kritische Systemprozesse für diese Mod berücksichtigt (festgelegt im Erweitert-Register)"
       updateNotNeeded: "Die installierte Version ist identisch mit der neusten Version."
     version:
       preRelease: "Vorabversion"
@@ -171,7 +171,7 @@ app:
       unsavedChangesMessage: "Es gibt ungespeicherte Einstellungsänderungen. Sollen diese wirklich verworfen werden?"
       unsavedChangesLeave: "Änderungen verwerfen"
       unsavedChangesStay: "Weiter bearbeiten"
-      readOnlyPreview: ~
+      readOnlyPreview: "Dies ist eine Vorschau der Einstellungen. Installiere die Mod, um Einstellungen zu konfigurieren."
     code:
       title: "Quellcode"
       noData: "Mod-Quellcode fehlt."
@@ -383,45 +383,44 @@ app:
     exitButtonCancel: "Bleiben"
   website:
     appHeader:
-      mods: ~
+      mods: "Mods"
       links: "Links"
       contributeTranslation: "Eine neue Übersetzung erstellen"
     home:
-      tagline: "Der Marktplatz mit Anpassungen für Windowsprogramme"
-      download: ~
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      tagline: "Die Plattform mit Anpassungen für Windows und Programme"
+      download: "Herunterladen"
+      getInvolved: "Mach mit"
+      joinDiscord: "Tritt der Windhawk-Community auf Discord bei"
+      discussWindhawk: "Windhawk auf GitHub Discussions diskutieren"
+      discussMods: "Windhawk-Mods auf GitHub Discussions diskutieren"
+      browseLinks: "Weitere nützliche Links entdecken"
+      highlights: "Highlights"
+      robust: "Robust"
+      robustDescription: "Stabilität und Leistung haben für Windhawk höchste Priorität. Es wurde so konzipiert, dass es ständig im Hintergrund läuft, ohne das System spürbar zu beeinträchtigen."
+      simple: "Einfach"
+      simpleDescription: "Man muss kein Computerexperte sein, um Windhawk zu verwenden, es kann von jedem genutzt werden. Anspruchsvolle Mods können mit nur wenigen Klicks installiert und über benutzerfreundliche Optionen angepasst werden."
+      transparent: "Transparent"
+      transparentDescription: "Die Mods, die Windhawk anbietet, sind keine Black Boxes. Jede Mod wird in Form von Quellcode bereitgestellt, der überprüft werden kann, um sicherzustellen, dass die Mod genau das tut, was sie verspricht."
     modDetails:
-      getWindhawk: ~
+      getWindhawk: "Hole Windhawk, um diesen Mod zu installieren."
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "Neuigkeiten"
+      windhawkNews: "Windhawk-Neuigkeiten – Ramen Software"
+      windhawkChangelog: "Windhawk-Änderungsprotokoll"
+      community: "Community"
+      discord: "Discord"
+      windhawkDiscussions: "Windhawk – GitHub Discussions"
+      modsDiscussions: "Windhawk Mods – GitHub Discussions"
+      documentation: "Dokumentation"
+      creatingNewMod: "Eine neue Mod erstellen"
+      otherTopics: "Weitere Themen"
+      feedback: "Feedback"
+      reportIssue: "Problem melden"
+      contactRamenSoftware: "Ramen Software kontaktieren"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
-      downloadButton: ~
+      title: "Windhawk aktualisieren"
+      newVersionAvailable: "Eine neue Windhawk-Version ist verfügbar"
+      whatsNew: "Was ist neu"
+      downloadButton: "Herunterladen"
     footer:
-      copyright: ~
-
+      copyright: "Copyright"
