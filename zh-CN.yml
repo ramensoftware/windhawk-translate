@@ -260,7 +260,7 @@ app:
       description: "选择Windhawk首选的显示语言"
       contribute: "<0>协助我们贡献您的翻译</0>."
       credits: "简体中文翻译由<0>Shifeng Zhao 和 Kevin Wang</0>提供。"
-      creditsLink: "mailto:1193008599@qq.com, wmk153024@gmail.com"
+      creditsLink: "mailto:1193008599@qq.com,wmk153024@gmail.com"
     updates:
       title: "检查软件更新"
       description: "定期检查最新版本的Windhawk和模组"
