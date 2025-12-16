@@ -171,6 +171,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Mã nguồn"
       noData: "Mã nguồn mod bị thiếu."
@@ -380,3 +381,46 @@ app:
     exitConfirmation: "Những thay đổi kể từ lần biên dịch thành công cuối cùng sẽ bị mất"
     exitButtonOk: "Thoát"
     exitButtonCancel: "Ở lại"
+  website:
+    appHeader:
+      mods: ~
+      links: "Liên kết"
+      contributeTranslation: "Đóng góp bản dịch mới"
+    home:
+      tagline: "Chợ tùy chỉnh cho các chương trình Windows"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~

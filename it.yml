@@ -172,6 +172,7 @@ app:
       unsavedChangesMessage: ~
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
+      readOnlyPreview: ~
     code:
       title: "Codice sorgente"
       noData: "Manca la fonte della mod."
@@ -382,3 +383,46 @@ app:
     exitConfirmation: "Le modifiche apportate dall'ultima compilazione andata a buon fine andranno perse"
     exitButtonOk: "Esci"
     exitButtonCancel: "Resta"
+  website:
+    appHeader:
+      mods: ~
+      links: "Link"
+      contributeTranslation: "Contribuisci con una nuova traduzione"
+    home:
+      tagline: "Il mercato della personalizzazione per i programmi Windows"
+      download: ~
+      getInvolved: ~
+      joinDiscord: ~
+      discussWindhawk: ~
+      discussMods: ~
+      browseLinks: ~
+      highlights: ~
+      robust: ~
+      robustDescription: ~
+      simple: ~
+      simpleDescription: ~
+      transparent: ~
+      transparentDescription: ~
+    modDetails:
+      getWindhawk: ~
+    links:
+      news: ~
+      windhawkNews: ~
+      windhawkChangelog: ~
+      community: ~
+      discord: ~
+      windhawkDiscussions: ~
+      modsDiscussions: ~
+      documentation: ~
+      creatingNewMod: ~
+      otherTopics: ~
+      feedback: ~
+      reportIssue: ~
+      contactRamenSoftware: ~
+    download:
+      title: ~
+      newVersionAvailable: ~
+      whatsNew: ~
+      downloadButton: ~
+    footer:
+      copyright: ~
