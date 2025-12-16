@@ -101,7 +101,7 @@ app:
     installed: "Installiert"
     details: "Details"
     update: "Aktualisieren"
-    downgrade: "Downgraden"
+    downgrade: "Herabstufen"
     install: "Installieren"
     compile: "Kompilieren"
     disable: "Deaktivieren"
@@ -112,7 +112,7 @@ app:
     removeConfirm: "Soll diese Mod wirklich entfernt werden?"
     removeConfirmOk: "Entferne Mod"
     removeConfirmCancel: "Abbrechen"
-    donate: "Spende"
+    donate: "Spenden"
     notCompiled: "Mod muss kompiliert werden."
     editedLocally: "Mod wurde lokal bearbeitet."
     noDescription: "(keine Beschreibung)"
@@ -164,7 +164,7 @@ app:
       yamlMode: "Text-Modus"
       uiMode: "Visueller Modus"
       yamlInvalid: "Ungültiges YAML-Format"
-      yamlParseError: "YAML Parserfehler: {{error}}"
+      yamlParseError: "YAML-Parserfehler: {{error}}"
       yamlInvalidKey: "Ungültiger Schlüssel in YAML: '{{key}}' ist keine gültige Angabe"
       yamlTypeMismatch: "Typkonflikt für '{{key}}': erwartet {{expected}}, aber erhalten {{actual}}"
       unsavedChangesTitle: "Ungespeicherte Einstellungen"
@@ -197,9 +197,9 @@ app:
         invalidData: "Ungültige JSON-Daten!"
       customList:
         titleInclusion: "Benutzerdefinierte Prozess-Einschlussliste"
-        descriptionInclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, auf die die Mod abzielt. Die Liste wird der Aufnahmeliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Include-Einträge übereinstimmt und mit keinem Ausschluss-Eintrag übereinstimmt."
+        descriptionInclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, auf die die Mod abzielt. Die Liste wird der Aufnahmeliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Einschluss-Einträge übereinstimmt und mit keinem Ausschluss-Eintrag übereinstimmt."
         titleExclusion: "Benutzerdefinierte Prozess-Ausschlussliste"
-        descriptionExclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, die die Mod von der Zielauswahl ausschließt. Die Liste wird der Ausschlussliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Include-Einträge übereinstimmt und mit keinem Ausschluss-Eintrag übereinstimmt."
+        descriptionExclusion: "Eine benutzerdefinierte Liste zusätzlicher ausführbarer Dateinamen/Pfade, die die Mod von der Zielauswahl ausschließt. Die Liste wird der Ausschlussliste hinzugefügt, die der Mod-Autor definiert hat, um zu bestimmen, auf welche Prozesse abgezielt werden soll. Für jeden Prozess wird die Mod geladen, wenn der Pfad der ausführbaren Datei mit einem der Einschluss-Einträge übereinstimmt und mit keinem Ausschluss-Eintrag übereinstimmt."
         processListPlaceholder: "Prozessnamen/-pfade, einer pro Zeile, z. B.:"
         invalidCharactersWarning: "Die Prozessliste enthält ungültige Zeichen, die entfernt werden: {{invalidCharacters}}"
         saveButton: "Speichern"
@@ -320,8 +320,8 @@ app:
       updateButton: "Aktualisieren"
       modal:
         title: "Aktualisierung von Windhawk"
-        downloading: "Update laden..."
-        installing: "Update installieren..."
+        downloading: "Aktualisierung laden..."
+        installing: "Aktualisierung installieren..."
         installingNote: "Windhawk startet automatisch neu, sobald die Installation abgeschlossen ist"
         failed: "Aktualisierung fehlgeschlagen"
         cancel: "Abbrechen"
@@ -424,3 +424,4 @@ app:
       downloadButton: ~
     footer:
       copyright: ~
+
