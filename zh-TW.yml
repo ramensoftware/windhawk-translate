@@ -260,7 +260,7 @@ app:
       description: "選擇您偏好的 Windhawk 顯示語言。"
       contribute: "<0>貢獻新的翻譯</0>。"
       credits: "正體中文翻譯由 <0>abc0922001 和 Kevin Wang</0> 提供。"
-      creditsLink: "mailto:abc0922001@hotmail.com, wmk153024@gmail.com"
+      creditsLink: "mailto:abc0922001@hotmail.com,wmk153024@gmail.com"
     updates:
       title: "檢查更新"
       description: "定期檢查 Windhawk 及已安裝模組的新版本。"
