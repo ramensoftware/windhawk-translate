@@ -171,7 +171,7 @@ app:
       unsavedChangesMessage: "You have unsaved settings changes. Are you sure you want to discard them?"
       unsavedChangesLeave: "Discard Changes"
       unsavedChangesStay: "Keep Editing"
-      readOnlyPreview: "This is a settings preview. Install the mod to configure settings."
+      readOnlyPreview: "This is a preview of the mod's settings. Install the mod to configure settings."
     code:
       title: "Source Code"
       noData: "Mod source is missing."
