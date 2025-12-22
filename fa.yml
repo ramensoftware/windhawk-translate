@@ -259,8 +259,8 @@ app:
       title: "زبان"
       description: "زبان نمایش مورد نظر خود را برای ویندهاک انتخاب کنید."
       contribute: "<0>مشارکت در ترجمه جدید</0>."
-      credits: "ترجمه فارسی توسط <0>کاربران جامعه متن‌باز</0>."
-      creditsLink: "mailto:your.email@example.com"
+      credits: "ترجمه فارسی توسط <0>دانیال شیرالی</0>."
+      creditsLink: "mailto:danialshirali16@gmail.com"
     updates:
       title: "بررسی بروزرسانی‌ها"
       description: "بررسی خودکار و اطلاع‌رسانی درباره نسخه‌های جدید ویندهاک و مادهای نصب شده."
