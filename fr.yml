@@ -164,7 +164,7 @@ app:
       yamlMode: "Mode textuel"
       uiMode: "Mode visuel"
       yamlInvalid: "Format YAML invalide"
-      yamlParseError: "Erreur d'analyse YAML :  {{error}}"
+      yamlParseError: "Erreur d'analyse YAML : {{error}}"
       yamlInvalidKey: "Clé invalide dans le YAML : '{{key}}' n'est pas un paramètre valide"
       yamlTypeMismatch: "Incompatibilité de type pour '{{key}}' :  attendu {{expected}}, mais reçu {{actual}}"
       unsavedChangesTitle: "Paramètres non enregistrés"
