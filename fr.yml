@@ -201,7 +201,7 @@ app:
         titleExclusion: "Liste d'exclusion de processus personnalisée"
         descriptionExclusion: "Une liste personnalisée de noms/chemins de fichiers exécutables supplémentaires que le mod exclura du ciblage. La liste est ajoutée à la liste d'exclusion définie par l'auteur du mod pour déterminer quels processus sont exclus."
         processListPlaceholder: "Noms/chemins de processus, un par ligne, par exemple :"
-        invalidCharactersWarning: "La liste de processus contient des caractères invalides qui seront supprimés :  {{invalidCharacters}}"
+        invalidCharactersWarning: "La liste de processus contient des caractères invalides qui seront supprimés : {{invalidCharacters}}"
         saveButton: "Enregistrer"
       includeExcludeCustomOnly: 
         title: "Ignorer les listes d'inclusion/exclusion du mod"
