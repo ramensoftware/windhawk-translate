@@ -347,7 +347,7 @@ app:
     github: "GitHub"
     twitter: "X (Twitter)"
     verified: "vérifié"
-    verifiedTooltip: "Nous avons vérifié que ce profil appartient à l'auteur du mod, mais notez que <0>vérifié</0> n'est pas la même chose que <0>de confiance</0>.  Assurez-vous de faire confiance à l'auteur du mod, ou inspectez soigneusement le code source du mod."
+    verifiedTooltip: "Nous avons vérifié que ce profil appartient à l'auteur du mod, mais notez que <0>vérifié</0> n'est pas la même chose que <0>de confiance</0>. Assurez-vous de faire confiance à l'auteur du mod, ou inspectez soigneusement le code source du mod."
     acceptButton: "Accepter le risque et installer"
     cancelButton: "Annuler"
   createNewModButton:
