@@ -25,7 +25,7 @@ setup:
   INSTTYPE_STANDARD_DESC: "Installer $(^NameDA) pour tous les utilisateurs de cet ordinateur."
   INSTTYPE_PORTABLE: "Installation &portable"
   INSTTYPE_PORTABLE_DESC: "Extraire une version portable de $(^NameDA). En mode portable, toutes les données de configuration sont stockées dans le dossier de l'application et aucune information n'est écrite dans le registre."
-  EXTRACTING_FILES: "Extraction des fichiers...  %s"
+  EXTRACTING_FILES: "Extraction des fichiers... %s"
   INETC_DOWNLOADING: "Téléchargement de %s"
   INETC_CONNECTING: "Connexion..."
   INETC_SECOND:  "secondes"
