@@ -297,7 +297,7 @@ app:
       verbose: "Détaillé"
     processList:
       titleExclusion: "Liste d'exclusion de processus"
-      descriptionExclusion: "Une liste de noms/chemins de processus dans lesquels Windhawk ne s'injectera pas.  Peut être utile dans les cas où Windhawk n'est pas compatible avec un programme spécifique.  Notez que l'ajout d'un processus à cette liste empêchera tous les mods de fonctionner avec ce processus."
+      descriptionExclusion: "Une liste de noms/chemins de processus dans lesquels Windhawk ne s'injectera pas. Peut être utile dans les cas où Windhawk n'est pas compatible avec un programme spécifique.  Notez que l'ajout d'un processus à cette liste empêchera tous les mods de fonctionner avec ce processus."
       descriptionExclusionWiki: "Pour plus de détails sur l'exclusion de processus et sur les listes d'exclusion de processus intégrées, veuillez consulter <0>la documentation</0>."
       excludeCriticalProcesses: "Exclure les processus système critiques"
       excludeIncompatiblePrograms: "Exclure les programmes incompatibles connus"
