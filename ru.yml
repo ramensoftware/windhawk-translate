@@ -62,11 +62,11 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Выгружено"
   TASKDLG_TASK_INITIALIZING: "Инициализация..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Загрузка символов..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
-  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Ожидание символов..."
+  TASKDLG_TASK_UNINITIALIZING: "Отмена инициализации..."
   TASKDLG_PROCESS_SUSPENDED: "(приостановлен)"
   TOOLKITDLG_TITLE: "Меню Windhawk"
-  TOOLKITDLG_EXPLANATION_CRASH: ~
+  TOOLKITDLG_EXPLANATION_CRASH: "Обнаружена нестабильность системы, возможно, вызванная одной из модификаций Windhawk. Выход из Windhawk или перезапуск в безопасном режиме может помочь решить проблему."
   TOOLKITDLG_BUTTON_OPEN: "&Открыть Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Загруженные &модификации"
   TOOLKITDLG_BUTTON_EXIT: "&Выйти из Windhawk"
@@ -74,8 +74,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Закрыть меню"
   SAFE_MODE_TITLE: "Перезапустить в безопасном режиме"
   SAFE_MODE_TEXT: "Windhawk будет перезапущен с отключённым функционалом кастомизации программ."
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  SAFE_MODE_DETECTED_TITLE: "Безопасный режим"
+  SAFE_MODE_DETECTED_TEXT: "Windows работает в безопасном режиме. Хотите включить безопасный режим в Windhawk? Вся функция инъекции кода будет отключена."
 app:
   general:
     loading: "Загрузка..."
@@ -90,7 +90,7 @@ app:
     copy: "Копировать"
     paste: "Вставить"
     selectAll: "Выбрать все"
-    loggingEnabled: ~
+    loggingEnabled: "Логирование включено"
   appHeader:
     home: "Главная"
     explore: "Поиск"
@@ -101,7 +101,7 @@ app:
     installed: "Установлено"
     details: "Описание"
     update: "Обновить"
-    downgrade: ~
+    downgrade: "Откатить"
     install: "Установить"
     compile: "Скомпилировать"
     disable: "Отключить"
@@ -112,7 +112,7 @@ app:
     removeConfirm: "Вы уверены, что хотите удалить эту модификацию?"
     removeConfirmOk: "Удалить модификацию"
     removeConfirmCancel: "Отмена"
-    donate: ~
+    donate: "Донат"
     notCompiled: "Модификация должна быть скомпилирована"
     editedLocally: "Модификация отредактирована локально"
     noDescription: "(нет описания)"
@@ -120,19 +120,19 @@ app:
     users_other: "{{formattedCount}} пользователей"
     users_few: "{{formattedCount}} пользователя"
     users_many: "{{formattedCount}} пользователей"
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+    notRated: "Эта модификация ещё не была оценена"
+    loggingEnabledInAdvancedTab: "Логирование включено в папке модификаций «Продвинутые»"
   modDetails:
     header:
       installedVersion: "Установленная версия"
       latestVersion: "Последняя версия"
       loading: "загрузка..."
       loadingFailed: "загрузка не удалась"
-      otherVersions: ~
-      selectedVersion: ~
+      otherVersions: "Другие версии"
+      selectedVersion: "Выбрано: {{version}}"
       modId: "ID модификации"
       modVersion: "Версия модификации"
-      lastUpdated: ~
+      lastUpdated: "Последнее обновление"
       modAuthor:
         title: "Автор модификации"
         homepage: "Главная страница"
@@ -145,14 +145,14 @@ app:
         tooltip:
           targets: "Целевые процессы"
           excluded: "Исключённые"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "Собственные списки исключения/включения были определены для этого мода в папке «Продвинутые»"
+          patternsMatchCriticalSystemProcessesNote: "Шаблоны списка включения рассматриваются для критически важных системных процессов для этой модификации (установка в папке «Продвинутые»)."
       updateNotNeeded: "Установлена самая последняя версия"
     version:
-      preRelease: ~
-      select: ~
-      cancel: ~
-      chooseVersion: ~
+      preRelease: "пре-релиз"
+      select: "Выбрать"
+      cancel: "Отменить"
+      chooseVersion: "Выберите версию..."
     details:
       title: "Описание"
       noData: "Описание модификации отсутствует."
@@ -163,17 +163,17 @@ app:
       sampleValue: "Стандартное значение"
       arrayItemAdd: "Добавить новый элемент"
       arrayItemRemove: "Удалить элемент"
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
-      readOnlyPreview: ~
+      yamlMode: "Текстовый режим"
+      uiMode: "Визуальный режим"
+      yamlInvalid: "Неправильный формат YAML"
+      yamlParseError: "Ошибка разбора YAML: {{error}}"
+      yamlInvalidKey: "Неправильный ключ в YAML: '{{key}}' не является валидной настройкой"
+      yamlTypeMismatch: "Несоответствие типов для '{{key}}': ожидалось {{expected}}, но получено {{actual}}"
+      unsavedChangesTitle: "Несохранённые настройки"
+      unsavedChangesMessage: "У вас имеются несохранённые изменения настроек. Вы уверены, что хотите отменить их?"
+      unsavedChangesLeave: "Отменить изменения"
+      unsavedChangesStay: "Продолжить редактирование"
+      readOnlyPreview: "Это показ настроек модификации. Установите модификацию для конфигурации настроек"
     code:
       title: "Исходный код"
       noData: "Исходный код отсутствует."
@@ -203,14 +203,14 @@ app:
         titleExclusion: "Пользовательский список исключённых"
         descriptionExclusion: "Пользовательский список с дополнительными файлами exe или путями к ним, которые модификация НЕ затронет. Этот список будет добавлен к списку исключения от автора модификации. То есть, модификация загружается для каждого процесса, только если путь совпадает с одним из списка целевых и не совпадает с любым из списка исключённых."
         processListPlaceholder: "Имя процесса (exe)/пути, по одному в строке, например:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "Список процессов содержит недопустимые символы, которые будут удалены: {{invalidCharacters}}"
         saveButton: "Сохранить"
       includeExcludeCustomOnly:
         title: "Игнорировать списки целевых/исключённых модификаций"
         description: "Игнорировать списки целевых/исключённых процессов, установленных модом, и используйте только пользовательские списки, приведённые выше."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Игнорировать списки включений/исключений модификаций"
+        description: "Игнорируйте списки включения/исключения процессов модификации и используйте только пользовательские списки выше."
     changes:
       title: "Изменения в последней версии"
       noData: "Установлена самая последняя версия."
@@ -221,23 +221,23 @@ app:
       expandLines_many: "Раскрыть {{count}} скрытых линий"
   modSearch:
     placeholder: "Искать модификации..."
-    noResults: ~
+    noResults: "Ни один модификация не подходит под текущие фильтры"
   home:
     browse: "Поиск модификаций"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "Включённые модификации"
+      disabled: "Отключённые модификации"
+      updateAvailable: "Доступны обновления для модификаций"
+      clearFilters: "Очистить фильтры"
     installedMods:
       title: "Установленные модификации"
       noMods: "Модификации не установлены"
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "Имя"
+        description: "Описание"
+        author: "Автор"
+        version: "Версия"
+        status: "Статус"
     featuredMods:
       title: "Рекомендованные модификации"
       noMods: "Нет рекомендованных модификаций, которые ещё не установлены"
@@ -251,13 +251,13 @@ app:
       lastUpdated: "Недавно обновленные"
       alphabeticalOrder: "Алфавитный порядок"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "Статус установки"
+      installed: "Установлено"
+      notInstalled: "Не установлено"
+      author: "Автор модификации"
+      process: "Целевой процесс"
+      showMore: "Дополнительно"
+      clearFilters: "Очистить фильтры"
   settings:
     language:
       title: "Язык"
@@ -276,8 +276,8 @@ app:
       title: "Скрыть иконку в трее"
       description: "Вам нужно отключить этот параметр для выхода из Windhawk."
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "Всегда компилировать моды локально"
+      description: "По умолчанию, Windhawk скачивает пре-компилированные бинарные файлы модов с сервера Windhawk при доступности. Включите эту опцию, чтобы всегда компилировать моды локально."
     requireElevation:
       title: "Требовать UAC для запуска Windhawk"
       description: "Windhawk нуждается в правах администратора, но для компьютеров с одним пользователем постоянные запросы от UAC надоедают, поэтому Windhawk их обходит. Включите этот параметр, чтобы вернуть UAC запросы на запуск Windhawk."
@@ -302,16 +302,16 @@ app:
     processList:
       titleExclusion: "Список исключённых процессов"
       descriptionExclusion: "Список процессов/пути, в которые Windhawk не будет внедрять код. Может быть полезно в случаях, когда Windhawk несовместим с определённой программой. Обратите внимание, что добавление процесса в этот список не только не даст Windhawk его изменять, но и предотвратит Windhawk от перехвата дочерних процессов, созданных исключённым. Это вызовет задержку при загрузке модификаций в Windhawk."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Для получения дополнительной информации об исключении процессов и о встроенных списках исключения процессов, пожалуйста, ознакомьтесь с документацией."
+      excludeCriticalProcesses: "Исключить критические системные процессы"
+      excludeIncompatiblePrograms: "Исключить известные несовместимые программы"
+      excludeGames: "Исключить хорошо известные игры"
       titleInclusion: "Список целевых процессов"
       descriptionInclusion: "Список целевых процессов/путей, в которые Windhawk будет внедрять код, даже если они в списке исключённых."
       inclusionWithoutExclusionNotice: "Список целевых процессов ничего не делает, если список исключённых процессов пуст."
       inclusionWithoutTotalExclusionNotice: "Если вы хотите исключить все процессы, кроме этих, вы можете задать «*» в списке исключённых процессов."
       processListPlaceholder: "Имя процесса (exe)/пути, по одному в строке, например:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "Список процессов содержит недопустимые символы, которые будут удалены: {{invalidCharacters}}"
   about:
     title: "Windhawk вер. {{version}}"
     beta: "бета"
@@ -320,18 +320,18 @@ app:
     update:
       title: "Доступно обновление"
       subtitle: "Обновите Windhawk для получения доступа к новейшим функциям и исправления ошибок"
-      changelogButton: ~
-      updateButton: ~
+      changelogButton: "Изменения"
+      updateButton: "Обновить"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Обновление Windhawk"
+        downloading: "Скачивание обновления..."
+        installing: "Установка обновления"
+        installingNote: "Windhawk автоматически перезапустится после завершения установки"
+        failed: "Ошибка при обновлении"
+        cancel: "Отменить"
     changelog:
-      title: ~
-      close: ~
+      title: "Что нового в Windhawk"
+      close: "Закрыть"
     links:
       title: "Ссылки"
       homepage: "Главная страница"
@@ -378,7 +378,7 @@ app:
     notCompiled: "необходимо скомпилировать модификацию"
     compile: "Скомпилировать модификацию"
     compilationFailed: "Компиляция не удалась"
-    stopCompilation: ~
+    stopCompilation: "Остановить компиляцию"
     preview: "Просмотр модификации"
     showLogOutput: "Показать логи"
     exit: "Выйти из режима редактирования"
@@ -387,44 +387,44 @@ app:
     exitButtonCancel: "Остаться"
   website:
     appHeader:
-      mods: ~
+      mods: "Моды"
       links: "Ссылки"
       contributeTranslation: "Добавить новый перевод"
     home:
       tagline: "Маркетплейс для кастомизации программ Windows"
-      download: ~
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      download: "Скачать"
+      getInvolved: "Присоединитесь"
+      joinDiscord: "Присоединиться к сообществу Windhawk в Discord"
+      discussWindhawk: "Обсудить Windhawk на Обсуждениях GitHub"
+      discussMods: "Обсудить моды Windhawk на Обсуждениях GitHub"
+      browseLinks: "Поиск других полезных ссылок"
+      highlights: "Главное"
+      robust: "Робуст"
+      robustDescription: "Стабильность и производительность — очень важны для Windhawk. Он был разработан так, чтобы постоянно работать в фоне, не оказывая заметного влияния на систему."
+      simple: "Простота"
+      simpleDescription: "Нет необходимости быть компьютерным экспертом, чтобы использовать Windhawk, им могут пользоваться все. Сложные модификации можно установить всего в пару кликов и настроить с помощью удобных опций."
+      transparent: "Прозрачность"
+      transparentDescription: "Модификации, которые предлагает Windhawk, — это не кот в мешке. Каждый модификация представлен в виде исходного кода, который можно проверить, чтобы убедиться, что модификация выполняет именно то, что указано."
     modDetails:
-      getWindhawk: ~
+      getWindhawk: "Скачать Windhawk для установки этой модификации"
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "Новости"
+      windhawkNews: "Новости Windhawk - Ramen Software"
+      windhawkChangelog: "Список изменений Windhawk"
+      community: "Сообщество"
+      discord: "Discord"
+      windhawkDiscussions: "Windhawk - Обсуждение на GitHub"
+      modsDiscussions: "Моды Windhawk - Обсуждение на GitHub"
+      documentation: "Документация"
+      creatingNewMod: "Создать новую модификацию"
+      otherTopics: "Другие темы"
+      feedback: "Обратная связь"
+      reportIssue: "Доложить о неисправности"
+      contactRamenSoftware: "Связаться с Ramen Software"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
-      downloadButton: ~
+      title: "Обновить Windhawk"
+      newVersionAvailable: "Доступна новая версия Windhawk"
+      whatsNew: "Что нового"
+      downloadButton: "Скачать"
     footer:
-      copyright: ~
+      copyright: "Копирайт"
