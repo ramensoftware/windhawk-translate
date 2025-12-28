@@ -178,7 +178,7 @@ app:
       collapseExtra: "Réduire le Readme et les Paramètres"
     changelog:
       title: "Journal des modifications"
-      loadingFailed: "Échec du chargement du journal des modifications.  <0>Cliquez ici</0> pour le consulter sur GitHub."
+      loadingFailed: "Échec du chargement du journal des modifications. <0>Cliquez ici</0> pour le consulter sur GitHub."
     advanced:
       title:  "Avancé"
       debugLogging: 
