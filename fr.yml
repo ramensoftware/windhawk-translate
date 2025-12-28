@@ -168,7 +168,7 @@ app:
       yamlInvalidKey: "Clé invalide dans le YAML : '{{key}}' n'est pas un paramètre valide"
       yamlTypeMismatch: "Incompatibilité de type pour '{{key}}' :  attendu {{expected}}, mais reçu {{actual}}"
       unsavedChangesTitle: "Paramètres non enregistrés"
-      unsavedChangesMessage: "Vous avez des modifications de paramètres non enregistrées.  Êtes-vous sûr de vouloir les abandonner ?"
+      unsavedChangesMessage: "Vous avez des modifications de paramètres non enregistrées. Êtes-vous sûr de vouloir les abandonner ?"
       unsavedChangesLeave: "Abandonner les modifications"
       unsavedChangesStay: "Continuer la modification"
       readOnlyPreview: "Ceci est un aperçu des paramètres du mod. Installez le mod pour configurer les paramètres."
