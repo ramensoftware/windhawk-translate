@@ -10,7 +10,7 @@ setup:
   CLEANCONFIRM: "&Supprimer les paramètres du programme"
   INSTALLED_HEADER: "Déjà installé"
   INSTALLED_TEXT: "Sélectionnez l'opération à effectuer."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} est déjà installé.  Sélectionnez l'opération que vous souhaitez effectuer."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION} est déjà installé. Sélectionnez l'opération que vous souhaitez effectuer."
   INSTALLED_OLD: "Une version plus ancienne de $(^NameDA) est installée sur votre système. Sélectionnez l'opération que vous souhaitez effectuer."
   INSTALLED_NEW: "Une version plus récente de $(^NameDA) est déjà installée !  Il n'est pas recommandé d'installer une version plus ancienne. Si vous souhaitez vraiment installer cette version plus ancienne, il est préférable de désinstaller d'abord la version actuelle."
   REINSTALL:  "&Réinstaller"
