@@ -273,7 +273,7 @@ app:
       description:  "Vous devrez désactiver cette option pour quitter Windhawk."
     alwaysCompileModsLocally:
       title: "Toujours compiler les mods localement"
-      description: "Par défaut, Windhawk télécharge les binaires de mods pré-compilés depuis le serveur Windhawk lorsqu'ils sont disponibles.  Activez cette option pour toujours compiler les mods localement."
+      description: "Par défaut, Windhawk télécharge les binaires de mods pré-compilés depuis le serveur Windhawk lorsqu'ils sont disponibles. Activez cette option pour toujours compiler les mods localement."
     requireElevation:
       title: "Exiger l'élévation UAC pour exécuter Windhawk"
       description: "Windhawk nécessite des droits d'administrateur, mais pour un ordinateur mono-utilisateur, obtenir l'invite UAC à chaque fois peut être ennuyeux, donc Windhawk la contourne.  Activez cette option pour exiger l'élévation UAC à chaque démarrage de Windhawk."
