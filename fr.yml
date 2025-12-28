@@ -39,7 +39,7 @@ tray:
   TRAY_TOOLKIT: "&Boîte à outils"
   TRAY_EXIT: "&Quitter"
   EXITDLG_TITLE:  "Quitter Windhawk"
-  EXITDLG_CONTENT: "Windhawk va se fermer et tous les mods seront déchargés.  Windhawk sera redémarré automatiquement au prochain démarrage du système, sauf si l'option ci-dessous est cochée."
+  EXITDLG_CONTENT: "Windhawk va se fermer et tous les mods seront déchargés. Windhawk sera redémarré automatiquement au prochain démarrage du système, sauf si l'option ci-dessous est cochée."
   EXITDLG_CHECKBOX_AUTOSTART: "Ne pas démarrer automatiquement au prochain démarrage du système"
   EXITDLG_BUTTON_EXIT: "&Quitter Windhawk"
   EXITDLG_BUTTON_CANCEL: "Annuler"
