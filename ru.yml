@@ -221,6 +221,7 @@ app:
       expandLines_many: "Раскрыть {{count}} скрытых линий"
   modSearch:
     placeholder: "Искать модификации..."
+    placeholderWithHint: ~
     noResults: "Ни одна модификация не подходит под текущие фильтры"
   home:
     browse: "Поиск модификаций"

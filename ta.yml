@@ -217,6 +217,7 @@ app:
       expandLines_other: "{{count}} மறைக்கப்பட்ட வரிகளை விரிவாக்கவும்"
   modSearch:
     placeholder: "மாற்றங்களை தேடவும்..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "மாற்றங்களைத் தேடவும்"

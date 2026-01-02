@@ -217,6 +217,7 @@ app:
       expandLines_other: "Perlebar {{count}} baris tersembunyi"
   modSearch:
     placeholder: "Cari untuk mod..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Jelajahi untuk Mod"

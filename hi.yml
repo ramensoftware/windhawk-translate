@@ -217,6 +217,7 @@ app:
       expandLines_other: "{{count}} छिपी पंक्तियाँ विस्तार करें"
   modSearch:
     placeholder: "मॉड्स खोजें..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "मॉड्स के लिए ब्राउज़ करें"

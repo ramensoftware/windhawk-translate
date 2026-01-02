@@ -217,6 +217,7 @@ app:
       expandLines_other: "{{count}} verborgen regels uitvouwen"
   modSearch:
     placeholder: "Naar mods zoeken…"
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Zoeken naar mods"

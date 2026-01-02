@@ -217,6 +217,7 @@ app:
       expandLines_other: "展开{{count}}行隐藏行"
   modSearch:
     placeholder: "搜索您想要的模组..."
+    placeholderWithHint: ~
     noResults: "没有模组匹配当前的筛选条件"
   home:
     browse: "浏览模组"

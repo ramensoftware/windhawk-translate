@@ -217,6 +217,7 @@ app:
       expandLines_other: "باز کردن {{count}} خط پنهان"
   modSearch:
     placeholder: "جستجوی مادها..."
+    placeholderWithHint: ~
     noResults: "هیچ مادی با فیلترهای فعلی مطابقت ندارد"
   home:
     browse: "مرور مادها"

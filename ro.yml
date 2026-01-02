@@ -219,6 +219,7 @@ app:
       expandLines_few: "Extinde {{count}} linii ascunse"
   modSearch:
     placeholder: "Caută moduri..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Răsfoiește moduri"

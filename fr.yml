@@ -219,6 +219,7 @@ app:
       expandLines_many: "Développer {{count}} lignes cachées"
   modSearch:
     placeholder: "Rechercher des mods..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Parcourir les mods"

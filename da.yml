@@ -217,6 +217,7 @@ app:
       expandLines_other: "Udvid {{count}} gemte linjer"
   modSearch:
     placeholder: "Søg efter modifikationer..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Gennemse modifikationer"

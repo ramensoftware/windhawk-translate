@@ -217,6 +217,7 @@ app:
       expandLines_other: "Expandera {{count}} dolda rader"
   modSearch:
     placeholder: "Sök efter moddar..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Bläddra efter moddar"

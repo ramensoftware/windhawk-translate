@@ -217,6 +217,7 @@ app:
       expandLines_other: "{{count}} 個の隠れた行を展開"
   modSearch:
     placeholder: "Mod を検索..."
+    placeholderWithHint: ~
     noResults: "現在のフィルターに一致する Mod はありません"
   home:
     browse: "Mod を探す"

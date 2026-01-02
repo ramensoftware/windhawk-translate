@@ -221,6 +221,7 @@ app:
       expandLines_many: "Розгорнути {{count}} прихованих рядків"
   modSearch:
     placeholder: "Шукати моди..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Шукати моди:"

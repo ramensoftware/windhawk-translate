@@ -217,6 +217,7 @@ app:
       expandLines_other: "Expand {{count}} hidden lines"
   modSearch:
     placeholder: "Search for mods..."
+    placeholderWithHint: "Search for mods... type '/' to focus"
     noResults: "No mods match the current filters"
   home:
     browse: "Browse for Mods"

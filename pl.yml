@@ -221,6 +221,7 @@ app:
       expandLines_many: "Rozwiń {{count}} ukrytych linii"
   modSearch:
     placeholder: "Szukaj modów.."
+    placeholderWithHint: ~
     noResults: "Żadne mody nie pasują do aktualnych filtrów"
   home:
     browse: "Przeglądaj w poszukiwaniu modów"
