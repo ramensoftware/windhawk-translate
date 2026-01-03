@@ -61,27 +61,27 @@ tray:
   TASKDLG_STATUS_LOADED: "Carregado"
   TASKDLG_STATUS_UNLOADED: "Não carregado"
   TASKDLG_TASK_INITIALIZING: "Inicializando..."
-  TASKDLG_TASK_LOADING_SYMBOLS: "Carregando simbolos..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
-  TASKDLG_TASK_UNINITIALIZING: ~
-  TASKDLG_PROCESS_SUSPENDED: ~
+  TASKDLG_TASK_LOADING_SYMBOLS: "Carregando símbolos..."
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Aguardando símbolos..."
+  TASKDLG_TASK_UNINITIALIZING: "Não inicializado"
+  TASKDLG_PROCESS_SUSPENDED: "(suspenso)"
   TOOLKITDLG_TITLE: "Windhawk toolkit"
-  TOOLKITDLG_EXPLANATION_CRASH: ~
+  TOOLKITDLG_EXPLANATION_CRASH: "Instabilidade detectada, que pode ter sido causada por um dos Mods Windhawk. Reiniciando o Windhawk em modo de segurança pode ajudar a resolver o problema."
   TOOLKITDLG_BUTTON_OPEN: "&Abrir Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "&Mods Carregados"
   TOOLKITDLG_BUTTON_EXIT: "&Sair do Windhawk"
-  TOOLKITDLG_BUTTON_SAFE_MODE: "&Modo de Segurança"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "Modo de &Segurança"
   TOOLKITDLG_BUTTON_CLOSE: "&Fechar toolkit"
   SAFE_MODE_TITLE: "Reiniciar no modo de segurança"
   SAFE_MODE_TEXT: "O Windhawk será reiniciado com todas as funcionalidades de injeção de código desativada."
-  SAFE_MODE_DETECTED_TITLE: ~
+  SAFE_MODE_DETECTED_TITLE: "Modo de segurança"
   SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
     loading: "Carregando..."
     loadingFailed: "Falha ao carregar, verifique sua conexão"
     loadingFailedTitle: "Falha no carregamento"
-    loadingFailedSubtitle: "Por favor verifique sua conexão e tente novamente"
+    loadingFailedSubtitle: "Por favor, verifique sua conexão e tente novamente"
     tryAgain: "Tente novamente"
     updating: "Atualizando..."
     installing: "Instalando..."
@@ -90,14 +90,14 @@ app:
     copy: "Copiar"
     paste: "Colar"
     selectAll: "Selecionar tudo"
-    loggingEnabled: ~
+    loggingEnabled: "Log habilitado"
   appHeader:
     home: "Início"
     explore: "Explorar"
     settings: "Configurações"
     about: "Sobre"
   mod:
-    updateAvailable: "Atualização disponivel"
+    updateAvailable: "Atualização disponível"
     installed: "Instalado"
     details: "Detalhes"
     update: "Atualizar"
@@ -198,9 +198,9 @@ app:
         invalidData: "Dados JSON inválidos"
       customList:
         titleInclusion: "Lista de inclusão de processo personalizado"
-        descriptionInclusion: "Uma lista personalizada de nomes/caminhos de arquivos executáveis ​adicionais que o Mod terá como alvo. A lista é adicionada à lista de inclusão que o autor do Mod definiu para determinar quais processos devem ser direcionados. Para cada processo, o Mod é carregado se o caminho do arquivo executável corresponder a uma das entradas de inclusão e não corresponder a nenhuma entrada de exclusão."
+        descriptionInclusion: "Uma lista personalizada de nomes/caminhos de arquivos executáveis adicionais que o Mod terá como alvo. A lista é adicionada à lista de inclusão que o autor do Mod definiu para determinar quais processos devem ser direcionados. Para cada processo, o Mod é carregado se o caminho do arquivo executável corresponder a uma das entradas de inclusão e não corresponder a nenhuma entrada de exclusão."
         titleExclusion: "Lista de exclusão de processo personalizada"
-        descriptionExclusion: "Uma lista personalizada de nomes/caminhos de arquivos executáveis ​​adicionais que o Mod excluirá do direcionamento. A lista é adicionada à lista de exclusão que o autor do Mod definiu para determinar quais processos visar. Para cada processo, o Mod é carregado se o caminho do arquivo executável corresponder a uma das entradas de inclusão e não corresponder a nenhuma entrada de exclusão."
+        descriptionExclusion: "Uma lista personalizada de nomes/caminhos de arquivos executáveis adicionais que o Mod excluirá do direcionamento. A lista é adicionada à lista de exclusão que o autor do Mod definiu para determinar quais processos visar. Para cada processo, o Mod é carregado se o caminho do arquivo executável corresponder a uma das entradas de inclusão e não corresponder a nenhuma entrada de exclusão."
         processListPlaceholder: "Nomes/caminhos de processo, um por linha, por exemplo:"
         invalidCharactersWarning: ~
         saveButton: "Salvar"
@@ -369,7 +369,7 @@ app:
     offConfirmCancel: "Cancelar"
   modPreview:
     actionUnavailable: "A ação não está disponível no modo de visualização"
-    notCompiled: "Mod precisa ser compilado para poder ser vizualizado"
+    notCompiled: "Mod precisa ser compilado para poder ser visualizado"
   sidebar:
     modId: "Identificador de Mod"
     enableMod: "Habilitar Mod"
@@ -377,16 +377,16 @@ app:
     notCompiled: "O mod precisa ser compilado"
     compile: "Compilar Mod"
     compilationFailed: "Falha na compilação"
-    stopCompilation: ~
-    preview: "Vizualizar Mod"
-    showLogOutput: "Mostrar Log de saida"
+    stopCompilation: "Parar compilação"
+    preview: "Visualizar Mod"
+    showLogOutput: "Mostrar Log de saída"
     exit: "Sair do modo de edição"
     exitConfirmation: "As alterações desde a última compilação bem-sucedida serão perdidas"
     exitButtonOk: "Sair"
     exitButtonCancel: "Cancelar"
   website:
     appHeader:
-      mods: ~
+      mods: "Mods"
       links: "Links"
       contributeTranslation: "Contribua com uma tradução"
     home:
