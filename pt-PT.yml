@@ -279,8 +279,8 @@ app:
       title: "Exigir elevação do UAC para executar o Windhawk"
       description: "O Windhawk requer direitos de administrador, mas para um computador com um único utilizador, receber o aviso do UAC todas as vezes pode ser irritante, por isso o Windhawk ignora-o. Ative esta opção para exigir a elevação do UAC para executar o Windhawk."
     dontAutoShowToolkit:
-      title: "Don't automatically show the toolkit dialog"
-      description: "By default, Windhawk automatically shows the toolkit dialog when it detects that the taskbar isn't accessible, either due to system instability or for another reason. The toolkit dialog allows you to exit Windhawk, switch to safe mode, and perform other operations. The toolkit dialog can also be shown with the Ctrl+Win+W keyboard shortcut."
+      title: "Não mostrar automaticamente a caixa de diálogo do kit de ferramentas"
+      description: "Por predefinição, o Windhawk mostra automaticamente a caixa de diálogo do kit de ferramentas quando deteta que a barra de tarefas não está acessível, seja devido à instabilidade do sistema ou por outro motivo. A caixa de diálogo do kit de ferramentas permite sair do Windhawk, mudar para o modo de segurança e realizar outras operações. A caixa de diálogo do kit de ferramentas também pode ser mostrada com o atalho de teclado Ctrl+Win+W."
     modInitDialogDelay:
       title: "Mod initialization dialog delay"
       description: "Number of milliseconds to wait before showing the progress dialog for mod initialization."
