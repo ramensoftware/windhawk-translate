@@ -101,7 +101,7 @@ app:
     installed: "Instalado"
     details: "Detalhes"
     update: "Atualizar"
-    downgrade: "Regredir"
+    downgrade: "Reverter"
     install: "Instalar"
     compile: "Compilar"
     disable: "Desativar"
