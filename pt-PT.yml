@@ -10,7 +10,7 @@ setup:
   CLEANCONFIRM: "&Remover as definições do programa"
   INSTALLED_HEADER: "Já instalado"
   INSTALLED_TEXT: "Selecione a operação a realizar."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} já está instalado. Seleciona a operação que deseja realizar."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION} já está instalado. Selecione a operação que deseja realizar."
   INSTALLED_OLD: "Uma versão mais antiga do $(^NameDA) está instalada no seu sistema. Selecione a operação que deseja realizar."
   INSTALLED_NEW: "Uma versão mais recente do $(^NameDA) já está instalada! Não é recomendável instalar uma versão mais antiga. Se realmente deseja instalar esta versão mais antiga, é melhor desinstalar primeiro a versão atual. Selecione a operação que deseja realizar."
   REINSTALL: "&Reinstalar"
@@ -39,7 +39,7 @@ tray:
   TRAY_TOOLKIT: "&Kit de ferramentas"
   TRAY_EXIT: "&Sair"
   EXITDLG_TITLE: "Sair do Windhawk"
-  EXITDLG_CONTENT: "O Windhawk será encerrrado e todas as modificações serão desfeitas. O Windhawk será iniciado automaticamente na proxima inicialização do sistema, a menos que a opção abaixo esteja marcada."
+  EXITDLG_CONTENT: "O Windhawk será encerrado e todas as modificações serão desfeitas. O Windhawk será iniciado automaticamente na próxima inicialização do sistema, a menos que a opção abaixo esteja marcada."
   EXITDLG_CHECKBOX_AUTOSTART: "Não iniciar automaticamente na próxima inicialização do sistema"
   EXITDLG_BUTTON_EXIT: "&Sair do Windhawk"
   EXITDLG_BUTTON_CANCEL: "Cancelar"
@@ -66,7 +66,7 @@ tray:
   TASKDLG_TASK_UNINITIALIZING: "A desinicializar..."
   TASKDLG_PROCESS_SUSPENDED: "(suspenso)"
   TOOLKITDLG_TITLE: "Kit de ferramentas do Windhawk"
-  TOOLKITDLG_EXPLANATION_CRASH: "Foi detetada instabilidade no sistema, que pode ter sido causada por uma das modificações do Windhawk. Sair do Windhawk ou reiniciá-lo no modo de segurança pode ajudar a resolver o problema."
+  TOOLKITDLG_EXPLANATION_CRASH: "Foi detetada instabilidade no sistema, que pode ter sido causada por uma das modificações do Windhawk. Sair do Windhawk ou reiniciá-lo em modo de segurança pode ajudar a resolver o problema."
   TOOLKITDLG_BUTTON_OPEN: "&Abrir Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "&Mods carregados"
   TOOLKITDLG_BUTTON_EXIT: "&Sair do Windhawk"
@@ -130,7 +130,7 @@ app:
       selectedVersion: "Selecionado: {{version}}"
       modId: "Identificador do mod"
       modVersion: "Versão do mod"
-      lastUpdated: "Última atualização"
+      lastUpdated: "Atualizado em"
       modAuthor:
         title: "Autor do mod"
         homepage: "Página inicial"
@@ -143,7 +143,7 @@ app:
         tooltip:
           targets: "Processos alvo"
           excluded: "Excluído"
-          customListsNote: "Listas personalizadas de inclusão/exclusão de processos foram definidas para este mod na guia Avançado"
+          customListsNote: "Listas personalizadas de inclusão/exclusão de processos foram definidas para este mod no separador Avançado"
           patternsMatchCriticalSystemProcessesNote: "Os padrões da lista de inclusão são considerados para processos críticos do sistema para este mod (definido no separador Avançado)"
       updateNotNeeded: "A versão instalada é idêntica à versão selecionada"
     version:
@@ -270,7 +270,7 @@ app:
       description: "Mostrar ações para programadores, como criar e modificar mods."
     advancedSettings: "Definições avançadas"
     hideTrayIcon:
-      title: "Ocultar ícone do tabuleiro"
+      title: "Ocultar ícone da barra de tarefas"
       description: "Terá de desativar esta opção para sair do Windhawk."
     alwaysCompileModsLocally:
       title: "Compilar sempre os mods localmente"
@@ -414,7 +414,7 @@ app:
       modsDiscussions: "Mods do Windhawk - GitHub Discussions"
       documentation: "Documentação"
       creatingNewMod: "Criar um novo mod"
-      otherTopics: "Other Topics"
+      otherTopics: "Outros tópicos"
       feedback: "Feedback"
       reportIssue: "Relatar um problema"
       contactRamenSoftware: "Entrar em contacto com a Ramen Software"
