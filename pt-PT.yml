@@ -24,7 +24,7 @@ setup:
   INSTTYPE_STANDARD: "&Instalação padrão (recomendada)"
   INSTTYPE_STANDARD_DESC: "Instale $(^NameDA) para todos os utilizadores neste computador."
   INSTTYPE_PORTABLE: "&Instalação portátil"
-  INSTTYPE_PORTABLE_DESC: "Extraia uma versão portátil do $(^NameDA). No modo portátil, todos os dados de configuração são armazenados na pasta do aplicativo e nenhuma informação é gravada no registo."
+  INSTTYPE_PORTABLE_DESC: "Extraia uma versão portátil do $(^NameDA). No modo portátil, todos os dados de configuração são armazenados na pasta da aplicação e nenhuma informação é gravada no registo."
   EXTRACTING_FILES: "A extrair ficheiros... %s"
   INETC_DOWNLOADING: "A descarregar %s"
   INETC_CONNECTING: "A conectar..."
