@@ -92,7 +92,7 @@ app:
     selectAll: "Selecionar tudo"
     loggingEnabled: "O registo de depuração está ativado"
   appHeader:
-    home: "Casa"
+    home: "Início"
     explore: "Explorar"
     settings: "Definições"
     about: "Sobre"
