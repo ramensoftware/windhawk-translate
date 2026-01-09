@@ -403,7 +403,7 @@ app:
       transparent: "Transparente"
       transparentDescription: "Os mods que o Windhawk oferece não são bichos de sete cabeças. Cada mod vem na forma de código-fonte, que pode ser revisto para garantir que o mod faz exatamente o que diz."
     modDetails:
-      getWindhawk: "Instala o Windhawk para instalar este mod"
+      getWindhawk: "Instale o Windhawk para instalar este mod"
     links:
       news: "Notícias"
       windhawkNews: "Notícias sobre o Windhawk - Ramen Software"
