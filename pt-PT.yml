@@ -185,7 +185,7 @@ app:
         title: "Registo de depuração"
         description: "Pode ser útil para resolver problemas com o mod."
         none: "Nenhum"
-        modLogs: "Registros do mod"
+        modLogs: "Registos do mod"
         detailedLogs: "Registos detalhados de depuração"
         showLogButton: "Mostrar saída do registo"
       modSettings:
