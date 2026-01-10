@@ -388,7 +388,7 @@ app:
     exitButtonCancel: "Остаться"
   website:
     appHeader:
-      mods: "Моды"
+      mods: "Модификации"
       links: "Ссылки"
       contributeTranslation: "Добавить новый перевод"
     home:
@@ -415,7 +415,7 @@ app:
       community: "Сообщество"
       discord: "Discord"
       windhawkDiscussions: "Windhawk - Обсуждение на GitHub"
-      modsDiscussions: "Моды Windhawk - Обсуждение на GitHub"
+      modsDiscussions: "Модификации Windhawk - Обсуждение на GitHub"
       documentation: "Документация"
       creatingNewMod: "Создать новую модификацию"
       otherTopics: "Другие темы"
