@@ -221,7 +221,7 @@ app:
       expandLines_many: "Раскрыть {{count}} скрытых линий"
   modSearch:
     placeholder: "Искать модификации..."
-    placeholderWithHint: ~
+    placeholderWithHint: "Искать модификации... Введите '/', чтобы сфокусироваться"
     noResults: "Ни одна модификация не подходит под текущие фильтры"
   home:
     browse: "Поиск модификаций"
@@ -277,8 +277,8 @@ app:
       title: "Скрыть иконку в трее"
       description: "Вам нужно отключить этот параметр для выхода из Windhawk."
     alwaysCompileModsLocally:
-      title: "Всегда компилировать моды локально"
-      description: "По умолчанию, Windhawk скачивает пре-компилированные бинарные файлы модов с сервера Windhawk при доступности. Включите эту опцию, чтобы всегда компилировать моды локально."
+      title: "Всегда компилировать модификации локально"
+      description: "По умолчанию, Windhawk скачивает пре-компилированные бинарные файлы модификаций с сервера Windhawk при доступности. Включите эту опцию, чтобы всегда компилировать моды локально."
     requireElevation:
       title: "Требовать UAC для запуска Windhawk"
       description: "Windhawk нуждается в правах администратора, но для компьютеров с одним пользователем постоянные запросы от UAC надоедают, поэтому Windhawk их обходит. Включите этот параметр, чтобы вернуть UAC запросы на запуск Windhawk."
@@ -388,7 +388,7 @@ app:
     exitButtonCancel: "Остаться"
   website:
     appHeader:
-      mods: "Моды"
+      mods: "Модификации"
       links: "Ссылки"
       contributeTranslation: "Добавить новый перевод"
     home:
@@ -397,7 +397,7 @@ app:
       getInvolved: "Присоединитесь"
       joinDiscord: "Присоединиться к сообществу Windhawk в Discord"
       discussWindhawk: "Обсудить Windhawk на Обсуждениях GitHub"
-      discussMods: "Обсудить моды Windhawk на Обсуждениях GitHub"
+      discussMods: "Обсудить модификации Windhawk на Обсуждениях GitHub"
       browseLinks: "Поиск других полезных ссылок"
       highlights: "Главное"
       robust: "Надёжность"
@@ -415,7 +415,7 @@ app:
       community: "Сообщество"
       discord: "Discord"
       windhawkDiscussions: "Windhawk - Обсуждение на GitHub"
-      modsDiscussions: "Моды Windhawk - Обсуждение на GitHub"
+      modsDiscussions: "Модификации Windhawk - Обсуждение на GitHub"
       documentation: "Документация"
       creatingNewMod: "Создать новую модификацию"
       otherTopics: "Другие темы"
