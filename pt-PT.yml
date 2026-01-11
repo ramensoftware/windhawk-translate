@@ -12,7 +12,7 @@ setup:
   INSTALLED_TEXT: "Selecione a operação a realizar."
   INSTALLED_SAME: "O $(^NameDA) v${VERSION} já está instalado. Selecione a operação que pretende realizar."
   INSTALLED_OLD: "Uma versão mais antiga do $(^NameDA) está instalada no seu sistema. Selecione a operação que pretende realizar."
-  INSTALLED_NEW: "Uma versão mais recente do $(^NameDA) já está instalada! Não é recomendável instalar uma versão mais antiga. Se realmente pretende instalar esta versão, é melhor desinstalar primeiro a versão atual. Selecione a operação que pretende realizar."
+  INSTALLED_NEW: "Uma versão mais recente do $(^NameDA) já está instalada! Não é recomendável instalar uma versão mais antiga. Se realmente pretende instalar esta versão mais antiga, é melhor desinstalar primeiro a versão atual. Selecione a operação que pretende realizar."
   REINSTALL: "&Reinstalar"
   UPDATE: "&Atualizar"
   UNINSTALL: "&Desinstalar"
