@@ -90,7 +90,7 @@ app:
     copy: "Copier"
     paste: "Coller"
     selectAll: "Tout sélectionner"
-    loggingEnabled: "Les journaux de débogage est activé"
+    loggingEnabled: "Les journaux de débogage sont activés"
   appHeader:
     home: "Accueil"
     explore: "Explorer"
