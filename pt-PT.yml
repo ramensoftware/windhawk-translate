@@ -260,8 +260,9 @@ app:
       title: "Idioma"
       description: "Selecione o idioma de exibição preferido para o Windhawk."
       contribute: "<0>Contribua com uma nova tradução</0>."
-      credits: "Tradução para português de Portugal por Bernardo Carvalheiro (rapozillha) e <0>Filipe Mota (BlackSpirits)</0>."
-      creditsLink: "mailto:blackspirits@gmail.com,bernardoccarvalheiro2008@gmail.com"
+      credits: "Tradução para português de Portugal por <0>Bernardo Carvalheiro (rapozillha)</0> e <1>Filipe Mota (BlackSpirits)</1>."
+      creditsLink: "mailto:bernardoccarvalheiro2008@gmail.com"
+      creditsLink1: "mailto:blackspirits@gmail.com"
     updates:
       title: "Procurar atualizações"
       description: "Verificar automaticamente e notificar sobre novas versões do Windhawk e dos mods instalados."
