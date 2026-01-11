@@ -260,8 +260,10 @@ app:
       title: "Langue"
       description: "Sélectionnez la langue d’affichage préférée pour Windhawk."
       contribute: "<0>Contribuez à une nouvelle traduction</0>."
-      credits: "Traduction française (France) par Jeremy Clement, Rayan Klosowski et <0>Filipe Mota (BlackSpirits)</0>."
-      creditsLink: "mailto:blackspirits@gmail.com,clement.jeremy.pro@outlook.fr,contact@rayan-klosowski.fr"
+      credits: "Traduction française (France) par <0>Jeremy Clement</0>, <1>Rayan Klosowski</1> et <2>Filipe Mota (BlackSpirits)</2>."
+      creditsLink: "mailto:clement.jeremy.pro@outlook.fr"
+      creditsLink1: "mailto:contact@rayan-klosowski.fr"
+      creditsLink2: "mailto:blackspirits@gmail.com"
     updates:
       title: "Rechercher des mises à jour"
       description: "Vérifier automatiquement et notifier les nouvelles versions de Windhawk et des mods installés."
