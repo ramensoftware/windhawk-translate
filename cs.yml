@@ -221,6 +221,7 @@ app:
       expandLines_many: "Rozbalit {{count}} skrytých řádků"
   modSearch:
     placeholder: "Hledat úpravy..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Vyhledat úpravy"

@@ -217,6 +217,7 @@ app:
       expandLines_other: "Ανάπτυξη {{count}} κρυφών γραμμών"
   modSearch:
     placeholder: "Αναζήτηση για mods..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Περιήγηση για Mods"

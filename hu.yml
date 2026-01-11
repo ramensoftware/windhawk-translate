@@ -217,6 +217,7 @@ app:
       expandLines_other: "{{count}} rejtett sor kibontása"
   modSearch:
     placeholder: "Modok keresése..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Modok böngészése"

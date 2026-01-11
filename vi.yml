@@ -217,6 +217,7 @@ app:
       expandLines_other: "Mở rộng {{count}} dòng bị ẩn"
   modSearch:
     placeholder: "Tìm kiếm mod..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Duyệt mod"

@@ -217,6 +217,7 @@ app:
       expandLines_other: "ขยาย {{count}} บรรทัดที่ซ่อนอยู่"
   modSearch:
     placeholder: "ค้นหาม็อด..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "สำรวจม็อด"

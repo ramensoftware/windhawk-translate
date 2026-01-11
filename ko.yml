@@ -217,6 +217,7 @@ app:
       expandLines_other: "숨겨진 줄 {{count}}개 확장"
   modSearch:
     placeholder: "모드 검색..."
+    placeholderWithHint: ~
     noResults: "현재 필터와 일치하는 모드가 없습니다"
   home:
     browse: "모드 탐색"

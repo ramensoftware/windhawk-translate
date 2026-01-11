@@ -225,6 +225,7 @@ app:
       expandLines_zero: "لا توجد أسطر مخفية"
   modSearch:
     placeholder: "ابحث عن المودات..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "تصفح المودات"

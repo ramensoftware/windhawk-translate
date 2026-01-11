@@ -219,6 +219,7 @@ app:
       expandLines_many: "Espandi {{count}} linee nascoste"
   modSearch:
     placeholder: "Cerca mod..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Cerca Mod"

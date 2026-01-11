@@ -219,6 +219,7 @@ app:
       expandLines_few: "Proširi {{count}} skrivene linije"
   modSearch:
     placeholder: "Pretraži dodatke..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Pretraži dodatke"

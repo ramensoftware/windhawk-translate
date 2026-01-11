@@ -217,6 +217,7 @@ app:
       expandLines_other: "{{count}} gizli satırı genişlet"
   modSearch:
     placeholder: "Modları ara..."
+    placeholderWithHint: ~
     noResults: ~
   home:
     browse: "Modlara Göz At"

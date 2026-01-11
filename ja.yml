@@ -144,7 +144,7 @@ app:
           targets: "ターゲットのプロセス"
           excluded: "除外"
           customListsNote: "この Mod は高度タブのカスタムプロセス対象/除外リストに定義されています"
-          patternsMatchCriticalSystemProcessesNote: ~
+          patternsMatchCriticalSystemProcessesNote: "重要なシステムプロセスの内包リストパターンがこの Mod に対して考慮されます (高度タブで設定されています)"
       updateNotNeeded: "インストールされているバージョンは最新です。"
     version:
       preRelease: "プレリリース"
@@ -171,7 +171,7 @@ app:
       unsavedChangesMessage: "設定が保存されていません。変更を破棄しますか？"
       unsavedChangesLeave: "変更を破棄"
       unsavedChangesStay: "編集を続行"
-      readOnlyPreview: ~
+      readOnlyPreview: "これは Mod 設定のプレビューです。設定を変更するには Mod をインストールしてください。"
     code:
       title: "ソースコード"
       noData: "Mod のソースはありません。"
@@ -217,6 +217,7 @@ app:
       expandLines_other: "{{count}} 個の隠れた行を展開"
   modSearch:
     placeholder: "Mod を検索..."
+    placeholderWithHint: "Mod を検索... 「/」キーでフォーカス"
     noResults: "現在のフィルターに一致する Mod はありません"
   home:
     browse: "Mod を探す"
@@ -259,7 +260,7 @@ app:
       title: "言語"
       description: "Windhawk の表示言語を選択してください。"
       contribute: "Windhawk の<0>翻訳に貢献</0>する。"
-      credits: "lmncaj と Keita Kunishi と <0>Re*Index.(ot_inc)</0> によって日本語訳されました。"
+      credits: "lmncaj と Keita Kunishi と Tatsuya Takahashi と <0>Re*Index.(ot_inc)</0> によって日本語訳されました。"
       creditsLink: "https://reindex-ot.github.io/"
     updates:
       title: "更新を確認"
@@ -383,44 +384,44 @@ app:
     exitButtonCancel: "キャンセル"
   website:
     appHeader:
-      mods: ~
+      mods: "Mod"
       links: "リンク"
       contributeTranslation: "翻訳に貢献"
     home:
       tagline: "Windows プログラムのカスタマイズマーケットプレイス"
-      download: ~
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      download: "ダウンロード"
+      getInvolved: "コミュニティに参加"
+      joinDiscord: "Discord で Windhawk コミュニティに参加する"
+      discussWindhawk: "GitHub Discussions で Windhawk について話し合う"
+      discussMods: "GitHub Discussions で Windhawk Mod について話し合う"
+      browseLinks: "その他の有用なリンクを見る"
+      highlights: "注目の機能"
+      robust: "堅牢"
+      robustDescription: "Windhawk は安定性とパフォーマンスを非常に重視しています。システムに目立った影響を与えることなく、常にバックグラウンドで動作するように設計されています。"
+      simple: "シンプル"
+      simpleDescription: "Windhawk を使うのにコンピュータの専門知識は必要ありません。誰でも使うことができます。洗練された Mod を数回のクリックでインストールでき、ユーザーフレンドリーなオプションでカスタマイズできます。"
+      transparent: "透明性"
+      transparentDescription: "Windhawk が提供する Mod はブラックボックスではありません。各 Mod はソースコードの形式で提供されるため、Mod が記載通りに動作するかどうかを確認することができます。"
     modDetails:
-      getWindhawk: ~
+      getWindhawk: "この Mod をインストールするには Windhawk を入手してください"
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "ニュース"
+      windhawkNews: "Windhawk ニュース - Ramen Software"
+      windhawkChangelog: "Windhawk 更新履歴"
+      community: "コミュニティ"
+      discord: "Discord"
+      windhawkDiscussions: "Windhawk - GitHub Discussions"
+      modsDiscussions: "Windhawk Mod - GitHub Discussions"
+      documentation: "ドキュメント"
+      creatingNewMod: "新規 Mod の作成"
+      otherTopics: "その他のトピック"
+      feedback: "フィードバック"
+      reportIssue: "問題を報告"
+      contactRamenSoftware: "Ramen Software へのお問い合わせ"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
-      downloadButton: ~
+      title: "Windhawk を更新"
+      newVersionAvailable: "Windhawk の新しいバージョンが利用可能です"
+      whatsNew: "新着情報"
+      downloadButton: "ダウンロード"
     footer:
-      copyright: ~
+      copyright: "Copyright"
