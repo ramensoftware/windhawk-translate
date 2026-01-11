@@ -339,7 +339,7 @@ app:
       vscodium: "Uma distribuição comunitária do editor VSCode da Microsoft"
       llvmMingw: "Uma cadeia de ferramentas mingw-w64 baseada em LLVM/Clang/LLD"
       minHook: "A biblioteca minimalista de API hooking para Windows"
-      others: "Outras ferramentas e bibliotecas, e algum código."
+      others: "Outras ferramentas e bibliotecas, e algum código"
   installModal:
     title: "Instalar {{mod}}"
     warningTitle: "Proceda com cuidado"
