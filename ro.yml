@@ -252,7 +252,7 @@ app:
     filter:
       installationStatus: "Stare instalare"
       installed: "Instalate"
-      notInstalled: "Neinstalate
+      notInstalled: "Neinstalate"
       author: "Autorul modurilor"
       process: "Procese țintă"
       showMore: "Afișează mai multe..."
