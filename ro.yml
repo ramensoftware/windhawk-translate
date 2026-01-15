@@ -403,7 +403,7 @@ app:
       simple: "Simplu"
       simpleDescription: "Nu trebuie să fii un expert în calculatoare pentru a folosi Windhawk, acesta poate fi folosit de toată lumea. Modurile sofisticate pot fi instalate cu doar câteva clicuri și personalizate prin opțiuni prietenoase cu utilizatorul."
       transparent: "Transparent"
-      transparentDescription: "Modurile pe care Windhawk le oferă nu sunt cutii negre. Fiecare mod vine sub formă de cod sursă care poate fi examinat pentru a te aigura că modul face exact ceea ce zice."
+      transparentDescription: "Modurile pe care Windhawk le oferă nu sunt cutii negre. Fiecare mod vine sub formă de cod sursă care poate fi examinat pentru a te asigura că modul face exact ceea ce zice."
     modDetails:
       getWindhawk: "Obține Windhawk pentru a instala acest mod"
     links:
