@@ -260,9 +260,9 @@ app:
       title: "Langue"
       description: "Sélectionnez la langue d’affichage préférée pour Windhawk."
       contribute: "<0>Contribuez à une nouvelle traduction</0>."
-      credits: "Traduction française (France) par <0>Jeremy Clement</0>, <1>Rayan Klosowski</1> et <2>Filipe Mota (BlackSpirits)</2>."
+      credits: "Traduction française (France) par <0>Jeremy Clement</0>, <1>Hugo Lapresse</1> et <2>Filipe Mota (BlackSpirits)</2>."
       creditsLink: "mailto:clement.jeremy.pro@outlook.fr"
-      creditsLink1: "mailto:contact@rayan-klosowski.fr"
+      creditsLink1: "https://rayan-klosowski.fr"
       creditsLink2: "mailto:blackspirits@gmail.com"
     updates:
       title: "Rechercher des mises à jour"
