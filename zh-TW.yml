@@ -217,7 +217,7 @@ app:
       expandLines_other: "展開 {{count}} 條隱藏的行"
   modSearch:
     placeholder: "搜尋模組..."
-    placeholderWithHint: ~
+    placeholderWithHint: "搜尋模組... 按 / 鍵聚焦"
     noResults: "沒有模組符合目前的篩選條件"
   home:
     browse: "瀏覽模組"
