@@ -73,7 +73,7 @@ tray:
   TOOLKITDLG_BUTTON_SAFE_MODE: "Güvenli Modu Etkinleştir"
   TOOLKITDLG_BUTTON_CLOSE: "Kapat"
   SAFE_MODE_TITLE: "Güvenli Mod"
-  SAFE_MODE_TEXT: "Windhawk şu anda güvenli modda çalışıyor. Bu modda hiçbir mod yüklenmez veya çalıştırılmaz; böylece sorunlu modları devre dışı bırakabilir veya kaldırabilirsiniz."
+  SAFE_MODE_TEXT: "Windhawk, tüm kod enjeksiyonu işlevleri devre dışı bırakılmış olarak yeniden başlatılacak."
   SAFE_MODE_DETECTED_TITLE: "Güvenli Mod Algılandı"
   SAFE_MODE_DETECTED_TEXT: "Windhawk bir sistem kararsızlığı algıladı ve güvenli modda başlatıldı. Bu, Windows'un çökmesini önlemek için yapıldı. Lütfen sorunlu olabilecek modları kontrol edin."
 app:
