@@ -424,4 +424,4 @@ app:
       whatsNew: "Bu sürümde neler değişti?"
       downloadButton: "İndirmeyi Başlat"
     footer:
-      copyright: "Telif Hakkı © {{year}} Ramen Software"
+      copyright: "Telif Hakkı"
