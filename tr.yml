@@ -308,7 +308,7 @@ app:
       inclusionWithoutExclusionNotice: "İşlem dahil etme listesinin, boş bir işlem hariç tutma listesi ile hiçbir etkisi yoktur."
       inclusionWithoutTotalExclusionNotice: "Bunlar dışındaki tüm işlemleri hariç tutmak istiyorsanız, işlem dışlama listesinde \"*\" ayarını yapabilirsiniz."
       processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
-      invalidCharactersWarning: "Dosya yolu veya adı geçersiz karakterler içeriyor."
+      invalidCharactersWarning: "Dosya yolu veya adı geçersiz karakterler içeriyor, bunlar kaldırılacak: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
