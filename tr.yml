@@ -127,7 +127,7 @@ app:
       loading: "Yükleniyor..."
       loadingFailed: "yükleme başarısız"
       otherVersions: "Diğer sürümler"
-      selectedVersion: "Seçilen sürüm"
+      selectedVersion: "Seçilen sürüm: {{version}}"
       modId: "Mod tanımlayıcı"
       modVersion: "Mod sürümü"
       lastUpdated: "Son güncelleme"
