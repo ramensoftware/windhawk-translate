@@ -66,7 +66,7 @@ tray:
   TASKDLG_TASK_UNINITIALIZING: "Kapatılıyor..."
   TASKDLG_PROCESS_SUSPENDED: "İşlem askıya alındı"
   TOOLKITDLG_TITLE: "Windhawk Araç Takımı"
-  TOOLKITDLG_EXPLANATION_CRASH: "Görünüşe göre Windows Gezgini beklenmedik bir şekilde kapandı. Windhawk sistemi düzeltmenize yardımcı olmak için bu araç takımıyla çalışmaya devam ediyor."
+  TOOLKITDLG_EXPLANATION_CRASH: "Görünüşe göre Windhawk modlarından kaynaklanabilecek bir sistem kararsızlığı algılandı. Windhawk, sistemi düzeltmenize yardımcı olmak için bu araç takımıyla çalışmaya devam ediyor; isterseniz Windhawk'tan çıkabilir veya Güvenli Modu etkinleştirebilirsiniz."
   TOOLKITDLG_BUTTON_OPEN: "Aç"
   TOOLKITDLG_BUTTON_LOADED_MODS: "Yüklü modlar"
   TOOLKITDLG_BUTTON_EXIT: "Çıkış yap"
