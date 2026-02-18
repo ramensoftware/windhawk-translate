@@ -362,7 +362,7 @@ app:
   safeMode:
     alert: "Windhawk şu anda güvenli modda çalışıyor. Tüm modlar devre dışı bırakıldı."
     offButton: "Güvenli modu kapat"
-    offConfirm: "Güvenli modu kapatmak istediğinizden emin misiniz? Bu işlem, devre dışı bırakılmamış olan tüm modları tekrar etkinleştirecektir."
+    offConfirm: "Ayarları uygulamak için Windhawk yeniden başlatılacak."
     offConfirmOk: "Eminim"
     offConfirmCancel: "İptal et"
   modPreview:
