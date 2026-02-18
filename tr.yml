@@ -201,7 +201,7 @@ app:
         titleExclusion: "Özel işlem hariç tutma listesi"
         descriptionExclusion: "Modun hedefleme dışında bırakacağı ek yürütülebilir dosya adlarının/yollarının özel bir listesi. Liste, hangi işlemlerin hedefleneceğini belirlemek için mod yazarının tanımladığı dışlama listesine eklenir. Her işlem için, yürütülebilir dosya yolu dahil etme girişlerinden biriyle eşleşirse ve herhangi bir hariç tutma girişiyle eşleşmezse mod yüklenir."
         processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
-        invalidCharactersWarning: "Girdiğiniz metin geçersiz karakterler içeriyor."
+        invalidCharactersWarning: "İşlem listesi geçersiz karakterler içeriyor, bunlar kaldırılacak: {{invalidCharacters}}"
         saveButton: "Kaydet"
       includeExcludeCustomOnly:
         title: "Mod ekleme/hariç tutma listelerini yoksay"
