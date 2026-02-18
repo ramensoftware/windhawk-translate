@@ -208,7 +208,7 @@ app:
         description: "Modun işlem dahil etme/hariç tutma listelerini göz ardı et ve yalnızca yukarıdaki özel listeleri kullan."
       patternsMatchCriticalSystemProcesses:
         title: "Kritik sistem işlemleriyle eşleşme"
-        description: "Tanımlanan desenler kritik sistem işlemleriyle eşleşiyor. Bu durum sistem kararlılığını etkileyebileceği için, bu işlemler varsayılan olarak hariç tutulur."
+        description: "Tanımlanan desenler, <0>critical.exe</0> gibi kritik sistem işlemleriyle eşleşiyor. Güvenlik ve sistem kararlılığı nedeniyle Windhawk varsayılan olarak bu işlemlere mod yüklemez. Daha fazla bilgi için <1>belgelere</1> bakın."
     changes:
       title: "Son Sürüm Değişiklikleri"
       noData: "Yüklü sürüm, en son sürümle aynı."
