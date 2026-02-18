@@ -261,7 +261,7 @@ app:
       description: "Windhawk ପାଇଁ ଆପଣଙ୍କର ପସନ୍ଦର ଭାଷା ବାଛନ୍ତୁ।"
       contribute: "<0>ଏକ ନୂତନ ଅନୁବାଦରେ ସାହାଯ୍ୟ କରନ୍ତୁ</0>।"
       credits: "ଓଡ଼ିଆ ଅନୁବାଦ: Gemini AI ଦ୍ୱାରା।"
-      creditsLink: "#"
+      creditsLink: ""
     updates:
       title: "ଅପଡେଟ୍ ଯାଞ୍ଚ କରନ୍ତୁ"
       description: "Windhawk ଏବଂ ଇନଷ୍ଟଲ୍ ହୋଇଥିବା ମଡ୍‌ଗୁଡ଼ିକର ନୂତନ ସଂସ୍କରଣ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଯାଞ୍ଚ କରନ୍ତୁ।"
@@ -365,6 +365,9 @@ app:
     offConfirm: "ସେଟିଙ୍ଗସ ପ୍ରୟୋଗ କରିବା ପାଇଁ Windhawk ପୁନର୍ବାର ଆରମ୍ଭ ହେବ।"
     offConfirmOk: "Windhawk ପୁନର୍ବାର ଆରମ୍ଭ କରନ୍ତୁ"
     offConfirmCancel: "ବାତିଲ କରନ୍ତୁ"
+  modPreview:
+    actionUnavailable: "ପ୍ରିଭ୍ୟୁ ମୋଡ୍‌ରେ ଏହି କାର୍ଯ୍ୟ ଉପଲବ୍ଧ ନାହିଁ"
+    notCompiled: "ପ୍ରିଭ୍ୟୁ କରିବା ପୂର୍ବରୁ ମଡ୍‌କୁ କମ୍ପାଇଲ୍ କରିବା ଆବଶ୍ୟକ"
   sidebar:
     modId: "ମଡ୍ ପରିଚୟକ"
     enableMod: "ମଡ୍ ସକ୍ରିୟ କରନ୍ତୁ"
