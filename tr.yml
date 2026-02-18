@@ -131,7 +131,7 @@ app:
       modId: "Mod tanımlayıcı"
       modVersion: "Mod sürümü"
       lastUpdated: "Son güncelleme"
-      modAuthor: "Mod yapımcısı"
+      modAuthor:
         title: "Mod yapımcısı"
         homepage: "Ana Sayfa"
         github: "GitHub"
