@@ -260,8 +260,8 @@ app:
       title: "ଭାଷା"
       description: "Windhawk ପାଇଁ ଆପଣଙ୍କର ପସନ୍ଦର ଭାଷା ବାଛନ୍ତୁ।"
       contribute: "<0>ଏକ ନୂତନ ଅନୁବାଦରେ ସାହାଯ୍ୟ କରନ୍ତୁ</0>।"
-      credits: "ଓଡ଼ିଆ ଅନୁବାଦ: Gemini AI ଦ୍ୱାରା।"
-      creditsLink: ""
+      credits: "ଓଡ଼ିଆ ଅନୁବାଦ: <0>Sandeep Biswal G</0> ଦ୍ୱାରା।"
+      creditsLink: "https://imsbg.github.io/"
     updates:
       title: "ଅପଡେଟ୍ ଯାଞ୍ଚ କରନ୍ତୁ"
       description: "Windhawk ଏବଂ ଇନଷ୍ଟଲ୍ ହୋଇଥିବା ମଡ୍‌ଗୁଡ଼ିକର ନୂତନ ସଂସ୍କରଣ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଯାଞ୍ଚ କରନ୍ତୁ।"
