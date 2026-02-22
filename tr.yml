@@ -17,7 +17,7 @@ setup:
   UPDATE: "Gü&ncelle"
   UNINSTALL: "&Kaldır"
   UNINSTALL_CURRENT: "&Geçerli sürümü kaldır"
-  NO_UNINSTALL: "&Kaldırma"
+  NO_UNINSTALL: "Kaldır&ma"
   INSTTYPE_HEADER: "Kurulum tipi"
   INSTTYPE_TEXT: "Gerçekleştirilecek yükleme türünü seçin."
   INSTTYPE_INTRO: "$(^NameDA) kurulum sihirbazına hoş geldiniz. Başlamak için lütfen istediğiniz kurulum türünü seçin."
@@ -34,15 +34,15 @@ setup:
   INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
   INETC_REMAINING: " (%d %s%s kaldı)"
 tray:
-  TRAY_OPEN: "&Windhawk'ı aç"
-  TRAY_LOADED_MODS: "Yüklü &mod'lar"
-  TRAY_TOOLKIT: ~
-  TRAY_EXIT: "&Çıkış"
+  TRAY_OPEN: "Windhawk'ı &Aç"
+  TRAY_LOADED_MODS: "Yüklü &modlar"
+  TRAY_TOOLKIT: "A&raç Takımı"
+  TRAY_EXIT: "Çı&kış"
   EXITDLG_TITLE: "Windhawk'tan Çık"
-  EXITDLG_CONTENT: "Windhawk'tan çıkılacak ve tüm modlar kaldırılacak. Aşağıdaki seçenek işaretlenmedikçe, Windhawk bir sonraki sistem başlangıcında otomatik olarak başlatılacaktır."
-  EXITDLG_CHECKBOX_AUTOSTART: "Sonraki sistem başlangıcında otomatik olarak başlama"
-  EXITDLG_BUTTON_EXIT: "&Windhawk'tan çık"
-  EXITDLG_BUTTON_CANCEL: "İptal"
+  EXITDLG_CONTENT: "Windhawk'tan çıkılacak ve tüm modlar devre dışı kalacak. Aşağıdaki seçenek işaretlenmedikçe, Windhawk bir sonraki sistem başlangıcında otomatik olarak başlatılacaktır."
+  EXITDLG_CHECKBOX_AUTOSTART: "Bir sonraki sistem başlangıcında otomatik olarak başlatma"
+  EXITDLG_BUTTON_EXIT: "Windhawk'tan Çı&k"
+  EXITDLG_BUTTON_CANCEL: "&İptal"
   NOTIFICATION_UPDATE_APP: "Windhawk'ın yeni bir sürümü mevcut"
   NOTIFICATION_UPDATE_APP_MOD: "Windhawk'ın yeni bir sürümü mevcut ve bir mod güncellenebilir"
   NOTIFICATION_UPDATE_APP_MODS: "Windhawk'ın yeni bir sürümü mevcut ve %d mod güncellenebilir"
@@ -51,7 +51,7 @@ tray:
   TRAYICON_TOOLTIP_UPDATE: "Yeni bir sürüm mevcut"
   TASKDLG_TITLE_LOADED_MODS: "Yüklü modlar"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod görevleri devam ediyor"
-  TASKDLG_BUTTON_OPEN_APP: "&Windhawk'ı aç"
+  TASKDLG_BUTTON_OPEN_APP: "&Windhawk'ı Aç"
   TASKDLG_COLUMN_MOD: "Mod"
   TASKDLG_COLUMN_PROCESS: "İşlem"
   TASKDLG_COLUMN_PID: "PID"
@@ -59,23 +59,23 @@ tray:
   TASKDLG_STATUS_PENDING: "Beklemede..."
   TASKDLG_STATUS_LOADING: "Yükleniyor..."
   TASKDLG_STATUS_LOADED: "Yüklendi"
-  TASKDLG_STATUS_UNLOADED: "Yüklenmedi"
+  TASKDLG_STATUS_UNLOADED: "Yükleme kaldırıldı"
   TASKDLG_TASK_INITIALIZING: "Başlatılıyor..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Semboller yükleniyor..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
-  TASKDLG_TASK_UNINITIALIZING: ~
-  TASKDLG_PROCESS_SUSPENDED: ~
-  TOOLKITDLG_TITLE: ~
-  TOOLKITDLG_EXPLANATION_CRASH: ~
-  TOOLKITDLG_BUTTON_OPEN: ~
-  TOOLKITDLG_BUTTON_LOADED_MODS: ~
-  TOOLKITDLG_BUTTON_EXIT: ~
-  TOOLKITDLG_BUTTON_SAFE_MODE: ~
-  TOOLKITDLG_BUTTON_CLOSE: ~
-  SAFE_MODE_TITLE: ~
-  SAFE_MODE_TEXT: ~
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Semboller bekleniyor..."
+  TASKDLG_TASK_UNINITIALIZING: "Kapatılıyor..."
+  TASKDLG_PROCESS_SUSPENDED: "(askıya alındı)"
+  TOOLKITDLG_TITLE: "Windhawk Araç Takımı"
+  TOOLKITDLG_EXPLANATION_CRASH: "Görünüşe göre Windhawk modlarından kaynaklanabilecek bir sistem kararsızlığı algılandı. Windhawk'tan çıkmak veya Güvenli Modda tekrardan açmak bu problemi çözebilir."
+  TOOLKITDLG_BUTTON_OPEN: "Windhawk'ı &Aç"
+  TOOLKITDLG_BUTTON_LOADED_MODS: "Yüklü &modlar"
+  TOOLKITDLG_BUTTON_EXIT: "Windhawk'tan Çı&k"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "&Güvenli mod"
+  TOOLKITDLG_BUTTON_CLOSE: "Ka&pat"
+  SAFE_MODE_TITLE: "Güvenli modda yeniden başlat"
+  SAFE_MODE_TEXT: "Windhawk, tüm kod enjeksiyonu işlevleri devre dışı bırakılmış olarak yeniden başlatılacak."
+  SAFE_MODE_DETECTED_TITLE: "Güvenli Mod Algılandı"
+  SAFE_MODE_DETECTED_TEXT: "Windows güvenli modda çalışıyor. Windhawk'ta güvenli modu etkinleştirmek ister misiniz? Tüm kod enjeksiyonu işlevleri devre dışı bırakılacaktır."
 app:
   general:
     loading: "Yükleniyor..."
@@ -86,11 +86,11 @@ app:
     updating: "Güncelleniyor..."
     installing: "Yükleniyor..."
     compiling: "Derleniyor..."
-    cut: ~
-    copy: ~
-    paste: ~
-    selectAll: ~
-    loggingEnabled: ~
+    cut: "Kes"
+    copy: "Kopyala"
+    paste: "Yapıştır"
+    selectAll: "Hepsini seç"
+    loggingEnabled: "Hata ayıklama günlüğü etkin"
   appHeader:
     home: "Ana Sayfa"
     explore: "Keşfet"
@@ -101,36 +101,36 @@ app:
     installed: "Yüklendi"
     details: "Ayrıntılar"
     update: "Güncelle"
-    downgrade: ~
+    downgrade: "Sürümü düşür"
     install: "Yükle"
     compile: "Derle"
     disable: "Devre dışı bırak"
     enable: "Etkinleştir"
     edit: "Düzenle"
-    fork: "Çatal"
+    fork: "Çatalla"
     remove: "Kaldır"
-    removeConfirm: "Bu modu kaldırmak istediğinizden emin misiniz??"
+    removeConfirm: "Bu modu kaldırmak istediğinizden emin misiniz?"
     removeConfirmOk: "Modu kaldır"
     removeConfirmCancel: "İptal"
-    donate: ~
+    donate: "Bağış yap"
     notCompiled: "Modun derlenmesi gerekiyor"
     editedLocally: "Mod yerel olarak düzenlendi"
     noDescription: "(açıklama yok)"
     users_one: "{{formattedCount}} kullanıcı"
     users_other: "{{formattedCount}} kullanıcı"
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+    notRated: "Henüz değerlendirilmemiş"
+    loggingEnabledInAdvancedTab: "Hata ayıklama günlüğü modun gelişmiş sekmesinde etkin"
   modDetails:
     header:
       installedVersion: "Yüklü sürüm"
       latestVersion: "En son sürüm"
       loading: "Yükleniyor..."
       loadingFailed: "yükleme başarısız"
-      otherVersions: ~
-      selectedVersion: ~
-      modId: "mod tanımlayıcı"
+      otherVersions: "Diğer sürümler"
+      selectedVersion: "Seçilen sürüm: {{version}}"
+      modId: "Mod tanımlayıcı"
       modVersion: "Mod sürümü"
-      lastUpdated: ~
+      lastUpdated: "Son güncelleme"
       modAuthor:
         title: "Mod yapımcısı"
         homepage: "Ana Sayfa"
@@ -138,19 +138,19 @@ app:
         twitter: "X (Twitter)"
       processes:
         all: "Tüm işlemler"
-        allBut: "Tümü ama {{list}}"
+        allBut: "{{list}} hariç tümü"
         except: "{{included}} hariç {{excluded}}"
         tooltip:
           targets: "Hedef işlemler"
           excluded: "Hariç"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "Özel listeler, Gelişmiş sekmesi altından yapılandırılabilir."
+          patternsMatchCriticalSystemProcessesNote: "Bu mod için kritik sistem işlemleri için dahil etme listesi kalıpları dikkate alınır (Gelişmiş sekmesinde ayarlanır)."
       updateNotNeeded: "Yüklü sürüm, en son sürümle aynı"
     version:
-      preRelease: ~
-      select: ~
-      cancel: ~
-      chooseVersion: ~
+      preRelease: "Ön sürüm"
+      select: "Seç"
+      cancel: "İptal"
+      chooseVersion: "Sürüm seçin"
     details:
       title: "Ayrıntılar"
       noData: "Mod ayrıntıları eksik."
@@ -161,17 +161,17 @@ app:
       sampleValue: "Örnek değer"
       arrayItemAdd: "Yeni öğe ekle"
       arrayItemRemove: "Öğeyi kaldır"
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
-      readOnlyPreview: ~
+      yamlMode: "Metin modu"
+      uiMode: "Arayüz modu"
+      yamlInvalid: "Geçersiz YAML verisi"
+      yamlParseError: "YAML Ayrıştırma Hatası: {{error}}"
+      yamlInvalidKey: "YAML içinde geçersiz anahtar: '{{key}}' geçerli bir ayar değil"
+      yamlTypeMismatch: "'{{key}}' için tür uyuşmazlığı: {{expected}} bekleniyordu, ancak {{actual}} alındı"
+      unsavedChangesTitle: "Kaydedilmemiş Değişiklikler"
+      unsavedChangesMessage: "Kaydedilmemiş değişiklikler var. Ayrılmak istiyor musunuz?"
+      unsavedChangesLeave: "Ayrıl"
+      unsavedChangesStay: "Kal"
+      readOnlyPreview: "Salt okunur önizleme"
     code:
       title: "Kaynak Kodu"
       noData: "Mod kaynağı eksik."
@@ -184,7 +184,7 @@ app:
       debugLogging:
         title: "Hata ayıklama günlüğü"
         description: "Modla ilgili sorunları gidermek için yararlı olabilir."
-        none: "Hiçbiri"
+        none: "Yok"
         modLogs: "Mod günlükleri"
         detailedLogs: "Ayrıntılı hata ayıklama günlükleri"
         showLogButton: "Günlük çıktısını göster"
@@ -201,14 +201,14 @@ app:
         titleExclusion: "Özel işlem hariç tutma listesi"
         descriptionExclusion: "Modun hedefleme dışında bırakacağı ek yürütülebilir dosya adlarının/yollarının özel bir listesi. Liste, hangi işlemlerin hedefleneceğini belirlemek için mod yazarının tanımladığı dışlama listesine eklenir. Her işlem için, yürütülebilir dosya yolu dahil etme girişlerinden biriyle eşleşirse ve herhangi bir hariç tutma girişiyle eşleşmezse mod yüklenir."
         processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "İşlem listesi geçersiz karakterler içeriyor, bunlar kaldırılacak: {{invalidCharacters}}"
         saveButton: "Kaydet"
       includeExcludeCustomOnly:
         title: "Mod ekleme/hariç tutma listelerini yoksay"
         description: "Modun işlem dahil etme/hariç tutma listelerini göz ardı et ve yalnızca yukarıdaki özel listeleri kullan."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Kritik sistem işlemleriyle eşleşme"
+        description: "Tanımlanan desenler, <0>critical.exe</0> gibi kritik sistem işlemleriyle eşleşiyor. Güvenlik ve sistem kararlılığı nedeniyle Windhawk varsayılan olarak bu işlemlere mod yüklemez. Daha fazla bilgi için <1>belgelere</1> bakın."
     changes:
       title: "Son Sürüm Değişiklikleri"
       noData: "Yüklü sürüm, en son sürümle aynı."
@@ -217,24 +217,24 @@ app:
       expandLines_other: "{{count}} gizli satırı genişlet"
   modSearch:
     placeholder: "Modları ara..."
-    placeholderWithHint: ~
-    noResults: ~
+    placeholderWithHint: "Mod arayın... odaklanmak için '/' tuşuna basın"
+    noResults: "Sonuç bulunamadı."
   home:
     browse: "Modlara Göz At"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "Etkin"
+      disabled: "Devre dışı"
+      updateAvailable: "Güncelleme mevcut"
+      clearFilters: "Filtreleri temizle"
     installedMods:
       title: "Yüklü Modlar"
       noMods: "Hiçbir mod yüklü değil"
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "Ad"
+        description: "Açıklama"
+        author: "Yapımcı"
+        version: "Sürüm"
+        status: "Durum"
     featuredMods:
       title: "Öne Çıkan Modlar"
       noMods: "Henüz yüklenmemiş öne çıkan mod yok"
@@ -248,13 +248,13 @@ app:
       lastUpdated: "Son güncellenenler"
       alphabeticalOrder: "Alfabetik sıra"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "Yükleme durumu"
+      installed: "Yüklendi"
+      notInstalled: "Yüklü değil"
+      author: "Yapımcı"
+      process: "İşlem"
+      showMore: "Daha fazla göster"
+      clearFilters: "Filtreleri temizle"
   settings:
     language:
       title: "Dil"
@@ -273,8 +273,8 @@ app:
       title: "Tepsi simgesini gizle"
       description: "Windhawk'tan çıkmak için bu seçeneği devre dışı bırakmanız gerekir."
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "Modları her zaman yerel olarak derle"
+      description: "Modları sunucudan indirmek yerine her zaman bilgisayarınızda derleyin. Bu seçenek, güvenlik için modun kaynak kodunu yerel olarak doğrulamak istediğinizde yararlıdır, ancak yükleme süresini uzatabilir."
     requireElevation:
       title: "Windhawk'ı çalıştırmak için UAC yükseltmesi gerektir"
       description: "Windhawk, yönetici hakları gerektirir, ancak tek kullanıcılı bir bilgisayar için, her seferinde UAC istemini almak can sıkıcı olabilir, bu nedenle Windhawk bunu atlar. Windhawk'ı çalıştırmak için UAC yükseltmesi gerektirmek üzere bu seçeneği etkinleştirin."
@@ -293,42 +293,42 @@ app:
       appLoggingTitle: "Windhawk günlüğe kaydetme ayrıntısı"
       engineLoggingTitle: "Windhawk motor günlüğü ayrıntı düzeyi"
       description: "Günlükler, DebugView gibi bir araçla görüntülenebilir."
-      none: "Bilinmeyen"
+      none: "Hiçbiri"
       error: "Hata"
       verbose: "Ayrıntılı"
     processList:
       titleExclusion: "İşlem hariç etme listesi"
       descriptionExclusion: "Windhawk'ın enjekte etmeyeceği işlem adlarının/yollarının bir listesi. Windhawk'ın belirli bir programla uyumlu olmadığı durumlarda yararlı olabilir. Bu listeye bir süreç eklemenin Windhawk'ın onu özelleştirmesini engellemenin yanı sıra Windhawk'ın bu sürecin oluşturduğu alt süreçleri yakalamasını da engelleyeceğini unutmayın. Bu, Windhawk'ın bu gibi durumlarda modları hafif bir gecikmeyle yüklemesine neden olacaktır."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Daha fazla bilgi için <0>bu wiki sayfasına</0> göz atın."
+      excludeCriticalProcesses: "Kritik sistem işlemlerini hariç tut"
+      excludeIncompatiblePrograms: "Uyumsuz olduğu bilinen programları hariç tut"
+      excludeGames: "Oyunları hariç tut"
       titleInclusion: "İşlem dahil etme listesi"
       descriptionInclusion: "Dışlama listesinde olsalar bile Windhawk'ın enjekte edeceği işlem adlarının/yollarının bir listesi."
       inclusionWithoutExclusionNotice: "İşlem dahil etme listesinin, boş bir işlem hariç tutma listesi ile hiçbir etkisi yoktur."
       inclusionWithoutTotalExclusionNotice: "Bunlar dışındaki tüm işlemleri hariç tutmak istiyorsanız, işlem dışlama listesinde \"*\" ayarını yapabilirsiniz."
       processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "Dosya yolu veya adı geçersiz karakterler içeriyor, bunlar kaldırılacak: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
-    subtitle: "Windows programları için özelleştirme pazarı"
+    subtitle: "Windows ve programlar için özelleştirme pazarı"
     credit: "Yapımcı: <0>{{author}}</0>"
     update:
       title: "Bir güncelleme mevcut"
       subtitle: "En son özellikleri ve hata düzeltmelerini almak için Windhawk'ı güncellemeyi düşünün"
-      changelogButton: ~
-      updateButton: ~
+      changelogButton: "Değişiklik günlüğü"
+      updateButton: "Güncelle"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Windhawk güncelleniyor..."
+        downloading: "Güncelleme indiriliyor..."
+        installing: "Güncelleme yükleniyor..."
+        installingNote: "Yükleme sırasında Windhawk yeniden başlatılacak."
+        failed: "Güncelleme başarısız oldu."
+        cancel: "İptal et"
     changelog:
-      title: ~
-      close: ~
+      title: "Sürüm Notları"
+      close: "Kapat"
     links:
       title: "Bağlantılar"
       homepage: "Ana sayfa"
@@ -340,7 +340,7 @@ app:
       minHook: "Windows için minimalist API bağlama kitaplığı"
       others: "Diğer araçlar ve kitaplıklar ve biraz kod"
   installModal:
-    title: "Yükle {{mod}}"
+    title: "{{mod}} Yükle"
     warningTitle: "Dikkatli ilerleyin"
     warningDescription: "Kötü amaçlı modlar bilgisayarınıza zarar verebilir veya gizliliğinizi ihlal edebilir. Yalnızca güvendiğiniz yapımcıların modlarını yükleyin."
     modAuthor: "Mod yapımcısı"
@@ -360,11 +360,11 @@ app:
     beginCodingButton: "Kodlamaya başla"
     cancelButton: "İptal"
   safeMode:
-    alert: ~
-    offButton: ~
-    offConfirm: ~
-    offConfirmOk: ~
-    offConfirmCancel: ~
+    alert: "Windhawk şu anda güvenli modda çalışıyor. Tüm modlar devre dışı bırakıldı."
+    offButton: "Güvenli modu kapat"
+    offConfirm: "Ayarları uygulamak için Windhawk yeniden başlatılacak."
+    offConfirmOk: "Eminim"
+    offConfirmCancel: "İptal et"
   modPreview:
     actionUnavailable: "Eylem önizleme modunda kullanılamaz"
     notCompiled: "Önizleme yapılmadan önce modun derlenmesi gerekir"
@@ -375,7 +375,7 @@ app:
     notCompiled: "Modun derlenmesi gerekiyor"
     compile: "Modu Derle"
     compilationFailed: "Derleme başarısız"
-    stopCompilation: ~
+    stopCompilation: "Derlemeyi durdur"
     preview: "Önizleme Modu"
     showLogOutput: "Günlük Çıktısını Göster"
     exit: "Düzenleme Modundan Çık"
@@ -384,44 +384,44 @@ app:
     exitButtonCancel: "Kal"
   website:
     appHeader:
-      mods: ~
+      mods: "Modlar"
       links: "Bağlantılar"
-      contributeTranslation: "Yeni bir çeviriye katkıda bulunun"
+      contributeTranslation: "Çeviriye destek ol!"
     home:
-      tagline: "Windows programları için özelleştirme pazarı"
-      download: ~
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      tagline: "Windows programlarını dilediğiniz gibi özelleştirin!"
+      download: "Hemen İndir"
+      getInvolved: "Topluluğa Katıl!"
+      joinDiscord: "Discord'a Katıl!"
+      discussWindhawk: "Windhawk Hakkında Konuş!"
+      discussMods: "Modlar Hakkında Konuş!"
+      browseLinks: "Bağlantılara Göz At!"
+      highlights: "Neden Windhawk?"
+      robust: "Güçlü ve Kararlı"
+      robustDescription: "Sisteminizin dengesini bozmadan, performans kaybı yaşatmadan çalışır."
+      simple: "Kullanımı Kolay"
+      simpleDescription: "Modları kurmak, ayarlamak ve yönetmek sadece birkaç tık uzağınızda."
+      transparent: "Tamamen Şeffaf"
+      transparentDescription: "Gizli kapaklı iş yok; tüm modların kaynak kodu açıktır, ne yüklediğinizi bilirsiniz."
     modDetails:
-      getWindhawk: ~
+      getWindhawk: "Windhawk'ı İndir"
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "Haberler"
+      windhawkNews: "Gelişmeler"
+      windhawkChangelog: "Sürüm Notları"
+      community: "Topluluk"
+      discord: "Discord"
+      windhawkDiscussions: "Tartışmalar"
+      modsDiscussions: "Mod Sohbetleri"
+      documentation: "Rehberler ve Belgeler"
+      creatingNewMod: "Kendi Modunu Yap"
+      otherTopics: "Diğer Her Şey"
+      feedback: "Geri Bildirim Gönder"
+      reportIssue: "Sorun Bildir!"
+      contactRamenSoftware: "Geliştiriciye Ulaşın!"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
-      downloadButton: ~
+      title: "Windhawk'ı İndir"
+      newVersionAvailable: "Yeni bir sürüm çıktı!"
+      whatsNew: "Bu sürümde neler değişti?"
+      downloadButton: "İndirmeyi Başlat"
     footer:
-      copyright: ~
+      copyright: "Telif Hakkı"
