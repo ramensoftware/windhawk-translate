@@ -260,8 +260,8 @@ app:
       title: "Til"
       description: "Windhawk uchun afzal ko‘rgan tilni tanlang."
       contribute: "Yangi tarjima bilan <0>hissa qo‘shing</0>."
-      credits: "O‘zbekcha tarjima: <0>Sizning Ismingiz</0>."
-      creditsLink: "https://github.com/sizning_profilingiz"
+      credits: ""
+      creditsLink: ""
     updates:
       title: "Yangilanishlarni tekshirish"
       description: "Windhawk va o‘rnatilgan modlarning yangi versiyalarini avtomatik tekshirish va xabar berish."
