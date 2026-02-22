@@ -139,7 +139,7 @@ app:
       processes:
         all: "Tüm işlemler"
         allBut: "{{list}} hariç tümü"
-        except: "{{excluded}} hariç {{included}}"
+        except: "{{included}} hariç {{excluded}}"
         tooltip:
           targets: "Hedef işlemler"
           excluded: "Hariç"
