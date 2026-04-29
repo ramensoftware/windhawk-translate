@@ -400,7 +400,7 @@ app:
       robustDescription: "Windhawk에게 안정성과 성능은 매우 높은 우선순위입니다. 시스템에 눈에 띄는 영향 없이 끊임 없게 실행되기 위해서 디자인되었습니다."
       simple: "간단함"
       simpleDescription: "Windhawk를 사용하기 위해 컴퓨터 전문가가 될 필요가 없으며 누구든지 사용할 수 있습니다. 정교한 모드들이 클릭 두 번만에 설치되며 사용자 친화적인 옵션을 통해 모드를 사용자 정의할 수 있습니다."
-      transparent: "투명"
+      transparent: "투명함"
       transparentDescription: "Windahwk에서 제공하는 모드들은 블랙 박스가 아닙니다. 각 모드는 설명 그대로 작동하는지 검토할 수 있는 소스 코드 형태로 옵니다."
     modDetails:
       getWindhawk: "Windhawk를 받고 이 모드 설치하기"
