@@ -171,14 +171,14 @@ app:
       unsavedChangesMessage: "저장하지 않은 변경사항이 있습니다. 변경사항을 버리시겠어요?"
       unsavedChangesLeave: "변경사항 버리기"
       unsavedChangesStay: "계속 편집"
-      readOnlyPreview: ~
+      readOnlyPreview: "이 모드의 설정 미리 보기 페이지입니다. 설정을 구성하려면 모드를 설치하세요."
     code:
       title: "소스 코드"
       noData: "모드 소스가 없습니다."
       collapseExtra: "Readme와 설정 펼치기"
     changelog:
-      title: "체인지로그"
-      loadingFailed: "체인지로그를 불러오는 데 실패했습니다. GitHub에서 보려면 <0>여기를 누르세요</0>."
+      title: "변경 로그"
+      loadingFailed: "변경 로그를 불러오는 데 실패했습니다. GitHub에서 보려면 <0>여기를 누르세요</0>."
     advanced:
       title: "고급"
       debugLogging:
@@ -217,7 +217,7 @@ app:
       expandLines_other: "숨겨진 줄 {{count}}개 확장"
   modSearch:
     placeholder: "모드 검색..."
-    placeholderWithHint: ~
+    placeholderWithHint: "모드 검색... 초점을 맞추려면 '/' 입력"
     noResults: "현재 필터와 일치하는 모드가 없습니다"
   home:
     browse: "모드 탐색"
@@ -317,7 +317,7 @@ app:
     update:
       title: "업데이트를 사용할 수 있음"
       subtitle: "최신 기능 및 버그 수정을 받으려면 Windhawk를 업데이트하세요."
-      changelogButton: "체인지로그"
+      changelogButton: "변경 로그"
       updateButton: "업데이트"
       modal:
         title: "Windhawk 업데이트 중"
@@ -384,44 +384,44 @@ app:
     exitButtonCancel: "남아 있기"
   website:
     appHeader:
-      mods: ~
+      mods: "모드"
       links: "링크"
       contributeTranslation: "새 번역 기여하기"
     home:
       tagline: "Windows 프로그램용 사용자 정의 마켓플레이스"
-      download: ~
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      download: "다운로드"
+      getInvolved: "참여하기"
+      joinDiscord: "Discord의 Windhawk 커뮤니티에 가입하기"
+      discussWindhawk: "GitHub Discussions에서 Windhawk 논의하기"
+      discussMods: "GitHub Discussions에서 Windhawk 모드 논의하기"
+      browseLinks: "기타 유용한 링크 찾아보기"
+      highlights: "하이라이트"
+      robust: "건장함"
+      robustDescription: "Windhawk에게 안정성과 성능은 매우 높은 우선순위입니다. 시스템에 눈에 띄는 영향 없이 끊임없게 실행되기 위해서 디자인되었습니다."
+      simple: "간단함"
+      simpleDescription: "Windhawk를 사용하기 위해 컴퓨터 전문가가 될 필요가 없으며 누구든지 사용할 수 있습니다. 정교한 모드들이 클릭 두 번 만에 설치되며 사용자 친화적인 옵션을 통해 모드를 사용자 정의할 수 있습니다."
+      transparent: "투명함"
+      transparentDescription: "Windhawk에서 제공하는 모드들은 블랙 박스가 아닙니다. 각 모드는 설명 그대로 작동하는지 검토할 수 있는 소스 코드 형태로 옵니다."
     modDetails:
-      getWindhawk: ~
+      getWindhawk: "Windhawk를 받고 이 모드 설치하기"
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "뉴스"
+      windhawkNews: "Windhawk 뉴스 - Ramen Software"
+      windhawkChangelog: "Windhawk 변경 로그"
+      community: "커뮤니티"
+      discord: "Discord"
+      windhawkDiscussions: "Windhawk - GitHub Discussions"
+      modsDiscussions: "Windhawk 모드 - GitHub Discussions"
+      documentation: "문서"
+      creatingNewMod: "새 모드 만들기"
+      otherTopics: "기타 주제"
+      feedback: "피드백"
+      reportIssue: "문제 제보하기"
+      contactRamenSoftware: "Ramen Software에 연락하기"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
-      downloadButton: ~
+      title: "Windhawk 업데이트하기"
+      newVersionAvailable: "새 Windhawk 버전을 사용할 수 있습니다"
+      whatsNew: "새로운 기능"
+      downloadButton: "다운로드"
     footer:
-      copyright: ~
+      copyright: "저작권"
