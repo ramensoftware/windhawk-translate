@@ -36,7 +36,7 @@ setup:
 tray:
   TRAY_OPEN: "Louvri &Windhawk"
   TRAY_LOADED_MODS: "Chaje &mod yo"
-  TRAY_TOOLKIT: "&Toolkit"
+  TRAY_TOOLKIT: "&Zouti"
   TRAY_EXIT: "&Kite"
   EXITDLG_TITLE: "Kite Windhawk"
   EXITDLG_CONTENT: "Windhawk pral kite ak tout mod pral dechaje. Windhawk pral kòmanse otomatikman nan demaraj sistèm pwochen an, amwenke opsyon an anba se tcheke."
@@ -217,7 +217,7 @@ app:
       expandLines_other: "Elaji {{count}} liy ki kache"
   modSearch:
     placeholder: "Chèche mod yo..."
-    placeholderWithHint: "Chèche mod yo... type '/' to focus"
+    placeholderWithHint: "Chèche mod yo... tape '/' pou fokis"
     noResults: "Pa gen okenn mod ki koresponn ak filtè aktyèl yo"
   home:
     browse: "Chèche mod yo"
@@ -317,7 +317,7 @@ app:
     update:
       title: "Yon mizajou disponsib"
       subtitle: "Konsidere mete Windhawk ajou pou jwenn pi dènye fonksyonalite ak koreksyon pinèz yo."
-      changelogButton: "Changelog"
+      changelogButton: "Lis chanjman"
       updateButton: "Mete ajou"
       modal:
         title: "Mete Windhawk ajou"
@@ -347,7 +347,7 @@ app:
     homepage: "Paj dakèy"
     github: "GitHub"
     twitter: "X (Twitter)"
-    verified: "verified"
+    verified: "verifye"
     verifiedTooltip: "Nou verifye ke pwofil sa a se pou otè mod la, men remake ke <0>verifye</0> pa menm bagay ak <0>fyab</0>. Asire w ou fè otè mod la konfyans, oubyen enspekte kòd sous la ak anpil atansyon anvan ou enstale li."
     acceptButton: "Aksepte Risk ak Enstale"
     cancelButton: "Anile"
