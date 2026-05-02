@@ -200,7 +200,7 @@ app:
         descriptionInclusion: "Yon lis pèsonalize non/chemen dosye ekzekib adisyonèl ki mod la pral vize. Lis la ajoute nan lis enklizyon ki otè mod la te defini pou detèmine ki pwosesis pou vize. Pou chak pwosesis, mod la chaje si chemen dosye ekzekisyon an koresponn ak youn nan antre enklizyon yo epi li pa koresponn ak okenn antre esklizyon."
         titleExclusion: "Lis esklizyon pwosesis ki pèsonalize"
         descriptionExclusion: "Yon lis pèsonalize non/chemen fichye ekzekisyon adisyonèl ke mod la pral eskli nan sib la. Lis la ajoute nan lis esklizyon ke otè mod la te defini pou detèmine ki pwosesis pou vize. Pou chak pwosesis, mod la chaje si chemen fichye ekzekisyon an koresponn ak youn nan antre enklizyon yo epi li pa koresponn ak okenn antre esklizyon."
-        processListPlaceholder: "Non/chemen pwosseis, youn pou chak liy, pou egzanp:"
+        processListPlaceholder: "Non/chemen pwosesis, youn pou chak liy, pou egzanp:"
         invalidCharactersWarning: "Lis pwosesis la genyen karaktè ki envalab ki pral efase: {{invalidCharacters}}"
         saveButton: "Sove"
       includeExcludeCustomOnly:
@@ -232,7 +232,7 @@ app:
       grid:
         name: "Non"
         description: "Deskripsyon"
-        author: "Òte"
+        author: "Otè"
         version: "Vèsyon"
         status: "Estati"
     featuredMods:
@@ -251,7 +251,7 @@ app:
       installationStatus: "Estati enstalasyon"
       installed: "Enstale"
       notInstalled: "Pa enstale"
-      author: "Òte mod"
+      author: "Otè mod"
       process: "Pwosesis sib"
       showMore: "Montre plis..."
       clearFilters: "Netwaye filtre yo"
@@ -276,11 +276,11 @@ app:
       title: "Toujou konpile mod lokalman"
       description: "Pa default, Windhawk telechaje binè mod pre-konpile yo soti nan sèvè Windhawk la lè yo disponib. Aktive opsyon sa a pou toujou konpile mod yo lokalman pito."
     requireElevation:
-      title: "Oblije elevasyon elevasyon UAC pou kouri Windhawk"
+      title: "Oblije elevasyon UAC pou kouri Windhawk"
       description: "Windhawk bezwen dwa administratè, men pou yon òdinatè ki sèlman itilize youn itilizatè, li kapab anmèdan pou w resevwa envitasyon UAC la chak fwa, kidonk Windhawk sote li. Aktive opsyon sa a pou mande pou ogmante UAC pou w ka itilize Windhawk."
     dontAutoShowToolkit:
       title: "Pa montre dyalòg zouti a otomatikman"
-      description: "Pa default, Windhawk otomatikman montre dyalòg zouti a lè li detekte ke ba travay la pa aksesib, swa akòz enstabilite sistèm swa pou yon lòt rezon. Dyalòg zouti a pèmèt ou pou kite Windhawk, chanje nan mòd san danje, epi fè lòt operasyon. Ou kapab tou wè dyalòg zouti a avèk rakoursi klavye Ctrl+Win+W.""
+      description: "Pa default, Windhawk otomatikman montre dyalòg zouti a lè li detekte ke ba travay la pa aksesib, swa akòz enstabilite sistèm swa pou yon lòt rezon. Dyalòg zouti a pèmèt ou pou kite Windhawk, chanje nan mòd san danje, epi fè lòt operasyon. Ou kapab tou wè dyalòg zouti a avèk rakoursi klavye Ctrl+Win+W."
     modInitDialogDelay:
       title: "Reta dyalòg inisyalizasyon mod"
       description: "Kantite milisegond pou tann anvan dyalòg pwogrè a parèt pou inisyalizasyon mod la."
@@ -307,7 +307,7 @@ app:
       descriptionInclusion: "Yon lis non/chemen pwosesis ke Windhawk ap enjekte nan, menm si yo nan lis esklizyon an."
       inclusionWithoutExclusionNotice: "Lis enklizyon pwosesis la pa gen okenn efè ak yon lis esklizyon pwosesis vid."
       inclusionWithoutTotalExclusionNotice: "Si ou te vle di pou eksli tout pwosesis men sa yo, ou ka mete \"*\" nan lis esklizyon pwosesis la."
-      processListPlaceholder: "Non/chemen pwosseis, youn pou chak liy, pou egzanp:"
+      processListPlaceholder: "Non/chemen pwosesis, youn pou chak liy, pou egzanp:"
       invalidCharactersWarning: "Lis pwosesis la genyen karaktè ki envalab ki pral efase: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
@@ -342,8 +342,8 @@ app:
   installModal:
     title: "Enstale {{mod}}"
     warningTitle: "Kontinye ak prekosyon"
-    warningDescription: "Mod malveyan ka domaj òdinatè ou oswa vyole entimite ou. Sèlman enstale mod sòti òte ki ou konfye."
-    modAuthor: "Òte mod"
+    warningDescription: "Mod malveyan ka domaj òdinatè ou oswa vyole entimite ou. Sèlman enstale mod sòti otè ki ou konfye."
+    modAuthor: "Otè mod"
     homepage: "Paj dakèy"
     github: "GitHub"
     twitter: "X (Twitter)"
@@ -356,7 +356,7 @@ app:
   devModeAction:
     message: "Kreye ak modifye yon mod bezwen kèk konesans nan devlopman C/C++ pou Windows. Si w pa sèten ki sa vle di, petèt opsyon sa yo pa pou ou."
     hideOptionsCheckbox: "Kache tout opsyon ki gen rapò ak devlopman"
-    hideOptionsButton: "Kache opyson yo"
+    hideOptionsButton: "Kache opsyon yo"
     beginCodingButton: "Kòmanse kodaj"
     cancelButton: "Anile"
   safeMode:
