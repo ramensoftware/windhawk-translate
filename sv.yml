@@ -37,7 +37,7 @@ tray:
   TRAY_OPEN: "Öppna &Windhawk"
   TRAY_LOADED_MODS: "Laddade &moddar"
   TRAY_TOOLKIT: "&Verktygslåda"
-  TRAY_EXIT: "A&vsluta"
+  TRAY_EXIT: "&Avsluta"
   EXITDLG_TITLE: "Avsluta Windhawk"
   EXITDLG_CONTENT: "Windhawk kommer att avslutas och alla moddar avladdas. Windhawk startar automatiskt vid nästa systemstart, om inte alternativet nedan är markerat."
   EXITDLG_CHECKBOX_AUTOSTART: "Starta inte automatiskt vid nästa systemstart"
