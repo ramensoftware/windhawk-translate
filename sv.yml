@@ -217,7 +217,7 @@ app:
       expandLines_other: "Expandera {{count}} dolda rader"
   modSearch:
     placeholder: "Sök efter moddar..."
-    placeholderWithHint: "Sök efter moddar... tryck '-' för att fokusera"
+    placeholderWithHint: "Sök efter moddar... tryck 'Skift' + '7' för att fokusera"
     noResults: "Inga moddar matchar de aktuella filtren"
   home:
     browse: "Bläddra bland moddar"
