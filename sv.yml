@@ -112,7 +112,7 @@ app:
     removeConfirm: "Är du säker på att du vill ta bort den här modden?"
     removeConfirmOk: "Ta bort mod"
     removeConfirmCancel: "Avbryt"
-    donate: ~
+    donate: "Donera"
     notCompiled: "Modden behöver kompileras"
     editedLocally: "Modden har redigerats lokalt"
     noDescription: "(ingen beskrivning)"
