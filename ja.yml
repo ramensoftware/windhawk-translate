@@ -352,7 +352,7 @@ app:
     acceptButton: "リスクを受け入れてインストール"
     cancelButton: "キャンセル"
   createNewModButton:
-    title: "新規 Mod を作成"
+    title: "新規に Mod を作成"
   devModeAction:
     message: "Mod の作成と変更には、Windows の C/C++ 開発スキルが必要です。それがよくわからない人は、このオプションは不向きかもしれません。"
     hideOptionsCheckbox: "開発関連のオプションをすべて隠す"
@@ -407,7 +407,7 @@ app:
     links:
       news: "ニュース"
       windhawkNews: "Windhawk ニュース - Ramen Software"
-      windhawkChangelog: "Windhawk 更新履歴"
+      windhawkChangelog: "Windhawk の更新履歴"
       community: "コミュニティ"
       discord: "Discord"
       windhawkDiscussions: "Windhawk - GitHub Discussions"
@@ -424,4 +424,4 @@ app:
       whatsNew: "新着情報"
       downloadButton: "ダウンロード"
     footer:
-      copyright: "Copyright"
+      copyright: "著作権"
