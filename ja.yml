@@ -352,7 +352,7 @@ app:
     acceptButton: "リスクを受け入れてインストール"
     cancelButton: "キャンセル"
   createNewModButton:
-    title: "新規で Mod を作成"
+    title: "新規に Mod を作成"
   devModeAction:
     message: "Mod の作成と変更には、Windows の C/C++ 開発スキルが必要です。それがよくわからない人は、このオプションは不向きかもしれません。"
     hideOptionsCheckbox: "開発関連のオプションをすべて隠す"
