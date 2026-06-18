@@ -306,7 +306,7 @@ app:
       titleInclusion: "Proses daxil etmə siyahısı"
       descriptionInclusion: "İstisna siyahısında olsalar belə, Windhawk-ın inyeksiya edəcəyi proses adları/yolları siyahısı."
       inclusionWithoutExclusionNotice: "Boş proses istisna siyahısı olduqda proses daxil etmə siyahısının heç bir təsiri yoxdur."
-      inclusionWithoutTotalExclusionNotice: "Bunlardan başqa bütün prosesləri istisna etmək istəyirsinizsə, proses istisna siyahısında "*" təyin edə bilərsiniz."
+      inclusionWithoutTotalExclusionNotice: "Bunlardan başqa bütün prosesləri istisna etmək istəyirsinizsə, proses istisna siyahısında \"*\" təyin edə bilərsiniz."
       processListPlaceholder: "Proses adları/yolları, məsələn, hər sətirdə biri:"
       invalidCharactersWarning: "Fayl yolunda və ya adında yanlış simvollar var, onlar silinəcək: {{invalidCharacters}}"
   about:
