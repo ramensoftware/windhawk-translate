@@ -261,7 +261,7 @@ app:
       description: "Windhawk üçün üstünlük verdiyiniz ekran dilini seçin."
       contribute: "<0>Yeni tərcüməyə töhfə verin</0>."
       credits: "Azərbaycanca tərcümə: <0>Fatih Fırıncı</0>."
-      creditsLink: "mailto:fatihfirinci@gmail.com"
+      creditsLink: "mailto:veaxproject@gmail.com"
     updates:
       title: "Yeniləmələri yoxla"
       description: "Windhawk və quraşdırılmış modların yeni versiyalarını müntəzəm olaraq yoxla."
