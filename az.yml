@@ -260,7 +260,7 @@ app:
       title: "Dil"
       description: "Windhawk üçün üstünlük verdiyiniz ekran dilini seçin."
       contribute: "<0>Yeni tərcüməyə töhfə verin</0>."
-      credits: "Azərbaycanca tərcümə: <0>Fatih Fırıncı</0>."
+      credits: "Azərbaycanca tərcümə: <0>Veax Project</0>."
       creditsLink: "mailto:veaxproject@gmail.com"
     updates:
       title: "Yeniləmələri yoxla"
