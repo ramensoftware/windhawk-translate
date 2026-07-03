@@ -74,8 +74,8 @@ tray:
   TOOLKITDLG_BUTTON_CLOSE: "&Fechar toolkit"
   SAFE_MODE_TITLE: "Reiniciar no modo de segurança"
   SAFE_MODE_TEXT: "O Windhawk será reiniciado com todas as funcionalidades de injeção de código desativada."
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  SAFE_MODE_DETECTED_TITLE: "Modo de segurança"
+  SAFE_MODE_DETECTED_TEXT: "O Windows está executando em modo de segurança. Gostaria de ativar o modo de segurança no Windhawk? Todas as funcionalidades de injeção de código serão desativadas."
 app:
   general:
     loading: "Carregando..."
@@ -101,7 +101,7 @@ app:
     installed: "Instalado"
     details: "Detalhes"
     update: "Atualizar"
-    downgrade: ~
+    downgrade: "Reverter"
     install: "Instalar"
     compile: "Compilar"
     disable: "Desabilitar"
@@ -112,26 +112,26 @@ app:
     removeConfirm: "Tem certeza de que deseja remover este Mod?"
     removeConfirmOk: "Remover Mod"
     removeConfirmCancel: "Cancelar"
-    donate: ~
+    donate: "Doar"
     notCompiled: "O Mod precisa ser compilado"
     editedLocally: "O Mod foi editado localmente"
     noDescription: "(sem descrição)"
     users_one: "{{formattedCount}} usuário"
     users_other: "{{formattedCount}} usuários"
     users_many: "{{formattedCount}} usuários"
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+    notRated: "Este mod ainda não foi avaliado"
+    loggingEnabledInAdvancedTab: "O registo de depuração está ativado na aba Avançado do mod"
   modDetails:
     header:
       installedVersion: "Versão instalada"
       latestVersion: "Última versão"
       loading: "Carregando..."
       loadingFailed: "Falha ao Carregar"
-      otherVersions: ~
-      selectedVersion: ~
+      otherVersions: "Outras versões"
+      selectedVersion: "Selecionado: {{version}}"
       modId: "Identificador de Mod"
       modVersion: "Versão do Mod"
-      lastUpdated: ~
+      lastUpdated: "Última atualização"
       modAuthor:
         title: "Autor do Mod"
         homepage: "Site Pessoal"
@@ -144,14 +144,14 @@ app:
         tooltip:
           targets: "Processos alvo"
           excluded: "Excluído"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "Foram definidas listas personalizadas de inclusão/exclusão de processos para este mod na aba Avançado"
+          patternsMatchCriticalSystemProcessesNote: "Os padrões da lista de inclusão são considerados para processos críticos do sistema para este mod (definido na aba Avançado)"
       updateNotNeeded: "A versão instalada é idêntica à versão selecionada"
     version:
-      preRelease: ~
-      select: ~
-      cancel: ~
-      chooseVersion: ~
+      preRelease: "pré-lançamento"
+      select: "Selecionar"
+      cancel: "Cancelar"
+      chooseVersion: "Escolher uma versão…"
     details:
       title: "Detalhes"
       noData: "Faltam detalhes do Mod."
@@ -162,17 +162,17 @@ app:
       sampleValue: "Valor da amostra"
       arrayItemAdd: "Adicionar novo item"
       arrayItemRemove: "Remover item"
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
-      readOnlyPreview: ~
+      yamlMode: "Modo textual"
+      uiMode: "Modo visual"
+      yamlInvalid: "Formato YAML inválido"
+      yamlParseError: "Erro de análise YAML: {{error}}"
+      yamlInvalidKey: "Chave inválida em YAML: '{{key}}' não é uma definição válida"
+      yamlTypeMismatch: "Incompatibilidade de tipos para '{{key}}': esperado {{expected}}, mas obtido {{actual}}"
+      unsavedChangesTitle: "Definições não guardadas"
+      unsavedChangesMessage: "Tem alterações nas definições que não foram guardadas. Tem a certeza de que pretende descartá-las?"
+      unsavedChangesLeave: "Descartar alterações"
+      unsavedChangesStay: "Continuar a editar"
+      readOnlyPreview: "Esta é uma pré-visualização das definições do mod. Instale o mod para configurar as definições."
     code:
       title: "Código fonte"
       noData: "A fonte do Mod está ausente."
@@ -202,14 +202,14 @@ app:
         titleExclusion: "Lista de exclusão de processo personalizada"
         descriptionExclusion: "Uma lista personalizada de nomes/caminhos de arquivos executáveis adicionais que o Mod excluirá do direcionamento. A lista é adicionada à lista de exclusão que o autor do Mod definiu para determinar quais processos visar. Para cada processo, o Mod é carregado se o caminho do arquivo executável corresponder a uma das entradas de inclusão e não corresponder a nenhuma entrada de exclusão."
         processListPlaceholder: "Nomes/caminhos de processo, um por linha, por exemplo:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "A lista de processos contém caracteres inválidos que serão removidos: {{invalidCharacters}}"
         saveButton: "Salvar"
       includeExcludeCustomOnly:
         title: "Ignorar listas de inclusão/exclusão de mods"
         description: "Ignora as listas de inclusão/exclusão de processos do mod e usar apenas as listas personalizadas acima."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Considerar padrões da lista de inclusão para processos críticos do sistema"
+        description: "Por predefinição, o Windhawk só carrega mods em processos críticos do sistema se o processo estiver incluído sem padrões, por exemplo, <0>critical.exe</0>, e não <0>*</0> ou <0>*.exe</0>. Para mais detalhes sobre processos críticos do sistema, consulte <1>a documentação</1>."
     changes:
       title: "Últimas alterações da versão"
       noData: "A versão instalada é idêntica à versão selecionada."
@@ -219,24 +219,24 @@ app:
       expandLines_many: "Expandir {{count}} linhas ocultas"
   modSearch:
     placeholder: "Pesquisar Mods..."
-    placeholderWithHint: ~
-    noResults: ~
+    placeholderWithHint: "Pesquisar mods… escreva '/' para pesquisar"
+    noResults: "Nenhum mod corresponde aos filtros atuais"
   home:
     browse: "Pesquisar Mods"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "Mods ativados"
+      disabled: "Mods desativados"
+      updateAvailable: "Mods com atualização disponível"
+      clearFilters: "Limpar filtros"
     installedMods:
       title: "Mods Instalados"
       noMods: "Nenhum mod instalado"
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "Nome"
+        description: "Descrição"
+        author: "Autor"
+        version: "Versão"
+        status: "Estado"
     featuredMods:
       title: "Mods em Destaque"
       noMods: "Não há Mods em destaque que ainda não foram instalados"
@@ -250,13 +250,13 @@ app:
       lastUpdated: "Recem Atualizados"
       alphabeticalOrder: "Ordem Alfabetica"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "Estado da instalação"
+      installed: "Instalado"
+      notInstalled: "Não instalado"
+      author: "Autor do mod"
+      process: "Processo alvo"
+      showMore: "Mostrar mais…"
+      clearFilters: "Limpar filtros"
   settings:
     language:
       title: "Idioma"
@@ -275,8 +275,8 @@ app:
       title: "Ocultar ícone da bandeja"
       description: "Você terá que desabilitar esta opção para sair do Windhawk."
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "Compilar sempre os mods localmente"
+      description:  "Por predefinição, o Windhawk transfere binários de mods pré-compilados do servidor Windhawk, quando disponíveis. Ative esta opção para compilar sempre os mods localmente."
     requireElevation:
       title: "Exigir elevação UAC para executar Windhawk"
       description: "O Windhawk requer direitos de administrador, mas para um computador de usuário único, obter o prompt do UAC toda vez pode ser irritante, então o Windhawk o ignora. Ative esta opção para exigir a elevação do UAC para executar o Windhawk."
@@ -301,16 +301,16 @@ app:
     processList:
       titleExclusion: "Lista de exclusão de processo"
       descriptionExclusion: "Uma lista de nomes/caminhos de processos nos quais o Windhawk não injetará. Pode ser útil em casos que o Windhawk não é compatível com um programa específico. Observe que adicionar um processo a esta lista não apenas impedirá Windhawk de personalizá-lo, mas também impedirá Windhawk de interceptar processos filho criados por esse processo. Isso fará com que o Windhawk carregue os mods com um pequeno atraso nesses casos."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Para mais detalhes sobre a exclusão de processos e sobre as listas integradas, consulte <0>a documentação</0>."
+      excludeCriticalProcesses: "Excluir processos críticos do sistema"
+      excludeIncompatiblePrograms: "Excluir programas incompatíveis conhecidos"
+      excludeGames: "Excluir jogos conhecidos"
       titleInclusion: "Lista de inclusão de processos"
       descriptionInclusion: "Uma lista de nomes/caminhos de processos nos quais o Windhawk injetará, mesmo que estejam na lista de exclusão."
       inclusionWithoutExclusionNotice: "A lista de inclusão de processo não tem efeito com uma lista de exclusão de processo vazia."
       inclusionWithoutTotalExclusionNotice: "Se você pretende excluir todos os processos exceto estes, você pode definir \"*\" na lista de exclusão de processos."
       processListPlaceholder: "Nomes/caminhos de processo, um por linha, por exemplo:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "A lista de processos contém caracteres inválidos que serão removidos: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -319,18 +319,18 @@ app:
     update:
       title: "Nova atualização disponível"
       subtitle: "Atualize o Windhawk para obter novos recursos e correções de bugs"
-      changelogButton: ~
-      updateButton: ~
+      changelogButton: "Histórico de alterações"
+      updateButton: "Atualizar"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Atualizando Windhawk"
+        downloading: "Baixando atualização..."
+        installing: "Instalando atualização..."
+        installingNote: "Windhawk vai reiniciar automaticamente quando a atualização estiver completa."
+        failed: "Falha na atualização"
+        cancel: "Cancelar"
     changelog:
-      title: ~
-      close: ~
+      title: "Novidades no Windhawk"
+      close: "Fechar"
     links:
       title: "Links"
       homepage: "Site Oficial"
@@ -391,39 +391,39 @@ app:
       contributeTranslation: "Contribua com uma tradução"
     home:
       tagline: "O suíte de personalização para programas do Windows"
-      download: ~
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      download: "Baixar"
+      getInvolved: "Colabore"
+      joinDiscord: "Junte-se a comunidade Windhawk no Discord"
+      discussWindhawk: "Fale sobre o Windhawk no GitHub Discussions"
+      discussMods: "Fale sobre os mods do Windhawk no GitHub Discussions"
+      browseLinks: "Procure outros links úteis"
+      highlights: "Destaques"
+      robust: "Robusto"
+      robustDescription: "A estabilidade e o desempenho são prioridades muito importantes para o Windhawk. Foi projetado para executar sempre em segundo plano, sem causar impacto percetível no sistema."
+      simple: "Simples"
+      simpleDescription: "Não é preciso ser um especialista para utilizar o Windhawk. Mods sofisticados podem ser instalados com apenas alguns cliques e personalizados através de opções fáceis de utilizar."
+      transparent: "Transparente"
+      transparentDescription: "Os mods que o Windhawk oferece não são caixas-pretas. Cada mod vem em forma de código-fonte, que pode ser avaliado para garantir que faça exatamente o que diz."
     modDetails:
-      getWindhawk: ~
+      getWindhawk: "Obtenha o Windhawk para instalar este mod"
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "Notícias"
+      windhawkNews: "Notícias do Windhawk — Ramen Software"
+      windhawkChangelog: "Histórico de alterações do Windhawk"
+      community: "Comunidade"
+      discord: "Discord"
+      windhawkDiscussions: "Windhawk — GitHub Discussions"
+      modsDiscussions: "Mods do Windhawk — GitHub Discussions"
+      documentation: "Documentação"
+      creatingNewMod: "Criar um novo mod"
+      otherTopics: "Outros tópicos"
+      feedback: "Feedback"
+      reportIssue: "Reportar um problema"
+      contactRamenSoftware: "Contactar a Ramen Software"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
-      downloadButton: ~
+      title: "Atualizar o Windhawk"
+      newVersionAvailable: "Está disponível uma nova versão do Windhawk"
+      whatsNew: "Novidades"
+      downloadButton: "Baixar"
     footer:
-      copyright: ~
+      copyright: "Direitos de autor"
