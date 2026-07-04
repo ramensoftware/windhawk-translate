@@ -119,8 +119,8 @@ app:
     users_one: "{{formattedCount}} usuário"
     users_other: "{{formattedCount}} usuários"
     users_many: "{{formattedCount}} usuários"
-    notRated: "Este mod ainda não foi avaliado"
-    loggingEnabledInAdvancedTab: "O registo de depuração está ativado na aba Avançado do mod"
+    notRated: "Este Mod ainda não foi avaliado"
+    loggingEnabledInAdvancedTab: "O registro de depuração está ativado na aba Avançado do Mod"
   modDetails:
     header:
       installedVersion: "Versão instalada"
@@ -168,11 +168,11 @@ app:
       yamlParseError: "Erro de análise YAML: {{error}}"
       yamlInvalidKey: "Chave inválida em YAML: '{{key}}' não é uma definição válida"
       yamlTypeMismatch: "Incompatibilidade de tipos para '{{key}}': esperado {{expected}}, mas obtido {{actual}}"
-      unsavedChangesTitle: "Definições não guardadas"
-      unsavedChangesMessage: "Tem alterações nas definições que não foram guardadas. Tem a certeza de que pretende descartá-las?"
+      unsavedChangesTitle: "Configurações não salvas"
+      unsavedChangesMessage: "Há alterações nas configurações que não foram salvas. Tem certeza de que deseja descartá-las?"
       unsavedChangesLeave: "Descartar alterações"
-      unsavedChangesStay: "Continuar a editar"
-      readOnlyPreview: "Esta é uma pré-visualização das definições do mod. Instale o mod para configurar as definições."
+      unsavedChangesStay: "Continuar editando"
+      readOnlyPreview: "Esta é uma prévia das configurações do Mod. Instale o Mod para configurar as opções."
     code:
       title: "Código fonte"
       noData: "A fonte do Mod está ausente."
@@ -209,7 +209,7 @@ app:
         description: "Ignora as listas de inclusão/exclusão de processos do mod e usar apenas as listas personalizadas acima."
       patternsMatchCriticalSystemProcesses:
         title: "Considerar padrões da lista de inclusão para processos críticos do sistema"
-        description: "Por predefinição, o Windhawk só carrega mods em processos críticos do sistema se o processo estiver incluído sem padrões, por exemplo, <0>critical.exe</0>, e não <0>*</0> ou <0>*.exe</0>. Para mais detalhes sobre processos críticos do sistema, consulte <1>a documentação</1>."
+        description: "Por padrão, o Windhawk só carrega mods em processos críticos do sistema se o processo estiver incluído sem padrões, por exemplo, <0>critical.exe</0>, e não <0>*</0> ou <0>*.exe</0>. Para mais detalhes sobre processos críticos do sistema, consulte <1>a documentação</1>."
     changes:
       title: "Últimas alterações da versão"
       noData: "A versão instalada é idêntica à versão selecionada."
@@ -219,7 +219,7 @@ app:
       expandLines_many: "Expandir {{count}} linhas ocultas"
   modSearch:
     placeholder: "Pesquisar Mods..."
-    placeholderWithHint: "Pesquisar mods… escreva '/' para pesquisar"
+    placeholderWithHint: "Pesquisar Mods... escreva '/' para pesquisar"
     noResults: "Nenhum mod corresponde aos filtros atuais"
   home:
     browse: "Pesquisar Mods"
@@ -276,7 +276,7 @@ app:
       description: "Você terá que desabilitar esta opção para sair do Windhawk."
     alwaysCompileModsLocally:
       title: "Compilar sempre os mods localmente"
-      description:  "Por predefinição, o Windhawk transfere binários de mods pré-compilados do servidor Windhawk, quando disponíveis. Ative esta opção para compilar sempre os mods localmente."
+      description: "Por padrão, o Windhawk transfere binários de mods pré-compilados do servidor Windhawk, quando disponíveis. Ative esta opção para compilar sempre os mods localmente."
     requireElevation:
       title: "Exigir elevação UAC para executar Windhawk"
       description: "O Windhawk requer direitos de administrador, mas para um computador de usuário único, obter o prompt do UAC toda vez pode ser irritante, então o Windhawk o ignora. Ative esta opção para exigir a elevação do UAC para executar o Windhawk."
@@ -393,13 +393,13 @@ app:
       tagline: "O suíte de personalização para programas do Windows"
       download: "Baixar"
       getInvolved: "Colabore"
-      joinDiscord: "Junte-se a comunidade Windhawk no Discord"
+      joinDiscord: "Junte-se à comunidade Windhawk no Discord"
       discussWindhawk: "Fale sobre o Windhawk no GitHub Discussions"
       discussMods: "Fale sobre os mods do Windhawk no GitHub Discussions"
       browseLinks: "Procure outros links úteis"
       highlights: "Destaques"
       robust: "Robusto"
-      robustDescription: "A estabilidade e o desempenho são prioridades muito importantes para o Windhawk. Foi projetado para executar sempre em segundo plano, sem causar impacto percetível no sistema."
+      robustDescription: "A estabilidade e o desempenho são prioridades muito importantes para o Windhawk. Foi projetado para executar sempre em segundo plano, sem causar impacto perceptível no sistema."
       simple: "Simples"
       simpleDescription: "Não é preciso ser um especialista para utilizar o Windhawk. Mods sofisticados podem ser instalados com apenas alguns cliques e personalizados através de opções fáceis de utilizar."
       transparent: "Transparente"
