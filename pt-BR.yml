@@ -151,7 +151,7 @@ app:
       preRelease: "pré-lançamento"
       select: "Selecionar"
       cancel: "Cancelar"
-      chooseVersion: "Escolher uma versão…"
+      chooseVersion: "Escolher uma versão..."
     details:
       title: "Detalhes"
       noData: "Faltam detalhes do Mod."
@@ -255,7 +255,7 @@ app:
       notInstalled: "Não instalado"
       author: "Autor do mod"
       process: "Processo alvo"
-      showMore: "Mostrar mais…"
+      showMore: "Mostrar mais..."
       clearFilters: "Limpar filtros"
   settings:
     language:
