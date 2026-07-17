@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (nesesè)"
   SECTION_STARTMENU: "Rakoursi Meni Kòmanse"
   SECTION_DESKTOP: "Rakoursi Òdinatè"
+  SECTION_DEVTOOLS: ~
   INSTALLER_RUNNING: "$(^Name) Konfigirasyon ap toujou kouri"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) pa kapab enstale nan yon katab ki pa vid"
   OPEN_PROGRAM: "&Louvri $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Yon nouvo vèsyon Windhawk disponib, ak %d mod ka mete ajou"
   NOTIFICATION_UPDATE_MOD: "Youn Windhawk mod ka mete ajou"
   NOTIFICATION_UPDATE_MODS: "%d Windhawk mod ka mete ajou"
-  TRAYICON_TOOLTIP_UPDATE: "Yon nouvo vèsyon disponib"
   TASKDLG_TITLE_LOADED_MODS: "Chaje mod yo"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod devwa an pwogrè"
   TASKDLG_BUTTON_OPEN_APP: "Louvri &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Kole"
     selectAll: "Chwazi tout"
     loggingEnabled: "Anrejistreman debogaj se aktif"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Lakay"
     explore: "Esplore"
     settings: "Konfigurasyon"
     about: "Konsènan"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Aktyalizasyon disponib"
     installed: "Enstale"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "Jete Chanjman Yo"
       unsavedChangesStay: "Kenbe Modifye"
       readOnlyPreview: "Sa a se yon apèsi paramèt mod yo. Enstale mod la pou konfigire paramèt."
+      expand: ~
+      collapse: ~
     code:
       title: "Kòd Sous"
       noData: "Kòd sous ap mankan."
@@ -353,6 +365,18 @@ app:
     cancelButton: "Anile"
   createNewModButton:
     title: "Kreye yon Nouvo Mod"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Kreye ak modifye yon mod bezwen kèk konesans nan devlopman C/C++ pou Windows. Si w pa sèten ki sa vle di, petèt opsyon sa yo pa pou ou."
     hideOptionsCheckbox: "Kache tout opsyon ki gen rapò ak devlopman"

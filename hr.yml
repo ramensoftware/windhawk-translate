@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (obavezno)"
   SECTION_STARTMENU: "Prečaci u izborniku Start"
   SECTION_DESKTOP: "Prečac na radnu površinu"
+  SECTION_DEVTOOLS: "Razvojni alati"
   INSTALLER_RUNNING: "Instalacijski program $(^Name) je već pokrenut"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) ne može se instalirati u mapi koja nije prazna"
   OPEN_PROGRAM: "&Otvori $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Dostupna je nova verzija Windhawka, a može se ažurirati %d dodataka"
   NOTIFICATION_UPDATE_MOD: "Dostupan je novi Windhawk dodatak za ažuriranje"
   NOTIFICATION_UPDATE_MODS: "Dostupno je %d Windhawk dodataka za ažuriranje"
-  TRAYICON_TOOLTIP_UPDATE: "Dostupna je nova verzija"
   TASKDLG_TITLE_LOADED_MODS: "Učitani dodaci"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Zadaci dodataka u tijeku"
   TASKDLG_BUTTON_OPEN_APP: "Otvori &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Zalijepi"
     selectAll: "Odaberi sve"
     loggingEnabled: ~
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Početna"
     explore: "Istraži"
     settings: "Postavke"
     about: "O programu"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Dostupno ažuriranje"
     installed: "Instalirano"
@@ -173,6 +183,8 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "Izvorni kôd"
       noData: "Nedostaje izvorni kôd dodatka."
@@ -355,6 +367,18 @@ app:
     cancelButton: "Odustani"
   createNewModButton:
     title: "Kreiraj novi dodatak"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Kreiranje i izmjena dodataka zahtijeva poznavanje C/C++ razvoja za Windows. Ako niste sigurni što to znači, možda ove opcije nisu za vas."
     hideOptionsCheckbox: "Sakrij sve opcije za razvoj"

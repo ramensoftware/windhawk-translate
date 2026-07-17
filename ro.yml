@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (necesar)"
   SECTION_STARTMENU: "Comenzi rapide în meniul de start"
   SECTION_DESKTOP: "Comandă rapidă pe Desktop"
+  SECTION_DEVTOOLS: "Instrumente de dezvoltare"
   INSTALLER_RUNNING: "Instalatorul $(^Name) rulează deja"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) nu poate fi instalat într-un folder care nu este gol"
   OPEN_PROGRAM: "Deschide $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "O nouă versiune de Windhawk este disponibilă și %d (de) moduri pot fi actualizate"
   NOTIFICATION_UPDATE_MOD: "Un mod Windhawk poate fi actualizat"
   NOTIFICATION_UPDATE_MODS: "%d (de) moduri Windhawk pot fi actualizate"
-  TRAYICON_TOOLTIP_UPDATE: "O nouă versiune este disponibilă"
   TASKDLG_TITLE_LOADED_MODS: "Moduri încărcate"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Sarcini ale unui mod în progres"
   TASKDLG_BUTTON_OPEN_APP: "Deschide &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Lipire"
     selectAll: "Selectează tot"
     loggingEnabled: "Jurnalele pentru depanare sunt activate"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Acasă"
     explore: "Explorează"
     settings: "Setări"
     about: "Despre"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Actualizare disponibilă"
     installed: "Instalat"
@@ -173,6 +183,8 @@ app:
       unsavedChangesLeave: "Renunță la modificări"
       unsavedChangesStay: "Continuă editarea"
       readOnlyPreview: "Aceasta este o previzualizare a setărilor modului. Instalează modul pentru a-i configura setările."
+      expand: ~
+      collapse: ~
     code:
       title: "Cod sursă"
       noData: "Codul sursă lipsește."
@@ -355,6 +367,18 @@ app:
     cancelButton: "Anulare"
   createNewModButton:
     title: "Creează un mod"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Crearea și modificarea modurilor necesită niște cunoștințe de dezvoltare Windows C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
     hideOptionsCheckbox: "Ascunde toate opțiunile relevante dezvoltării"

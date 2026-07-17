@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (προτείνεται)"
   SECTION_STARTMENU: "Συντομεύσεις μενού Έναρξης"
   SECTION_DESKTOP: "Συντόμευση επιφάνειας εργασίας"
+  SECTION_DEVTOOLS: "Εργαλεία ανάπτυξης"
   INSTALLER_RUNNING: "$(^Name) Η εγκατάσταση εκτελείται ήδη"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) δεν μπορεί να εγκατασταθεί σε μη κενό φάκελο"
   OPEN_PROGRAM: "&Άνοιγμα $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Μια νέα έκδοση του Windhawk είναι διαθέσιμη και %d mods μπορούν να ενημερωθούν"
   NOTIFICATION_UPDATE_MOD: "Ένα mod του Windhawk μπορεί να ενημερωθεί"
   NOTIFICATION_UPDATE_MODS: "%d mods του Windhawk μπορούν να ενημερωθούν"
-  TRAYICON_TOOLTIP_UPDATE: "Μια νέα έκδοση είναι διαθέσιμη"
   TASKDLG_TITLE_LOADED_MODS: "Φορτωμένα mods"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Εργασίες Mod σε εξέλιξη"
   TASKDLG_BUTTON_OPEN_APP: "Άνοιγμα του &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Επικόλληση"
     selectAll: "Επιλογή όλων"
     loggingEnabled: ~
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Κεντρική"
     explore: "Περιήγηση"
     settings: "Ρυθμίσεις"
     about: "Σχετικά"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Διαθέσιμη ενημέρωση"
     installed: "Εγκατεστημένο"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "Πηγαίος κώδικας"
       noData: "Η πηγή mod λείπει."
@@ -353,6 +365,18 @@ app:
     cancelButton: "Ακύρωση"
   createNewModButton:
     title: "Δημιουργήστε ένα νέο Mod"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Η δημιουργία και η τροποποίηση mods απαιτεί κάποια γνώση C/C++ ανάπτυξης για Windows. Εάν δεν είστε σίγουροι τι σημαίνει αυτό, ίσως αυτές οι επιλογές δεν είναι για εσάς."
     hideOptionsCheckbox: "Απόκρυψη όλων των επιλογών που σχετίζονται με την ανάπτυξη"

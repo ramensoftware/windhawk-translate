@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (påkrevd)"
   SECTION_STARTMENU: "Snarveier på Start-menyen"
   SECTION_DESKTOP: "Skrivebordssnarvei"
+  SECTION_DEVTOOLS: ~
   INSTALLER_RUNNING: "Installasjonsprogrammet for $(^Name) kjører allerede"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) kan ikke installeres i en mappe som ikke er tom"
   OPEN_PROGRAM: "&Åpne $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "En ny versjon av Windhawk er tilgjengelig, og %d mods kan oppdateres"
   NOTIFICATION_UPDATE_MOD: "Én Windhawk-mod kan oppdateres"
   NOTIFICATION_UPDATE_MODS: "%d Windhawk-mods kan oppdateres"
-  TRAYICON_TOOLTIP_UPDATE: "En ny versjon er tilgjengelig"
   TASKDLG_TITLE_LOADED_MODS: "Innlastede mods"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Pågående mod-oppgaver"
   TASKDLG_BUTTON_OPEN_APP: "Åpne &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Lim inn"
     selectAll: "Merk alt"
     loggingEnabled: "Feilsøkingslogging er aktivert"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Hjem"
     explore: "Utforsk"
     settings: "Innstillinger"
     about: "Om"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Oppdatering tilgjengelig"
     installed: "Installert"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "Forkast endringer"
       unsavedChangesStay: "Fortsett å redigere"
       readOnlyPreview: "Dette er en forhåndsvisning av moddens innstillinger. Installer modden for å konfigurere innstillingene."
+      expand: ~
+      collapse: ~
     code:
       title: "Kildekode"
       noData: "Mod-kildekoden mangler."
@@ -353,6 +365,18 @@ app:
     cancelButton: "Avbryt"
   createNewModButton:
     title: "Opprett en ny mod"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Å opprette og endre mods krever noe kunnskap om C/C++-utvikling for Windows. Hvis du er usikker på hva det betyr, er kanskje ikke disse alternativene noe for deg."
     hideOptionsCheckbox: "Skjul alle utviklingsrelaterte alternativer"

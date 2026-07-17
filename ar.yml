@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (مطلوب)"
   SECTION_STARTMENU: "اختصارات قائمة ابدأ"
   SECTION_DESKTOP: "اختصار سطح المكتب"
+  SECTION_DEVTOOLS: "أدوات التطوير"
   INSTALLER_RUNNING: "إعداد $(^Name) يعمل بالفعل"
   NON_EMPTY_FOLDER_ERROR: "لا يمكن تثبيت $(^Name) في مجلد غير فارغ"
   OPEN_PROGRAM: "&افتح $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "يتوفر إصدار جديد من Windhawk، ويمكن تحديث %d وحدات"
   NOTIFICATION_UPDATE_MOD: "يمكن تحديث وحدة واحدة من Windhawk"
   NOTIFICATION_UPDATE_MODS: "يمكن تحديث %d وحدات من Windhawk"
-  TRAYICON_TOOLTIP_UPDATE: "يتوفر إصدار جديد"
   TASKDLG_TITLE_LOADED_MODS: "الوحدات المحملة"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "مهام الوحدات قيد التنفيذ"
   TASKDLG_BUTTON_OPEN_APP: "&افتح Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "لصق"
     selectAll: "تحديد الكل"
     loggingEnabled: ~
+  errors:
+    commandFailed: ~
   appHeader:
     home: "الرئيسية"
     explore: "استكشاف"
     settings: "الإعدادات"
     about: "حول"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "تحديث متاح"
     installed: "مثبت"
@@ -176,6 +186,8 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "كود المصدر"
       noData: "مصدر المود مفقود."
@@ -361,6 +373,18 @@ app:
     cancelButton: "إلغاء"
   createNewModButton:
     title: "إنشاء مود جديد"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "يتطلب إنشاء وتعديل المودات بعض المعرفة بتطوير C/C++ لنظام ويندوز. إذا لم تكن متأكدًا مما يعنيه ذلك، ربما لا تكون هذه الخيارات مناسبة لك."
     hideOptionsCheckbox: "إخفاء جميع الخيارات المتعلقة بالتطوير"

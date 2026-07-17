@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (จำเป็น)"
   SECTION_STARTMENU: "ทางลัดในเมนูเริ่ม"
   SECTION_DESKTOP: "ทางลัดบนเดสก์ท็อป"
+  SECTION_DEVTOOLS: "เครื่องมือพัฒนา"
   INSTALLER_RUNNING: "การติดตั้ง $(^Name) กำลังทำงานอยู่แล้ว"
   NON_EMPTY_FOLDER_ERROR: "ไม่สามารถติดตั้ง $(^Name) ในโฟลเดอร์ที่ไม่ว่างเปล่าได้"
   OPEN_PROGRAM: "&เปิด $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "เวอร์ชั่นใหม่กว่าของ Windhawk พร้อมใช้งานแล้ว และมีม็อด %d ม็อดที่สามารถอัปเดตได้"
   NOTIFICATION_UPDATE_MOD: "มีม็อด Windhawk หนึ่งม็อดที่สามารถอัปเดตได้"
   NOTIFICATION_UPDATE_MODS: "มีม็อด Windhawk %d ม็อดที่สามารถอัปเดตได้"
-  TRAYICON_TOOLTIP_UPDATE: "เวอร์ชั่นใหม่กว่าพร้อมใช้งานแล้ว"
   TASKDLG_TITLE_LOADED_MODS: "&ม็อดที่โหลดเอาไว้"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "งานของม็อดกำลังดำเนินการอยู่"
   TASKDLG_BUTTON_OPEN_APP: "เปิด &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "วาง"
     selectAll: "เลือกทั้งหมด"
     loggingEnabled: ~
+  errors:
+    commandFailed: ~
   appHeader:
     home: "หน้าหลัก"
     explore: "สำรวจ"
     settings: "การตั้งค่า"
     about: "เกี่ยวกับ"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "อัปเดตพร้อมให้ใช้งาน"
     installed: "ติดตั้งแล้ว"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "โค้ดต้นฉบับ"
       noData: "ไม่มีโค้ดต้นฉบับของม็อดนี้"
@@ -353,6 +365,18 @@ app:
     cancelButton: "ยกเลิก"
   createNewModButton:
     title: "สร้างม็อดใหม่"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "การสร้างหรือแก้ไขม็อดนั้นต้องมีความรู้เกี่ยวกับการพัฒนา C/C++ สำหรับ Windows อยู่บ้าง หากคุณไม่เข้าใจว่าตามนี้หมายถึงอะไร บางทีตัวเลือกเหล่านี้อาจไม่เหมาะกับคุณ"
     hideOptionsCheckbox: "ซ่อนตัวเลือกที่เกี่ยวกับการพัฒนาทั้งหมด"

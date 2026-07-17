@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA)主文件（必选）"
   SECTION_STARTMENU: "开始菜单快捷方式（可选）"
   SECTION_DESKTOP: "桌面快捷方式（可选）"
+  SECTION_DEVTOOLS: "开发工具"
   INSTALLER_RUNNING: "$(^Name)安装程序运行中"
   NON_EMPTY_FOLDER_ERROR: "$(^Name)无法安装在非空文件夹中"
   OPEN_PROGRAM: "打开$(^NameDA)(&O)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "新版本可供使用，%d个模组可供更新"
   NOTIFICATION_UPDATE_MOD: "一个模组可供更新"
   NOTIFICATION_UPDATE_MODS: "%d个模组可供更新"
-  TRAYICON_TOOLTIP_UPDATE: "新版本可供使用"
   TASKDLG_TITLE_LOADED_MODS: "已加载的模组"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "模组任务使用中"
   TASKDLG_BUTTON_OPEN_APP: "&打开Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "粘贴"
     selectAll: "全选"
     loggingEnabled: "调试日志已启用"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "主页"
     explore: "探索"
     settings: "设置"
     about: "关于"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "更新可用"
     installed: "已安装"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "放弃更改"
       unsavedChangesStay: "继续编辑"
       readOnlyPreview: "正在预览模组设置，安装模组以进行配置。"
+      expand: ~
+      collapse: ~
     code:
       title: "源代码"
       noData: "无源代码"
@@ -353,6 +365,18 @@ app:
     cancelButton: "取消"
   createNewModButton:
     title: "新建模组"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "创建和修改模组需要一定的Windows C/C++开发知识。如果您不了解相关知识，建议您不要进行相关操作。"
     hideOptionsCheckbox: "隐藏所有与开发相关的选项"

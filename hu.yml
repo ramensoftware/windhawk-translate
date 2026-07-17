@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (kötelező)"
   SECTION_STARTMENU: "Start menü parancsikonok"
   SECTION_DESKTOP: "Asztali parancsikon"
+  SECTION_DEVTOOLS: "Fejlesztői eszközök"
   INSTALLER_RUNNING: "$(^Name) telepítő már fut"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) nem telepíthető egy nem üres mappába"
   OPEN_PROGRAM: "&Nyisd meg a $(^NameDA)-t"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Új verzió érhető el a Windhawkhoz, és %d mod frissíthető"
   NOTIFICATION_UPDATE_MOD: "Egy Windhawk mod frissíthető"
   NOTIFICATION_UPDATE_MODS: "%d Windhawk mod frissíthető"
-  TRAYICON_TOOLTIP_UPDATE: "Új verzió érhető el"
   TASKDLG_TITLE_LOADED_MODS: "Betöltött modok"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod feladatok folyamatban"
   TASKDLG_BUTTON_OPEN_APP: "&Windhawk megnyitása"
@@ -91,11 +91,21 @@ app:
     paste: "Beillesztés"
     selectAll: "Összes kijelölése"
     loggingEnabled: ~
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Főoldal"
     explore: "Felfedezés"
     settings: "Beállítások"
     about: "Névjegy"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Frissítés elérhető"
     installed: "Telepítve"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "Forráskód"
       noData: "Hiányzik a mod forrása."
@@ -353,6 +365,18 @@ app:
     cancelButton: "Mégse"
   createNewModButton:
     title: "Új mod létrehozása"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Modok létrehozása és módosítása némi Windows C/C++ fejlesztési ismeretet igényel. Ha nem biztos abban, mit jelent ez, talán ezek az opciók nem önnek valók."
     hideOptionsCheckbox: "Fejlesztéssel kapcsolatos opciók elrejtése"

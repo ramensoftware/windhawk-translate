@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (требуется)"
   SECTION_STARTMENU: "Ярлык меню «Пуск»"
   SECTION_DESKTOP: "Ярлык рабочего стола"
+  SECTION_DEVTOOLS: "Инструменты разработки"
   INSTALLER_RUNNING: "Установщик $(^Name) уже запущен"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) не может быть установлено в непустую папку"
   OPEN_PROGRAM: "&Открыть $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Доступна новая версия Windhawk. Модификаций, ожидающих обновления: %d."
   NOTIFICATION_UPDATE_MOD: "Одна модификация Windhawk ожидает обновления"
   NOTIFICATION_UPDATE_MODS: "%d модификаций Windhawk ожидают обновления"
-  TRAYICON_TOOLTIP_UPDATE: "Доступна новая версия"
   TASKDLG_TITLE_LOADED_MODS: "Загруженные модификации"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Обработка модификаций"
   TASKDLG_BUTTON_OPEN_APP: "Открыть &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Вставить"
     selectAll: "Выбрать всё"
     loggingEnabled: "Логирование включено"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Главная"
     explore: "Обзор"
     settings: "Параметры"
     about: "О программе"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Доступно обновление"
     installed: "Установлено"
@@ -174,6 +184,8 @@ app:
       unsavedChangesLeave: "Отменить изменения"
       unsavedChangesStay: "Продолжить редактирование"
       readOnlyPreview: "Это предпросмотр настроек модификации. Установите модификацию для конфигурации настроек."
+      expand: ~
+      collapse: ~
     code:
       title: "Исходный код"
       noData: "Исходный код отсутствует."
@@ -357,6 +369,18 @@ app:
     cancelButton: "Отмена"
   createNewModButton:
     title: "Создать новую модификацию"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Создание и изменение модификаций требует некоторых знаний C/C++ в Windows. Если вы не понимаете о чём речь, возможно эти параметры не для вас."
     hideOptionsCheckbox: "Скрыть все параметры для разработчиков"

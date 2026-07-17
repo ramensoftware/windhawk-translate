@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA)（必需）"
   SECTION_STARTMENU: "開始選單捷徑"
   SECTION_DESKTOP: "桌面捷徑"
+  SECTION_DEVTOOLS: "開發工具"
   INSTALLER_RUNNING: "$(^Name) 安裝程式已在執行中"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) 無法安裝在非空資料夾中"
   OPEN_PROGRAM: "開啟 $(^NameDA)(&O)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "有新版本的 Windhawk 可供更新，且有 %d 個模組可以更新"
   NOTIFICATION_UPDATE_MOD: "有一個 Windhawk 模組可以更新"
   NOTIFICATION_UPDATE_MODS: "有 %d 個 Windhawk 模組可以更新"
-  TRAYICON_TOOLTIP_UPDATE: "有新版本可供更新"
   TASKDLG_TITLE_LOADED_MODS: "已載入的模組"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "正在進行的模組任務"
   TASKDLG_BUTTON_OPEN_APP: "開啟 Windhawk(&W)"
@@ -91,11 +91,21 @@ app:
     paste: "貼上"
     selectAll: "全選"
     loggingEnabled: "偵錯記錄已啟用"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "首頁"
     explore: "探索"
     settings: "設定"
     about: "關於"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "有可用更新"
     installed: "已安裝"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "放棄變更"
       unsavedChangesStay: "繼續編輯"
       readOnlyPreview: "正在預覽模組設定，請安裝模組以進行配置。"
+      expand: ~
+      collapse: ~
     code:
       title: "原始碼"
       noData: "模組原始碼缺失。"
@@ -353,6 +365,18 @@ app:
     cancelButton: "取消"
   createNewModButton:
     title: "建立新模組"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "建立和修改模組需要一些 Windows C/C++ 開發的知識。如果您不確定是什麼意思，這些選項可能不適合您。"
     hideOptionsCheckbox: "隱藏所有開發相關選項"

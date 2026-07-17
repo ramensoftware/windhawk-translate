@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (आवश्यक)"
   SECTION_STARTMENU: "स्टार्ट मेनू शॉर्टकट"
   SECTION_DESKTOP: "डेस्कटॉप शॉर्टकट"
+  SECTION_DEVTOOLS: "डेवलपमेंट टूल्स"
   INSTALLER_RUNNING: "$(^Name) सेटअप पहले से चल रहा है"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) को गैर-खाली फ़ोल्डर में स्थापित नहीं किया जा सकता"
   OPEN_PROGRAM: "&$(^NameDA) खोलें"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "विंडहॉक का एक नया संस्करण उपलब्ध है, और %d मॉड्स को अपडेट किया जा सकता है"
   NOTIFICATION_UPDATE_MOD: "एक विंडहॉक मॉड को अपडेट किया जा सकता है"
   NOTIFICATION_UPDATE_MODS: "%d विंडहॉक मॉड्स को अपडेट किया जा सकता है"
-  TRAYICON_TOOLTIP_UPDATE: "एक नया संस्करण उपलब्ध है"
   TASKDLG_TITLE_LOADED_MODS: "लोड किए गए मॉड्स"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "मॉड कार्य प्रगति पर हैं"
   TASKDLG_BUTTON_OPEN_APP: "&विंडहॉक खोलें"
@@ -91,11 +91,21 @@ app:
     paste: "पेस्ट करें"
     selectAll: "सभी चुनें"
     loggingEnabled: ~
+  errors:
+    commandFailed: ~
   appHeader:
     home: "होम"
     explore: "अन्वेषण करें"
     settings: "सेटिंग्स"
     about: "बारे में"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "अपडेट उपलब्ध है"
     installed: "स्थापित"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "स्रोत कोड"
       noData: "मॉड स्रोत अनुपस्थित है।"
@@ -353,6 +365,18 @@ app:
     cancelButton: "रद्द करें"
   createNewModButton:
     title: "नया मॉड बनाएँ"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "मॉड्स बनाना और संशोधित करना विंडोज के लिए C/C++ विकास के कुछ ज्ञान की आवश्यकता रखता है। यदि आपको यकीन नहीं है कि इसका मतलब क्या है, तो शायद ये विकल्प आपके लिए नहीं हैं।"
     hideOptionsCheckbox: "सभी विकास-संबंधी विकल्प छिपाएँ"

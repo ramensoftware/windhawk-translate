@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (必須)"
   SECTION_STARTMENU: "スタートメニューのショートカット"
   SECTION_DESKTOP: "デスクトップのショートカット"
+  SECTION_DEVTOOLS: "開発ツール"
   INSTALLER_RUNNING: "$(^Name) のセットアップを実行中です"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) を空ではないフォルダーにインストールできません"
   OPEN_PROGRAM: "$(^NameDA) を開く(&O)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Windhawk の最新バージョンが利用可能です。%d 個の Mod が更新できます。"
   NOTIFICATION_UPDATE_MOD: "1 個の Windhawk Mod が更新可能です。"
   NOTIFICATION_UPDATE_MODS: "%d 個の Windhawk Mod が更新可能です。"
-  TRAYICON_TOOLTIP_UPDATE: "最新のバージョンが利用可能です"
   TASKDLG_TITLE_LOADED_MODS: "読み込まれた Mod"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "進行中の Mod タスク"
   TASKDLG_BUTTON_OPEN_APP: "Windhawk を開く(&W)"
@@ -91,11 +91,21 @@ app:
     paste: "貼り付け"
     selectAll: "すべて選択"
     loggingEnabled: "デバッグログが有効です"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "ホーム"
     explore: "探す"
     settings: "設定"
     about: "情報"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "利用可能な更新があります"
     installed: "インストール済み"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "変更を破棄"
       unsavedChangesStay: "編集を続行"
       readOnlyPreview: "これは Mod 設定のプレビューです。設定を変更するには Mod をインストールしてください。"
+      expand: ~
+      collapse: ~
     code:
       title: "ソースコード"
       noData: "Mod のソースはありません。"
@@ -353,6 +365,18 @@ app:
     cancelButton: "キャンセル"
   createNewModButton:
     title: "新規に Mod を作成"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Mod の作成と変更には、Windows の C/C++ 開発スキルが必要です。それがよくわからない人は、このオプションは不向きかもしれません。"
     hideOptionsCheckbox: "開発関連のオプションをすべて隠す"

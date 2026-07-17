@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (required)"
   SECTION_STARTMENU: "Start Menu Shortcuts"
   SECTION_DESKTOP: "Desktop Shortcut"
+  SECTION_DEVTOOLS: "Development tools"
   INSTALLER_RUNNING: "$(^Name) Setup is already running"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) can't be installed in a non-empty folder"
   OPEN_PROGRAM: "&Open $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "A new version of Windhawk is available, and %d mods can be updated"
   NOTIFICATION_UPDATE_MOD: "One Windhawk mod can be updated"
   NOTIFICATION_UPDATE_MODS: "%d Windhawk mods can be updated"
-  TRAYICON_TOOLTIP_UPDATE: "A new version is available"
   TASKDLG_TITLE_LOADED_MODS: "Loaded mods"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod tasks in progress"
   TASKDLG_BUTTON_OPEN_APP: "Open &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Paste"
     selectAll: "Select all"
     loggingEnabled: "Debug logging is enabled"
+  errors:
+    commandFailed: "Something went wrong"
   appHeader:
     home: "Home"
     explore: "Explore"
     settings: "Settings"
     about: "About"
+  logPane:
+    title: "Debug logs"
+    clear: "Clear output"
+    wrapOn: "Turn word wrap on"
+    wrapOff: "Turn word wrap off"
+    autoScrollOn: "Turn auto-scrolling on"
+    autoScrollOff: "Turn auto-scrolling off"
+    close: "Close"
   mod:
     updateAvailable: "Update available"
     installed: "Installed"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "Discard Changes"
       unsavedChangesStay: "Keep Editing"
       readOnlyPreview: "This is a preview of the mod's settings. Install the mod to configure settings."
+      expand: "Expand"
+      collapse: "Collapse"
     code:
       title: "Source Code"
       noData: "Mod source is missing."
@@ -353,6 +365,18 @@ app:
     cancelButton: "Cancel"
   createNewModButton:
     title: "Create a New Mod"
+  devTools:
+    install:
+      description: "The development tools are not installed. Install them to create, edit, and fork mods."
+      installButton: "Install development tools"
+      cancelButton: "Cancel"
+      modal:
+        title: "Development tools required"
+        downloading: "Downloading development tools..."
+        installing: "Installing development tools..."
+        installingNote: "Windhawk will restart automatically when the installation is complete."
+        failed: "Installation failed"
+        cancel: "Cancel"
   devModeAction:
     message: "Creating and modifying mods requires some knowledge of C/C++ development for Windows. If you're not sure what that means, perhaps these options are not for you."
     hideOptionsCheckbox: "Hide all development-related options"

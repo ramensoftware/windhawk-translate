@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (necessário)"
   SECTION_STARTMENU: "Atalhos no menu Iniciar"
   SECTION_DESKTOP: "Atalho no ambiente de trabalho"
+  SECTION_DEVTOOLS: "Ferramentas de desenvolvimento"
   INSTALLER_RUNNING: "A instalação do $(^Name) já está em curso"
   NON_EMPTY_FOLDER_ERROR: "O $(^Name) não pode ser instalado numa pasta que não esteja vazia"
   OPEN_PROGRAM: "&Abrir $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Está disponível uma nova versão do Windhawk e %d mods podem ser atualizados"
   NOTIFICATION_UPDATE_MOD: "Um mod do Windhawk pode ser atualizado"
   NOTIFICATION_UPDATE_MODS: "%d mods do Windhawk podem ser atualizados"
-  TRAYICON_TOOLTIP_UPDATE: "Está disponível uma nova versão"
   TASKDLG_TITLE_LOADED_MODS: "Mods carregados"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Tarefas de mod em curso"
   TASKDLG_BUTTON_OPEN_APP: "Abrir &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Colar"
     selectAll: "Selecionar tudo"
     loggingEnabled: "O registo de depuração está ativado"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Início"
     explore: "Explorar"
     settings: "Definições"
     about: "Acerca"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Atualização disponível"
     installed: "Instalado"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "Descartar alterações"
       unsavedChangesStay: "Continuar a editar"
       readOnlyPreview: "Esta é uma pré-visualização das definições do mod. Instale o mod para configurar as definições."
+      expand: ~
+      collapse: ~
     code:
       title: "Código-fonte"
       noData: "Falta o código-fonte do mod."
@@ -354,6 +366,18 @@ app:
     cancelButton: "Cancelar"
   createNewModButton:
     title: "Criar um novo mod"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Criar e modificar mods requer algum conhecimento de desenvolvimento em C/C++ para Windows. Se não tem a certeza do que isso significa, talvez estas opções não sejam para si."
     hideOptionsCheckbox: "Ocultar todas as opções relacionadas com programação"

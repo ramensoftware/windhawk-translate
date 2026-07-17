@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA)(필요)"
   SECTION_STARTMENU: "시작 메뉴 바로 가기"
   SECTION_DESKTOP: "바탕 화면 바로 가기"
+  SECTION_DEVTOOLS: "개발 도구"
   INSTALLER_RUNNING: "$(^Name) 설치가 이미 실행 중입니다"
   NON_EMPTY_FOLDER_ERROR: "$(^Name)은(는) 비어 있지 않은 폴더에 설치할 수 없습니다"
   OPEN_PROGRAM: "$(^NameDA) 열기(&O)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Windhawk의 새로운 버전을 사용할 수 있으며 %d개 모드를 업데이트할 수 있습니다"
   NOTIFICATION_UPDATE_MOD: "1개의 Windhawk 모드를 업데이트할 수 있습니다"
   NOTIFICATION_UPDATE_MODS: "%d개의 Windhawk 모드를 업데이트할 수 있습니다"
-  TRAYICON_TOOLTIP_UPDATE: "새로운 버전을 사용할 수 있습니다"
   TASKDLG_TITLE_LOADED_MODS: "불러온 모드"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "모드 작업 진행 중"
   TASKDLG_BUTTON_OPEN_APP: "Windhawk 열기(&W)"
@@ -91,11 +91,21 @@ app:
     paste: "붙여넣기"
     selectAll: "모두 선택"
     loggingEnabled: "디버그 로깅 활성화됨"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "홈"
     explore: "탐색"
     settings: "설정"
     about: "정보"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "업데이트 사용 가능"
     installed: "설치됨"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "변경사항 버리기"
       unsavedChangesStay: "계속 편집"
       readOnlyPreview: "이 모드의 설정 미리 보기 페이지입니다. 설정을 구성하려면 모드를 설치하세요."
+      expand: ~
+      collapse: ~
     code:
       title: "소스 코드"
       noData: "모드 소스가 없습니다."
@@ -353,6 +365,18 @@ app:
     cancelButton: "취소"
   createNewModButton:
     title: "새 모드 만들기"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "모드를 만들고 수정하려면 약간의 Windows용 C/C++ 개발 지식이 필요합니다. 무슨 뜻인지 모르겠다면 이러한 옵션들은 맞지 않을지도 모릅니다."
     hideOptionsCheckbox: "모든 개발 관련 옵션 숨기기"

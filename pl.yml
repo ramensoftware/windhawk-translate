@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (wymagane)"
   SECTION_STARTMENU: "Skróty Menu Start"
   SECTION_DESKTOP: "Skrót pulpitu"
+  SECTION_DEVTOOLS: "Narzędzia programistyczne"
   INSTALLER_RUNNING: "$(^Name) Instalacja jest już uruchomiona"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) musi być zainstalowany w pustym folderze"
   OPEN_PROGRAM: "&Otwórz $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Nowa wersja Windhawk jest dostępna, i %d modów mogą być zaktualizowane"
   NOTIFICATION_UPDATE_MOD: "Jeden mod Windhawk może być zaktualizowany"
   NOTIFICATION_UPDATE_MODS: "%d modów Windhawk mogą być zaktualizowane"
-  TRAYICON_TOOLTIP_UPDATE: "Nowa wersja jest dostępna"
   TASKDLG_TITLE_LOADED_MODS: "Załadowane mody"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Trwające zadania modów"
   TASKDLG_BUTTON_OPEN_APP: "Otwórz &Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: "Wklej"
     selectAll: "Zaznacz Wszystko"
     loggingEnabled: "Logi debugowania są włączone"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Strona główna"
     explore: "Eksploruj"
     settings: "Ustawienia"
     about: "O aplikacji"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Aktualizacja dostępna"
     installed: "Zainstalowane"
@@ -174,6 +184,8 @@ app:
       unsavedChangesLeave: "Porzuć zmiany"
       unsavedChangesStay: "Zmieniaj dalej"
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "Kod źródłowy"
       noData: "Kod źródłowy moda jest niedostępny."
@@ -357,6 +369,18 @@ app:
     cancelButton: "Anuluj"
   createNewModButton:
     title: "Utwórz nowego moda"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Tworzenie i modyfikowanie modów wymaga pewnej wiedzy na temat programowania w językach C/C++. Jeśli nie jesteś pewien, co to oznacza, być może te opcje nie są dla Ciebie."
     hideOptionsCheckbox: "Ukryj wszystkie opcje związane z programowaniem"

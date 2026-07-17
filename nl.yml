@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (vereist)"
   SECTION_STARTMENU: "Startmenu snelkoppelingen"
   SECTION_DESKTOP: "Bureaublad snelkoppelingen"
+  SECTION_DEVTOOLS: "Ontwikkelaarstools"
   INSTALLER_RUNNING: "$(^Name) installatie wordt reeds uitgevoerd"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) kan niet worden geïnstalleerd in een niet-lege map"
   OPEN_PROGRAM: "$(^NameDA) &openen"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Er is een nieuwe versie van Windhawk beschikbaar en %d mods kunnen worden bijgewerkt"
   NOTIFICATION_UPDATE_MOD: "Eén Windhawk mod kan worden bijgewerkt"
   NOTIFICATION_UPDATE_MODS: "%d Windhawk mods kunnen worden bijgewerkt"
-  TRAYICON_TOOLTIP_UPDATE: "Er is een nieuwe versie beschikbaar"
   TASKDLG_TITLE_LOADED_MODS: "Geladen mods"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod-taken in uitvoering"
   TASKDLG_BUTTON_OPEN_APP: "Windhawk &openen"
@@ -91,11 +91,21 @@ app:
     paste: "Plakken"
     selectAll: "Alles selecteren"
     loggingEnabled: "Debug loggen is ingeschakeld"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Start"
     explore: "Verkennen"
     settings: "Instellingen"
     about: "Over"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Update beschikbaar"
     installed: "Geïnstalleerd"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "Wijzigingen negeren"
       unsavedChangesStay: "Doorgaan met bewerken"
       readOnlyPreview: "Dit is een voorbeeld van de instellingen van de mod. Installeer de mod om de instellingen te configureren."
+      expand: ~
+      collapse: ~
     code:
       title: "Broncode"
       noData: "Bron van mod ontbreekt."
@@ -353,6 +365,18 @@ app:
     cancelButton: "Annuleren"
   createNewModButton:
     title: "Een nieuwe mod maken"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Het maken en aanpassen van mods vereist enige kennis van C/C++ ontwikkeling voor Windows. Als je niet zeker weet wat dat betekent, zijn deze opties misschien niets voor jou."
     hideOptionsCheckbox: "Alle ontwikkelingsgerelateerde opties verbergen"

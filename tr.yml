@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (gerekli)"
   SECTION_STARTMENU: "Başlat Menüsü Kısayolları"
   SECTION_DESKTOP: "Masaüstü Kısayolu"
+  SECTION_DEVTOOLS: "Geliştirme araçları"
   INSTALLER_RUNNING: "$(^Name) Kurulumu zaten çalışıyor"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) boş olmayan bir klasöre kurulamaz"
   OPEN_PROGRAM: "$(^NameDA)'ı aç"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Windhawk'ın yeni bir sürümü mevcut ve %d mod güncellenebilir"
   NOTIFICATION_UPDATE_MOD: "Bir Windhawk modu güncellenebilir"
   NOTIFICATION_UPDATE_MODS: "%d Windhawk modu güncellenebilir"
-  TRAYICON_TOOLTIP_UPDATE: "Yeni bir sürüm mevcut"
   TASKDLG_TITLE_LOADED_MODS: "Yüklü modlar"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod görevleri devam ediyor"
   TASKDLG_BUTTON_OPEN_APP: "&Windhawk'ı Aç"
@@ -91,11 +91,21 @@ app:
     paste: "Yapıştır"
     selectAll: "Hepsini seç"
     loggingEnabled: "Hata ayıklama günlüğü etkin"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Ana Sayfa"
     explore: "Keşfet"
     settings: "Ayarlar"
     about: "Hakkında"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Güncelleme mevcut"
     installed: "Yüklendi"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "Ayrıl"
       unsavedChangesStay: "Kal"
       readOnlyPreview: "Salt okunur önizleme"
+      expand: ~
+      collapse: ~
     code:
       title: "Kaynak Kodu"
       noData: "Mod kaynağı eksik."
@@ -353,6 +365,18 @@ app:
     cancelButton: "İptal"
   createNewModButton:
     title: "Yeni Mod Oluştur"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Mod oluşturmak ve değiştirmek, Windows için biraz C/C++ geliştirme bilgisi gerektirir. Bunun ne anlama geldiğinden emin değilseniz, belki de bu seçenekler size göre değildir."
     hideOptionsCheckbox: "Geliştirmeyle ilgili tüm seçenekleri gizle"

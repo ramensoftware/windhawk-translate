@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (tələb olunur)"
   SECTION_STARTMENU: "Başlat menyusu qısayolları"
   SECTION_DESKTOP: "İş masası qısayolu"
+  SECTION_DEVTOOLS: ~
   INSTALLER_RUNNING: "$(^Name) quraşdırıcısı artıq işləyir"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) boş olmayan qovluğa quraşdırıla bilməz"
   OPEN_PROGRAM: "$(^NameDA)-ı aç"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Windhawk-ın yeni versiyası mövcuddur və %d mod yenilənə bilər"
   NOTIFICATION_UPDATE_MOD: "Bir Windhawk modu yenilənə bilər"
   NOTIFICATION_UPDATE_MODS: "%d Windhawk modu yenilənə bilər"
-  TRAYICON_TOOLTIP_UPDATE: "Yeni versiya mövcuddur"
   TASKDLG_TITLE_LOADED_MODS: "Yüklənmiş modlar"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Mod əməliyyatları davam edir"
   TASKDLG_BUTTON_OPEN_APP: "&Windhawk-ı aç"
@@ -91,11 +91,21 @@ app:
     paste: "Yapışdır"
     selectAll: "Hamısını seç"
     loggingEnabled: "Sazlama jurnalı aktivdir"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Ana səhifə"
     explore: "Kəşf et"
     settings: "Parametrlər"
     about: "Haqqında"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Yeniləmə mövcuddur"
     installed: "Quraşdırılıb"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "Çıx"
       unsavedChangesStay: "Qal"
       readOnlyPreview: "Yalnız oxunan önbaxış"
+      expand: ~
+      collapse: ~
     code:
       title: "Mənbə kodu"
       noData: "Modun mənbə kodu yoxdur."
@@ -353,6 +365,18 @@ app:
     cancelButton: "Ləğv et"
   createNewModButton:
     title: "Yeni mod yarat"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "Mod yaratmaq və dəyişdirmək Windows üçün müəyyən C/C++ tərtibat bilikləri tələb edir. Bunun nə demək olduğuna əmin deyilsinizsə, bu seçimlər yəqin ki, sizin üçün deyil."
     hideOptionsCheckbox: "Tərtibatla bağlı bütün seçimləri gizlət"

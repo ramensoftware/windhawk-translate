@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (ଆବଶ୍ୟକ)"
   SECTION_STARTMENU: "ଷ୍ଟାର୍ଟ ମେନୁ ସର୍ଟକଟ୍"
   SECTION_DESKTOP: "ଡେସ୍କଟପ୍ ସର୍ଟକଟ୍"
+  SECTION_DEVTOOLS: ~
   INSTALLER_RUNNING: "$(^Name) ସେଟଅପ୍ ପୂର୍ବରୁ ଚାଲୁଅଛି"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) କୁ ଏକ ଖାଲି ନଥିବା ଫୋଲ୍ଡରରେ ଇନଷ୍ଟଲ୍ କରାଯାଇପାରିବ ନାହିଁ"
   OPEN_PROGRAM: "$(^NameDA) ଖୋଲନ୍ତୁ (&O)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "Windhawk ର ଏକ ନୂତନ ସଂସ୍କରଣ ଉପଲବ୍ଧ, ଏବଂ %d ଟି ମଡ୍ ଅପଡେଟ୍ କରାଯାଇପାରିବ"
   NOTIFICATION_UPDATE_MOD: "ଗୋଟିଏ Windhawk ମଡ୍ ଅପଡେଟ୍ କରାଯାଇପାରିବ"
   NOTIFICATION_UPDATE_MODS: "%d ଟି Windhawk ମଡ୍ ଅପଡେଟ୍ କରାଯାଇପାରିବ"
-  TRAYICON_TOOLTIP_UPDATE: "ଏକ ନୂତନ ସଂସ୍କରଣ ଉପଲବ୍ଧ ଅଛି"
   TASKDLG_TITLE_LOADED_MODS: "ଲୋଡ୍ ହୋଇଥିବା ମଡ୍‌ଗୁଡ଼ିକ"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "ମଡ୍ କାର୍ଯ୍ୟ ପ୍ରଗତିରେ ଅଛି"
   TASKDLG_BUTTON_OPEN_APP: "Windhawk ଖୋଲନ୍ତୁ (&W)"
@@ -91,11 +91,21 @@ app:
     paste: "ପେଷ୍ଟ କରନ୍ତୁ"
     selectAll: "ସବୁ ବାଛନ୍ତୁ"
     loggingEnabled: "ଡିବଗ୍ ଲଗିଂ ସକ୍ରିୟ ଅଛି"
+  errors:
+    commandFailed: ~
   appHeader:
     home: "ହୋମ୍"
     explore: "ଏକ୍ସପ୍ଲୋର୍"
     settings: "ସେଟିଙ୍ଗସ"
     about: "ବିଷୟରେ"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "ଅପଡେଟ୍ ଉପଲବ୍ଧ"
     installed: "ଇନଷ୍ଟଲ୍ ହୋଇଛି"
@@ -172,6 +182,8 @@ app:
       unsavedChangesLeave: "ପରିବର୍ତ୍ତନଗୁଡ଼ିକୁ ହଟାନ୍ତୁ"
       unsavedChangesStay: "ଏଡିଟ୍ ଜାରି ରଖନ୍ତୁ"
       readOnlyPreview: "ଏହା ମଡ୍ ସେଟିଙ୍ଗସର ଏକ ପ୍ରିଭ୍ୟୁ। ସେଟିଙ୍ଗସ କନଫିଗର କରିବା ପାଇଁ ମଡ୍ ଇନଷ୍ଟଲ୍ କରନ୍ତୁ।"
+      expand: ~
+      collapse: ~
     code:
       title: "ସୋର୍ସ କୋଡ୍ (Source Code)"
       noData: "ମଡ୍ ସୋର୍ସ ଅନୁପସ୍ଥିତ।"
@@ -353,6 +365,18 @@ app:
     cancelButton: "ବାତିଲ କରନ୍ତୁ"
   createNewModButton:
     title: "ଏକ ନୂତନ ମଡ୍ ତିଆରି କରନ୍ତୁ"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "ମଡ୍ ତିଆରି ଏବଂ ପରିବର୍ତ୍ତନ ପାଇଁ ୱିଣ୍ଡୋଜ୍ ପାଇଁ C/C++ ଡେଭଲପମେଣ୍ଟ ଜ୍ଞାନ ଆବଶ୍ୟକ।"
     hideOptionsCheckbox: "ସମସ୍ତ ଡେଭଲପମେଣ୍ଟ ସମ୍ବନ୍ଧୀୟ ବିକଳ୍ପଗୁଡ଼ିକୁ ଲୁଚାନ୍ତୁ"

@@ -4,6 +4,7 @@ setup:
   SECTION_MAIN: "$(^NameDA) (richiesto)"
   SECTION_STARTMENU: "Collegamenti al Menu Start"
   SECTION_DESKTOP: "Collegamento al Desktop"
+  SECTION_DEVTOOLS: "Strumenti di sviluppo"
   INSTALLER_RUNNING: "$(^Name) Un altra installazione è già in esecuzione"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) non può essere installato in una cartella vuota"
   OPEN_PROGRAM: "Apri $(^NameDA)"
@@ -48,7 +49,6 @@ tray:
   NOTIFICATION_UPDATE_APP_MODS: "È disponibile una nuova versione di Windhawk, e %d mod possono essere aggiornate"
   NOTIFICATION_UPDATE_MOD: "Una mod di Windhawk può essere aggiornata"
   NOTIFICATION_UPDATE_MODS: "%d mod di Windhawk possono essere aggiornate"
-  TRAYICON_TOOLTIP_UPDATE: "È disponibile una nuova versione"
   TASKDLG_TITLE_LOADED_MODS: "Mod caricate"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Processi delle mod in esecuzione"
   TASKDLG_BUTTON_OPEN_APP: "&Apri Windhawk"
@@ -91,11 +91,21 @@ app:
     paste: ~
     selectAll: ~
     loggingEnabled: ~
+  errors:
+    commandFailed: ~
   appHeader:
     home: "Home"
     explore: "Esplora"
     settings: "impostazioni"
     about: "Informazioni"
+  logPane:
+    title: ~
+    clear: ~
+    wrapOn: ~
+    wrapOff: ~
+    autoScrollOn: ~
+    autoScrollOff: ~
+    close: ~
   mod:
     updateAvailable: "Aggiornamento disponibile"
     installed: "Installato"
@@ -173,6 +183,8 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      expand: ~
+      collapse: ~
     code:
       title: "Codice sorgente"
       noData: "Manca la fonte della mod."
@@ -355,6 +367,18 @@ app:
     cancelButton: "Annulla"
   createNewModButton:
     title: "Crea una nuova mod"
+  devTools:
+    install:
+      description: ~
+      installButton: ~
+      cancelButton: ~
+      modal:
+        title: ~
+        downloading: ~
+        installing: ~
+        installingNote: ~
+        failed: ~
+        cancel: ~
   devModeAction:
     message: "La creazione e la modifica di mod richiede una certa conoscenza dello sviluppo C/C++ per Windows. Se non sei sicuro di cosa significhi, forse queste opzioni non fanno per te."
     hideOptionsCheckbox: "Nascondi tutte le opzioni relative allo sviluppo"
