@@ -7,7 +7,7 @@ setup:
   SECTION_DEVTOOLS: "ডেভেলপমেন্ট টুলস"
   INSTALLER_RUNNING: "$(^Name) সেটআপ ইতিমধ্যে চলছে"
   NON_EMPTY_FOLDER_ERROR: "$(^Name) খালি নয় এমন ফোল্ডারে ইনস্টল করা সম্ভব নয়"
-  OPEN_PROGRAM: "&Open $(^NameDA)"
+  OPEN_PROGRAM: "&$(^NameDA) খুলুন"
   CLEANCONFIRM: "&প্রোগ্রামের সেটিংস মুছে ফেলুন"
   INSTALLED_HEADER: "ইতিমধ্যে ইনস্টল করা আছে"
   INSTALLED_TEXT: "আপনি যে কাজটি করতে চান তা নির্বাচন করুন।"
