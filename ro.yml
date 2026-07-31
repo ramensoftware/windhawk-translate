@@ -92,20 +92,20 @@ app:
     selectAll: "Selectează tot"
     loggingEnabled: "Jurnalele pentru depanare sunt activate"
   errors:
-    commandFailed: ~
+    commandFailed: "Ceva nu a funcționat corect"
   appHeader:
     home: "Acasă"
     explore: "Explorează"
     settings: "Setări"
     about: "Despre"
   logPane:
-    title: ~
-    clear: ~
-    wrapOn: ~
-    wrapOff: ~
-    autoScrollOn: ~
-    autoScrollOff: ~
-    close: ~
+    title: "Jurnale de depanare"
+    clear: "Golește ieșirea"
+    wrapOn: "Activează încadrarea cuvintelor"
+    wrapOff: "Dezactivează încadrarea cuvintelor"
+    autoScrollOn: "Activează derularea automată"
+    autoScrollOff: "Dezactivează derularea automată"
+    close: "Închide"
   mod:
     updateAvailable: "Actualizare disponibilă"
     installed: "Instalat"
@@ -150,7 +150,7 @@ app:
       processes:
         all: "Toate procesele"
         allBut: "Toate, cu excepția {{list}}"
-        except: "{{included}} exceptând {{excluded}}"
+        except: "{{included}}, exceptând {{excluded}}"
         tooltip:
           targets: "Procese țintă"
           excluded: "Excluse"
@@ -183,8 +183,8 @@ app:
       unsavedChangesLeave: "Renunță la modificări"
       unsavedChangesStay: "Continuă editarea"
       readOnlyPreview: "Aceasta este o previzualizare a setărilor modului. Instalează modul pentru a-i configura setările."
-      expand: ~
-      collapse: ~
+      expand: "Extinde"
+      collapse: "Restrânge"
     code:
       title: "Cod sursă"
       noData: "Codul sursă lipsește."
@@ -320,7 +320,7 @@ app:
       titleInclusion: "Lista de includere a proceselor"
       descriptionInclusion: "O listă de nume/căi de procese pe care Windhawk le va putea injecta, chiar dacă ele sunt în lista de excludere."
       inclusionWithoutExclusionNotice: "Lista proceselor incluse nu are niciun efect dacă lista de procese excluse este goală."
-      inclusionWithoutTotalExclusionNotice: "Dacă te refereai la excluderea tuturor proceselor, dar nu acestea, poți adăuga \"*\" în lista de excludere a proceselor."
+      inclusionWithoutTotalExclusionNotice: "Dacă ai vrut să excluzi toate procesele în afară de acestea, poți adăuga \"*\" în lista de excludere a proceselor."
       processListPlaceholder: "Numele/căile proceselor, câte unul/una pe un singur rând, de exemplu:"
       invalidCharactersWarning: "Lista de procese conține caractere nevalide ce vor fi eliminate: {{invalidCharacters}}"
   about:
@@ -369,16 +369,16 @@ app:
     title: "Creează un mod"
   devTools:
     install:
-      description: ~
-      installButton: ~
-      cancelButton: ~
+      description: "Instrumentele de dezvoltare nu sunt instalate. Instalează-le pentru a putea crea, edita și da fork la moduri."
+      installButton: "Instalează instrumentele de dezvoltare"
+      cancelButton: "Anulează"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Instrumentele de dezvoltare sunt necesare"
+        downloading: "Se descarcă instrumentele de dezvoltare..."
+        installing: "Se instalează instrumentele de dezvoltare..."
+        installingNote: "Windhawk va fi repornit automat odată ce instalarea s-a finalizat."
+        failed: "Instalare eșuată"
+        cancel: "Anulează"
   devModeAction:
     message: "Crearea și modificarea modurilor necesită niște cunoștințe de dezvoltare Windows C/C++. Dacă nu știi ce înseamnă asta, se pare că aceste opțiuni nu sunt pentru tine."
     hideOptionsCheckbox: "Ascunde toate opțiunile relevante dezvoltării"
