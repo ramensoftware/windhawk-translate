@@ -62,8 +62,8 @@ tray:
   TASKDLG_STATUS_UNLOADED: "Tidak Dimuat"
   TASKDLG_TASK_INITIALIZING: "Menginisialisasi..."
   TASKDLG_TASK_LOADING_SYMBOLS: "Memuat simbol..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
-  TASKDLG_TASK_UNINITIALIZING: ~
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Menunggu untuk simbol..."
+  TASKDLG_TASK_UNINITIALIZING: "Menginisialisasi ulang..."
   TASKDLG_PROCESS_SUSPENDED: "(ditangguhkan)"
   TOOLKITDLG_TITLE: "Toolkit Windhawk"
   TOOLKITDLG_EXPLANATION_CRASH: ~
@@ -90,28 +90,28 @@ app:
     copy: "Salin"
     paste: "Tempel"
     selectAll: "Pilih semua"
-    loggingEnabled: ~
+    loggingEnabled: "Debug logging diaktifkan"
   errors:
-    commandFailed: ~
+    commandFailed: "Terjadi kesalahan"
   appHeader:
     home: "Beranda"
     explore: "Jelajahi"
     settings: "Pengaturan"
     about: "Tentang"
   logPane:
-    title: ~
-    clear: ~
-    wrapOn: ~
-    wrapOff: ~
-    autoScrollOn: ~
-    autoScrollOff: ~
-    close: ~
+    title: "Log debug"
+    clear: "Hapus output"
+    wrapOn: "Nyalakan word wrap"
+    wrapOff: "Matikan word wrap"
+    autoScrollOn: "Nyalakan auto-gulir"
+    autoScrollOff: "Matikan auto-gulir"
+    close: "Tutup"
   mod:
     updateAvailable: "Pembaruan tersedia"
     installed: "Terpasang"
     details: "Rincian"
     update: "Perbarui"
-    downgrade: ~
+    downgrade: "Turunkan"
     install: "Pasang"
     compile: "Kompilasi"
     disable: "Nonaktifkan"
@@ -122,25 +122,25 @@ app:
     removeConfirm: "Apakah anda yakin ingin menghapus mod ini?"
     removeConfirmOk: "Hapus mod"
     removeConfirmCancel: "Batal"
-    donate: ~
+    donate: "Donasi"
     notCompiled: "Mod needs to be compiled"
     editedLocally: "Mod sudah disunting lokal"
     noDescription: "(tidak ada deskripsi)"
     users_one: "{{formattedCount}} pengguna"
     users_other: "{{formattedCount}} pengguna"
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+    notRated: "Mod ini belum diberi rate"
+    loggingEnabledInAdvancedTab: "Debug logging diaktifkan di tab mod lanjutan"
   modDetails:
     header:
       installedVersion: "Versi yang terpasang"
       latestVersion: "Versi saat ini"
       loading: "memuat..."
       loadingFailed: "gagal dimuat"
-      otherVersions: ~
-      selectedVersion: ~
+      otherVersions: "Versi lainnya"
+      selectedVersion: "Dipilih: {{version}}"
       modId: "Pengenal Mod"
       modVersion: "Versi Mod"
-      lastUpdated: ~
+      lastUpdated: "Terakhir diperbarui"
       modAuthor:
         title: "Pembuat Mod"
         homepage: "Homepage"
@@ -153,14 +153,14 @@ app:
         tooltip:
           targets: "Target pemrosesan"
           excluded: "Dikecualikan"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "Kustom daftar proses termasuk/pengecualian yang ditentukan untuk mod ini di tab Lanjutan"
+          patternsMatchCriticalSystemProcessesNote: "Pattern daftar inklusi dipertimbangkan untuk proses sistem kritis untuk mod ini (diatur di tab Lanjutan)"
       updateNotNeeded: "Versi yang terinstal identik dengan versi yang dipilih"
     version:
-      preRelease: ~
-      select: ~
-      cancel: ~
-      chooseVersion: ~
+      preRelease: "pra-rilis"
+      select: "Pilih"
+      cancel: "Batal"
+      chooseVersion: "Pilih versi..."
     details:
       title: "Rincian"
       noData: "Rincian mod hilang."
@@ -171,19 +171,19 @@ app:
       sampleValue: "Contoh value"
       arrayItemAdd: "Tambahkan item baru"
       arrayItemRemove: "Hapus item"
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
-      readOnlyPreview: ~
-      expand: ~
-      collapse: ~
+      yamlMode: "Mode tekstual"
+      uiMode: "Mode visual"
+      yamlInvalid: "Format YAML tidak valid"
+      yamlParseError: "Kesalahan parse YAML: {{error}}"
+      yamlInvalidKey: "Kesalahan key di YAML: '{{key}}' bukanlah pengaturan valid"
+      yamlTypeMismatch: "Penulisan untuk '{{key}}' tidak sesuai : kesalahan {{expected}}, tapi dapat {{actual}}"
+      unsavedChangesTitle: "Pengaturan Tidak Disimpan"
+      unsavedChangesMessage: "Anda masih memiliki perubahan pengaturan yang belum disimpan. Anda yakin ingin membatalkannya?"
+      unsavedChangesLeave: "Batalkan Perubahan"
+      unsavedChangesStay: "Tetap Mengedit"
+      readOnlyPreview: "Ini adalah pratinjau pengaturan mod. Instal mod untuk mengkonfigurasi pengaturan."
+      expand: "Lebarkan"
+      collapse: "Ciutkan"
     code:
       title: "Kode Sumber"
       noData: "Sumber mod hilang."
@@ -213,14 +213,14 @@ app:
         titleExclusion: "Daftar proses pengecualian kustom"
         descriptionExclusion: "Daftar kustom berisi nama/jalur file yang dapat dieksekusi tambahan yang akan dikecualikan mod dari penargetan. Daftar tersebut ditambahkan ke daftar pengecualian yang ditetapkan oleh pembuat mod untuk menentukan proses mana yang akan ditargetkan. Untuk setiap proses, mod dimuat jika jalur file yang dapat dieksekusi cocok dengan salah satu entri yang disertakan dan tidak cocok dengan entri yang dikecualikan."
         processListPlaceholder: "Nama proses/jalur, satu per baris, sebagai contoh:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "Daftar proses berisi karakter tidak valid yang akan di strip: {{invalidCharacters}}"
         saveButton: "Simpan"
       includeExcludeCustomOnly:
         title: "Abaikan daftar penyertaan/pengecualian mod"
         description: "Abaikan daftar penyertaan/pengecualian proses mod dan gunakan hanya daftar kustom di atas."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Pertimbangkan pola daftar inklusi untuk proses sistem kritis"
+        description: "Pada umumnya, Windhawk hanya memuat mods di proses sistem kritis jika proses tidak termasuk dengan pattern,  misalnya <0>critical.exe</0>, bukan <0>*</0> or <0>*.exe</0>. Untuk lebih lanjut tentang detail tentang proses sistem kritis, silahkan menuju ke <1>dokumentasi</1>."
     changes:
       title: "Perubahan Versi Saat Ini"
       noData: "Versi yang terpasang identik dengan versi yang dipilih."
@@ -229,24 +229,24 @@ app:
       expandLines_other: "Perlebar {{count}} baris tersembunyi"
   modSearch:
     placeholder: "Cari untuk mod..."
-    placeholderWithHint: ~
-    noResults: ~
+    placeholderWithHint: "Cari mod... ketik '/' untuk menyorot"
+    noResults: "Tidak ada mod yang sesuai dengan filter saat ini"
   home:
     browse: "Jelajahi untuk Mod"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "Aktifkan mods"
+      disabled: "Nonaktifkan mods"
+      updateAvailable: "Mods dengan pembaruan yang tersedia"
+      clearFilters: "Bersihkan filter"
     installedMods:
       title: "Mod yang terpasang"
       noMods: "Tidak ada mod yang terpasang"
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "Nama"
+        description: "Deskripsi"
+        author: "Pembuat"
+        version: "Versi"
+        status: "Status"
     featuredMods:
       title: "Mod yang difiturkan"
       noMods: "Tidak ada mod difiturkan yang belum terpasang"
@@ -260,13 +260,13 @@ app:
       lastUpdated: "Terakhir diperbarui"
       alphabeticalOrder: "Urutkan secara abjad"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "Status pemasangan"
+      installed: "Terpasang"
+      notInstalled: "Tidak terpasang"
+      author: "Pembuat mod"
+      process: "Proses target"
+      showMore: "Lihat selengkapnya..."
+      clearFilters: "Bersihkan filter"
   settings:
     language:
       title: "Bahasa"
@@ -285,8 +285,8 @@ app:
       title: "Sembunyikan ikon baki"
       description: "Anda akan menonaktifkan opsi ini untuk menutup Windhawk."
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "Selalu compile mod secara lokal"
+      description: "Secara bawaan, Windhawk mengunduh biner mod pra-compile dari peladen Windhawk ketika tersedia. Aktifkan opsi ini untuk selalu compile mod secara lokal."
     requireElevation:
       title: "Dibutuhkan elevasi UAC untuk menjalankan Windhawk"
       description: "Windhawk memerlukan administrator, tetapi untuk komputer single-user, mendapatkan prompt UAC setiap waktu bisa jadi menyebalkan, jadi Windhawk melewatinya. Aktifkan opsi ini untuk membutuhkan elevasi UAC untuk menjalankan Windhawk."
@@ -311,16 +311,16 @@ app:
     processList:
       titleExclusion: "Proses pengecualian daftar"
       descriptionExclusion: "Daftar nama/jalur proses yang tidak akan diinject Windhawk. Dapat berguna untuk kasus-kasus ketika Windhawk tidak kompatibel dengan program tertentu. Perhatikan bahwa menambahkan proses ke daftar ini tidak hanya akan mencegah Windhawk untuk menyesuaikannya, tetapi juga akan mencegah Windhawk untuk mencegat proses anak yang dibuat oleh proses ini. Ini akan menyebabkan Windhawk memuat mod dengan sedikit keterlambatan dalam kasus-kasus seperti itu."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
+      descriptionExclusionWiki: "Untuk detil selengkapnya tentang proses pengecualian dan tentang daftar proses pengecualian bawaan, silahkan  menuju ke <0>dokumentasi</0>."
+      excludeCriticalProcesses: "Kecualikan proses sistem kritis"
+      excludeIncompatiblePrograms: "Kecualikan program yang diketahui tidak kompatibel"
+      excludeGames: "Kecualikan gim yang dikenal"
       titleInclusion: "Proses penyertaan daftar"
       descriptionInclusion: "Daftar nama proses/jalur yang akan diinject Windhawk, bahkan jika mereka ada dalam daftar pengecualian."
       inclusionWithoutExclusionNotice: "Proses penyertaan daftar tidak berefek dengan proses kosong daftar pengecualian."
       inclusionWithoutTotalExclusionNotice: "Jika anda bermaksud untuk mengecualikan semua proses kecuali ini, anda bisa mengatur \"*\" di daftar proses pengecualian."
       processListPlaceholder: "Nama proses/jalur, satu per baris, sebagai contoh:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "Daftar proses berisi karakter tidak valid yang akan di strip: {{invalidCharacters}}"
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -329,21 +329,21 @@ app:
     update:
       title: "Pembaruan tersedia"
       subtitle: "Pastikan memperbarui Windhawk untuk mendapatkan fitur terbaru dan perbaikan bug"
-      changelogButton: ~
-      updateButton: ~
+      changelogButton: "Log Perubahan"
+      updateButton: "Perbarui"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Memperbarui Windhawk"
+        downloading: "Mengunduh pembaruan..."
+        installing: "Menginstal pembaruan..."
+        installingNote: "Windhawk akan memulai ulang secara otomatis ketika penginstalan selesai."
+        failed: "Pembaruan gagal"
+        cancel: "Batal"
     changelog:
-      title: ~
-      close: ~
+      title: "Apa yang Baru di Windhawk"
+      close: "Tutup"
     links:
       title: "Tautan"
-      homepage: "Homepage"
+      homepage: "Situs web"
       documentation: "Dokumentasi"
     builtWith:
       title: "dibuat dengan"
@@ -352,11 +352,11 @@ app:
       minHook: "Pustaka hooking API minimalis untuk Windows"
       others: "tool lain dan perpustakaan, dan sedikit kode"
   installModal:
-    title: "Pasang {{mod}}"
+    title: "Instal {{mod}}"
     warningTitle: "Lanjutkan dengan hati-hati"
     warningDescription: "Mod berbahaya dapat merusak komputer atau melanggar privasi Anda. Instal mod hanya dari pembuat yang Anda percaya."
     modAuthor: "Pembuat mod"
-    homepage: "Homepage"
+    homepage: "Situs web"
     github: "GitHub"
     twitter: "X (Twitter)"
     verified: "terverifikasi"
@@ -367,16 +367,16 @@ app:
     title: "Buat Mod Baru"
   devTools:
     install:
-      description: ~
-      installButton: ~
-      cancelButton: ~
+      description: "Alat pengembangan tidak terinstal. Instal untuk membuat, edit, dan fork mod."
+      installButton: "Instal alat pengembangan"
+      cancelButton: "Batal"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
-        cancel: ~
+        title: "Alat pengembangan diperlukan"
+        downloading: "Mengunduh alat pengembangan..."
+        installing: "Menginstal alat pengembangan..."
+        installingNote: "Windhawk akan memulai ulang otomatis ketika penginstalan selesai."
+        failed: "Penginstalan gagal"
+        cancel: "Batal"
   devModeAction:
     message: "Membuat dan memodifikasi mod membutuhkan beberapa keahlian pengembangan C/C++ untuk Windows. Jika anda tidak yakin apa yang dimaksud, mungkin opsi ini bukan untuk Anda."
     hideOptionsCheckbox: "Sembunyikan semua opsi yang terkait dengan pengembangan"
@@ -408,44 +408,44 @@ app:
     exitButtonCancel: "Stay"
   website:
     appHeader:
-      mods: ~
+      mods: "Mods"
       links: "Tautan"
       contributeTranslation: "Kontribusi untuk terjemahan Baru"
     home:
       tagline: "Marketplace kustomisasi untuk Windows dan program"
-      download: ~
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      download: "Unduh"
+      getInvolved: "Dapatkan Bantuan"
+      joinDiscord: "Gabung ke Discord komunitas Windwhawk
+      discussWindhawk: "Diskusi Windhawk di GitHub Discussions"
+      discussMods: "Diskusi Windhawk mods di GitHub Discussions"
+      browseLinks: "Jelajahi untuk tautan berguna lainnya"
+      highlights: "Sorotan"
+      robust: "Robust"
+      robustDescription: "Stabil dan performa prioritas sangat tinggi untuk Windhawk. di desain untuk berjalan selalu di latar belakang tanpa dampak pemberitahuan di sistem anda."
+      simple: "Sederhana"
+      simpleDescription: "Tidak perlu keahlian expert komputer untuk menggunakan Windhawk, Bisa digunakan oleh semua orang. Modifikasi canggih dapat diinstal hanya dengan beberapa klik, dan disesuaikan melalui opsi yang mudah digunakan."
+      transparent: "Transparan"
+      transparentDescription: "Modifikasi yang ditawarkan Windhawk bukanlah kotak hitam. Setiap modifikasi hadir dalam bentuk kode sumber, yang dapat ditinjau untuk memastikan bahwa modifikasi tersebut melakukan persis seperti yang dijanjikan."
     modDetails:
-      getWindhawk: ~
+      getWindhawk: "Dapatkan Windhawk untuk menginstal mod ini"
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "Kabar"
+      windhawkNews: "Kabar Windhawk - Ramen Software"
+      windhawkChangelog: "Log perubahan Windhawk"
+      community: "Komunitas"
+      discord: "Discord"
+      windhawkDiscussions: "Windhawk - GitHub Discussions"
+      modsDiscussions: "Windhawk Mods - GitHub Discussions"
+      documentation: "Dokumentasi"
+      creatingNewMod: "Membuat Mod Baru"
+      otherTopics: "Topik Lainnya"
+      feedback: "Umpan balik"
+      reportIssue: "Laporkan isu"
+      contactRamenSoftware: "Hubungi Ramen Software"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
-      downloadButton: ~
+      title: "Perbarui Windhawk"
+      newVersionAvailable: "Versi baru Windhawk tersedia"
+      whatsNew: "Apa yang Baru"
+      downloadButton: "Unduh"
     footer:
-      copyright: ~
+      copyright: "Hak cipta"
