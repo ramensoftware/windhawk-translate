@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "ویندوز در حالت ایمن (Safe Mode) در حال اجراست. آیا می‌خواهید حالت ایمن را در ویندهاک فعال کنید؟ تمام قابلیت‌های تزریق کد غیرفعال خواهند شد."
 app:
   general:
-    loading: "در حال بارگذاری..."
-    loadingFailed: "بارگذاری ناموفق بود، لطفاً اتصال اینترنت خود را بررسی کنید"
-    loadingFailedTitle: "بارگذاری ناموفق"
-    loadingFailedSubtitle: "لطفاً اتصال اینترنت خود را بررسی کرده و دوباره تلاش کنید"
-    tryAgain: "تلاش مجدد"
-    updating: "در حال بروزرسانی..."
-    installing: "در حال نصب..."
-    compiling: "در حال کامپایل..."
-    cut: "برش"
-    copy: "کپی"
-    paste: "چسباندن"
-    selectAll: "انتخاب همه"
-    loggingEnabled: "ثبت وقایع دیباگ (Debug logging) فعال است"
+    status:
+      loading: "در حال بارگذاری..."
+      loadingFailed: "بارگذاری ناموفق بود، لطفاً اتصال اینترنت خود را بررسی کنید"
+      loadingFailedTitle: "بارگذاری ناموفق"
+      loadingFailedSubtitle: "لطفاً اتصال اینترنت خود را بررسی کرده و دوباره تلاش کنید"
+      tryAgain: "تلاش مجدد"
+      updating: "در حال بروزرسانی..."
+      installing: "در حال نصب..."
+      compiling: "در حال کامپایل..."
+      loggingEnabled: "ثبت وقایع دیباگ (Debug logging) فعال است"
+    contextMenu:
+      cut: "برش"
+      copy: "کپی"
+      paste: "چسباندن"
+      selectAll: "انتخاب همه"
+    actions:
+      cancel: "لغو"
+      close: "بستن"
+      save: "ذخیره"
+      update: "بروزرسانی"
+      download: "دانلود"
+    modAuthor:
+      title: "نویسنده ماد"
+      homepage: "صفحه اصلی"
+      github: "گیت‌هاب"
+      twitter: "ایکس (توییتر)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "بروزرسانی موجود است"
     installed: "نصب شده"
     details: "جزئیات"
-    update: "بروزرسانی"
     downgrade: "بازگشت به نسخه قبل"
     install: "نصب"
     compile: "کامپایل"
@@ -121,7 +132,6 @@ app:
     remove: "حذف"
     removeConfirm: "آیا مطمئن هستید که می‌خواهید این ماد را حذف کنید؟"
     removeConfirmOk: "حذف ماد"
-    removeConfirmCancel: "لغو"
     donate: "حمایت مالی"
     notCompiled: "ماد نیاز به کامپایل دارد"
     editedLocally: "ماد به‌صورت محلی ویرایش شده است"
@@ -141,11 +151,6 @@ app:
       modId: "شناسه ماد"
       modVersion: "نسخه ماد"
       lastUpdated: "آخرین بروزرسانی"
-      modAuthor:
-        title: "نویسنده ماد"
-        homepage: "صفحه اصلی"
-        github: "گیت‌هاب"
-        twitter: "ایکس (توییتر)"
       processes:
         all: "همه پردازش‌ها"
         allBut: "همه به جز {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "پیش‌انتشار"
       select: "انتخاب"
-      cancel: "لغو"
       chooseVersion: "انتخاب یک نسخه..."
     details:
       title: "جزئیات"
@@ -205,7 +209,6 @@ app:
         description: "به راحتی تنظیمات ماد خود را صادر (Export) کرده یا به اشتراک بگذارید."
         loadButton: "بارگذاری"
         loadFormattedButton: "بارگذاری فرمت‌شده"
-        saveButton: "ذخیره"
         invalidData: "داده‌های JSON نامعتبر"
       customList:
         titleInclusion: "لیست سفارشی شمول پردازش‌ها"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "یک لیست سفارشی از نام/مسیر فایل‌های اجرایی اضافی که ماد آن‌ها را نادیده می‌گیرد. این لیست به لیست حذفی که نویسنده ماد تعریف کرده اضافه می‌شود. برای هر پردازش، اگر مسیر فایل اجرایی با یکی از ورودی‌های شمول مطابقت داشته باشد و با هیچ ورودی حذفی مطابقت نداشته باشد، ماد بارگذاری می‌شود."
         processListPlaceholder: "نام/مسیر پردازش‌ها، هر کدام در یک خط، برای مثال:"
         invalidCharactersWarning: "لیست پردازش حاوی کاراکترهای نامعتبری است که حذف خواهند شد: {{invalidCharacters}}"
-        saveButton: "ذخیره"
       includeExcludeCustomOnly:
         title: "نادیده گرفتن لیست‌های شمول/عدم شمول ماد"
         description: "نادیده گرفتن لیست‌های شمول/عدم شمول تعریف شده توسط ماد و استفاده فقط از لیست‌های سفارشی بالا."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>مشارکت در ترجمه جدید</0>."
       credits: "ترجمه فارسی توسط <0>دانیال شیرالی</0>."
       creditsLink: "mailto:danialshirali16@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "بررسی بروزرسانی‌ها"
       description: "بررسی خودکار و اطلاع‌رسانی درباره نسخه‌های جدید ویندهاک و مادهای نصب شده."
@@ -300,7 +308,6 @@ app:
       title: "تنظیمات پیشرفته بیشتر"
       restartNotice: "ویندهاک برای اعمال تنظیمات مجدداً راه‌اندازی خواهد شد."
       saveButton: "ذخیره و راه‌اندازی مجدد ویندهاک"
-      cancelButton: "لغو"
     loggingVerbosity:
       appLoggingTitle: "جزئیات لاگ ویندهاک"
       engineLoggingTitle: "جزئیات لاگ موتور ویندهاک"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "اگر قصد داشتید همه پردازش‌ها به جز این موارد را مستثنی کنید، می‌توانید \"*\" را در لیست عدم شمول قرار دهید."
       processListPlaceholder: "نام/مسیر پردازش‌ها، هر کدام در یک خط، برای مثال:"
       invalidCharactersWarning: "لیست پردازش حاوی کاراکترهای نامعتبری است که حذف خواهند شد: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "ویندهاک نسخه v{{version}}"
     beta: "بتا"
@@ -330,23 +402,21 @@ app:
       title: "یک بروزرسانی موجود است"
       subtitle: "برای دریافت آخرین ویژگی‌ها و رفع اشکال‌ها، ویندهاک را بروزرسانی کنید"
       changelogButton: "لیست تغییرات"
-      updateButton: "بروزرسانی"
       modal:
         title: "در حال بروزرسانی ویندهاک"
         downloading: "در حال دانلود بروزرسانی..."
         installing: "در حال نصب بروزرسانی..."
         installingNote: "ویندهاک پس از اتمام نصب به‌صورت خودکار مجدداً راه‌اندازی می‌شود."
         failed: "بروزرسانی ناموفق بود"
-        cancel: "لغو"
     changelog:
       title: "چه چیزی در ویندهاک جدید است"
-      close: "بستن"
     links:
       title: "لینک‌ها"
       homepage: "صفحه اصلی"
       documentation: "مستندات"
     builtWith:
       title: "ساخته شده با"
+      tauri: ~
       vscodium: "توزیعی از ویرایشگر VSCode مایکروسافت که توسط جامعه هدایت می‌شود"
       llvmMingw: "یک زنجیره ابزار mingw-w64 مبتنی بر LLVM/Clang/LLD"
       minHook: "کتابخانه هوک API مینیمالیستی برای ویندوز"
@@ -355,40 +425,31 @@ app:
     title: "نصب {{mod}}"
     warningTitle: "با احتیاط ادامه دهید"
     warningDescription: "مادهای مخرب می‌توانند به کامپیوتر شما آسیب برسانند یا حریم خصوصی شما را نقض کنند. مادها را فقط از نویسندگانی که به آن‌ها اعتماد دارید نصب کنید."
-    modAuthor: "نویسنده ماد"
-    homepage: "صفحه اصلی"
-    github: "گیت‌هاب"
-    twitter: "ایکس (توییتر)"
     verified: "تایید شده"
     verifiedTooltip: "ما تایید کردیم که این پروفایل متعلق به نویسنده ماد است، اما توجه داشته باشید که <0>تایید شده</0> به معنای <0>قابل اعتماد</0> نیست. مطمئن شوید که به نویسنده ماد اعتماد دارید، یا قبل از نصب، کد منبع را با دقت بررسی کنید."
     acceptButton: "پذیرش ریسک و نصب"
-    cancelButton: "لغو"
   createNewModButton:
     title: "ایجاد یک ماد جدید"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "ایجاد و تغییر مادها نیاز به دانش توسعه C/C++ برای ویندوز دارد. اگر مطمئن نیستید این به چه معناست، شاید این گزینه‌ها برای شما مناسب نباشند."
     hideOptionsCheckbox: "مخفی کردن تمام گزینه‌های مربوط به توسعه"
     hideOptionsButton: "مخفی کردن گزینه‌ها"
     beginCodingButton: "شروع کدنویسی"
-    cancelButton: "لغو"
   safeMode:
     alert: "ویندهاک در حالت ایمن اجرا می‌شود، تمام قابلیت‌های تزریق کد غیرفعال هستند."
     offButton: "خاموش کردن حالت ایمن"
     offConfirm: "ویندهاک برای اعمال تنظیمات مجدداً راه‌اندازی خواهد شد."
     offConfirmOk: "راه‌اندازی مجدد ویندهاک"
-    offConfirmCancel: "لغو"
   modPreview:
     actionUnavailable: "این عملیات در حالت پیش‌نمایش در دسترس نیست"
     notCompiled: "ماد باید قبل از پیش‌نمایش کامپایل شود"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "مادها"
       links: "لینک‌ها"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "مشارکت در ترجمه جدید"
     home:
       tagline: "بازارچه شخصی‌سازی برای ویندوز و برنامه‌ها"
-      download: "دانلود"
       getInvolved: "مشارکت کنید"
       joinDiscord: "به جامعه ویندهاک در دیسکورد بپیوندید"
       discussWindhawk: "بحث درباره ویندهاک در GitHub Discussions"
@@ -446,6 +508,5 @@ app:
       title: "بروزرسانی ویندهاک"
       newVersionAvailable: "نسخه جدیدی از ویندهاک موجود است"
       whatsNew: "تغییرات جدید"
-      downloadButton: "دانلود"
     footer:
       copyright: "حق کپی‌رایت"

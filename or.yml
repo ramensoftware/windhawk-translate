@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "ୱିଣ୍ଡୋଜ୍ ସେଫ୍ ମୋଡ୍‌ରେ ଚାଲୁଛି। ଆପଣ Windhawk ରେ ସେଫ୍ ମୋଡ୍ ସକ୍ରିୟ କରିବାକୁ ଚାହାଁନ୍ତି କି? ସମସ୍ତ କୋଡ୍ ଇଞ୍ଜେକସନ କାର୍ଯ୍ୟକ୍ଷମତା ବନ୍ଦ ହୋଇଯିବ।"
 app:
   general:
-    loading: "ଲୋଡ୍ ହେଉଛି..."
-    loadingFailed: "ଲୋଡ୍ ହେବାରେ ବିଫଳ ହେଲା, ଦୟାକରି ଆପଣଙ୍କର ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ଯାଞ୍ଚ କରନ୍ତୁ"
-    loadingFailedTitle: "ଲୋଡ୍ ହେବାରେ ବିଫଳ"
-    loadingFailedSubtitle: "ଦୟାକରି ଆପଣଙ୍କର ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ଯାଞ୍ଚ କରନ୍ତୁ ଏବଂ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ"
-    tryAgain: "ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ"
-    updating: "ଅପଡେଟ୍ ହେଉଛି..."
-    installing: "ଇନଷ୍ଟଲ୍ ହେଉଛି..."
-    compiling: "କମ୍ପାଇଲ୍ ହେଉଛି..."
-    cut: "କାଟନ୍ତୁ (Cut)"
-    copy: "କପି କରନ୍ତୁ"
-    paste: "ପେଷ୍ଟ କରନ୍ତୁ"
-    selectAll: "ସବୁ ବାଛନ୍ତୁ"
-    loggingEnabled: "ଡିବଗ୍ ଲଗିଂ ସକ୍ରିୟ ଅଛି"
+    status:
+      loading: "ଲୋଡ୍ ହେଉଛି..."
+      loadingFailed: "ଲୋଡ୍ ହେବାରେ ବିଫଳ ହେଲା, ଦୟାକରି ଆପଣଙ୍କର ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ଯାଞ୍ଚ କରନ୍ତୁ"
+      loadingFailedTitle: "ଲୋଡ୍ ହେବାରେ ବିଫଳ"
+      loadingFailedSubtitle: "ଦୟାକରି ଆପଣଙ୍କର ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ଯାଞ୍ଚ କରନ୍ତୁ ଏବଂ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ"
+      tryAgain: "ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ"
+      updating: "ଅପଡେଟ୍ ହେଉଛି..."
+      installing: "ଇନଷ୍ଟଲ୍ ହେଉଛି..."
+      compiling: "କମ୍ପାଇଲ୍ ହେଉଛି..."
+      loggingEnabled: "ଡିବଗ୍ ଲଗିଂ ସକ୍ରିୟ ଅଛି"
+    contextMenu:
+      cut: "କାଟନ୍ତୁ (Cut)"
+      copy: "କପି କରନ୍ତୁ"
+      paste: "ପେଷ୍ଟ କରନ୍ତୁ"
+      selectAll: "ସବୁ ବାଛନ୍ତୁ"
+    actions:
+      cancel: "ବାତିଲ କରନ୍ତୁ"
+      close: "ବନ୍ଦ କରନ୍ତୁ"
+      save: "ସେଭ୍"
+      update: "ଅପଡେଟ୍"
+      download: "ଡାଉନଲୋଡ୍"
+    modAuthor:
+      title: "ମଡ୍ ଲେଖକ"
+      homepage: "ହୋମପେଜ୍"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "ଅପଡେଟ୍ ଉପଲବ୍ଧ"
     installed: "ଇନଷ୍ଟଲ୍ ହୋଇଛି"
     details: "ବିବରଣୀ"
-    update: "ଅପଡେଟ୍"
     downgrade: "ଡାଉନଗ୍ରେଡ୍"
     install: "ଇନଷ୍ଟଲ୍"
     compile: "କମ୍ପାଇଲ୍"
@@ -121,7 +132,6 @@ app:
     remove: "ହଟାନ୍ତୁ"
     removeConfirm: "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଏହି ମଡ୍‌କୁ ହଟାଇବାକୁ ଚାହାଁନ୍ତି?"
     removeConfirmOk: "ମଡ୍ ହଟାନ୍ତୁ"
-    removeConfirmCancel: "ବାତିଲ କରନ୍ତୁ"
     donate: "ଦାନ କରନ୍ତୁ (Donate)"
     notCompiled: "ମଡ୍ କମ୍ପାଇଲ୍ ହେବା ଆବଶ୍ୟକ"
     editedLocally: "ମଡ୍ ସ୍ଥାନୀୟ ଭାବରେ ଏଡିଟ୍ କରାଯାଇଛି"
@@ -141,11 +151,6 @@ app:
       modId: "ମଡ୍ ପରିଚୟକ (Identifier)"
       modVersion: "ମଡ୍ ସଂସ୍କରଣ"
       lastUpdated: "ଶେଷ ଅପଡେଟ୍"
-      modAuthor:
-        title: "ମଡ୍ ଲେଖକ"
-        homepage: "ହୋମପେଜ୍"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "ସମସ୍ତ ପ୍ରୋସେସ୍"
         allBut: "{{list}} କୁ ଛାଡି ଅନ୍ୟ ସମସ୍ତ"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "ପ୍ରି-ରିଲିଜ୍"
       select: "ବାଛନ୍ତୁ"
-      cancel: "ବାତିଲ କରନ୍ତୁ"
       chooseVersion: "ଏକ ସଂସ୍କରଣ ବାଛନ୍ତୁ..."
     details:
       title: "ବିବରଣୀ"
@@ -205,7 +209,6 @@ app:
         description: "ଆପଣଙ୍କ ମଡ୍ ସେଟିଙ୍ଗସ ସହଜରେ ଏକ୍ସପୋର୍ଟ କିମ୍ବା ଶେୟାର କରନ୍ତୁ।"
         loadButton: "ଲୋଡ୍"
         loadFormattedButton: "ଫର୍ମାଟ୍ ହୋଇଥିବା ଲୋଡ୍ କରନ୍ତୁ"
-        saveButton: "ସେଭ୍"
         invalidData: "ଅବୈଧ JSON ଡାଟା"
       customList:
         titleInclusion: "କଷ୍ଟମ୍ ପ୍ରୋସେସ୍ ଅନ୍ତର୍ଭୁକ୍ତି ତାଲିକା"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "ଅତିରିକ୍ତ ଏକ୍ସିକ୍ୟୁଟେବଲ୍ ଫାଇଲ୍ ନାମ/ପାଥ୍‌ର ଏକ କଷ୍ଟମ୍ ତାଲିକା ଯାହାକୁ ମଡ୍ ବାଦ୍ ଦେବ।"
         processListPlaceholder: "ପ୍ରୋସେସ୍ ନାମ/ପାଥ୍, ପ୍ରତି ଧାଡ଼ିରେ ଗୋଟିଏ, ଉଦାହରଣ ସ୍ୱରୂପ:"
         invalidCharactersWarning: "ପ୍ରୋସେସ୍ ତାଲିକାରେ ଅବୈଧ ଅକ୍ଷର ଅଛି ଯାହାକୁ ହଟାଇ ଦିଆଯିବ: {{invalidCharacters}}"
-        saveButton: "ସେଭ୍"
       includeExcludeCustomOnly:
         title: "ମଡ୍ ଅନ୍ତର୍ଭୁକ୍ତି/ବହିଷ୍କାର ତାଲିକାକୁ ଅଣଦେଖା କରନ୍ତୁ"
         description: "ମଡ୍‌ର ମୂଳ ତାଲିକାକୁ ଅଣଦେଖା କରି କେବଳ ଉପରୋକ୍ତ କଷ୍ଟମ୍ ତାଲିକା ବ୍ୟବହାର କରନ୍ତୁ।"
@@ -274,6 +276,12 @@ app:
       contribute: "<0>ଏକ ନୂତନ ଅନୁବାଦରେ ସାହାଯ୍ୟ କରନ୍ତୁ</0>।"
       credits: "ଓଡ଼ିଆ ଅନୁବାଦ: <0>Sandeep Biswal G</0> ଦ୍ୱାରା।"
       creditsLink: "https://imsbg.github.io/"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "ଅପଡେଟ୍ ଯାଞ୍ଚ କରନ୍ତୁ"
       description: "Windhawk ଏବଂ ଇନଷ୍ଟଲ୍ ହୋଇଥିବା ମଡ୍‌ଗୁଡ଼ିକର ନୂତନ ସଂସ୍କରଣ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଯାଞ୍ଚ କରନ୍ତୁ।"
@@ -300,7 +308,6 @@ app:
       title: "ଅଧିକ ଆଡଭାନ୍ସଡ୍ ସେଟିଙ୍ଗସ"
       restartNotice: "ସେଟିଙ୍ଗସ ପ୍ରୟୋଗ କରିବା ପାଇଁ Windhawk ପୁନର୍ବାର ଆରମ୍ଭ ହେବ।"
       saveButton: "ସେଭ୍ କରନ୍ତୁ ଏବଂ Windhawk ପୁନର୍ବାର ଆରମ୍ଭ କରନ୍ତୁ"
-      cancelButton: "ବାତିଲ କରନ୍ତୁ"
     loggingVerbosity:
       appLoggingTitle: "Windhawk ଆପ୍ ଲଗିଂ ବିସ୍ତୃତି"
       engineLoggingTitle: "Windhawk ଇଞ୍ଜିନ୍ ଲଗିଂ ବିସ୍ତୃତି"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "ଯଦି ଆପଣ କେବଳ ଏହି ପ୍ରୋସେସ୍‌ଗୁଡ଼ିକୁ ଛାଡି ଅନ୍ୟ ସବୁକୁ ବାଦ୍ ଦେବାକୁ ଚାହୁଁଛନ୍ତି, ତେବେ ବହିଷ୍କାର ତାଲିକାରେ \"*\" ସେଟ୍ କରନ୍ତୁ।"
       processListPlaceholder: "ପ୍ରୋସେସ୍ ନାମ/ପାଥ୍, ପ୍ରତି ଧାଡ଼ିରେ ଗୋଟିଏ:"
       invalidCharactersWarning: "ପ୍ରୋସେସ୍ ତାଲିକାରେ ଅବୈଧ ଅକ୍ଷର ଅଛି ଯାହାକୁ ହଟାଇ ଦିଆଯିବ: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "ବିଟା (beta)"
@@ -330,23 +402,21 @@ app:
       title: "ଏକ ଅପଡେଟ୍ ଉପଲବ୍ଧ"
       subtitle: "ସର୍ବଶେଷ ଫିଚର୍ ଏବଂ ବଗ୍ ଫିକ୍ସ ପାଇଁ Windhawk ଅପଡେଟ୍ କରିବାକୁ ବିଚାର କରନ୍ତୁ"
       changelogButton: "ଚେଞ୍ଜଲଗ୍"
-      updateButton: "ଅପଡେଟ୍"
       modal:
         title: "Windhawk ଅପଡେଟ୍ ହେଉଛି"
         downloading: "ଅପଡେଟ୍ ଡାଉନଲୋଡ୍ ହେଉଛି..."
         installing: "ଅପଡେଟ୍ ଇନଷ୍ଟଲ୍ ହେଉଛି..."
         installingNote: "ଇନଷ୍ଟଲେସନ ସରିବା ପରେ Windhawk ସ୍ୱୟଂଚାଳିତ ଭାବରେ ପୁନର୍ବାର ଆରମ୍ଭ ହେବ।"
         failed: "ଅପଡେଟ୍ ବିଫଳ ହେଲା"
-        cancel: "ବାତିଲ କରନ୍ତୁ"
     changelog:
       title: "Windhawk ରେ ନୂଆ କ'ଣ ଅଛି"
-      close: "ବନ୍ଦ କରନ୍ତୁ"
     links:
       title: "ଲିଙ୍କ୍‌ଗୁଡ଼ିକ"
       homepage: "ହୋମପେଜ୍"
       documentation: "ଡକ୍ୟୁମେଣ୍ଟେସନ"
     builtWith:
       title: "ଏହା ସାହାଯ୍ୟରେ ନିର୍ମିତ"
+      tauri: ~
       vscodium: "VSCodium - Microsoft ର VSCode ଏଡିଟରର ଏକ କମ୍ୟୁନିଟି ସଂସ୍କରଣ"
       llvmMingw: "LLVM/Clang/LLD ଆଧାରିତ mingw-w64 ଟୁଲ୍‌ଚେନ୍"
       minHook: "ୱିଣ୍ଡୋଜ୍ ପାଇଁ ମିନିମାଲିଷ୍ଟିକ୍ API ହୁକିଂ ଲାଇବ୍ରେରୀ"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} ଇନଷ୍ଟଲ୍ କରନ୍ତୁ"
     warningTitle: "ସାବଧାନତାର ସହିତ ଆଗକୁ ବଢ଼ନ୍ତୁ"
     warningDescription: "ଖରାପ ମଡ୍ ଆପଣଙ୍କ କମ୍ପ୍ୟୁଟରକୁ କ୍ଷତି ପହଞ୍ଚାଇପାରେ କିମ୍ବା ଆପଣଙ୍କ ଗୋପନୀୟତା ନଷ୍ଟ କରିପାରେ। କେବଳ ବିଶ୍ୱସ୍ତ ଲେଖକଙ୍କ ମଡ୍ ଇନଷ୍ଟଲ୍ କରନ୍ତୁ।"
-    modAuthor: "ମଡ୍ ଲେଖକ"
-    homepage: "ହୋମପେଜ୍"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "ଯାଞ୍ଚ ହୋଇଛି"
     verifiedTooltip: "ଆମେ ଯାଞ୍ଚ କରିଛୁ ଯେ ଏହି ପ୍ରୋଫାଇଲ୍ ମଡ୍ ଲେଖକଙ୍କର ଅଟେ, କିନ୍ତୁ ମନେରଖନ୍ତୁ ଯେ 'ଯାଞ୍ଚ' ଏବଂ 'ବିଶ୍ୱସ୍ତ' ସମାନ ନୁହେଁ। ଇନଷ୍ଟଲ୍ କରିବା ପୂର୍ବରୁ ସୋର୍ସ କୋଡ୍ ଯାଞ୍ଚ କରନ୍ତୁ।"
     acceptButton: "ବିପଦ ଗ୍ରହଣ କରନ୍ତୁ ଏବଂ ଇନଷ୍ଟଲ୍ କରନ୍ତୁ"
-    cancelButton: "ବାତିଲ କରନ୍ତୁ"
   createNewModButton:
     title: "ଏକ ନୂତନ ମଡ୍ ତିଆରି କରନ୍ତୁ"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "ମଡ୍ ତିଆରି ଏବଂ ପରିବର୍ତ୍ତନ ପାଇଁ ୱିଣ୍ଡୋଜ୍ ପାଇଁ C/C++ ଡେଭଲପମେଣ୍ଟ ଜ୍ଞାନ ଆବଶ୍ୟକ।"
     hideOptionsCheckbox: "ସମସ୍ତ ଡେଭଲପମେଣ୍ଟ ସମ୍ବନ୍ଧୀୟ ବିକଳ୍ପଗୁଡ଼ିକୁ ଲୁଚାନ୍ତୁ"
     hideOptionsButton: "ଅପ୍ସନ ଲୁଚାନ୍ତୁ"
     beginCodingButton: "କୋଡିଂ ଆରମ୍ଭ କରନ୍ତୁ"
-    cancelButton: "ବାତିଲ କରନ୍ତୁ"
   safeMode:
     alert: "Windhawk ସେଫ୍ ମୋଡ୍‌ରେ ଚାଲୁଛି, ସମସ୍ତ କୋଡ୍ ଇଞ୍ଜେକସନ ବନ୍ଦ ଅଛି।"
     offButton: "ସେଫ୍ ମୋଡ୍ ବନ୍ଦ କରନ୍ତୁ"
     offConfirm: "ସେଟିଙ୍ଗସ ପ୍ରୟୋଗ କରିବା ପାଇଁ Windhawk ପୁନର୍ବାର ଆରମ୍ଭ ହେବ।"
     offConfirmOk: "Windhawk ପୁନର୍ବାର ଆରମ୍ଭ କରନ୍ତୁ"
-    offConfirmCancel: "ବାତିଲ କରନ୍ତୁ"
   modPreview:
     actionUnavailable: "ପ୍ରିଭ୍ୟୁ ମୋଡ୍‌ରେ ଏହି କାର୍ଯ୍ୟ ଉପଲବ୍ଧ ନାହିଁ"
     notCompiled: "ପ୍ରିଭ୍ୟୁ କରିବା ପୂର୍ବରୁ ମଡ୍‌କୁ କମ୍ପାଇଲ୍ କରିବା ଆବଶ୍ୟକ"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "ମଡ୍‌ଗୁଡ଼ିକ"
       links: "ଲିଙ୍କ୍‌ଗୁଡ଼ିକ"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "ଏକ ନୂତନ ଅନୁବାଦରେ ସାହାଯ୍ୟ କରନ୍ତୁ"
     home:
       tagline: "ୱିଣ୍ଡୋଜ୍ ଏବଂ ପ୍ରୋଗ୍ରାମଗୁଡ଼ିକ ପାଇଁ କଷ୍ଟମାଇଜେସନ ମାର୍କେଟପ୍ଲେସ"
-      download: "ଡାଉନଲୋଡ୍"
       getInvolved: "ଜଡ଼ିତ ହୁଅନ୍ତୁ"
       joinDiscord: "Discord ରେ Windhawk ସମ୍ପ୍ରଦାୟରେ ଯୋଗ ଦିଅନ୍ତୁ"
       discussWindhawk: "GitHub Discussions ରେ Windhawk ବିଷୟରେ ଆଲୋଚନା କରନ୍ତୁ"
@@ -446,6 +508,5 @@ app:
       title: "Windhawk ଅପଡେଟ୍ କରନ୍ତୁ"
       newVersionAvailable: "Windhawk ର ଏକ ନୂତନ ସଂସ୍କରଣ ଉପଲବ୍ଧ"
       whatsNew: "ନୂଆ କ'ଣ ଅଛି"
-      downloadButton: "ଡାଉନଲୋଡ୍"
     footer:
       copyright: "କପିରାଇଟ୍"

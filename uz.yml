@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows xavfsiz rejimda ishlamoqda. Windhawk'da ham xavfsiz rejimni yoqishni xohlaysizmi? Bunda barcha kod kiritish funksiyalari o‘chiriladi."
 app:
   general:
-    loading: "Yuklanmoqda..."
-    loadingFailed: "Yuklash muvaffaqiyatsiz tugadi, internet ulanishini tekshiring"
-    loadingFailedTitle: "Yuklash muvaffaqiyatsiz tugadi"
-    loadingFailedSubtitle: "Iltimos, internet ulanishingizni tekshiring va qaytadan urinib ko‘ring"
-    tryAgain: "Qaytadan urinish"
-    updating: "Yangilanmoqda..."
-    installing: "O‘rnatilmoqda..."
-    compiling: "Kompilyatsiya qilinmoqda..."
-    cut: "Kesish"
-    copy: "Nusxalash"
-    paste: "Joylashtirish"
-    selectAll: "Hammasini tanlash"
-    loggingEnabled: "Nosozliklarni tuzatish jurnali (debug logging) yoqilgan"
+    status:
+      loading: "Yuklanmoqda..."
+      loadingFailed: "Yuklash muvaffaqiyatsiz tugadi, internet ulanishini tekshiring"
+      loadingFailedTitle: "Yuklash muvaffaqiyatsiz tugadi"
+      loadingFailedSubtitle: "Iltimos, internet ulanishingizni tekshiring va qaytadan urinib ko‘ring"
+      tryAgain: "Qaytadan urinish"
+      updating: "Yangilanmoqda..."
+      installing: "O‘rnatilmoqda..."
+      compiling: "Kompilyatsiya qilinmoqda..."
+      loggingEnabled: "Nosozliklarni tuzatish jurnali (debug logging) yoqilgan"
+    contextMenu:
+      cut: "Kesish"
+      copy: "Nusxalash"
+      paste: "Joylashtirish"
+      selectAll: "Hammasini tanlash"
+    actions:
+      cancel: "Bekor qilish"
+      close: "Yopish"
+      save: "Saqlash"
+      update: "Yangilash"
+      download: "Yuklab olish"
+    modAuthor:
+      title: "Mod muallifi"
+      homepage: "Asosiy sahifa"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Yangilanish mavjud"
     installed: "O‘rnatilgan"
     details: "Tafsilotlar"
-    update: "Yangilash"
     downgrade: "Versiyani tushirish"
     install: "O‘rnatish"
     compile: "Kompilyatsiya"
@@ -121,7 +132,6 @@ app:
     remove: "O‘chirish"
     removeConfirm: "Ushbu modni olib tashlamoqchimisiz?"
     removeConfirmOk: "Modni o‘chirish"
-    removeConfirmCancel: "Bekor qilish"
     donate: "Xayriya qilish"
     notCompiled: "Mod kompilyatsiya qilinishi kerak"
     editedLocally: "Mod mahalliy darajada tahrirlangan"
@@ -141,11 +151,6 @@ app:
       modId: "Mod identifikatori"
       modVersion: "Mod versiyasi"
       lastUpdated: "So‘nggi yangilanish"
-      modAuthor:
-        title: "Mod muallifi"
-        homepage: "Asosiy sahifa"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Barcha jarayonlar"
         allBut: "{{list}}'dan tashqari barchasi"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "pre-reliz"
       select: "Tanlash"
-      cancel: "Bekor qilish"
       chooseVersion: "Versiyani tanlang..."
     details:
       title: "Tafsilotlar"
@@ -205,7 +209,6 @@ app:
         description: "Mod sozlamalarini osongina eksport qiling yoki ulashing."
         loadButton: "Yuklash"
         loadFormattedButton: "Formatlangan holda yuklash"
-        saveButton: "Saqlash"
         invalidData: "Noto‘g‘ri JSON ma'lumotlari"
       customList:
         titleInclusion: "Shaxsiy jarayonlarni kiritish ro‘yxati"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Mod chetlab o‘tadigan qo‘shimcha ishchi fayl nomlari/yo‘llarining shaxsiy ro‘yxati. Bu ro‘yxat muallif tomonidan belgilangan istisno ro‘yxatiga qo‘shiladi."
         processListPlaceholder: "Jarayon nomlari/yo‘llari, har bir qatorda bittadan, masalan:"
         invalidCharactersWarning: "Jarayon ro‘yxatida noto‘g‘ri belgilar bor, ular olib tashlanadi: {{invalidCharacters}}"
-        saveButton: "Saqlash"
       includeExcludeCustomOnly:
         title: "Modning kiritish/istisno ro‘yxatlarini e'tiborsiz qoldirish"
         description: "Modning o‘z ro‘yxatlarini e'tiborsiz qoldiring va faqat yuqoridagi shaxsiy ro‘yxatlardan foydalaning."
@@ -274,6 +276,12 @@ app:
       contribute: "Yangi tarjima bilan <0>hissa qo‘shing</0>."
       credits: ""
       creditsLink: ""
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Yangilanishlarni tekshirish"
       description: "Windhawk va o‘rnatilgan modlarning yangi versiyalarini avtomatik tekshirish va xabar berish."
@@ -300,7 +308,6 @@ app:
       title: "Boshqa kengaytirilgan sozlamalar"
       restartNotice: "Sozlamalarni qo‘llash uchun Windhawk qayta ishga tushiriladi."
       saveButton: "Saqlash va Windhawk'ni qayta ishga tushirish"
-      cancelButton: "Bekor qilish"
     loggingVerbosity:
       appLoggingTitle: "Windhawk jurnallarining batafsilligi"
       engineLoggingTitle: "Windhawk dvigateli jurnallarining batafsilligi"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Agar siz faqat shu jarayonlardan tashqari hamma narsani chetlab o‘tmoqchi bo‘lsangiz, istisno ro‘yxatiga \"*\" belgisini qo‘yishingiz mumkin."
       processListPlaceholder: "Jarayon nomlari/yo‘llari, har bir qatorda bittadan, masalan:"
       invalidCharactersWarning: "Jarayon ro‘yxatida noto‘g‘ri belgilar bor, ular olib tashlanadi: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "Yangilanish mavjud"
       subtitle: "Eng so‘nggi funksiyalar va tuzatishlarni olish uchun Windhawk'ni yangilang"
       changelogButton: "O‘zgarishlar jurnali"
-      updateButton: "Yangilash"
       modal:
         title: "Windhawk yangilanmoqda"
         downloading: "Yangilanish yuklab olinmoqda..."
         installing: "Yangilanish o‘rnatilmoqda..."
         installingNote: "O‘rnatish tugagach, Windhawk avtomatik ravishda qayta ishga tushadi."
         failed: "Yangilash muvaffaqiyatsiz tugadi"
-        cancel: "Bekor qilish"
     changelog:
       title: "Windhawk'dagi yangiliklar"
-      close: "Yopish"
     links:
       title: "Havolalar"
       homepage: "Asosiy sahifa"
       documentation: "Hujjatlar"
     builtWith:
       title: "Yaratishda foydalanilgan"
+      tauri: ~
       vscodium: "Microsoft VSCode muharririning hamjamiyat tomonidan boshqariladigan distribyutivi"
       llvmMingw: "LLVM/Clang/LLD'ga asoslangan mingw-w64 vositalar to‘plami"
       minHook: "Windows uchun minimalistik API hooking kutubxonasi"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} modini o‘rnatish"
     warningTitle: "Ehtiyotkorlik bilan davom eting"
     warningDescription: "Zararli modlar kompyuteringizga zarar yetkazishi yoki maxfiyligingizni buzishi mumkin. Modlarni faqat siz ishonadigan mualliflardan o‘rnating."
-    modAuthor: "Mod muallifi"
-    homepage: "Asosiy sahifa"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "tasdiqlangan"
     verifiedTooltip: "Biz ushbu profil mod muallifiga tegishli ekanligini tasdiqladik, ammo <0>tasdiqlangan</0> degani <0>ishonchli</0> degani emas. Muallifga ishonishingizga amin bo‘ling yoki o‘rnatishdan oldin manba kodini diqqat bilan tekshiring."
     acceptButton: "Xavfni qabul qilaman va o‘rnataman"
-    cancelButton: "Bekor qilish"
   createNewModButton:
     title: "Yangi mod yaratish"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Modlarni yaratish va o‘zgartirish Windows uchun C/C++ dasturlash bo‘yicha bilimlarni talab qiladi. Agar buni nima ekanligini bilmasangiz, ehtimol bu variantlar siz uchun emas."
     hideOptionsCheckbox: "Barcha dasturlashga oid variantlarni yashirish"
     hideOptionsButton: "Variantlarni yashirish"
     beginCodingButton: "Kodlashni boshlash"
-    cancelButton: "Bekor qilish"
   safeMode:
     alert: "Windhawk xavfsiz rejimda ishlamoqda, barcha kod kiritish funksiyalari o‘chirilgan."
     offButton: "Xavfsiz rejimni o‘chirish"
     offConfirm: "Sozlamalarni qo‘llash uchun Windhawk qayta ishga tushiriladi."
     offConfirmOk: "Windhawk'ni qayta ishga tushirish"
-    offConfirmCancel: "Bekor qilish"
   modPreview:
     actionUnavailable: "Amal ko‘rib chiqish rejimida mavjud emas"
     notCompiled: "Modni ko‘rib chiqishdan oldin u kompilyatsiya qilinishi kerak"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "Modlar"
       links: "Havolalar"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Yangi tarjima qo‘shish"
     home:
       tagline: "Windows va dasturlar uchun moslashtirish bozori"
-      download: "Yuklab olish"
       getInvolved: "Ishtirok eting"
       joinDiscord: "Discord'dagi Windhawk hamjamiyatiga qo‘shiling"
       discussWindhawk: "GitHub Discussions'da Windhawk'ni muhokama qiling"
@@ -446,6 +508,5 @@ app:
       title: "Windhawk'ni yangilash"
       newVersionAvailable: "Windhawk'ning yangi versiyasi mavjud"
       whatsNew: "Yangiliklar"
-      downloadButton: "Yuklab olish"
     footer:
       copyright: "Mualliflik huquqi"

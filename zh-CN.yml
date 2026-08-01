@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows正在安全模式下运行。您是否要在Windhawk中启用安全模式？所有代码注入功能将被关闭。"
 app:
   general:
-    loading: "加载中..."
-    loadingFailed: "加载失败，请检查您的网络连接"
-    loadingFailedTitle: "加载失败"
-    loadingFailedSubtitle: "请检查您的网络连接并重试"
-    tryAgain: "请重试"
-    updating: "更新中..."
-    installing: "安装中..."
-    compiling: "编译中..."
-    cut: "剪切"
-    copy: "复制"
-    paste: "粘贴"
-    selectAll: "全选"
-    loggingEnabled: "调试日志已启用"
+    status:
+      loading: "加载中..."
+      loadingFailed: "加载失败，请检查您的网络连接"
+      loadingFailedTitle: "加载失败"
+      loadingFailedSubtitle: "请检查您的网络连接并重试"
+      tryAgain: "请重试"
+      updating: "更新中..."
+      installing: "安装中..."
+      compiling: "编译中..."
+      loggingEnabled: "调试日志已启用"
+    contextMenu:
+      cut: "剪切"
+      copy: "复制"
+      paste: "粘贴"
+      selectAll: "全选"
+    actions:
+      cancel: "取消"
+      close: "关闭"
+      save: "保存"
+      update: "更新"
+      download: "下载"
+    modAuthor:
+      title: "模组开发者"
+      homepage: "主页"
+      github: "GitHub主页"
+      twitter: "X (Twitter)主页"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "更新可用"
     installed: "已安装"
     details: "详情"
-    update: "更新"
     downgrade: "降级"
     install: "安装"
     compile: "编译"
@@ -121,7 +132,6 @@ app:
     remove: "移除"
     removeConfirm: "您确定要移除此模组吗？"
     removeConfirmOk: "确认移除"
-    removeConfirmCancel: "取消"
     donate: "捐赠"
     notCompiled: "模组需要编译"
     editedLocally: "模组已在本地编辑"
@@ -141,11 +151,6 @@ app:
       modId: "模组 ID"
       modVersion: "模组版本"
       lastUpdated: "最后更新"
-      modAuthor:
-        title: "模组开发者"
-        homepage: "主页"
-        github: "GitHub主页"
-        twitter: "X (Twitter)主页"
       processes:
         all: "全部进程"
         allBut: "全部进程，除了{{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "预览版"
       select: "选择"
-      cancel: "取消"
       chooseVersion: "选择版本..."
     details:
       title: "详情"
@@ -205,7 +209,6 @@ app:
         description: "便捷的导出和分享您的模组设置。"
         loadButton: "加载"
         loadFormattedButton: "格式化后加载"
-        saveButton: "保存"
         invalidData: "无效的JSON数据"
       customList:
         titleInclusion: "自定义进程包含列表"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "模组将作用于不在此自定义列表中的可执行文件/路径。该列表被添加到模组开发者定义的包含列表中，以确定目标进程。对于每个进程，如果可执行文件/路径匹配一个包含项，而不匹配任何排除项，则加载模组。"
         processListPlaceholder: "进程名称/路径，每行一条内容，例如："
         invalidCharactersWarning: "进程列表包含无效字符，这些字符将会被去除：{{invalidCharacters}}"
-        saveButton: "保存"
       includeExcludeCustomOnly:
         title: "忽略模组包含/排除列表"
         description: "忽略该模组的进程包含/排除列表，仅使用上述自定义列表。"
@@ -274,6 +276,12 @@ app:
       contribute: "<0>协助我们贡献您的翻译</0>."
       credits: "简体中文翻译由<0>Shifeng Zhao 和 Kevin Wang</0>提供。"
       creditsLink: "mailto:1193008599@qq.com,wmk153024@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "检查软件更新"
       description: "定期检查最新版本的Windhawk和模组"
@@ -300,7 +308,6 @@ app:
       title: "更多高级设置"
       restartNotice: "Windhawk将重启以应用软件设置。"
       saveButton: "保存并重启Windhawk"
-      cancelButton: "取消"
     loggingVerbosity:
       appLoggingTitle: "Windhawk日志等级"
       engineLoggingTitle: "Windhawk引擎的日志等级"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "如果您打算排除除这些之外的所有进程，您可以用“*”在进程排除列表中设置。"
       processListPlaceholder: "进程名/路径，每行一个，例如:"
       invalidCharactersWarning: "进程列表中包含无效字符，这些无效字符将会被去除：{{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk版本{{version}}"
     beta: "beta版本"
@@ -330,23 +402,21 @@ app:
       title: "更新可用"
       subtitle: "更新Windhawk以获得最新功能和错误修复"
       changelogButton: "更新日志"
-      updateButton: "更新"
       modal:
         title: "正在更新 Windhawk"
         downloading: "正在下载更新..."
         installing: "正在安装更新..."
         installingNote: "安装完成后，Windhawk 将自动重启。"
         failed: "更新失败"
-        cancel: "取消更新"
     changelog:
       title: "Windhawk 新版变化"
-      close: "关闭"
     links:
       title: "链接"
       homepage: "主页"
       documentation: "文档"
     builtWith:
       title: "使用以下项目"
+      tauri: ~
       vscodium: "由社区维护的 Microsoft VSCode 编辑器"
       llvmMingw: "基于LLVM、Clang和LLD的mingw-w64工具链"
       minHook: "Windows平台下简单好用的API钩子库"
@@ -355,40 +425,31 @@ app:
     title: "安装{{mod}}"
     warningTitle: "请谨慎安装模组"
     warningDescription: "恶意的模组可能会破坏您的电脑系统或侵犯您的个人隐私。确保只从您信任的开发者那里安装模组。"
-    modAuthor: "模组开发者"
-    homepage: "主页"
-    github: "GitHub主页"
-    twitter: "X (Twitter)主页"
     verified: "已验证"
     verifiedTooltip: "我们已验证此配置文件属于此模组开发者，但请您注意<0>已验证</0>不等于<0>可信</0>。请确保您信任对应的模组开发者，或仔细检查源代码后再进行安装。"
     acceptButton: "接受风险并安装"
-    cancelButton: "取消"
   createNewModButton:
     title: "新建模组"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "创建和修改模组需要一定的Windows C/C++开发知识。如果您不了解相关知识，建议您不要进行相关操作。"
     hideOptionsCheckbox: "隐藏所有与开发相关的选项"
     hideOptionsButton: "隐藏选项"
     beginCodingButton: "开始编写代码"
-    cancelButton: "取消"
   safeMode:
     alert: "Windhawk正在安全模式下运行，所有代码注入功能已关闭。"
     offButton: "退出安全模式"
     offConfirm: "Windhawk 将重新启动以应用设置。"
     offConfirmOk: "重启Windhawk"
-    offConfirmCancel: "取消"
   modPreview:
     actionUnavailable: "预览模式下该操作不可用"
     notCompiled: "模组需要编译后才可预览"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "模组"
       links: "链接"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "贡献新的翻译"
     home:
       tagline: "Windows 和程序的自定义插件市场"
-      download: "下载"
       getInvolved: "参与项目"
       joinDiscord: "加入 Windhawk 的 Discord 群组"
       discussWindhawk: "在 Github 仓库的 Discussions 分区上讨论 Windhawk"
@@ -446,6 +508,5 @@ app:
       title: "更新 Windhawk"
       newVersionAvailable: "有新的 Windhawk 版本可用"
       whatsNew: "更新内容"
-      downloadButton: "下载"
     footer:
       copyright: "版权所有"

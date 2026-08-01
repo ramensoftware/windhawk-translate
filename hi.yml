@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "विंडोज सुरक्षित मोड में चल रहा है। क्या आप विंडहॉक में सुरक्षित मोड सक्षम करना चाहेंगे? सभी कोड इंजेक्शन कार्यक्षमता बंद हो जाएगी।"
 app:
   general:
-    loading: "लोड हो रहा है..."
-    loadingFailed: "लोडिंग विफल, कृपया अपना इंटरनेट कनेक्शन जांचें"
-    loadingFailedTitle: "लोडिंग विफल"
-    loadingFailedSubtitle: "कृपया अपना इंटरनेट कनेक्शन जांचें और फिर से प्रयास करें"
-    tryAgain: "फिर से प्रयास करें"
-    updating: "अपडेट हो रहा है..."
-    installing: "स्थापित हो रहा है..."
-    compiling: "कंपाइल हो रहा है..."
-    cut: "काटें"
-    copy: "कॉपी करें"
-    paste: "पेस्ट करें"
-    selectAll: "सभी चुनें"
-    loggingEnabled: ~
+    status:
+      loading: "लोड हो रहा है..."
+      loadingFailed: "लोडिंग विफल, कृपया अपना इंटरनेट कनेक्शन जांचें"
+      loadingFailedTitle: "लोडिंग विफल"
+      loadingFailedSubtitle: "कृपया अपना इंटरनेट कनेक्शन जांचें और फिर से प्रयास करें"
+      tryAgain: "फिर से प्रयास करें"
+      updating: "अपडेट हो रहा है..."
+      installing: "स्थापित हो रहा है..."
+      compiling: "कंपाइल हो रहा है..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "काटें"
+      copy: "कॉपी करें"
+      paste: "पेस्ट करें"
+      selectAll: "सभी चुनें"
+    actions:
+      cancel: "रद्द करें"
+      close: ~
+      save: "सहेजें"
+      update: "अपडेट करें"
+      download: ~
+    modAuthor:
+      title: "मॉड लेखक"
+      homepage: "होमपेज"
+      github: "GitHub"
+      twitter: "X (ट्विटर)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "अपडेट उपलब्ध है"
     installed: "स्थापित"
     details: "विवरण"
-    update: "अपडेट करें"
     downgrade: ~
     install: "स्थापित करें"
     compile: "कंपाइल करें"
@@ -121,7 +132,6 @@ app:
     remove: "हटाएँ"
     removeConfirm: "क्या आप वाकई इस मॉड को हटाना चाहते हैं?"
     removeConfirmOk: "मॉड हटाएँ"
-    removeConfirmCancel: "रद्द करें"
     donate: ~
     notCompiled: "मॉड को कंपाइल करने की आवश्यकता है"
     editedLocally: "मॉड को स्थानीय रूप से संपादित किया गया था"
@@ -141,11 +151,6 @@ app:
       modId: "मॉड पहचानकर्ता"
       modVersion: "मॉड संस्करण"
       lastUpdated: ~
-      modAuthor:
-        title: "मॉड लेखक"
-        homepage: "होमपेज"
-        github: "GitHub"
-        twitter: "X (ट्विटर)"
       processes:
         all: "सभी प्रक्रियाएँ"
         allBut: "{{list}} को छोड़कर सभी"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "विवरण"
@@ -205,7 +209,6 @@ app:
         description: "अपनी मॉड सेटिंग्स को आसानी से निर्यात या साझा करें।"
         loadButton: "लोड करें"
         loadFormattedButton: "स्वरूपित लोड करें"
-        saveButton: "सहेजें"
         invalidData: "अमान्य JSON डेटा"
       customList:
         titleInclusion: "कस्टम प्रक्रिया समावेशन सूची"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "अतिरिक्त निष्पादन योग्य फ़ाइल नामों/पथों की एक कस्टम सूची, जिन्हें मॉड लक्षित करने से बहिष्कृत करेगा। यह सूची मॉड लेखक द्वारा परिभाषित बहिष्करण सूची में जोड़ी जाती है ताकि यह निर्धारित किया जा सके कि किन प्रक्रियाओं को लक्षित करना है। प्रत्येक प्रक्रिया के लिए, मॉड तब लोड होता है जब निष्पादन योग्य फ़ाइल पथ समावेशन प्रविष्टियों में से किसी एक से मेल खाता है और किसी भी बहिष्करण प्रविष्टि से मेल नहीं खाता।"
         processListPlaceholder: "प्रक्रिया नाम/पथ, प्रति पंक्ति एक, उदाहरण के लिए:"
         invalidCharactersWarning: "प्रक्रिया सूची में अमान्य वर्ण हैं जो हटा दिए जाएंगे: {{invalidCharacters}}"
-        saveButton: "सहेजें"
       includeExcludeCustomOnly:
         title: "मॉड समावेशन/बहिष्करण सूचियों को अनदेखा करें"
         description: "मॉड की प्रक्रिया समावेशन/बहिष्करण सूचियों को अनदेखा करें और केवल उपरोक्त कस्टम सूचियों का उपयोग करें।"
@@ -274,6 +276,12 @@ app:
       contribute: "<0>नया अनुवाद योगदान करें</0>।"
       credits: "<0>Sathwik Hejamady Bhat</0> द्वारा अंग्रेजी अनुवाद।"
       creditsLink: "mailto:sathwikhbhat@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "अपडेट के लिए जांचें"
       description: "विंडहॉक और स्थापित मॉड्स के नए संस्करणों की समय-समय पर जांच करें।"
@@ -300,7 +308,6 @@ app:
       title: "अधिक उन्नत सेटिंग्स"
       restartNotice: "सेटिंग्स लागू करने के लिए विंडहॉक पुनः शुरू होगा।"
       saveButton: "सहेजें और विंडहॉक पुनः शुरू करें"
-      cancelButton: "रद्द करें"
     loggingVerbosity:
       appLoggingTitle: "विंडहॉक लॉगिंग वर्बोसिटी"
       engineLoggingTitle: "विंडहॉक इंजन लॉगिंग वर्बोसिटी"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "यदि आपका मतलब सभी प्रक्रियाओं को इनके अलावा बहिष्कृत करना था, तो आप प्रक्रिया बहिष्करण सूची में \"*\" सेट कर सकते हैं।"
       processListPlaceholder: "प्रक्रिया नाम/पथ, प्रति पंक्ति एक, उदाहरण के लिए:"
       invalidCharactersWarning: "प्रक्रिया सूची में अमान्य वर्ण हैं जो हटा दिए जाएंगे: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "विंडहॉक v{{version}}"
     beta: "बीटा"
@@ -330,23 +402,21 @@ app:
       title: "एक अपडेट उपलब्ध है"
       subtitle: "नवीनतम सुविधाओं और बग फिक्स प्राप्त करने के लिए विंडहॉक को अपडेट करने पर विचार करें"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "लिंक्स"
       homepage: "होमपेज"
       documentation: "दस्तावेज़ीकरण"
     builtWith:
       title: "के साथ निर्मित"
+      tauri: ~
       vscodium: "माइक्रोसॉफ्ट के VSCode संपादक का एक सामुदायिक-संचालित वितरण"
       llvmMingw: "एक LLVM/Clang/LLD आधारित mingw-w64 टूलचेन"
       minHook: "विंडोज के लिए न्यूनतम API हुकिंग लाइब्रेरी"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} स्थापित करें"
     warningTitle: "सावधानी से आगे बढ़ें"
     warningDescription: "दुर्भावनापूर्ण मॉड्स आपके कंप्यूटर को नुकसान पहुंचा सकते हैं या आपकी गोपनीयता का उल्लंघन कर सकते हैं। केवल उन लेखकों से मॉड्स स्थापित करें जिन पर आप भरोसा करते हैं।"
-    modAuthor: "मॉड लेखक"
-    homepage: "होमपेज"
-    github: "GitHub"
-    twitter: "X (ट्विटर)"
     verified: "सत्यापित"
     verifiedTooltip: "हमने सत्यापित किया है कि यह प्रोफाइल मॉड लेखक की है, लेकिन ध्यान दें कि <0>सत्यापित</0> का मतलब <0>विश्वसनीय</0> नहीं है। सुनिश्चित करें कि आप मॉड लेखक पर भरोसा करते हैं, या स्थापना से पहले स्रोत कोड का सावधानीपूर्वक निरीक्षण करें।"
     acceptButton: "जोखिम स्वीकार करें और स्थापित करें"
-    cancelButton: "रद्द करें"
   createNewModButton:
     title: "नया मॉड बनाएँ"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "मॉड्स बनाना और संशोधित करना विंडोज के लिए C/C++ विकास के कुछ ज्ञान की आवश्यकता रखता है। यदि आपको यकीन नहीं है कि इसका मतलब क्या है, तो शायद ये विकल्प आपके लिए नहीं हैं।"
     hideOptionsCheckbox: "सभी विकास-संबंधी विकल्प छिपाएँ"
     hideOptionsButton: "विकल्प छिपाएँ"
     beginCodingButton: "कोडिंग शुरू करें"
-    cancelButton: "रद्द करें"
   safeMode:
     alert: "विंडहॉक सुरक्षित मोड में चल रहा है, सभी कोड इंजेक्शन कार्यक्षमता बंद है।"
     offButton: "सुरक्षित मोड बंद करें"
     offConfirm: "सेटिंग्स लागू करने के लिए विंडहॉक पुनः शुरू होगा।"
     offConfirmOk: "विंडहॉक पुनः शुरू करें"
-    offConfirmCancel: "रद्द करें"
   modPreview:
     actionUnavailable: "पूर्वावलोकन मोड में कार्रवाई उपलब्ध नहीं है"
     notCompiled: "पूर्वावलोकन करने से पहले मॉड को कंपाइल करने की आवश्यकता है"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: ~
       links: "लिंक्स"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "नया अनुवाद योगदान करें।"
     home:
       tagline: "विंडोज और प्रोग्राम्स के लिए अनुकूलन मार्केटप्लेस"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -446,6 +508,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

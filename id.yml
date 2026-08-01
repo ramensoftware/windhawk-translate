@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows berjalan di mode aman. Apakah anda ingin untuk mengaktifkan mode aman di Windhawk? Semua fungsi kode injeksi akan dimatikan."
 app:
   general:
-    loading: "Memuat..."
-    loadingFailed: "Gagal dimuat, silahkan periksa koneksi internet anda"
-    loadingFailedTitle: "Gagal dimuat"
-    loadingFailedSubtitle: "Silahkan periksa koneksi internet anda dan coba lagi"
-    tryAgain: "Coba lagi"
-    updating: "Memperbarui..."
-    installing: "Memasang..."
-    compiling: "Kompiling..."
-    cut: "Potong"
-    copy: "Salin"
-    paste: "Tempel"
-    selectAll: "Pilih semua"
-    loggingEnabled: ~
+    status:
+      loading: "Memuat..."
+      loadingFailed: "Gagal dimuat, silahkan periksa koneksi internet anda"
+      loadingFailedTitle: "Gagal dimuat"
+      loadingFailedSubtitle: "Silahkan periksa koneksi internet anda dan coba lagi"
+      tryAgain: "Coba lagi"
+      updating: "Memperbarui..."
+      installing: "Memasang..."
+      compiling: "Kompiling..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Potong"
+      copy: "Salin"
+      paste: "Tempel"
+      selectAll: "Pilih semua"
+    actions:
+      cancel: "Batal"
+      close: ~
+      save: "Simpan"
+      update: "Perbarui"
+      download: ~
+    modAuthor:
+      title: "Pembuat Mod"
+      homepage: "Homepage"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Pembaruan tersedia"
     installed: "Terpasang"
     details: "Rincian"
-    update: "Perbarui"
     downgrade: ~
     install: "Pasang"
     compile: "Kompilasi"
@@ -121,7 +132,6 @@ app:
     remove: "Hapus"
     removeConfirm: "Apakah anda yakin ingin menghapus mod ini?"
     removeConfirmOk: "Hapus mod"
-    removeConfirmCancel: "Batal"
     donate: ~
     notCompiled: "Mod needs to be compiled"
     editedLocally: "Mod sudah disunting lokal"
@@ -141,11 +151,6 @@ app:
       modId: "Pengenal Mod"
       modVersion: "Versi Mod"
       lastUpdated: ~
-      modAuthor:
-        title: "Pembuat Mod"
-        homepage: "Homepage"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Semua proses"
         allBut: "Semua tapi {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Rincian"
@@ -205,7 +209,6 @@ app:
         description: "Ekspor mudah atau bagikan pengaturan mod anda."
         loadButton: "Muat"
         loadFormattedButton: "Muat diformat"
-        saveButton: "Simpan"
         invalidData: "Data JSON tidak valid"
       customList:
         titleInclusion: "Kustom proses daftar penyertaan"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Daftar kustom berisi nama/jalur file yang dapat dieksekusi tambahan yang akan dikecualikan mod dari penargetan. Daftar tersebut ditambahkan ke daftar pengecualian yang ditetapkan oleh pembuat mod untuk menentukan proses mana yang akan ditargetkan. Untuk setiap proses, mod dimuat jika jalur file yang dapat dieksekusi cocok dengan salah satu entri yang disertakan dan tidak cocok dengan entri yang dikecualikan."
         processListPlaceholder: "Nama proses/jalur, satu per baris, sebagai contoh:"
         invalidCharactersWarning: ~
-        saveButton: "Simpan"
       includeExcludeCustomOnly:
         title: "Abaikan daftar penyertaan/pengecualian mod"
         description: "Abaikan daftar penyertaan/pengecualian proses mod dan gunakan hanya daftar kustom di atas."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Kontribusi untuk terjemahan Baru</0>."
       credits: "Indonesian translation by <0>Lieba Natur Brilian (naturbrilian)</0>."
       creditsLink: "https://github.com/naturbrilian"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Periksa pembaruan"
       description: "Periksa secara berkala versi baru Windhawk dan mod yang terinstal."
@@ -300,7 +308,6 @@ app:
       title: "Pengaturan lanjutan lainnya"
       restartNotice: "Windhawk akan dimulai ulang untuk menerapkan pengaturan."
       saveButton: "Simpan dan memulai ulang Windhawk"
-      cancelButton: "Batal"
     loggingVerbosity:
       appLoggingTitle: "Verbositas pencatatan Windhawk"
       engineLoggingTitle: "Verbositas pencatatan mesin Windhawk"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Jika anda bermaksud untuk mengecualikan semua proses kecuali ini, anda bisa mengatur \"*\" di daftar proses pengecualian."
       processListPlaceholder: "Nama proses/jalur, satu per baris, sebagai contoh:"
       invalidCharactersWarning: ~
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "Pembaruan tersedia"
       subtitle: "Pastikan memperbarui Windhawk untuk mendapatkan fitur terbaru dan perbaikan bug"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Tautan"
       homepage: "Homepage"
       documentation: "Dokumentasi"
     builtWith:
       title: "dibuat dengan"
+      tauri: ~
       vscodium: "Distribusi editor VSCode Microsoft yang digerakkan oleh komunitas"
       llvmMingw: "Toolchain mingw--wg4 berbasis LLVM/Clang/LLD"
       minHook: "Pustaka hooking API minimalis untuk Windows"
@@ -355,40 +425,31 @@ app:
     title: "Pasang {{mod}}"
     warningTitle: "Lanjutkan dengan hati-hati"
     warningDescription: "Mod berbahaya dapat merusak komputer atau melanggar privasi Anda. Instal mod hanya dari pembuat yang Anda percaya."
-    modAuthor: "Pembuat mod"
-    homepage: "Homepage"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "terverifikasi"
     verifiedTooltip: "Kami memverifikasi bahwa profil ini milik pembuat mod, perlu dicatat <0>verifikasi</0> tidak sama dengan <0>terpercaya</0>. Pastikan anda percaya pembuat mod, atau hati-hati menginspect kode sumber sebelum memasang."
     acceptButton: "Terima dengan Hati-hati dan Pasang"
-    cancelButton: "Batal"
   createNewModButton:
     title: "Buat Mod Baru"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Membuat dan memodifikasi mod membutuhkan beberapa keahlian pengembangan C/C++ untuk Windows. Jika anda tidak yakin apa yang dimaksud, mungkin opsi ini bukan untuk Anda."
     hideOptionsCheckbox: "Sembunyikan semua opsi yang terkait dengan pengembangan"
     hideOptionsButton: "Sembunyikan opsi"
     beginCodingButton: "Mulai mengoding"
-    cancelButton: "Batal"
   safeMode:
     alert: "Windhawk berjalan di mode aman, semua fungsi kode injeksi dinonaktifkan."
     offButton: "Nonaktifkan mode aman"
     offConfirm: "Windhawk akan dimulai ulang untuk menerapkan pengaturan."
     offConfirmOk: "Mulai ulang Windhawk"
-    offConfirmCancel: "Batal"
   modPreview:
     actionUnavailable: "Tindakan tidak tersedia di mode pratinjau"
     notCompiled: "Mod harus dikompilasi sebelum bisa dipratinjau"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: ~
       links: "Tautan"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Kontribusi untuk terjemahan Baru"
     home:
       tagline: "Marketplace kustomisasi untuk Windows dan program"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -446,6 +508,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

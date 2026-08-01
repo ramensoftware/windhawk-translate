@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "উইন্ডোজ সেফ মোডে চলছে। আপনি কি Windhawk-এ সেফ মোড চালু করতে চান? এতে সমস্ত কোড ইনজেকশন ফিচার বন্ধ রাখা হবে।"
 app:
   general:
-    loading: "লোড হচ্ছে..."
-    loadingFailed: "লোড করা ব্যর্থ হয়েছে, অনুগ্রহ করে আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন"
-    loadingFailedTitle: "লোড করা ব্যর্থ হয়েছে"
-    loadingFailedSubtitle: "অনুগ্রহ করে ইন্টারনেট সংযোগ পরীক্ষা করে পুনরায় চেষ্টা করুন"
-    tryAgain: "পুনরায় চেষ্টা করুন"
-    updating: "আপডেট হচ্ছে..."
-    installing: "ইনস্টল হচ্ছে..."
-    compiling: "কম্পাইল হচ্ছে..."
-    cut: "কাট"
-    copy: "কপি"
-    paste: "পেস্ট"
-    selectAll: "সব সিলেক্ট করুন"
-    loggingEnabled: "ডিবাগ লগিং চালু আছে"
+    status:
+      loading: "লোড হচ্ছে..."
+      loadingFailed: "লোড করা ব্যর্থ হয়েছে, অনুগ্রহ করে আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন"
+      loadingFailedTitle: "লোড করা ব্যর্থ হয়েছে"
+      loadingFailedSubtitle: "অনুগ্রহ করে ইন্টারনেট সংযোগ পরীক্ষা করে পুনরায় চেষ্টা করুন"
+      tryAgain: "পুনরায় চেষ্টা করুন"
+      updating: "আপডেট হচ্ছে..."
+      installing: "ইনস্টল হচ্ছে..."
+      compiling: "কম্পাইল হচ্ছে..."
+      loggingEnabled: "ডিবাগ লগিং চালু আছে"
+    contextMenu:
+      cut: "কাট"
+      copy: "কপি"
+      paste: "পেস্ট"
+      selectAll: "সব সিলেক্ট করুন"
+    actions:
+      cancel: "বাতিল করুন"
+      close: "বন্ধ করুন"
+      save: "সেভ করুন"
+      update: "আপডেট"
+      download: "ডাউনলোড"
+    modAuthor:
+      title: "মড লেখক"
+      homepage: "হোমপেজ"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: "কিছু একটা সমস্যা হয়েছে"
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: "ওয়ার্ড র‍্যাপ বন্ধ করুন"
     autoScrollOn: "অটো-স্ক্রোলিং চালু করুন"
     autoScrollOff: "অটো-স্ক্রোলিং বন্ধ করুন"
-    close: "বন্ধ করুন"
   mod:
     updateAvailable: "আপডেট পাওয়া যাচ্ছে"
     installed: "ইনস্টল করা হয়েছে"
     details: "বিস্তারিত"
-    update: "আপডেট"
     downgrade: "ডাউনগ্রেড"
     install: "ইনস্টল"
     compile: "কম্পাইল"
@@ -121,7 +132,6 @@ app:
     remove: "মুছে ফেলুন"
     removeConfirm: "আপনি কি নিশ্চিত যে আপনি এই মডটি মুছে ফেলতে চান?"
     removeConfirmOk: "মড মুছে ফেলুন"
-    removeConfirmCancel: "বাতিল করুন"
     donate: "ডোনেট করুন"
     notCompiled: "মডটি কম্পাইল করা প্রয়োজন"
     editedLocally: "মডটি লোকালি এডিট করা হয়েছে"
@@ -141,11 +151,6 @@ app:
       modId: "মড আইডেন্টিফায়ার"
       modVersion: "মড ভার্সন"
       lastUpdated: "সর্বশেষ আপডেট"
-      modAuthor:
-        title: "মড লেখক"
-        homepage: "হোমপেজ"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "সকল প্রসেস"
         allBut: "{{list}} ব্যতীত সকল প্রসেস"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "প্রি-রিলিজ"
       select: "সিলেক্ট করুন"
-      cancel: "বাতিল করুন"
       chooseVersion: "একটি ভার্সন বেছে নিন..."
     details:
       title: "বিস্তারিত"
@@ -205,7 +209,6 @@ app:
         description: "সহজেই আপনার মড সেটিংস এক্সপোর্ট বা শেয়ার করুন।"
         loadButton: "লোড করুন"
         loadFormattedButton: "ফরম্যাট অনুযায়ী লোড করুন"
-        saveButton: "সেভ করুন"
         invalidData: "অকার্যকর JSON ডেটা"
       customList:
         titleInclusion: "কাস্টম প্রসেস অন্তর্ভুক্তির তালিকা (Inclusion)"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "অতিরিক্ত এক্সিকিউটেবল ফাইল নাম/পাথ-এর একটি কাস্টম তালিকা যা এই মড টার্গেট করা থেকে বাদ দেবে। কোন প্রসেসগুলোকে টার্গেট করা হবে তা নির্ধারণ করতে মড লেখকের তৈরি এক্সক্লুশন তালিকায় এই তালিকা যুক্ত হয়।"
         processListPlaceholder: "প্রসেসের নাম/পাথ, প্রতি লাইনে একটি, উদাহরণস্বরূপ:"
         invalidCharactersWarning: "প্রসেস তালিকায় কিছু অকার্যকর অক্ষর রয়েছে যা সরিয়ে ফেলা হবে: {{invalidCharacters}}"
-        saveButton: "সেভ করুন"
       includeExcludeCustomOnly:
         title: "মডের নিজস্ব ইনক্লুশন/এক্সক্লুশন তালিকা উপেক্ষা করুন"
         description: "মডের মূল প্রসেস তালিকা উপেক্ষা করে কেবল উপরের কাস্টম তালিকা ব্যবহার করুন।"
@@ -273,6 +275,13 @@ app:
       description: "Windhawk-এর জন্য আপনার পছন্দনীয় ভাষা নির্বাচন করুন।"
       contribute: "<0>নতুন অনুবাদ জমা দিন</0>।"
       credits: "বাংলা অনুবাদ করেছেন Bihon Paul Orin।"
+      creditsLink: "-"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "আপডেট চেক করুন"
       description: "Windhawk এবং ইনস্টল করা মডগুলির নতুন ভার্সনের জন্য স্বয়ংক্রিয়ভাবে চেক করুন এবং নোটিফিকেশন দিন।"
@@ -299,7 +308,6 @@ app:
       title: "আরও অ্যাডভান্সড সেটিংস"
       restartNotice: "সেটিংস প্রয়োগ করতে Windhawk রিস্টার্ট করা হবে।"
       saveButton: "সেভ করুন এবং Windhawk রিস্টার্ট করুন"
-      cancelButton: "বাতিল করুন"
     loggingVerbosity:
       appLoggingTitle: "Windhawk লগিং পরিধি"
       engineLoggingTitle: "Windhawk ইঞ্জিন লগিং পরিধি"
@@ -320,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "আপনি যদি এই কয়েকটি বাদে সব প্রসেস বাদ দিতে চান, তবে এক্সক্লুশন তালিকায় \"*\" বসাতে পারেন।"
       processListPlaceholder: "প্রসেসের নাম/পাথ, প্রতি লাইনে একটি, উদাহরণস্বরূপ:"
       invalidCharactersWarning: "প্রসেস তালিকায় কিছু অকার্যকর অক্ষর রয়েছে যা সরিয়ে ফেলা হবে: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "বিটা"
@@ -329,23 +402,21 @@ app:
       title: "একটি নতুন আপডেট উপলব্ধ"
       subtitle: "সর্বশেষ ফিচার এবং বাগ ফিক্স পেতে Windhawk আপডেট করার কথা বিবেচনা করুন"
       changelogButton: "চেঞ্জলগ (Changelog)"
-      updateButton: "আপডেট করুন"
       modal:
         title: "Windhawk আপডেট করা হচ্ছে"
         downloading: "আপডেট ডাউনলোড হচ্ছে..."
         installing: "আপডেট ইনস্টল হচ্ছে..."
         installingNote: "ইনস্টলেশন শেষ হলে Windhawk স্বয়ংক্রিয়ভাবে রিস্টার্ট হবে।"
         failed: "আপডেট ব্যর্থ হয়েছে"
-        cancel: "বাতিল করুন"
     changelog:
       title: "Windhawk-এ নতুন কী আছে"
-      close: "বন্ধ করুন"
     links:
       title: "লিংকসমূহ"
       homepage: "হোমপেজ"
       documentation: "ডকুমেন্টেশন"
     builtWith:
       title: "যা দিয়ে তৈরি"
+      tauri: ~
       vscodium: "মাইক্রোসফটের VSCode এডিটরের একটি কমিউনিটি চালিত সংস্করণ"
       llvmMingw: "LLVM/Clang/LLD ভিত্তিক mingw-w64 টুলচেইন"
       minHook: "উইন্ডোজের জন্য একটি মিনিমালিস্টিক API হুকিং লাইব্রেরি"
@@ -354,40 +425,31 @@ app:
     title: "{{mod}} ইনস্টল করুন"
     warningTitle: "সতর্কতার সাথে এগিয়ে যান"
     warningDescription: "ক্ষতিকর মড আপনার পিসির ক্ষতি করতে পারে বা গোপনীয়তা লঙ্ঘন করতে পারে। কেবল বিশ্বস্ত লেখকের মড ইনস্টল করুন।"
-    modAuthor: "মড লেখক"
-    homepage: "হোমপেজ"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "যাচাইকৃত (Verified)"
     verifiedTooltip: "আমরা যাচাই করেছি যে এই প্রোফাইলটি মড লেখকের, তবে মনে রাখবেন <0>যাচাইকৃত</0> মানেই <0>বিশ্বস্ত</0> নয়। নিশ্চিত করুন যে আপনি লেখককে বিশ্বাস করেন।"
     acceptButton: "ঝুঁকি গ্রহণ করে ইনস্টল করুন"
-    cancelButton: "বাতিল করুন"
   createNewModButton:
     title: "নতুন মড তৈরি করুন"
   devTools:
     install:
       description: "ডেভেলপমেন্ট টুলস ইনস্টল করা নেই। মড তৈরি, এডিট বা ফোর্ক করতে এগুলো ইনস্টল করুন।"
       installButton: "ডেভেলপমেন্ট টুলস ইনস্টল করুন"
-      cancelButton: "বাতিল করুন"
       modal:
         title: "ডেভেলপমেন্ট টুলস প্রয়োজন"
         downloading: "ডেভেলপমেন্ট টুলস ডাউনলোড হচ্ছে..."
         installing: "ডেভেলপমেন্ট টুলস ইনস্টল হচ্ছে..."
         installingNote: "ইনস্টলেশন শেষ হলে Windhawk স্বয়ংক্রিয়ভাবে রিস্টার্ট হবে।"
         failed: "ইনস্টলেশন ব্যর্থ হয়েছে"
-        cancel: "বাতিল করুন"
   devModeAction:
     message: "মড তৈরি বা এডিট করতে উইন্ডোজ C/C++ ডেভেলপমেন্ট সংক্রান্ত জ্ঞান থাকা প্রয়োজন।"
     hideOptionsCheckbox: "ডেভেলপমেন্ট সংক্রান্ত সকল অপশন লুকান"
     hideOptionsButton: "অপশন লুকান"
     beginCodingButton: "কোডিং শুরু করুন"
-    cancelButton: "বাতিল করুন"
   safeMode:
     alert: "Windhawk সেফ মোডে চলছে, সমস্ত কোড ইনজেকশন ফিচার বন্ধ রাখা হয়েছে।"
     offButton: "সেফ মোড বন্ধ করুন"
     offConfirm: "সেটিংস প্রয়োগ করতে Windhawk রিস্টার্ট করা হবে।"
     offConfirmOk: "Windhawk রিস্টার্ট করুন"
-    offConfirmCancel: "বাতিল করুন"
   modPreview:
     actionUnavailable: "প্রিভিউ মোডে এই কাজটি উপলব্ধ নয়"
     notCompiled: "প্রিভিউ করার আগে মডটি কম্পাইল করা প্রয়োজন"
@@ -409,10 +471,11 @@ app:
     appHeader:
       mods: "মডসমূহ"
       links: "লিংকসমূহ"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "নতুন অনুবাদ যোগ করুন"
     home:
       tagline: "উইন্ডোজ এবং বিভিন্ন প্রোগ্রামের জন্য কাস্টমাইজেশন মার্কেটপ্লেস"
-      download: "ডাউনলোড"
       getInvolved: "যুক্ত হন"
       joinDiscord: "Discord-এ Windhawk কমিউনিটিতে যোগ দিন"
       discussWindhawk: "GitHub Discussions-এ Windhawk নিয়ে আলোচনা করুন"
@@ -445,6 +508,5 @@ app:
       title: "Windhawk আপডেট করুন"
       newVersionAvailable: "একটি নতুন Windhawk ভার্সন পাওয়া যাচ্ছে"
       whatsNew: "নতুন কী আছে"
-      downloadButton: "ডাউনলোড"
     footer:
       copyright: "কপিরাইট"

@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows kører i sikker tilstand. Vil du slå sikker tilstand til i Windhawk? mode in Windhawk? Al kodeinjections-funktionalitet vil blive slået fra."
 app:
   general:
-    loading: "Indlæser..."
-    loadingFailed: "Indlæsning fejlede, tjek din internetforbindelse"
-    loadingFailedTitle: "Indlæsning fejlede"
-    loadingFailedSubtitle: "Tjek venligst din internetforbindelse og prøv igen"
-    tryAgain: "Prøv igen"
-    updating: "Opdaterer..."
-    installing: "Installerer..."
-    compiling: "Kompilerer..."
-    cut: "Klip"
-    copy: "Kopier"
-    paste: "Indsæt"
-    selectAll: "Vælg alt"
-    loggingEnabled: ~
+    status:
+      loading: "Indlæser..."
+      loadingFailed: "Indlæsning fejlede, tjek din internetforbindelse"
+      loadingFailedTitle: "Indlæsning fejlede"
+      loadingFailedSubtitle: "Tjek venligst din internetforbindelse og prøv igen"
+      tryAgain: "Prøv igen"
+      updating: "Opdaterer..."
+      installing: "Installerer..."
+      compiling: "Kompilerer..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Klip"
+      copy: "Kopier"
+      paste: "Indsæt"
+      selectAll: "Vælg alt"
+    actions:
+      cancel: "Annuller"
+      close: ~
+      save: "Gem"
+      update: "Opdater"
+      download: ~
+    modAuthor:
+      title: "Modifikations-forfatter"
+      homepage: "Forside"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Opdatering tilgængelig"
     installed: "Installeret"
     details: "Detaljer"
-    update: "Opdater"
     downgrade: ~
     install: "Installer"
     compile: "Kompiler"
@@ -121,7 +132,6 @@ app:
     remove: "Fjern"
     removeConfirm: "Er du sikker på at du vil fjerne denne modifikation?"
     removeConfirmOk: "Fjern modifikation"
-    removeConfirmCancel: "Annuller"
     donate: ~
     notCompiled: "Modifikation skal kompileres"
     editedLocally: "Modifikation var redigeret lokalt"
@@ -141,11 +151,6 @@ app:
       modId: "Modfikations-identifikator"
       modVersion: "Modifikations-version"
       lastUpdated: ~
-      modAuthor:
-        title: "Modifikations-forfatter"
-        homepage: "Forside"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Alle processer"
         allBut: "Alle undtagen {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Detaljer"
@@ -205,7 +209,6 @@ app:
         description: "Eksporter eller del nemt dine modifikationsindstillinger."
         loadButton: "Indlæs"
         loadFormattedButton: "Indlæs formatteret"
-        saveButton: "Gem"
         invalidData: "Ikke validt JSON data"
       customList:
         titleInclusion: "Tilpasset procesinklusionsliste"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "En tilpasset liste over yderligere eksekverbare filnavne/stier, som modifikationen vil udelukke fra målretning. Listen føjes til ekskluderingslisten, som modifikations-forfatteren definerede for at bestemme, hvilke processer der skal målrettes mod. For hver proces indlæses modifikationen, hvis den eksekverbare filsti matcher en af ​​inkluderingsposterne og ikke matcher nogen ekskluderingsindgang."
         processListPlaceholder: "Proces-navne/stige, en per linje, for eksempel:"
         invalidCharactersWarning: ~
-        saveButton: "Gem"
       includeExcludeCustomOnly:
         title: "Ignorer modifikations-inkluderings-/ekskluderingslister"
         description: "Ignorer modifikationens procesinkluderings-/ekskluderingslister og brug kun de tilpassede lister herover."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Bidrag en ny oversættelse</0>."
       credits: "Dansk oversættelse af <0>AlbertCoolGuy</0>."
       creditsLink: "https://github.com/AlbertCoolGuy"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Tjek efter opdateringer"
       description: "Tjek jævnligt efter nye versioner af Windhawk og af de installerede modifikationer."
@@ -300,7 +308,6 @@ app:
       title: "Flere avancerede indstillinger"
       restartNotice: "Windhawk bliver genstartet for at anvende indstillingerne."
       saveButton: "Gem og genstart Windhawk"
-      cancelButton: "Annuller"
     loggingVerbosity:
       appLoggingTitle: "Windhawk logverbositet"
       engineLoggingTitle: "Windhawk-motor logverbositet"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Hvis du havde til hensigt at ekskludere alle processer undtagen disse, kan du indstille \"*\" i procesekskluderingslisten."
       processListPlaceholder: "Procesnavne/stier, én pr. linje, for eksempel:"
       invalidCharactersWarning: ~
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "En opdatering er tilgængelig"
       subtitle: "Overvej at opdatere Windhawk for at få de nyeste funktioner og fejlrettelser"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Links"
       homepage: "Forside"
       documentation: "Dokumentation"
     builtWith:
       title: "Bygget med"
+      tauri: ~
       vscodium: "En fællesskabsdrevet distribution af Microsofts VSCode-editor"
       llvmMingw: "En LLVM/Clang/LLD baseret mingw-w64 værktøjskæde"
       minHook: "Det minimalistiske API-hooking-bibliotek til Windows"
@@ -355,40 +425,31 @@ app:
     title: "Installer {{mod}}"
     warningTitle: "Fortsæt med omhu"
     warningDescription: "Ondsindede mods kan beskadige din computer eller krænke dit privatliv. Installer kun mods fra forfattere, som du har tillid til."
-    modAuthor: "Modifikationsforfatter"
-    homepage: "Forside"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "verificeret"
     verifiedTooltip: "Vi har bekræftet, at denne profil tilhører modifikationsforfatteren, men bemærk, at <0>verificeret</0> ikke er det samme som <0>trusted</0>. Sørg for, at du stoler på modifikationsforfatteren, eller inspicer omhyggeligt kildekoden før installation."
     acceptButton: "Accepter risiko og installer"
-    cancelButton: "Annuller"
   createNewModButton:
     title: "Skab en ny modifikation"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Oprettelse og ændring af mods kræver en vis viden om C/C++ udvikling til Windows. Hvis du ikke er sikker på, hvad det betyder, er disse muligheder måske ikke noget for dig."
     hideOptionsCheckbox: "Gem all udvikler-relaterede indstillinger"
     hideOptionsButton: "Gem indstillinger"
     beginCodingButton: "Begynd på at kode"
-    cancelButton: "Annuller"
   safeMode:
     alert: "Windhawk kører i sikker tilstand, al kodeindsprøjtningsfunktionalitet er slået fra."
     offButton: "Slå sikker tilstand fra"
     offConfirm: "Windhawk vil blive genstartet for at anvende indstillingerne."
     offConfirmOk: "Genstart Windhawk"
-    offConfirmCancel: "Annuller"
   modPreview:
     actionUnavailable: "Handling er ikke tilgængelig i forhåndsvisningstilstand"
     notCompiled: "Modfikation skal kompileres før den kan forhåndsvises"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: ~
       links: "Links"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Bidrag en ny oversættelse"
     home:
       tagline: "Tilpasningsmarkedspladsen for Windows og programmer"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -446,6 +508,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

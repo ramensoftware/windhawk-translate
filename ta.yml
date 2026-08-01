@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows பாதுகாப்பு பயன்முறையில் இயங்குகிறது. விண்ட்ஹாக் இல் பாதுகாப்பு பயன்முறையை இயக்க விரும்புகிறீர்களா? அனைத்து குறியீடு செருகல் செயல்பாடுகளும் முடக்கப்படும்."
 app:
   general:
-    loading: "ஏற்றுகிறது..."
-    loadingFailed: "ஏற்றல் தோல்வியடைந்தது, உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்"
-    loadingFailedTitle: "ஏற்றல் தோல்வியடைந்தது"
-    loadingFailedSubtitle: "தயவுசெய்து உங்கள் இணைய இணைப்பைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்"
-    tryAgain: "மீண்டும் முயற்சிக்கவும்"
-    updating: "புதுப்பிக்கிறது..."
-    installing: "நிறுவுகிறது..."
-    compiling: "கணக்கிடுகிறது..."
-    cut: "வெட்டு"
-    copy: "பிரதி எடு"
-    paste: "ஒட்டு"
-    selectAll: "அனைத்தையும் தேர்ந்தெடு"
-    loggingEnabled: ~
+    status:
+      loading: "ஏற்றுகிறது..."
+      loadingFailed: "ஏற்றல் தோல்வியடைந்தது, உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்"
+      loadingFailedTitle: "ஏற்றல் தோல்வியடைந்தது"
+      loadingFailedSubtitle: "தயவுசெய்து உங்கள் இணைய இணைப்பைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்"
+      tryAgain: "மீண்டும் முயற்சிக்கவும்"
+      updating: "புதுப்பிக்கிறது..."
+      installing: "நிறுவுகிறது..."
+      compiling: "கணக்கிடுகிறது..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "வெட்டு"
+      copy: "பிரதி எடு"
+      paste: "ஒட்டு"
+      selectAll: "அனைத்தையும் தேர்ந்தெடு"
+    actions:
+      cancel: "ரத்து செய்"
+      close: ~
+      save: "சேமி"
+      update: "புதுப்பி"
+      download: ~
+    modAuthor:
+      title: "மாற்றம் எழுத்தாளர்"
+      homepage: "முகப்பு பக்கம்"
+      github: "GitHub"
+      twitter: "X (ட்விட்டர்)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "புதுப்பிப்பு கிடைக்கிறது"
     installed: "நிறுவப்பட்டது"
     details: "விவரங்கள்"
-    update: "புதுப்பி"
     downgrade: ~
     install: "நிறுவு"
     compile: "கணக்கிடு"
@@ -121,7 +132,6 @@ app:
     remove: "அகற்று"
     removeConfirm: "இந்த மாற்றத்தை நீங்கள் நிச்சயமாக அகற்ற விரும்புகிறீர்களா?"
     removeConfirmOk: "மாற்றத்தை அகற்று"
-    removeConfirmCancel: "ரத்து செய்"
     donate: ~
     notCompiled: "மாற்றம் கணக்கிடப்பட வேண்டும்"
     editedLocally: "மாற்றம் உள்ளூர் முறையில் திருத்தப்பட்டது"
@@ -141,11 +151,6 @@ app:
       modId: "மாற்ற அடையாளம்"
       modVersion: "மாற்றம் பதிப்பு"
       lastUpdated: ~
-      modAuthor:
-        title: "மாற்றம் எழுத்தாளர்"
-        homepage: "முகப்பு பக்கம்"
-        github: "கிட்ஹப்"
-        twitter: "X (ட்விட்டர்)"
       processes:
         all: "அனைத்து செயல்முறைகள்"
         allBut: "{{list}} தவிர"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "விவரங்கள்"
@@ -205,7 +209,6 @@ app:
         description: "உங்கள் மாற்றம் அமைப்புகளை எளிதில் ஏற்றுமதி செய்யலாம் அல்லது பகிரலாம்."
         loadButton: "ஏற்று"
         loadFormattedButton: "வடிவமைக்கப்பட்டதை ஏற்று"
-        saveButton: "சேமி"
         invalidData: "தவறான JSON தரவு"
       customList:
         titleInclusion: "தனிப்பயன் செயல்முறை சேர்க்கை பட்டியல்"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "மாற்றத்திலிருந்து விலக்கப்பட வேண்டிய கூடுதல் செயலியாக்கக்கூடிய கோப்புகளின் பெயர்கள்/பாதைகள் கொண்ட தனிப்பயன் பட்டியல். இது எழுத்தாளரால் வரையறுக்கப்பட்ட விலக்கு பட்டியலுடன் இணைக்கப்படும். செயல்முறை ஒரு சேர்க்கை பதிவுடன் பொருந்தினால் மற்றும் எந்த விலக்கு பதிவுடனும் பொருந்தவில்லை என்றால் மாற்றம் ஏற்றப்படும்."
         processListPlaceholder: "ஒவ்வொன்றும் ஒரு வரியில் செயல்முறை பெயர்கள்/பாதைகள், எடுத்துக்காட்டாக:"
         invalidCharactersWarning: "செயல்முறை பட்டியலில் தவறான எழுத்துகள் உள்ளன: {{invalidCharacters}}"
-        saveButton: "சேமிக்கவும்"
       includeExcludeCustomOnly:
         title: "மாற்றத்தின் சேர்க்கை/விலக்கு பட்டியல்களை புறக்கணிக்கவும்"
         description: "மேலே உள்ள தனிப்பயன் பட்டியல்களை மட்டும் பயன்படுத்தி, மாற்றத்தின் பட்டியல்களை புறக்கணிக்கவும்."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>புதிய மொழிபெயர்ப்பை பங்களிக்கவும்</0>."
       credits: "தமிழ் மொழிபெயர்ப்பு செய்தவர்: <0>JeevabharathiRK</0>."
       creditsLink: "https://github.com/JeevabharathiRK"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "புதுப்பிப்புகளை சரிபார்க்கவும்"
       description: "விண்ட்ஹாக் மற்றும் நிறுவப்பட்ட மாற்றங்களின் புதிய பதிப்புகளைக் காண மையமாகத்தோறும் சரிபார்க்கவும்."
@@ -300,7 +308,6 @@ app:
       title: "மேலும் மேம்பட்ட அமைப்புகள்"
       restartNotice: "அமைப்புகளை செயல்படுத்த விண்ட்ஹாக் மீண்டும் துவக்கப்படும்."
       saveButton: "சேமித்து விண்ட்ஹாக் ஐ மீண்டும் துவக்கு"
-      cancelButton: "ரத்து செய்"
     loggingVerbosity:
       appLoggingTitle: "விண்ட்ஹாக் பதிவு விவரக்குறைவு"
       engineLoggingTitle: "விண்ட்ஹாக் என்ஜின் பதிவு விவரக்குறைவு"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "மற்ற அனைத்தையும் விலக்க விரும்பினால், விலக்கு பட்டியலில் \"*\" ஐ சேர்க்கவும்."
       processListPlaceholder: "ஒவ்வொன்றும் ஒரு வரியில் செயல்முறை பெயர்கள்/பாதைகள், எடுத்துக்காட்டாக:"
       invalidCharactersWarning: "செயல்முறை பட்டியலில் தவறான எழுத்துகள் உள்ளன: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "விண்ட்ஹாக் v{{version}}"
     beta: "பீட்டா"
@@ -330,23 +402,21 @@ app:
       title: "புதுப்பிப்பு கிடைக்கிறது"
       subtitle: "புதிய அம்சங்கள் மற்றும் பிழை திருத்தங்களுக்கு விண்ட்ஹாக் ஐ புதுப்பிக்க பரிந்துரை செய்யப்படுகிறது"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "இணைப்புகள்"
       homepage: "முகப்பு பக்கம்"
       documentation: "ஆவணங்கள்"
     builtWith:
       title: "பயன்படுத்திய கருவிகள்"
+      tauri: ~
       vscodium: "மைக்ரோசாப்டின் VSCode ஐ அடிப்படையாக கொண்ட சமூக இயக்கும் தொகுப்பி"
       llvmMingw: "LLVM/Clang/LLD அடிப்படையிலான mingw-w64 கருவி தொகுப்பு"
       minHook: "Windows க்கான குறைந்தபட்ச API ஹூக்கிங் நூலகம்"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} ஐ நிறுவுக"
     warningTitle: "கவனத்துடன் தொடரவும்"
     warningDescription: "தீங்கான மாற்றங்கள் உங்கள் கணினிக்கு சேதம் செய்யலாம் அல்லது உங்கள் தனிப்பட்ட தகவல்களை மீறலாம். நம்பிக்கையுடன் உள்ள எழுத்தாளர்களிடமிருந்து மட்டுமே மாற்றங்களை நிறுவுங்கள்."
-    modAuthor: "மாற்ற எழுத்தாளர்"
-    homepage: "முகப்பு பக்கம்"
-    github: "GitHub"
-    twitter: "X (ட்விட்டர்)"
     verified: "சரிபார்க்கப்பட்டது"
     verifiedTooltip: "இந்த சுயவிவரம் மாற்ற எழுத்தாளருக்கே சேர்ந்ததாக நாம் உறுதி செய்துள்ளோம். ஆனால் <0>சரிபார்க்கப்பட்டது</0> என்பது <0>நம்பத்தகுந்தது</0> என்பதுடன் சமமாக இல்லை. நீங்கள் எழுத்தாளரை நம்புகிறீர்களா என்பதை உறுதி செய்யவும், இல்லையெனில் மூலக் குறியீட்டை நன்றாக ஆய்வு செய்யவும்."
     acceptButton: "அபாயத்தை ஏற்று நிறுவவும்"
-    cancelButton: "ரத்து செய்"
   createNewModButton:
     title: "புதிய மாற்றம் உருவாக்கவும்"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "மாற்றங்களை உருவாக்க மற்றும் திருத்த C/C++ பற்றிய அறிவு தேவைப்படும். இதைப்பற்றி தெளிவில்லை என்றால், இவ்விருப்பங்கள் உங்களுக்கு பொருத்தமில்லாமல் இருக்கலாம்."
     hideOptionsCheckbox: "மேம்பாட்டு தொடர்பான விருப்பங்களை மறைக்கவும்"
     hideOptionsButton: "விருப்பங்களை மறைக்கவும்"
     beginCodingButton: "குறியீட்டாக்கத் தொடங்கவும்"
-    cancelButton: "ரத்து செய்"
   safeMode:
     alert: "விண்ட்ஹாக் பாதுகாப்பு பயன்முறையில் இயங்குகிறது, அனைத்து குறியீடு செருகல் செயல்பாடுகளும் முடக்கப்பட்டுள்ளன."
     offButton: "பாதுகாப்பு பயன்முறையை அணைக்கவும்"
     offConfirm: "அமைப்புகளைச் செயல்படுத்த விண்ட்ஹாக் மீண்டும் துவங்கும்."
     offConfirmOk: "விண்ட்ஹாக் ஐ மீண்டும் துவக்கு"
-    offConfirmCancel: "ரத்து செய்"
   modPreview:
     actionUnavailable: "இந்த செயல் முன்னோட்ட பயன்முறையில் கிடைக்கவில்லை"
     notCompiled: "மாற்றம் முன்னோட்டம் காணும் முன் கணக்கிடப்பட வேண்டும்"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: ~
       links: "இணைப்புகள்"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "புதிய மொழிபெயர்ப்பை பங்களிக்கவும்"
     home:
       tagline: "Windows மற்றும் நிரல்களுக்கான தனிப்பயனாக்க சந்தை"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -446,6 +508,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows가 안전 모드로 실행 중입니다. Windhawk의 안전 모드를 사용할까요? 모든 코드 인젝션 기능이 꺼집니다."
 app:
   general:
-    loading: "불러오는 중..."
-    loadingFailed: "불러오는 데 실패했습니다, 인터넷 연결을 확인해주세요"
-    loadingFailedTitle: "불러오기 실패"
-    loadingFailedSubtitle: "인터넷 연결을 확인하고 다시 시도해주세요"
-    tryAgain: "다시 시도"
-    updating: "업데이트 중..."
-    installing: "설치 중..."
-    compiling: "컴파일 중..."
-    cut: "잘라내기"
-    copy: "복사"
-    paste: "붙여넣기"
-    selectAll: "모두 선택"
-    loggingEnabled: "디버그 로깅 활성화됨"
+    status:
+      loading: "불러오는 중..."
+      loadingFailed: "불러오는 데 실패했습니다, 인터넷 연결을 확인해주세요"
+      loadingFailedTitle: "불러오기 실패"
+      loadingFailedSubtitle: "인터넷 연결을 확인하고 다시 시도해주세요"
+      tryAgain: "다시 시도"
+      updating: "업데이트 중..."
+      installing: "설치 중..."
+      compiling: "컴파일 중..."
+      loggingEnabled: "디버그 로깅 활성화됨"
+    contextMenu:
+      cut: "잘라내기"
+      copy: "복사"
+      paste: "붙여넣기"
+      selectAll: "모두 선택"
+    actions:
+      cancel: "취소"
+      close: "닫기"
+      save: "저장"
+      update: "업데이트"
+      download: "다운로드"
+    modAuthor:
+      title: "모드 작성자"
+      homepage: "홈페이지"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "업데이트 사용 가능"
     installed: "설치됨"
     details: "세부 정보"
-    update: "업데이트"
     downgrade: "다운그레이드"
     install: "설치"
     compile: "컴파일"
@@ -121,7 +132,6 @@ app:
     remove: "삭제"
     removeConfirm: "이 모드를 삭제할까요?"
     removeConfirmOk: "모드 삭제"
-    removeConfirmCancel: "취소"
     donate: "기부"
     notCompiled: "모드 컴파일이 필요합니다"
     editedLocally: "모드가 로컬에서 편집되었습니다"
@@ -141,11 +151,6 @@ app:
       modId: "모드 식별자"
       modVersion: "모드 버전"
       lastUpdated: "최근 업데이트됨"
-      modAuthor:
-        title: "모드 작성자"
-        homepage: "홈페이지"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "모든 프로세스"
         allBut: "{{list}} 외의 모든 프로세스"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "프리릴리스"
       select: "선택"
-      cancel: "취소"
       chooseVersion: "버전을 선택..."
     details:
       title: "세부 정보"
@@ -205,7 +209,6 @@ app:
         description: "모드 설정을 손쉽게 내보내거나 공유합니다."
         loadButton: "불러오기"
         loadFormattedButton: "형식 불러오기"
-        saveButton: "저장"
         invalidData: "올바르지 않은 JSON 데이터"
       customList:
         titleInclusion: "사용자 지정 프로세스 포함 목록"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "모드가 대상에서 제외할 추가 실행 파일 이름/경로의 사용자 지정 목록입니다. 이 목록은 모드 작성자가 대상 프로세스를 결정하기 위해 정의한 제외 목록에 추가됩니다. 각 프로세스에 대해 실행 파일 경로가 포함 항목 중 하나와 일치하고 제외 항목과 일치하지 않으면 모드를 불러옵니다."
         processListPlaceholder: "한 줄당 프로세스 이름/경로 1개, 예:"
         invalidCharactersWarning: "프로세스 목록에 올바르지 않은 글자가 들어 있습니다. 제거된 글자: {{invalidCharacters}}"
-        saveButton: "저장"
       includeExcludeCustomOnly:
         title: "모드 포함/제외 무시 목록"
         description: "모드의 프로세스 포함/제외 목록을 무시하고 상기의 사용자 지정 목록만을 사용합니다."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>새 번역 기여하기</0>."
       credits: "한국어 번역 by <0>근육질푸키</0>."
       creditsLink: "mailto:muscularpuky@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "업데이트 확인"
       description: "Windhawk와 설치된 모드의 새로운 버전을 자동으로 확인하고 알립니다."
@@ -300,7 +308,6 @@ app:
       title: "더 많은 설정"
       restartNotice: "이 설정을 적용하면 Windhawk가 다시 시작됩니다."
       saveButton: "저장하고 Windhawk 다시 시작"
-      cancelButton: "취소"
     loggingVerbosity:
       appLoggingTitle: "Windhawk 로깅 수준"
       engineLoggingTitle: "Windhawk 엔진 로깅 수준"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "여기의 프로세스들 이외의 모든 프로세스를 제외하려면 프로세스 제외 목록에 \"*\"를 설정할 수 있습니다."
       processListPlaceholder: "1줄당 프로세스 이름/경로 1개, 예:"
       invalidCharactersWarning: "프로세스 목록에 올바르지 않은 글자가 들어 있습니다. 제거된 글자: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "베타"
@@ -330,23 +402,21 @@ app:
       title: "업데이트를 사용할 수 있음"
       subtitle: "최신 기능 및 버그 수정을 받으려면 Windhawk를 업데이트하세요."
       changelogButton: "변경 로그"
-      updateButton: "업데이트"
       modal:
         title: "Windhawk 업데이트 중"
         downloading: "업데이트 다운로드 중..."
         installing: "업데이트 설치 중..."
         installingNote: "설치가 완료되면 Windhawk가 자동으로 다시 시작됩니다."
         failed: "업데이트 실패"
-        cancel: "취소"
     changelog:
       title: "Windhawk의 새로운 기능"
-      close: "닫기"
     links:
       title: "링크"
       homepage: "홈페이지"
       documentation: "문서"
     builtWith:
       title: "다음으로 개발됨"
+      tauri: ~
       vscodium: "Microsoft의 VSCode 편집기의 커뮤니티 기반 배포"
       llvmMingw: "LLVM/Clang/LLD 기반 mingw-w64 툴체인"
       minHook: "Windows용 최소한의 API 후킹 라이브러리"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} 설치"
     warningTitle: "신중히 진행하세요"
     warningDescription: "악성 모드는 컴퓨터를 손상시키거나 개인 정보를 침해할 수 있습니다. 신뢰할 수 있는 작성자의 모드만 설치하세요."
-    modAuthor: "모드 작성자"
-    homepage: "홈페이지"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "인증됨"
     verifiedTooltip: "이 프로필이 모드 작성자의 것임을 확인했지만 <0>인증됨</0>은 <0>신뢰할 수 있음</0>과 다릅니다. 모드 작성자를 신뢰하는지 확인하거나 설치하기 전에 소스 코드를 신중히 검사하세요."
     acceptButton: "위험을 감수하고 설치"
-    cancelButton: "취소"
   createNewModButton:
     title: "새 모드 만들기"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "모드를 만들고 수정하려면 약간의 Windows용 C/C++ 개발 지식이 필요합니다. 무슨 뜻인지 모르겠다면 이러한 옵션들은 맞지 않을지도 모릅니다."
     hideOptionsCheckbox: "모든 개발 관련 옵션 숨기기"
     hideOptionsButton: "옵션 숨기기"
     beginCodingButton: "코딩 시작"
-    cancelButton: "취소"
   safeMode:
     alert: "Windhawk가 안전 모드로 실행 중입니다. 모든 코드 인젝션 기능이 꺼졌습니다."
     offButton: "안전 모드 끄기"
     offConfirm: "이 설정을 적용하기 위해 Windhawk가 다시 시작됩니다."
     offConfirmOk: "Windhawk 다시 시작"
-    offConfirmCancel: "취소"
   modPreview:
     actionUnavailable: "미리 보기 모드에서는 사용할 수 없는 작업입니다."
     notCompiled: "모드를 미리 보려면 컴파일해야 합니다."
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "모드"
       links: "링크"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "새 번역 기여하기"
     home:
       tagline: "Windows 프로그램용 사용자 정의 마켓플레이스"
-      download: "다운로드"
       getInvolved: "참여하기"
       joinDiscord: "Discord의 Windhawk 커뮤니티에 가입하기"
       discussWindhawk: "GitHub Discussions에서 Windhawk 논의하기"
@@ -446,6 +508,5 @@ app:
       title: "Windhawk 업데이트하기"
       newVersionAvailable: "새 Windhawk 버전을 사용할 수 있습니다"
       whatsNew: "새로운 기능"
-      downloadButton: "다운로드"
     footer:
       copyright: "저작권"

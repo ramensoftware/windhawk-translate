@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows ap kouri nan mòd an sekirite. Èske ou ta renmen pou pèmèt mòd an sekirite nan Windhawk? Tout fonksyonalite enjeksyon kòd pral etenn."
 app:
   general:
-    loading: "Chaje..."
-    loadingFailed: "Chaje echwe, tanpri tcheke koneksyon entènèt ou"
-    loadingFailedTitle: "Chaje echwe"
-    loadingFailedSubtitle: "Tanpri tcheke koneksyon entènèt ou ak eseye ankò"
-    tryAgain: "Eseye ankò"
-    updating: "Mete ajou..."
-    installing: "Enstale..."
-    compiling: "Konpile..."
-    cut: "Koupe"
-    copy: "Kopi"
-    paste: "Kole"
-    selectAll: "Chwazi tout"
-    loggingEnabled: "Anrejistreman debogaj se aktif"
+    status:
+      loading: "Chaje..."
+      loadingFailed: "Chaje echwe, tanpri tcheke koneksyon entènèt ou"
+      loadingFailedTitle: "Chaje echwe"
+      loadingFailedSubtitle: "Tanpri tcheke koneksyon entènèt ou ak eseye ankò"
+      tryAgain: "Eseye ankò"
+      updating: "Mete ajou..."
+      installing: "Enstale..."
+      compiling: "Konpile..."
+      loggingEnabled: "Anrejistreman debogaj se aktif"
+    contextMenu:
+      cut: "Koupe"
+      copy: "Kopi"
+      paste: "Kole"
+      selectAll: "Chwazi tout"
+    actions:
+      cancel: "Anile"
+      close: "Fèmen"
+      save: "Sove"
+      update: "Mizajou"
+      download: "Telechaje"
+    modAuthor:
+      title: "Otè mod"
+      homepage: "Paj dakèy"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Aktyalizasyon disponib"
     installed: "Enstale"
     details: "Detay"
-    update: "Mizajou"
     downgrade: "Deklase"
     install: "Enstale"
     compile: "Konpile"
@@ -121,7 +132,6 @@ app:
     remove: "Retire"
     removeConfirm: "Èske ou sèten ou vle retire mod sa a?"
     removeConfirmOk: "Retire mod"
-    removeConfirmCancel: "Anile"
     donate: "Bay lajan"
     notCompiled: "Mod bezwen konpile"
     editedLocally: "Mod te modifye lokalman"
@@ -141,11 +151,6 @@ app:
       modId: "Idantifyan mod"
       modVersion: "Vèsyon mod"
       lastUpdated: "Dènye mizajou"
-      modAuthor:
-        title: "Otè mod"
-        homepage: "Paj dakèy"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Tout pwosesis yo"
         allBut: "Tout men {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "pre-lansman"
       select: "Chwazi"
-      cancel: "Anile"
       chooseVersion: "Chwazi yon vèsyon..."
     details:
       title: "Detay"
@@ -205,7 +209,6 @@ app:
         description: "Fasilman espòte oubyen pataje paramèt mod ou yo."
         loadButton: "Chaje"
         loadFormattedButton: "Chaje fòma"
-        saveButton: "Sove"
         invalidData: "Done JSON envalab"
       customList:
         titleInclusion: "Lis enklizyon pwosesis ki pèsonalize"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Yon lis pèsonalize non/chemen fichye ekzekisyon adisyonèl ke mod la pral eskli nan sib la. Lis la ajoute nan lis esklizyon ke otè mod la te defini pou detèmine ki pwosesis pou vize. Pou chak pwosesis, mod la chaje si chemen fichye ekzekisyon an koresponn ak youn nan antre enklizyon yo epi li pa koresponn ak okenn antre esklizyon."
         processListPlaceholder: "Non/chemen pwosesis, youn pou chak liy, pou egzanp:"
         invalidCharactersWarning: "Lis pwosesis la genyen karaktè ki envalab ki pral efase: {{invalidCharacters}}"
-        saveButton: "Sove"
       includeExcludeCustomOnly:
         title: "Inyore lis enklizyon/esklizyon mod"
         description: "Inyore lis enklizyon/esklizyon pwosesis mod la ak itilize sèlman lis pèsonalize ki anwo yo."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Kontribye yon nouvo tradiksyon</0>."
       credits: "Tradikasyon Kreyòl Ayisyen pa <0>Samuel Laguerre (chartersamster)</0>."
       creditsLink: "mailto:sammylaguerre305@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Tcheke pou mizajou"
       description: "Tcheke otomatikman epi notifye nouvo vèsyon Windhawk ak mod enstale yo."
@@ -300,7 +308,6 @@ app:
       title: "Plis paramèt avanse"
       restartNotice: "Windhawk pral rekòmanse pou aplike paramèt yo."
       saveButton: "Sove ak rekòmanse Windhawk"
-      cancelButton: "Anile"
     loggingVerbosity:
       appLoggingTitle: "Vèbosite anrejistreman Windhawk"
       engineLoggingTitle: "Vèbosite anrejistreman motè Windhawk"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Si ou te vle di pou eksli tout pwosesis men sa yo, ou ka mete \"*\" nan lis esklizyon pwosesis la."
       processListPlaceholder: "Non/chemen pwosesis, youn pou chak liy, pou egzanp:"
       invalidCharactersWarning: "Lis pwosesis la genyen karaktè ki envalab ki pral efase: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "Yon mizajou disponsib"
       subtitle: "Konsidere mete Windhawk ajou pou jwenn pi dènye fonksyonalite ak koreksyon pinèz yo."
       changelogButton: "Lis chanjman"
-      updateButton: "Mete ajou"
       modal:
         title: "Mete Windhawk ajou"
         downloading: "Telechaje mizajou..."
         installing: "Enstale mizajou..."
         installingNote: "Windhawk pral rekòmanse lè enstalasyon an fini."
         failed: "Mizajou echwe"
-        cancel: "Anile"
     changelog:
       title: "Sa ki Nouvo nan Windhawk"
-      close: "Fèmen"
     links:
       title: "Lyan"
       homepage: "Paj dakèy"
       documentation: "Dokimantasyon"
     builtWith:
       title: "Bati avèk"
+      tauri: ~
       vscodium: "Yon distribisyon editè VSCode Microsoft la ki baze sou kominote a"
       llvmMingw: "Yon chèn zouti mingw-w64 ki baze sou LLVM/Clang/LLD"
       minHook: "Bibliyotèk minimalist konekte API a pou Windows"
@@ -355,40 +425,31 @@ app:
     title: "Enstale {{mod}}"
     warningTitle: "Kontinye ak prekosyon"
     warningDescription: "Mod malveyan ka domaj òdinatè ou oswa vyole entimite ou. Sèlman enstale mod sòti otè ki ou konfye."
-    modAuthor: "Otè mod"
-    homepage: "Paj dakèy"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "verifye"
     verifiedTooltip: "Nou verifye ke pwofil sa a se pou otè mod la, men remake ke <0>verifye</0> pa menm bagay ak <0>fyab</0>. Asire w ou fè otè mod la konfyans, oubyen enspekte kòd sous la ak anpil atansyon anvan ou enstale li."
     acceptButton: "Aksepte Risk ak Enstale"
-    cancelButton: "Anile"
   createNewModButton:
     title: "Kreye yon Nouvo Mod"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Kreye ak modifye yon mod bezwen kèk konesans nan devlopman C/C++ pou Windows. Si w pa sèten ki sa vle di, petèt opsyon sa yo pa pou ou."
     hideOptionsCheckbox: "Kache tout opsyon ki gen rapò ak devlopman"
     hideOptionsButton: "Kache opsyon yo"
     beginCodingButton: "Kòmanse kodaj"
-    cancelButton: "Anile"
   safeMode:
     alert: "Windhawk ap kouri nan mòd an sekirite, tout fonksyonalite enjeksyon kòd se etenn"
     offButton: "Etenn mòd an sekirite"
     offConfirm: "Windhawk pral rekòmanse pou aplike paramèt yo"
     offConfirmOk: "Rekòmanse Windhawk"
-    offConfirmCancel: "Anile"
   modPreview:
     actionUnavailable: "Aksyon pa disponib nan mòd koutje."
     notCompiled: "Mod bezwen konpile anvan li kapab fè koutje"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "Mod"
       links: "Lyen"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Kontribye yon nouvo tradiksyon"
     home:
       tagline: "Mache pèsyonalizasyon an pou Windows ak pwogram yo"
-      download: "Telechaje"
       getInvolved: "Enplike"
       joinDiscord: "Rantre kominote Windhawk la sou Discord"
       discussWindhawk: "Diskite Windhawk sou GitHub Discussions"
@@ -446,6 +508,5 @@ app:
       title: "Mete ajou Windhawk"
       newVersionAvailable: "Yon nouvo vèsyon Windhawk disponib"
       whatsNew: "Sa ki nouvo"
-      downloadButton: "Telechaje"
     footer:
       copyright: "Dwa òte"

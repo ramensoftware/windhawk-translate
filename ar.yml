@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "يعمل Windows في الوضع الآمن. هل ترغب في تفعيل الوضع الآمن في Windhawk؟ سيتم إيقاف جميع وظائف حقن الشيفرة."
 app:
   general:
-    loading: "جار التحميل..."
-    loadingFailed: "فشل التحميل، يرجى التحقق من اتصال الإنترنت"
-    loadingFailedTitle: "فشل التحميل"
-    loadingFailedSubtitle: "يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى"
-    tryAgain: "حاول مرة أخرى"
-    updating: "جار التحديث..."
-    installing: "جار التثبيت..."
-    compiling: "جار التجميع..."
-    cut: "قص"
-    copy: "نسخ"
-    paste: "لصق"
-    selectAll: "تحديد الكل"
-    loggingEnabled: ~
+    status:
+      loading: "جار التحميل..."
+      loadingFailed: "فشل التحميل، يرجى التحقق من اتصال الإنترنت"
+      loadingFailedTitle: "فشل التحميل"
+      loadingFailedSubtitle: "يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى"
+      tryAgain: "حاول مرة أخرى"
+      updating: "جار التحديث..."
+      installing: "جار التثبيت..."
+      compiling: "جار التجميع..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "قص"
+      copy: "نسخ"
+      paste: "لصق"
+      selectAll: "تحديد الكل"
+    actions:
+      cancel: "إلغاء"
+      close: ~
+      save: "حفظ"
+      update: "تحديث"
+      download: ~
+    modAuthor:
+      title: "مؤلف المود"
+      homepage: "الصفحة الرئيسية"
+      github: "GitHub"
+      twitter: "X (تويتر)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "تحديث متاح"
     installed: "مثبت"
     details: "تفاصيل"
-    update: "تحديث"
     downgrade: ~
     install: "تثبيت"
     compile: "تجميع"
@@ -121,7 +132,6 @@ app:
     remove: "إزالة"
     removeConfirm: "هل أنت متأكد أنك تريد إزالة هذا المود؟"
     removeConfirmOk: "إزالة المود"
-    removeConfirmCancel: "إلغاء"
     donate: ~
     notCompiled: "يجب تجميع المود"
     editedLocally: "تم تعديل المود محليًا"
@@ -145,11 +155,6 @@ app:
       modId: "معرف المود"
       modVersion: "إصدار المود"
       lastUpdated: ~
-      modAuthor:
-        title: "مؤلف المود"
-        homepage: "الصفحة الرئيسية"
-        github: "GitHub"
-        twitter: "X (تويتر)"
       processes:
         all: "جميع العمليات"
         allBut: "جميع ما عدا {{list}}"
@@ -163,7 +168,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "تفاصيل"
@@ -209,7 +213,6 @@ app:
         description: "تصدير أو مشاركة إعدادات المود بسهولة."
         loadButton: "تحميل"
         loadFormattedButton: "تحميل منسق"
-        saveButton: "حفظ"
         invalidData: "بيانات JSON غير صالحة"
       customList:
         titleInclusion: "قائمة تضمين العمليات المخصصة"
@@ -218,7 +221,6 @@ app:
         descriptionExclusion: "قائمة مخصصة من أسماء/مسارات الملفات التنفيذية الإضافية التي سيتم استبعادها من الاستهداف. تضاف القائمة إلى قائمة الاستبعاد التي حددها مؤلف المود لتحديد العمليات المستهدفة. لكل عملية، يتم تحميل المود إذا كان مسار الملف التنفيذي يطابق أحد عناصر التضمين ولا يطابق أي عنصر استبعاد."
         processListPlaceholder: "أسماء/مسارات العمليات، كل واحد في سطر، على سبيل المثال:"
         invalidCharactersWarning: "تحتوي قائمة العمليات على أحرف غير صالحة سيتم حذفها: {{invalidCharacters}}"
-        saveButton: "حفظ"
       includeExcludeCustomOnly:
         title: "تجاهل قوائم التضمين/الاستبعاد الخاصة بالمود"
         description: "تجاهل قوائم التضمين/الاستبعاد الخاصة بالمود واستخدم فقط القوائم المخصصة أعلاه."
@@ -282,6 +284,12 @@ app:
       contribute: "<0>ساهم بترجمة جديدة</0>."
       credits: "الترجمة العربية بواسطة <0>عبد الحق العمراوي</0>."
       creditsLink: "mailto:abdelhaq1080@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "التحقق من التحديثات"
       description: "التحقق بشكل دوري من وجود إصدارات جديدة من Windhawk والمودات المثبتة."
@@ -308,7 +316,6 @@ app:
       title: "إعدادات أكثر تقدمًا"
       restartNotice: "سيتم إعادة تشغيل Windhawk لتطبيق الإعدادات."
       saveButton: "حفظ وإعادة تشغيل Windhawk"
-      cancelButton: "إلغاء"
     loggingVerbosity:
       appLoggingTitle: "مستوى تفصيل سجلات Windhawk"
       engineLoggingTitle: "مستوى تفصيل سجلات محرك Windhawk"
@@ -329,6 +336,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "إذا كنت تقصد استبعاد جميع العمليات ما عدا هذه، يمكنك تعيين \"*\" في قائمة استبعاد العمليات."
       processListPlaceholder: "أسماء/مسارات العمليات، كل واحد في سطر، على سبيل المثال:"
       invalidCharactersWarning: "تحتوي قائمة العمليات على أحرف غير صالحة سيتم حذفها: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "بيتا"
@@ -338,23 +410,21 @@ app:
       title: "يتوفر تحديث"
       subtitle: "فكر في تحديث Windhawk للحصول على أحدث الميزات وإصلاحات الأخطاء"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "روابط"
       homepage: "الصفحة الرئيسية"
       documentation: "التوثيق"
     builtWith:
       title: "بُني باستخدام"
+      tauri: ~
       vscodium: "توزيعة مجتمع من محرر VSCode من مايكروسوفت"
       llvmMingw: "مجموعة أدوات mingw-w64 مبنية على LLVM/Clang/LLD"
       minHook: "مكتبة API Hooking بسيطة لنظام ويندوز"
@@ -363,40 +433,31 @@ app:
     title: "تثبيت {{mod}}"
     warningTitle: "تابع بحذر"
     warningDescription: "يمكن أن تتسبب المودات الضارة في إتلاف جهاز الكمبيوتر أو انتهاك خصوصيتك. قم بتثبيت المودات فقط من المؤلفين الذين تثق بهم."
-    modAuthor: "مؤلف المود"
-    homepage: "الصفحة الرئيسية"
-    github: "GitHub"
-    twitter: "X (تويتر)"
     verified: "تم التحقق"
     verifiedTooltip: "لقد تحققنا من أن هذا الملف الشخصي يخص مؤلف المود، ولكن لاحظ أن <0>تم التحقق</0> لا تعني <0>موثوق</0>. تأكد من أنك تثق بمؤلف المود، أو تحقق بعناية من الشيفرة المصدرية قبل التثبيت."
     acceptButton: "قبول المخاطرة والتثبيت"
-    cancelButton: "إلغاء"
   createNewModButton:
     title: "إنشاء مود جديد"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "يتطلب إنشاء وتعديل المودات بعض المعرفة بتطوير C/C++ لنظام ويندوز. إذا لم تكن متأكدًا مما يعنيه ذلك، ربما لا تكون هذه الخيارات مناسبة لك."
     hideOptionsCheckbox: "إخفاء جميع الخيارات المتعلقة بالتطوير"
     hideOptionsButton: "إخفاء الخيارات"
     beginCodingButton: "ابدأ البرمجة"
-    cancelButton: "إلغاء"
   safeMode:
     alert: "يعمل Windhawk في الوضع الآمن، تم إيقاف جميع وظائف حقن الشيفرة."
     offButton: "إيقاف الوضع الآمن"
     offConfirm: "سيتم إعادة تشغيل Windhawk لتطبيق الإعدادات."
     offConfirmOk: "إعادة تشغيل Windhawk"
-    offConfirmCancel: "إلغاء"
   modPreview:
     actionUnavailable: "الإجراء غير متاح في وضع المعاينة"
     notCompiled: "يجب تجميع المود قبل معاينته"
@@ -418,10 +479,11 @@ app:
     appHeader:
       mods: ~
       links: "روابط"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "ساهم بترجمة جديدة"
     home:
       tagline: "سوق التخصيص لنظام ويندوز والبرامج"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -454,6 +516,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

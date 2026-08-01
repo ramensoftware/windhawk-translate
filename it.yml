@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
-    loading: "Caricamento..."
-    loadingFailed: "Caricamento fallito, per favore controlla la tua connessione Internet."
-    loadingFailedTitle: "Caricamento fallito"
-    loadingFailedSubtitle: "Per favore controlla la tua connessione Internet e prova di nuovo"
-    tryAgain: "Riprova ancora"
-    updating: "Aggiornamento..."
-    installing: "Installazione..."
-    compiling: "Compilazione..."
-    cut: ~
-    copy: ~
-    paste: ~
-    selectAll: ~
-    loggingEnabled: ~
+    status:
+      loading: "Caricamento..."
+      loadingFailed: "Caricamento fallito, per favore controlla la tua connessione Internet."
+      loadingFailedTitle: "Caricamento fallito"
+      loadingFailedSubtitle: "Per favore controlla la tua connessione Internet e prova di nuovo"
+      tryAgain: "Riprova ancora"
+      updating: "Aggiornamento..."
+      installing: "Installazione..."
+      compiling: "Compilazione..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: ~
+      copy: ~
+      paste: ~
+      selectAll: ~
+    actions:
+      cancel: "Annulla"
+      close: ~
+      save: "Salva"
+      update: "Aggiorna"
+      download: ~
+    modAuthor:
+      title: "Autore della mod"
+      homepage: "Homepage"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Aggiornamento disponibile"
     installed: "Installato"
     details: "Dettagli"
-    update: "Aggiorna"
     downgrade: ~
     install: "Installa"
     compile: "Compila"
@@ -121,7 +132,6 @@ app:
     remove: "Rimuovi"
     removeConfirm: "Sei sicuro di voler rimuovere questa mod?"
     removeConfirmOk: "Rimuovi mod"
-    removeConfirmCancel: "Annulla"
     donate: ~
     notCompiled: "La mod deve essere compilata"
     editedLocally: "La mod è stata modificata localmente"
@@ -142,11 +152,6 @@ app:
       modId: "Identificatore della mod"
       modVersion: "Versione della mod"
       lastUpdated: ~
-      modAuthor:
-        title: "Autore della mod"
-        homepage: "Homepage"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Tutti i processi"
         allBut: "Tutto ma {{list}}"
@@ -160,7 +165,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Dettagli"
@@ -206,7 +210,6 @@ app:
         description: "Esporta o condividi facilmente le tue impostazioni delle mod."
         loadButton: "Carica"
         loadFormattedButton: "Carica formattato"
-        saveButton: "Salva"
         invalidData: "Dati JSON non validi"
       customList:
         titleInclusion: "Elenco di inclusione di processi personalizzati"
@@ -215,7 +218,6 @@ app:
         descriptionExclusion: "Un elenco personalizzato di nomi/percorsi di file eseguibili aggiuntivi che la mod escluderà dal targeting. L'elenco viene aggiunto all'elenco di esclusione definito dall'autore della mod per determinare quali processi includere nel targeting. Per ogni processo, la mod viene caricata se il percorso del file eseguibile corrisponde a una delle voci di inclusione e non corrisponde a nessuna voce di esclusione."
         processListPlaceholder: "Nomi/percorsi dei processi, uno per riga, ad esempio:"
         invalidCharactersWarning: ~
-        saveButton: "Salva"
       includeExcludeCustomOnly:
         title: ~
         description: ~
@@ -276,6 +278,12 @@ app:
       contribute: "<0>Contribuisci con una nuova traduzione</0>."
       credits: "Traduzione italiana di <0>Marco Petrucci</0>."
       creditsLink: "https://github.com/marco00petrucci"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Ricerca aggiornamenti"
       description: "Verifica periodicamente la presenza di nuove versioni di Windhawk e delle mod installate."
@@ -302,7 +310,6 @@ app:
       title: "Altre impostazioni avanzate"
       restartNotice: "Windhawk sarà riavviato per applicare le impostazioni."
       saveButton: "Salva e riavvia Windhawk"
-      cancelButton: "Annulla"
     loggingVerbosity:
       appLoggingTitle: "Verbosità della registrazione di Windhawk"
       engineLoggingTitle: "Verbosità della registrazione del motore di Windhawk"
@@ -323,6 +330,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Se intendevi escludere tutti i processi tranne questi, puoi impostare \"*\" nell'elenco di esclusione dei processi."
       processListPlaceholder: "Nomi/percorsi dei processi, uno per riga, ad esempio:"
       invalidCharactersWarning: ~
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -332,23 +404,21 @@ app:
       title: "È disponibile un aggiornamento"
       subtitle: "Prendi in considerazione l'aggiornamento di Windhawk per ottenere le ultime funzionalità e correzioni di bug"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Link"
       homepage: "Homepage"
       documentation: "Documentazione"
     builtWith:
       title: "Realizzato con"
+      tauri: ~
       vscodium: "Una distribuzione guidata dalla comunità dell'editor VSCode di Microsoft"
       llvmMingw: "Una toolchain mingw-w64 basata su LLVM/Clang/LLD"
       minHook: "La libreria di hook API minimalista per Windows"
@@ -357,40 +427,31 @@ app:
     title: "Installa {{mod}}"
     warningTitle: "Procedi con cura"
     warningDescription: "Le mod dannose possono danneggiare il tuo computer o violare la tua privacy. Installa mod solo da autori di cui ti fidi."
-    modAuthor: "Autore della mod"
-    homepage: "Homepage"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "verificato"
     verifiedTooltip: "Abbiamo verificato che questo profilo appartiene all'autore della mod, ma tieni presente che <0>verificato</0> non equivale a <0>attendibile</0>. Assicurati di fidarti dell'autore della mod o ispeziona attentamente il codice sorgente prima dell'installazione."
     acceptButton: "Accetta il rischio e installa"
-    cancelButton: "Annulla"
   createNewModButton:
     title: "Crea una nuova mod"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "La creazione e la modifica di mod richiede una certa conoscenza dello sviluppo C/C++ per Windows. Se non sei sicuro di cosa significhi, forse queste opzioni non fanno per te."
     hideOptionsCheckbox: "Nascondi tutte le opzioni relative allo sviluppo"
     hideOptionsButton: "Nascondi opzioni"
     beginCodingButton: "Inizia la codifica"
-    cancelButton: "Annulla"
   safeMode:
     alert: ~
     offButton: ~
     offConfirm: ~
     offConfirmOk: ~
-    offConfirmCancel: ~
   modPreview:
     actionUnavailable: "L'azione non è disponibile in modalità anteprima"
     notCompiled: "La mod deve essere compilata prima di poter essere visualizzata in anteprima"
@@ -412,10 +473,11 @@ app:
     appHeader:
       mods: ~
       links: "Link"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Contribuisci con una nuova traduzione"
     home:
       tagline: "Il mercato della personalizzazione per i programmi Windows"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -448,6 +510,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

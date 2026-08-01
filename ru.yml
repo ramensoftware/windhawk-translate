@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows работает в безопасном режиме. Хотите включить безопасный режим в Windhawk? Вся функция инъекции кода будет отключена."
 app:
   general:
-    loading: "Загрузка..."
-    loadingFailed: "Загрузка не удалась, пожалуйста, проверьте ваше соединение с интернетом"
-    loadingFailedTitle: "Загрузка не удалась"
-    loadingFailedSubtitle: "Пожалуйста, проверьте ваше соединение с интернетом и попытайтесь снова"
-    tryAgain: "Попробовать ещё раз"
-    updating: "Обновление..."
-    installing: "Установка..."
-    compiling: "Компиляция..."
-    cut: "Вырезать"
-    copy: "Копировать"
-    paste: "Вставить"
-    selectAll: "Выбрать всё"
-    loggingEnabled: "Логирование включено"
+    status:
+      loading: "Загрузка..."
+      loadingFailed: "Загрузка не удалась, пожалуйста, проверьте ваше соединение с интернетом"
+      loadingFailedTitle: "Загрузка не удалась"
+      loadingFailedSubtitle: "Пожалуйста, проверьте ваше соединение с интернетом и попытайтесь снова"
+      tryAgain: "Попробовать ещё раз"
+      updating: "Обновление..."
+      installing: "Установка..."
+      compiling: "Компиляция..."
+      loggingEnabled: "Логирование включено"
+    contextMenu:
+      cut: "Вырезать"
+      copy: "Копировать"
+      paste: "Вставить"
+      selectAll: "Выбрать всё"
+    actions:
+      cancel: "Отмена"
+      close: "Закрыть"
+      save: "Сохранить"
+      update: "Обновить"
+      download: "Скачать"
+    modAuthor:
+      title: "Автор модификации"
+      homepage: "Главная страница"
+      github: "GitHub"
+      twitter: "X (Твиттер)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Доступно обновление"
     installed: "Установлено"
     details: "Описание"
-    update: "Обновить"
     downgrade: "Откатить"
     install: "Установить"
     compile: "Скомпилировать"
@@ -121,7 +132,6 @@ app:
     remove: "Удалить"
     removeConfirm: "Вы уверены, что хотите удалить эту модификацию?"
     removeConfirmOk: "Удалить модификацию"
-    removeConfirmCancel: "Отмена"
     donate: "Поддержать"
     notCompiled: "Модификация должна быть скомпилирована"
     editedLocally: "Модификация отредактирована локально"
@@ -143,11 +153,6 @@ app:
       modId: "ID модификации"
       modVersion: "Версия модификации"
       lastUpdated: "Последнее обновление"
-      modAuthor:
-        title: "Автор модификации"
-        homepage: "Главная страница"
-        github: "GitHub"
-        twitter: "X (Твиттер)"
       processes:
         all: "Все процессы"
         allBut: "Все, кроме {{list}}"
@@ -161,7 +166,6 @@ app:
     version:
       preRelease: "пре-релиз"
       select: "Выбрать"
-      cancel: "Отменить"
       chooseVersion: "Выберите версию..."
     details:
       title: "Описание"
@@ -207,7 +211,6 @@ app:
         description: "Легко экспортируйте или делитесь вашими настройками модификаций."
         loadButton: "Загрузить"
         loadFormattedButton: "Загрузить отформатированные"
-        saveButton: "Сохранить"
         invalidData: "Неверные JSON-данные"
       customList:
         titleInclusion: "Пользовательский список целевых процессов"
@@ -216,7 +219,6 @@ app:
         descriptionExclusion: "Пользовательский список с дополнительными файлами exe или путями к ним, которые модификация НЕ затронет. Этот список будет добавлен к списку исключения от автора модификации. То есть, модификация загружается для каждого процесса, только если путь совпадает с одним из списка целевых и не совпадает с любым из списка исключённых."
         processListPlaceholder: "Имя процесса (exe)/пути, по одному в строке, например:"
         invalidCharactersWarning: "Список процессов содержит недопустимые символы, которые будут удалены: {{invalidCharacters}}"
-        saveButton: "Сохранить"
       includeExcludeCustomOnly:
         title: "Игнорировать списки целевых/исключённых модификаций"
         description: "Игнорировать списки целевых/исключённых процессов, установленных модом, и используйте только пользовательские списки, приведённые выше."
@@ -278,6 +280,12 @@ app:
       contribute: "<0>Добавить новый перевод</0>."
       credits: "Русский перевод от <0>Сергея Крылова</0> с некоторыми правками от berry и communism420, а также от других членов сообщества."
       creditsLink: "mailto:krylov.sn@nxt.ru"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Проверить обновления"
       description: "Периодически проверять наличие обновлений для Windhawk и установленных модификаций."
@@ -304,7 +312,6 @@ app:
       title: "Дополнительные расширенные параметры"
       restartNotice: "Windhawk будет перезапущен для применения настроек."
       saveButton: "Сохранить и перезапустить Windhawk"
-      cancelButton: "Отмена"
     loggingVerbosity:
       appLoggingTitle: "Подробное логирование Windhawk"
       engineLoggingTitle: "Подробное логирование движка Windhawk"
@@ -325,6 +332,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Если вы хотите исключить все процессы, кроме этих, вы можете задать «*» в списке исключённых процессов."
       processListPlaceholder: "Имя процесса (exe)/пути, по одному в строке, например:"
       invalidCharactersWarning: "Список процессов содержит недопустимые символы, которые будут удалены: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk вер. {{version}}"
     beta: "бета"
@@ -334,23 +406,21 @@ app:
       title: "Доступно обновление"
       subtitle: "Обновите Windhawk для получения доступа к новейшим функциям и исправления ошибок"
       changelogButton: "Изменения"
-      updateButton: "Обновить"
       modal:
         title: "Обновление Windhawk"
         downloading: "Скачивание обновления..."
         installing: "Установка обновления..."
         installingNote: "Windhawk автоматически перезапустится после завершения установки"
         failed: "Ошибка при обновлении"
-        cancel: "Отменить"
     changelog:
       title: "Что нового в Windhawk"
-      close: "Закрыть"
     links:
       title: "Ссылки"
       homepage: "Главная страница"
       documentation: "Документация"
     builtWith:
       title: "Скомпилировано с"
+      tauri: ~
       vscodium: "Версия от сообщества редактора VSCode от Microsoft"
       llvmMingw: "LLVM/Clang/LLD на базе среды mingw-w64"
       minHook: "Минималистичная API hooking библиотека для Windows"
@@ -359,40 +429,31 @@ app:
     title: "Установить {{mod}}"
     warningTitle: "Продолжайте осторожно"
     warningDescription: "Вредоносные модификации могут повредить ваш компьютер и нарушить вашу приватность. Устанавливайте модификации только от авторов, которым доверяете."
-    modAuthor: "Автор модификации"
-    homepage: "Главная страница"
-    github: "GitHub"
-    twitter: "X (Твиттер)"
     verified: "подтверждён"
     verifiedTooltip: "Мы подтверждаем, что этот профиль принадлежит автору модификации, но обратите внимание, что <0>подтверждённый</0> не значит <0>доверенный</0>. Убедитесь, что вы доверяете автору модификации или тщательно проверьте исходный код перед установкой."
     acceptButton: "Принять риск и установить"
-    cancelButton: "Отмена"
   createNewModButton:
     title: "Создать новую модификацию"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Создание и изменение модификаций требует некоторых знаний C/C++ в Windows. Если вы не понимаете о чём речь, возможно эти параметры не для вас."
     hideOptionsCheckbox: "Скрыть все параметры для разработчиков"
     hideOptionsButton: "Скрыть параметры"
     beginCodingButton: "Начать писать код"
-    cancelButton: "Отмена"
   safeMode:
     alert: "Windhawk работает в безопасном режиме, кастомизация программ отключена."
     offButton: "Выключить безопасный режим"
     offConfirm: "Windhawk будет перезапущен для применения настроек."
     offConfirmOk: "Перезапустить Windhawk"
-    offConfirmCancel: "Отмена"
   modPreview:
     actionUnavailable: "Действие недоступно в режиме просмотра"
     notCompiled: "Необходимо скомпилировать модификацию для просмотра"
@@ -414,10 +475,11 @@ app:
     appHeader:
       mods: "Модификации"
       links: "Ссылки"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Добавить новый перевод"
     home:
       tagline: "Маркетплейс для кастомизации программ Windows"
-      download: "Скачать"
       getInvolved: "Присоединитесь"
       joinDiscord: "Присоединиться к сообществу Windhawk в Discord"
       discussWindhawk: "Обсудить Windhawk в GitHub Discussions"
@@ -450,6 +512,5 @@ app:
       title: "Обновить Windhawk"
       newVersionAvailable: "Доступна новая версия Windhawk"
       whatsNew: "Что нового"
-      downloadButton: "Скачать"
     footer:
       copyright: "Авторские права"

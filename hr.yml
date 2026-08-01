@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows je pokrenut u sigurnom načinu rada. Želite li omogućiti sigurni način rada u Windhawku? Svaka funkcionalnost presretanja koda bit će isključena."
 app:
   general:
-    loading: "Učitavam..."
-    loadingFailed: "Učitavanje nije uspjelo, provjerite internetsku vezu"
-    loadingFailedTitle: "Učitavanje nije uspjelo"
-    loadingFailedSubtitle: "Provjerite internetsku vezu i pokušajte ponovno"
-    tryAgain: "Pokušaj ponovno"
-    updating: "Ažuriram..."
-    installing: "Instaliram..."
-    compiling: "Kompiliram..."
-    cut: "Izreži"
-    copy: "Kopiraj"
-    paste: "Zalijepi"
-    selectAll: "Odaberi sve"
-    loggingEnabled: ~
+    status:
+      loading: "Učitavam..."
+      loadingFailed: "Učitavanje nije uspjelo, provjerite internetsku vezu"
+      loadingFailedTitle: "Učitavanje nije uspjelo"
+      loadingFailedSubtitle: "Provjerite internetsku vezu i pokušajte ponovno"
+      tryAgain: "Pokušaj ponovno"
+      updating: "Ažuriram..."
+      installing: "Instaliram..."
+      compiling: "Kompiliram..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Izreži"
+      copy: "Kopiraj"
+      paste: "Zalijepi"
+      selectAll: "Odaberi sve"
+    actions:
+      cancel: "Odustani"
+      close: ~
+      save: "Spremi"
+      update: "Ažuriraj"
+      download: ~
+    modAuthor:
+      title: "Autor dodatka"
+      homepage: "Početna stranica"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Dostupno ažuriranje"
     installed: "Instalirano"
     details: "Detalji"
-    update: "Ažuriraj"
     downgrade: ~
     install: "Instaliraj"
     compile: "Kompiliraj"
@@ -121,7 +132,6 @@ app:
     remove: "Ukloni"
     removeConfirm: "Jeste li sigurni da želite ukloniti ovaj dodatak?"
     removeConfirmOk: "Ukloni dodatak"
-    removeConfirmCancel: "Odustani"
     donate: ~
     notCompiled: "Dodatak je potrebno kompilirati"
     editedLocally: "Dodatak je lokalno izmijenjen"
@@ -142,11 +152,6 @@ app:
       modId: "Identifikator dodatka"
       modVersion: "Verzija dodatka"
       lastUpdated: ~
-      modAuthor:
-        title: "Autor dodatka"
-        homepage: "Početna stranica"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Svi procesi"
         allBut: "Svi osim {{list}}"
@@ -160,7 +165,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Detalji"
@@ -206,7 +210,6 @@ app:
         description: "Jednostavno izvozite ili dijelite postavke ovog dodatka."
         loadButton: "Učitaj"
         loadFormattedButton: "Učitaj formatirano"
-        saveButton: "Spremi"
         invalidData: "Nevažeći JSON podaci"
       customList:
         titleInclusion: "Prilagođeni popis procesa za uključivanje"
@@ -215,7 +218,6 @@ app:
         descriptionExclusion: "Prilagođeni popis dodatnih naziva ili putanja izvršnih datoteka koje se isključuju iz ciljanja. Ovaj se popis dodaje popisu isključivanja koji je autor definirao. Za svaki proces, dodatak se učitava ako putanja odgovara nekom unosu za uključivanje i ne odgovara nijednom unosu za isključivanje."
         processListPlaceholder: "Nazivi/putanje procesa, jedan po retku, primjerice:"
         invalidCharactersWarning: "Popis procesa sadrži nevažeće znakove koji će biti uklonjeni: {{invalidCharacters}}"
-        saveButton: "Spremi"
       includeExcludeCustomOnly:
         title: "Zanemari popise uključivanja/isključivanja dodatka"
         description: "Zanemari popise uključivanja/isključivanja procesa definirane u dodatku i upotrebljavaj samo prilagođene popise iznad."
@@ -276,6 +278,12 @@ app:
       contribute: "<0>Doprinesite novom prijevodu</0>."
       credits: "Engleski prijevod: <0>Davor Kustec</0>."
       creditsLink: "mailto:dkustec@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Provjera ažuriranja"
       description: "Povremeno provjerava dostupnost novih verzija Windhawka i instaliranih dodataka."
@@ -302,7 +310,6 @@ app:
       title: "Još naprednih postavki"
       restartNotice: "Windhawk će se ponovno pokrenuti kako bi primijenio postavke."
       saveButton: "Spremi i ponovno pokreni Windhawk"
-      cancelButton: "Odustani"
     loggingVerbosity:
       appLoggingTitle: "Razina zapisivanja u Windhawku"
       engineLoggingTitle: "Razina zapisivanja u Windhawk pogonu"
@@ -323,6 +330,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Ako želite isključiti sve procese osim ovih, dodajte \"*\" u popis za isključivanje."
       processListPlaceholder: "Nazivi/putanje procesa, jedan po retku, primjerice:"
       invalidCharactersWarning: "Popis procesa sadrži nevažeće znakove koji će biti uklonjeni: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -332,23 +404,21 @@ app:
       title: "Dostupno je ažuriranje"
       subtitle: "Preporučuje se ažuriranje Windhawka radi najnovijih značajki i ispravki"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Poveznice"
       homepage: "Početna stranica"
       documentation: "Dokumentacija"
     builtWith:
       title: "Izrađeno uz pomoć"
+      tauri: ~
       vscodium: "Distribucija Microsoftova VSCode editora koju podržava zajednica"
       llvmMingw: "LLVM/Clang/LLD-based mingw-w64 alatni lanac"
       minHook: "Minimalistička biblioteka za presretanje Windows API-ja"
@@ -357,40 +427,31 @@ app:
     title: "Instaliraj {{mod}}"
     warningTitle: "Postupajte oprezno"
     warningDescription: "Zlonamjerni dodaci mogu prouzročiti štetu vašem računalu ili narušiti vašu privatnost. Instalirajte dodatke samo od autora kojima vjerujete."
-    modAuthor: "Autor dodatka"
-    homepage: "Početna stranica"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "provjereno"
     verifiedTooltip: "Potvrdili smo da ovaj profil pripada autoru dodatka, no <0>provjereno</0> nije isto što i <0>pouzdano</0>. Pobrinite se da vjerujete autoru ili pažljivo pregledajte izvorni kôd prije instalacije."
     acceptButton: "Prihvati rizik i instaliraj"
-    cancelButton: "Odustani"
   createNewModButton:
     title: "Kreiraj novi dodatak"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Kreiranje i izmjena dodataka zahtijeva poznavanje C/C++ razvoja za Windows. Ako niste sigurni što to znači, možda ove opcije nisu za vas."
     hideOptionsCheckbox: "Sakrij sve opcije za razvoj"
     hideOptionsButton: "Sakrij opcije"
     beginCodingButton: "Započni s kodiranjem"
-    cancelButton: "Odustani"
   safeMode:
     alert: "Windhawk radi u sigurnom načinu rada i svaka je funkcionalnost presretanja koda isključena."
     offButton: "Isključi sigurni način rada"
     offConfirm: "Windhawk će se ponovno pokrenuti kako bi primijenio postavke."
     offConfirmOk: "Ponovno pokreni Windhawk"
-    offConfirmCancel: "Odustani"
   modPreview:
     actionUnavailable: "Radnja nije dostupna u načinu pregleda"
     notCompiled: "Dodatak je potrebno kompilirati prije pregleda"
@@ -412,10 +473,11 @@ app:
     appHeader:
       mods: ~
       links: "Poveznice"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Doprinesite novom prijevodu"
     home:
       tagline: "Tržište prilagodbi za Windows i programe"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -448,6 +510,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

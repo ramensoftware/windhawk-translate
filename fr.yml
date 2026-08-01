@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows fonctionne en mode sans échec. Souhaitez-vous activer le mode sans échec dans Windhawk ? Toutes les fonctionnalités d’injection de code seront désactivées."
 app:
   general:
-    loading: "Chargement…"
-    loadingFailed: "Échec du chargement. Vérifiez votre connexion Internet"
-    loadingFailedTitle: "Échec du chargement"
-    loadingFailedSubtitle: "Vérifiez votre connexion Internet et réessayez"
-    tryAgain: "Réessayer"
-    updating: "Mise à jour…"
-    installing: "Installation…"
-    compiling: "Compilation…"
-    cut: "Couper"
-    copy: "Copier"
-    paste: "Coller"
-    selectAll: "Tout sélectionner"
-    loggingEnabled: "Les journaux de débogage sont activés"
+    status:
+      loading: "Chargement…"
+      loadingFailed: "Échec du chargement. Vérifiez votre connexion Internet"
+      loadingFailedTitle: "Échec du chargement"
+      loadingFailedSubtitle: "Vérifiez votre connexion Internet et réessayez"
+      tryAgain: "Réessayer"
+      updating: "Mise à jour…"
+      installing: "Installation…"
+      compiling: "Compilation…"
+      loggingEnabled: "Les journaux de débogage sont activés"
+    contextMenu:
+      cut: "Couper"
+      copy: "Copier"
+      paste: "Coller"
+      selectAll: "Tout sélectionner"
+    actions:
+      cancel: "Annuler"
+      close: "Fermer"
+      save: "Enregistrer"
+      update: "Mettre à jour"
+      download: "Télécharger"
+    modAuthor:
+      title: "Auteur du mod"
+      homepage: "Site web"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Mise à jour disponible"
     installed: "Installé"
     details: "Détails"
-    update: "Mettre à jour"
     downgrade: "Rétrograder"
     install: "Installer"
     compile: "Compiler"
@@ -121,7 +132,6 @@ app:
     remove: "Supprimer"
     removeConfirm: "Êtes-vous sûr de vouloir supprimer ce mod ?"
     removeConfirmOk: "Supprimer le mod"
-    removeConfirmCancel: "Annuler"
     donate: "Faire un don"
     notCompiled: "Le mod doit être compilé"
     editedLocally: "Le mod a été modifié localement"
@@ -141,11 +151,6 @@ app:
       modId: "Identifiant du mod"
       modVersion: "Version du mod"
       lastUpdated: "Dernière mise à jour"
-      modAuthor:
-        title: "Auteur du mod"
-        homepage: "Site web"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Tous les processus"
         allBut: "Tous sauf {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "préversion"
       select: "Sélectionner"
-      cancel: "Annuler"
       chooseVersion: "Choisir une version…"
     details:
       title: "Détails"
@@ -205,7 +209,6 @@ app:
         description: "Exportez ou partagez facilement les paramètres de votre mod."
         loadButton: "Charger"
         loadFormattedButton: "Charger (formaté)"
-        saveButton: "Enregistrer"
         invalidData: "Données JSON invalides"
       customList:
         titleInclusion: "Liste personnalisée d’inclusion des processus"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Liste personnalisée de noms/chemins de fichiers exécutables supplémentaires que le mod exclura. La liste est ajoutée à la liste d’exclusion définie par l’auteur du mod afin de déterminer les processus à couvrir. Pour chaque processus, le mod est chargé si le chemin de l’exécutable correspond à l’une des entrées incluses et ne correspond à aucune entrée exclue."
         processListPlaceholder: "Noms/chemins des processus, un par ligne, par exemple :"
         invalidCharactersWarning: "La liste des processus contient des caractères invalides qui seront supprimés : {{invalidCharacters}}"
-        saveButton: "Enregistrer"
       includeExcludeCustomOnly:
         title: "Ignorer les listes d’inclusion/exclusion du mod"
         description: "Ignorer les listes d’inclusion/exclusion des processus du mod et n’utiliser que les listes personnalisées ci-dessus."
@@ -276,6 +278,12 @@ app:
       creditsLink: "mailto:clement.jeremy.pro@outlook.fr"
       creditsLink1: "https://rayan-klosowski.fr"
       creditsLink2: "mailto:blackspirits@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Rechercher des mises à jour"
       description: "Vérifier automatiquement et notifier les nouvelles versions de Windhawk et des mods installés."
@@ -302,7 +310,6 @@ app:
       title: "Plus de paramètres avancés"
       restartNotice: "Windhawk va redémarrer pour appliquer les paramètres."
       saveButton: "Enregistrer et redémarrer Windhawk"
-      cancelButton: "Annuler"
     loggingVerbosity:
       appLoggingTitle: "Niveau de détail du journal de l’application Windhawk"
       engineLoggingTitle: "Niveau de détail du journal du moteur Windhawk"
@@ -323,6 +330,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Si vous souhaitez exclure tous les processus sauf ceux-ci, vous pouvez définir \"*\" dans la liste d’exclusion des processus."
       processListPlaceholder: "Noms/chemins des processus, un par ligne, par exemple :"
       invalidCharactersWarning: "La liste des processus contient des caractères invalides qui seront supprimés : {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "bêta"
@@ -332,23 +404,21 @@ app:
       title: "Une mise à jour est disponible"
       subtitle: "Pensez à mettre à jour Windhawk pour obtenir les dernières fonctionnalités et corrections de bugs"
       changelogButton: "Historique des modifications"
-      updateButton: "Mettre à jour"
       modal:
         title: "Mise à jour de Windhawk"
         downloading: "Téléchargement de la mise à jour…"
         installing: "Installation de la mise à jour…"
         installingNote: "Windhawk redémarrera automatiquement une fois l’installation terminée."
         failed: "Échec de la mise à jour"
-        cancel: "Annuler"
     changelog:
       title: "Nouveautés dans Windhawk"
-      close: "Fermer"
     links:
       title: "Liens"
       homepage: "Site web"
       documentation: "Documentation"
     builtWith:
       title: "Construit avec"
+      tauri: ~
       vscodium: "Une distribution communautaire de l’éditeur VSCode de Microsoft"
       llvmMingw: "Une chaîne d’outils mingw-w64 basée sur LLVM/Clang/LLD"
       minHook: "La bibliothèque minimaliste d’API hooking pour Windows"
@@ -357,40 +427,31 @@ app:
     title: "Installer {{mod}}"
     warningTitle: "Procédez avec prudence"
     warningDescription: "Des mods malveillants peuvent endommager votre ordinateur ou porter atteinte à votre vie privée. N’installez que des mods provenant d’auteurs en qui vous avez confiance."
-    modAuthor: "Auteur du mod"
-    homepage: "Site web"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "vérifié"
     verifiedTooltip: "Nous avons vérifié que ce profil appartient à l’auteur du mod, mais notez que <0>vérifié</0> ne signifie pas <0>de confiance</0>. Assurez-vous de faire confiance à l’auteur du mod ou inspectez soigneusement le code source avant d’installer."
     acceptButton: "Accepter le risque et installer"
-    cancelButton: "Annuler"
   createNewModButton:
     title: "Créer un nouveau mod"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Créer et modifier des mods nécessite certaines connaissances en développement C/C++ pour Windows. Si vous ne savez pas ce que cela signifie, ces options ne sont probablement pas faites pour vous."
     hideOptionsCheckbox: "Masquer toutes les options liées à la programmation"
     hideOptionsButton: "Masquer les options"
     beginCodingButton: "Commencer à coder"
-    cancelButton: "Annuler"
   safeMode:
     alert: "Windhawk fonctionne en mode sans échec ; toutes les fonctionnalités d’injection de code sont désactivées."
     offButton: "Désactiver le mode sans échec"
     offConfirm: "Windhawk redémarrera pour appliquer les paramètres."
     offConfirmOk: "Redémarrer Windhawk"
-    offConfirmCancel: "Annuler"
   modPreview:
     actionUnavailable: "Cette action n’est pas disponible en mode aperçu"
     notCompiled: "Le mod doit être compilé avant de pouvoir être prévisualisé"
@@ -412,10 +473,11 @@ app:
     appHeader:
       mods: "Mods"
       links: "Liens"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Contribuer à une nouvelle traduction"
     home:
       tagline: "Le centre de personnalisation pour Windows et les programmes"
-      download: "Télécharger"
       getInvolved: "S’impliquer"
       joinDiscord: "Rejoindre la communauté Windhawk sur Discord"
       discussWindhawk: "Discuter de Windhawk sur GitHub Discussions"
@@ -448,6 +510,5 @@ app:
       title: "Mettre à jour Windhawk"
       newVersionAvailable: "Une nouvelle version de Windhawk est disponible"
       whatsNew: "Quoi de neuf"
-      downloadButton: "Télécharger"
     footer:
       copyright: "Droits d’auteur"

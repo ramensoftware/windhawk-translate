@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Τα Windows εκτελούνται σε ασφαλή λειτουργία. Θέλετε να ενεργοποιήσετε την ασφαλή λειτουργία στο Windhawk; Όλες οι λειτουργίες εισαγωγής κώδικα θα απενεργοποιηθούν."
 app:
   general:
-    loading: "Φόρτωση..."
-    loadingFailed: "Η φόρτωση απέτυχε, ελέγξτε τη σύνδεσή σας στο Διαδίκτυο"
-    loadingFailedTitle: "Η φόρτωση απέτυχε"
-    loadingFailedSubtitle: "Ελέγξτε τη σύνδεσή σας στο Διαδίκτυο και δοκιμάστε ξανά"
-    tryAgain: "Προσπαθήστε ξανά"
-    updating: "Ενημέρωση..."
-    installing: "Εγκατάσταση..."
-    compiling: "Μετατροπή σε .exe..."
-    cut: "Αποκοπή"
-    copy: "Αντιγραφή"
-    paste: "Επικόλληση"
-    selectAll: "Επιλογή όλων"
-    loggingEnabled: ~
+    status:
+      loading: "Φόρτωση..."
+      loadingFailed: "Η φόρτωση απέτυχε, ελέγξτε τη σύνδεσή σας στο Διαδίκτυο"
+      loadingFailedTitle: "Η φόρτωση απέτυχε"
+      loadingFailedSubtitle: "Ελέγξτε τη σύνδεσή σας στο Διαδίκτυο και δοκιμάστε ξανά"
+      tryAgain: "Προσπαθήστε ξανά"
+      updating: "Ενημέρωση..."
+      installing: "Εγκατάσταση..."
+      compiling: "Μετατροπή σε .exe..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Αποκοπή"
+      copy: "Αντιγραφή"
+      paste: "Επικόλληση"
+      selectAll: "Επιλογή όλων"
+    actions:
+      cancel: "Άκυρο"
+      close: ~
+      save: "Αποθήκευση"
+      update: "Ενημέρωση"
+      download: ~
+    modAuthor:
+      title: "Δημιουργός του Mod"
+      homepage: "Αρχική σελίδα"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Διαθέσιμη ενημέρωση"
     installed: "Εγκατεστημένο"
     details: "?Λεπτομέρειες"
-    update: "Ενημέρωση"
     downgrade: ~
     install: "Εγκαθιστώ"
     compile: "Μετατροπή σε .exe"
@@ -121,7 +132,6 @@ app:
     remove: "Αφαίρεση"
     removeConfirm: "Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το mod?"
     removeConfirmOk: "Κατάργηση mod"
-    removeConfirmCancel: "Άκυρο"
     donate: ~
     notCompiled: "Το Mod πρέπει να μεταγλωττιστεί"
     editedLocally: "Το Mod επεξεργάστηκε τοπικά"
@@ -141,11 +151,6 @@ app:
       modId: "Αναγνωριστικό mod"
       modVersion: "ΈκδοσηMod"
       lastUpdated: ~
-      modAuthor:
-        title: "Δημιουργός του Mod"
-        homepage: "Αρχική σελίδα"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Όλες οι διαδικασίες"
         allBut: "Όλα αλλά {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Λεπτομέρειες"
@@ -205,7 +209,6 @@ app:
         description: "Εξάγετε ή κοινοποιήστε εύκολα τις ρυθμίσεις mod σας."
         loadButton: "Φόρτωση"
         loadFormattedButton: "Μορφοποιημένη φόρτωση"
-        saveButton: "Αποθήκευση"
         invalidData: "Μη έγκυρα δεδομένα JSON"
       customList:
         titleInclusion: "Προσαρμοσμένη λίστα συμπερίληψης διεργασιών"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Μια προσαρμοσμένη λίστα με επιπλέον εκτελέσιμα ονόματα/διαδρομές αρχείων που το mod θα εξαιρέσει από τη στόχευση. Η λίστα προστίθεται στη λίστα εξαιρέσεων που όρισε ο συντάκτης του mod για να καθορίσει ποιες διεργασίες θα στοχεύσει. Για κάθε διεργασία, το mod φορτώνεται εάν η διαδρομή του εκτελέσιμου αρχείου ταιριάζει με μία από τις καταχωρήσεις συμπερίληψης και δεν ταιριάζει με καμία καταχώρηση εξαίρεσης."
         processListPlaceholder: "Ονόματα διεργασίας/διαδρομές, μία ανά γραμμή, για παράδειγμα:"
         invalidCharactersWarning: "Η λίστα διεργασιών περιέχει μη έγκυρους χαρακτήρες που θα αφαιρεθούν: {{invalidCharacters}}"
-        saveButton: "Αποθήκευση"
       includeExcludeCustomOnly:
         title: "Αγνόησε τις λίστες συμπερίληψης/εξαίρεσης mod"
         description: "Αγνοήστε τις λίστες συμπερίληψης/εξαίρεσης διεργασιών του mod και χρησιμοποιήστε μόνο τις προσαρμοσμένες λίστες παραπάνω."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Συνεισφέρετε σε μια νέα μετάφραση</0>."
       credits: "Ελληνική μετάφραση από <0>Σπύρος Κρικέλης-Βόλος</0>."
       creditsLink: "E-mail:skrikelis@sch.gr"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Έλεγχος για ενημερώσεις"
       description: "Ελέγχετε περιοδικά για νέες εκδόσεις του Windhawk και των εγκατεστημένων mods."
@@ -300,7 +308,6 @@ app:
       title: "Πιο σύνθετες ρυθμίσεις"
       restartNotice: "Το Windhawk θα επανεκκινηθεί για να εφαρμοστούν οι ρυθμίσεις."
       saveButton: "Αποθήκευση και επανεκκίνηση του Windhawk"
-      cancelButton: "Άκυρο"
     loggingVerbosity:
       appLoggingTitle: "Βελτίωση καταγραφής του Windhawk"
       engineLoggingTitle: "Λεπτομέρειες καταγραφής κινητήρα Windhawk"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Εάν θέλετε να εξαιρέσετε όλες τις διαδικασίες εκτός από αυτές, μπορείτε να ορίσετε \"*\" στη λίστα εξαιρέσεων διαδικασίας."
       processListPlaceholder: "Ονόματα/διαδρομές διεργασίας, ανά μία γραμμή, για παράδειγμα:"
       invalidCharactersWarning: "Η λίστα διεργασιών περιέχει μη έγκυρους χαρακτήρες που θα αφαιρεθούν: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "Υπάρχει διαθέσιμη ενημέρωση"
       subtitle: "Εξετάστε το ενδεχόμενο να ενημερώσετε το Windhawk για να λάβετε τις πιο πρόσφατες δυνατότητες και διορθώσεις σφαλμάτων"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Συνδέσεις"
       homepage: "Αρχική σελίδα"
       documentation: "Τεκμηρίωση"
     builtWith:
       title: "Δομημένο με"
+      tauri: ~
       vscodium: "Μια διανομή βάσει κοινότητας του επεξεργαστή VSCode της Microsoft"
       llvmMingw: "Μια αλυσίδα εργαλείων mingw-w64 που βασίζεται στο LLVM/Clang/LLD"
       minHook: "Η ελαχιστοποιημένη βιβλιοθήκη σύνδεσης API για Windows"
@@ -355,40 +425,31 @@ app:
     title: "Εγκατάσταση {{mod}}"
     warningTitle: "Προχωρήστε με προσοχή"
     warningDescription: "Κακόβουλα mods μπορεί να βλάψουν τον υπολογιστή σας ή να παραβιάσουν το απόρρητό σας. Εγκαταστήστε mods μόνο από συγγραφείς που εμπιστεύεστε."
-    modAuthor: "Δημιουργός Mod"
-    homepage: "Η ιστοσελίδα μας"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "επαληθεύτηκε"
     verifiedTooltip: "Επαληθεύσαμε ότι αυτό το προφίλ ανήκει στον συγγραφέα του mod, αλλά σημειώστε ότι <0>η επαλήθευση</0> δεν είναι <0>εμπιστοσύνης</0>. Βεβαιωθείτε ότι εμπιστεύεστε τον συγγραφέα του mod ή ελέγξτε προσεκτικά τον πηγαίο κώδικα πριν από την εγκατάσταση"
     acceptButton: "Αποδοχή κινδύνου και εγκατάσταση"
-    cancelButton: "Ακύρωση"
   createNewModButton:
     title: "Δημιουργήστε ένα νέο Mod"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Η δημιουργία και η τροποποίηση mods απαιτεί κάποια γνώση C/C++ ανάπτυξης για Windows. Εάν δεν είστε σίγουροι τι σημαίνει αυτό, ίσως αυτές οι επιλογές δεν είναι για εσάς."
     hideOptionsCheckbox: "Απόκρυψη όλων των επιλογών που σχετίζονται με την ανάπτυξη"
     hideOptionsButton: "Απόκρυψη επιλογών"
     beginCodingButton: "Έναρξη κωδικοποίησης"
-    cancelButton: "Άκυρο"
   safeMode:
     alert: "Το Windhawk λειτουργεί σε ασφαλή λειτουργία, όλες οι λειτουργίες εισαγωγής κώδικα είναι απενεργοποιημένες."
     offButton: "Απενεργοποίηση ασφαλούς λειτουργίας"
     offConfirm: "Το Windhawk θα επανεκκινηθεί για να εφαρμοστούν οι ρυθμίσεις."
     offConfirmOk: "Επανεκκίνηση του Windhawk"
-    offConfirmCancel: "Άκυρο"
   modPreview:
     actionUnavailable: "Η ενέργεια δεν είναι διαθέσιμη σε λειτουργία προεπισκόπησης"
     notCompiled: "Το Mod πρέπει να μεταγλωττιστεί για να είναι δυνατή η προεπισκόπησή του"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: ~
       links: "Συνδέσεις"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Συνεισφέρετε σε μια νέα μετάφραση"
     home:
       tagline: "Η αγορά προσαρμογής για Windows και προγράμματα"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -446,6 +508,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

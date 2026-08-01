@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows đang chạy ở chế độ an toàn. Bạn có muốn bật chế độ an toàn trong Windhawk không? Tất cả chức năng tiêm mã sẽ bị tắt."
 app:
   general:
-    loading: "Đang tải..."
-    loadingFailed: "Tải thất bại, vui lòng kiểm tra kết nối internet của bạn"
-    loadingFailedTitle: "Tải thất bại"
-    loadingFailedSubtitle: "Vui lòng kiểm tra kết nối internet của bạn và thử lại"
-    tryAgain: "Thử lại"
-    updating: "Đang cập nhật..."
-    installing: "Đang cài đặt..."
-    compiling: "Đang biên dịch..."
-    cut: "Cắt"
-    copy: "Sao chép"
-    paste: "Dán"
-    selectAll: "Chọn tất cả"
-    loggingEnabled: ~
+    status:
+      loading: "Đang tải..."
+      loadingFailed: "Tải thất bại, vui lòng kiểm tra kết nối internet của bạn"
+      loadingFailedTitle: "Tải thất bại"
+      loadingFailedSubtitle: "Vui lòng kiểm tra kết nối internet của bạn và thử lại"
+      tryAgain: "Thử lại"
+      updating: "Đang cập nhật..."
+      installing: "Đang cài đặt..."
+      compiling: "Đang biên dịch..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Cắt"
+      copy: "Sao chép"
+      paste: "Dán"
+      selectAll: "Chọn tất cả"
+    actions:
+      cancel: "Hủy"
+      close: ~
+      save: "Lưu"
+      update: "Cập nhật"
+      download: ~
+    modAuthor:
+      title: "Tác giả mod"
+      homepage: "Trang chủ"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Cập nhật có sẵn"
     installed: "Đã cài đặt"
     details: "Chi tiết"
-    update: "Cập nhật"
     downgrade: ~
     install: "Cài đặt"
     compile: "Biên dịch"
@@ -121,7 +132,6 @@ app:
     remove: "Gỡ bỏ"
     removeConfirm: "Bạn có chắc chắn muốn gỡ bỏ mod này?"
     removeConfirmOk: "Gỡ bỏ mod"
-    removeConfirmCancel: "Hủy"
     donate: ~
     notCompiled: "Mod cần được biên dịch"
     editedLocally: "Mod đã được chỉnh sửa cục bộ"
@@ -141,11 +151,6 @@ app:
       modId: "Mã nhận diện mod"
       modVersion: "Phiên bản mod"
       lastUpdated: ~
-      modAuthor:
-        title: "Tác giả mod"
-        homepage: "Trang chủ"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Tất cả các quy trình"
         allBut: "Tất cả trừ {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Chi tiết"
@@ -205,7 +209,6 @@ app:
         description: "Dễ dàng xuất hoặc chia sẻ cài đặt mod của bạn."
         loadButton: "Tải"
         loadFormattedButton: "Tải định dạng"
-        saveButton: "Lưu"
         invalidData: "Dữ liệu JSON không hợp lệ"
       customList:
         titleInclusion: "Danh sách bao gồm quy trình tùy chỉnh"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Danh sách tùy chỉnh của tên tệp thực thi/đường dẫn bổ sung mà mod sẽ loại trừ khỏi mục tiêu. Danh sách này được thêm vào danh sách loại trừ mà tác giả mod đã xác định để quyết định quy trình nào sẽ nhắm mục tiêu. Đối với mỗi quy trình, mod sẽ được tải nếu đường dẫn tệp thực thi khớp với một trong các mục bao gồm và không khớp với bất kỳ mục loại trừ nào."
         processListPlaceholder: "Tên/đường dẫn quy trình, mỗi dòng một, ví dụ:"
         invalidCharactersWarning: "Danh sách quy trình chứa các ký tự không hợp lệ sẽ bị xóa: {{invalidCharacters}}"
-        saveButton: "Lưu"
       includeExcludeCustomOnly:
         title: "Bỏ qua danh sách bao gồm/loại trừ của mod"
         description: "Bỏ qua danh sách bao gồm/loại trừ quy trình của mod và chỉ sử dụng các danh sách tùy chỉnh bên trên."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Đóng góp bản dịch mới</0>."
       credits: "Bản dịch tiếng Việt của <0>Nguyen Duy Khoa</0>."
       creditsLink: "https://github.com/NDKcute"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Kiểm tra cập nhật"
       description: "Thường xuyên kiểm tra các phiên bản mới của Windhawk và các mod đã cài đặt."
@@ -300,7 +308,6 @@ app:
       title: "Cài đặt nâng cao hơn"
       restartNotice: "Windhawk sẽ được khởi động lại để áp dụng các cài đặt."
       saveButton: "Lưu và khởi động lại Windhawk"
-      cancelButton: "Hủy"
     loggingVerbosity:
       appLoggingTitle: "Mức độ ghi nhật ký của Windhawk"
       engineLoggingTitle: "Mức độ ghi nhật ký của động cơ Windhawk"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Nếu bạn định loại trừ tất cả các quy trình trừ những quy trình này, bạn có thể đặt \"*\" trong danh sách loại trừ quy trình."
       processListPlaceholder: "Tên/đường dẫn quy trình, mỗi dòng một, ví dụ:"
       invalidCharactersWarning: "Danh sách quy trình chứa các ký tự không hợp lệ sẽ bị xóa: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "Có bản cập nhật"
       subtitle: "Cân nhắc cập nhật Windhawk để có các tính năng mới nhất và sửa lỗi"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Liên kết"
       homepage: "Trang chủ"
       documentation: "Tài liệu"
     builtWith:
       title: "Được xây dựng với"
+      tauri: ~
       vscodium: "Bản phân phối của cộng đồng từ trình soạn thảo VSCode của Microsoft"
       llvmMingw: "Bộ công cụ mingw-w64 dựa trên LLVM/Clang/LLD"
       minHook: "Thư viện móc API tối giản cho Windows"
@@ -355,40 +425,31 @@ app:
     title: "Cài đặt {{mod}}"
     warningTitle: "Tiếp tục cẩn thận"
     warningDescription: "Mod độc hại có thể làm hỏng máy tính của bạn hoặc vi phạm quyền riêng tư của bạn. Chỉ cài đặt mod từ những tác giả mà bạn tin tưởng."
-    modAuthor: "Tác giả mod"
-    homepage: "Trang chủ"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "đã xác minh"
     verifiedTooltip: "Chúng tôi đã xác minh rằng hồ sơ này thuộc về tác giả mod, nhưng lưu ý rằng <0>đã xác minh</0> không giống với <0>đáng tin cậy</0>. Đảm bảo rằng bạn tin tưởng tác giả mod hoặc kiểm tra kỹ mã nguồn trước khi cài đặt."
     acceptButton: "Chấp nhận Rủi ro và Cài đặt"
-    cancelButton: "Hủy"
   createNewModButton:
     title: "Tạo Mod Mới"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Việc tạo và chỉnh sửa mod yêu cầu một số kiến thức về phát triển C/C++ cho Windows. Nếu bạn không chắc điều đó nghĩa là gì, có lẽ những tùy chọn này không dành cho bạn."
     hideOptionsCheckbox: "Ẩn tất cả các tùy chọn liên quan đến phát triển"
     hideOptionsButton: "Ẩn tùy chọn"
     beginCodingButton: "Bắt đầu mã hóa"
-    cancelButton: "Hủy"
   safeMode:
     alert: "Windhawk đang chạy ở chế độ an toàn, tất cả các chức năng tiêm mã đã tắt."
     offButton: "Tắt chế độ an toàn"
     offConfirm: "Windhawk sẽ được khởi động lại để áp dụng các cài đặt."
     offConfirmOk: "Khởi động lại Windhawk"
-    offConfirmCancel: "Hủy"
   modPreview:
     actionUnavailable: "Hành động không khả dụng ở chế độ xem trước"
     notCompiled: "Mod cần được biên dịch trước khi có thể xem trước"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: ~
       links: "Liên kết"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Đóng góp bản dịch mới"
     home:
       tagline: "Chợ tùy chỉnh cho các chương trình Windows"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -446,6 +508,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

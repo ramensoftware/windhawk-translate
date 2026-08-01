@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows təhlükəsiz rejimdə işləyir. Windhawk-da təhlükəsiz rejimi aktivləşdirmək istəyirsiniz? Bütün kod inyeksiyası funksiyaları deaktiv ediləcək."
 app:
   general:
-    loading: "Yüklənir..."
-    loadingFailed: "Yükləmə uğursuz oldu, lütfən internet bağlantınızı yoxlayın"
-    loadingFailedTitle: "Yükləmə uğursuz oldu"
-    loadingFailedSubtitle: "Lütfən internet bağlantınızı yoxlayın və yenidən cəhd edin"
-    tryAgain: "Yenidən cəhd et"
-    updating: "Yenilənir..."
-    installing: "Quraşdırılır..."
-    compiling: "Kompilyasiya olunur..."
-    cut: "Kəs"
-    copy: "Kopyala"
-    paste: "Yapışdır"
-    selectAll: "Hamısını seç"
-    loggingEnabled: "Sazlama jurnalı aktivdir"
+    status:
+      loading: "Yüklənir..."
+      loadingFailed: "Yükləmə uğursuz oldu, lütfən internet bağlantınızı yoxlayın"
+      loadingFailedTitle: "Yükləmə uğursuz oldu"
+      loadingFailedSubtitle: "Lütfən internet bağlantınızı yoxlayın və yenidən cəhd edin"
+      tryAgain: "Yenidən cəhd et"
+      updating: "Yenilənir..."
+      installing: "Quraşdırılır..."
+      compiling: "Kompilyasiya olunur..."
+      loggingEnabled: "Sazlama jurnalı aktivdir"
+    contextMenu:
+      cut: "Kəs"
+      copy: "Kopyala"
+      paste: "Yapışdır"
+      selectAll: "Hamısını seç"
+    actions:
+      cancel: "Ləğv et"
+      close: "Bağla"
+      save: "Saxla"
+      update: "Yenilə"
+      download: "İndi endir"
+    modAuthor:
+      title: "Mod müəllifi"
+      homepage: "Ana səhifə"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Yeniləmə mövcuddur"
     installed: "Quraşdırılıb"
     details: "Təfərrüatlar"
-    update: "Yenilə"
     downgrade: "Versiyanı endir"
     install: "Quraşdır"
     compile: "Kompilyasiya et"
@@ -121,7 +132,6 @@ app:
     remove: "Sil"
     removeConfirm: "Bu modu silmək istədiyinizə əminsiniz?"
     removeConfirmOk: "Modu sil"
-    removeConfirmCancel: "Ləğv et"
     donate: "İanə et"
     notCompiled: "Mod kompilyasiya edilməlidir"
     editedLocally: "Mod lokal olaraq redaktə edilib"
@@ -141,11 +151,6 @@ app:
       modId: "Mod identifikatoru"
       modVersion: "Mod versiyası"
       lastUpdated: "Son yeniləmə"
-      modAuthor:
-        title: "Mod müəllifi"
-        homepage: "Ana səhifə"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Bütün proseslər"
         allBut: "{{list}} istisna olmaqla hamısı"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "Ön buraxılış"
       select: "Seç"
-      cancel: "Ləğv et"
       chooseVersion: "Versiya seçin"
     details:
       title: "Təfərrüatlar"
@@ -205,7 +209,6 @@ app:
         description: "Mod parametrlərinizi asanlıqla ixrac edin və ya paylaşın."
         loadButton: "Yüklə"
         loadFormattedButton: "Formatlanmış şəkildə yüklə"
-        saveButton: "Saxla"
         invalidData: "Yanlış JSON məlumatı"
       customList:
         titleInclusion: "Xüsusi proses daxil etmə siyahısı"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Modun hədəfləmədən kənarda saxlayacağı əlavə icra edilə bilən fayl adları/yolları üçün xüsusi siyahı. Bu siyahı hansı proseslərin hədəflənəcəyini müəyyən etmək üçün mod müəllifinin təyin etdiyi istisna siyahısına əlavə olunur. Hər proses üçün icra edilə bilən fayl yolu daxil etmə qeydlərindən biri ilə uyğun gəlirsə və heç bir istisna qeydi ilə uyğun gəlmirsə, mod yüklənir."
         processListPlaceholder: "Proses adları/yolları, məsələn, hər sətirdə biri:"
         invalidCharactersWarning: "Proses siyahısında yanlış simvollar var, onlar silinəcək: {{invalidCharacters}}"
-        saveButton: "Saxla"
       includeExcludeCustomOnly:
         title: "Modun daxil etmə/istisna siyahılarını nəzərə alma"
         description: "Modun proses daxil etmə/istisna siyahılarını nəzərə alma və yalnız yuxarıdakı xüsusi siyahılardan istifadə et."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Yeni tərcüməyə töhfə verin</0>."
       credits: "Azərbaycanca tərcümə: <0>Veax Project</0>."
       creditsLink: "mailto:veaxproject@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Yeniləmələri yoxla"
       description: "Windhawk və quraşdırılmış modların yeni versiyalarını müntəzəm olaraq yoxla."
@@ -300,7 +308,6 @@ app:
       title: "Daha çox genişləndirilmiş parametr"
       restartNotice: "Parametrləri tətbiq etmək üçün Windhawk yenidən başladılacaq."
       saveButton: "Saxla və Windhawk-ı yenidən başlat"
-      cancelButton: "Ləğv et"
     loggingVerbosity:
       appLoggingTitle: "Windhawk jurnal qeydinin ətraflılığı"
       engineLoggingTitle: "Windhawk mühərrik jurnalının ətraflılıq səviyyəsi"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Bunlardan başqa bütün prosesləri istisna etmək istəyirsinizsə, proses istisna siyahısında \"*\" təyin edə bilərsiniz."
       processListPlaceholder: "Proses adları/yolları, məsələn, hər sətirdə biri:"
       invalidCharactersWarning: "Fayl yolunda və ya adında yanlış simvollar var, onlar silinəcək: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "Yeniləmə mövcuddur"
       subtitle: "Ən son funksiyaları və xəta düzəlişlərini əldə etmək üçün Windhawk-ı yeniləməyi nəzərdən keçirin"
       changelogButton: "Dəyişiklik jurnalı"
-      updateButton: "Yenilə"
       modal:
         title: "Windhawk yenilənir..."
         downloading: "Yeniləmə endirilir..."
         installing: "Yeniləmə quraşdırılır..."
         installingNote: "Quraşdırma zamanı Windhawk yenidən başladılacaq."
         failed: "Yeniləmə uğursuz oldu."
-        cancel: "Ləğv et"
     changelog:
       title: "Buraxılış qeydləri"
-      close: "Bağla"
     links:
       title: "Keçidlər"
       homepage: "Ana səhifə"
       documentation: "Sənədlər"
     builtWith:
       title: "İstifadə olunanlar"
+      tauri: ~
       vscodium: "Microsoft-un VSCode redaktorunun icma yönümlü paylanması"
       llvmMingw: "LLVM/Clang/LLD əsaslı mingw-w64 alətlər zənciri"
       minHook: "Windows üçün minimalist API bağlama kitabxanası"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} quraşdır"
     warningTitle: "Ehtiyatlı davam edin"
     warningDescription: "Zərərli modlar kompüterinizə zərər verə və ya məxfiliyinizi poza bilər. Yalnız etibar etdiyiniz müəlliflərin modlarını quraşdırın."
-    modAuthor: "Mod müəllifi"
-    homepage: "Ana səhifə"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "təsdiqlənib"
     verifiedTooltip: "Bu profilin modun müəllifinə aid olduğunu təsdiqləmişik, lakin <0>təsdiqlənmiş</0> olması onun <0>etibarlı</0> olduğu anlamına gəlmir. Mod müəllifinə etibar etdiyinizə əmin olun və ya quraşdırmadan əvvəl mənbə kodunu diqqətlə yoxlayın."
     acceptButton: "Riski qəbul et və quraşdır"
-    cancelButton: "Ləğv et"
   createNewModButton:
     title: "Yeni mod yarat"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Mod yaratmaq və dəyişdirmək Windows üçün müəyyən C/C++ tərtibat bilikləri tələb edir. Bunun nə demək olduğuna əmin deyilsinizsə, bu seçimlər yəqin ki, sizin üçün deyil."
     hideOptionsCheckbox: "Tərtibatla bağlı bütün seçimləri gizlət"
     hideOptionsButton: "Seçimləri gizlət"
     beginCodingButton: "Kodlamağa başla"
-    cancelButton: "Ləğv et"
   safeMode:
     alert: "Windhawk hazırda təhlükəsiz rejimdə işləyir. Bütün modlar deaktiv edilib."
     offButton: "Təhlükəsiz rejimi söndür"
     offConfirm: "Parametrləri tətbiq etmək üçün Windhawk yenidən başladılacaq."
     offConfirmOk: "Əminəm"
-    offConfirmCancel: "Ləğv et"
   modPreview:
     actionUnavailable: "Əməliyyat önbaxış rejimində əlçatan deyil"
     notCompiled: "Önbaxışdan əvvəl mod kompilyasiya edilməlidir"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "Modlar"
       links: "Keçidlər"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Tərcüməyə dəstək olun!"
     home:
       tagline: "Windows proqramlarını istədiyiniz kimi fərdiləşdirin!"
-      download: "İndi endir"
       getInvolved: "İcmaya qoşul!"
       joinDiscord: "Discord-a qoşul!"
       discussWindhawk: "Windhawk haqqında danış!"
@@ -446,6 +508,5 @@ app:
       title: "Windhawk-ı endir"
       newVersionAvailable: "Yeni versiya çıxdı!"
       whatsNew: "Bu versiyada nə dəyişdi?"
-      downloadButton: "Endirməyə başla"
     footer:
       copyright: "Müəllif hüququ"

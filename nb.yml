@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows kjører i sikkermodus. Vil du aktivere sikkermodus i Windhawk? All kodeinjeksjonsfunksjonalitet vil bli slått av."
 app:
   general:
-    loading: "Laster inn..."
-    loadingFailed: "Innlastingen mislyktes, sjekk internettilkoblingen din"
-    loadingFailedTitle: "Innlastingen mislyktes"
-    loadingFailedSubtitle: "Sjekk internettilkoblingen din og prøv på nytt"
-    tryAgain: "Prøv igjen"
-    updating: "Oppdaterer..."
-    installing: "Installerer..."
-    compiling: "Kompilerer..."
-    cut: "Klipp ut"
-    copy: "Kopier"
-    paste: "Lim inn"
-    selectAll: "Merk alt"
-    loggingEnabled: "Feilsøkingslogging er aktivert"
+    status:
+      loading: "Laster inn..."
+      loadingFailed: "Innlastingen mislyktes, sjekk internettilkoblingen din"
+      loadingFailedTitle: "Innlastingen mislyktes"
+      loadingFailedSubtitle: "Sjekk internettilkoblingen din og prøv på nytt"
+      tryAgain: "Prøv igjen"
+      updating: "Oppdaterer..."
+      installing: "Installerer..."
+      compiling: "Kompilerer..."
+      loggingEnabled: "Feilsøkingslogging er aktivert"
+    contextMenu:
+      cut: "Klipp ut"
+      copy: "Kopier"
+      paste: "Lim inn"
+      selectAll: "Merk alt"
+    actions:
+      cancel: "Avbryt"
+      close: "Lukk"
+      save: "Lagre"
+      update: "Oppdater"
+      download: "Last ned"
+    modAuthor:
+      title: "Mod-forfatter"
+      homepage: "Hjemmeside"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Oppdatering tilgjengelig"
     installed: "Installert"
     details: "Detaljer"
-    update: "Oppdater"
     downgrade: "Nedgrader"
     install: "Installer"
     compile: "Kompiler"
@@ -121,7 +132,6 @@ app:
     remove: "Fjern"
     removeConfirm: "Er du sikker på at du vil fjerne denne modden?"
     removeConfirmOk: "Fjern mod"
-    removeConfirmCancel: "Avbryt"
     donate: "Donér"
     notCompiled: "Modden må kompileres"
     editedLocally: "Modden ble redigert lokalt"
@@ -141,11 +151,6 @@ app:
       modId: "Mod-identifikator"
       modVersion: "Mod-versjon"
       lastUpdated: "Sist oppdatert"
-      modAuthor:
-        title: "Mod-forfatter"
-        homepage: "Hjemmeside"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Alle prosesser"
         allBut: "Alle unntatt {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "forhåndsutgivelse"
       select: "Velg"
-      cancel: "Avbryt"
       chooseVersion: "Velg en versjon..."
     details:
       title: "Detaljer"
@@ -205,7 +209,6 @@ app:
         description: "Eksporter eller del mod-innstillingene dine på en enkel måte."
         loadButton: "Last inn"
         loadFormattedButton: "Last inn formatert"
-        saveButton: "Lagre"
         invalidData: "Ugyldige JSON-data"
       customList:
         titleInclusion: "Egendefinert inkluderingsliste for prosesser"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "En egendefinert liste over ytterligere kjørbare filnavn/-stier som modden skal utelate. Listen legges til i ekskluderingslisten som mod-forfatteren har definert for å avgjøre hvilke prosesser modden skal gjelde for. For hver prosess lastes modden inn hvis filstien til den kjørbare filen samsvarer med én av inkluderingsoppføringene og ikke samsvarer med noen ekskluderingsoppføring."
         processListPlaceholder: "Prosessnavn/-stier, én per linje, for eksempel:"
         invalidCharactersWarning: "Prosesslisten inneholder ugyldige tegn som vil bli fjernet: {{invalidCharacters}}"
-        saveButton: "Lagre"
       includeExcludeCustomOnly:
         title: "Ignorer moddens inkluderings-/ekskluderingslister"
         description: "Ignorer moddens inkluderings-/ekskluderingslister for prosesser og bruk kun de egendefinerte listene ovenfor."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Bidra med en ny oversettelse</0>."
       credits: "Norsk oversettelse av <0>Neonyy</0>."
       creditsLink: "https://github.com/Neonyyy"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Se etter oppdateringer"
       description: "Se automatisk etter og varsle om nye versjoner av Windhawk og installerte mods."
@@ -300,7 +308,6 @@ app:
       title: "Flere avanserte innstillinger"
       restartNotice: "Windhawk startes på nytt for å ta i bruk innstillingene."
       saveButton: "Lagre og start Windhawk på nytt"
-      cancelButton: "Avbryt"
     loggingVerbosity:
       appLoggingTitle: "Loggdetaljnivå for Windhawk"
       engineLoggingTitle: "Loggdetaljnivå for Windhawk-motoren"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Hvis du mente å ekskludere alle prosesser unntatt disse, kan du angi \"*\" i ekskluderingslisten for prosesser."
       processListPlaceholder: "Prosessnavn/-stier, én per linje, for eksempel:"
       invalidCharactersWarning: "Prosesslisten inneholder ugyldige tegn som vil bli fjernet: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "En oppdatering er tilgjengelig"
       subtitle: "Vurder å oppdatere Windhawk for å få de nyeste funksjonene og feilrettingene"
       changelogButton: "Endringslogg"
-      updateButton: "Oppdater"
       modal:
         title: "Oppdaterer Windhawk"
         downloading: "Laster ned oppdatering..."
         installing: "Installerer oppdatering..."
         installingNote: "Windhawk starter automatisk på nytt når installasjonen er fullført."
         failed: "Oppdateringen mislyktes"
-        cancel: "Avbryt"
     changelog:
       title: "Hva er nytt i Windhawk"
-      close: "Lukk"
     links:
       title: "Lenker"
       homepage: "Hjemmeside"
       documentation: "Dokumentasjon"
     builtWith:
       title: "Bygget med"
+      tauri: ~
       vscodium: "En fellesskapsdrevet distribusjon av Microsofts VSCode-editor"
       llvmMingw: "En LLVM/Clang/LLD-basert mingw-w64-verktøykjede"
       minHook: "Det minimalistiske API-hooking-biblioteket for Windows"
@@ -355,40 +425,31 @@ app:
     title: "Installer {{mod}}"
     warningTitle: "Vær forsiktig"
     warningDescription: "Ondsinnede mods kan skade datamaskinen din eller krenke personvernet ditt. Installer kun mods fra forfattere du stoler på."
-    modAuthor: "Mod-forfatter"
-    homepage: "Hjemmeside"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "verifisert"
     verifiedTooltip: "Vi har verifisert at denne profilen tilhører mod-forfatteren, men merk at <0>verifisert</0> ikke er det samme som <0>pålitelig</0>. Sørg for at du stoler på mod-forfatteren, eller gå nøye gjennom kildekoden før du installerer."
     acceptButton: "Godta risiko og installer"
-    cancelButton: "Avbryt"
   createNewModButton:
     title: "Opprett en ny mod"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Å opprette og endre mods krever noe kunnskap om C/C++-utvikling for Windows. Hvis du er usikker på hva det betyr, er kanskje ikke disse alternativene noe for deg."
     hideOptionsCheckbox: "Skjul alle utviklingsrelaterte alternativer"
     hideOptionsButton: "Skjul alternativer"
     beginCodingButton: "Begynn å kode"
-    cancelButton: "Avbryt"
   safeMode:
     alert: "Windhawk kjører i sikkermodus, all kodeinjeksjonsfunksjonalitet er slått av."
     offButton: "Slå av sikkermodus"
     offConfirm: "Windhawk startes på nytt for å ta i bruk innstillingene."
     offConfirmOk: "Start Windhawk på nytt"
-    offConfirmCancel: "Avbryt"
   modPreview:
     actionUnavailable: "Handlingen er ikke tilgjengelig i forhåndsvisningsmodus"
     notCompiled: "Modden må kompileres før den kan forhåndsvises"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "Mods"
       links: "Lenker"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Bidra med en ny oversettelse"
     home:
       tagline: "Markedsplassen for tilpasning av Windows og programmer"
-      download: "Last ned"
       getInvolved: "Engasjer deg"
       joinDiscord: "Bli med i Windhawk-fellesskapet på Discord"
       discussWindhawk: "Diskuter Windhawk på GitHub Discussions"
@@ -446,6 +508,5 @@ app:
       title: "Oppdater Windhawk"
       newVersionAvailable: "En ny versjon av Windhawk er tilgjengelig"
       whatsNew: "Hva er nytt"
-      downloadButton: "Last ned"
     footer:
       copyright: "Opphavsrett"

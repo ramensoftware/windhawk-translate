@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
-    loading: "Завантаження..."
-    loadingFailed: "Помилка завантаження, будь ласка, перевірте своє інтернет-з'єднання"
-    loadingFailedTitle: "Не вдалося завантажити"
-    loadingFailedSubtitle: "Будь ласка, перевірте своє інтернет-з'єднання та спробуйте ще раз"
-    tryAgain: "Спробуйте ще раз"
-    updating: "Оновлення..."
-    installing: "Встановлення..."
-    compiling: "Компіляція..."
-    cut: "Вирізати"
-    copy: "Копіювати"
-    paste: "Вставити"
-    selectAll: "Вибрати все"
-    loggingEnabled: ~
+    status:
+      loading: "Завантаження..."
+      loadingFailed: "Помилка завантаження, будь ласка, перевірте своє інтернет-з'єднання"
+      loadingFailedTitle: "Не вдалося завантажити"
+      loadingFailedSubtitle: "Будь ласка, перевірте своє інтернет-з'єднання та спробуйте ще раз"
+      tryAgain: "Спробуйте ще раз"
+      updating: "Оновлення..."
+      installing: "Встановлення..."
+      compiling: "Компіляція..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Вирізати"
+      copy: "Копіювати"
+      paste: "Вставити"
+      selectAll: "Вибрати все"
+    actions:
+      cancel: "Скасувати"
+      close: ~
+      save: "Зберегти"
+      update: "Оновити"
+      download: ~
+    modAuthor:
+      title: "Автор моду"
+      homepage: "Домашня сторінка"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Доступне оновлення"
     installed: "Встановлено"
     details: "Деталі"
-    update: "Оновити"
     downgrade: ~
     install: "Встановити"
     compile: "Компілювати"
@@ -121,7 +132,6 @@ app:
     remove: "Видалити"
     removeConfirm: "Ви дійсно бажаєте видалити цей мод?"
     removeConfirmOk: "Видалити мод"
-    removeConfirmCancel: "Скасувати"
     donate: ~
     notCompiled: "Мод повинен бути скомпільованим"
     editedLocally: "Мод відредаговано локально"
@@ -143,11 +153,6 @@ app:
       modId: "Ідентифікатор моду"
       modVersion: "Версія моду"
       lastUpdated: ~
-      modAuthor:
-        title: "Автори моду"
-        homepage: "Домашня сторінка"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Всі процеси"
         allBut: "Всі крім {{list}}"
@@ -161,7 +166,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Деталі"
@@ -207,7 +211,6 @@ app:
         description: "Легко експортуй або поділися своїми налаштуваннями моду."
         loadButton: "Завантажити"
         loadFormattedButton: "Завантаження відформатовано"
-        saveButton: "Зберегти"
         invalidData: "Пошкодженні JSON дані"
       customList:
         titleInclusion: "Користувальницький список цільових процесів"
@@ -216,7 +219,6 @@ app:
         descriptionExclusion: "Користувацький список додаткових імен/шляхів до виконуваних файлів, на які НЕ буде спрямовано мод. Цей список додається до списку винятків, який автор моду визначив для визначення процесів, на які вона буде націлена. Мод буде увімкнено для кожного процесу, якщо шлях до виконуваного файлу збігається зі списком цілей і не збігається з жодним зі списків винятків."
         processListPlaceholder: "Назви/шляхи процесів, по одному в рядку, наприклад:"
         invalidCharactersWarning: ~
-        saveButton: "Зберегти"
       includeExcludeCustomOnly:
         title: "Ігнорувати списки включення/виключення модів"
         description: "Ігнорувати списки включення/виключення процесів мода і використовувати лише користувацькі списки, наведені вище."
@@ -278,6 +280,12 @@ app:
       contribute: "<0>Надіслати свій переклад</0>."
       credits: "Український переклад від <0>Fileak</0>."
       creditsLink: "https://t.me/Fileak"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Перевірити наявність оновлення"
       description: "Періодично перевіряти наявність оновлень для Windhawk та встановлених модів."
@@ -304,7 +312,6 @@ app:
       title: "Більше просунутих налаштувань"
       restartNotice: "Windhawk перезавантажиться для застосування налаштувань."
       saveButton: "Зберегти зміни та перезавантажити Windhawk"
-      cancelButton: "Скасувати"
     loggingVerbosity:
       appLoggingTitle: "Докладне логування Windhawk"
       engineLoggingTitle: "Докладне логування движку Windhawk"
@@ -325,6 +332,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Якщо ви хочете виключити всі процеси, окрім цих, ви можете задати \"*\" у списку виняткових процесів."
       processListPlaceholder: "Назви/шляхи процесів, по одному в рядку, наприклад:"
       invalidCharactersWarning: ~
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -334,23 +406,21 @@ app:
       title: "Доступне оновлення"
       subtitle: "Поміркуйте про оновлення Windhawk для отримання найновіших функцій та усунення багів"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Посилання"
       homepage: "Домашня сторінка"
       documentation: "Документація"
     builtWith:
       title: "Побудовано з"
+      tauri: ~
       vscodium: "Community версія редактору VSCode від Microsoft"
       llvmMingw: "LLVM/Clang/LLD базоване середовище mingw-w64"
       minHook: "Minimalistic API hooking library для Windows"
@@ -359,40 +429,31 @@ app:
     title: "Встановити {{mod}}"
     warningTitle: "Дійте з обережністю"
     warningDescription: "Зловмисні моди можуть mods пошкодити Ваш комп'ютер, або порушити Вашу приватність. Встановлюйте моди тільки від тих авторів, яким ви довіряєте."
-    modAuthor: "Автор моду"
-    homepage: "Домашня сторінка"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "верифіковано"
     verifiedTooltip: "Ми верифікуємо тільки те, що цей профіль належить автору моду, але зауважте, що <0>верифіковано</0> не те ж саме, що <0>надійно</0>. Переконайтеся, що ви довіряєте автору моду, або уважно перевірте вихідний код перед встановленням."
     acceptButton: "Прийняти ризики та встановити"
-    cancelButton: "Скасувати"
   createNewModButton:
     title: "Створити новий мод"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Створення модів потребує деяких знань з C/C++ розробки для Windows. Якщо ви не впевнені, що це значить, мабуть, ця опції не для Вас."
     hideOptionsCheckbox: "Приховати всі опції для розробників"
     hideOptionsButton: "Приховати опції"
     beginCodingButton: "Почати кодити"
-    cancelButton: "Скасувати"
   safeMode:
     alert: "Windhawk працює в безпечному режимі, без можливості ін'єкцій коду."
     offButton: "Вимкнути безпечний режим"
     offConfirm: "Windhawk перезавантажиться для застосування налаштувань."
     offConfirmOk: "Перезавантажити Windhawk"
-    offConfirmCancel: "Скасувати"
   modPreview:
     actionUnavailable: "Опція недоступна у режимі перегляду"
     notCompiled: "Мод потрібен бути скомпільованим перед переглядом"
@@ -414,10 +475,11 @@ app:
     appHeader:
       mods: ~
       links: "Посилання"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Надіслати свій переклад"
     home:
       tagline: "Маркетплейс для кастомізації застосунків Windows"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -450,6 +512,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

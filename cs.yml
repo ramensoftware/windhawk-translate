@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows běží v nouzovém režimu. Chcete povolit nouzový režim ve Windhawku? Všechny funkce vkládání kódu budou vypnuty."
 app:
   general:
-    loading: "Načítání..."
-    loadingFailed: "Stahování se nezdařilo, zkontrolujte prosím své připojení k internetu"
-    loadingFailedTitle: "Načítání se nezdařilo"
-    loadingFailedSubtitle: "Zkontrolujte prosím své připojení k internetu a zkuste to znovu"
-    tryAgain: "Zkuste to znovu"
-    updating: "Aktualizuji..."
-    installing: "Instaluji..."
-    compiling: "Kompiluji..."
-    cut: "Vystřihnout"
-    copy: "Kopírovat"
-    paste: "vložit"
-    selectAll: "Vybrat vše"
-    loggingEnabled: ~
+    status:
+      loading: "Načítání..."
+      loadingFailed: "Stahování se nezdařilo, zkontrolujte prosím své připojení k internetu"
+      loadingFailedTitle: "Načítání se nezdařilo"
+      loadingFailedSubtitle: "Zkontrolujte prosím své připojení k internetu a zkuste to znovu"
+      tryAgain: "Zkuste to znovu"
+      updating: "Aktualizuji..."
+      installing: "Instaluji..."
+      compiling: "Kompiluji..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Vystřihnout"
+      copy: "Kopírovat"
+      paste: "vložit"
+      selectAll: "Vybrat vše"
+    actions:
+      cancel: "Zrušit"
+      close: ~
+      save: "Uložit"
+      update: "Aktualizovat"
+      download: ~
+    modAuthor:
+      title: "Autor úpravy"
+      homepage: "Domovská stránka"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "K dispozici aktualizace"
     installed: "Instalováno"
     details: "Popis"
-    update: "Aktualizovat"
     downgrade: ~
     install: "Instalovat"
     compile: "kompilovat"
@@ -121,7 +132,6 @@ app:
     remove: "smazat"
     removeConfirm: "Opravdu chcete odstranit tuto úpravu?"
     removeConfirmOk: "Odstranit úpravu"
-    removeConfirmCancel: "Zrušit"
     donate: ~
     notCompiled: "Modifikace musí být zkompilována"
     editedLocally: "Úprava upravena místně"
@@ -143,11 +153,6 @@ app:
       modId: "ID modifikace"
       modVersion: "Verze modifikace"
       lastUpdated: ~
-      modAuthor:
-        title: "Autor úpravy"
-        homepage: "Domovská stránka"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Všechny procesy"
         allBut: "Vše kromě {{list}}"
@@ -161,7 +166,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Popis"
@@ -207,7 +211,6 @@ app:
         description: "Snadno exportujte nebo sdílejte nastavení modu."
         loadButton: "Načíst"
         loadFormattedButton: "Načíst formátované"
-        saveButton: "Uložit"
         invalidData: "Neplatná data JSON"
       customList:
         titleInclusion: "Vlastní seznam cílových procesů"
@@ -216,7 +219,6 @@ app:
         descriptionExclusion: "Vlastní seznam dalších exe souborů nebo cest k nim, které modifikace NEovlivní. Tento seznam bude přidán do seznamu vyloučení od autora modifikace. To znamená, že modifikace se načte pro každý proces pouze v případě, že cesta odpovídá jednomu z cílového seznamu a neodpovídá žádnému ze seznamu vyloučených."
         processListPlaceholder: "Název/cesty procesu (exe), jedna na řádek, např.:"
         invalidCharactersWarning: "Seznam procesů obsahuje neplatné znaky, které budou odstraněny: {{invalidCharacters}}"
-        saveButton: "Uložit"
       includeExcludeCustomOnly:
         title: "Ignorovat cílové/vyloučit seznamy úprav"
         description: "Ignorujte seznamy cílů/vylučujících seznamy nastavené v modu a používejte pouze vlastní seznamy výše."
@@ -278,6 +280,12 @@ app:
       contribute: "<0>Přidat nový překlad</0>."
       credits: "Český překlad <0>Milan Kliment</0> s několika úpravami od Berry a dalších členů komunity."
       creditsLink: "mailto:milan-k@volny.cz"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Zkontrolovat aktualizace"
       description: "Pravidelně kontrolujte aktualizace Windhawk a nainstalované modifikace."
@@ -304,7 +312,6 @@ app:
       title: "Další pokročilé možnosti"
       restartNotice: "Windhawk bude restartován, aby bylo možné použít nastavení."
       saveButton: "Uložit a restartovat Windhawk"
-      cancelButton: "Zrušit"
     loggingVerbosity:
       appLoggingTitle: "Windhawk Verbose Logging"
       engineLoggingTitle: "Podrobné protokolování motoru Windhawk"
@@ -325,6 +332,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Pokud chcete vyloučit všechny procesy kromě těchto, můžete zadat \"*\" v seznamu vyloučených procesů."
       processListPlaceholder: "Název/cesty procesu (exe), jedna na řádek, např.:"
       invalidCharactersWarning: "Seznam procesů obsahuje neplatné znaky, které budou odstraněny: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk ver. {{version}}"
     beta: "beta"
@@ -334,23 +406,21 @@ app:
       title: "K dispozici aktualizace"
       subtitle: "Aktualizujte Windhawk pro nejnovější funkce a opravy chyb"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Odkazy"
       homepage: "Domovská stránka"
       documentation: "Dokumentace"
     builtWith:
       title: "Zkompilováno s"
+      tauri: ~
       vscodium: "Komunitní verze editoru VSCode od společnosti Microsoft"
       llvmMingw: "LLVM/Clang/LLD založené na prostředí mingw-w64"
       minHook: "Minimalistická knihovna pro připojení API pro Windows"
@@ -359,40 +429,31 @@ app:
     title: "Instalovat {{mod}}"
     warningTitle: "Postupujte opatrně"
     warningDescription: "Škodlivé úpravy mohou poškodit váš počítač a narušit vaše soukromí. Instalujte úpravy pouze od autorů, kterým důvěřujete."
-    modAuthor: "Autor úpravy"
-    homepage: "Domovská stránka"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "ověřeno"
     verifiedTooltip: "Potvrzujeme, že tento profil patří autorovi modu, ale mějte na paměti, že <0>ověřený</0> neznamená <0>důvěryhodný</0>. Ujistěte se, že důvěřujete autorovi modu, nebo před instalací pečlivě zkontrolujte zdrojový kód."
     acceptButton: "Přijměte riziko a pokračujte"
-    cancelButton: "Zrušit"
   createNewModButton:
     title: "Vytvořit novou úpravu"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Vytváření a úpravy modů vyžaduje určitou znalost C/C++ ve Windows. Pokud nevíte, o čem mluvím, tyto možnosti nemusí být pro vás."
     hideOptionsCheckbox: "Skrýt všechny možnosti vývojáře"
     hideOptionsButton: "Skrýt možnosti"
     beginCodingButton: "Začít kódovat"
-    cancelButton: "Zrušit"
   safeMode:
     alert: "Windhawk běží v nouzovém režimu, přizpůsobení programu je zakázáno."
     offButton: "Vypnout nouzový režim"
     offConfirm: "Windhawk bude restartován pro použití nastavení."
     offConfirmOk: "Restartovat Windhawk"
-    offConfirmCancel: "Zrušit"
   modPreview:
     actionUnavailable: "Akce není dostupná v režimu zobrazení"
     notCompiled: "Abyste si ji mohli prohlédnout, musíte úpravu zkompilovat"
@@ -414,10 +475,11 @@ app:
     appHeader:
       mods: ~
       links: "Odkazy"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Přidat nový překlad"
     home:
       tagline: "Tržiště pro přizpůsobení programů Windows"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -450,6 +512,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

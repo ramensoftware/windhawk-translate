@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows wordt uitgevoerd in de veilige modus. Wil je de veilige modus inschakelen in Windhawk? Alle code-injectiefuncties worden uitgeschakeld."
 app:
   general:
-    loading: "Bezig met laden…"
-    loadingFailed: "Laden mislukt, controleer je internetverbinding"
-    loadingFailedTitle: "Laden mislukt"
-    loadingFailedSubtitle: "Controleer je internetverbinding en probeer het opnieuw"
-    tryAgain: "Opnieuw proberen"
-    updating: "Bezig met updaten…"
-    installing: "Bezig met installeren…"
-    compiling: "Bezig met compileren…"
-    cut: "Knippen"
-    copy: "Kopiëren"
-    paste: "Plakken"
-    selectAll: "Alles selecteren"
-    loggingEnabled: "Debug loggen is ingeschakeld"
+    status:
+      loading: "Bezig met laden…"
+      loadingFailed: "Laden mislukt, controleer je internetverbinding"
+      loadingFailedTitle: "Laden mislukt"
+      loadingFailedSubtitle: "Controleer je internetverbinding en probeer het opnieuw"
+      tryAgain: "Opnieuw proberen"
+      updating: "Bezig met updaten…"
+      installing: "Bezig met installeren…"
+      compiling: "Bezig met compileren…"
+      loggingEnabled: "Debug loggen is ingeschakeld"
+    contextMenu:
+      cut: "Knippen"
+      copy: "Kopiëren"
+      paste: "Plakken"
+      selectAll: "Alles selecteren"
+    actions:
+      cancel: "Annuleren"
+      close: "Sluiten"
+      save: "Opslaan"
+      update: "Updaten"
+      download: "Download"
+    modAuthor:
+      title: "Mod-auteur"
+      homepage: "Homepage"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Update beschikbaar"
     installed: "Geïnstalleerd"
     details: "Details"
-    update: "Updaten"
     downgrade: "Downgraden"
     install: "Installeren"
     compile: "Compileren"
@@ -121,7 +132,6 @@ app:
     remove: "Verwijderen"
     removeConfirm: "Weet je zeker dat je deze mod wilt verwijderen?"
     removeConfirmOk: "Mod verwijderen"
-    removeConfirmCancel: "Annuleren"
     donate: "Doneren"
     notCompiled: "Mod moet worden gecompileerd"
     editedLocally: "Mod is lokaal bewerkt"
@@ -141,11 +151,6 @@ app:
       modId: "Mod-identificator"
       modVersion: "Mod-versie"
       lastUpdated: "Laatst bijgewerkt"
-      modAuthor:
-        title: "Mod-auteur"
-        homepage: "Homepage"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Alle processen"
         allBut: "Alle, behalve {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "pre-release"
       select: "Selecteren"
-      cancel: "Annuleren"
       chooseVersion: "Kies een versie…"
     details:
       title: "Details"
@@ -205,7 +209,6 @@ app:
         description: "Eenvoudig je mod-instellingen exporteren of delen."
         loadButton: "Laden"
         loadFormattedButton: "Opgemaakt laden"
-        saveButton: "Opslaan"
         invalidData: "Ongeldige JSON-gegevens"
       customList:
         titleInclusion: "Aangepaste proces-opnamelijst"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Een aangepaste lijst met extra uitvoerbare bestandsnamen/-paden die de mod zal uitsluiten van targeten. De lijst wordt toegevoegd aan de uitsluitingslijst die de mod-auteur heeft gedefinieerd om te bepalen welke processen moeten worden getarget. Voor elk proces wordt de mod geladen als het pad van het uitvoerbare bestand overeenkomt met een van de opnamevermeldingen en niet overeenkomt met een uitsluitingsvermelding."
         processListPlaceholder: "Procesnamen/-paden, één per regel, bijvoorbeeld:"
         invalidCharactersWarning: "De proceslijst bevat ongeldige tekens die zullen worden verwijderd: {{invalidCharacters}}"
-        saveButton: "Opslaan"
       includeExcludeCustomOnly:
         title: "Mod opname-/uitsluitingslijsten negeren"
         description: "Negeer de opname- en uitsluitingslijsten van de mod en gebruik alleen de aangepaste lijsten hierboven."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Een nieuwe vertaling toevoegen</0>."
       credits: "Nederlandse vertaling door <0>Toine Rademacher (toineenzo)</0>."
       creditsLink: "https://toine.zip"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Controleren op updates"
       description: "Controleer regelmatig op nieuwe versies van Windhawk en van de geïnstalleerde mods."
@@ -300,7 +308,6 @@ app:
       title: "Meer geavanceerde instellingen"
       restartNotice: "Windhawk wordt opnieuw opgestart om de instellingen toe te passen."
       saveButton: "Windhawk opslaan en opnieuw opstarten"
-      cancelButton: "Annuleren"
     loggingVerbosity:
       appLoggingTitle: "Windhawk logniveau"
       engineLoggingTitle: "Windhawk engine logniveau"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Als je alle processen wilt uitsluiten behalve deze, kun je \"*\" in de proces-uitsluitingslijst zetten."
       processListPlaceholder: "Procesnamen/-paden, één per regel, bijvoorbeeld:"
       invalidCharactersWarning: "De proceslijst bevat ongeldige tekens die zullen worden verwijderd: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "bèta"
@@ -330,23 +402,21 @@ app:
       title: "Er is een update beschikbaar"
       subtitle: "Overweeg om Windhawk bij te werken voor de nieuwste functies en bugfixes"
       changelogButton: "Wijzigingslog"
-      updateButton: "Updaten"
       modal:
         title: "Windhawk updaten"
         downloading: "Bezig met update downloaden…"
         installing: "Bezig met update installeren…"
         installingNote: "Windhawk wordt automatisch opnieuw opgestart wanneer de installatie is voltooid."
         failed: "Updaten mislukt"
-        cancel: "Annuleren"
     changelog:
       title: "Wat is er nieuw in Windhawk"
-      close: "Sluiten"
     links:
       title: "Links"
       homepage: "Homepage"
       documentation: "Documentatie"
     builtWith:
       title: "Gebouwd met"
+      tauri: ~
       vscodium: "Een gemeenschapsgestuurde distributie van Microsoft's VSCode-editor"
       llvmMingw: "Een op LLVM/Clang/LLD gebaseerde mingw-w64 toolchain"
       minHook: "De minimalistische API-hook bibliotheek voor Windows"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} installeren"
     warningTitle: "Ga voorzichtig te werk"
     warningDescription: "Kwaadaardige mods kunnen je computer beschadigen of je privacy schenden. Installeer alleen mods van auteurs die je vertrouwt."
-    modAuthor: "Mod-auteur"
-    homepage: "Homepage"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "geverifieerd"
     verifiedTooltip: "We hebben geverifieerd dat dit profiel toebehoort aan de mod-auteur, maar <0>geverifieerd</0> is niet hetzelfde als <0>vertrouwd</0>. Zorg ervoor dat je de mod-auteur vertrouwt of inspecteer de broncode zorgvuldig voordat je installeert."
     acceptButton: "Risico accepteren en installeren"
-    cancelButton: "Annuleren"
   createNewModButton:
     title: "Een nieuwe mod maken"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Het maken en aanpassen van mods vereist enige kennis van C/C++ ontwikkeling voor Windows. Als je niet zeker weet wat dat betekent, zijn deze opties misschien niets voor jou."
     hideOptionsCheckbox: "Alle ontwikkelingsgerelateerde opties verbergen"
     hideOptionsButton: "Opties verbergen"
     beginCodingButton: "Begin met coderen"
-    cancelButton: "Annuleren"
   safeMode:
     alert: "Windhawk draait in veilige modus, alle functionaliteit voor code-injectie is uitgeschakeld."
     offButton: "Veilige modus uitschakelen"
     offConfirm: "Windhawk wordt opnieuw gestart om de instellingen toe te passen."
     offConfirmOk: "Windhawk opnieuw opstarten"
-    offConfirmCancel: "Annuleren"
   modPreview:
     actionUnavailable: "Actie is niet beschikbaar in voorvertoningsmodus"
     notCompiled: "Mod moet worden gecompileerd voordat deze kan worden bekeken"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "Mods"
       links: "Links"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Een nieuwe vertaling toevoegen"
     home:
       tagline: "De personalisatie marktplaats voor Windows programma's"
-      download: "Download"
       getInvolved: "Raak betrokken"
       joinDiscord: "Word lid van de Windhawk community op Discord"
       discussWindhawk: "Bespreek Windhawk op GitHub Discussions"
@@ -446,6 +508,5 @@ app:
       title: "Windhawk updaten"
       newVersionAvailable: "Er is een nieuwe versie van Windhawk beschikbaar."
       whatsNew: "Wat is er nieuw"
-      downloadButton: "Downloaden"
     footer:
       copyright: "Copyright"

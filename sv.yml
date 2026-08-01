@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows körs i felsäkert läge. Vill du aktivera felsäkert läge i Windhawk? All kodinjektionsfunktionalitet kommer att stängas av."
 app:
   general:
-    loading: "Laddar..."
-    loadingFailed: "Det gick inte att ladda, kontrollera din internetanslutning"
-    loadingFailedTitle: "Det gick inte att ladda"
-    loadingFailedSubtitle: "Kontrollera din internetanslutning och försök igen"
-    tryAgain: "Försök igen"
-    updating: "Uppdaterar..."
-    installing: "Installerar..."
-    compiling: "Kompilerar..."
-    cut: "Klipp ut"
-    copy: "Kopiera"
-    paste: "Klistra in"
-    selectAll: "Markera allt"
-    loggingEnabled: "Felsökningsloggning är aktiverad"
+    status:
+      loading: "Laddar..."
+      loadingFailed: "Det gick inte att ladda, kontrollera din internetanslutning"
+      loadingFailedTitle: "Det gick inte att ladda"
+      loadingFailedSubtitle: "Kontrollera din internetanslutning och försök igen"
+      tryAgain: "Försök igen"
+      updating: "Uppdaterar..."
+      installing: "Installerar..."
+      compiling: "Kompilerar..."
+      loggingEnabled: "Felsökningsloggning är aktiverad"
+    contextMenu:
+      cut: "Klipp ut"
+      copy: "Kopiera"
+      paste: "Klistra in"
+      selectAll: "Markera allt"
+    actions:
+      cancel: "Avbryt"
+      close: "Stäng"
+      save: "Spara"
+      update: "Uppdatera"
+      download: "Ladda ned"
+    modAuthor:
+      title: "Modutvecklare"
+      homepage: "Hemsida"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Uppdatering tillgänglig"
     installed: "Installerad"
     details: "Detaljer"
-    update: "Uppdatera"
     downgrade: "Nedgradera"
     install: "Installera"
     compile: "Kompilera"
@@ -121,7 +132,6 @@ app:
     remove: "Ta bort"
     removeConfirm: "Är du säker på att du vill ta bort den här modden?"
     removeConfirmOk: "Ta bort mod"
-    removeConfirmCancel: "Avbryt"
     donate: "Donera"
     notCompiled: "Modden behöver kompileras"
     editedLocally: "Modden har redigerats lokalt"
@@ -141,11 +151,6 @@ app:
       modId: "Mod-ID"
       modVersion: "Modversion"
       lastUpdated: "Senast uppdaterad"
-      modAuthor:
-        title: "Modutvecklare"
-        homepage: "Hemsida"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Alla processer"
         allBut: "Alla utom {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "förhandsversion"
       select: "Välj"
-      cancel: "Avbryt"
       chooseVersion: "Välj en version..."
     details:
       title: "Detaljer"
@@ -205,7 +209,6 @@ app:
         description: "Exportera eller dela dina modinställningar enkelt."
         loadButton: "Läs in"
         loadFormattedButton: "Läs in formaterad"
-        saveButton: "Spara"
         invalidData: "Ogiltig JSON-data"
       customList:
         titleInclusion: "Anpassad processinkluderingslista"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "En anpassad lista med ytterligare körbara filnamn/sökvägar som modden utesluter från att rikta sig mot. Listan läggs till den exkluderingslista som utvecklaren definierat för att avgöra vilka processer som ska riktas mot. För varje process laddas modden om den körbara filsökvägen matchar en av inkluderingsposterna och inte matchar någon exkluderingspost."
         processListPlaceholder: "Processnamn/sökvägar, en per rad, till exempel:"
         invalidCharactersWarning: "Processlistan innehåller ogiltiga tecken som kommer att tas bort: {{invalidCharacters}}"
-        saveButton: "Spara"
       includeExcludeCustomOnly:
         title: "Ignorera moddens inkluderings-/exkluderingslistor"
         description: "Ignorera moddens processinkluderings-/exkluderingslistor och använd endast de anpassade listorna ovan."
@@ -275,6 +277,12 @@ app:
       credits: "Svensk översättning av <0>Sopor</0> och <1>Viktor Engkvist</1>."
       creditsLink: "mailto:sopor@users.noreply.github.com"
       creditsLink1: "mailto:viktor@rivig.net"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Sök efter uppdateringar"
       description: "Sök automatiskt efter och meddela om nya versioner av Windhawk och installerade moddar."
@@ -301,7 +309,6 @@ app:
       title: "Fler avancerade inställningar"
       restartNotice: "Windhawk kommer att startas om för att tillämpa inställningarna."
       saveButton: "Spara och starta om Windhawk"
-      cancelButton: "Avbryt"
     loggingVerbosity:
       appLoggingTitle: "Windhawk-loggningsdetaljnivå"
       engineLoggingTitle: "Windhawk-motorns loggningsdetaljnivå"
@@ -322,6 +329,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Om du menade att exkludera alla processer utom dessa kan du ange \"*\" i processexkluderingslistan."
       processListPlaceholder: "Processnamn/sökvägar, en per rad, till exempel:"
       invalidCharactersWarning: "Processlistan innehåller ogiltiga tecken som kommer att tas bort: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -331,23 +403,21 @@ app:
       title: "En uppdatering är tillgänglig"
       subtitle: "Överväg att uppdatera Windhawk för att få de senaste funktionerna och felkorrigeringarna"
       changelogButton: "Ändringslogg"
-      updateButton: "Uppdatera"
       modal:
         title: "Uppdaterar Windhawk"
         downloading: "Laddar ned uppdatering..."
         installing: "Installerar uppdatering..."
         installingNote: "Windhawk startar om automatiskt när installationen är klar."
         failed: "Uppdateringen misslyckades"
-        cancel: "Avbryt"
     changelog:
       title: "Nyheter i Windhawk"
-      close: "Stäng"
     links:
       title: "Länkar"
       homepage: "Hemsida"
       documentation: "Dokumentation"
     builtWith:
       title: "Byggd med"
+      tauri: ~
       vscodium: "En gemenskapsdriven distribution av Microsofts VSCode-editor"
       llvmMingw: "En LLVM/Clang/LLD-baserad mingw-w64-verktygskedja"
       minHook: "Det minimalistiska API-hookning-biblioteket för Windows"
@@ -356,40 +426,31 @@ app:
     title: "Installera {{mod}}"
     warningTitle: "Fortsätt, men ta det försiktigt"
     warningDescription: "Skadliga moddar kan skada din dator eller kränka din integritet. Installera endast moddar från utvecklare som du litar på."
-    modAuthor: "Modutvecklare"
-    homepage: "Hemsida"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "verifierad"
     verifiedTooltip: "Vi har verifierat att den här profilen tillhör utvecklaren av modden, men observera att <0>verifierad</0> inte är detsamma som <0>betrodd</0>. Se till att du litar på utvecklaren eller granska källkoden noggrant innan du installerar."
     acceptButton: "Acceptera risken och installera"
-    cancelButton: "Avbryt"
   createNewModButton:
     title: "Skapa en ny mod"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Att skapa och ändra moddar kräver viss kunskap om C/C++-utveckling för Windows. Om du inte är säker på vad det innebär är kanske dessa alternativ inte för dig."
     hideOptionsCheckbox: "Dölj alla utvecklingsrelaterade alternativ"
     hideOptionsButton: "Dölj alternativ"
     beginCodingButton: "Börja koda"
-    cancelButton: "Avbryt"
   safeMode:
     alert: "Windhawk körs i felsäkert läge och all kodinjektion är avstängd."
     offButton: "Stäng av felsäkert läge"
     offConfirm: "Windhawk kommer att startas om för att tillämpa inställningarna."
     offConfirmOk: "Starta om Windhawk"
-    offConfirmCancel: "Avbryt"
   modPreview:
     actionUnavailable: "Åtgärden är inte tillgänglig i förhandsgranskningsläget"
     notCompiled: "Modden måste kompileras innan den kan förhandsgranskas"
@@ -411,10 +472,11 @@ app:
     appHeader:
       mods: "Moddar"
       links: "Länkar"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Bidra med en ny översättning"
     home:
       tagline: "Anpassningsmarknadsplatsen för Windows och program"
-      download: "Ladda ned"
       getInvolved: "Engagera dig"
       joinDiscord: "Gå med i Windhawk-servern på Discord"
       discussWindhawk: "Diskutera Windhawk på GitHub Discussions"
@@ -447,6 +509,5 @@ app:
       title: "Uppdatera Windhawk"
       newVersionAvailable: "En ny Windhawk-version är tillgänglig"
       whatsNew: "Nyheter"
-      downloadButton: "Ladda ned"
     footer:
       copyright: "Copyright"

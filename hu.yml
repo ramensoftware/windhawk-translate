@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: ~
 app:
   general:
-    loading: "Betöltés..."
-    loadingFailed: "Betöltés sikertelen, kérjük, ellenőrizze az internetkapcsolatát"
-    loadingFailedTitle: "Betöltés sikertelen"
-    loadingFailedSubtitle: "Ellenőrizze az internetkapcsolatot, és próbálja újra"
-    tryAgain: "Próbáld újra"
-    updating: "Frissítés..."
-    installing: "Telepítés..."
-    compiling: "Fordítás..."
-    cut: "Kivágás"
-    copy: "Másolás"
-    paste: "Beillesztés"
-    selectAll: "Összes kijelölése"
-    loggingEnabled: ~
+    status:
+      loading: "Betöltés..."
+      loadingFailed: "Betöltés sikertelen, kérjük, ellenőrizze az internetkapcsolatát"
+      loadingFailedTitle: "Betöltés sikertelen"
+      loadingFailedSubtitle: "Ellenőrizze az internetkapcsolatot, és próbálja újra"
+      tryAgain: "Próbáld újra"
+      updating: "Frissítés..."
+      installing: "Telepítés..."
+      compiling: "Fordítás..."
+      loggingEnabled: ~
+    contextMenu:
+      cut: "Kivágás"
+      copy: "Másolás"
+      paste: "Beillesztés"
+      selectAll: "Összes kijelölése"
+    actions:
+      cancel: "Mégse"
+      close: ~
+      save: "Mentés"
+      update: "Frissítés"
+      download: ~
+    modAuthor:
+      title: "Mod szerző"
+      homepage: "Honlap"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Frissítés elérhető"
     installed: "Telepítve"
     details: "Részletek"
-    update: "Frissítés"
     downgrade: ~
     install: "Telepítés"
     compile: "Fordítás"
@@ -121,7 +132,6 @@ app:
     remove: "Eltávolítás"
     removeConfirm: "Biztosan eltávolítja ezt a modot?"
     removeConfirmOk: "Mod eltávolítása"
-    removeConfirmCancel: "Mégse"
     donate: ~
     notCompiled: "A modot le kell fordítani"
     editedLocally: "A mod helyben szerkesztve lett"
@@ -141,11 +151,6 @@ app:
       modId: "Mod azonosító"
       modVersion: "Mod verzió"
       lastUpdated: ~
-      modAuthor:
-        title: "Mod szerző"
-        homepage: "Honlap"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Minden folyamat"
         allBut: "Minden, kivéve {{list}}"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: ~
       select: ~
-      cancel: ~
       chooseVersion: ~
     details:
       title: "Részletek"
@@ -205,7 +209,6 @@ app:
         description: "Könnyen exportálhatja vagy megoszthatja mod beállításait."
         loadButton: "Betöltés"
         loadFormattedButton: "Formázott betöltés"
-        saveButton: "Mentés"
         invalidData: "Érvénytelen JSON adat"
       customList:
         titleInclusion: "Egyéni folyamat bevonási lista"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Egy egyéni lista további végrehajtható fájlnevekről/útvonalakról, amelyeket a mod kizár a célzásból."
         processListPlaceholder: "Folyamat nevek/útvonalak, egy sorban, például:"
         invalidCharactersWarning: ~
-        saveButton: "Mentés"
       includeExcludeCustomOnly:
         title: "Mod bevonási/kizárási listák figyelmen kívül hagyása"
         description: "A mod folyamat bevonási/kizárási listáinak figyelmen kívül hagyása, és csak a fentiek használata."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Járuljon hozzá egy új fordítással</0>."
       credits: "Angol fordítás: <0>Polauf László</0>."
       creditsLink: "mailto:aolauf35@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Frissítések keresése"
       description: "Rendszeresen ellenőrzi a Windhawk és a telepített modok új verzióit."
@@ -300,7 +308,6 @@ app:
       title: "További haladó beállítások"
       restartNotice: "A beállítások alkalmazásához a Windhawk újraindul."
       saveButton: "Mentés és Windhawk újraindítása"
-      cancelButton: "Mégse"
     loggingVerbosity:
       appLoggingTitle: "Windhawk naplózási részletesség"
       engineLoggingTitle: "Windhawk motor naplózási részletesség"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Ha azt szeretné, hogy minden folyamat kizárva legyen, kivéve ezeket, állítsa be a „*” értéket a folyamat kizárási listában."
       processListPlaceholder: "Folyamat nevek/útvonalak, egy sorban, például:"
       invalidCharactersWarning: ~
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "béta"
@@ -330,23 +402,21 @@ app:
       title: "Frissítés elérhető"
       subtitle: "Fontolja meg a Windhawk frissítését az új funkciók és hibajavítások érdekében"
       changelogButton: ~
-      updateButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
     changelog:
       title: ~
-      close: ~
     links:
       title: "Linkek"
       homepage: "Honlap"
       documentation: "Dokumentáció"
     builtWith:
       title: "Készült:"
+      tauri: ~
       vscodium: "A Microsoft VSCode szerkesztőjének közösségvezérelt terjesztése"
       llvmMingw: "LLVM/Clang/LLD alapú mingw-w64 eszközkészlet"
       minHook: "Minimalista API hooking könyvtár Windowsra"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} telepítése"
     warningTitle: "Óvatosan folytassa"
     warningDescription: "A rosszindulatú modok károsíthatják a számítógépet vagy megsérthetik a magánéletét. Csak olyan modokat telepítsen, amelyek szerzőiben megbízik."
-    modAuthor: "Mod szerzője"
-    homepage: "Honlap"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "ellenőrzött"
     verifiedTooltip: "Ellenőriztük, hogy ez a profil a mod szerzőjéhez tartozik, de jegyezze meg, hogy az <0>ellenőrzés</0> nem ugyanaz, mint a <0>bizalom</0>. Győződjön meg róla, hogy megbízik a mod szerzőjében, vagy alaposan vizsgálja meg a forráskódot a telepítés előtt."
     acceptButton: "Kockázat elfogadása és telepítés"
-    cancelButton: "Mégse"
   createNewModButton:
     title: "Új mod létrehozása"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Modok létrehozása és módosítása némi Windows C/C++ fejlesztési ismeretet igényel. Ha nem biztos abban, mit jelent ez, talán ezek az opciók nem önnek valók."
     hideOptionsCheckbox: "Fejlesztéssel kapcsolatos opciók elrejtése"
     hideOptionsButton: "Opciók elrejtése"
     beginCodingButton: "Kódolás elkezdése"
-    cancelButton: "Mégse"
   safeMode:
     alert: "A Windhawk biztonságos módban fut, minden kódbefecskendezési funkció ki van kapcsolva."
     offButton: "Biztonságos mód kikapcsolása"
     offConfirm: "A Windhawk újraindul a beállítások alkalmazásához."
     offConfirmOk: "Windhawk újraindítása"
-    offConfirmCancel: "Mégse"
   modPreview:
     actionUnavailable: "Ez a művelet nem érhető el előnézeti módban"
     notCompiled: "A modot le kell fordítani, mielőtt előnézetet lehetne készíteni"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: ~
       links: "Linkek"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Járuljon hozzá egy új fordítással"
     home:
       tagline: "Testreszabási piactér Windowsra és programokra"
-      download: ~
       getInvolved: ~
       joinDiscord: ~
       discussWindhawk: ~
@@ -446,6 +508,5 @@ app:
       title: ~
       newVersionAvailable: ~
       whatsNew: ~
-      downloadButton: ~
     footer:
       copyright: ~

@@ -78,19 +78,32 @@ tray:
   SAFE_MODE_DETECTED_TEXT: "Windows güvenli modda çalışıyor. Windhawk'ta güvenli modu etkinleştirmek ister misiniz? Tüm kod enjeksiyonu işlevleri devre dışı bırakılacaktır."
 app:
   general:
-    loading: "Yükleniyor..."
-    loadingFailed: "Yükleme başarısız, lütfen internet bağlantınızı kontrol edin"
-    loadingFailedTitle: "Yükleme başarısız"
-    loadingFailedSubtitle: "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin"
-    tryAgain: "Tekrar dene"
-    updating: "Güncelleniyor..."
-    installing: "Yükleniyor..."
-    compiling: "Derleniyor..."
-    cut: "Kes"
-    copy: "Kopyala"
-    paste: "Yapıştır"
-    selectAll: "Hepsini seç"
-    loggingEnabled: "Hata ayıklama günlüğü etkin"
+    status:
+      loading: "Yükleniyor..."
+      loadingFailed: "Yükleme başarısız, lütfen internet bağlantınızı kontrol edin"
+      loadingFailedTitle: "Yükleme başarısız"
+      loadingFailedSubtitle: "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin"
+      tryAgain: "Tekrar dene"
+      updating: "Güncelleniyor..."
+      installing: "Yükleniyor..."
+      compiling: "Derleniyor..."
+      loggingEnabled: "Hata ayıklama günlüğü etkin"
+    contextMenu:
+      cut: "Kes"
+      copy: "Kopyala"
+      paste: "Yapıştır"
+      selectAll: "Hepsini seç"
+    actions:
+      cancel: "İptal"
+      close: "Kapat"
+      save: "Kaydet"
+      update: "Güncelle"
+      download: "Hemen İndir"
+    modAuthor:
+      title: "Mod yapımcısı"
+      homepage: "Ana Sayfa"
+      github: "GitHub"
+      twitter: "X (Twitter)"
   errors:
     commandFailed: ~
   appHeader:
@@ -105,12 +118,10 @@ app:
     wrapOff: ~
     autoScrollOn: ~
     autoScrollOff: ~
-    close: ~
   mod:
     updateAvailable: "Güncelleme mevcut"
     installed: "Yüklendi"
     details: "Ayrıntılar"
-    update: "Güncelle"
     downgrade: "Sürümü düşür"
     install: "Yükle"
     compile: "Derle"
@@ -121,7 +132,6 @@ app:
     remove: "Kaldır"
     removeConfirm: "Bu modu kaldırmak istediğinizden emin misiniz?"
     removeConfirmOk: "Modu kaldır"
-    removeConfirmCancel: "İptal"
     donate: "Bağış yap"
     notCompiled: "Modun derlenmesi gerekiyor"
     editedLocally: "Mod yerel olarak düzenlendi"
@@ -141,11 +151,6 @@ app:
       modId: "Mod tanımlayıcı"
       modVersion: "Mod sürümü"
       lastUpdated: "Son güncelleme"
-      modAuthor:
-        title: "Mod yapımcısı"
-        homepage: "Ana Sayfa"
-        github: "GitHub"
-        twitter: "X (Twitter)"
       processes:
         all: "Tüm işlemler"
         allBut: "{{list}} hariç tümü"
@@ -159,7 +164,6 @@ app:
     version:
       preRelease: "Ön sürüm"
       select: "Seç"
-      cancel: "İptal"
       chooseVersion: "Sürüm seçin"
     details:
       title: "Ayrıntılar"
@@ -205,7 +209,6 @@ app:
         description: "Mod ayarlarınızı kolayca dışa aktarın veya paylaşın."
         loadButton: "Yükle"
         loadFormattedButton: "Biçimlendirilmiş yükle"
-        saveButton: "Kaydet"
         invalidData: "Geçersiz JSON verileri"
       customList:
         titleInclusion: "Özel işlem dahil etme listesi"
@@ -214,7 +217,6 @@ app:
         descriptionExclusion: "Modun hedefleme dışında bırakacağı ek yürütülebilir dosya adlarının/yollarının özel bir listesi. Liste, hangi işlemlerin hedefleneceğini belirlemek için mod yazarının tanımladığı dışlama listesine eklenir. Her işlem için, yürütülebilir dosya yolu dahil etme girişlerinden biriyle eşleşirse ve herhangi bir hariç tutma girişiyle eşleşmezse mod yüklenir."
         processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
         invalidCharactersWarning: "İşlem listesi geçersiz karakterler içeriyor, bunlar kaldırılacak: {{invalidCharacters}}"
-        saveButton: "Kaydet"
       includeExcludeCustomOnly:
         title: "Mod ekleme/hariç tutma listelerini yoksay"
         description: "Modun işlem dahil etme/hariç tutma listelerini göz ardı et ve yalnızca yukarıdaki özel listeleri kullan."
@@ -274,6 +276,12 @@ app:
       contribute: "<0>Yeni bir çeviriye katkıda bulunun</0>."
       credits: "Türkçe çeviri: <0>Fatih Fırıncı</0>."
       creditsLink: "mailto:fatihfirinci@gmail.com"
+    theme:
+      title: ~
+      description: ~
+      dark: ~
+      light: ~
+      system: ~
     updates:
       title: "Güncellemeleri denetle"
       description: "Windhawk'ın ve yüklü modların yeni sürümlerini düzenli olarak denetle."
@@ -300,7 +308,6 @@ app:
       title: "Daha fazla gelişmiş ayar"
       restartNotice: "Windhawk, ayarları uygulamak için yeniden başlatılacak."
       saveButton: "Kaydet ve Windhawk'ı yeniden başlat"
-      cancelButton: "İptal"
     loggingVerbosity:
       appLoggingTitle: "Windhawk günlüğe kaydetme ayrıntısı"
       engineLoggingTitle: "Windhawk motor günlüğü ayrıntı düzeyi"
@@ -321,6 +328,71 @@ app:
       inclusionWithoutTotalExclusionNotice: "Bunlar dışındaki tüm işlemleri hariç tutmak istiyorsanız, işlem dışlama listesinde \"*\" ayarını yapabilirsiniz."
       processListPlaceholder: "İşlem adları/yolları, örneğin her satıra bir tane:"
       invalidCharactersWarning: "Dosya yolu veya adı geçersiz karakterler içeriyor, bunlar kaldırılacak: {{invalidCharacters}}"
+    userData:
+      title: ~
+      description: ~
+      exportAction: ~
+      importAction: ~
+      appSettings: ~
+      notInArchive: ~
+      mods: ~
+      settings: ~
+      config: ~
+      applyToAll: ~
+      noMods: ~
+      local: ~
+      alreadyInstalled: ~
+      export:
+        title: ~
+        description: ~
+        exportButton: ~
+        doneButton: ~
+        doneTitle: ~
+        doneSubtitle: ~
+        warningsTitle: ~
+        offlineTitle: ~
+        offlineDescription: ~
+      importSource:
+        description: ~
+        fileOption: ~
+        textOption: ~
+        textPlaceholder: ~
+        browseButton: ~
+        continueButton: ~
+      import:
+        title: ~
+        trustTitle: ~
+        trustDescription: ~
+        importButton: ~
+        cancelling: ~
+        overwriteWarning_one: ~
+        overwriteWarning_other: ~
+        noPrecompiledTitle: ~
+        noPrecompiledDescription: ~
+        network:
+          none: ~
+          source: ~
+          precompiled: ~
+          sourceAndPrecompiled: ~
+        runningStatus: ~
+        compilingFor: ~
+        modStatus:
+          installed: ~
+          skipped: ~
+          aborted: ~
+          failed: ~
+        appSettingsStatus:
+          pending: ~
+          applying: ~
+          applied: ~
+          aborted: ~
+        doneTitle: ~
+        doneWithFailuresTitle: ~
+        doneSubtitle: ~
+        abortedTitle: ~
+        abortedSubtitle: ~
+        failedTitle: ~
+        failedSubtitle: ~
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -330,23 +402,21 @@ app:
       title: "Bir güncelleme mevcut"
       subtitle: "En son özellikleri ve hata düzeltmelerini almak için Windhawk'ı güncellemeyi düşünün"
       changelogButton: "Değişiklik günlüğü"
-      updateButton: "Güncelle"
       modal:
         title: "Windhawk güncelleniyor..."
         downloading: "Güncelleme indiriliyor..."
         installing: "Güncelleme yükleniyor..."
         installingNote: "Yükleme sırasında Windhawk yeniden başlatılacak."
         failed: "Güncelleme başarısız oldu."
-        cancel: "İptal et"
     changelog:
       title: "Sürüm Notları"
-      close: "Kapat"
     links:
       title: "Bağlantılar"
       homepage: "Ana sayfa"
       documentation: "Belgeler"
     builtWith:
       title: "Oluşturanlar"
+      tauri: ~
       vscodium: "Microsoft'un VSCode düzenleyicisinin topluluk odaklı bir dağıtımı"
       llvmMingw: "LLVM/Clang/LLD tabanlı mingw-w64 araç zinciri"
       minHook: "Windows için minimalist API bağlama kitaplığı"
@@ -355,40 +425,31 @@ app:
     title: "{{mod}} Yükle"
     warningTitle: "Dikkatli ilerleyin"
     warningDescription: "Kötü amaçlı modlar bilgisayarınıza zarar verebilir veya gizliliğinizi ihlal edebilir. Yalnızca güvendiğiniz yapımcıların modlarını yükleyin."
-    modAuthor: "Mod yapımcısı"
-    homepage: "Ana sayfa"
-    github: "GitHub"
-    twitter: "X (Twitter)"
     verified: "doğrulanmış"
     verifiedTooltip: "Bu profilin modun yapımcısına ait olduğunu doğruladık ancak <0>doğrulanmış</0> olması <0>güvenilir</0> olduğu anlamına gelmiyor. Mod yapımcısına güvendiğinizden emin olun veya yüklemeden önce kaynak kodunu dikkatlice inceleyin."
     acceptButton: "Riski Kabul Et ve Yükle"
-    cancelButton: "İptal"
   createNewModButton:
     title: "Yeni Mod Oluştur"
   devTools:
     install:
       description: ~
       installButton: ~
-      cancelButton: ~
       modal:
         title: ~
         downloading: ~
         installing: ~
         installingNote: ~
         failed: ~
-        cancel: ~
   devModeAction:
     message: "Mod oluşturmak ve değiştirmek, Windows için biraz C/C++ geliştirme bilgisi gerektirir. Bunun ne anlama geldiğinden emin değilseniz, belki de bu seçenekler size göre değildir."
     hideOptionsCheckbox: "Geliştirmeyle ilgili tüm seçenekleri gizle"
     hideOptionsButton: "Seçenekleri gizle"
     beginCodingButton: "Kodlamaya başla"
-    cancelButton: "İptal"
   safeMode:
     alert: "Windhawk şu anda güvenli modda çalışıyor. Tüm modlar devre dışı bırakıldı."
     offButton: "Güvenli modu kapat"
     offConfirm: "Ayarları uygulamak için Windhawk yeniden başlatılacak."
     offConfirmOk: "Eminim"
-    offConfirmCancel: "İptal et"
   modPreview:
     actionUnavailable: "Eylem önizleme modunda kullanılamaz"
     notCompiled: "Önizleme yapılmadan önce modun derlenmesi gerekir"
@@ -410,10 +471,11 @@ app:
     appHeader:
       mods: "Modlar"
       links: "Bağlantılar"
+      language: ~
+      toggleTheme: ~
       contributeTranslation: "Çeviriye destek ol!"
     home:
       tagline: "Windows programlarını dilediğiniz gibi özelleştirin!"
-      download: "Hemen İndir"
       getInvolved: "Topluluğa Katıl!"
       joinDiscord: "Discord'a Katıl!"
       discussWindhawk: "Windhawk Hakkında Konuş!"
@@ -446,6 +508,5 @@ app:
       title: "Windhawk'ı İndir"
       newVersionAvailable: "Yeni bir sürüm çıktı!"
       whatsNew: "Bu sürümde neler değişti?"
-      downloadButton: "İndirmeyi Başlat"
     footer:
       copyright: "Telif Hakkı"
