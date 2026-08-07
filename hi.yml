@@ -87,6 +87,7 @@ app:
       updating: "अपडेट हो रहा है..."
       installing: "स्थापित हो रहा है..."
       compiling: "कंपाइल हो रहा है..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "काटें"
@@ -174,7 +175,24 @@ app:
       saveButton: "सेटिंग्स सहेजें"
       sampleValue: "नमूना मान"
       arrayItemAdd: "नया आइटम जोड़ें"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "आइटम हटाएँ"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "स्रोत कोड"
       noData: "मॉड स्रोत अनुपस्थित है।"
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "परिवर्तन लॉग"
       loadingFailed: "परिवर्तन लॉग लोड करने में विफल। <0>GitHub पर देखने के लिए यहाँ क्लिक करें</0>।"
+      olderEntries: ~
     advanced:
       title: "उन्नत"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "विभाजित दृश्य"
       expandLines_one: "एक छिपी पंक्ति विस्तार करें"
       expandLines_other: "{{count}} छिपी पंक्तियाँ विस्तार करें"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "मॉड्स खोजें..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "अधिक उन्नत सेटिंग्स"
       restartNotice: "सेटिंग्स लागू करने के लिए विंडहॉक पुनः शुरू होगा।"
       saveButton: "सहेजें और विंडहॉक पुनः शुरू करें"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "विंडहॉक लॉगिंग वर्बोसिटी"
       engineLoggingTitle: "विंडहॉक इंजन लॉगिंग वर्बोसिटी"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

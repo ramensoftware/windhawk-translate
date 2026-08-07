@@ -87,6 +87,7 @@ app:
       updating: "Memperbarui..."
       installing: "Memasang..."
       compiling: "Kompiling..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Potong"
@@ -174,7 +175,24 @@ app:
       saveButton: "Simpan pengaturan"
       sampleValue: "Contoh value"
       arrayItemAdd: "Tambahkan item baru"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Hapus item"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Kode Sumber"
       noData: "Sumber mod hilang."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Catatan perubahan"
       loadingFailed: "Gagal memuat catatan perubahan. <0>Klik disini</0> untuk melihat di Github."
+      olderEntries: ~
     advanced:
       title: "Lanjutan"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Tampilan berbagi"
       expandLines_one: "Perlebar salah satu baris tersembunyi"
       expandLines_other: "Perlebar {{count}} baris tersembunyi"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Cari untuk mod..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "Pengaturan lanjutan lainnya"
       restartNotice: "Windhawk akan dimulai ulang untuk menerapkan pengaturan."
       saveButton: "Simpan dan memulai ulang Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Verbositas pencatatan Windhawk"
       engineLoggingTitle: "Verbositas pencatatan mesin Windhawk"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

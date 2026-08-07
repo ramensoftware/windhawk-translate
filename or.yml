@@ -87,6 +87,7 @@ app:
       updating: "ଅପଡେଟ୍ ହେଉଛି..."
       installing: "ଇନଷ୍ଟଲ୍ ହେଉଛି..."
       compiling: "କମ୍ପାଇଲ୍ ହେଉଛି..."
+      canceling: ~
       loggingEnabled: "ଡିବଗ୍ ଲଗିଂ ସକ୍ରିୟ ଅଛି"
     contextMenu:
       cut: "କାଟନ୍ତୁ (Cut)"
@@ -174,7 +175,24 @@ app:
       saveButton: "ସେଟିଙ୍ଗସ ସେଭ୍ କରନ୍ତୁ"
       sampleValue: "ନମୁନା ମୂଲ୍ୟ"
       arrayItemAdd: "ନୂତନ ଆଇଟମ୍ ଯୋଡ଼ନ୍ତୁ"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "ଆଇଟମ୍ ହଟାନ୍ତୁ"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "ଟେକ୍ସଟ୍ ମୋଡ୍"
       uiMode: "ଭିଜୁଆଲ୍ ମୋଡ୍"
       yamlInvalid: "ଅବୈଧ YAML ଫର୍ମାଟ୍"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "ପରିବର୍ତ୍ତନଗୁଡ଼ିକୁ ହଟାନ୍ତୁ"
       unsavedChangesStay: "ଏଡିଟ୍ ଜାରି ରଖନ୍ତୁ"
       readOnlyPreview: "ଏହା ମଡ୍ ସେଟିଙ୍ଗସର ଏକ ପ୍ରିଭ୍ୟୁ। ସେଟିଙ୍ଗସ କନଫିଗର କରିବା ପାଇଁ ମଡ୍ ଇନଷ୍ଟଲ୍ କରନ୍ତୁ।"
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "ସୋର୍ସ କୋଡ୍ (Source Code)"
       noData: "ମଡ୍ ସୋର୍ସ ଅନୁପସ୍ଥିତ।"
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "ଚେଞ୍ଜଲଗ୍"
       loadingFailed: "ଚେଞ୍ଜଲଗ୍ ଲୋଡ୍ ହେବାରେ ବିଫଳ। GitHub ରେ ଦେଖିବା ପାଇଁ <0>ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ</0>।"
+      olderEntries: ~
     advanced:
       title: "ଆଡଭାନ୍ସଡ୍"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "ସ୍ପ୍ଲିଟ୍ ଭ୍ୟୁ"
       expandLines_one: "ଗୋଟିଏ ଲୁକ୍କାୟିତ ଧାଡ଼ି ଦେଖାନ୍ତୁ"
       expandLines_other: "{{count}} ଟି ଲୁକ୍କାୟିତ ଧାଡ଼ି ଦେଖାନ୍ତୁ"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "ମଡ୍ ଖୋଜନ୍ତୁ..."
     placeholderWithHint: "ମଡ୍ ଖୋଜନ୍ତୁ... ଫୋକସ୍ କରିବା ପାଇଁ '/' ଟିପନ୍ତୁ"
@@ -308,6 +361,10 @@ app:
       title: "ଅଧିକ ଆଡଭାନ୍ସଡ୍ ସେଟିଙ୍ଗସ"
       restartNotice: "ସେଟିଙ୍ଗସ ପ୍ରୟୋଗ କରିବା ପାଇଁ Windhawk ପୁନର୍ବାର ଆରମ୍ଭ ହେବ।"
       saveButton: "ସେଭ୍ କରନ୍ତୁ ଏବଂ Windhawk ପୁନର୍ବାର ଆରମ୍ଭ କରନ୍ତୁ"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk ଆପ୍ ଲଗିଂ ବିସ୍ତୃତି"
       engineLoggingTitle: "Windhawk ଇଞ୍ଜିନ୍ ଲଗିଂ ବିସ୍ତୃତି"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

@@ -87,6 +87,7 @@ app:
       updating: "Oppdaterer..."
       installing: "Installerer..."
       compiling: "Kompilerer..."
+      canceling: "Avbryter..."
       loggingEnabled: "Feilsøkingslogging er aktivert"
     contextMenu:
       cut: "Klipp ut"
@@ -174,7 +175,24 @@ app:
       saveButton: "Lagre innstillinger"
       sampleValue: "Eksempelverdi"
       arrayItemAdd: "Legg til nytt element"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Fjern element"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Tekstmodus"
       uiMode: "Visuell modus"
       yamlInvalid: "Ugyldig YAML-format"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Forkast endringer"
       unsavedChangesStay: "Fortsett å redigere"
       readOnlyPreview: "Dette er en forhåndsvisning av moddens innstillinger. Installer modden for å konfigurere innstillingene."
+      compactView: ~
+      wordWrap: ~
       expand: "Vis mer"
       collapse: "Skjul"
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Kildekode"
       noData: "Mod-kildekoden mangler."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Endringslogg"
       loadingFailed: "Kunne ikke laste inn endringsloggen. <0>Klikk her</0> for å se den på GitHub."
+      olderEntries: ~
     advanced:
       title: "Avansert"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Delt visning"
       expandLines_one: "Vis én skjult linje"
       expandLines_other: "Vis {{count}} skjulte linjer"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Søk etter mods..."
     placeholderWithHint: "Søk etter mods... trykk '/' for å fokusere"
@@ -308,6 +361,10 @@ app:
       title: "Flere avanserte innstillinger"
       restartNotice: "Windhawk startes på nytt for å ta i bruk innstillingene."
       saveButton: "Lagre og start Windhawk på nytt"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Loggdetaljnivå for Windhawk"
       engineLoggingTitle: "Loggdetaljnivå for Windhawk-motoren"
@@ -364,7 +421,6 @@ app:
         trustTitle: "Vær forsiktig"
         trustDescription: "Ved import installeres og kjøres hver eneste mod i denne filen på datamaskinen din, akkurat som om du installerte dem selv. Ondsinnede mods kan skade datamaskinen din eller krenke personvernet ditt, så importer kun filer du stoler på."
         importButton: "Importer"
-        cancelling: "Avbryter..."
         overwriteWarning_one: "{{count}} valgt mod er allerede installert og vil bli overskrevet."
         overwriteWarning_other: "{{count}} valgte mods er allerede installert og vil bli overskrevet."
         noPrecompiledTitle: "Tving lokal kompilering"

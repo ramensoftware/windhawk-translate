@@ -87,6 +87,7 @@ app:
       updating: "Ažuriram..."
       installing: "Instaliram..."
       compiling: "Kompiliram..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Izreži"
@@ -175,7 +176,24 @@ app:
       saveButton: "Spremi postavke"
       sampleValue: "Uzorak vrijednosti"
       arrayItemAdd: "Dodaj novu stavku"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Ukloni stavku"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -187,8 +205,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Izvorni kôd"
       noData: "Nedostaje izvorni kôd dodatka."
@@ -196,6 +222,7 @@ app:
     changelog:
       title: "Povijest promjena"
       loadingFailed: "Učitavanje povijesti promjena nije uspjelo. <0>Kliknite ovdje</0> za pregled na GitHubu."
+      olderEntries: ~
     advanced:
       title: "Napredno"
       debugLogging:
@@ -231,6 +258,32 @@ app:
       expandLines_one: "Proširi jednu skrivenu liniju"
       expandLines_other: "Proširi {{count}} skrivenih linija"
       expandLines_few: "Proširi {{count}} skrivene linije"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Pretraži dodatke..."
     placeholderWithHint: ~
@@ -310,6 +363,10 @@ app:
       title: "Još naprednih postavki"
       restartNotice: "Windhawk će se ponovno pokrenuti kako bi primijenio postavke."
       saveButton: "Spremi i ponovno pokreni Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Razina zapisivanja u Windhawku"
       engineLoggingTitle: "Razina zapisivanja u Windhawk pogonu"
@@ -366,7 +423,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

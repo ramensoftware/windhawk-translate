@@ -87,6 +87,7 @@ app:
       updating: "Yangilanmoqda..."
       installing: "O‘rnatilmoqda..."
       compiling: "Kompilyatsiya qilinmoqda..."
+      canceling: ~
       loggingEnabled: "Nosozliklarni tuzatish jurnali (debug logging) yoqilgan"
     contextMenu:
       cut: "Kesish"
@@ -174,7 +175,24 @@ app:
       saveButton: "Sozlamalarni saqlash"
       sampleValue: "Namuna qiymati"
       arrayItemAdd: "Yangi element qo‘shish"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Elementni olib tashlash"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Matnli rejim"
       uiMode: "Vizual rejim"
       yamlInvalid: "YAML formati noto‘g‘ri"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "O‘zgarishlarni bekor qilish"
       unsavedChangesStay: "Tahrirlashda davom etish"
       readOnlyPreview: "Bu mod sozlamalarining oldindan ko‘rilishi. Sozlamalarni o‘zgartirish uchun modni o‘rnating."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Manba kodi"
       noData: "Mod manbasi mavjud emas."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "O‘zgarishlar jurnali"
       loadingFailed: "O‘zgarishlar jurnalini yuklab bo‘lmadi. GitHub'da ko‘rish uchun <0>bu yerga bosing</0>."
+      olderEntries: ~
     advanced:
       title: "Kengaytirilgan"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Alohida ko‘rinish"
       expandLines_one: "Bitta yashirin qatorni ochish"
       expandLines_other: "{{count}} ta yashirin qatorni ochish"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Modlarni qidirish..."
     placeholderWithHint: "Modlarni qidirish... fokuslash uchun '/' bosing"
@@ -308,6 +361,10 @@ app:
       title: "Boshqa kengaytirilgan sozlamalar"
       restartNotice: "Sozlamalarni qo‘llash uchun Windhawk qayta ishga tushiriladi."
       saveButton: "Saqlash va Windhawk'ni qayta ishga tushirish"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk jurnallarining batafsilligi"
       engineLoggingTitle: "Windhawk dvigateli jurnallarining batafsilligi"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

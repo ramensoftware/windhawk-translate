@@ -87,6 +87,7 @@ app:
       updating: "புதுப்பிக்கிறது..."
       installing: "நிறுவுகிறது..."
       compiling: "கணக்கிடுகிறது..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "வெட்டு"
@@ -174,7 +175,24 @@ app:
       saveButton: "அமைப்புகளைச் சேமிக்கவும்"
       sampleValue: "மாதிரி மதிப்பு"
       arrayItemAdd: "புதிய உருப்படியைச் சேர்"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "உருப்படியை அகற்று"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "மூல குறியீடு"
       noData: "மாற்றத்தின் மூலக்குறியீடு இல்லை."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "மாற்றப்பட்ட பதிவுகள்"
       loadingFailed: "மாற்றப்பட்ட பதிவுகளை ஏற்ற முடியவில்லை. <0>இங்கே கிளிக் செய்யவும்</0> GitHub இல் பார்க்க."
+      olderEntries: ~
     advanced:
       title: "மேம்பட்டவை"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "பிளவுபார்வை"
       expandLines_one: "ஒரு மறைக்கப்பட்ட வரியை விரிவாக்கவும்"
       expandLines_other: "{{count}} மறைக்கப்பட்ட வரிகளை விரிவாக்கவும்"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "மாற்றங்களை தேடவும்..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "மேலும் மேம்பட்ட அமைப்புகள்"
       restartNotice: "அமைப்புகளை செயல்படுத்த விண்ட்ஹாக் மீண்டும் துவக்கப்படும்."
       saveButton: "சேமித்து விண்ட்ஹாக் ஐ மீண்டும் துவக்கு"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "விண்ட்ஹாக் பதிவு விவரக்குறைவு"
       engineLoggingTitle: "விண்ட்ஹாக் என்ஜின் பதிவு விவரக்குறைவு"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

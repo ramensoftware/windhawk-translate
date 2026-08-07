@@ -87,6 +87,7 @@ app:
       updating: "Bezig met updaten…"
       installing: "Bezig met installeren…"
       compiling: "Bezig met compileren…"
+      canceling: ~
       loggingEnabled: "Debug loggen is ingeschakeld"
     contextMenu:
       cut: "Knippen"
@@ -174,7 +175,24 @@ app:
       saveButton: "Instellingen opslaan"
       sampleValue: "Voorbeeldwaarde"
       arrayItemAdd: "Nieuw item toevoegen"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Item verwijderen"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Tekstuele modus"
       uiMode: "Visuele modus"
       yamlInvalid: "Ongeldig YAML-formaat"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Wijzigingen negeren"
       unsavedChangesStay: "Doorgaan met bewerken"
       readOnlyPreview: "Dit is een voorbeeld van de instellingen van de mod. Installeer de mod om de instellingen te configureren."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Broncode"
       noData: "Bron van mod ontbreekt."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Wijzigingslog"
       loadingFailed: "Wijzigingslog laden mislukt. <0>Klik hier</0> om het op GitHub te bekijken."
+      olderEntries: ~
     advanced:
       title: "Geavanceerd"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Gesplitste weergave"
       expandLines_one: "Eén verborgen regel uitvouwen"
       expandLines_other: "{{count}} verborgen regels uitvouwen"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Naar mods zoeken…"
     placeholderWithHint: "Zoeken naar mods… typ '/' om te focussen"
@@ -308,6 +361,10 @@ app:
       title: "Meer geavanceerde instellingen"
       restartNotice: "Windhawk wordt opnieuw opgestart om de instellingen toe te passen."
       saveButton: "Windhawk opslaan en opnieuw opstarten"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk logniveau"
       engineLoggingTitle: "Windhawk engine logniveau"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

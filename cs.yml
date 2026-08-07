@@ -87,6 +87,7 @@ app:
       updating: "Aktualizuji..."
       installing: "Instaluji..."
       compiling: "Kompiluji..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Vystřihnout"
@@ -176,7 +177,24 @@ app:
       saveButton: "Uložit nastavení"
       sampleValue: "Standardní hodnota"
       arrayItemAdd: "Přidat novou položku"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Odstranit položku"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -188,8 +206,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Zdrojový kód"
       noData: "Chybí zdrojový kód."
@@ -197,6 +223,7 @@ app:
     changelog:
       title: "Seznam změn"
       loadingFailed: "Nelze načíst protokol změn. Kliknutím <0>sem</0> jej zobrazíte na GitHubu."
+      olderEntries: ~
     advanced:
       title: "Další"
       debugLogging:
@@ -233,6 +260,32 @@ app:
       expandLines_other: "Rozbalit {{count}} skrytých řádků"
       expandLines_few: "Rozbalit {{count}} skryté řádky"
       expandLines_many: "Rozbalit {{count}} skrytých řádků"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Hledat úpravy..."
     placeholderWithHint: ~
@@ -312,6 +365,10 @@ app:
       title: "Další pokročilé možnosti"
       restartNotice: "Windhawk bude restartován, aby bylo možné použít nastavení."
       saveButton: "Uložit a restartovat Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk Verbose Logging"
       engineLoggingTitle: "Podrobné protokolování motoru Windhawk"
@@ -368,7 +425,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

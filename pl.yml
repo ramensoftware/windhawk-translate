@@ -87,6 +87,7 @@ app:
       updating: "Aktualizowanie..."
       installing: "Instalowanie..."
       compiling: "Kompilowanie..."
+      canceling: ~
       loggingEnabled: "Logi debugowania są włączone"
     contextMenu:
       cut: "Wytnij"
@@ -176,7 +177,24 @@ app:
       saveButton: "Zapisz Ustawienia"
       sampleValue: "Przykładowa Wartość"
       arrayItemAdd: "Dodaj element"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Usuń element"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Tryb tekstowy"
       uiMode: "Tryb wizualny"
       yamlInvalid: "Nieprawidłowy format YAML"
@@ -188,8 +206,16 @@ app:
       unsavedChangesLeave: "Porzuć zmiany"
       unsavedChangesStay: "Zmieniaj dalej"
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Kod źródłowy"
       noData: "Kod źródłowy moda jest niedostępny."
@@ -197,6 +223,7 @@ app:
     changelog:
       title: "Dziennik zmian"
       loadingFailed: "Ładowanie dziennika zmian zakończone niepowodzeniem. <0>Kliknij tutaj</0> aby zobaczyć na GitHubie."
+      olderEntries: ~
     advanced:
       title: "Zaawansowane"
       debugLogging:
@@ -233,6 +260,32 @@ app:
       expandLines_other: "Rozwiń {{count}} ukrytych linii"
       expandLines_few: "Rozwiń {{count}} ukryte linie"
       expandLines_many: "Rozwiń {{count}} ukrytych linii"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Szukaj modów.."
     placeholderWithHint: ~
@@ -312,6 +365,10 @@ app:
       title: "Więcej ustawień zaawansowanych"
       restartNotice: "Windhawk musi zostać uruchomiony ponownie, aby zastosować ustawienia."
       saveButton: "Zapisz i uruchom ponownie Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Szczegółowe logi Windhawk"
       engineLoggingTitle: "Szczegółowe logi silnika Windhawk"
@@ -368,7 +425,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

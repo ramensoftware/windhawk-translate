@@ -87,6 +87,7 @@ app:
       updating: "Opdaterer..."
       installing: "Installerer..."
       compiling: "Kompilerer..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Klip"
@@ -174,7 +175,24 @@ app:
       saveButton: "Gem indstillinger"
       sampleValue: "Eksempelværdi"
       arrayItemAdd: "Tilføj ny genstand"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Fjern genstand"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Kildekode"
       noData: "Modifikationskilde mangler."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Ændringslog"
       loadingFailed: "Indlæsning af ændringslog fejlede. <0>Klik her</0> for at vise den på GitHub."
+      olderEntries: ~
     advanced:
       title: "Avanceret"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Delt visning"
       expandLines_one: "Udvid en gemt linje"
       expandLines_other: "Udvid {{count}} gemte linjer"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Søg efter modifikationer..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "Flere avancerede indstillinger"
       restartNotice: "Windhawk bliver genstartet for at anvende indstillingerne."
       saveButton: "Gem og genstart Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk logverbositet"
       engineLoggingTitle: "Windhawk-motor logverbositet"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

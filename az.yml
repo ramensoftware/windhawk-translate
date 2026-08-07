@@ -87,6 +87,7 @@ app:
       updating: "Yenilənir..."
       installing: "Quraşdırılır..."
       compiling: "Kompilyasiya olunur..."
+      canceling: ~
       loggingEnabled: "Sazlama jurnalı aktivdir"
     contextMenu:
       cut: "Kəs"
@@ -174,7 +175,24 @@ app:
       saveButton: "Parametrləri saxla"
       sampleValue: "Nümunə dəyər"
       arrayItemAdd: "Yeni element əlavə et"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Elementi sil"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Mətn rejimi"
       uiMode: "İnterfeys rejimi"
       yamlInvalid: "Yanlış YAML məlumatı"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Çıx"
       unsavedChangesStay: "Qal"
       readOnlyPreview: "Yalnız oxunan önbaxış"
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Mənbə kodu"
       noData: "Modun mənbə kodu yoxdur."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Dəyişikliklər"
       loadingFailed: "Dəyişikliklər yüklənə bilmədi. GitHub-da baxmaq üçün <0>buraya klikləyin</0>."
+      olderEntries: ~
     advanced:
       title: "Genişləndirilmiş"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Bölünmüş görünüş"
       expandLines_one: "Bir gizli sətri genişləndir"
       expandLines_other: "{{count}} gizli sətri genişləndir"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Modları axtar..."
     placeholderWithHint: "Mod axtarın... fokuslanmaq üçün '/' düyməsini basın"
@@ -308,6 +361,10 @@ app:
       title: "Daha çox genişləndirilmiş parametr"
       restartNotice: "Parametrləri tətbiq etmək üçün Windhawk yenidən başladılacaq."
       saveButton: "Saxla və Windhawk-ı yenidən başlat"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk jurnal qeydinin ətraflılığı"
       engineLoggingTitle: "Windhawk mühərrik jurnalının ətraflılıq səviyyəsi"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

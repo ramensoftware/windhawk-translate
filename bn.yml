@@ -87,6 +87,7 @@ app:
       updating: "আপডেট হচ্ছে..."
       installing: "ইনস্টল হচ্ছে..."
       compiling: "কম্পাইল হচ্ছে..."
+      canceling: ~
       loggingEnabled: "ডিবাগ লগিং চালু আছে"
     contextMenu:
       cut: "কাট"
@@ -174,7 +175,24 @@ app:
       saveButton: "সেটিংস সেভ করুন"
       sampleValue: "স্যাম্পল মান"
       arrayItemAdd: "নতুন আইটেম যোগ করুন"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "আইটেম সরান"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "টেক্সট মোড"
       uiMode: "ভিজ্যুয়াল মোড"
       yamlInvalid: "অকার্যকর YAML ফরম্যাট"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "পরিবর্তন বাতিল করুন"
       unsavedChangesStay: "এডিট করতে থাকুন"
       readOnlyPreview: "এটি মড সেটিংসের একটি প্রিভিউ। সেটিংস কনফিগার করতে মডটি ইনস্টল করুন।"
+      compactView: ~
+      wordWrap: ~
       expand: "সম্প্রসারিত করুন"
       collapse: "সংকুচিত করুন"
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "সোর্স কোড"
       noData: "মডের সোর্স পাওয়া যায়নি।"
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "পরিবর্তনের তালিকা (Changelog)"
       loadingFailed: "চেঞ্জলগ লোড করা সম্ভব হয়নি। GitHub-এ দেখতে <0>এখানে ক্লিক করুন</0>।"
+      olderEntries: ~
     advanced:
       title: "অ্যাডভান্সড"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "স্প্লিট ভিউ"
       expandLines_one: "১টি লুকানো লাইন দেখান"
       expandLines_other: "{{count}}টি লুকানো লাইন দেখান"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "মড খুঁজুন..."
     placeholderWithHint: "মড খুঁজুন... কার্সার নিতে '/' চাপুন"
@@ -308,6 +361,10 @@ app:
       title: "আরও অ্যাডভান্সড সেটিংস"
       restartNotice: "সেটিংস প্রয়োগ করতে Windhawk রিস্টার্ট করা হবে।"
       saveButton: "সেভ করুন এবং Windhawk রিস্টার্ট করুন"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk লগিং পরিধি"
       engineLoggingTitle: "Windhawk ইঞ্জিন লগিং পরিধি"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

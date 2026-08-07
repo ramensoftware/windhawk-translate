@@ -87,6 +87,7 @@ app:
       updating: "正在更新..."
       installing: "正在安裝..."
       compiling: "正在編譯..."
+      canceling: ~
       loggingEnabled: "偵錯記錄已啟用"
     contextMenu:
       cut: "剪下"
@@ -174,7 +175,24 @@ app:
       saveButton: "保存設定"
       sampleValue: "範例值"
       arrayItemAdd: "新增項目"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "移除項目"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "文字模式"
       uiMode: "視覺化模式"
       yamlInvalid: "無效的 YAML 格式"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "放棄變更"
       unsavedChangesStay: "繼續編輯"
       readOnlyPreview: "正在預覽模組設定，請安裝模組以進行配置。"
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "原始碼"
       noData: "模組原始碼缺失。"
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "更新日誌"
       loadingFailed: "加載更新日誌失敗。<0>點擊這裡</0> 在 GitHub 上查看。"
+      olderEntries: ~
     advanced:
       title: "進階"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "分割視窗"
       expandLines_one: "展開一條隱藏的行"
       expandLines_other: "展開 {{count}} 條隱藏的行"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "搜尋模組..."
     placeholderWithHint: "搜尋模組... 按 / 鍵聚焦"
@@ -308,6 +361,10 @@ app:
       title: "更多進階設定"
       restartNotice: "Windhawk 將重新啟動以應用設定。"
       saveButton: "保存並重新啟動 Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk 日誌詳細程度"
       engineLoggingTitle: "Windhawk 引擎日誌詳細程度"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

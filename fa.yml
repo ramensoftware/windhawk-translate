@@ -87,6 +87,7 @@ app:
       updating: "در حال بروزرسانی..."
       installing: "در حال نصب..."
       compiling: "در حال کامپایل..."
+      canceling: ~
       loggingEnabled: "ثبت وقایع دیباگ (Debug logging) فعال است"
     contextMenu:
       cut: "برش"
@@ -174,7 +175,24 @@ app:
       saveButton: "ذخیره تنظیمات"
       sampleValue: "مقدار نمونه"
       arrayItemAdd: "افزودن مورد جدید"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "حذف مورد"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "حالت متنی"
       uiMode: "حالت بصری"
       yamlInvalid: "فرمت YAML نامعتبر"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "نادیده گرفتن تغییرات"
       unsavedChangesStay: "ادامه ویرایش"
       readOnlyPreview: "این پیش‌نمایشی از تنظیمات ماد است. برای پیکربندی تنظیمات، ماد را نصب کنید."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "کد منبع"
       noData: "منبع ماد موجود نیست."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "لیست تغییرات"
       loadingFailed: "بارگذاری لیست تغییرات ناموفق بود. <0>اینجا کلیک کنید</0> تا آن را در گیت‌هاب ببینید."
+      olderEntries: ~
     advanced:
       title: "پیشرفته"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "نمای دو قسمتی"
       expandLines_one: "باز کردن یک خط پنهان"
       expandLines_other: "باز کردن {{count}} خط پنهان"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "جستجوی مادها..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "تنظیمات پیشرفته بیشتر"
       restartNotice: "ویندهاک برای اعمال تنظیمات مجدداً راه‌اندازی خواهد شد."
       saveButton: "ذخیره و راه‌اندازی مجدد ویندهاک"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "جزئیات لاگ ویندهاک"
       engineLoggingTitle: "جزئیات لاگ موتور ویندهاک"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

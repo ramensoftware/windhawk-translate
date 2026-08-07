@@ -87,6 +87,7 @@ app:
       updating: "Actualizando..."
       installing: "Instalando..."
       compiling: "Compilando..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Cortar"
@@ -175,7 +176,24 @@ app:
       saveButton: "Guardar ajustes"
       sampleValue: "Valor de muestra"
       arrayItemAdd: "Agregar nuevo elemento"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Remover elemento"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -187,8 +205,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Código fuente"
       noData: "Falta la fuente de mod."
@@ -196,6 +222,7 @@ app:
     changelog:
       title: "Registro de cambios"
       loadingFailed: "Error al cargar el registro de cambios. <0>Haga clic aquí</0> para verlo en GitHub."
+      olderEntries: ~
     advanced:
       title: "Avanzado"
       debugLogging:
@@ -231,6 +258,32 @@ app:
       expandLines_one: "Expandir una línea oculta"
       expandLines_other: "Expandir {{count}} líneas ocultas"
       expandLines_many: "Expandir {{count}} líneas ocultas"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Buscar en mods..."
     placeholderWithHint: ~
@@ -310,6 +363,10 @@ app:
       title: "Más configuraciones avanzadas"
       restartNotice: "Windhawk se reiniciará para aplicar la configuración."
       saveButton: "Guardar y reiniciar Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Detalle de registro de Windhawk"
       engineLoggingTitle: "Detalle de registro del motor Windhawk"
@@ -366,7 +423,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

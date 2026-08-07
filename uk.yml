@@ -87,6 +87,7 @@ app:
       updating: "Оновлення..."
       installing: "Встановлення..."
       compiling: "Компіляція..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Вирізати"
@@ -176,7 +177,24 @@ app:
       saveButton: "Зберегти зміни"
       sampleValue: "Стандартне значення"
       arrayItemAdd: "Додати"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Видалити"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -188,8 +206,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Вихідний код"
       noData: "Вихідний код моду відсутній."
@@ -197,6 +223,7 @@ app:
     changelog:
       title: "Журнал змін"
       loadingFailed: "Не вдалося завантажити журнал змін. <0>Натисніть тут</0> щоб переглянути його на GitHub."
+      olderEntries: ~
     advanced:
       title: "Просунуті"
       debugLogging:
@@ -233,6 +260,32 @@ app:
       expandLines_other: "Розгорнути {{count}} прихованих рядків"
       expandLines_few: "Розгорнути {{count}} приховані рядки"
       expandLines_many: "Розгорнути {{count}} прихованих рядків"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Шукати моди..."
     placeholderWithHint: ~
@@ -312,6 +365,10 @@ app:
       title: "Більше просунутих налаштувань"
       restartNotice: "Windhawk перезавантажиться для застосування налаштувань."
       saveButton: "Зберегти зміни та перезавантажити Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Докладне логування Windhawk"
       engineLoggingTitle: "Докладне логування движку Windhawk"
@@ -368,7 +425,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

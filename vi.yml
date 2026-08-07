@@ -87,6 +87,7 @@ app:
       updating: "Đang cập nhật..."
       installing: "Đang cài đặt..."
       compiling: "Đang biên dịch..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Cắt"
@@ -174,7 +175,24 @@ app:
       saveButton: "Lưu cài đặt"
       sampleValue: "Giá trị mẫu"
       arrayItemAdd: "Thêm mục mới"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Gỡ bỏ mục"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Mã nguồn"
       noData: "Mã nguồn mod bị thiếu."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Nhật ký thay đổi"
       loadingFailed: "Tải nhật ký thay đổi thất bại. <0>Nhấp vào đây</0> để xem trên GitHub."
+      olderEntries: ~
     advanced:
       title: "Nâng cao"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Chế độ chia đôi"
       expandLines_one: "Mở rộng một dòng bị ẩn"
       expandLines_other: "Mở rộng {{count}} dòng bị ẩn"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Tìm kiếm mod..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "Cài đặt nâng cao hơn"
       restartNotice: "Windhawk sẽ được khởi động lại để áp dụng các cài đặt."
       saveButton: "Lưu và khởi động lại Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Mức độ ghi nhật ký của Windhawk"
       engineLoggingTitle: "Mức độ ghi nhật ký của động cơ Windhawk"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

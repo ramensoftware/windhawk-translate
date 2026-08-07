@@ -87,6 +87,7 @@ app:
       updating: "更新中..."
       installing: "安装中..."
       compiling: "编译中..."
+      canceling: ~
       loggingEnabled: "调试日志已启用"
     contextMenu:
       cut: "剪切"
@@ -174,7 +175,24 @@ app:
       saveButton: "保存"
       sampleValue: "示例值"
       arrayItemAdd: "增加新的条目"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "移除条目"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "文本模式"
       uiMode: "可视化模式"
       yamlInvalid: "无效的 YAML 格式"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "放弃更改"
       unsavedChangesStay: "继续编辑"
       readOnlyPreview: "正在预览模组设置，安装模组以进行配置。"
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "源代码"
       noData: "无源代码"
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "更新日志"
       loadingFailed: "无法加载更新日志。<0>点击此处</0>访问Github。"
+      olderEntries: ~
     advanced:
       title: "高级设置"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "拆分视图"
       expandLines_one: "展开1行隐藏行"
       expandLines_other: "展开{{count}}行隐藏行"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "搜索您想要的模组..."
     placeholderWithHint: "搜索您想要的模组... 按 / 键聚焦"
@@ -308,6 +361,10 @@ app:
       title: "更多高级设置"
       restartNotice: "Windhawk将重启以应用软件设置。"
       saveButton: "保存并重启Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk日志等级"
       engineLoggingTitle: "Windhawk引擎的日志等级"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

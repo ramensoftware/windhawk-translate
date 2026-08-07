@@ -87,6 +87,7 @@ app:
       updating: "Se actualizează..."
       installing: "Se instalează..."
       compiling: "Se compilează..."
+      canceling: ~
       loggingEnabled: "Jurnalele pentru depanare sunt activate"
     contextMenu:
       cut: "Decupare"
@@ -175,7 +176,24 @@ app:
       saveButton: "Salvează setările"
       sampleValue: "Valoarea eșantionului"
       arrayItemAdd: "Adaugă un nou element"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Elimină element"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Mod textual"
       uiMode: "Mod vizual"
       yamlInvalid: "Format YAML nevalid"
@@ -187,8 +205,16 @@ app:
       unsavedChangesLeave: "Renunță la modificări"
       unsavedChangesStay: "Continuă editarea"
       readOnlyPreview: "Aceasta este o previzualizare a setărilor modului. Instalează modul pentru a-i configura setările."
+      compactView: ~
+      wordWrap: ~
       expand: "Extinde"
       collapse: "Restrânge"
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Cod sursă"
       noData: "Codul sursă lipsește."
@@ -196,6 +222,7 @@ app:
     changelog:
       title: "Jurnal de modificări"
       loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Clic aici</0> pentru a-l vedea pe GitHub."
+      olderEntries: ~
     advanced:
       title: "Avansat"
       debugLogging:
@@ -231,6 +258,32 @@ app:
       expandLines_one: "Extinde o linie ascunsă"
       expandLines_other: "Extinde {{count}} de linii ascunse"
       expandLines_few: "Extinde {{count}} linii ascunse"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Caută moduri..."
     placeholderWithHint: "Caută moduri... tastează '/' pentru focus"
@@ -310,6 +363,10 @@ app:
       title: "Mai multe setări avansate"
       restartNotice: "Windhawk va fi repornit pentru a aplica setările."
       saveButton: "Salvează și repornește Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Verbozitatea scrierii în jurnal pentru Windhawk"
       engineLoggingTitle: "Verbozitatea engine-ului de scriere în jurnal Windhawk"
@@ -366,7 +423,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

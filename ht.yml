@@ -87,6 +87,7 @@ app:
       updating: "Mete ajou..."
       installing: "Enstale..."
       compiling: "Konpile..."
+      canceling: ~
       loggingEnabled: "Anrejistreman debogaj se aktif"
     contextMenu:
       cut: "Koupe"
@@ -174,7 +175,24 @@ app:
       saveButton: "Sove paramèt"
       sampleValue: "Valè echantiyon"
       arrayItemAdd: "Ajoute nouvo atik"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Retire atik"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Mòd tèkstal"
       uiMode: "Mòd vizyèl"
       yamlInvalid: "Fòma YAML pa valab"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Jete Chanjman Yo"
       unsavedChangesStay: "Kenbe Modifye"
       readOnlyPreview: "Sa a se yon apèsi paramèt mod yo. Enstale mod la pou konfigire paramèt."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Kòd Sous"
       noData: "Kòd sous ap mankan."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Jounal-chanjman"
       loadingFailed: "Echwe pou chaje jounal-chanjman. <0>Klike isit</0> pou wè li sou GitHub."
+      olderEntries: ~
     advanced:
       title: "Avanse"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Vi Divize"
       expandLines_one: "Elaji yon liy ki kache"
       expandLines_other: "Elaji {{count}} liy ki kache"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Chèche mod yo..."
     placeholderWithHint: "Chèche mod yo... tape '/' pou fokis"
@@ -308,6 +361,10 @@ app:
       title: "Plis paramèt avanse"
       restartNotice: "Windhawk pral rekòmanse pou aplike paramèt yo."
       saveButton: "Sove ak rekòmanse Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Vèbosite anrejistreman Windhawk"
       engineLoggingTitle: "Vèbosite anrejistreman motè Windhawk"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

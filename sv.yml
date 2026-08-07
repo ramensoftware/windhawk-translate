@@ -87,6 +87,7 @@ app:
       updating: "Uppdaterar..."
       installing: "Installerar..."
       compiling: "Kompilerar..."
+      canceling: ~
       loggingEnabled: "Felsökningsloggning är aktiverad"
     contextMenu:
       cut: "Klipp ut"
@@ -174,7 +175,24 @@ app:
       saveButton: "Spara inställningar"
       sampleValue: "Exempelvärde"
       arrayItemAdd: "Lägg till nytt objekt"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Ta bort objekt"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Textläge"
       uiMode: "Visuellt läge"
       yamlInvalid: "Ogiltigt YAML-format"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Ignorera ändringar"
       unsavedChangesStay: "Fortsätt redigera"
       readOnlyPreview: "Det här är en förhandsgranskning av moddens inställningar. Installera modden för att konfigurera inställningar."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Källkod"
       noData: "Moddens källa saknas."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Ändringslogg"
       loadingFailed: "Det gick inte att läsa in ändringsloggen. <0>Klicka här</0> för att visa den på GitHub."
+      olderEntries: ~
     advanced:
       title: "Avancerat"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Delad vy"
       expandLines_one: "Expandera en dold rad"
       expandLines_other: "Expandera {{count}} dolda rader"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Sök efter moddar..."
     placeholderWithHint: "Sök efter moddar... tryck 'Skift' + '7' för att fokusera"
@@ -309,6 +362,10 @@ app:
       title: "Fler avancerade inställningar"
       restartNotice: "Windhawk kommer att startas om för att tillämpa inställningarna."
       saveButton: "Spara och starta om Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk-loggningsdetaljnivå"
       engineLoggingTitle: "Windhawk-motorns loggningsdetaljnivå"
@@ -365,7 +422,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

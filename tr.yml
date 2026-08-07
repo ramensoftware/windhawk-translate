@@ -87,6 +87,7 @@ app:
       updating: "Güncelleniyor..."
       installing: "Yükleniyor..."
       compiling: "Derleniyor..."
+      canceling: ~
       loggingEnabled: "Hata ayıklama günlüğü etkin"
     contextMenu:
       cut: "Kes"
@@ -174,7 +175,24 @@ app:
       saveButton: "Ayarları kaydet"
       sampleValue: "Örnek değer"
       arrayItemAdd: "Yeni öğe ekle"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Öğeyi kaldır"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Metin modu"
       uiMode: "Arayüz modu"
       yamlInvalid: "Geçersiz YAML verisi"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Ayrıl"
       unsavedChangesStay: "Kal"
       readOnlyPreview: "Salt okunur önizleme"
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Kaynak Kodu"
       noData: "Mod kaynağı eksik."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Değişiklikler"
       loadingFailed: "Değişiklikler yüklenemedi. GitHub'da görüntülemek için <0>burayı tıklayın</0>."
+      olderEntries: ~
     advanced:
       title: "Gelişmiş"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Bölünmüş görünüm"
       expandLines_one: "Bir gizli satırı genişlet"
       expandLines_other: "{{count}} gizli satırı genişlet"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Modları ara..."
     placeholderWithHint: "Mod arayın... odaklanmak için '/' tuşuna basın"
@@ -308,6 +361,10 @@ app:
       title: "Daha fazla gelişmiş ayar"
       restartNotice: "Windhawk, ayarları uygulamak için yeniden başlatılacak."
       saveButton: "Kaydet ve Windhawk'ı yeniden başlat"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk günlüğe kaydetme ayrıntısı"
       engineLoggingTitle: "Windhawk motor günlüğü ayrıntı düzeyi"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

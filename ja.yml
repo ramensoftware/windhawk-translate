@@ -87,6 +87,7 @@ app:
       updating: "更新中..."
       installing: "インストール中..."
       compiling: "コンパイル中..."
+      canceling: ~
       loggingEnabled: "デバッグログが有効です"
     contextMenu:
       cut: "切り取り"
@@ -174,7 +175,24 @@ app:
       saveButton: "設定を保存"
       sampleValue: "サンプルの値"
       arrayItemAdd: "新規項目を追加"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "項目を削除"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Textual モード"
       uiMode: "ビジュアルモード"
       yamlInvalid: "無効な YAML 形式"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "変更を破棄"
       unsavedChangesStay: "編集を続行"
       readOnlyPreview: "これは Mod 設定のプレビューです。設定を変更するには Mod をインストールしてください。"
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "ソースコード"
       noData: "Mod のソースはありません。"
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "更新履歴"
       loadingFailed: "更新履歴の読み込みに失敗しました。GitHub で表示するには、<0>ここをクリック</0>してください。"
+      olderEntries: ~
     advanced:
       title: "高度"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "分割で表示"
       expandLines_one: "1 個の隠れた行を展開"
       expandLines_other: "{{count}} 個の隠れた行を展開"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Mod を検索..."
     placeholderWithHint: "Mod を検索... 「/」キーでフォーカス"
@@ -308,6 +361,10 @@ app:
       title: "その他の高度な設定"
       restartNotice: "Windhawk を再起動すると設定が適用されます。"
       saveButton: "保存して Windhawk を再起動"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk ログの冗長性"
       engineLoggingTitle: "Windhawk エンジンのログの冗長性"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

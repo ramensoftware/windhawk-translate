@@ -87,6 +87,7 @@ app:
       updating: "กำลังอัปเดต..."
       installing: "กำลังติดตั้ง..."
       compiling: "กำลังคอมไพล์..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "ตัด"
@@ -174,7 +175,24 @@ app:
       saveButton: "บันทึกการตั้งค่า"
       sampleValue: "ค่าตัวอย่าง"
       arrayItemAdd: "เพิ่มไอเท็มใหม่"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "ลบไอเท็ม"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "โค้ดต้นฉบับ"
       noData: "ไม่มีโค้ดต้นฉบับของม็อดนี้"
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "บันทึกการเปลี่ยนแปลง"
       loadingFailed: "ไม่สามารถโหลดบันทึกการเปลี่ยนแปลงได้ <0>กดที่นี่</0>เพื่อดูบันทึกการเปลี่ยนแปลงบน GitHub"
+      olderEntries: ~
     advanced:
       title: "ขั้นสูง"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "มุมมองแยก"
       expandLines_one: "ขยายหนึ่งบรรทัดที่ซ่อนอยู่"
       expandLines_other: "ขยาย {{count}} บรรทัดที่ซ่อนอยู่"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "ค้นหาม็อด..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "การตั้งค่าขั้นสูงยิ่งขึ้น"
       restartNotice: "Windhawk จะถูกรีสตาร์ทเพื่อนำการตั้งค่าไปใช้."
       saveButton: "บันทึกการตั้งค่า และรีสตาร์ท Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "ความละเอียดของการบันทึกข้อมูลของ Windhawk"
       engineLoggingTitle: "ความละเอียดของการบันทึกข้อมูลของเอนจิน Windhawk"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

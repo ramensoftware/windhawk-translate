@@ -87,6 +87,7 @@ app:
       updating: "Aktualisiere..."
       installing: "Installiere..."
       compiling: "Kompiliere..."
+      canceling: ~
       loggingEnabled: "Debug-Protokollierung ist aktiviert"
     contextMenu:
       cut: "Ausschneiden"
@@ -174,7 +175,24 @@ app:
       saveButton: "Einstellungen speichern"
       sampleValue: "Beispielwert"
       arrayItemAdd: "Neues Element hinzufügen"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Element entfernen"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Text-Modus"
       uiMode: "Visueller Modus"
       yamlInvalid: "Ungültiges YAML-Format"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Änderungen verwerfen"
       unsavedChangesStay: "Weiter bearbeiten"
       readOnlyPreview: "Dies ist eine Vorschau der Einstellungen. Installiere die Mod, um Einstellungen zu konfigurieren."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Quellcode"
       noData: "Mod-Quellcode fehlt."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Änderungsprotokoll"
       loadingFailed: "Laden des Änderungsprotokolls fehlgeschlagen. <0>Hier klicken</0> um das Änderungsprotokoll auf GitHub zu lesen."
+      olderEntries: ~
     advanced:
       title: "Erweitert"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Ansicht aufteilen"
       expandLines_one: "Zeige eine versteckte Zeile"
       expandLines_other: "Zeige {{count}} versteckte Zeilen"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Suche nach Mods..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "Weitere erweiterte Einstellungen"
       restartNotice: "Windhawk wird neu gestartet, um die Einstellungen zu übernehmen."
       saveButton: "Speichern und Windhawk neu starten"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Art der Windhawk-Protokollierung"
       engineLoggingTitle: "Art der Windhawk-Engine-Protokollierung"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

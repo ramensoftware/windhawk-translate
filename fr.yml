@@ -87,6 +87,7 @@ app:
       updating: "Mise à jour…"
       installing: "Installation…"
       compiling: "Compilation…"
+      canceling: ~
       loggingEnabled: "Les journaux de débogage sont activés"
     contextMenu:
       cut: "Couper"
@@ -174,7 +175,24 @@ app:
       saveButton: "Enregistrer les paramètres"
       sampleValue: "Valeur d’exemple"
       arrayItemAdd: "Ajouter un nouvel élément"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Supprimer l’élément"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Mode texte"
       uiMode: "Mode visuel"
       yamlInvalid: "Format YAML invalide"
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: "Ignorer les modifications"
       unsavedChangesStay: "Continuer la modification"
       readOnlyPreview: "Ceci est un aperçu des paramètres du mod. Installez le mod pour configurer les paramètres."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Code source"
       noData: "Le code source du mod est manquant."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Historique des modifications"
       loadingFailed: "Échec du chargement de l’historique des modifications. <0>Cliquez ici</0> pour l’afficher sur GitHub."
+      olderEntries: ~
     advanced:
       title: "Avancé"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Vue scindée"
       expandLines_one: "Afficher une ligne masquée"
       expandLines_other: "Afficher {{count}} lignes masquées"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Rechercher des mods…"
     placeholderWithHint: "Rechercher des mods… tapez '/' pour mettre au premier plan"
@@ -310,6 +363,10 @@ app:
       title: "Plus de paramètres avancés"
       restartNotice: "Windhawk va redémarrer pour appliquer les paramètres."
       saveButton: "Enregistrer et redémarrer Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Niveau de détail du journal de l’application Windhawk"
       engineLoggingTitle: "Niveau de détail du journal du moteur Windhawk"
@@ -366,7 +423,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

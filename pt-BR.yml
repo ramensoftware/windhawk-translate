@@ -87,6 +87,7 @@ app:
       updating: "Atualizando..."
       installing: "Instalando..."
       compiling: "Compilando..."
+      canceling: ~
       loggingEnabled: "Log habilitado"
     contextMenu:
       cut: "Cortar"
@@ -175,7 +176,24 @@ app:
       saveButton: "Salvar configurações"
       sampleValue: "Valor da amostra"
       arrayItemAdd: "Adicionar novo item"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Remover item"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: "Modo textual"
       uiMode: "Modo visual"
       yamlInvalid: "Formato YAML inválido"
@@ -187,8 +205,16 @@ app:
       unsavedChangesLeave: "Descartar alterações"
       unsavedChangesStay: "Continuar editando"
       readOnlyPreview: "Esta é uma prévia das configurações do Mod. Instale o Mod para configurar as opções."
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Código fonte"
       noData: "A fonte do Mod está ausente."
@@ -196,6 +222,7 @@ app:
     changelog:
       title: "Log de alterações"
       loadingFailed: "Falha ao carregar a Log de Alterações. <0>Clique aqui</0> para visualizá-lo no GitHub."
+      olderEntries: ~
     advanced:
       title: "Avançado"
       debugLogging:
@@ -231,6 +258,32 @@ app:
       expandLines_one: "Expandir uma linha oculta"
       expandLines_other: "Expandir {{count}} linhas ocultas"
       expandLines_many: "Expandir {{count}} linhas ocultas"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Pesquisar Mods..."
     placeholderWithHint: "Pesquisar Mods... escreva '/' para pesquisar"
@@ -310,6 +363,10 @@ app:
       title: "Mais configurações avançadas"
       restartNotice: "Windhawk será reiniciado para aplicar as configurações."
       saveButton: "Salve e reinicie o Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Verbosidade da Log do Windhawk"
       engineLoggingTitle: "Verbosidade da Log do mecanismo Windhawk"
@@ -366,7 +423,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

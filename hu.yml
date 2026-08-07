@@ -87,6 +87,7 @@ app:
       updating: "Frissítés..."
       installing: "Telepítés..."
       compiling: "Fordítás..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Kivágás"
@@ -174,7 +175,24 @@ app:
       saveButton: "Beállítások mentése"
       sampleValue: "Minta érték"
       arrayItemAdd: "Új elem hozzáadása"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Elem eltávolítása"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Forráskód"
       noData: "Hiányzik a mod forrása."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Változásnapló"
       loadingFailed: "Változásnapló betöltése sikertelen. <0>Kattintson ide</0> a GitHub megtekintéséhez."
+      olderEntries: ~
     advanced:
       title: "Haladó"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Megosztott nézet"
       expandLines_one: "Egy rejtett sor kibontása"
       expandLines_other: "{{count}} rejtett sor kibontása"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Modok keresése..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "További haladó beállítások"
       restartNotice: "A beállítások alkalmazásához a Windhawk újraindul."
       saveButton: "Mentés és Windhawk újraindítása"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Windhawk naplózási részletesség"
       engineLoggingTitle: "Windhawk motor naplózási részletesség"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

@@ -87,6 +87,7 @@ app:
       updating: "جار التحديث..."
       installing: "جار التثبيت..."
       compiling: "جار التجميع..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "قص"
@@ -178,7 +179,24 @@ app:
       saveButton: "حفظ الإعدادات"
       sampleValue: "قيمة نموذجية"
       arrayItemAdd: "إضافة عنصر جديد"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "إزالة عنصر"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -190,8 +208,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "كود المصدر"
       noData: "مصدر المود مفقود."
@@ -199,6 +225,7 @@ app:
     changelog:
       title: "سجل التغييرات"
       loadingFailed: "فشل تحميل سجل التغييرات. <0>انقر هنا</0> لعرضه على GitHub."
+      olderEntries: ~
     advanced:
       title: "متقدم"
       debugLogging:
@@ -237,6 +264,32 @@ app:
       expandLines_many: "توسيع {{count}} سطراً مخفياً"
       expandLines_two: "توسيع سطرين مخفيين"
       expandLines_zero: "لا توجد أسطر مخفية"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "ابحث عن المودات..."
     placeholderWithHint: ~
@@ -316,6 +369,10 @@ app:
       title: "إعدادات أكثر تقدمًا"
       restartNotice: "سيتم إعادة تشغيل Windhawk لتطبيق الإعدادات."
       saveButton: "حفظ وإعادة تشغيل Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "مستوى تفصيل سجلات Windhawk"
       engineLoggingTitle: "مستوى تفصيل سجلات محرك Windhawk"
@@ -372,7 +429,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~

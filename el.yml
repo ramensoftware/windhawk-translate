@@ -87,6 +87,7 @@ app:
       updating: "Ενημέρωση..."
       installing: "Εγκατάσταση..."
       compiling: "Μετατροπή σε .exe..."
+      canceling: ~
       loggingEnabled: ~
     contextMenu:
       cut: "Αποκοπή"
@@ -174,7 +175,24 @@ app:
       saveButton: "Αποθήκευση ρυθμίσεων"
       sampleValue: "Δείγμα τιμής"
       arrayItemAdd: "Προσθήκη νέου στοιχείου"
+      arrayItemMoveUp: ~
+      arrayItemMoveDown: ~
       arrayItemRemove: "Αφαίρεση στοιχείου"
+      arrayItemCollapse: ~
+      arrayItemExpand: ~
+      arrayItemNumber: ~
+      arrayItemsRemoveAll: ~
+      arrayItemsRemoveAllConfirm: ~
+      modified: ~
+      unsaved: ~
+      modifiedUnsaved: ~
+      descriptionOf: ~
+      resetToDefault: ~
+      resetToDefaultValue: ~
+      resetToDefaultOf: ~
+      resetToDefaultValueOf: ~
+      resetAll: ~
+      resetAllConfirm: ~
       yamlMode: ~
       uiMode: ~
       yamlInvalid: ~
@@ -186,8 +204,16 @@ app:
       unsavedChangesLeave: ~
       unsavedChangesStay: ~
       readOnlyPreview: ~
+      compactView: ~
+      wordWrap: ~
       expand: ~
       collapse: ~
+      expandSetting: ~
+      collapseSetting: ~
+      foldedItems_one: ~
+      foldedItems_other: ~
+      foldedSettings_one: ~
+      foldedSettings_other: ~
     code:
       title: "Πηγαίος κώδικας"
       noData: "Η πηγή mod λείπει."
@@ -195,6 +221,7 @@ app:
     changelog:
       title: "Καταγραφή αλλαγών"
       loadingFailed: "Η φόρτωση του αρχείου καταγραφής αλλαγών απέτυχε <0>Click here</0> να το δείτε στο GitHub."
+      olderEntries: ~
     advanced:
       title: "Για Προχωρημένους"
       debugLogging:
@@ -229,6 +256,32 @@ app:
       splitView: "Διαίρεση προβολής"
       expandLines_one: "Ανάπτυξη μιας κρυφής γραμμής"
       expandLines_other: "Ανάπτυξη {{count}} κρυφών γραμμών"
+  modUpdates:
+    bar:
+      message_one: ~
+      message_other: ~
+      openButton: ~
+    title: ~
+    selectAll: ~
+    columns:
+      mod: ~
+      installed: ~
+      new: ~
+    sourceFailed: ~
+    updateButton_one: ~
+    updateButton_other: ~
+    runningStatus: ~
+    modStatus:
+      updated: ~
+      failed: ~
+      aborted: ~
+    doneTitle: ~
+    doneWithFailuresTitle: ~
+    doneSubtitle: ~
+    abortedTitle: ~
+    abortedSubtitle: ~
+    failedTitle: ~
+    failedSubtitle: ~
   modSearch:
     placeholder: "Αναζήτηση για mods..."
     placeholderWithHint: ~
@@ -308,6 +361,10 @@ app:
       title: "Πιο σύνθετες ρυθμίσεις"
       restartNotice: "Το Windhawk θα επανεκκινηθεί για να εφαρμοστούν οι ρυθμίσεις."
       saveButton: "Αποθήκευση και επανεκκίνηση του Windhawk"
+      unsavedChangesTitle: ~
+      unsavedChangesMessage: ~
+      unsavedChangesLeave: ~
+      unsavedChangesStay: ~
     loggingVerbosity:
       appLoggingTitle: "Βελτίωση καταγραφής του Windhawk"
       engineLoggingTitle: "Λεπτομέρειες καταγραφής κινητήρα Windhawk"
@@ -364,7 +421,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        cancelling: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
