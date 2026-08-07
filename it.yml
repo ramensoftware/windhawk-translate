@@ -138,8 +138,8 @@ app:
     editedLocally: "La mod è stata modificata localmente"
     noDescription: "(nessuna descizione)"
     users_one: "{{formattedCount}} utente"
-    users_other: "{{formattedCount}} utenti"
     users_many: "{{formattedCount}} utenti"
+    users_other: "{{formattedCount}} utenti"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -212,8 +212,10 @@ app:
       expandSetting: ~
       collapseSetting: ~
       foldedItems_one: ~
+      foldedItems_many: ~
       foldedItems_other: ~
       foldedSettings_one: ~
+      foldedSettings_many: ~
       foldedSettings_other: ~
     code:
       title: "Codice sorgente"
@@ -256,11 +258,12 @@ app:
       noData: "La versione installata è identica alla versione selezionata."
       splitView: "Dividi vista"
       expandLines_one: "Espandi una linea nascosta"
-      expandLines_other: "Espandi {{count}} linee nascoste"
       expandLines_many: "Espandi {{count}} linee nascoste"
+      expandLines_other: "Espandi {{count}} linee nascoste"
   modUpdates:
     bar:
       message_one: ~
+      message_many: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -271,6 +274,7 @@ app:
       new: ~
     sourceFailed: ~
     updateButton_one: ~
+    updateButton_many: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -424,6 +428,7 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_one: ~
+        overwriteWarning_many: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

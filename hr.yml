@@ -138,8 +138,8 @@ app:
     editedLocally: "Dodatak je lokalno izmijenjen"
     noDescription: "(nema opisa)"
     users_one: "{{formattedCount}} korisnik"
-    users_other: "{{formattedCount}} korisnika"
     users_few: "{{formattedCount}} korisnika"
+    users_other: "{{formattedCount}} korisnika"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -212,8 +212,10 @@ app:
       expandSetting: ~
       collapseSetting: ~
       foldedItems_one: ~
+      foldedItems_few: ~
       foldedItems_other: ~
       foldedSettings_one: ~
+      foldedSettings_few: ~
       foldedSettings_other: ~
     code:
       title: "Izvorni kôd"
@@ -256,11 +258,12 @@ app:
       noData: "Instalirana verzija jednaka je odabranoj verziji."
       splitView: "Podijeljeni prikaz"
       expandLines_one: "Proširi jednu skrivenu liniju"
-      expandLines_other: "Proširi {{count}} skrivenih linija"
       expandLines_few: "Proširi {{count}} skrivene linije"
+      expandLines_other: "Proširi {{count}} skrivenih linija"
   modUpdates:
     bar:
       message_one: ~
+      message_few: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -271,6 +274,7 @@ app:
       new: ~
     sourceFailed: ~
     updateButton_one: ~
+    updateButton_few: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -424,6 +428,7 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_one: ~
+        overwriteWarning_few: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

@@ -431,7 +431,7 @@ app:
           precompiled: "Importen krever internettilkobling for å laste ned ferdigkompilerte mod-binærfiler"
           sourceAndPrecompiled: "Importen krever internettilkobling for å laste ned mod-kildekode og ferdigkompilerte mod-binærfiler"
         runningStatus: "Importerer mod {{current}} av {{total}}"
-        compilingFor: "Kompilerer {{modId}} for {{target}}..."
+        compilingFor: "Kompilerer {{mod}} for {{target}}..."
         modStatus:
           installed: "Installert"
           skipped: "Hoppet over"

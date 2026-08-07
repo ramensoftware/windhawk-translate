@@ -138,9 +138,9 @@ app:
     editedLocally: "Мод відредаговано локально"
     noDescription: "(Опис порожній)"
     users_one: "{{formattedCount}} користувач"
-    users_other: "{{formattedCount}} користувачів"
     users_few: "{{formattedCount}} користувачі"
     users_many: "{{formattedCount}} користувачів"
+    users_other: "{{formattedCount}} користувачів"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -213,8 +213,12 @@ app:
       expandSetting: ~
       collapseSetting: ~
       foldedItems_one: ~
+      foldedItems_few: ~
+      foldedItems_many: ~
       foldedItems_other: ~
       foldedSettings_one: ~
+      foldedSettings_few: ~
+      foldedSettings_many: ~
       foldedSettings_other: ~
     code:
       title: "Вихідний код"
@@ -257,12 +261,14 @@ app:
       noData: "Встановлена версія ідентична обраній версії."
       splitView: "Розділити вид"
       expandLines_one: "Розгорнути один прихований рядок"
-      expandLines_other: "Розгорнути {{count}} прихованих рядків"
       expandLines_few: "Розгорнути {{count}} приховані рядки"
       expandLines_many: "Розгорнути {{count}} прихованих рядків"
+      expandLines_other: "Розгорнути {{count}} прихованих рядків"
   modUpdates:
     bar:
       message_one: ~
+      message_few: ~
+      message_many: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -273,6 +279,8 @@ app:
       new: ~
     sourceFailed: ~
     updateButton_one: ~
+    updateButton_few: ~
+    updateButton_many: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -426,6 +434,8 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_one: ~
+        overwriteWarning_few: ~
+        overwriteWarning_many: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

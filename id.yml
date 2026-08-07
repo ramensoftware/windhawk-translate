@@ -137,7 +137,6 @@ app:
     notCompiled: "Mod needs to be compiled"
     editedLocally: "Mod sudah disunting lokal"
     noDescription: "(tidak ada deskripsi)"
-    users_one: "{{formattedCount}} pengguna"
     users_other: "{{formattedCount}} pengguna"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
@@ -210,9 +209,7 @@ app:
       collapse: ~
       expandSetting: ~
       collapseSetting: ~
-      foldedItems_one: ~
       foldedItems_other: ~
-      foldedSettings_one: ~
       foldedSettings_other: ~
     code:
       title: "Kode Sumber"
@@ -254,11 +251,9 @@ app:
       title: "Perubahan Versi Saat Ini"
       noData: "Versi yang terpasang identik dengan versi yang dipilih."
       splitView: "Tampilan berbagi"
-      expandLines_one: "Perlebar salah satu baris tersembunyi"
       expandLines_other: "Perlebar {{count}} baris tersembunyi"
   modUpdates:
     bar:
-      message_one: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -268,7 +263,6 @@ app:
       installed: ~
       new: ~
     sourceFailed: ~
-    updateButton_one: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -421,7 +415,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

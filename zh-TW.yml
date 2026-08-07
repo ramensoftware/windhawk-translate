@@ -137,7 +137,6 @@ app:
     notCompiled: "模組需要編譯"
     editedLocally: "模組已在本地編輯"
     noDescription: "（無描述）"
-    users_one: "{{formattedCount}} 位使用者"
     users_other: "{{formattedCount}} 位使用者"
     notRated: "此 Mod 暫無評分"
     loggingEnabledInAdvancedTab: "已在 Mod 的進階分頁中啟用偵錯記錄"
@@ -210,9 +209,7 @@ app:
       collapse: ~
       expandSetting: ~
       collapseSetting: ~
-      foldedItems_one: ~
       foldedItems_other: ~
-      foldedSettings_one: ~
       foldedSettings_other: ~
     code:
       title: "原始碼"
@@ -254,11 +251,9 @@ app:
       title: "最新版本變更"
       noData: "已安裝的版本與所選版本相同。"
       splitView: "分割視窗"
-      expandLines_one: "展開一條隱藏的行"
       expandLines_other: "展開 {{count}} 條隱藏的行"
   modUpdates:
     bar:
-      message_one: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -268,7 +263,6 @@ app:
       installed: ~
       new: ~
     sourceFailed: ~
-    updateButton_one: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -421,7 +415,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

@@ -138,9 +138,9 @@ app:
     editedLocally: "Úprava upravena místně"
     noDescription: "(žádný popis)"
     users_one: "{{formattedCount}} uživatel"
-    users_other: "{{formattedCount}} uživatelů"
     users_few: "{{formattedCount}} uživatelé"
     users_many: "{{formattedCount}} uživatelů"
+    users_other: "{{formattedCount}} uživatelů"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -213,8 +213,12 @@ app:
       expandSetting: ~
       collapseSetting: ~
       foldedItems_one: ~
+      foldedItems_few: ~
+      foldedItems_many: ~
       foldedItems_other: ~
       foldedSettings_one: ~
+      foldedSettings_few: ~
+      foldedSettings_many: ~
       foldedSettings_other: ~
     code:
       title: "Zdrojový kód"
@@ -257,12 +261,14 @@ app:
       noData: "Nainstalovaná verze je shodná s vybranou verzí."
       splitView: "Oddělené prohlížení"
       expandLines_one: "Rozbalit jeden skrytý řádek"
-      expandLines_other: "Rozbalit {{count}} skrytých řádků"
       expandLines_few: "Rozbalit {{count}} skryté řádky"
       expandLines_many: "Rozbalit {{count}} skrytých řádků"
+      expandLines_other: "Rozbalit {{count}} skrytých řádků"
   modUpdates:
     bar:
       message_one: ~
+      message_few: ~
+      message_many: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -273,6 +279,8 @@ app:
       new: ~
     sourceFailed: ~
     updateButton_one: ~
+    updateButton_few: ~
+    updateButton_many: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -426,6 +434,8 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_one: ~
+        overwriteWarning_few: ~
+        overwriteWarning_many: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

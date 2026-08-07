@@ -137,7 +137,6 @@ app:
     notCompiled: "Mod cần được biên dịch"
     editedLocally: "Mod đã được chỉnh sửa cục bộ"
     noDescription: "(không có mô tả)"
-    users_one: "{{formattedCount}} người dùng"
     users_other: "{{formattedCount}} người dùng"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
@@ -210,9 +209,7 @@ app:
       collapse: ~
       expandSetting: ~
       collapseSetting: ~
-      foldedItems_one: ~
       foldedItems_other: ~
-      foldedSettings_one: ~
       foldedSettings_other: ~
     code:
       title: "Mã nguồn"
@@ -254,11 +251,9 @@ app:
       title: "Thay đổi phiên bản mới nhất"
       noData: "Phiên bản đã cài đặt giống hệt với phiên bản đã chọn."
       splitView: "Chế độ chia đôi"
-      expandLines_one: "Mở rộng một dòng bị ẩn"
       expandLines_other: "Mở rộng {{count}} dòng bị ẩn"
   modUpdates:
     bar:
-      message_one: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -268,7 +263,6 @@ app:
       installed: ~
       new: ~
     sourceFailed: ~
-    updateButton_one: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -421,7 +415,6 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
-        overwriteWarning_one: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

@@ -138,9 +138,9 @@ app:
     editedLocally: "Модификация отредактирована локально"
     noDescription: "(нет описания)"
     users_one: "{{formattedCount}} пользователь"
-    users_other: "{{formattedCount}} пользователей"
     users_few: "{{formattedCount}} пользователя"
     users_many: "{{formattedCount}} пользователей"
+    users_other: "{{formattedCount}} пользователей"
     notRated: "Эта модификация ещё не была оценена"
     loggingEnabledInAdvancedTab: "Логирование включено на вкладке модификации «Дополнительно»"
   modDetails:
@@ -213,8 +213,12 @@ app:
       expandSetting: ~
       collapseSetting: ~
       foldedItems_one: ~
+      foldedItems_few: ~
+      foldedItems_many: ~
       foldedItems_other: ~
       foldedSettings_one: ~
+      foldedSettings_few: ~
+      foldedSettings_many: ~
       foldedSettings_other: ~
     code:
       title: "Исходный код"
@@ -257,12 +261,14 @@ app:
       noData: "Установленная версия совпадает с выбранной."
       splitView: "Раздельный просмотр"
       expandLines_one: "Раскрыть одну скрытую строку"
-      expandLines_other: "Раскрыть {{count}} скрытых строк"
       expandLines_few: "Раскрыть {{count}} скрытые строки"
       expandLines_many: "Раскрыть {{count}} скрытых строк"
+      expandLines_other: "Раскрыть {{count}} скрытых строк"
   modUpdates:
     bar:
       message_one: ~
+      message_few: ~
+      message_many: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -273,6 +279,8 @@ app:
       new: ~
     sourceFailed: ~
     updateButton_one: ~
+    updateButton_few: ~
+    updateButton_many: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -426,6 +434,8 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_one: ~
+        overwriteWarning_few: ~
+        overwriteWarning_many: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

@@ -137,12 +137,12 @@ app:
     notCompiled: "يجب تجميع المود"
     editedLocally: "تم تعديل المود محليًا"
     noDescription: "(لا يوجد وصف)"
+    users_zero: "لا يوجد مستخدمون"
     users_one: "{{formattedCount}} مستخدم"
-    users_other: "{{formattedCount}} مستخدم"
+    users_two: "{{formattedCount}} مستخدمان"
     users_few: "{{formattedCount}} مستخدمون"
     users_many: "{{formattedCount}} مستخدم"
-    users_two: "{{formattedCount}} مستخدمان"
-    users_zero: "لا يوجد مستخدمون"
+    users_other: "{{formattedCount}} مستخدم"
     notRated: ~
     loggingEnabledInAdvancedTab: ~
   modDetails:
@@ -214,9 +214,17 @@ app:
       collapse: ~
       expandSetting: ~
       collapseSetting: ~
+      foldedItems_zero: ~
       foldedItems_one: ~
+      foldedItems_two: ~
+      foldedItems_few: ~
+      foldedItems_many: ~
       foldedItems_other: ~
+      foldedSettings_zero: ~
       foldedSettings_one: ~
+      foldedSettings_two: ~
+      foldedSettings_few: ~
+      foldedSettings_many: ~
       foldedSettings_other: ~
     code:
       title: "كود المصدر"
@@ -258,15 +266,19 @@ app:
       title: "تغييرات أحدث إصدار"
       noData: "الإصدار المثبت مطابق للإصدار المحدد."
       splitView: "عرض مقسم"
+      expandLines_zero: "لا توجد أسطر مخفية"
       expandLines_one: "توسيع سطر مخفي واحد"
-      expandLines_other: "توسيع {{count}} سطر مخفي"
+      expandLines_two: "توسيع سطرين مخفيين"
       expandLines_few: "توسيع {{count}} أسطر مخفية"
       expandLines_many: "توسيع {{count}} سطراً مخفياً"
-      expandLines_two: "توسيع سطرين مخفيين"
-      expandLines_zero: "لا توجد أسطر مخفية"
+      expandLines_other: "توسيع {{count}} سطر مخفي"
   modUpdates:
     bar:
+      message_zero: ~
       message_one: ~
+      message_two: ~
+      message_few: ~
+      message_many: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -276,7 +288,11 @@ app:
       installed: ~
       new: ~
     sourceFailed: ~
+    updateButton_zero: ~
     updateButton_one: ~
+    updateButton_two: ~
+    updateButton_few: ~
+    updateButton_many: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -429,7 +445,11 @@ app:
         trustTitle: ~
         trustDescription: ~
         importButton: ~
+        overwriteWarning_zero: ~
         overwriteWarning_one: ~
+        overwriteWarning_two: ~
+        overwriteWarning_few: ~
+        overwriteWarning_many: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

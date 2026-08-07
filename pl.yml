@@ -138,9 +138,9 @@ app:
     editedLocally: "Mod był edytowany lokalnie"
     noDescription: "(brak opisu)"
     users_one: "{{formattedCount}} użytkownik"
-    users_other: "{{formattedCount}} użytkowników"
     users_few: "{{formattedCount}} użytkownicy"
     users_many: "{{formattedCount}} użytkowników"
+    users_other: "{{formattedCount}} użytkowników"
     notRated: "Ten mod nie został jeszcze oceniony"
     loggingEnabledInAdvancedTab: "Logi debugowania są włączone w karcie Zaawansowane moda"
   modDetails:
@@ -213,8 +213,12 @@ app:
       expandSetting: ~
       collapseSetting: ~
       foldedItems_one: ~
+      foldedItems_few: ~
+      foldedItems_many: ~
       foldedItems_other: ~
       foldedSettings_one: ~
+      foldedSettings_few: ~
+      foldedSettings_many: ~
       foldedSettings_other: ~
     code:
       title: "Kod źródłowy"
@@ -257,12 +261,14 @@ app:
       noData: "Zainstalowana wersja jest identyczna z wybraną wersją."
       splitView: "Widok podzielony"
       expandLines_one: "Rozwiń jedną ukrytą linię"
-      expandLines_other: "Rozwiń {{count}} ukrytych linii"
       expandLines_few: "Rozwiń {{count}} ukryte linie"
       expandLines_many: "Rozwiń {{count}} ukrytych linii"
+      expandLines_other: "Rozwiń {{count}} ukrytych linii"
   modUpdates:
     bar:
       message_one: ~
+      message_few: ~
+      message_many: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -273,6 +279,8 @@ app:
       new: ~
     sourceFailed: ~
     updateButton_one: ~
+    updateButton_few: ~
+    updateButton_many: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -426,6 +434,8 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_one: ~
+        overwriteWarning_few: ~
+        overwriteWarning_many: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~

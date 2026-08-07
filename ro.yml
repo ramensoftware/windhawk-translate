@@ -138,8 +138,8 @@ app:
     editedLocally: "Modul a fost editat local"
     noDescription: "(fără descriere)"
     users_one: "{{formattedCount}} utilizator"
-    users_other: "{{formattedCount}} de utilizatori"
     users_few: "{{formattedCount}} utilizatori"
+    users_other: "{{formattedCount}} de utilizatori"
     notRated: "Acest mod nu a fost evaluat încă"
     loggingEnabledInAdvancedTab: "Jurnalele pentru depanare sunt activate în fila Avansat a modului"
   modDetails:
@@ -212,8 +212,10 @@ app:
       expandSetting: ~
       collapseSetting: ~
       foldedItems_one: ~
+      foldedItems_few: ~
       foldedItems_other: ~
       foldedSettings_one: ~
+      foldedSettings_few: ~
       foldedSettings_other: ~
     code:
       title: "Cod sursă"
@@ -256,11 +258,12 @@ app:
       noData: "Versiunea instalată este identică cu cea selectată."
       splitView: "Vizualizare divizată"
       expandLines_one: "Extinde o linie ascunsă"
-      expandLines_other: "Extinde {{count}} de linii ascunse"
       expandLines_few: "Extinde {{count}} linii ascunse"
+      expandLines_other: "Extinde {{count}} de linii ascunse"
   modUpdates:
     bar:
       message_one: ~
+      message_few: ~
       message_other: ~
       openButton: ~
     title: ~
@@ -271,6 +274,7 @@ app:
       new: ~
     sourceFailed: ~
     updateButton_one: ~
+    updateButton_few: ~
     updateButton_other: ~
     runningStatus: ~
     modStatus:
@@ -424,6 +428,7 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_one: ~
+        overwriteWarning_few: ~
         overwriteWarning_other: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
