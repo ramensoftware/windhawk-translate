@@ -542,7 +542,7 @@ app:
       mods: "Модификации"
       links: "Ссылки"
       language: "Язык"
-      toggleTheme: "Переключение светлой/темной темы"
+      toggleTheme: "Переключение светлой/тёмной темы"
       contributeTranslation: "Добавить новый перевод"
     home:
       tagline: "Маркетплейс для кастомизации программ Windows"
