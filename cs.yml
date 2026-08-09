@@ -294,6 +294,65 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_few: ~
+    selected_many: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_few: ~
+    enableCount_many: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_few: ~
+    disableCount_many: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_few: ~
+    removeCount_many: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_few: ~
+    removeConfirm_many: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_few: ~
+    moveTitle_many: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_few: ~
+    modCount_many: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_few: ~
+    deleteConfirm_many: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Hledat úpravy..."
     placeholderWithHint: ~
@@ -366,6 +425,9 @@ app:
     dontAutoShowToolkit:
       title: "Nezobrazovat dialogové okno nabídky automaticky"
       description: "Ve výchozím nastavení Windhawk automaticky zobrazí dialogové okno nabídky, když zjistí, že hlavní panel nefunguje kvůli nestabilitě systému nebo z jiných důvodů. Dialog nabídky umožňuje zavřít Windhawk, vstoupit do nouzového režimu a provést další akce. Dialogové okno nabídky lze zobrazit také stisknutím kombinace kláves Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Zpoždění dialogu inicializace úprav"
       description: "Počet milisekund, které se čeká před zobrazením dialogu průběhu inicializace modifikace."

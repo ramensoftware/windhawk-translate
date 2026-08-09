@@ -288,6 +288,57 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_many: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_many: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_many: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_many: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_many: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_many: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_many: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_many: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Buscar en mods..."
     placeholderWithHint: ~
@@ -360,6 +411,9 @@ app:
     dontAutoShowToolkit:
       title: "No mostrar automáticamente el cuadro de diálogo del kit de herramientas"
       description: "De forma predeterminada, Windhawk muestra automáticamente el cuadro de diálogo del kit de herramientas cuando detecta que no se puede acceder a la barra de tareas, ya sea debido a la inestabilidad del sistema o por otra razón. El cuadro de diálogo del kit de herramientas permite salir de Windhawk, cambiar al modo seguro y realizar otras operaciones. El cuadro de diálogo del kit de herramientas también se puede mostrar con el atajo de teclado Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Retraso en la inicialización del diálogo de Mod"
       description: "Cantidad de milisegundos a esperar antes de mostrar el diálogo de progreso para la inicialización del mod."

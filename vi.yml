@@ -276,6 +276,41 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_other: ~
+    disableCount_other: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Tìm kiếm mod..."
     placeholderWithHint: ~
@@ -348,6 +383,9 @@ app:
     dontAutoShowToolkit:
       title: "Không tự động hiển thị hộp công cụ"
       description: "Theo mặc định, Windhawk tự động hiển thị hộp công cụ khi phát hiện rằng thanh tác vụ không truy cập được, do hệ thống không ổn định hoặc lý do khác. Hộp công cụ cho phép thoát Windhawk, chuyển sang chế độ an toàn, và thực hiện các thao tác khác. Hộp công cụ cũng có thể được hiển thị bằng phím tắt Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Độ trễ hộp thoại khởi tạo mod"
       description: "Số mili giây chờ trước khi hiển thị hộp thoại tiến trình cho khởi tạo mod."

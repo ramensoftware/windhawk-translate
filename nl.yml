@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Naar mods zoeken…"
     placeholderWithHint: "Zoeken naar mods… typ '/' om te focussen"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Hulpprogramma-melding niet automatisch weergeven"
       description: "Standaard geeft Windhawk automatisch het hulpprogramma-meldingvenster weer wanneer het detecteert dat de taakbalk niet toegankelijk is, door systeeminstabiliteit of om een andere reden. Met het hulpprogramma-meldingvenster kun je Windhawk afsluiten, overschakelen naar de veilige modus en andere bewerkingen uitvoeren. Het hulpprogramma-meldingvenster kan ook worden weergegeven met de Ctrl+Win+W sneltoets."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod-initialisatie meldingvertraging"
       description: "Aantal milliseconden dat moet worden gewacht voordat het voortgangsvenster voor mod-initialisatie wordt weergegeven."

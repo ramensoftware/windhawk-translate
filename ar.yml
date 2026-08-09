@@ -306,6 +306,81 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_zero: ~
+    selected_one: ~
+    selected_two: ~
+    selected_few: ~
+    selected_many: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_zero: ~
+    enableCount_one: ~
+    enableCount_two: ~
+    enableCount_few: ~
+    enableCount_many: ~
+    enableCount_other: ~
+    disableCount_zero: ~
+    disableCount_one: ~
+    disableCount_two: ~
+    disableCount_few: ~
+    disableCount_many: ~
+    disableCount_other: ~
+    removeCount_zero: ~
+    removeCount_one: ~
+    removeCount_two: ~
+    removeCount_few: ~
+    removeCount_many: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_zero: ~
+    removeConfirm_one: ~
+    removeConfirm_two: ~
+    removeConfirm_few: ~
+    removeConfirm_many: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_zero: ~
+    moveTitle_one: ~
+    moveTitle_two: ~
+    moveTitle_few: ~
+    moveTitle_many: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_zero: ~
+    modCount_one: ~
+    modCount_two: ~
+    modCount_few: ~
+    modCount_many: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_zero: ~
+    deleteConfirm_one: ~
+    deleteConfirm_two: ~
+    deleteConfirm_few: ~
+    deleteConfirm_many: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "ابحث عن المودات..."
     placeholderWithHint: ~
@@ -378,6 +453,9 @@ app:
     dontAutoShowToolkit:
       title: "عدم إظهار مربع أدوات المجموعة تلقائيًا"
       description: "افتراضيًا، يعرض Windhawk مربع أدوات المجموعة تلقائيًا عند اكتشاف أن شريط المهام غير متاح، إما بسبب عدم استقرار النظام أو لأي سبب آخر. يتيح مربع الأدوات الخروج من Windhawk، أو التبديل إلى الوضع الآمن، أو إجراء عمليات أخرى. يمكن أيضًا عرض مربع الأدوات باستخدام اختصار لوحة المفاتيح Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "تأخير مربع حوار تهيئة المود"
       description: "عدد المللي ثانية للانتظار قبل عرض مربع تقدم تهيئة المود."

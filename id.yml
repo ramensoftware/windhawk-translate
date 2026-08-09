@@ -276,6 +276,41 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_other: ~
+    disableCount_other: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Cari untuk mod..."
     placeholderWithHint: ~
@@ -348,6 +383,9 @@ app:
     dontAutoShowToolkit:
       title: "Otomatis jangan tampilkan dialog toolkit"
       description: "Secara default, Windhawk otomatis menampilkan dialog toolkit ketika mendeteksi taskbar tidak bisa diakses, baik karena ketidakstabilan sistem atau karena alasan lain. Dialog toolkit mengizinkan untuk menutup Windhawk, beralih ke mode aman, dan buat tindakan lain. Dialog toolkit juga bisa ditampilkan dengan pintasan keyboard Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Penundaan dialog inisialisasi mod"
       description: "Jumlah milidetik untuk menunggu sebelum menampilkan dialog kemajuan untuk inisialisasi mod."

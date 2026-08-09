@@ -276,6 +276,41 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_other: ~
+    disableCount_other: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Mod を検索..."
     placeholderWithHint: "Mod を検索... 「/」キーでフォーカス"
@@ -348,6 +383,9 @@ app:
     dontAutoShowToolkit:
       title: "ツールキットダイアログを自動で表示しない"
       description: "既定では、システムが不安定な状態やその他の理由でタスクバーにアクセスできない状態を検出すると、Windhawk は自動的にツールキットダイアログを表示します。ツールキットダイアログは、「Windhawk の終了」「セーフモードの切り替え」「その他の操作」を行なうことができます。ツールキットダイアログは、Ctrl+Win+W のキーボードショートカットでも表示できます。"
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod 初期化ダイアログの遅延"
       description: "Mod の初期化でプログレスダイアログを表示するまでの待機時間 (ミリ秒) を設定できます。"

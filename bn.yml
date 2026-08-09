@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "মড খুঁজুন..."
     placeholderWithHint: "মড খুঁজুন... কার্সার নিতে '/' চাপুন"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "স্বয়ংক্রিয়ভাবে টুলকিট ডায়ালগ দেখাবেন না"
       description: "ডিফল্টভাবে, টাস্কবার এক্সেস করা না গেলে Windhawk স্বয়ংক্রিয়ভাবে টুলকিট প্রদর্শন করে। টুলকিট থেকে সেফ মোড বা এক্সিট করা যায়। Ctrl+Win+W চেপেও এটি আনা যায়।"
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "মড ইনিশিয়ালাইজেশন ডায়ালগ বিলম্ব"
       description: "মড প্রস্তুত হওয়ার প্রোগ্রেস ডায়ালগ দেখানোর পূর্বে কত মিলিসেকেন্ড অপেক্ষা করা হবে।"

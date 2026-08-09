@@ -288,6 +288,57 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_many: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_many: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_many: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_many: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_many: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_many: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_many: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_many: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Rechercher des mods…"
     placeholderWithHint: "Rechercher des mods… tapez '/' pour mettre au premier plan"
@@ -362,6 +413,9 @@ app:
     dontAutoShowToolkit:
       title: "Ne pas afficher automatiquement la boîte de dialogue de la boîte à outils"
       description: "Par défaut, Windhawk affiche automatiquement la boîte de dialogue de la boîte à outils lorsqu’il détecte que la barre des tâches n’est pas accessible, que ce soit à cause d’une instabilité du système ou pour une autre raison. La boîte à outils permet de quitter Windhawk, de passer en mode sans échec et d’effectuer d’autres opérations. Elle peut aussi être ouverte avec le raccourci Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Délai de la boîte de dialogue d’initialisation du mod"
       description: "Nombre de millisecondes à attendre avant d’afficher la boîte de dialogue de progression de l’initialisation du mod."

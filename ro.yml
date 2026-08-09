@@ -288,6 +288,57 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_few: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_few: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_few: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_few: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_few: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_few: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_few: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_few: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Caută moduri..."
     placeholderWithHint: "Caută moduri... tastează '/' pentru focus"
@@ -360,6 +411,9 @@ app:
     dontAutoShowToolkit:
       title: "Nu arăta automat dialogul cu trusa de unelte"
       description: "În mod normal, Windhawk arată automat dialogul cu trusa de unelte când detectează că bara de activități nu este accesibilă, fie din motive de instabilitate a sistemului sau din alt motiv. Dialogul cu trusa de unelte îți permite să închizi Windhawk, să activezi modul de siguranță și să faci alte operațiuni. Dialogul cu trusa de unelte poate fi de asemenea afișat folosind combinația de taste Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Întârzierea dialogului de inițializare a modului"
       description: "Numărul de milisecunde de așteptat înainte de a arăta dialogul de progres pentru inițializarea modului."

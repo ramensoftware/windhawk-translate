@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "மாற்றங்களை தேடவும்..."
     placeholderWithHint: ~
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "கருவித்தொகுப்பு உரையாடலை தானாக காட்ட வேண்டாம்"
       description: "முன்னிருப்பாக, விண்ட்ஹாக் டாஸ்க்பார் அணுக முடியாத நிலையில் இருந்தால் கருவித்தொகுப்பு உரையாடலை தானாக காட்டும். இது விண்ட்ஹாக் ஐ முடிக்க, பாதுகாப்பு பயன்முறைக்கு மாற மற்றும் பிற செயல்களைச் செய்ய உதவுகிறது. Ctrl+Win+W குறுக்குவழி மூலம் இதை கைமுறையாகவும் திறக்கலாம்."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "மாற்றம் துவக்க உரையாடல் தாமதம்"
       description: "மாற்றம் துவக்கத்தின் போது முன்னேற்ற உரையாடலைக் காட்ட மில்லிசெக்கன்களில் காத்திருக்க வேண்டிய நேரம்."

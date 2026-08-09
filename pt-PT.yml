@@ -288,6 +288,57 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_many: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_many: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_many: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_many: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_many: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_many: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_many: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_many: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Pesquisar mods…"
     placeholderWithHint: "Pesquisar mods… escreva '/' para focar"
@@ -361,6 +412,9 @@ app:
     dontAutoShowToolkit:
       title: "Não mostrar automaticamente a caixa de diálogo do kit de ferramentas"
       description: "Por predefinição, o Windhawk mostra automaticamente a caixa de diálogo do kit de ferramentas quando deteta que a barra de tarefas não está acessível, seja devido à instabilidade do sistema ou por outro motivo. A caixa de diálogo do kit de ferramentas permite sair do Windhawk, mudar para o modo de segurança e realizar outras operações. Também pode ser aberto com o atalho Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Atraso da caixa de diálogo de inicialização do mod"
       description: "Número de milissegundos a aguardar antes de mostrar a caixa de diálogo de progresso para a inicialização do mod."

@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Søk etter mods..."
     placeholderWithHint: "Søk etter mods... trykk '/' for å fokusere"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Ikke vis verktøykassedialogen automatisk"
       description: "Som standard viser Windhawk verktøykassedialogen automatisk når det oppdages at oppgavelinjen ikke er tilgjengelig, enten på grunn av ustabilitet i systemet eller av en annen grunn. Verktøykassedialogen lar deg avslutte Windhawk, bytte til sikkermodus og utføre andre operasjoner. Verktøykassedialogen kan også vises med hurtigtasten Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Forsinkelse for mod-initialiseringsdialogen"
       description: "Antall millisekunder det ventes før fremdriftsdialogen for mod-initialisering vises."

@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "मॉड्स खोजें..."
     placeholderWithHint: ~
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "टूलकिट डायलॉग स्वचालित रूप से न दिखाएँ"
       description: "डिफ़ॉल्ट रूप से, विंडहॉक स्वचालित रूप से टूलकिट डायलॉग दिखाता है जब यह पता लगाता है कि टास्कबार सुलभ नहीं है, चाहे सिस्टम अस्थिरता के कारण हो या किसी अन्य कारण से। टूलकिट डायलॉग विंडहॉक को बंद करने, सुरक्षित मोड में स्विच करने और अन्य ऑपरेशनों की अनुमति देता है। टूलकिट डायलॉग को Ctrl+Win+W कीबोर्ड शॉर्टकट के साथ भी दिखाया जा सकता है।"
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "मॉड प्रारंभिक डायलॉग विलंब"
       description: "मॉड प्रारंभिक के लिए प्रगति डायलॉग दिखाने से पहले प्रतीक्षा करने के लिए मिलीसेकंड की मात्रा।"

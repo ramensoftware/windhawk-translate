@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Chèche mod yo..."
     placeholderWithHint: "Chèche mod yo... tape '/' pou fokis"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Pa montre dyalòg zouti a otomatikman"
       description: "Pa default, Windhawk otomatikman montre dyalòg zouti a lè li detekte ke ba travay la pa aksesib, swa akòz enstabilite sistèm swa pou yon lòt rezon. Dyalòg zouti a pèmèt ou pou kite Windhawk, chanje nan mòd san danje, epi fè lòt operasyon. Ou kapab tou wè dyalòg zouti a avèk rakoursi klavye Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Reta dyalòg inisyalizasyon mod"
       description: "Kantite milisegond pou tann anvan dyalòg pwogrè a parèt pou inisyalizasyon mod la."

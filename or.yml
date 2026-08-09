@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "ମଡ୍ ଖୋଜନ୍ତୁ..."
     placeholderWithHint: "ମଡ୍ ଖୋଜନ୍ତୁ... ଫୋକସ୍ କରିବା ପାଇଁ '/' ଟିପନ୍ତୁ"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଟୁଲକିଟ୍ ଡାୟଲଗ୍ ଦେଖାନ୍ତୁ ନାହିଁ"
       description: "ଟାସ୍କବାର୍ ଅକ୍ସେସ୍ କରିହେଉନଥିବା ସମୟରେ Windhawk ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଟୁଲକିଟ୍ ଦେଖାଏ। ଏହାକୁ Ctrl+Win+W ସର୍ଟକଟ୍ ମାଧ୍ୟମରେ ମଧ୍ୟ ଦେଖାଯାଇପାରିବ।"
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "ମଡ୍ ଆରମ୍ଭ ଡାୟଲଗ୍ ବିଳମ୍ବ"
       description: "ମଡ୍ ଆରମ୍ଭ ହେବା ସମୟରେ ପ୍ରଗତି ଡାୟଲଗ୍ ଦେଖାଇବା ପୂର୍ବରୁ ଅପେକ୍ଷା କରିବାକୁ ଥିବା ସମୟ (ମିଲିସେକେଣ୍ଡରେ)।"

@@ -276,6 +276,41 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_other: ~
+    disableCount_other: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "ค้นหาม็อด..."
     placeholderWithHint: ~
@@ -348,6 +383,9 @@ app:
     dontAutoShowToolkit:
       title: "ไม่ต้องแสดงกล่องโต้ตอบชุดเครื่องมือโดยอัตโนมัติ"
       description: "โดยปกติ Windhawk แสดงกล่องโต้ตอบชุดเครื่องมือโดยอัตโนมัติเมื่อมีการตรวจพบว่าไม่สามารถเข้าถึงแถบงานได้ อาจเกิดจากความไม่เสถียรของระบบหรือเหตุผลอื่นๆ กล่องโต้ตอบชุดเครื่องมือนี้อนุญาตให้ออกจาก Windhawk เปลี่ยนไปใช้โหมดความปลอดภัย และดำเนินการสิ่งอื่น ๆ ได้ ยังสามารถแสดงกล่องโต้ตอบชุดเครื่องมือได้โดยใช้แป้นพิมพ์ลัด Ctrl+Win+W"
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "การหน่วงเวลาของกล่องโต้ตอบการเริ่มต้นม็อด"
       description: "จำนวนมิลลิวินาทีในการรอก่อนที่จะโชว์กล่องโต้ตอบความคืบหน้าสำหรับการเริ่มต้นม็อด"

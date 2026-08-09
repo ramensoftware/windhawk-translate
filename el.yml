@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Αναζήτηση για mods..."
     placeholderWithHint: ~
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Να μην εμφανίζεται αυτόματα το παράθυρο διαλόγου της εργαλειοθήκης"
       description: "Από προεπιλογή, το Windhawk εμφανίζει αυτόματα το παράθυρο διαλόγου της εργαλειοθήκης όταν εντοπίζει ότι η γραμμή εργασιών δεν είναι προσβάσιμη, είτε λόγω αστάθειας του συστήματος είτε για άλλο λόγο. Το παράθυρο διαλόγου εργαλειοθήκης επιτρέπει την έξοδο από το Windhawk, τη μετάβαση σε ασφαλή λειτουργία και να κάνει άλλες παρεμβάσεις. Ο διάλογος της εργαλειοθήκης μπορεί επίσης να εμφανιστεί με τη συντόμευση πληκτρολογίου Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Καθυστέρηση διαλόγου προετοιμασίας Mod"
       description: "Όριο χιλιοστών του δευτερολέπτου αναμονής πριν εμφανιστεί το παράθυρο διαλόγου προόδου για την προετοιμασία του mod."

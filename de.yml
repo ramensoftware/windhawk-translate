@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Suche nach Mods..."
     placeholderWithHint: ~
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Toolkit-Dialog nicht automatisch anzeigen"
       description: "Standardmäßig zeigt Windhawk den Toolkit-Dialog automatisch an, wenn es erkennt, dass die Taskleiste nicht zugänglich ist, sei es aufgrund von Systeminstabilität oder einem anderen Grund. Der Toolkit-Dialog ermöglicht es, Windhawk zu beenden, in den abgesicherten Modus zu wechseln und andere Aktionen auszuführen. Der Toolkit-Dialog kann auch mit der Tastenkombination Strg+Win+W aufgerufen werden."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Verzögerung des Mod-Initialisierungsdialogs"
       description: "Wartezeit in Millisekunden, bevor der Fortschrittsdialog für die Mod-Initialisierung angezeigt wird."

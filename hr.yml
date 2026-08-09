@@ -288,6 +288,57 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_few: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_few: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_few: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_few: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_few: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_few: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_few: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_few: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Pretraži dodatke..."
     placeholderWithHint: ~
@@ -360,6 +411,9 @@ app:
     dontAutoShowToolkit:
       title: "Ne prikazuj automatski alatni komplet"
       description: "Windhawk prema zadanim postavkama automatski prikazuje dijalog alatnog kompleta kad otkrije da programska traka nije dostupna, primjerice zbog nestabilnosti sustava. Alatni komplet omogućuje izlazak iz Windhawka, prijelaz u sigurni način rada i druge radnje. Možete ga prikazati i pomoću prečaca Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Kašnjenje dijaloga pri inicijalizaciji dodataka"
       description: "Vrijednost (u milisekundama) prije nego što se prikaže dijalog napretka prilikom inicijalizacije dodataka."

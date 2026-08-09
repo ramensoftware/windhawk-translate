@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "جستجوی مادها..."
     placeholderWithHint: ~
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "عدم نمایش خودکار پنجره جعبه‌ابزار"
       description: "به‌طور پیش‌فرض، وقتی ویندهاک تشخیص دهد که نوار وظیفه (Taskbar) در دسترس نیست (به دلیل ناپایداری سیستم یا دلایل دیگر)، پنجره جعبه‌ابزار را به‌صورت خودکار نمایش می‌دهد. پنجره جعبه‌ابزار به شما امکان می‌دهد از ویندهاک خارج شوید، به حالت ایمن بروید و عملیات دیگر را انجام دهید. پنجره جعبه‌ابزار همچنین با کلید میانبر Ctrl+Win+W قابل نمایش است."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "تاخیر پنجره راه‌اندازی ماد"
       description: "تعداد میلی‌ثانیه‌هایی که باید صبر کرد قبل از اینکه پنجره پیشرفت برای راه‌اندازی ماد نمایش داده شود."

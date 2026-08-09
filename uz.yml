@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Modlarni qidirish..."
     placeholderWithHint: "Modlarni qidirish... fokuslash uchun '/' bosing"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Asboblar to‘plami oynasini avtomatik ko‘rsatmaslik"
       description: "Odatiy bo‘lib, Windhawk vazifalar paneli ishlamay qolganda (tizim beqarorligi yoki boshqa sabab) asboblar to‘plamini avtomatik ko‘rsatadi. Bu oyna Windhawk'dan chiqish yoki xavfsiz rejimga o‘tish imkonini beradi. Shuningdek, uni Ctrl+Win+W tugmalari orqali ham ochish mumkin."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod initsializatsiyasi oynasining kechikishi"
       description: "Modni initsializatsiya qilish jarayoni oynasi ko‘ringuncha kutiladigan vaqt (millisoniyalarda)."

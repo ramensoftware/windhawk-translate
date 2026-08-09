@@ -276,6 +276,41 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_other: ~
+    disableCount_other: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "搜索您想要的模组..."
     placeholderWithHint: "搜索您想要的模组... 按 / 键聚焦"
@@ -348,6 +383,9 @@ app:
     dontAutoShowToolkit:
       title: "禁止自动显示Toolkit窗口。"
       description: "默认情况下，当Windhawk检测到任务栏无法访问时（可能是由于系统不稳定或其他原因），会自动显示Toolkit窗口。Toolkit窗口允许退出Windhawk，切换到安全模式和进行其他操作。禁用后仍可以使用Ctrl+Win+W键盘快捷键显示Toolkit窗口。"
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod初始化对话延迟"
       description: "在显示Mod初始化进度对话框之前需要等待的毫秒数。"

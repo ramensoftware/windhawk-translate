@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Modları ara..."
     placeholderWithHint: "Mod arayın... odaklanmak için '/' tuşuna basın"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Araç takımı iletişim kutusunu otomatik olarak gösterme"
       description: "Varsayılan olarak, Windhawk görev çubuğunun sistem dengesizliği veya başka bir nedenden dolayı erişilemez olduğunu algıladığında araç takımı iletişim kutusunu otomatik olarak gösterir. Araç takımı iletişim kutusu Windhawk'tan çıkmayı, güvenli moda geçmeyi ve diğer işlemleri yapmayı sağlar. Araç takımı iletişim kutusu Ctrl+Win+W klavye kısayoluyla da gösterilebilir."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod başlatma ekranı gecikmesi"
       description: "Mod başlatma için ilerleme iletişim kutusunu göstermeden önce beklenecek milisaniye miktarı."

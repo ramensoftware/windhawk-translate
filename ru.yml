@@ -294,6 +294,65 @@ app:
     abortedSubtitle: "Обновление было отменено после {{done}} из {{total}} модификаций. Остальные оставлены в исходном виде"
     failedTitle: "Обновление не смогло завершиться"
     failedSubtitle: "Для компиляции модификации на этом устройстве нужны инструменты разработчика, которые не установлены. Установите их и запустите обновление снова."
+  modSelection:
+    selected_one: ~
+    selected_few: ~
+    selected_many: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_few: ~
+    enableCount_many: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_few: ~
+    disableCount_many: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_few: ~
+    removeCount_many: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_few: ~
+    removeConfirm_many: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_few: ~
+    moveTitle_many: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_few: ~
+    modCount_many: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_few: ~
+    deleteConfirm_many: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Искать модификации..."
     placeholderWithHint: "Искать модификации... нажмите '/' для фокуса"
@@ -366,6 +425,9 @@ app:
     dontAutoShowToolkit:
       title: "Не показывать автоматически диалог инструментария"
       description: "По умолчанию Windhawk автоматически вызывает диалог инструментария когда обнаруживает, что панель задач не работает из-за нестабильности системы или другой причины. Диалог инструментария позволяет закрыть Windhawk, перейти в безопасный режим и совершать другие действия. Диалог инструментария можно также вызвать комбинацией клавиш Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Задержка диалога инициализации модификации"
       description: "Количество миллисекунд ожидания перед показом диалогового окна прогресса инициализации модификации."

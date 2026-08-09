@@ -276,6 +276,41 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_other: ~
+    disableCount_other: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "搜尋模組..."
     placeholderWithHint: "搜尋模組... 按 / 鍵聚焦"
@@ -348,6 +383,9 @@ app:
     dontAutoShowToolkit:
       title: "不要自動顯示工具箱對話框"
       description: "預設情況下，當 Windhawk 檢測到由於系統不穩定或其他原因導致無法訪問任務欄時，會自動顯示工具箱對話框。工具箱對話框允許退出 Windhawk、切換到安全模式以及進行其他操作。工具箱對話框也可以通過 Ctrl+Win+W 鍵盤快捷鍵顯示。"
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "模組初始化對話框延遲"
       description: "等待顯示模組初始化進度對話框的毫秒數。"

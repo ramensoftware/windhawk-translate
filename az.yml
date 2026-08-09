@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Modları axtar..."
     placeholderWithHint: "Mod axtarın... fokuslanmaq üçün '/' düyməsini basın"
@@ -354,6 +397,9 @@ app:
     dontAutoShowToolkit:
       title: "Alətlər dəsti dialoq pəncərəsini avtomatik göstərmə"
       description: "Standart olaraq Windhawk tapşırıq panelinin sistem qeyri-sabitliyi və ya başqa səbəbdən əlçatmaz olduğunu aşkar etdikdə alətlər dəsti dialoq pəncərəsini avtomatik göstərir. Alətlər dəsti dialoq pəncərəsi Windhawk-dan çıxmağa, təhlükəsiz rejimə keçməyə və digər əməliyyatları etməyə imkan verir. Alətlər dəsti dialoq pəncərəsi Ctrl+Win+W klaviatura qısayolu ilə də göstərilə bilər."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Mod başlatma pəncərəsinin gecikməsi"
       description: "Mod başlatma üçün irəliləyiş dialoq pəncərəsini göstərməzdən əvvəl gözləniləcək millisaniyə miqdarı."

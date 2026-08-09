@@ -282,6 +282,49 @@ app:
     abortedSubtitle: ~
     failedTitle: ~
     failedSubtitle: ~
+  modSelection:
+    selected_one: ~
+    selected_other: ~
+    selectMod: ~
+    selectAll: ~
+    clear: ~
+    enableCount_one: ~
+    enableCount_other: ~
+    disableCount_one: ~
+    disableCount_other: ~
+    removeCount_one: ~
+    removeCount_other: ~
+    nothingToEnable: ~
+    nothingToDisable: ~
+    removeConfirm_one: ~
+    removeConfirm_other: ~
+    removeConfirmOk: ~
+  modGroups:
+    moveToGroup: ~
+    moveTitle_one: ~
+    moveTitle_other: ~
+    moveOk: ~
+    noGroup: ~
+    newGroup: ~
+    groupName: ~
+    nameTaken: ~
+    selectGroup: ~
+    expandGroup: ~
+    collapseGroup: ~
+    groupActions: ~
+    modCount_one: ~
+    modCount_other: ~
+    empty: ~
+    moveUp: ~
+    moveDown: ~
+    rename: ~
+    renameTitle: ~
+    renameOk: ~
+    delete: ~
+    deleteConfirm_one: ~
+    deleteConfirm_other: ~
+    deleteConfirmEmpty: ~
+    deleteOk: ~
   modSearch:
     placeholder: "Sök efter moddar..."
     placeholderWithHint: "Sök efter moddar... tryck 'Skift' + '7' för att fokusera"
@@ -355,6 +398,9 @@ app:
     dontAutoShowToolkit:
       title: "Visa inte verktygslådan automatiskt"
       description: "Som standard visar Windhawk automatiskt verktygslådan när det upptäcker att aktivitetsfältet inte är tillgängligt, antingen på grund av systeminstabilitet eller av en annan anledning. Verktygslådan låter dig avsluta Windhawk, byta till felsäkert läge och utföra andra åtgärder. Verktygslådan kan också visas med tangentbordsgenvägen Ctrl+Win+W."
+    disableToolkitHotkey:
+      title: ~
+      description: ~
     modInitDialogDelay:
       title: "Fördröjning för modinitiering"
       description: "Antal millisekunder att vänta innan förloppsdialogsrutan för modinitiering visas."
