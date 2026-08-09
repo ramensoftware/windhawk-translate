@@ -87,7 +87,7 @@ app:
       updating: "Обновление..."
       installing: "Установка..."
       compiling: "Компиляция..."
-      canceling: ~
+      canceling: "Отмена..."
       loggingEnabled: "Логирование включено"
     contextMenu:
       cut: "Вырезать"
@@ -106,19 +106,19 @@ app:
       github: "GitHub"
       twitter: "X (Твиттер)"
   errors:
-    commandFailed: ~
+    commandFailed: "Что-то пошло не так"
   appHeader:
     home: "Главная"
     explore: "Обзор"
     settings: "Параметры"
     about: "О программе"
   logPane:
-    title: ~
-    clear: ~
-    wrapOn: ~
-    wrapOff: ~
-    autoScrollOn: ~
-    autoScrollOff: ~
+    title: "Логи отладки"
+    clear: "Очистить вывод"
+    wrapOn: "Включить перенос текста"
+    wrapOff: "Выключить перенос текста"
+    autoScrollOn: "Включить автопрокрутку"
+    autoScrollOff: "Выключить автопрокрутку"
   mod:
     updateAvailable: "Доступно обновление"
     installed: "Установлено"
@@ -177,24 +177,24 @@ app:
       saveButton: "Сохранить настройки"
       sampleValue: "Пример значения"
       arrayItemAdd: "Добавить новый элемент"
-      arrayItemMoveUp: ~
-      arrayItemMoveDown: ~
+      arrayItemMoveUp: "Сдвинуть элемент вверх"
+      arrayItemMoveDown: "Сдвинуть элемент вниз"
       arrayItemRemove: "Удалить элемент"
-      arrayItemCollapse: ~
-      arrayItemExpand: ~
-      arrayItemNumber: ~
-      arrayItemsRemoveAll: ~
-      arrayItemsRemoveAllConfirm: ~
-      modified: ~
-      unsaved: ~
-      modifiedUnsaved: ~
-      descriptionOf: ~
-      resetToDefault: ~
-      resetToDefaultValue: ~
-      resetToDefaultOf: ~
-      resetToDefaultValueOf: ~
-      resetAll: ~
-      resetAllConfirm: ~
+      arrayItemCollapse: "Свернуть элемент {{number}}"
+      arrayItemExpand: "Развернуть элемент {{number}}"
+      arrayItemNumber: "Элемент {{number}}"
+      arrayItemsRemoveAll: "Удалить все элементы"
+      arrayItemsRemoveAllConfirm: "Вы уверены, что хотите удалить все элементы этой настройки?"
+      modified: "Изменено"
+      unsaved: "Не сохранено"
+      modifiedUnsaved: "Изменено, не сохранено"
+      descriptionOf: "Описание {{name}}"
+      resetToDefault: "Сбросить к значениям по умолчанию"
+      resetToDefaultValue: "Сбросить к значениям по умолчанию: {{value}}"
+      resetToDefaultOf: "Сбросить {{name}} к значениям по умолчанию"
+      resetToDefaultValueOf: "Сбросить {{name}} к значениям по умолчанию: {{value}}"
+      resetAll: "Сбросить всё к значениям по умолчанию"
+      resetAllConfirm: "Вы уверены, что хотите сбросить все настройки модификации к значениям по умолчанию?"
       yamlMode: "Текстовый режим"
       uiMode: "Визуальный режим"
       yamlInvalid: "Неправильный формат YAML"
@@ -206,20 +206,20 @@ app:
       unsavedChangesLeave: "Отменить изменения"
       unsavedChangesStay: "Продолжить редактирование"
       readOnlyPreview: "Это предпросмотр настроек модификации. Установите модификацию для конфигурации настроек."
-      compactView: ~
-      wordWrap: ~
-      expand: ~
-      collapse: ~
-      expandSetting: ~
-      collapseSetting: ~
-      foldedItems_one: ~
-      foldedItems_few: ~
-      foldedItems_many: ~
-      foldedItems_other: ~
-      foldedSettings_one: ~
-      foldedSettings_few: ~
-      foldedSettings_many: ~
-      foldedSettings_other: ~
+      compactView: "Компактный вид"
+      wordWrap: "Перенос текста"
+      expand: "Развернуть"
+      collapse: "Свернуть"
+      expandSetting: "Развернуть {{name}}"
+      collapseSetting: "Свернуть {{name}}"
+      foldedItems_one: "{{count}} элемент"
+      foldedItems_few: "{{count}} элемента"
+      foldedItems_many: "{{count}} элементов"
+      foldedItems_other: "{{count}} элемента"
+      foldedSettings_one: "{{count}} настройка" 
+      foldedSettings_few: "{{count}} настроек" 
+      foldedSettings_many: "{{count}} настроек" 
+      foldedSettings_other: "{{count}} настроек" 
     code:
       title: "Исходный код"
       noData: "Исходный код отсутствует."
@@ -227,7 +227,7 @@ app:
     changelog:
       title: "Список изменений"
       loadingFailed: "Не удалось загрузить список изменений. Нажмите <0>сюда</0>, чтобы просмотреть на GitHub."
-      olderEntries: ~
+      olderEntries: "Старые записи"
     advanced:
       title: "Дополнительно"
       debugLogging:
@@ -266,34 +266,34 @@ app:
       expandLines_other: "Раскрыть {{count}} скрытых строк"
   modUpdates:
     bar:
-      message_one: ~
-      message_few: ~
-      message_many: ~
-      message_other: ~
-      openButton: ~
-    title: ~
-    selectAll: ~
+      message_one: "Доступно обновление для одной модификации"
+      message_few: "Доступны обновления для {{count}} модификаций"
+      message_many: "Доступны обновления для {{count}} модификаций"
+      message_other: "Доступны обновления для {{count}} модификаций"
+      openButton: "Просмотреть обновления"
+    title: "Обновить модификации"
+    selectAll: "Выбрать все"
     columns:
-      mod: ~
-      installed: ~
-      new: ~
-    sourceFailed: ~
-    updateButton_one: ~
-    updateButton_few: ~
-    updateButton_many: ~
-    updateButton_other: ~
-    runningStatus: ~
+      mod: "Модификация"
+      installed: "Установлена"
+      new: "Новая"
+    sourceFailed: "Не удалось загрузить обновление для этой модификации"
+    updateButton_one: "Обновить одну модификацию"
+    updateButton_few: "Обновить {{count}} модификаций"
+    updateButton_many: "Обновить {{count}} модификаций"
+    updateButton_other: "Обновить {{count}} модификаций"
+    runningStatus: "Обновлено модификаций - {{current}} из {{total}}"
     modStatus:
-      updated: ~
-      failed: ~
-      aborted: ~
-    doneTitle: ~
-    doneWithFailuresTitle: ~
-    doneSubtitle: ~
-    abortedTitle: ~
-    abortedSubtitle: ~
-    failedTitle: ~
-    failedSubtitle: ~
+      updated: "Обновлено"
+      failed: "Ошибка"
+      aborted: "Отменено"
+    doneTitle: "Модификации обновлены"
+    doneWithFailuresTitle: "Некоторые модификации не были обновлены"
+    doneSubtitle: "{{updated}} успешно обновлено, {{failed}} с ошибкой"
+    abortedTitle: "Обновление отменено"
+    abortedSubtitle: "Обновление было отменено после {{done}} из {{total}} модификаций. Остальные оставлены в исходном виде"
+    failedTitle: "Обновление не смогло завершиться"
+    failedSubtitle: "Для компиляции модификации на этом устройстве нужны инструменты разработчика, которые не установлены. Установите их и запустите обновление снова."
   modSearch:
     placeholder: "Искать модификации..."
     placeholderWithHint: "Искать модификации... нажмите '/' для фокуса"
@@ -342,11 +342,11 @@ app:
       credits: "Русский перевод от <0>Сергея Крылова</0> с некоторыми правками от berry и communism420, а также от других членов сообщества."
       creditsLink: "mailto:krylov.sn@nxt.ru"
     theme:
-      title: ~
-      description: ~
-      dark: ~
-      light: ~
-      system: ~
+      title: "Тема"
+      description: "Выберите светлую или тёмную расцветку, или совпадающую с системными настройками"
+      dark: "Тёмная"
+      light: "Светлая"
+      system: "Системная"
     updates:
       title: "Проверить обновления"
       description: "Периодически проверять наличие обновлений для Windhawk и установленных модификаций."
@@ -373,10 +373,10 @@ app:
       title: "Дополнительные расширенные параметры"
       restartNotice: "Windhawk будет перезапущен для применения настроек."
       saveButton: "Сохранить и перезапустить Windhawk"
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
+      unsavedChangesTitle: "Несохранённые настройки"
+      unsavedChangesMessage: "У вас есть несохранённые изменения в расширенных настройках. Вы уверены, что хотите отменить их?"
+      unsavedChangesLeave: "Отменить изменения"
+      unsavedChangesStay: "Продолжить редактирование"
     loggingVerbosity:
       appLoggingTitle: "Подробное логирование Windhawk"
       engineLoggingTitle: "Подробное логирование движка Windhawk"
@@ -398,71 +398,71 @@ app:
       processListPlaceholder: "Имя процесса (exe)/пути, по одному в строке, например:"
       invalidCharactersWarning: "Список процессов содержит недопустимые символы, которые будут удалены: {{invalidCharacters}}"
     userData:
-      title: ~
-      description: ~
-      exportAction: ~
-      importAction: ~
-      appSettings: ~
-      notInArchive: ~
-      mods: ~
-      settings: ~
-      config: ~
-      applyToAll: ~
-      noMods: ~
-      local: ~
-      alreadyInstalled: ~
+      title: "Сохранение и восстановление"
+      description: "Сохраните свои настройки Windhawk - ваши программные настройки и ваши модификации с настройками и конфигурацией каждой модификации в файл, или восстановите их из него."
+      exportAction: "Экспортировать..."
+      importAction: "Импортировать..."
+      appSettings: "Программные настройки"
+      notInArchive: "Нет в этом архиве"
+      mods: "Модификации"
+      settings: "Настройки"
+      config: "Конфигурация"
+      applyToAll: "Применить ко всем"
+      noMods: "Отсутствуют модификации для выбора."
+      local: "Локально"
+      alreadyInstalled: "Уже установлено - импортирование заменит текущие настройки и конфигурацию: выбранные части принимают значения из архива, а невыбранные части сбросятся к настройкам модификации по умолчанию."
       export:
-        title: ~
-        description: ~
-        exportButton: ~
-        doneButton: ~
-        doneTitle: ~
-        doneSubtitle: ~
-        warningsTitle: ~
-        offlineTitle: ~
-        offlineDescription: ~
+        title: "Экспортировать данные пользователя"
+        description: "Выберите, что нужно включить. Для каждой модификации Настройки являются изменяемыми параметрами, и Конфигурация - это их включённое состояние и расширенные параметры, по типу собственных списков процессов для включения/исключения и логирования отладки."
+        exportButton: "Экспортировать"
+        doneButton: "Готово"
+        doneTitle: "Экспорт завершён"
+        doneSubtitle: "Ваши пользовательские данные Windhawk были сохранены в выбранный файл"
+        warningsTitle: "Некоторые данные были пропущены"
+        offlineTitle: "Включить источники для оффлайн-восстановления"
+        offlineDescription: "Включить источник каждой модификации в архив для восстановления без интернет-соединения. Размер файла увеличится. Локальные модификации всегда включены."
       importSource:
-        description: ~
-        fileOption: ~
-        textOption: ~
-        textPlaceholder: ~
-        browseButton: ~
-        continueButton: ~
+        description: "Выберите резервную копию для импорта."
+        fileOption: "Из файла резервной копии"
+        textOption: "Из текста"
+        textPlaceholder: "Вставьте сюда содержимое файла резервной копии"
+        browseButton: "Просмотреть..."
+        continueButton: "Продолжить"
       import:
-        title: ~
-        trustTitle: ~
-        trustDescription: ~
-        importButton: ~
-        overwriteWarning_one: ~
-        overwriteWarning_few: ~
-        overwriteWarning_many: ~
-        overwriteWarning_other: ~
-        noPrecompiledTitle: ~
-        noPrecompiledDescription: ~
+        title: "Импортировать данные пользователя"
+        trustTitle: "Продолжайте осторожно"
+        trustDescription: "Импортирование устанавливает и запускает каждую модификацию в этом файле на вашем компьютере также, как при самостоятельной установке"
+        importButton: "Импортировать"
+        overwriteWarning_one: "{{count}} выбранная модификация уже установлена и будет перезаписана"
+        overwriteWarning_few: "{{count}} выбранных модификаций уже установлены и будут перезаписаны"
+        overwriteWarning_many: "{{count}} выбранные модификации уже установлены и будут перезаписаны"
+        overwriteWarning_other: "{{count}} выбранные модификации уже установлены и будут перезаписаны"
+        noPrecompiledTitle: "Принудительная локальная компиляция"
+        noPrecompiledDescription: "Скомпилировать каждую модификацию локально вместо скачивания уже скомпилированной сборки"
         network:
-          none: ~
-          source: ~
-          precompiled: ~
-          sourceAndPrecompiled: ~
-        runningStatus: ~
-        compilingFor: ~
+          none: "Импортирование не требует интернет-соединения"
+          source: "Импортирование требует интернет-соединения для скачивания исходного кода модификации"
+          precompiled: "Импортирование требует интернет-соединения для скачивания уже скомпилированных бинарных файлов модификации"
+          sourceAndPrecompiled: "Импортирование требует интернет-соединения для скачивания исходного кода и уже скомпилированных бинарных файлов модификации"
+        runningStatus: "Импортирование {{current}} модификации из {{total}}"
+        compilingFor: "Компиляция {{mod}} для {{target}}"
         modStatus:
-          installed: ~
-          skipped: ~
-          aborted: ~
-          failed: ~
+          installed: "Установлено"
+          skipped: "Пропущено"
+          aborted: "Отменено"
+          failed: "Ошибка"
         appSettingsStatus:
-          pending: ~
-          applying: ~
-          applied: ~
-          aborted: ~
-        doneTitle: ~
-        doneWithFailuresTitle: ~
-        doneSubtitle: ~
-        abortedTitle: ~
-        abortedSubtitle: ~
-        failedTitle: ~
-        failedSubtitle: ~
+          pending: "В очереди"
+          applying: "Применение..."
+          applied: "Применено"
+          aborted: "Отменено"
+        doneTitle: "Импортирование завершено"
+        doneWithFailuresTitle: "Импортирование завершено с ошибками"
+        doneSubtitle: "{{installed}} установлено, {{skipped}} пропущено, {{failed}} с ошибками."
+        abortedTitle: "Импортирование отменено"
+        abortedSubtitle: "Импортирование было отменено спустя {{done}} из {{total}} модификаций. Остальные не были импортированы. Всё, что было уже установлено, осталось прежним."
+        failedTitle: "Ошибка импортирования"
+        failedSubtitle: "Импортирование не смогло завершиться. Посмотрите ошибку для подробностей."
   about:
     title: "Windhawk вер. {{version}}"
     beta: "бета"
@@ -486,7 +486,7 @@ app:
       documentation: "Документация"
     builtWith:
       title: "Скомпилировано с"
-      tauri: ~
+      tauri: "Фреймворк для создания крошечных, быстрых приложений с веб-интерфейсом"
       vscodium: "Версия от сообщества редактора VSCode от Microsoft"
       llvmMingw: "LLVM/Clang/LLD на базе среды mingw-w64"
       minHook: "Минималистичная API hooking библиотека для Windows"
@@ -502,14 +502,14 @@ app:
     title: "Создать новую модификацию"
   devTools:
     install:
-      description: ~
-      installButton: ~
+      description: "Инструменты разработчика не установлены. Установите их для создания, редактирования, и создания форка модификаций"
+      installButton: "Установить инструменты разработчика"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
+        title: "Требуются инструменты разработчика"
+        downloading: "Скачивание инструментов разработчика..."
+        installing: "Установка инструментов разработчика..."
+        installingNote: "Windhawk перезапустится автоматически после завершения установки."
+        failed: "Ошибка установки"
   devModeAction:
     message: "Создание и изменение модификаций требует некоторых знаний C/C++ в Windows. Если вы не понимаете о чём речь, возможно эти параметры не для вас."
     hideOptionsCheckbox: "Скрыть все параметры для разработчиков"
@@ -541,8 +541,8 @@ app:
     appHeader:
       mods: "Модификации"
       links: "Ссылки"
-      language: ~
-      toggleTheme: ~
+      language: "Язык"
+      toggleTheme: "Переключение светлой/тёмной темы"
       contributeTranslation: "Добавить новый перевод"
     home:
       tagline: "Маркетплейс для кастомизации программ Windows"
