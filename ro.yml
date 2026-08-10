@@ -479,13 +479,13 @@ app:
       import:
         title: "Importă datele de utilizator"
         trustTitle: "Continuă cu prudență"
-        trustDescription: "Prin procesul de importare se instalează și se rulează fiecare mod din acest fișier pe calculatorul tău, ca și cum le-ai instala de unul singur. Modurile malițioase pot să-ți provoace daune calculatorului tău sau să-ți încalce confidențialitatea, așa că importează doar fișiere în care ai încredere."
+        trustDescription: "Prin procesul de importare se instalează și se rulează fiecare mod din acest fișier pe calculatorul tău, ca și cum le-ai instala de unul singur. Modurile malițioase pot să-ți provoace daune calculatorului tău sau să-ți încalce confidențialitatea, așa că importează doar fișierele în care ai încredere."
         importButton: "Importă"
         overwriteWarning_one: "{{count}} mod selectat este deja instalat și va fi suprascris."
         overwriteWarning_few: "{{count}} moduri selectate sunt deja instalate și vor fi suprascrise."
         overwriteWarning_other: "{{count}} de moduri selectate sunt deja instalate și vor fi suprascrise."
         noPrecompiledTitle: "Forțează compilarea locală"
-        noPrecompiledDescription: "Compilează fiecare mod local în loc să descarci un build precompilat."
+        noPrecompiledDescription: "Compilează fiecare mod local în loc să descarci build-uri precompilate."
         network:
           none: "Importul nu necesită o conexiune la internet"
           source: "Importul necesită o conexiune la internet pentru descărcarea codului sursă al modurilor"
