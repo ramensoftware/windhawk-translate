@@ -412,8 +412,8 @@ app:
       title: "Nu arăta automat dialogul cu trusa de instrumente"
       description: "În mod normal, Windhawk arată automat dialogul cu trusa de instrumente când detectează că bara de activități nu este accesibilă, fie din motive de instabilitate a sistemului sau din alt motiv. Dialogul cu trusa de instrumente îți permite să închizi Windhawk, să activezi modul de siguranță și să faci alte operațiuni. Dialogul cu trusa de instrumente poate fi de asemenea afișat folosind combinația de taste Ctrl+Win+W."
     disableToolkitHotkey:
-      title: "Dezactivează combinația de taste pentru dialogul pentru trusa de instrumente"
-      description: "În mod normal, dialogul cu trusa de instrumente poate fi afișat cu combinația de taste Ctrl+Win+W. Activează această opțiune pentru a nu înregistra scurtătura, de exemplu, atunci când intră în conflict cu un alt program."
+      title: "Dezactivează combinația de taste pentru dialogul cu trusa de instrumente"
+      description: "În mod normal, dialogul cu trusa de instrumente poate fi afișat cu combinația de taste Ctrl+Win+W. Activează această opțiune pentru a nu înregistra scurtătura, de exemplu, atunci când aceasta intră în conflict cu un alt program."
     modInitDialogDelay:
       title: "Întârzierea dialogului de inițializare a modului"
       description: "Numărul de milisecunde de așteptat înainte de a arăta dialogul de progres pentru inițializarea modului."
