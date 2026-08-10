@@ -183,9 +183,9 @@ app:
       arrayItemNumber: ~
       arrayItemsRemoveAll: ~
       arrayItemsRemoveAllConfirm: ~
-      modified: ~
+      nonDefault: ~
       unsaved: ~
-      modifiedUnsaved: ~
+      nonDefaultUnsaved: ~
       descriptionOf: ~
       resetToDefault: ~
       resetToDefaultValue: ~
