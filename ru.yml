@@ -295,64 +295,64 @@ app:
     failedTitle: "Обновление не смогло завершиться"
     failedSubtitle: "Для компиляции модификации на этом устройстве нужны инструменты разработчика, которые не установлены. Установите их и запустите обновление снова."
   modSelection:
-    selected_one: ~
-    selected_few: ~
-    selected_many: ~
-    selected_other: ~
-    selectMod: ~
-    selectAll: ~
-    clear: ~
-    enableCount_one: ~
-    enableCount_few: ~
-    enableCount_many: ~
-    enableCount_other: ~
-    disableCount_one: ~
-    disableCount_few: ~
-    disableCount_many: ~
-    disableCount_other: ~
-    removeCount_one: ~
-    removeCount_few: ~
-    removeCount_many: ~
-    removeCount_other: ~
-    nothingToEnable: ~
-    nothingToDisable: ~
-    removeConfirm_one: ~
-    removeConfirm_few: ~
-    removeConfirm_many: ~
-    removeConfirm_other: ~
-    removeConfirmOk: ~
+    selected_one: "{{count}} модификация выбрана"
+    selected_few: "{{count}} модификации выбрано"
+    selected_many: "{{count}} модификаций выбрано"
+    selected_other: "{{count}} модификаций выбрано"
+    selectMod: "Выбрать {{name}}"
+    selectAll: "Выбрать все"
+    clear: "Очистить выбор"
+    enableCount_one: "Включить {{count}} модификацию"
+    enableCount_few: "Включить {{count}} модификации"
+    enableCount_many: "Включить {{count}} модификаций"
+    enableCount_other: "Включить {{count}} модификаций"
+    disableCount_one: "Отключить {{count}} модификацию"
+    disableCount_few: "Отключить {{count}} модификации"
+    disableCount_many: "Отключить {{count}} модификаций"
+    disableCount_other: "Отключить {{count}} модификаций"
+    removeCount_one: "Удалить {{count}} модификацию"
+    removeCount_few: "Удалить {{count}} модификации"
+    removeCount_many: "Удалить {{count}} модификаций"
+    removeCount_other: "Удалить {{count}} модификаций"
+    nothingToEnable: "Ни одну из выбранных модификаций нельзя включить"
+    nothingToDisable: "Ни одну из выбранных модификаций нельзя отключить"
+    removeConfirm_one: "Вы уверены, что хотите удалить выбранную модификацию?"
+    removeConfirm_few: "Вы уверены, что хотите удалить {{count}} модификации?"
+    removeConfirm_many: "Вы уверены, что хотите удалить {{count}} модификаций?"
+    removeConfirm_other: "Вы уверены, что хотите удалить {{count}} модификаций?"
+    removeConfirmOk: "Удалить модификации"
   modGroups:
-    moveToGroup: ~
-    moveTitle_one: ~
-    moveTitle_few: ~
-    moveTitle_many: ~
-    moveTitle_other: ~
-    moveOk: ~
-    noGroup: ~
-    newGroup: ~
-    groupName: ~
-    nameTaken: ~
-    selectGroup: ~
-    expandGroup: ~
-    collapseGroup: ~
-    groupActions: ~
-    modCount_one: ~
-    modCount_few: ~
-    modCount_many: ~
-    modCount_other: ~
-    empty: ~
-    moveUp: ~
-    moveDown: ~
-    rename: ~
-    renameTitle: ~
-    renameOk: ~
-    delete: ~
-    deleteConfirm_one: ~
-    deleteConfirm_few: ~
-    deleteConfirm_many: ~
-    deleteConfirm_other: ~
-    deleteConfirmEmpty: ~
-    deleteOk: ~
+    moveToGroup: "Переместить в группу"
+    moveTitle_one: "Переместить 1 модификацию в группу"
+    moveTitle_few: "Переместить {{count}} модификации в группу"
+    moveTitle_many: "Переместить {{count}} модификаций в группу"
+    moveTitle_other: "Переместить {{count}} модификаций в группу"
+    moveOk: "Переместить"
+    noGroup: "Без группы"
+    newGroup: "Новая группа"
+    groupName: "Название группы"
+    nameTaken: "Группа с этим названием уже существует"
+    selectGroup: "Выбрать {{name}}"
+    expandGroup: "Развернуть {{name}}"
+    collapseGroup: "Свернуть {{name}}"
+    groupActions: "Действия для {{name}}"
+    modCount_one: "{{count}} модификация"
+    modCount_few: "{{count}} модификации"
+    modCount_many: "{{count}} модификаций"
+    modCount_other: "{{count}} модификаций"
+    empty: "В этой группе нет модификаций"
+    moveUp: "Сдвинуть группу вверх"
+    moveDown: "Сдвинуть группу вниз"
+    rename: "Переименовать группу"
+    renameTitle: "Переименовать группу"
+    renameOk: "Переименовать"
+    delete: "Удалить группу"
+    deleteConfirm_one: "Удалить эту группу? 1 модификация снова будет несгруппированной"
+    deleteConfirm_few: "Удалить эту группу? {{count}} модификации снова будут несгруппированными"
+    deleteConfirm_many: "Удалить эту группу? {{count}} модификаций снова будут несгруппированными"
+    deleteConfirm_other: "Удалить эту группу? {{count}} модификаций снова будут несгруппированными"
+    deleteConfirmEmpty: "Удалить эту группу?"
+    deleteOk: "Удалить группу"
   modSearch:
     placeholder: "Искать модификации..."
     placeholderWithHint: "Искать модификации... нажмите '/' для фокуса"
