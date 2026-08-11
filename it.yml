@@ -162,11 +162,13 @@ app:
           excluded: "Esclusi"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "La versione installata è identica alla versione selezionata"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Dettagli"
       noData: "Mancano i dettagli della mod."
@@ -568,7 +570,6 @@ app:
     offConfirm: ~
     offConfirmOk: ~
   modPreview:
-    actionUnavailable: "L'azione non è disponibile in modalità anteprima"
     notCompiled: "La mod deve essere compilata prima di poter essere visualizzata in anteprima"
   sidebar:
     modId: "Identificativo della mod"

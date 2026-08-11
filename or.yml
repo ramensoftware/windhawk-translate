@@ -161,11 +161,13 @@ app:
           excluded: "ବାଦ୍ ଦିଆଯାଇଛି"
           customListsNote: "ଏହି ମଡ୍ ପାଇଁ ଆଡଭାନ୍ସଡ୍ ଟ୍ୟାବ୍‌ରେ କଷ୍ଟମ୍ ପ୍ରୋସେସ୍ ତାଲିକା ସ୍ଥିର କରାଯାଇଛି"
           patternsMatchCriticalSystemProcessesNote: "ଏହି ମଡ୍ ପାଇଁ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ସିଷ୍ଟମ ପ୍ରୋସେସ୍‌ଗୁଡ଼ିକୁ ବିଚାରକୁ ନିଆଯାଇଛି (ଆଡଭାନ୍ସଡ୍ ଟ୍ୟାବ୍‌ରେ ସେଟ୍ କରାଯାଇଛି)"
-      updateNotNeeded: "ଇନଷ୍ଟଲ୍ ହୋଇଥିବା ସଂସ୍କରଣ ଏବଂ ଚୟନିତ ସଂସ୍କରଣ ସମାନ"
     version:
       preRelease: "ପ୍ରି-ରିଲିଜ୍"
       select: "ବାଛନ୍ତୁ"
-      chooseVersion: "ଏକ ସଂସ୍କରଣ ବାଛନ୍ତୁ..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "ବିବରଣୀ"
       noData: "ମଡ୍ ବିବରଣୀ ଅନୁପସ୍ଥିତ।"
@@ -553,7 +555,6 @@ app:
     offConfirm: "ସେଟିଙ୍ଗସ ପ୍ରୟୋଗ କରିବା ପାଇଁ Windhawk ପୁନର୍ବାର ଆରମ୍ଭ ହେବ।"
     offConfirmOk: "Windhawk ପୁନର୍ବାର ଆରମ୍ଭ କରନ୍ତୁ"
   modPreview:
-    actionUnavailable: "ପ୍ରିଭ୍ୟୁ ମୋଡ୍‌ରେ ଏହି କାର୍ଯ୍ୟ ଉପଲବ୍ଧ ନାହିଁ"
     notCompiled: "ପ୍ରିଭ୍ୟୁ କରିବା ପୂର୍ବରୁ ମଡ୍‌କୁ କମ୍ପାଇଲ୍ କରିବା ଆବଶ୍ୟକ"
   sidebar:
     modId: "ମଡ୍ ପରିଚୟକ"

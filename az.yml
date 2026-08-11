@@ -161,11 +161,13 @@ app:
           excluded: "İstisna"
           customListsNote: "Xüsusi siyahılar Genişləndirilmiş bölməsində konfiqurasiya edilə bilər."
           patternsMatchCriticalSystemProcessesNote: "Bu mod üçün kritik sistem proseslərinə aid daxil etmə siyahısı nümunələri nəzərə alınır (Genişləndirilmiş bölməsində təyin olunur)."
-      updateNotNeeded: "Quraşdırılmış versiya seçilmiş versiya ilə eynidir"
     version:
       preRelease: "Ön buraxılış"
       select: "Seç"
-      chooseVersion: "Versiya seçin"
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Təfərrüatlar"
       noData: "Mod təfərrüatları yoxdur."
@@ -553,7 +555,6 @@ app:
     offConfirm: "Parametrləri tətbiq etmək üçün Windhawk yenidən başladılacaq."
     offConfirmOk: "Əminəm"
   modPreview:
-    actionUnavailable: "Əməliyyat önbaxış rejimində əlçatan deyil"
     notCompiled: "Önbaxışdan əvvəl mod kompilyasiya edilməlidir"
   sidebar:
     modId: "Mod identifikatoru"

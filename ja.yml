@@ -160,11 +160,13 @@ app:
           excluded: "除外"
           customListsNote: "この Mod は高度タブのカスタムプロセス対象/除外リストに定義されています"
           patternsMatchCriticalSystemProcessesNote: "重要なシステムプロセスの内包リストパターンがこの Mod に対して考慮されます (高度タブで設定されています)"
-      updateNotNeeded: "インストールされているバージョンは選択したバージョンと同一です。"
     version:
       preRelease: "プレリリース"
       select: "選択"
-      chooseVersion: "バージョンを選択..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "詳細"
       noData: "Mod の詳細がありません。"
@@ -538,7 +540,6 @@ app:
     offConfirm: "Windhawk が再起動され、設定が適用されます。"
     offConfirmOk: "Windhawk を再起動"
   modPreview:
-    actionUnavailable: "アクションはプレビューモードでは使用できません。"
     notCompiled: "Mod はプレビューをする前にコンパイルする必要があります"
   sidebar:
     modId: "Mod の識別子"

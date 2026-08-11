@@ -160,11 +160,13 @@ app:
           excluded: "กระบวนการที่ยกเว้น"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "เวอร์ชั่นที่ติดตั้งไว้เหมือนกับเวอร์ชั่นที่เลือก"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "รายละเอียด"
       noData: "ไม่มีรายละเอียดของม็อดนี้"
@@ -538,7 +540,6 @@ app:
     offConfirm: "Windhawk จะถูกรีสตาร์ทเพื่อนำการตั้งค่าไปใช้"
     offConfirmOk: "รีสตาร์ท Windhawk"
   modPreview:
-    actionUnavailable: "การกระทำไม่พร้อมใช้งานในโหมดตัวอย่าง"
     notCompiled: "ม็อดจำเป็นต้องได้รับการคอมไพล์ก่อนจึงจะได้รับการดูตัวอย่างได้"
   sidebar:
     modId: "ตัวระบุม็อด"

@@ -161,11 +161,13 @@ app:
           excluded: "Uitgesloten"
           customListsNote: "Aangepaste proces opname-/uitsluitingslijsten zijn voor deze mod gedefinieerd in het Geavanceerd tabblad."
           patternsMatchCriticalSystemProcessesNote: "Opnamelijst patronen worden overwogen voor kritieke systeemprocessen voor deze mod (ingesteld in het Geavanceerd tabblad)"
-      updateNotNeeded: "Geïnstalleerde versie is identiek aan de geselecteerde versie"
     version:
       preRelease: "pre-release"
       select: "Selecteren"
-      chooseVersion: "Kies een versie…"
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Details"
       noData: "Details van mod ontbreken."
@@ -553,7 +555,6 @@ app:
     offConfirm: "Windhawk wordt opnieuw gestart om de instellingen toe te passen."
     offConfirmOk: "Windhawk opnieuw opstarten"
   modPreview:
-    actionUnavailable: "Actie is niet beschikbaar in voorvertoningsmodus"
     notCompiled: "Mod moet worden gecompileerd voordat deze kan worden bekeken"
   sidebar:
     modId: "Mod-identificator"

@@ -161,11 +161,13 @@ app:
           excluded: "Εξαιρείται"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "Η εγκατεστημένη έκδοση είναι πανομοιότυπη με την επιλεγμένη έκδοση"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Λεπτομέρειες"
       noData: "Οι λεπτομέρειες του Mod λείπουν."
@@ -553,7 +555,6 @@ app:
     offConfirm: "Το Windhawk θα επανεκκινηθεί για να εφαρμοστούν οι ρυθμίσεις."
     offConfirmOk: "Επανεκκίνηση του Windhawk"
   modPreview:
-    actionUnavailable: "Η ενέργεια δεν είναι διαθέσιμη σε λειτουργία προεπισκόπησης"
     notCompiled: "Το Mod πρέπει να μεταγλωττιστεί για να είναι δυνατή η προεπισκόπησή του"
   sidebar:
     modId: "Αναγνωριστικό mod"

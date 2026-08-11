@@ -161,11 +161,13 @@ app:
           excluded: "বাদ দেওয়া হয়েছে"
           customListsNote: "অ্যাডভান্সড ট্যাবে এই মডের জন্য কাস্টম প্রসেস ইনক্লুশন/এক্সক্লুশন তালিকা নির্ধারণ করা হয়েছে"
           patternsMatchCriticalSystemProcessesNote: "এই মডের জন্য গুরুত্বপূর্ণ সিস্টেম প্রসেসে ইনক্লুশন প্যাটার্ন বিবেচনা করা হয়েছে (অ্যাডভান্সড ট্যাবে সেট করা)"
-      updateNotNeeded: "ইনস্টল করা ভার্সনটি নির্বাচিত ভার্সনের সাথে একদম হুবহু"
     version:
       preRelease: "প্রি-রিলিজ"
       select: "সিলেক্ট করুন"
-      chooseVersion: "একটি ভার্সন বেছে নিন..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "বিস্তারিত"
       noData: "মডের বিস্তারিত তথ্য পাওয়া যায়নি।"
@@ -553,7 +555,6 @@ app:
     offConfirm: "সেটিংস প্রয়োগ করতে Windhawk রিস্টার্ট করা হবে।"
     offConfirmOk: "Windhawk রিস্টার্ট করুন"
   modPreview:
-    actionUnavailable: "প্রিভিউ মোডে এই কাজটি উপলব্ধ নয়"
     notCompiled: "প্রিভিউ করার আগে মডটি কম্পাইল করা প্রয়োজন"
   sidebar:
     modId: "মড আইডেন্টিফায়ার"

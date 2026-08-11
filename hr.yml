@@ -162,11 +162,13 @@ app:
           excluded: "Isključeno"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "Instalirana verzija jednaka je odabranoj verziji"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Detalji"
       noData: "Nedostaju detalji o dodatku."
@@ -257,7 +259,7 @@ app:
       title: "Promjene u najnovijoj verziji"
       noData: "Instalirana verzija jednaka je odabranoj verziji."
       splitView: "Podijeljeni prikaz"
-      expandLines_one: "Proširi jednu skrivenu liniju"
+      expandLines_one: "Proširi {{count}} skrivenu liniju"
       expandLines_few: "Proširi {{count}} skrivene linije"
       expandLines_other: "Proširi {{count}} skrivenih linija"
   modUpdates:
@@ -568,7 +570,6 @@ app:
     offConfirm: "Windhawk će se ponovno pokrenuti kako bi primijenio postavke."
     offConfirmOk: "Ponovno pokreni Windhawk"
   modPreview:
-    actionUnavailable: "Radnja nije dostupna u načinu pregleda"
     notCompiled: "Dodatak je potrebno kompilirati prije pregleda"
   sidebar:
     modId: "Identifikator dodatka"

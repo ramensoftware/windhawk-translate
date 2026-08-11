@@ -161,11 +161,13 @@ app:
           excluded: "Eksli"
           customListsNote: "Lis enklizyon/esklizyon pwosesis pèsonalize te defini pou mod sa a nan onglet Avanse a"
           patternsMatchCriticalSystemProcessesNote: "Modèl lis enklizyon se konsidere pou pwosesis sistèm kritik pou mod sa a (mete nan onglet Avanse a)"
-      updateNotNeeded: "Vèsyon enstale a idantik pou vèsyon a ki chwazi"
     version:
       preRelease: "pre-lansman"
       select: "Chwazi"
-      chooseVersion: "Chwazi yon vèsyon..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Detay"
       noData: "Detay mod ap mankan."
@@ -553,7 +555,6 @@ app:
     offConfirm: "Windhawk pral rekòmanse pou aplike paramèt yo"
     offConfirmOk: "Rekòmanse Windhawk"
   modPreview:
-    actionUnavailable: "Aksyon pa disponib nan mòd koutje."
     notCompiled: "Mod bezwen konpile anvan li kapab fè koutje"
   sidebar:
     modId: "Idantifyan mod"

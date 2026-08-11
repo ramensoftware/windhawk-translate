@@ -163,11 +163,13 @@ app:
           excluded: "Исключённые"
           customListsNote: "Для этого мода на вкладке «Дополнительно» заданы пользовательские списки включения и исключения процессов"
           patternsMatchCriticalSystemProcessesNote: "Шаблоны списка включения рассматриваются для критически важных системных процессов для этой модификации (установка на вкладке «Дополнительно»)."
-      updateNotNeeded: "Установленная версия совпадает с выбранной"
     version:
       preRelease: "пре-релиз"
       select: "Выбрать"
-      chooseVersion: "Выберите версию..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Описание"
       noData: "Описание модификации отсутствует."
@@ -260,13 +262,13 @@ app:
       title: "Изменения в последней версии"
       noData: "Установленная версия совпадает с выбранной."
       splitView: "Раздельный просмотр"
-      expandLines_one: "Раскрыть одну скрытую строку"
+      expandLines_one: "Раскрыть {{count}} скрытую строку"
       expandLines_few: "Раскрыть {{count}} скрытые строки"
       expandLines_many: "Раскрыть {{count}} скрытых строк"
       expandLines_other: "Раскрыть {{count}} скрытых строк"
   modUpdates:
     bar:
-      message_one: "Доступно обновление для одной модификации"
+      message_one: "Доступно обновление для {{count}} модификации"
       message_few: "Доступны обновления для {{count}} модификаций"
       message_many: "Доступны обновления для {{count}} модификаций"
       message_other: "Доступны обновления для {{count}} модификаций"
@@ -278,7 +280,7 @@ app:
       installed: "Установлена"
       new: "Новая"
     sourceFailed: "Не удалось загрузить обновление для этой модификации"
-    updateButton_one: "Обновить одну модификацию"
+    updateButton_one: "Обновить {{count}} модификацию"
     updateButton_few: "Обновить {{count}} модификаций"
     updateButton_many: "Обновить {{count}} модификаций"
     updateButton_other: "Обновить {{count}} модификаций"
@@ -316,14 +318,14 @@ app:
     removeCount_other: "Удалить {{count}} модификаций"
     nothingToEnable: "Ни одну из выбранных модификаций нельзя включить"
     nothingToDisable: "Ни одну из выбранных модификаций нельзя отключить"
-    removeConfirm_one: "Вы уверены, что хотите удалить выбранную модификацию?"
+    removeConfirm_one: "Вы уверены, что хотите удалить {{count}} модификацию?"
     removeConfirm_few: "Вы уверены, что хотите удалить {{count}} модификации?"
     removeConfirm_many: "Вы уверены, что хотите удалить {{count}} модификаций?"
     removeConfirm_other: "Вы уверены, что хотите удалить {{count}} модификаций?"
     removeConfirmOk: "Удалить модификации"
   modGroups:
     moveToGroup: "Переместить в группу"
-    moveTitle_one: "Переместить 1 модификацию в группу"
+    moveTitle_one: "Переместить {{count}} модификацию в группу"
     moveTitle_few: "Переместить {{count}} модификации в группу"
     moveTitle_many: "Переместить {{count}} модификаций в группу"
     moveTitle_other: "Переместить {{count}} модификаций в группу"
@@ -347,7 +349,7 @@ app:
     renameTitle: "Переименовать группу"
     renameOk: "Переименовать"
     delete: "Удалить группу"
-    deleteConfirm_one: "Удалить эту группу? 1 модификация снова будет несгруппированной"
+    deleteConfirm_one: "Удалить эту группу? {{count}} модификация снова будет несгруппированной"
     deleteConfirm_few: "Удалить эту группу? {{count}} модификации снова будут несгруппированными"
     deleteConfirm_many: "Удалить эту группу? {{count}} модификаций снова будут несгруппированными"
     deleteConfirm_other: "Удалить эту группу? {{count}} модификаций снова будут несгруппированными"
@@ -583,7 +585,6 @@ app:
     offConfirm: "Windhawk будет перезапущен для применения настроек."
     offConfirmOk: "Перезапустить Windhawk"
   modPreview:
-    actionUnavailable: "Действие недоступно в режиме просмотра"
     notCompiled: "Необходимо скомпилировать модификацию для просмотра"
   sidebar:
     modId: "ID модификации"

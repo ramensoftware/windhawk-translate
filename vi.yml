@@ -160,11 +160,13 @@ app:
           excluded: "Đã loại trừ"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "Phiên bản đã cài đặt giống hệt với phiên bản đã chọn"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Chi tiết"
       noData: "Thông tin chi tiết mod bị thiếu."
@@ -538,7 +540,6 @@ app:
     offConfirm: "Windhawk sẽ được khởi động lại để áp dụng các cài đặt."
     offConfirmOk: "Khởi động lại Windhawk"
   modPreview:
-    actionUnavailable: "Hành động không khả dụng ở chế độ xem trước"
     notCompiled: "Mod cần được biên dịch trước khi có thể xem trước"
   sidebar:
     modId: "Mã nhận diện mod"

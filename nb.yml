@@ -161,11 +161,13 @@ app:
           excluded: "Ekskludert"
           customListsNote: "Egendefinerte inkluderings-/ekskluderingslister for prosesser er definert for denne modden i Avansert-fanen"
           patternsMatchCriticalSystemProcessesNote: "Mønstre i inkluderingslisten tas i betraktning for kritiske systemprosesser for denne modden (angitt i Avansert-fanen)"
-      updateNotNeeded: "Den installerte versjonen er identisk med den valgte versjonen"
     version:
       preRelease: "forhåndsutgivelse"
       select: "Velg"
-      chooseVersion: "Velg en versjon..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Detaljer"
       noData: "Mod-detaljer mangler."
@@ -553,7 +555,6 @@ app:
     offConfirm: "Windhawk startes på nytt for å ta i bruk innstillingene."
     offConfirmOk: "Start Windhawk på nytt"
   modPreview:
-    actionUnavailable: "Handlingen er ikke tilgjengelig i forhåndsvisningsmodus"
     notCompiled: "Modden må kompileres før den kan forhåndsvises"
   sidebar:
     modId: "Mod-identifikator"

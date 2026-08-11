@@ -161,11 +161,13 @@ app:
           excluded: "مستثنی شده"
           customListsNote: "لیست‌های سفارشی برای شامل یا رد کردن پردازش‌ها در زبانه پیشرفته برای این ماد تعریف شده‌اند"
           patternsMatchCriticalSystemProcessesNote: "الگوهای لیست شمول برای پردازش‌های حیاتی سیستم در نظر گرفته می‌شوند (تنظیم شده در زبانه پیشرفته)"
-      updateNotNeeded: "نسخه نصب شده با نسخه انتخاب شده یکسان است"
     version:
       preRelease: "پیش‌انتشار"
       select: "انتخاب"
-      chooseVersion: "انتخاب یک نسخه..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "جزئیات"
       noData: "جزئیات ماد موجود نیست."
@@ -553,7 +555,6 @@ app:
     offConfirm: "ویندهاک برای اعمال تنظیمات مجدداً راه‌اندازی خواهد شد."
     offConfirmOk: "راه‌اندازی مجدد ویندهاک"
   modPreview:
-    actionUnavailable: "این عملیات در حالت پیش‌نمایش در دسترس نیست"
     notCompiled: "ماد باید قبل از پیش‌نمایش کامپایل شود"
   sidebar:
     modId: "شناسه ماد"

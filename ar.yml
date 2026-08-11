@@ -165,11 +165,13 @@ app:
           excluded: "مستبعد"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "الإصدار المثبت مطابق للإصدار المحدد"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "تفاصيل"
       noData: "تفاصيل المود مفقودة."
@@ -613,7 +615,6 @@ app:
     offConfirm: "سيتم إعادة تشغيل Windhawk لتطبيق الإعدادات."
     offConfirmOk: "إعادة تشغيل Windhawk"
   modPreview:
-    actionUnavailable: "الإجراء غير متاح في وضع المعاينة"
     notCompiled: "يجب تجميع المود قبل معاينته"
   sidebar:
     modId: "معرف المود"

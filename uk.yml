@@ -163,11 +163,13 @@ app:
           excluded: "Винятки"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "Встановлена версія ідентична обраній версії"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Деталі"
       noData: "Деталі відсутні."
@@ -260,7 +262,7 @@ app:
       title: "Зміни в останній версії:"
       noData: "Встановлена версія ідентична обраній версії."
       splitView: "Розділити вид"
-      expandLines_one: "Розгорнути один прихований рядок"
+      expandLines_one: "Розгорнути {{count}} прихований рядок"
       expandLines_few: "Розгорнути {{count}} приховані рядки"
       expandLines_many: "Розгорнути {{count}} прихованих рядків"
       expandLines_other: "Розгорнути {{count}} прихованих рядків"
@@ -583,7 +585,6 @@ app:
     offConfirm: "Windhawk перезавантажиться для застосування налаштувань."
     offConfirmOk: "Перезавантажити Windhawk"
   modPreview:
-    actionUnavailable: "Опція недоступна у режимі перегляду"
     notCompiled: "Мод потрібен бути скомпільованим перед переглядом"
   sidebar:
     modId: "Ідентифікатор моду"

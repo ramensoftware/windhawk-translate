@@ -160,11 +160,13 @@ app:
           excluded: "Dikecualikan"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "Versi yang terinstal identik dengan versi yang dipilih"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Rincian"
       noData: "Rincian mod hilang."
@@ -538,7 +540,6 @@ app:
     offConfirm: "Windhawk akan dimulai ulang untuk menerapkan pengaturan."
     offConfirmOk: "Mulai ulang Windhawk"
   modPreview:
-    actionUnavailable: "Tindakan tidak tersedia di mode pratinjau"
     notCompiled: "Mod harus dikompilasi sebelum bisa dipratinjau"
   sidebar:
     modId: "Identifikasi mod"

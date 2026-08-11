@@ -161,11 +161,13 @@ app:
           excluded: "விலக்கப்பட்டது"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "நிறுவப்பட்ட பதிப்பு மற்றும் தேர்ந்தெடுக்கப்பட்ட பதிப்பு ஒரே மாதிரியானவை"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "விவரங்கள்"
       noData: "மாற்றம் விவரங்கள் இல்லை."
@@ -553,7 +555,6 @@ app:
     offConfirm: "அமைப்புகளைச் செயல்படுத்த விண்ட்ஹாக் மீண்டும் துவங்கும்."
     offConfirmOk: "விண்ட்ஹாக் ஐ மீண்டும் துவக்கு"
   modPreview:
-    actionUnavailable: "இந்த செயல் முன்னோட்ட பயன்முறையில் கிடைக்கவில்லை"
     notCompiled: "மாற்றம் முன்னோட்டம் காணும் முன் கணக்கிடப்பட வேண்டும்"
   sidebar:
     modId: "மாற்ற அடையாளம்"

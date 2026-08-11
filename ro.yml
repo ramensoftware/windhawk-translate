@@ -162,11 +162,13 @@ app:
           excluded: "Excluse"
           customListsNote: "Au fost definite liste personalizate de includere/excludere a proceselor pentru acest mod în fila Avansat"
           patternsMatchCriticalSystemProcessesNote: "Pattern-urile din lista de includere sunt luate în considerare pentru procesele critice de sistem pentru acest mod (setate în fila Avansat)"
-      updateNotNeeded: "Versiunea instalată este identică cu cea selectată"
     version:
       preRelease: "prelansare"
       select: "Selectează"
-      chooseVersion: "Alege o versiune..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Detalii"
       noData: "Detaliile modului lipsesc."
@@ -568,7 +570,6 @@ app:
     offConfirm: "Windhawk va fi repornit pentru a aplica setările."
     offConfirmOk: "Repornește Windhawk"
   modPreview:
-    actionUnavailable: "Acțiunea nu este disponibilă în modul de previzualizare"
     notCompiled: "Modul trebuie să fie compilat pentru a-l putea previzualiza"
   sidebar:
     modId: "Identificator mod"

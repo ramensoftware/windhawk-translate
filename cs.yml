@@ -163,11 +163,13 @@ app:
           excluded: "Vyloučeno"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
-      updateNotNeeded: "Nainstalovaná verze je shodná s vybranou verzí"
     version:
       preRelease: ~
       select: ~
-      chooseVersion: ~
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Popis"
       noData: "Chybí popis úpravy."
@@ -583,7 +585,6 @@ app:
     offConfirm: "Windhawk bude restartován pro použití nastavení."
     offConfirmOk: "Restartovat Windhawk"
   modPreview:
-    actionUnavailable: "Akce není dostupná v režimu zobrazení"
     notCompiled: "Abyste si ji mohli prohlédnout, musíte úpravu zkompilovat"
   sidebar:
     modId: "ID modifikace"

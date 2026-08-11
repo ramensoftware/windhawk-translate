@@ -161,11 +161,13 @@ app:
           excluded: "Undantagna"
           customListsNote: "Anpassade processinkluderings-/exkluderingslistor har definierats för den här modden i fliken Avancerat"
           patternsMatchCriticalSystemProcessesNote: "Inkluderingslistans mönster beaktas för kritiska systemprocesser för den här modden (angivet i fliken Avancerat)"
-      updateNotNeeded: "Den installerade versionen är identisk med den valda versionen"
     version:
       preRelease: "förhandsversion"
       select: "Välj"
-      chooseVersion: "Välj en version..."
+    updates:
+      disableForVersion: ~
+      disableAll: ~
+      allow: ~
     details:
       title: "Detaljer"
       noData: "Detaljer för modden saknas."
@@ -554,7 +556,6 @@ app:
     offConfirm: "Windhawk kommer att startas om för att tillämpa inställningarna."
     offConfirmOk: "Starta om Windhawk"
   modPreview:
-    actionUnavailable: "Åtgärden är inte tillgänglig i förhandsgranskningsläget"
     notCompiled: "Modden måste kompileras innan den kan förhandsgranskas"
   sidebar:
     modId: "Mod-ID"
