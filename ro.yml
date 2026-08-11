@@ -191,7 +191,7 @@ app:
       resetToDefault: "Resetează la valorile prestabilite"
       resetToDefaultValue: "Resetează la valoarea prestabilită: {{value}}"
       resetToDefaultOf: "Resetează {{name}} la valorile prestabilite"
-      resetToDefaultValueOf: "Resetează {{name}} la valoarea prestabilită: {{value}}
+      resetToDefaultValueOf: "Resetează {{name}} la valoarea prestabilită: {{value}}"
       resetAll: "Resetează toate setările la valorile prestabilite"
       resetAllConfirm: "Sigur vrei să resetezi toate setările la valorile prestabilite ale modului?"
       yamlMode: "Mod textual"
