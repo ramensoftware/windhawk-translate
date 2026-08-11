@@ -65,13 +65,13 @@ tray:
   TASKDLG_TASK_WAITING_FOR_SYMBOLS: "Se așteaptă simbolurile..."
   TASKDLG_TASK_UNINITIALIZING: "Dezinițializare..."
   TASKDLG_PROCESS_SUSPENDED: "(suspendat)"
-  TOOLKITDLG_TITLE: "Trusă de unelte Windhawk"
+  TOOLKITDLG_TITLE: "Trusă de instrumente Windhawk"
   TOOLKITDLG_EXPLANATION_CRASH: "A fost detectată instabilitatea sistemului, ceea ce ar putea fi cauzată de unul dintre modurile Windhawk. Închiderea sau relansarea Windhawk în modul de siguranță ar putea ajuta la rezolvarea problemei."
   TOOLKITDLG_BUTTON_OPEN: "&Deschide Windhawk"
   TOOLKITDLG_BUTTON_LOADED_MODS: "&Moduri încărcate"
   TOOLKITDLG_BUTTON_EXIT: "&Închide Windhawk"
   TOOLKITDLG_BUTTON_SAFE_MODE: "Mod de &siguranță"
-  TOOLKITDLG_BUTTON_CLOSE: "În&chide trusa de unelte"
+  TOOLKITDLG_BUTTON_CLOSE: "În&chide trusa de instrumente"
   SAFE_MODE_TITLE: "Repornire în modul de siguranță"
   SAFE_MODE_TEXT: "Windhawk va fi repornit cu toate funcționalitățile de injectat cod dezactivate."
   SAFE_MODE_DETECTED_TITLE: "Mod de siguranță"
@@ -87,7 +87,7 @@ app:
       updating: "Se actualizează..."
       installing: "Se instalează..."
       compiling: "Se compilează..."
-      canceling: ~
+      canceling: "Se anulează..."
       loggingEnabled: "Jurnalele pentru depanare sunt activate"
     contextMenu:
       cut: "Decupare"
@@ -176,24 +176,24 @@ app:
       saveButton: "Salvează setările"
       sampleValue: "Valoarea eșantionului"
       arrayItemAdd: "Adaugă un nou element"
-      arrayItemMoveUp: ~
-      arrayItemMoveDown: ~
-      arrayItemRemove: "Elimină element"
-      arrayItemCollapse: ~
-      arrayItemExpand: ~
-      arrayItemNumber: ~
-      arrayItemsRemoveAll: ~
-      arrayItemsRemoveAllConfirm: ~
-      nonDefault: ~
-      unsaved: ~
-      nonDefaultUnsaved: ~
-      descriptionOf: ~
-      resetToDefault: ~
-      resetToDefaultValue: ~
-      resetToDefaultOf: ~
-      resetToDefaultValueOf: ~
-      resetAll: ~
-      resetAllConfirm: ~
+      arrayItemMoveUp: "Mută elementul deasupra"
+      arrayItemMoveDown: "Mută elementul dedesubt"
+      arrayItemRemove: "Elimină elementul"
+      arrayItemCollapse: "Restrânge elementul {{number}}"
+      arrayItemExpand: "Extinde elementul {{number}}"
+      arrayItemNumber: "Elementul {{number}}"
+      arrayItemsRemoveAll: "Elimină toate elementele"
+      arrayItemsRemoveAllConfirm: "Sigur vrei să elimini toate elementele ale acestei setări?"
+      nonDefault: "Valoare non-prestabilită"
+      unsaved: "Valoare nesalvată"
+      nonDefaultUnsaved: "Valoare non-prestabilită, nesalvată"
+      descriptionOf: "Descrierea pentru {{name}}"
+      resetToDefault: "Resetează la valorile prestabilite"
+      resetToDefaultValue: "Resetează la valoarea prestabilită: {{value}}"
+      resetToDefaultOf: "Resetează {{name}} la valorile prestabilite"
+      resetToDefaultValueOf: "Resetează {{name}} la valoarea prestabilită: {{value}}
+      resetAll: "Resetează toate setările la valorile prestabilite"
+      resetAllConfirm: "Sigur vrei să resetezi toate setările la valorile prestabilite ale modului?"
       yamlMode: "Mod textual"
       uiMode: "Mod vizual"
       yamlInvalid: "Format YAML nevalid"
@@ -205,26 +205,26 @@ app:
       unsavedChangesLeave: "Renunță la modificări"
       unsavedChangesStay: "Continuă editarea"
       readOnlyPreview: "Aceasta este o previzualizare a setărilor modului. Instalează modul pentru a-i configura setările."
-      compactView: ~
-      wordWrap: ~
+      compactView: "Vizualizare compactă"
+      wordWrap: "Încadrare cuvinte"
       expand: "Extinde"
       collapse: "Restrânge"
-      expandSetting: ~
-      collapseSetting: ~
-      foldedItems_one: ~
-      foldedItems_few: ~
-      foldedItems_other: ~
-      foldedSettings_one: ~
-      foldedSettings_few: ~
-      foldedSettings_other: ~
+      expandSetting: "Extinde {{name}}"
+      collapseSetting: "Restrânge {{name}}"
+      foldedItems_one: "{{count}} element"
+      foldedItems_few: "{{count}} elemente"
+      foldedItems_other: "{{count}} de elemente"
+      foldedSettings_one: "{{count}} setare"
+      foldedSettings_few: "{{count}} setări"
+      foldedSettings_other: "{{count}} de setări"
     code:
       title: "Cod sursă"
       noData: "Codul sursă lipsește."
       collapseExtra: "Restrânge Readme și Setări"
     changelog:
       title: "Jurnal de modificări"
-      loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Clic aici</0> pentru a-l vedea pe GitHub."
-      olderEntries: ~
+      loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Dă clic aici</0> pentru a-l vedea pe GitHub."
+      olderEntries: "Intrări mai vechi"
     advanced:
       title: "Avansat"
       debugLogging:
@@ -262,83 +262,83 @@ app:
       expandLines_other: "Extinde {{count}} de linii ascunse"
   modUpdates:
     bar:
-      message_one: ~
-      message_few: ~
-      message_other: ~
-      openButton: ~
-    title: ~
-    selectAll: ~
+      message_one: "Este disponibilă o actualizare pentru un mod"
+      message_few: "Sunt disponibile actualizări pentru {{count}} moduri"
+      message_other: "Sunt disponibile actualizări pentru {{count}} de moduri"
+      openButton: "Revizuiește actualizările"
+    title: "Actualizează modurile"
+    selectAll: "Selectează-le pe toate"
     columns:
-      mod: ~
-      installed: ~
-      new: ~
-    sourceFailed: ~
-    updateButton_one: ~
-    updateButton_few: ~
-    updateButton_other: ~
-    runningStatus: ~
+      mod: "Mod"
+      installed: "Versiune instalată"
+      new: "Versiune nouă"
+    sourceFailed: "Nu s-a putut încărca actualizarea acestui mod"
+    updateButton_one: "Actualizează un mod"
+    updateButton_few: "Actualizează {{count}} moduri"
+    updateButton_other: "Actualizează {{count}} de moduri"
+    runningStatus: "Se actualizează modul {{current}} din {{total}}"
     modStatus:
-      updated: ~
-      failed: ~
-      aborted: ~
-    doneTitle: ~
-    doneWithFailuresTitle: ~
-    doneSubtitle: ~
-    abortedTitle: ~
-    abortedSubtitle: ~
-    failedTitle: ~
-    failedSubtitle: ~
+      updated: "Actualizat"
+      failed: "Eșuat"
+      aborted: "Anulat"
+    doneTitle: "Moduri actualizate"
+    doneWithFailuresTitle: "Unele moduri nu au fost actualizate"
+    doneSubtitle: "{{updated}} actualizate, {{failed}} eșuate."
+    abortedTitle: "Actualizare anulată"
+    abortedSubtitle: "Actualizarea a fost anulată după {{done}} din {{total}} (de) moduri. Restul modurilor au fost lăsate așa cum au fost."
+    failedTitle: "Actualizarea nu a putut fi finalizată"
+    failedSubtitle: "Compilarea unui mod pe acest dispozitiv necesită instrumentele pentru dezvoltare, care nu sunt instalate. Instalează-le și începe actualizarea din nou."
   modSelection:
-    selected_one: ~
-    selected_few: ~
-    selected_other: ~
-    selectMod: ~
-    selectAll: ~
-    clear: ~
-    enableCount_one: ~
-    enableCount_few: ~
-    enableCount_other: ~
-    disableCount_one: ~
-    disableCount_few: ~
-    disableCount_other: ~
-    removeCount_one: ~
-    removeCount_few: ~
-    removeCount_other: ~
-    nothingToEnable: ~
-    nothingToDisable: ~
-    removeConfirm_one: ~
-    removeConfirm_few: ~
-    removeConfirm_other: ~
-    removeConfirmOk: ~
+    selected_one: "{{count}} mod selectat"
+    selected_few: "{{count}} moduri selectate"
+    selected_other: "{{count}} de moduri selectate"
+    selectMod: "Selectează {{name}}"
+    selectAll: "Selectează-le pe toate"
+    clear: "Elimină selecția"
+    enableCount_one: "Activează {{count}} mod"
+    enableCount_few: "Activează {{count}} moduri"
+    enableCount_other: "Activează {{count}} de moduri"
+    disableCount_one: "Dezactivează {{count}} mod"
+    disableCount_few: "Dezactivează {{count}} moduri"
+    disableCount_other: "Dezactivează {{count}} de moduri"
+    removeCount_one: "Elimină {{count}} mod"
+    removeCount_few: "Elimină {{count}} de moduri"
+    removeCount_other: "Elimină {{count}} de moduri"
+    nothingToEnable: "Niciunul dintre modurile selectate nu poate fi activat"
+    nothingToDisable: "Niciunul dintre modurile selectate nu poate fi dezactivat"
+    removeConfirm_one: "Sigur vrei să elimini modul selectat?"
+    removeConfirm_few: "Sigur vrei să elimini {{count}} moduri?"
+    removeConfirm_other: "Sigur vrei să elimini {{count}} de moduri?"
+    removeConfirmOk: "Elimină modurile"
   modGroups:
-    moveToGroup: ~
-    moveTitle_one: ~
-    moveTitle_few: ~
-    moveTitle_other: ~
-    moveOk: ~
-    noGroup: ~
-    newGroup: ~
-    groupName: ~
-    nameTaken: ~
-    selectGroup: ~
-    expandGroup: ~
-    collapseGroup: ~
-    groupActions: ~
-    modCount_one: ~
-    modCount_few: ~
-    modCount_other: ~
-    empty: ~
-    moveUp: ~
-    moveDown: ~
-    rename: ~
-    renameTitle: ~
-    renameOk: ~
-    delete: ~
-    deleteConfirm_one: ~
-    deleteConfirm_few: ~
-    deleteConfirm_other: ~
-    deleteConfirmEmpty: ~
-    deleteOk: ~
+    moveToGroup: "Mută în grup"
+    moveTitle_one: "Mută un mod într-un grup"
+    moveTitle_few: "Mută {{count}} moduri într-un grup"
+    moveTitle_other: "Mută {{count}} de moduri într-un grup"
+    moveOk: "Mută"
+    noGroup: "Niciun grup"
+    newGroup: "Grup nou"
+    groupName: "Numele grupului"
+    nameTaken: "Un grup cu acest nume există deja"
+    selectGroup: "Selectează {{name}}"
+    expandGroup: "Extinde {{name}}"
+    collapseGroup: "Restrânge {{name}}"
+    groupActions: "Acțiuni pentru {{name}}"
+    modCount_one: "{{count}} mod"
+    modCount_few: "{{count}} moduri"
+    modCount_other: "{{count}} de moduri"
+    empty: "Niciun mod în acest grup"
+    moveUp: "Mută grupul deasupra"
+    moveDown: "Mută grupul dedesubt"
+    rename: "Redenumește grupul"
+    renameTitle: "Redenumește grupul"
+    renameOk: "Redenumește"
+    delete: "Șterge grupul"
+    deleteConfirm_one: "Ștergi acest grup? Un mod nu va mai fi grupat."
+    deleteConfirm_few: "Ștergi acest grup? {{count}} moduri nu vor mai fi grupate."
+    deleteConfirm_other: "Ștergi acest grup? {{count}} de moduri nu vor mai fi grupate."
+    deleteConfirmEmpty: "Ștergi acest grup?"
+    deleteOk: "Șterge grupul"
   modSearch:
     placeholder: "Caută moduri..."
     placeholderWithHint: "Caută moduri... tastează '/' pentru focus"
@@ -387,11 +387,11 @@ app:
       credits: "Tradus în limba română de <0>Valer100</0>."
       creditsLink: "https://github.com/Valer100"
     theme:
-      title: ~
-      description: ~
-      dark: ~
-      light: ~
-      system: ~
+      title: "Temă"
+      description: "Alege o schemă de culori luminoasă sau întunecată sau urmează setarea sistemului."
+      dark: "Întunecată"
+      light: "Luminoasă"
+      system: "Sistem"
     updates:
       title: "Verifică pentru actualizări"
       description: "Verifică periodic pentru noi versiuni de Windhawk și pentru modurile instalate."
@@ -409,11 +409,11 @@ app:
       title: "Cere elevare UAC pentru a rula Windhawk"
       description: "Windhawk necesită drepturi de administrator, dar pentru un calculator folosit de o singură persoană, afișarea ecranului UAC de fiecare dată poate fi enervantă, așa că Windhawk ocolește acest lucru. Activează această opțiune pentru a cere elevare UAC pentru a rula Windhawk."
     dontAutoShowToolkit:
-      title: "Nu arăta automat dialogul cu trusa de unelte"
-      description: "În mod normal, Windhawk arată automat dialogul cu trusa de unelte când detectează că bara de activități nu este accesibilă, fie din motive de instabilitate a sistemului sau din alt motiv. Dialogul cu trusa de unelte îți permite să închizi Windhawk, să activezi modul de siguranță și să faci alte operațiuni. Dialogul cu trusa de unelte poate fi de asemenea afișat folosind combinația de taste Ctrl+Win+W."
+      title: "Nu arăta automat dialogul cu trusa de instrumente"
+      description: "În mod normal, Windhawk arată automat dialogul cu trusa de instrumente când detectează că bara de activități nu este accesibilă, fie din motive de instabilitate a sistemului sau din alt motiv. Dialogul cu trusa de instrumente îți permite să închizi Windhawk, să activezi modul de siguranță și să faci alte operațiuni. Dialogul cu trusa de instrumente poate fi de asemenea afișat folosind combinația de taste Ctrl+Win+W."
     disableToolkitHotkey:
-      title: ~
-      description: ~
+      title: "Dezactivează combinația de taste pentru dialogul cu trusa de instrumente"
+      description: "În mod normal, dialogul cu trusa de instrumente poate fi afișat cu combinația de taste Ctrl+Win+W. Activează această opțiune pentru a nu înregistra scurtătura, de exemplu, atunci când aceasta intră în conflict cu un alt program."
     modInitDialogDelay:
       title: "Întârzierea dialogului de inițializare a modului"
       description: "Numărul de milisecunde de așteptat înainte de a arăta dialogul de progres pentru inițializarea modului."
@@ -421,10 +421,10 @@ app:
       title: "Mai multe setări avansate"
       restartNotice: "Windhawk va fi repornit pentru a aplica setările."
       saveButton: "Salvează și repornește Windhawk"
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
+      unsavedChangesTitle: "Setări nesalvate"
+      unsavedChangesMessage: "Ai modificări nesalvate la setările avansate. Sigur dorești să le elimini?"
+      unsavedChangesLeave: "Elimină modificările"
+      unsavedChangesStay: "Continuă editarea"
     loggingVerbosity:
       appLoggingTitle: "Verbozitatea scrierii în jurnal pentru Windhawk"
       engineLoggingTitle: "Verbozitatea engine-ului de scriere în jurnal Windhawk"
@@ -446,70 +446,70 @@ app:
       processListPlaceholder: "Numele/căile proceselor, câte unul/una pe un singur rând, de exemplu:"
       invalidCharactersWarning: "Lista de procese conține caractere nevalide ce vor fi eliminate: {{invalidCharacters}}"
     userData:
-      title: ~
-      description: ~
-      exportAction: ~
-      importAction: ~
-      appSettings: ~
-      notInArchive: ~
-      mods: ~
-      settings: ~
-      config: ~
-      applyToAll: ~
-      noMods: ~
-      local: ~
-      alreadyInstalled: ~
+      title: "Backup și restaurare"
+      description: "Fă un backup al configurărilor tale pentru Windhawk (setările aplicației și modurile tale cu toate setările și configurările acestora) într-un fișier sau restaurează-le dintr-unul."
+      exportAction: "Exportă..."
+      importAction: "Importă..."
+      appSettings: "Setările aplicației"
+      notInArchive: "Nu va fi inclus în această arhivă"
+      mods: "Moduri"
+      settings: "Setări"
+      config: "Configurări"
+      applyToAll: "Aplică la toate"
+      noMods: "Niciun mod de inclus."
+      local: "Local"
+      alreadyInstalled: "Deja instalat - importarea acestuia îi va înlocui setările și configurațiile curente: părțile bifate vor lua valorile din arhivă, iar cele nebifate vor fi resetate la valorile prestabilite ale modului."
       export:
-        title: ~
-        description: ~
-        exportButton: ~
-        doneButton: ~
-        doneTitle: ~
-        doneSubtitle: ~
-        warningsTitle: ~
-        offlineTitle: ~
-        offlineDescription: ~
+        title: "Exportă datele de utilizator"
+        description: "Alege ce să fie inclus. Pentru fiecare mod, setările sunt opțiunile sale ajustabile, iar configurările sunt starea sa de activare și opțiunile avansate, precum listele personalizate de includere/excludere a proceselor și înregistrarea în jurnal pentru depanare."
+        exportButton: "Exportă"
+        doneButton: "Gata"
+        doneTitle: "Export finalizat"
+        doneSubtitle: "Datele tale de utilizator Windhawk au fost salvate în fișierul ales."
+        warningsTitle: "Unele date au fost omise"
+        offlineTitle: "Încorporează sursele pentru restaurare offline"
+        offlineDescription: "Include sursa fiecărui mod în arhivă pentru a le putea restaura fără conexiune la internet. Creează un fișier mai mare. Modurile locale sunt întotdeauna încorporate."
       importSource:
-        description: ~
-        fileOption: ~
-        textOption: ~
-        textPlaceholder: ~
-        browseButton: ~
-        continueButton: ~
+        description: "Alege backupul pentru importare."
+        fileOption: "Dintr-un fișier de backup"
+        textOption: "Din text"
+        textPlaceholder: "Lipește conținutul unui fișier de backup aici"
+        browseButton: "Răsfoiește..."
+        continueButton: "Continuă"
       import:
-        title: ~
-        trustTitle: ~
-        trustDescription: ~
-        importButton: ~
-        overwriteWarning_one: ~
-        overwriteWarning_few: ~
-        overwriteWarning_other: ~
-        noPrecompiledTitle: ~
-        noPrecompiledDescription: ~
+        title: "Importă datele de utilizator"
+        trustTitle: "Continuă cu prudență"
+        trustDescription: "Prin procesul de importare se instalează și se rulează fiecare mod din acest fișier pe calculatorul tău, ca și cum le-ai instala de unul singur. Modurile malițioase pot să-ți provoace daune calculatorului tău sau să-ți încalce confidențialitatea, așa că importează doar fișierele în care ai încredere."
+        importButton: "Importă"
+        overwriteWarning_one: "{{count}} mod selectat este deja instalat și va fi suprascris."
+        overwriteWarning_few: "{{count}} moduri selectate sunt deja instalate și vor fi suprascrise."
+        overwriteWarning_other: "{{count}} de moduri selectate sunt deja instalate și vor fi suprascrise."
+        noPrecompiledTitle: "Forțează compilarea locală"
+        noPrecompiledDescription: "Compilează fiecare mod local în loc să descarci build-uri precompilate."
         network:
-          none: ~
-          source: ~
-          precompiled: ~
-          sourceAndPrecompiled: ~
-        runningStatus: ~
-        compilingFor: ~
+          none: "Importul nu necesită o conexiune la internet"
+          source: "Importul necesită o conexiune la internet pentru descărcarea codului sursă al modurilor"
+          precompiled: "Importul necesită o conexiune la internet pentru descărcarea fișierelor binare precompilate ale modurilor"
+          sourceAndPrecompiled: "Importul necesită o conexiune la internet pentru descărcarea codului sursă al modurilor și fișierelor binare precompilate ale acestora"
+        runningStatus: "Se importă modul {{current}} din {{total}}"
+        compilingFor: "Se compilează {{mod}} pentru {{target}}..."
         modStatus:
-          installed: ~
-          skipped: ~
-          aborted: ~
-          failed: ~
+          installed: "Instalat"
+          skipped: "Omis"
+          aborted: "Anulat"
+          failed: "Eșuat"
         appSettingsStatus:
-          pending: ~
-          applying: ~
-          applied: ~
-          aborted: ~
-        doneTitle: ~
-        doneWithFailuresTitle: ~
-        doneSubtitle: ~
-        abortedTitle: ~
-        abortedSubtitle: ~
-        failedTitle: ~
-        failedSubtitle: ~
+          pending: "În așteptare"
+          applying: "Se aplică..."
+          applied: "Aplicate"
+          aborted: "Anulate"
+        doneTitle: "Import finalizat"
+        doneWithFailuresTitle: "Importul s-a finalizat cu probleme"
+        doneSubtitle: "{{installed}} instalate, {{skipped}} omise, {{failed}} eșuate."
+        abortedTitle: "Import anulat"
+        abortedSubtitle: "Importul a fost anulat după {{done}} din {{total}} (de) moduri. Restul de moduri nu a fost importat. Orice altceva deja instalat a fost păstrat."
+        failedTitle: "Import eșuat"
+        failedSubtitle: "Importul nu a putut fi finalizat. Vezi eroarea pentru detalii."
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
@@ -533,7 +533,7 @@ app:
       documentation: "Documentație"
     builtWith:
       title: "Construit cu"
-      tauri: ~
+      tauri: "Un framework pentru construirea de aplicații mici și rapide cu un frontend web"
       vscodium: "O distribuție a editorului VSCode de la Microsoft condusă de comunitate"
       llvmMingw: "Un lanț de instrumente mingw-w64 bazat pe LLVM/Clang/LLD"
       minHook: "Biblioteca minimalistă de API hooking pentru Windows"
@@ -588,8 +588,8 @@ app:
     appHeader:
       mods: "Moduri"
       links: "Linkuri"
-      language: ~
-      toggleTheme: ~
+      language: "Limbă"
+      toggleTheme: "Comută la tema luminoasă/întunecată"
       contributeTranslation: "Contribuie pentru o nouă traducere"
     home:
       tagline: "Piața de personalizare pentru programele Windows"
