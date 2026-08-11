@@ -483,7 +483,7 @@ app:
         trustTitle: "Continuă cu prudență"
         trustDescription: "Prin procesul de importare se instalează și se rulează fiecare mod din acest fișier pe calculatorul tău, ca și cum le-ai instala de unul singur. Modurile malițioase pot să-ți provoace daune calculatorului tău sau să-ți încalce confidențialitatea, așa că importează doar fișierele în care ai încredere."
         importButton: "Importă"
-        overwriteWarning_one: "{{count}} mod selectat este deja instalat și va fi suprascris."
+        overwriteWarning_one: "Un mod selectat este deja instalat și va fi suprascris."
         overwriteWarning_few: "{{count}} moduri selectate sunt deja instalate și vor fi suprascrise."
         overwriteWarning_other: "{{count}} de moduri selectate sunt deja instalate și vor fi suprascrise."
         noPrecompiledTitle: "Forțează compilarea locală"

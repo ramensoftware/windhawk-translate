@@ -469,7 +469,7 @@ app:
         trustTitle: "Vær forsiktig"
         trustDescription: "Ved import installeres og kjøres hver eneste mod i denne filen på datamaskinen din, akkurat som om du installerte dem selv. Ondsinnede mods kan skade datamaskinen din eller krenke personvernet ditt, så importer kun filer du stoler på."
         importButton: "Importer"
-        overwriteWarning_one: "{{count}} valgt mod er allerede installert og vil bli overskrevet."
+        overwriteWarning_one: "Én valgt mod er allerede installert og vil bli overskrevet."
         overwriteWarning_other: "{{count}} valgte mods er allerede installert og vil bli overskrevet."
         noPrecompiledTitle: "Tving lokal kompilering"
         noPrecompiledDescription: "Kompiler hver mod lokalt i stedet for å laste ned en ferdigkompilert versjon."
