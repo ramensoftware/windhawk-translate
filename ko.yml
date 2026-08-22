@@ -205,7 +205,7 @@ app:
       unsavedChangesLeave: "변경 내용 버리기"
       unsavedChangesStay: "계속 편집"
       readOnlyPreview: "이 모드의 설정 미리 보기 페이지입니다. 설정을 구성하려면 모드를 설치하세요."
-      compactView: : "압축 보기"
+      compactView: "압축 보기"
       wordWrap: "줄 넘김"
       expand: "펼치기"
       collapse: "접기"
