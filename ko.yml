@@ -211,18 +211,18 @@ app:
       collapse: "접기"
       expandSetting: "{{name}} 펼치기"
       collapseSetting: "{{name}} 접기"
+      foldedItems_one: "1개 항목"
       foldedItems_other: "{{count}}개 항목"
-      foldedItems_other: "{{count}}개 항목"
-      foldedSettings_one: "{{count}}개 설정"
+      foldedSettings_one: "1개 설정"
       foldedSettings_other: "{{count}}개 설정"
     code:
       title: "소스 코드"
       noData: "모드 소스가 없습니다."
-      collapseExtra: "Readme와 설정 펼치기"
+      collapseExtra: "Readme와 설정 접기"
     changelog:
       title: "변경 로그"
       loadingFailed: "변경 로그를 불러오는 데 실패했습니다. GitHub에서 보려면 <0>여기를 누르세요</0>."
-      olderEntries: "읽어주세요 및 설정 접기"
+      olderEntries: "오래된 항목"
     advanced:
       title: "고급"
       debugLogging:
@@ -407,8 +407,8 @@ app:
       title: "더 많은 설정"
       restartNotice: "이 설정을 적용하면 Windhawk가 다시 시작됩니다."
       saveButton: "저장하고 Windhawk 다시 시작"
-        unsavedChangesTitle: "저장하지 않은 설정"
-      unsavedChangesMessage: "고급 설정 변경 내용이 저장되지 않았습니다. 정말 버리시겠습니까?"
+      unsavedChangesTitle: "저장하지 않은 설정"
+      unsavedChangesMessage: "고급 설정의 변경 내용이 저장되지 않았습니다. 정말 버리시겠습니까?"
       unsavedChangesLeave: "변경 내용 버리기"
       unsavedChangesStay: "계속 편집"
     loggingVerbosity:
