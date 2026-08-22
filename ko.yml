@@ -518,7 +518,7 @@ app:
       documentation: "문서"
     builtWith:
       title: "다음으로 개발됨"
-      tauri: ~
+      tauri: "작고 빠른 웹 프론트엔드 응용 프로그램용 프레임워크"
       vscodium: "Microsoft의 VSCode 편집기의 커뮤니티 기반 배포"
       llvmMingw: "LLVM/Clang/LLD 기반 mingw-w64 툴체인"
       minHook: "Windows용 최소한의 API 후킹 라이브러리"
