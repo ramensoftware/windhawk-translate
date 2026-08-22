@@ -322,7 +322,7 @@ app:
     renameOk: "이름 바꾸기"
     delete: "그룹 삭제"
     deleteConfirm_one: "이 그룹을 삭제할까요? 모드 1개가 그룹 해제로 돌아갑니다."
-    deleteConfirm_other: "이 그룹을 삭제할까요? 모드 {{count}}가 그룹 해제로 돌아갑니다."
+    deleteConfirm_other: "이 그룹을 삭제할까요? 모드 {{count}}개가 그룹 해제로 돌아갑니다."
     deleteConfirmEmpty: "이 그룹을 삭제할까요?"
     deleteOk: "그룹 삭제"
   modSearch:
