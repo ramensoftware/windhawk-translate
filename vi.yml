@@ -161,6 +161,7 @@ app:
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
     version:
+      title: ~
       preRelease: ~
       select: ~
     updates:
@@ -456,6 +457,7 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

@@ -161,6 +161,7 @@ app:
           customListsNote: "この Mod は高度タブのカスタムプロセス対象/除外リストに定義されています"
           patternsMatchCriticalSystemProcessesNote: "重要なシステムプロセスの内包リストパターンがこの Mod に対して考慮されます (高度タブで設定されています)"
     version:
+      title: ~
       preRelease: "プレリリース"
       select: "選択"
     updates:
@@ -456,6 +457,7 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

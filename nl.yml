@@ -162,6 +162,7 @@ app:
           customListsNote: "Aangepaste proces opname-/uitsluitingslijsten zijn voor deze mod gedefinieerd in het Geavanceerd tabblad."
           patternsMatchCriticalSystemProcessesNote: "Opnamelijst patronen worden overwogen voor kritieke systeemprocessen voor deze mod (ingesteld in het Geavanceerd tabblad)"
     version:
+      title: ~
       preRelease: "pre-release"
       select: "Selecteren"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

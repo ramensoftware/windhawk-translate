@@ -162,6 +162,7 @@ app:
           customListsNote: "Benutzerdefinierte Prozess-Ein-/Ausschlusslisten wurden für diese Mod im Erweitert-Register definiert"
           patternsMatchCriticalSystemProcessesNote: "Einschlusslistenmuster werden für kritische Systemprozesse für diese Mod berücksichtigt (festgelegt im Erweitert-Register)"
     version:
+      title: ~
       preRelease: "Vorabversion"
       select: "Wählen"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

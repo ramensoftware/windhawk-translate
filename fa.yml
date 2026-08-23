@@ -162,6 +162,7 @@ app:
           customListsNote: "لیست‌های سفارشی برای شامل یا رد کردن پردازش‌ها در زبانه پیشرفته برای این ماد تعریف شده‌اند"
           patternsMatchCriticalSystemProcessesNote: "الگوهای لیست شمول برای پردازش‌های حیاتی سیستم در نظر گرفته می‌شوند (تنظیم شده در زبانه پیشرفته)"
     version:
+      title: ~
       preRelease: "پیش‌انتشار"
       select: "انتخاب"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

@@ -166,6 +166,7 @@ app:
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
     version:
+      title: ~
       preRelease: ~
       select: ~
     updates:
@@ -531,6 +532,7 @@ app:
         overwriteWarning_few: ~
         overwriteWarning_many: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

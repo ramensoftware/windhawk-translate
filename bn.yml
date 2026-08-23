@@ -162,6 +162,7 @@ app:
           customListsNote: "অ্যাডভান্সড ট্যাবে এই মডের জন্য কাস্টম প্রসেস ইনক্লুশন/এক্সক্লুশন তালিকা নির্ধারণ করা হয়েছে"
           patternsMatchCriticalSystemProcessesNote: "এই মডের জন্য গুরুত্বপূর্ণ সিস্টেম প্রসেসে ইনক্লুশন প্যাটার্ন বিবেচনা করা হয়েছে (অ্যাডভান্সড ট্যাবে সেট করা)"
     version:
+      title: ~
       preRelease: "প্রি-রিলিজ"
       select: "সিলেক্ট করুন"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

@@ -162,6 +162,7 @@ app:
           customListsNote: "Lis enklizyon/esklizyon pwosesis pèsonalize te defini pou mod sa a nan onglet Avanse a"
           patternsMatchCriticalSystemProcessesNote: "Modèl lis enklizyon se konsidere pou pwosesis sistèm kritik pou mod sa a (mete nan onglet Avanse a)"
     version:
+      title: ~
       preRelease: "pre-lansman"
       select: "Chwazi"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

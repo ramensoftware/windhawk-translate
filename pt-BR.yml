@@ -163,6 +163,7 @@ app:
           customListsNote: "Foram definidas listas personalizadas de inclusão/exclusão de processos para este mod na aba Avançado"
           patternsMatchCriticalSystemProcessesNote: "Os padrões da lista de inclusão são considerados para processos críticos do sistema para este mod (definido na aba Avançado)"
     version:
+      title: ~
       preRelease: "pré-lançamento"
       select: "Selecionar"
     updates:
@@ -486,6 +487,7 @@ app:
         overwriteWarning_one: ~
         overwriteWarning_many: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

@@ -162,6 +162,7 @@ app:
           customListsNote: "Xüsusi siyahılar Genişləndirilmiş bölməsində konfiqurasiya edilə bilər."
           patternsMatchCriticalSystemProcessesNote: "Bu mod üçün kritik sistem proseslərinə aid daxil etmə siyahısı nümunələri nəzərə alınır (Genişləndirilmiş bölməsində təyin olunur)."
     version:
+      title: ~
       preRelease: "Ön buraxılış"
       select: "Seç"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

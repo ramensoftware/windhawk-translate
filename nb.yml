@@ -162,6 +162,7 @@ app:
           customListsNote: "Egendefinerte inkluderings-/ekskluderingslister for prosesser er definert for denne modden i Avansert-fanen"
           patternsMatchCriticalSystemProcessesNote: "Mønstre i inkluderingslisten tas i betraktning for kritiske systemprosesser for denne modden (angitt i Avansert-fanen)"
     version:
+      title: ~
       preRelease: "forhåndsutgivelse"
       select: "Velg"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: "Importer"
         overwriteWarning_one: "Én valgt mod er allerede installert og vil bli overskrevet."
         overwriteWarning_other: "{{count}} valgte mods er allerede installert og vil bli overskrevet."
+        installedUnknownWarning: ~
         noPrecompiledTitle: "Tving lokal kompilering"
         noPrecompiledDescription: "Kompiler hver mod lokalt i stedet for å laste ned en ferdigkompilert versjon."
         network:

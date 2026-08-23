@@ -164,6 +164,7 @@ app:
           customListsNote: "Niestandardowa lista uwzględnień/wykluczeń procesów została zdefiniowana dla tego moda w karcie Zaawansowane"
           patternsMatchCriticalSystemProcessesNote: "Wzorce listy dozwolonych procesów mają zastosowanie do krytycznych procesów systemowych dla tego modułu (ustawienia w zakładce Zaawansowane)"
     version:
+      title: ~
       preRelease: "wersja przedpremierowa"
       select: "Wybierz"
     updates:
@@ -501,6 +502,7 @@ app:
         overwriteWarning_few: ~
         overwriteWarning_many: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

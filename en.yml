@@ -162,6 +162,7 @@ app:
           customListsNote: "Custom process inclusion/exclusion lists were defined for this mod in the Advanced tab"
           patternsMatchCriticalSystemProcessesNote: "Inclusion list patterns are considered for critical system processes for this mod (set in the Advanced tab)"
     version:
+      title: "Select a version"
       preRelease: "pre-release"
       select: "Select"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: "Import"
         overwriteWarning_one: "One selected mod is already installed and will be overwritten."
         overwriteWarning_other: "{{count}} selected mods are already installed and will be overwritten."
+        installedUnknownWarning: "Couldn't check which mods are already installed, so some may be overwritten without warning."
         noPrecompiledTitle: "Compile mods locally"
         noPrecompiledDescription: "Compile every mod locally instead of downloading a precompiled build."
         network:

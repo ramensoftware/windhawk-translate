@@ -161,6 +161,7 @@ app:
           customListsNote: "已在“高级”选项卡中为此模组定义了自定义进程包含/排除列表"
           patternsMatchCriticalSystemProcessesNote: "包含列表模式将应用于此模组的关键系统进程（在“高级”选项卡中设置）"
     version:
+      title: ~
       preRelease: "预览版"
       select: "选择"
     updates:
@@ -456,6 +457,7 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

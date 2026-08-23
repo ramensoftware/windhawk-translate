@@ -163,6 +163,7 @@ app:
           customListsNote: "Des listes personnalisées d’inclusion/exclusion de processus ont été définies pour ce mod dans l’onglet Avancé"
           patternsMatchCriticalSystemProcessesNote: "Les motifs de la liste d’inclusion sont pris en compte pour les processus système critiques pour ce mod (défini dans l’onglet Avancé)"
     version:
+      title: ~
       preRelease: "préversion"
       select: "Sélectionner"
     updates:
@@ -488,6 +489,7 @@ app:
         overwriteWarning_one: ~
         overwriteWarning_many: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

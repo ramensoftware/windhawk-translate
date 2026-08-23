@@ -162,6 +162,7 @@ app:
           customListsNote: "Anpassade processinkluderings-/exkluderingslistor har definierats för den här modden i fliken Avancerat"
           patternsMatchCriticalSystemProcessesNote: "Inkluderingslistans mönster beaktas för kritiska systemprocesser för den här modden (angivet i fliken Avancerat)"
     version:
+      title: ~
       preRelease: "förhandsversion"
       select: "Välj"
     updates:
@@ -472,6 +473,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

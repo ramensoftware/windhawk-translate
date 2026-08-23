@@ -162,6 +162,7 @@ app:
           customListsNote: "Ushbu mod uchun kengaytirilgan yorliqda shaxsiy jarayonlar ro‘yxati belgilangan"
           patternsMatchCriticalSystemProcessesNote: "Kritik tizim jarayonlari uchun ushbu modda kiritish qoliplari hisobga olinadi (Kengaytirilgan yorliqda sozlangan)"
     version:
+      title: ~
       preRelease: "pre-reliz"
       select: "Tanlash"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

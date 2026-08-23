@@ -161,6 +161,7 @@ app:
           customListsNote: "已在「進階」分頁中為此 Mod 定義了自訂處理程序包含/排除清單"
           patternsMatchCriticalSystemProcessesNote: "包含清單模式將應用於此 Mod 的關鍵系統處理程序（在「進階」分頁中設定）"
     version:
+      title: ~
       preRelease: "預覽版"
       select: "選擇"
     updates:
@@ -456,6 +457,7 @@ app:
         trustDescription: ~
         importButton: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:

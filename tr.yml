@@ -162,6 +162,7 @@ app:
           customListsNote: "Özel listeler, Gelişmiş sekmesi altından yapılandırılabilir."
           patternsMatchCriticalSystemProcessesNote: "Bu mod için kritik sistem işlemleri için dahil etme listesi kalıpları dikkate alınır (Gelişmiş sekmesinde ayarlanır)."
     version:
+      title: ~
       preRelease: "Ön sürüm"
       select: "Seç"
     updates:
@@ -471,6 +472,7 @@ app:
         importButton: ~
         overwriteWarning_one: ~
         overwriteWarning_other: ~
+        installedUnknownWarning: ~
         noPrecompiledTitle: ~
         noPrecompiledDescription: ~
         network:
