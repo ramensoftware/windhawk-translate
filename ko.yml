@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} 설치"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} 제거"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} 설치"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} 제거"
   SECTION_MAIN: "$(^NameDA)(필요)"
   SECTION_STARTMENU: "시작 메뉴 바로 가기"
   SECTION_DESKTOP: "바탕 화면 바로 가기"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "프로그램 설정 제거(&R)"
   INSTALLED_HEADER: "이미 설치되어 있습니다"
   INSTALLED_TEXT: "수행할 작업을 선택하세요."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION}이(가) 이미 설치되어 있습니다. 원하는 작업을 선택하세요."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY}이(가) 이미 설치되어 있습니다. 원하는 작업을 선택하세요."
   INSTALLED_OLD: "$(^NameDA)의 이전 버전이 시스템에 설치되어 있습니다. 원하는 작업을 선택하세요."
   INSTALLED_NEW: "$(^NameDA)의 새로운 버전이 설치되어 있습니다! 이전 버전을 설치하는 것은 권장하지 않습니다. 정말 이 이전 버전을 설치하려면 현재 버전을 제거하는 것이 좋습니다. 원하는 작업을 선택하세요."
   REINSTALL: "다시 설치(&R)"

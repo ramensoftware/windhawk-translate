@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Kurulum"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Kaldır"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} Kurulum"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} Kaldır"
   SECTION_MAIN: "$(^NameDA) (gerekli)"
   SECTION_STARTMENU: "Başlat Menüsü Kısayolları"
   SECTION_DESKTOP: "Masaüstü Kısayolu"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Programın ayarlarını kaldır"
   INSTALLED_HEADER: "Zaten Yüklenmiş"
   INSTALLED_TEXT: "Gerçekleştirmek istediğiniz işlemi seçin."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} zaten kurulu. Gerçekleştirmek istediğiniz işlemi seçin."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} zaten kurulu. Gerçekleştirmek istediğiniz işlemi seçin."
   INSTALLED_OLD: "$(^NameDA)'ın daha eski bir sürümü sisteminizde kurulu. Gerçekleştirmek istediğiniz işlemi seçin."
   INSTALLED_NEW: "$(^NameDA)'ın daha yeni bir sürümü zaten kurulu! Daha eski bir sürüm kurmanız önerilmez. Bu eski sürümü gerçekten yüklemek istiyorsanız, önce geçerli sürümü kaldırmanız daha iyi olur. Gerçekleştirmek istediğiniz işlemi seçin."
   REINSTALL: "&Yeniden yükle"

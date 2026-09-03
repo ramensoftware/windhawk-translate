@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Konfigirasyon"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Dezenstale"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} Konfigirasyon"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} Dezenstale"
   SECTION_MAIN: "$(^NameDA) (nesesè)"
   SECTION_STARTMENU: "Rakoursi Meni Kòmanse"
   SECTION_DESKTOP: "Rakoursi Òdinatè"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Retire paramèt pwògram nan"
   INSTALLED_HEADER: "Enstale Deja"
   INSTALLED_TEXT: "Chwazi operasyon an pou akonpli."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} se enstale deja. Chwazi operasyon an ou vle pou akonpli."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} se enstale deja. Chwazi operasyon an ou vle pou akonpli."
   INSTALLED_OLD: "Yon vèsyon ki pi gran $(^NameDA) se enstale sou sistèm ou. Chwazi operasyon an ou vle pou akonpli."
   INSTALLED_NEW: "Yon vèsyon ki pi nouvo $(^NameDA) se enstale deja! Li pa rekòmande ki ou enstale yon vèsyon pi gran. Si ou vrèman vle enstale vèsyon pi gran sa a, se pi bon pou dezenstale vèsyon kouran an premye. Chwazi operasyon an ou vle pou akonpli."
   REINSTALL: "&Reenstale"

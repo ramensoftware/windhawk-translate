@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} quraşdırma"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} silmə"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} quraşdırma"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} silmə"
   SECTION_MAIN: "$(^NameDA) (tələb olunur)"
   SECTION_STARTMENU: "Başlat menyusu qısayolları"
   SECTION_DESKTOP: "İş masası qısayolu"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Proqramın parametrlərini sil"
   INSTALLED_HEADER: "Artıq quraşdırılıb"
   INSTALLED_TEXT: "Yerinə yetirmək istədiyiniz əməliyyatı seçin."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} artıq quraşdırılıb. Yerinə yetirmək istədiyiniz əməliyyatı seçin."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} artıq quraşdırılıb. Yerinə yetirmək istədiyiniz əməliyyatı seçin."
   INSTALLED_OLD: "Sisteminizdə $(^NameDA)-ın daha köhnə versiyası quraşdırılıb. Yerinə yetirmək istədiyiniz əməliyyatı seçin."
   INSTALLED_NEW: "$(^NameDA)-ın daha yeni versiyası artıq quraşdırılıb! Daha köhnə versiyanı quraşdırmaq tövsiyə edilmir. Bu köhnə versiyanı həqiqətən quraşdırmaq istəyirsinizsə, əvvəlcə cari versiyanı silməyiniz daha yaxşıdır. Yerinə yetirmək istədiyiniz əməliyyatı seçin."
   REINSTALL: "&Yenidən quraşdır"

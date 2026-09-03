@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Setup"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Uninstall"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} Setup"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} Uninstall"
   SECTION_MAIN: "$(^NameDA) (required)"
   SECTION_STARTMENU: "Start Menu Shortcuts"
   SECTION_DESKTOP: "Desktop Shortcut"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Remove the program's settings"
   INSTALLED_HEADER: "Already Installed"
   INSTALLED_TEXT: "Select the operation to perform."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} is already installed. Select the operation you want to perform."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} is already installed. Select the operation you want to perform."
   INSTALLED_OLD: "An older version of $(^NameDA) is installed on your system. Select the operation you want to perform."
   INSTALLED_NEW: "A newer version of $(^NameDA) is already installed! It is not recommended that you install an older version. If you really want to install this older version, it's better to uninstall the current version first. Select the operation you want to perform."
   REINSTALL: "&Reinstall"

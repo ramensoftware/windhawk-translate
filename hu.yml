@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} telepítése"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} eltávolítása"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} telepítése"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} eltávolítása"
   SECTION_MAIN: "$(^NameDA) (kötelező)"
   SECTION_STARTMENU: "Start menü parancsikonok"
   SECTION_DESKTOP: "Asztali parancsikon"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Távolítsd el a program beállításait"
   INSTALLED_HEADER: "Már telepítve"
   INSTALLED_TEXT: "Válassza ki a végrehajtandó műveletet."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} már telepítve van. Válassza ki a kívánt műveletet."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} már telepítve van. Válassza ki a kívánt műveletet."
   INSTALLED_OLD: "A $(^NameDA) egy régebbi verziója van telepítve a rendszerén. Válassza ki a kívánt műveletet."
   INSTALLED_NEW: "A $(^NameDA) egy újabb verziója már telepítve van! Nem ajánlott régebbi verzió telepítése. Ha mindenképp ezt a régebbi verziót szeretné telepíteni, először távolítsa el a jelenlegi verziót. Válassza ki a kívánt műveletet."
   REINSTALL: "&Újratelepítés"

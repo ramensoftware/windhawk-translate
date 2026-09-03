@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "Installering av $(^Name) v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "Avinstallering av $(^Name) v${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "Installering av $(^Name) v${VERSION_DISPLAY}"
+  ^UninstallCaption: "Avinstallering av $(^Name) v${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (påkrevd)"
   SECTION_STARTMENU: "Snarveier på Start-menyen"
   SECTION_DESKTOP: "Skrivebordssnarvei"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Fjern programmets innstillinger"
   INSTALLED_HEADER: "Allerede installert"
   INSTALLED_TEXT: "Velg handlingen som skal utføres."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} er allerede installert. Velg handlingen du vil utføre."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} er allerede installert. Velg handlingen du vil utføre."
   INSTALLED_OLD: "En eldre versjon av $(^NameDA) er installert på systemet ditt. Velg handlingen du vil utføre."
   INSTALLED_NEW: "En nyere versjon av $(^NameDA) er allerede installert! Det anbefales ikke å installere en eldre versjon. Hvis du virkelig vil installere denne eldre versjonen, er det best å avinstallere den nåværende versjonen først. Velg handlingen du vil utføre."
   REINSTALL: "&Installer på nytt"

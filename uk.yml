@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "Встановлення $(^Name) v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "Видалення $(^Name) v${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "Встановлення $(^Name) v${VERSION_DISPLAY}"
+  ^UninstallCaption: "Видалення $(^Name) v${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (обов'язково)"
   SECTION_STARTMENU: "Ярлики у меню Пуск"
   SECTION_DESKTOP: "Ярлик на робочому столі"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Видалити налаштування програми"
   INSTALLED_HEADER: "Вже встановлено"
   INSTALLED_TEXT: "Оберіть потрібну Вам дію."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} вже встановлено. Оберіть потрібну Вам дію."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} вже встановлено. Оберіть потрібну Вам дію."
   INSTALLED_OLD: "Старішу версію $(^NameDA) вже встановлено. Оберіть потрібну Вам дію."
   INSTALLED_NEW: "Новішу версію $(^NameDA) вже встановлено! Встановлення старішої версії не рекомендовано. Якщо Ви дійсно бажаєте встановити цю застарілу версію, то краще видаліть поточну версію. Оберіть потрібну Вам дію."
   REINSTALL: "&Перевстановити"

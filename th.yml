@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "การติดตั้ง $(^Name) v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "การถอนการติดตั้ง $(^Name) v${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "การติดตั้ง $(^Name) v${VERSION_DISPLAY}"
+  ^UninstallCaption: "การถอนการติดตั้ง $(^Name) v${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (จำเป็น)"
   SECTION_STARTMENU: "ทางลัดในเมนูเริ่ม"
   SECTION_DESKTOP: "ทางลัดบนเดสก์ท็อป"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&ลบการตั้งค่าโปรแกรมออก"
   INSTALLED_HEADER: "ติดตั้งเรียบร้อยแล้ว"
   INSTALLED_TEXT: "เลือกการดำเนินการ"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} ถูกติดตั้งแล้ว เลือกการดำเนินการที่คุณต้องการ"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} ถูกติดตั้งแล้ว เลือกการดำเนินการที่คุณต้องการ"
   INSTALLED_OLD: "มีการติดตั้ง $(^NameDA) เวอร์ชั่นเก่ากว่าแล้วในระบบของคุณ เลือกการดำเนินการที่คุณต้องการ"
   INSTALLED_NEW: "มีการติดตั้ง $(^NameDA) เวอร์ชั่นใหม่กว่าแล้ว เราไม่แนะนำให้คุณติดตั้งเวอร์ชั่นเก่ากว่า หากคุณต้องการ คุณควรถอนการติดตั้งเวอร์ชั่นปัจจุบันก่อน เลือกการดำเนินการที่คุณต้องการ"
   REINSTALL: "&ติดตั้งใหม่"

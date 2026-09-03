@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Setup"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Copot Pemasangan"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} Setup"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} Copot Pemasangan"
   SECTION_MAIN: "$(^NameDA) (diperlukan)"
   SECTION_STARTMENU: "Pintasan Menu Mulai"
   SECTION_DESKTOP: "Pintasan Desktop"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Hapus pengaturan program"
   INSTALLED_HEADER: "Sudah Terpasang"
   INSTALLED_TEXT: "Pilih tindakan yang akan dilakukan."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} Sudah terpasang. Pilih tindakan yang ingin Anda lakukan."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} Sudah terpasang. Pilih tindakan yang ingin Anda lakukan."
   INSTALLED_OLD: "Versi lama $(^NameDA) sudah terpasang di sistem anda. Pilih tindakan yang ingin anda lakukan."
   INSTALLED_NEW: "Versi baru $(^NameDA) sudah terpasang! Tidak direkomendasikan untuk memasang versi lama. Jika anda yakin ingin memasang versi lama, sebaiknya copot pemasangan versi saat ini. Pilih tindakan yang ingin anda lakukan."
   REINSTALL: "&Pasang ulang"

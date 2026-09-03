@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Installazione"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Disinstalla"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} Installazione"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} Disinstalla"
   SECTION_MAIN: "$(^NameDA) (richiesto)"
   SECTION_STARTMENU: "Collegamenti al Menu Start"
   SECTION_DESKTOP: "Collegamento al Desktop"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Rimuovi le impostazioni del programma"
   INSTALLED_HEADER: "Già installato"
   INSTALLED_TEXT: "Selezionare l'operazione da eseguire."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} è già installato. Seleziona l'operazione che desideri eseguire."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} è già installato. Seleziona l'operazione che desideri eseguire."
   INSTALLED_OLD: "Una vecchia versione di $(^NameDA) è installato sul tuo sistema. Seleziona l'operazione che desideri eseguire."
   INSTALLED_NEW: "Una versione più recente di $(^NameDA) è già installata! Non è consigliabile installare una versione precedente. Se vuoi davvero installare questa versione precedente, è meglio disinstallare prima la versione corrente. Seleziona l'operazione che desideri eseguire."
   REINSTALL: "&Reinstalla"

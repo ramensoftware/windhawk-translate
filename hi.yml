@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} सेटअप"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} अनइंस्टॉल"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} सेटअप"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} अनइंस्टॉल"
   SECTION_MAIN: "$(^NameDA) (आवश्यक)"
   SECTION_STARTMENU: "स्टार्ट मेनू शॉर्टकट"
   SECTION_DESKTOP: "डेस्कटॉप शॉर्टकट"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&प्रोग्राम की सेटिंग्स हटाएँ"
   INSTALLED_HEADER: "पहले से स्थापित"
   INSTALLED_TEXT: "निष्पादन के लिए ऑपरेशन चुनें।"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} पहले से स्थापित है। वह ऑपरेशन चुनें जो आप करना चाहते हैं।"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} पहले से स्थापित है। वह ऑपरेशन चुनें जो आप करना चाहते हैं।"
   INSTALLED_OLD: "$(^NameDA) का एक पुराना संस्करण आपके सिस्टम पर स्थापित है। वह ऑपरेशन चुनें जो आप करना चाहते हैं।"
   INSTALLED_NEW: "$(^NameDA) का एक नया संस्करण पहले से स्थापित है! पुराने संस्करण को स्थापित करना अनुशंसित नहीं है। यदि आप वास्तव में इस पुराने संस्करण को स्थापित करना चाहते हैं, तो पहले वर्तमान संस्करण को अनइंस्टॉल करना बेहतर है। वह ऑपरेशन चुनें जो आप करना चाहते हैं।"
   REINSTALL: "&पुनः स्थापित करें"

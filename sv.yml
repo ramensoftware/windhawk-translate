@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Installation"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} Avinstallation"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} Installation"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} Avinstallation"
   SECTION_MAIN: "$(^NameDA) (krävs)"
   SECTION_STARTMENU: "Startmenygenvägar"
   SECTION_DESKTOP: "Skrivbordsgenväg"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Ta bort programmets inställningar"
   INSTALLED_HEADER: "Redan installerat"
   INSTALLED_TEXT: "Välj vilken åtgärd du vill utföra."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} är redan installerat. Välj vilken åtgärd du vill utföra."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} är redan installerat. Välj vilken åtgärd du vill utföra."
   INSTALLED_OLD: "En äldre version av $(^NameDA) är installerad på ditt system. Välj vilken åtgärd du vill utföra."
   INSTALLED_NEW: "En nyare version av $(^NameDA) är redan installerad! Det rekommenderas inte att du installerar en äldre version. Om du verkligen vill installera den här äldre versionen är det bättre att avinstallera den nuvarande versionen först. Välj vilken åtgärd du vill utföra."
   REINSTALL: "&Installera om"

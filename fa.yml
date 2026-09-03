@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "نصب $(^Name) نسخه v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "حذف $(^Name) نسخه v${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "نصب $(^Name) نسخه v${VERSION_DISPLAY}"
+  ^UninstallCaption: "حذف $(^Name) نسخه v${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (الزامی)"
   SECTION_STARTMENU: "میانبرهای منوی استارت"
   SECTION_DESKTOP: "میانبر دسکتاپ"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "حذف تنظیمات برنامه"
   INSTALLED_HEADER: "قبلاً نصب شده"
   INSTALLED_TEXT: "عملیات مورد نظر را انتخاب کنید."
-  INSTALLED_SAME: "نسخه $(^NameDA) v${VERSION} قبلاً نصب شده است. عملیاتی که می‌خواهید انجام دهید را انتخاب کنید."
+  INSTALLED_SAME: "نسخه $(^NameDA) v${VERSION_DISPLAY} قبلاً نصب شده است. عملیاتی که می‌خواهید انجام دهید را انتخاب کنید."
   INSTALLED_OLD: "یک نسخه قدیمی‌تر از $(^NameDA) روی سیستم شما نصب است. عملیاتی که می‌خواهید انجام دهید را انتخاب کنید."
   INSTALLED_NEW: "یک نسخه جدیدتر از $(^NameDA) قبلاً نصب شده است! توصیه نمی‌شود که نسخه قدیمی‌تر را نصب کنید. اگر واقعاً می‌خواهید این نسخه قدیمی را نصب کنید، بهتر است ابتدا نسخه فعلی را حذف کنید. عملیاتی که می‌خواهید انجام دهید را انتخاب کنید."
   REINSTALL: "نصب مجدد"

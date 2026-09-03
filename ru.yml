@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "Установка $(^Name) вер. ${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "Удаление $(^Name) вер. ${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "Установка $(^Name) вер. ${VERSION_DISPLAY}"
+  ^UninstallCaption: "Удаление $(^Name) вер. ${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (требуется)"
   SECTION_STARTMENU: "Ярлык меню «Пуск»"
   SECTION_DESKTOP: "Ярлык рабочего стола"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Удалить настройки программы"
   INSTALLED_HEADER: "Уже установлено"
   INSTALLED_TEXT: "Выберите действие."
-  INSTALLED_SAME: "$(^NameDA) вер. ${VERSION} уже установлено. Выберите действие."
+  INSTALLED_SAME: "$(^NameDA) вер. ${VERSION_DISPLAY} уже установлено. Выберите действие."
   INSTALLED_OLD: "Более старая версия $(^NameDA) уже установлена. Выберите действие."
   INSTALLED_NEW: "Более новая версия $(^NameDA) уже установлена! Установка более старой версии не рекомендована. Если вы всё же хотите её установить, лучше сначала удалить уже установленную новую версию. Выберите действие."
   REINSTALL: "&Переустановить"

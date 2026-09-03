@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "Installation de $(^Name) v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "Désinstallation de $(^Name) v${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "Installation de $(^Name) v${VERSION_DISPLAY}"
+  ^UninstallCaption: "Désinstallation de $(^Name) v${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (requis)"
   SECTION_STARTMENU: "Raccourcis du menu Démarrer"
   SECTION_DESKTOP: "Raccourci sur le bureau"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Supprimer les paramètres du programme"
   INSTALLED_HEADER: "Déjà installé"
   INSTALLED_TEXT: "Sélectionnez l’action à effectuer."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} est déjà installé. Sélectionnez l’action que vous souhaitez effectuer."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} est déjà installé. Sélectionnez l’action que vous souhaitez effectuer."
   INSTALLED_OLD: "Une version plus ancienne de $(^NameDA) est installée sur votre système. Sélectionnez l’action que vous souhaitez effectuer."
   INSTALLED_NEW: "Une version plus récente de $(^NameDA) est déjà installée ! Il n’est pas recommandé d’installer une version plus ancienne. Si vous souhaitez vraiment installer cette version, il est préférable de désinstaller d’abord la version actuelle. Sélectionnez l’action que vous souhaitez effectuer."
   REINSTALL: "&Réinstaller"

@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} ସେଟଅପ୍ (Setup)"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} ଅନଇନଷ୍ଟଲ୍ (Uninstall)"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} ସେଟଅପ୍ (Setup)"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} ଅନଇନଷ୍ଟଲ୍ (Uninstall)"
   SECTION_MAIN: "$(^NameDA) (ଆବଶ୍ୟକ)"
   SECTION_STARTMENU: "ଷ୍ଟାର୍ଟ ମେନୁ ସର୍ଟକଟ୍"
   SECTION_DESKTOP: "ଡେସ୍କଟପ୍ ସର୍ଟକଟ୍"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "ପ୍ରୋଗ୍ରାମର ସେଟିଙ୍ଗସ ଗୁଡ଼ିକୁ ହଟାନ୍ତୁ (&R)"
   INSTALLED_HEADER: "ପୂର୍ବରୁ ଇନଷ୍ଟଲ୍ ହୋଇଛି"
   INSTALLED_TEXT: "କେଉଁ କାର୍ଯ୍ୟ କରିବାକୁ ଚାହୁଁଛନ୍ତି ବାଛନ୍ତୁ।"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} ପୂର୍ବରୁ ଇନଷ୍ଟଲ୍ ହୋଇଛି। ଆପଣ କରିବାକୁ ଚାହୁଁଥିବା କାର୍ଯ୍ୟ ବାଛନ୍ତୁ।"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} ପୂର୍ବରୁ ଇନଷ୍ଟଲ୍ ହୋଇଛି। ଆପଣ କରିବାକୁ ଚାହୁଁଥିବା କାର୍ଯ୍ୟ ବାଛନ୍ତୁ।"
   INSTALLED_OLD: "$(^NameDA) ର ଏକ ପୁରୁଣା ସଂସ୍କରଣ ଆପଣଙ୍କ ସିଷ୍ଟମରେ ଇନଷ୍ଟଲ୍ ହୋଇଛି। ଆପଣ କରିବାକୁ ଚାହୁଁଥିବା କାର୍ଯ୍ୟ ବାଛନ୍ତୁ।"
   INSTALLED_NEW: "$(^NameDA) ର ଏକ ନୂତନ ସଂସ୍କରଣ ପୂର୍ବରୁ ଇନଷ୍ଟଲ୍ ହୋଇସାରିଛି! ଏକ ପୁରୁଣା ସଂସ୍କରଣ ଇନଷ୍ଟଲ୍ କରିବା ପରାମର୍ଶଦାୟକ ନୁହେଁ। ଯଦି ଆପଣ ପ୍ରକୃତରେ ଏହି ପୁରୁଣା ସଂସ୍କରଣଟି ଇନଷ୍ଟଲ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି, ତେବେ ପ୍ରଥମେ ବର୍ତ୍ତମାନର ସଂସ୍କରଣକୁ ଅନଇନଷ୍ଟଲ୍ କରିବା ଭଲ। ଆପଣ କରିବାକୁ ଚାହୁଁଥିବା କାର୍ଯ୍ୟ ବାଛନ୍ତୁ।"
   REINSTALL: "ପୁନର୍ବାର ଇନଷ୍ଟଲ୍ କରନ୍ତୁ (&R)"

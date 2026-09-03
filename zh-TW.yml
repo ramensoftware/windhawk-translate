@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} 安裝"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} 移除"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} 安裝"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} 移除"
   SECTION_MAIN: "$(^NameDA)（必需）"
   SECTION_STARTMENU: "開始選單捷徑"
   SECTION_DESKTOP: "桌面捷徑"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "移除程式設定(&R)"
   INSTALLED_HEADER: "已安裝"
   INSTALLED_TEXT: "選擇要執行的操作。"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} 已經安裝。選擇要執行的操作。"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} 已經安裝。選擇要執行的操作。"
   INSTALLED_OLD: "系統中已安裝舊版本的 $(^NameDA)。選擇要執行的操作。"
   INSTALLED_NEW: "系統中已安裝較新的版本 $(^NameDA)！建議不要安裝舊版本。如果您確實要安裝此舊版本，最好先卸載目前的版本。選擇要執行的操作。"
   REINSTALL: "重新安裝(&R)"

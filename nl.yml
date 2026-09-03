@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "Installatie $(^Name) v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} verwijderen"
+  ^SetupCaption: "Installatie $(^Name) v${VERSION_DISPLAY}"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} verwijderen"
   SECTION_MAIN: "$(^NameDA) (vereist)"
   SECTION_STARTMENU: "Startmenu snelkoppelingen"
   SECTION_DESKTOP: "Bureaublad snelkoppelingen"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Programma-instellingen verwijderen"
   INSTALLED_HEADER: "Reeds geïnstalleerd"
   INSTALLED_TEXT: "Selecteer de bewerking om uit te voeren."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} is reeds geïnstalleerd. Selecteer de bewerking die je wilt uitvoeren."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} is reeds geïnstalleerd. Selecteer de bewerking die je wilt uitvoeren."
   INSTALLED_OLD: "Er is een oudere versie van $(^NameDA) geïnstalleerd op je systeem. Selecteer de bewerking die je wilt uitvoeren."
   INSTALLED_NEW: "Er is reeds een nieuwere versie van $(^NameDA) geïnstalleerd! Het wordt niet aangeraden om een oudere versie te installeren. Als je deze oudere versie echt wilt installeren, is het beter om eerst de huidige versie te verwijderen. Selecteer de bewerking die je wilt uitvoeren."
   REINSTALL: "&Opnieuw installeren"

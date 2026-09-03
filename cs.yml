@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "Instaluji $(^Name) ver. ${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "Odinstalování $(^Name) ver. ${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "Instaluji $(^Name) ver. ${VERSION_DISPLAY}"
+  ^UninstallCaption: "Odinstalování $(^Name) ver. ${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (povinné)"
   SECTION_STARTMENU: "Zkratka nabídky Start"
   SECTION_DESKTOP: "Zkratka na ploše"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Odstranit nastavení programu"
   INSTALLED_HEADER: "Nainstalováno"
   INSTALLED_TEXT: "Vyberte akci."
-  INSTALLED_SAME: "$(^NameDA) ver. ${VERSION} je již nainstalováno. Vyberte prosím akci."
+  INSTALLED_SAME: "$(^NameDA) ver. ${VERSION_DISPLAY} je již nainstalováno. Vyberte prosím akci."
   INSTALLED_OLD: "Starší verze $(^NameDA) je již nainstalována. Zvolte prosím akci."
   INSTALLED_NEW: "Novější verze $(^NameDA) je již nainstalována! Instalace starší verze se nedoporučuje. Pokud ji přesto chcete nainstalovat, je lepší nejprve odinstalovat novější verzi, která je již nainstalována. Vyberte akci."
   REINSTALL: "&Znovu nainstalovat"

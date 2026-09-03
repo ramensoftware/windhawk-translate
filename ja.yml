@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} をセットアップ"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} をアンインストール"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} をセットアップ"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} をアンインストール"
   SECTION_MAIN: "$(^NameDA) (必須)"
   SECTION_STARTMENU: "スタートメニューのショートカット"
   SECTION_DESKTOP: "デスクトップのショートカット"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "プログラムの設定を削除する(&R)"
   INSTALLED_HEADER: "インストール済み"
   INSTALLED_TEXT: "実行する操作を選択してください。"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} は、すでにインストールされています。実行する操作を選択してください。"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} は、すでにインストールされています。実行する操作を選択してください。"
   INSTALLED_OLD: "システムに古いバージョンの $(^NameDA) がインストールされています。実行する操作を選択してください。"
   INSTALLED_NEW: "$(^NameDA) の新しいバージョンがすでにインストールされています。古いバージョンのインストールは推奨しません。古いバージョンを本当にインストールしたい場合は、まず現在のバージョンをアンインストールすることを推奨します。実行する操作を選択してください。"
   REINSTALL: "再インストール(&R)"

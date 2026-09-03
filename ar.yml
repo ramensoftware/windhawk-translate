@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "إعداد $(^Name) v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "إلغاء تثبيت $(^Name) v${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "إعداد $(^Name) v${VERSION_DISPLAY}"
+  ^UninstallCaption: "إلغاء تثبيت $(^Name) v${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (مطلوب)"
   SECTION_STARTMENU: "اختصارات قائمة ابدأ"
   SECTION_DESKTOP: "اختصار سطح المكتب"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&إزالة إعدادات البرنامج"
   INSTALLED_HEADER: "مثبت بالفعل"
   INSTALLED_TEXT: "اختر العملية التي تريد تنفيذها."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} مثبت بالفعل. اختر العملية التي تريد تنفيذها."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} مثبت بالفعل. اختر العملية التي تريد تنفيذها."
   INSTALLED_OLD: "إصدار أقدم من $(^NameDA) مثبت على نظامك. اختر العملية التي تريد تنفيذها."
   INSTALLED_NEW: "إصدار أحدث من $(^NameDA) مثبت بالفعل! لا يُنصح بتثبيت إصدار أقدم. إذا كنت ترغب حقًا في تثبيت هذا الإصدار الأقدم، من الأفضل إلغاء تثبيت الإصدار الحالي أولاً. اختر العملية التي تريد تنفيذها."
   REINSTALL: "&إعادة التثبيت"

@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE}安装程序"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE}卸载程序"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY}安装程序"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY}卸载程序"
   SECTION_MAIN: "$(^NameDA)主文件（必选）"
   SECTION_STARTMENU: "开始菜单快捷方式（可选）"
   SECTION_DESKTOP: "桌面快捷方式（可选）"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&移除用户配置"
   INSTALLED_HEADER: "安装方式"
   INSTALLED_TEXT: "选择需要执行的操作："
-  INSTALLED_SAME: "$(^NameDA) v${VERSION}已安装在此电脑中，选择您想要执行的操作："
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY}已安装在此电脑中，选择您想要执行的操作："
   INSTALLED_OLD: "旧版本的$(^NameDA)已安装在此电脑中，选择您想要执行的操作："
   INSTALLED_NEW: "新版本的$(^NameDA)已安装在此电脑中！强烈建议您安装新版本，如果您想要安装旧版本，请先卸载当前版本后再安装旧版本。选择您想要执行的操作："
   REINSTALL: "&重新安装"

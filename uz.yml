@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} O‘rnatish"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} O‘chirish"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} O‘rnatish"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} O‘chirish"
   SECTION_MAIN: "$(^NameDA) (majburiy)"
   SECTION_STARTMENU: "Bosh menyu yorliqlari"
   SECTION_DESKTOP: "Ish stolidagi yorliq"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "Dastur sozlamalarini olib tashlash"
   INSTALLED_HEADER: "Allaqachon o‘rnatilgan"
   INSTALLED_TEXT: "Bajariladigan amalni tanlang."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} allaqachon o‘rnatilgan. Bajarmoqchi bo‘lgan amalingizni tanlang."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} allaqachon o‘rnatilgan. Bajarmoqchi bo‘lgan amalingizni tanlang."
   INSTALLED_OLD: "Tizimingizda $(^NameDA) dasturining eski versiyasi o‘rnatilgan. Bajarmoqchi bo‘lgan amalingizni tanlang."
   INSTALLED_NEW: "Tizimingizda $(^NameDA) dasturining yangiroq versiyasi allaqachon o‘rnatilgan! Eski versiyani o‘rnatish tavsiya etilmaydi. Agar haqiqatan ham ushbu eski versiyani o‘rnatmoqchi bo‘lsangiz, avval joriy versiyani o‘chirib tashlaganingiz ma'qul. Bajarmoqchi bo‘lgan amalingizni tanlang."
   REINSTALL: "Qayta o‘rnatish"

@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "$(^Name) v${VERSION}${VERSION_NOTE} সেটআপ"
-  ^UninstallCaption: "$(^Name) v${VERSION}${VERSION_NOTE} আনইনস্টল"
+  ^SetupCaption: "$(^Name) v${VERSION_DISPLAY} সেটআপ"
+  ^UninstallCaption: "$(^Name) v${VERSION_DISPLAY} আনইনস্টল"
   SECTION_MAIN: "$(^NameDA) (প্রয়োজনীয়)"
   SECTION_STARTMENU: "স্টার্ট মেনু শর্টকাট"
   SECTION_DESKTOP: "ডেস্কটপ শর্টকাট"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&প্রোগ্রামের সেটিংস মুছে ফেলুন"
   INSTALLED_HEADER: "ইতিমধ্যে ইনস্টল করা আছে"
   INSTALLED_TEXT: "আপনি যে কাজটি করতে চান তা নির্বাচন করুন।"
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} ইতিমধ্যে ইনস্টল করা আছে। আপনি যে কাজটি করতে চান তা নির্বাচন করুন।"
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} ইতিমধ্যে ইনস্টল করা আছে। আপনি যে কাজটি করতে চান তা নির্বাচন করুন।"
   INSTALLED_OLD: "আপনার সিস্টেমে $(^NameDA)-এর একটি পুরোনো ভার্সন ইনস্টল করা রয়েছে। আপনি যে কাজটি করতে চান তা নির্বাচন করুন।"
   INSTALLED_NEW: "$(^NameDA)-এর একটি নতুন ভার্সন ইতিমধ্যে ইনস্টল করা আছে! কোনো পুরোনো ভার্সন ইনস্টল করা সুপারিশ করা হয় না। আপনি যদি সত্যিই এই পুরোনো ভার্সনটি ইনস্টল করতে চান, তবে বর্তমান ভার্সনটি আগে আনইনস্টল করা শ্রেয়। আপনি যে কাজটি করতে চান তা নির্বাচন করুন।"
   REINSTALL: "&পুনরায় ইনস্টল করুন"

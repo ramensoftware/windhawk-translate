@@ -1,6 +1,6 @@
 setup:
-  ^SetupCaption: "Cài đặt $(^Name) v${VERSION}${VERSION_NOTE}"
-  ^UninstallCaption: "Gỡ cài đặt $(^Name) v${VERSION}${VERSION_NOTE}"
+  ^SetupCaption: "Cài đặt $(^Name) v${VERSION_DISPLAY}"
+  ^UninstallCaption: "Gỡ cài đặt $(^Name) v${VERSION_DISPLAY}"
   SECTION_MAIN: "$(^NameDA) (bắt buộc)"
   SECTION_STARTMENU: "Shortcut trong Start Menu"
   SECTION_DESKTOP: "Shortcut ngoài Desktop"
@@ -11,7 +11,7 @@ setup:
   CLEANCONFIRM: "&Xóa cài đặt của chương trình"
   INSTALLED_HEADER: "Đã cài đặt"
   INSTALLED_TEXT: "Chọn thao tác bạn muốn thực hiện."
-  INSTALLED_SAME: "$(^NameDA) v${VERSION} đã được cài đặt. Chọn thao tác bạn muốn thực hiện."
+  INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} đã được cài đặt. Chọn thao tác bạn muốn thực hiện."
   INSTALLED_OLD: "Một phiên bản cũ của $(^NameDA) đã được cài đặt trên hệ thống. Chọn thao tác bạn muốn thực hiện."
   INSTALLED_NEW: "Một phiên bản mới hơn của $(^NameDA) đã được cài đặt! Không khuyến khích cài đặt bản cũ hơn. Nếu bạn thực sự muốn cài bản cũ này, tốt nhất hãy gỡ cài đặt bản hiện tại trước. Chọn thao tác bạn muốn thực hiện."
   REINSTALL: "&Cài đặt lại"
