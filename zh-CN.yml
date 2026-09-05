@@ -534,7 +534,7 @@ app:
     warningTitle: "请谨慎安装模组"
     warningDescription: "恶意的模组可能会破坏您的电脑系统或侵犯您的个人隐私。确保只从您信任的开发者那里安装模组。"
     verified: "已验证"
-    verifiedTooltip: "我们已确认该模组文件归属对应开发者，但请注意：<0>已验证</0>不等于<0>可信</0>。请在确定信任该开发者，或仔细审阅源代码后再安装。"
+    verifiedTooltip: "我们已确认此个人资料属于该模组作者，但请注意：<0>已验证</0>不等于<0>可信</0>。请在确定信任该开发者，或仔细审阅源代码后再安装。"
     acceptButton: "接受风险并安装"
   createNewModButton:
     title: "新建模组"
