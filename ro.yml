@@ -163,13 +163,13 @@ app:
           customListsNote: "Au fost definite liste personalizate de includere/excludere a proceselor pentru acest mod în fila Avansat"
           patternsMatchCriticalSystemProcessesNote: "Pattern-urile din lista de includere sunt luate în considerare pentru procesele critice de sistem pentru acest mod (setate în fila Avansat)"
     version:
-      title: ~
+      title: "Selectează o versiune"
       preRelease: "prelansare"
       select: "Selectează"
     updates:
-      disableForVersion: ~
-      disableAll: ~
-      allow: ~
+      disableForVersion: "Omite versiunea {{version}}"
+      disableAll: "Nu oferi niciodată actualizări"
+      allow: "Permite actualizările"
     details:
       title: "Detalii"
       noData: "Detaliile modului lipsesc."
@@ -487,7 +487,7 @@ app:
         overwriteWarning_one: "Un mod selectat este deja instalat și va fi suprascris."
         overwriteWarning_few: "{{count}} moduri selectate sunt deja instalate și vor fi suprascrise."
         overwriteWarning_other: "{{count}} de moduri selectate sunt deja instalate și vor fi suprascrise."
-        installedUnknownWarning: ~
+        installedUnknownWarning: "Nu s-a putut verifica ce moduri sunt deja instalate, așa că unele ar putea fi suprascrise fără avertisment."
         noPrecompiledTitle: "Forțează compilarea locală"
         noPrecompiledDescription: "Compilează fiecare mod local în loc să descarci build-uri precompilate."
         network:
