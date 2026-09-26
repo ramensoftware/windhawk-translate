@@ -147,7 +147,7 @@ app:
     reviews_other: "{{formattedCount}} отзывов"
     reviews:
       label: "Отзывы"
-      title: "Отзывы {{name}}"
+      title: "Отзывы о {{name}}"
       none: "Пока отзывов нет"
       showMore: "Показать больше"
       loadFailed: "Не удалось загрузить отзывы"
