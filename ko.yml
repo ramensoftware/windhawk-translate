@@ -182,7 +182,7 @@ app:
           posted: "감사합니다 - 답글은 검토되고 나면 나타납니다"
           failed: "답글을 게시할 수 없습니다"
           contentRequired: "답글을 작성해 주세요"
-          contentTooShort: "유용한 답글을 남기기 위해 더 자세한 내용을 추가하거나, 대신 이 모드에 평점을 남기거나 동의하는 평가에 투표하세요."
+          contentTooShort: "유용한 답글을 남기기 위해 더 자세한 내용을 추가하거나, 또는 동의하는 평가에 투표하세요."
           contentTooLong: "답글이 너무 깁니다"
           contentInvalid: "답글에 게시할 수 없는 글자가 포함되어 있습니다"
     notRated: "이 모드는 아직 평점이 없습니다"
