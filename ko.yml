@@ -138,7 +138,7 @@ app:
     editedLocally: "모드가 로컬에서 편집되었습니다"
     noDescription: "(설명 없음)"
     users_other: "사용자 {{formattedCount}}명"
-    reviews_other: "리뷰어 {{formattedCount}}명"
+    reviews_other: "평가 {{formattedCount}}개"
     reviews:
       label: "평가"
       title: "{{name}} 평가"
