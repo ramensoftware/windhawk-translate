@@ -138,53 +138,53 @@ app:
     editedLocally: "모드가 로컬에서 편집되었습니다"
     noDescription: "(설명 없음)"
     users_other: "사용자 {{formattedCount}}명"
-    reviews_other: ~
+    reviews_other: "리뷰어 {{formattedCount}}명"
     reviews:
-      label: ~
-      title: ~
-      none: ~
-      showMore: ~
-      loadFailed: ~
-      write: ~
-      reply: ~
-      collapse: ~
-      expand: ~
-      vote: ~
-      voted: ~
-      voteFailed: ~
-      undo: ~
-      undoFailed: ~
+      label: "평가"
+      title: "{{name}} 평가"
+      none: "아직 평가가 없습니다"
+      showMore: "더 보기"
+      loadFailed: "평가를 불러올 수 없습니다"
+      write: "평가 쓰기"
+      reply: "답글"
+      collapse: "{{name}}의 평가 접기"
+      expand: "{{name}}의 평가 펼치기"
+      vote: "유용함"
+      voted: "이 평가가 유용하다고 남겼습니다"
+      voteFailed: "투표를 기록할 수 없습니다"
+      undo: "되돌리려면 다시 클릭하세요"
+      undoFailed: "투표를 되돌릴 수 없습니다"
       sort:
-        label: ~
-        top: ~
-        newest: ~
+        label: "정렬"
+        top: "인기"
+        newest: "최신"
       form:
-        name: ~
-        email: ~
-        emailHint: ~
-        contentHint: ~
-        submit: ~
-        nameRequired: ~
-        nameTooLong: ~
-        emailInvalid: ~
+        name: "이름"
+        email: "이메일"
+        emailHint: "공개되지 않습니다"
+        contentHint: "마크다운 서식이 지원됩니다"
+        submit: "게시"
+        nameRequired: "이름을 입력해 주세요"
+        nameTooLong: "이름이 너무 깁니다"
+        emailInvalid: "올바른 이메일 주소를 입력해 주세요"
         review:
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          content: "평가"
+          version: "{{version}} 버전 평가하기"
+          posted: "감사합니다 - 평가는 검토되고 나면 나타납니다"
+          failed: "평가를 게시할 수 없습니다"
+          contentRequired: "평가를 작성해 주세요"
+          contentTooShort: "유용한 평가를 남기기 위해 더 자세한 정보를 추가하거나, 또는 이 모드에 평점을 남기거나 동의하는 평가에 투표하세요."
+          contentTooLong: "평가가 너무 깁니다"
+          contentInvalid: "평가에 게시할 수 없는 글자가 포함되어 있습니다"
         reply:
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          content: "답글"
+          version: "설치된 {{version}} 버전으로 답글 달기"
+          posted: "감사합니다 - 답글은 검토되고 나면 나타납니다"
+          failed: "답글을 게시할 수 없습니다"
+          contentRequired: "답글을 작성해 주세요"
+          contentTooShort: "유용한 답글을 남기기 위해 더 자세한 정보를 추가하거나, 또는 이 모드에 평점을 남기거나 동의하는 평가에 투표하세요."
+          contentTooLong: "답글이 너무 깁니다"
+          contentInvalid: "답글에 게시할 수 없는 글자가 포함되어 있습니다"
     notRated: "이 모드는 아직 평점이 없습니다"
     loggingEnabledInAdvancedTab: "이 모드의 [고급] 탭에서 디버그 로깅이 활성화됨"
   modDetails:
@@ -219,28 +219,28 @@ app:
       title: "세부 정보"
       noData: "모드 세부 정보가 없습니다."
     modLink:
-      openInBrowser: ~
-      copyLink: ~
-      copied: ~
-      share: ~
-      linkCopied: ~
+      openInBrowser: "브라우저에서 열기"
+      copyLink: "링크 복사"
+      copied: "복사됨"
+      share: "공유"
+      linkCopied: "링크 복사됨"
     settings:
       title: "설정"
       noData: "사용 가능한 모드 설정이 없습니다."
       saveButton: "설정 저장"
       sampleValue: "샘플 값"
-      pickColor: ~
-      browseFile: ~
-      browseFolder: ~
-      hotkeyEmpty: ~
-      hotkeyNotSet: ~
-      hotkeyPressKey: ~
-      hotkeyClear: ~
-      hotkeyEdit: ~
-      hotkeyKey: ~
-      hotkeyStoredAs: ~
-      hotkeyNotRecorded: ~
-      hotkeyCaptureUnavailable: ~
+      pickColor: "색 선택"
+      browseFile: "파일 찾아보기"
+      browseFolder: "폴더 찾아보기"
+      hotkeyEmpty: "바로 가기를 설정하려면 클릭하세요"
+      hotkeyNotSet: "설정 안 됨"
+      hotkeyPressKey: "바로 가기를 누르세요..."
+      hotkeyClear: "지우기"
+      hotkeyEdit: "바로 가기 편집"
+      hotkeyKey: "키"
+      hotkeyStoredAs: "저장된 키: "
+      hotkeyNotRecorded: "바로 가기가 기록되지 않음"
+      hotkeyCaptureUnavailable: "바로 가기를 기록할 수 없습니다. 수동으로 설정해 주세요."
       arrayItemAdd: "새 항목 추가"
       arrayItemMoveUp: "위로 항목 이동"
       arrayItemMoveDown: "아래로 항목 이동"
@@ -618,7 +618,7 @@ app:
     stopCompilation: "컴파일 중지"
     preview: "모드 미리 보기"
     showLogOutput: "로그 출력 표시"
-    remove: ~
+    remove: "모드 제거"
     exit: "편집 모드 나가기"
     exitConfirmation: "마지막 컴파일 성공 후의 변경이 사라집니다"
     exitButtonOk: "나가기"
@@ -646,8 +646,8 @@ app:
       transparentDescription: "Windhawk에서 제공하는 모드들은 블랙 박스가 아닙니다. 각 모드는 설명 그대로 작동하는지 검토할 수 있는 소스 코드 형태로 옵니다."
     modDetails:
       getWindhawk: "Windhawk를 받고 이 모드 설치하기"
-      openInWindhawk: ~
-      notInstalled: ~
+      openInWindhawk: "Windhawk에서 열기"
+      notInstalled: "Windhawk가 설치되어 있지 않은 것 같습니다. 이 모드를 설치하려면 <0>Windhawk를 받으세요</0>."
     links:
       news: "뉴스"
       windhawkNews: "Windhawk 뉴스 - Ramen Software"
