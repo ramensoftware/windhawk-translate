@@ -150,7 +150,7 @@ app:
       collapse: "{{name}}의 평가 접기"
       expand: "{{name}}의 평가 펼치기"
       vote: "유용함"
-      voted: "이 평가가 유용하다고 남겼습니다"
+      voted: "이 평가가 유용하다고 표시했습니다"
       voteFailed: "투표를 기록할 수 없습니다"
       undo: "되돌리려면 다시 클릭하세요"
       undoFailed: "투표를 되돌릴 수 없습니다"
