@@ -141,56 +141,56 @@ app:
     users_few: "{{formattedCount}} пользователя"
     users_many: "{{formattedCount}} пользователей"
     users_other: "{{formattedCount}} пользователей"
-    reviews_one: ~
-    reviews_few: ~
-    reviews_many: ~
-    reviews_other: ~
+    reviews_one: "{{formattedCount}} отзыв"
+    reviews_few: "{{formattedCount}} отзыва"
+    reviews_many: "{{formattedCount}} отзывов"
+    reviews_other: "{{formattedCount}} отзывов"
     reviews:
-      label: ~
-      title: ~
-      none: ~
-      showMore: ~
-      loadFailed: ~
-      write: ~
-      reply: ~
-      collapse: ~
-      expand: ~
-      vote: ~
-      voted: ~
-      voteFailed: ~
-      undo: ~
-      undoFailed: ~
-      sort:
-        label: ~
-        top: ~
-        newest: ~
+      label: "Отзывы"
+      title: "Отзывы о {{name}}"
+      none: "Пока отзывов нет"
+      showMore: "Показать больше"
+      loadFailed: "Не удалось загрузить отзывы"
+      write: "Написать отзыв"
+      reply: "Ответить"
+      collapse: "Свернуть отзыв от {{name}}"
+      expand: "Развернуть отзыв от {{name}}"
+      vote: "Полезно"
+      voted: "Вы посчитали это полезным"
+      voteFailed: "Не удалось записать голос"
+      undo: "Для отмены нажмите ещё раз"
+      undoFailed: "Не удалось отменить голос"
+      sort: 
+        label: "Вид сортировки"
+        top: "Популярные"
+        newest: "Новые"
       form:
-        name: ~
-        email: ~
-        emailHint: ~
-        contentHint: ~
-        submit: ~
-        nameRequired: ~
-        nameTooLong: ~
-        emailInvalid: ~
+        name: "Имя"
+        email: "Электронная почта"
+        emailHint: "Не показывается публично"
+        contentHint: "Поддерживается форматирование Markdown"
+        submit: "Отправить"
+        nameRequired: "Пожалуйста, введите своё имя"
+        nameTooLong: "Слишком длинное имя"
+        emailInvalid: "Пожалуйста, введите действительную электронную почту"
         review:
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          content: "Оставить отзыв"
+          version: "Отзыв на версию {{version}}"
+          posted: "Благодарим - ваш отзыв появится после модерации"
+          failed: "Не удалось оставить отзыв"
+          contentRequired: "Пожалуйста, напишите свой отзыв"
+          contentTooShort: "Пожалуйста, добавьте больше деталей, чтобы сделать отзыв полезнее, оцените модификацию или проголосуйте за отзыв, с которым вы согласны"
+          contentTooLong: "Слишком длинный отзыв"
+          contentInvalid: "В отзыве содержатся неподдерживаемые символы"
         reply:
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          content: "Ответить"
+          version: "Ответ с версией {{version}} в качестве установленной"
+          posted: "Благодарим - ваш ответ появится после модерации"
+          failed: "Не удалось оставить ответ"
+          contentRequired: "Пожалуйста, напишите свой ответ"
+          contentTooShort: "Пожалуйста, добавьте больше деталей, чтобы сделать ответ полезнее, или проголосуйте за отзыв, если вы с ним согласны"
+          contentTooLong: "Слишком длинный ответ"
+          contentInvalid: "В ответе содержатся неподдерживаемые символы"
     notRated: "Эта модификация ещё не была оценена"
     loggingEnabledInAdvancedTab: "Логирование включено на вкладке модификации «Дополнительно»"
   modDetails:
@@ -214,39 +214,39 @@ app:
           customListsNote: "Для этого мода на вкладке «Дополнительно» заданы пользовательские списки включения и исключения процессов"
           patternsMatchCriticalSystemProcessesNote: "Шаблоны списка включения рассматриваются для критически важных системных процессов для этой модификации (установка на вкладке «Дополнительно»)."
     version:
-      title: ~
+      title: "Выберите версию"
       preRelease: "пре-релиз"
       select: "Выбрать"
     updates:
-      disableForVersion: ~
-      disableAll: ~
-      allow: ~
+      disableForVersion: "Пропустить версию {{version}}"
+      disableAll: "Никогда не предлагать обновления"
+      allow: "Разрешить обновления"
     details:
       title: "Описание"
       noData: "Описание модификации отсутствует."
     modLink:
-      openInBrowser: ~
-      copyLink: ~
-      copied: ~
-      share: ~
-      linkCopied: ~
+      openInBrowser: "Открыть в браузере"
+      copyLink: "Скопировать ссылку"
+      copied: "Скопировано"
+      share: "Поделиться"
+      linkCopied: "Ссылка скопирована"
     settings:
       title: "Настройки"
       noData: "Нет доступных настроек модификации."
       saveButton: "Сохранить настройки"
       sampleValue: "Пример значения"
-      pickColor: ~
-      browseFile: ~
-      browseFolder: ~
-      hotkeyEmpty: ~
-      hotkeyNotSet: ~
-      hotkeyPressKey: ~
-      hotkeyClear: ~
-      hotkeyEdit: ~
-      hotkeyKey: ~
-      hotkeyStoredAs: ~
-      hotkeyNotRecorded: ~
-      hotkeyCaptureUnavailable: ~
+      pickColor: "Выбрать цвет"
+      browseFile: "Найти файл"
+      browseFolder: "Найти папку"
+      hotkeyEmpty: "Нажмите для настройки горячих клавиш"
+      hotkeyNotSet: "Не настроено"
+      hotkeyPressKey: "Нажмите горячую клавишу..."
+      hotkeyClear: "Очистить"
+      hotkeyEdit: "Изменить горячую клавишу"
+      hotkeyKey: "Клавиша"
+      hotkeyStoredAs: "Сохранено как"
+      hotkeyNotRecorded: "Незаписанная горячая клавиша"
+      hotkeyCaptureUnavailable: "Не удалось записать горячую клавишу. Пожалуйста, поставьте её вручную."
       arrayItemAdd: "Добавить новый элемент"
       arrayItemMoveUp: "Сдвинуть элемент вверх"
       arrayItemMoveDown: "Сдвинуть элемент вниз"
@@ -489,16 +489,16 @@ app:
       description: "Чтобы выйти из Windhawk, вам придётся отключить этот параметр."
     alwaysCompileModsLocally:
       title: "Всегда компилировать модификации локально"
-      description: "По умолчанию, Windhawk скачивает предварительно скомпилированные бинарные файлы модификаций с сервера Windhawk при доступности. Включите эту опцию, чтобы всегда компилировать модификации локально."
+      description: "По умолчанию Windhawk скачивает предварительно скомпилированные бинарные файлы модификаций с сервера Windhawk при доступности. Включите эту опцию, чтобы всегда компилировать модификации локально."
     requireElevation:
       title: "Требовать UAC для запуска Windhawk"
-      description: "Windhawk нуждается в правах администратора, но для компьютеров с одним пользователем постоянные запросы от UAC надоедают, поэтому Windhawk их обходит. Включите этот параметр, чтобы вернуть UAC запросы на запуск Windhawk."
+      description: "Windhawk нуждается в правах администратора, но для компьютеров с одним пользователем постоянные запросы от UAC надоедают, поэтому Windhawk их обходит. Включите эту опцию, чтобы вернуть UAC запросы на запуск Windhawk."
     dontAutoShowToolkit:
       title: "Не показывать автоматически диалог инструментария"
       description: "По умолчанию Windhawk автоматически вызывает диалог инструментария когда обнаруживает, что панель задач не работает из-за нестабильности системы или другой причины. Диалог инструментария позволяет закрыть Windhawk, перейти в безопасный режим и совершать другие действия. Диалог инструментария можно также вызвать комбинацией клавиш Ctrl+Win+W."
     disableToolkitHotkey:
-      title: ~
-      description: ~
+      title: "Отключить горячую клавишу диалога инструментария"
+      description: "По умолчанию диалог инструментария можно открыть сочетанием клавиш Ctrl+Win+W. Включите эту опцию, чтобы оставить горячие клавиши незарегистрированными, например, если они конфликтуют с другой программой."
     modInitDialogDelay:
       title: "Задержка диалога инициализации модификации"
       description: "Количество миллисекунд ожидания перед показом диалогового окна прогресса инициализации модификации."
@@ -564,13 +564,13 @@ app:
       import:
         title: "Импортировать данные пользователя"
         trustTitle: "Продолжайте осторожно"
-        trustDescription: "Импортирование устанавливает и запускает каждую модификацию в этом файле на вашем компьютере также, как при самостоятельной установке"
+        trustDescription: "Импортирование устанавливает и запускает каждую модификацию в этом файле на вашем компьютере также, как при самостоятельной установке. Вредоносные модификации могут повредить ваш компьютер или нарушить вашу приватность, поэтому импортируйте только те файлы, которым доверяете."
         importButton: "Импортировать"
         overwriteWarning_one: "{{count}} выбранная модификация уже установлена и будет перезаписана"
         overwriteWarning_few: "{{count}} выбранных модификаций уже установлены и будут перезаписаны"
         overwriteWarning_many: "{{count}} выбранные модификации уже установлены и будут перезаписаны"
         overwriteWarning_other: "{{count}} выбранные модификации уже установлены и будут перезаписаны"
-        installedUnknownWarning: ~
+        installedUnknownWarning: "Не удалось проверить, какие модификации уже установлены, поэтому некоторые из них могут быть перезаписаны без предупреждения."
         noPrecompiledTitle: "Принудительная локальная компиляция"
         noPrecompiledDescription: "Скомпилировать каждую модификацию локально вместо скачивания уже скомпилированной сборки"
         network:
@@ -666,7 +666,7 @@ app:
     stopCompilation: "Остановить компиляцию"
     preview: "Просмотр модификации"
     showLogOutput: "Показать логи"
-    remove: ~
+    remove: "Удалить модификацию"
     exit: "Выйти из режима редактирования"
     exitConfirmation: "Изменения после последней успешной компиляции будут потеряны"
     exitButtonOk: "Выйти"
@@ -694,8 +694,8 @@ app:
       transparentDescription: "Модификации, которые предлагает Windhawk, не являются «котом в мешке». Каждая модификация представлена в виде исходного кода, который можно проверить, чтобы убедиться, что модификация выполняет именно то, что указано."
     modDetails:
       getWindhawk: "Скачать Windhawk для установки этой модификации"
-      openInWindhawk: ~
-      notInstalled: ~
+      openInWindhawk: "Открыть в Windhawk"
+      notInstalled: "Похоже, что Windhawk не установлен. <0>Скачайте Windhawk</0>, чтобы установить эту модификацию."
     links:
       news: "Новости"
       windhawkNews: "Новости Windhawk - Ramen Software"
