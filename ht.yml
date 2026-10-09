@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Mod sa a po ko evalye"
     loggingEnabledInAdvancedTab: "Anrejistreman debogaj se aktif nan onglet avanse mod la"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Vèsyon enstale"
@@ -209,6 +215,10 @@ app:
           excluded: "Eksli"
           customListsNote: "Lis enklizyon/esklizyon pwosesis pèsonalize te defini pou mod sa a nan onglet Avanse a"
           patternsMatchCriticalSystemProcessesNote: "Modèl lis enklizyon se konsidere pou pwosesis sistèm kritik pou mod sa a (mete nan onglet Avanse a)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "pre-lansman"
@@ -287,6 +297,8 @@ app:
       title: "Kòd Sous"
       noData: "Kòd sous ap mankan."
       collapseExtra: "Efondre Readme ak Paramèt"
+      copy: ~
+      copied: ~
     changelog:
       title: "Jounal-chanjman"
       loadingFailed: "Echwe pou chaje jounal-chanjman. <0>Klike isit</0> pou wè li sou GitHub."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Konsidere mòdel lis enklizyon pou pwosesis sistèm kritik"
         description: "Pa default, Windhawk sèlman chaje mod nan pwosesis sistèm kritik si pwosesis la enkli san modèl, e.g. <0>critical.exe</0>, pa <0>*</0> oubyen <0>*.exe</0>. Pou plis detay de pwosesis sistèm kritik, tanpri refere nan <1>dokimantasyon an</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Chanjeman nan Kòd Sous"
       noData: "Vèsyon ki enstale a identik pou vèsyon ki chwazi a."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Popilè ak pi byen note"
+      trending: ~
       popular: "Popilè"
       topRated: "Pi byen note"
       newest: "Pi nouvo"

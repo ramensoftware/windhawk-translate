@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Henüz değerlendirilmemiş"
     loggingEnabledInAdvancedTab: "Hata ayıklama günlüğü modun gelişmiş sekmesinde etkin"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Yüklü sürüm"
@@ -209,6 +215,10 @@ app:
           excluded: "Hariç"
           customListsNote: "Özel listeler, Gelişmiş sekmesi altından yapılandırılabilir."
           patternsMatchCriticalSystemProcessesNote: "Bu mod için kritik sistem işlemleri için dahil etme listesi kalıpları dikkate alınır (Gelişmiş sekmesinde ayarlanır)."
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "Ön sürüm"
@@ -287,6 +297,8 @@ app:
       title: "Kaynak Kodu"
       noData: "Mod kaynağı eksik."
       collapseExtra: "Beni Oku ve Ayarları Daralt"
+      copy: ~
+      copied: ~
     changelog:
       title: "Değişiklikler"
       loadingFailed: "Değişiklikler yüklenemedi. GitHub'da görüntülemek için <0>burayı tıklayın</0>."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Kritik sistem işlemleriyle eşleşme"
         description: "Tanımlanan desenler, <0>critical.exe</0> gibi kritik sistem işlemleriyle eşleşiyor. Güvenlik ve sistem kararlılığı nedeniyle Windhawk varsayılan olarak bu işlemlere mod yüklemez. Daha fazla bilgi için <1>belgelere</1> bakın."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Son Sürüm Değişiklikleri"
       noData: "Yüklü sürüm, seçilen sürümle aynı."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Popüler ve en beğenilenler"
+      trending: ~
       popular: "Popüler"
       topRated: "En beğenilenler"
       newest: "Yeniler"

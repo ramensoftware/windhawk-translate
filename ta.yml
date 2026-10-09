@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "நிறுவப்பட்ட பதிப்பு"
@@ -209,6 +215,10 @@ app:
           excluded: "விலக்கப்பட்டது"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -287,6 +297,8 @@ app:
       title: "மூல குறியீடு"
       noData: "மாற்றத்தின் மூலக்குறியீடு இல்லை."
       collapseExtra: "Readme மற்றும் அமைப்புகளை மடக்கு"
+      copy: ~
+      copied: ~
     changelog:
       title: "மாற்றப்பட்ட பதிவுகள்"
       loadingFailed: "மாற்றப்பட்ட பதிவுகளை ஏற்ற முடியவில்லை. <0>இங்கே கிளிக் செய்யவும்</0> GitHub இல் பார்க்க."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "முக்கிய சிஸ்டம் செயல்முறைகளுக்கான சேர்க்கை மாதிரிகளை பரிசீலனை செய்யவும்"
         description: "விரும்பத்தகுந்த முறையில், விண்ட்ஹாக் முக்கிய செயல்முறைகளில் மாதிரிகள் இல்லாமல் சேர்க்கப்பட்டால் மட்டுமே மாற்றங்களை ஏற்றுகிறது (உதா: <0>critical.exe</0>, ஆனால் <0>*</0> அல்லது <0>*.exe</0> அல்ல). மேலும் விபரங்களுக்கு <1>ஆவணங்களை</1> காணவும்."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "புதிய பதிப்பில் ஏற்பட்ட மாற்றங்கள்"
       noData: "நிறுவப்பட்ட பதிப்பு மற்றும் தேர்ந்தெடுக்கப்பட்ட பதிப்பு ஒன்றே."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "பிரபலமான மற்றும் சிறந்த மதிப்பீட்டுடன்"
+      trending: ~
       popular: "பிரபலமானவை"
       topRated: "சிறந்த மதிப்பீட்டுடன்"
       newest: "புதியவை"

@@ -172,6 +172,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -191,6 +192,11 @@ app:
           contentInvalid: ~
     notRated: "Este mod ainda não foi classificado"
     loggingEnabledInAdvancedTab: "O registo de depuração está ativado no separador Avançado do mod"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Versão instalada"
@@ -211,6 +217,10 @@ app:
           excluded: "Excluídos"
           customListsNote: "Foram definidas listas personalizadas de inclusão/exclusão de processos para este mod no separador Avançado"
           patternsMatchCriticalSystemProcessesNote: "Os padrões da lista de inclusão são considerados para processos críticos do sistema para este mod (definido no separador Avançado)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "pré-lançamento"
@@ -291,6 +301,8 @@ app:
       title: "Código-fonte"
       noData: "Falta o código-fonte do mod."
       collapseExtra: "Recolher o Leia-me e as definições"
+      copy: ~
+      copied: ~
     changelog:
       title: "Histórico de alterações"
       loadingFailed: "Falha ao carregar o histórico de alterações. <0>Clique aqui</0> para o ver no GitHub."
@@ -323,6 +335,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Considerar padrões da lista de inclusão para processos críticos do sistema"
         description: "Por predefinição, o Windhawk só carrega mods em processos críticos do sistema se o processo estiver incluído sem padrões, por exemplo, <0>critical.exe</0>, e não <0>*</0> ou <0>*.exe</0>. Para mais detalhes sobre processos críticos do sistema, consulte <1>a documentação</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Alterações ao código-fonte"
       noData: "A versão instalada é idêntica à versão selecionada."
@@ -436,6 +459,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populares e com melhores classificações"
+      trending: ~
       popular: "Populares"
       topRated: "Melhores classificações"
       newest: "Mais recentes"

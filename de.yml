@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Diese Mod wurde bisher nicht bewertet"
     loggingEnabledInAdvancedTab: "Debug-Protokollierung ist im Erweitert-Register der Mod aktiviert"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Installierte Version"
@@ -209,6 +215,10 @@ app:
           excluded: "Ausgeschlossen"
           customListsNote: "Benutzerdefinierte Prozess-Ein-/Ausschlusslisten wurden für diese Mod im Erweitert-Register definiert"
           patternsMatchCriticalSystemProcessesNote: "Einschlusslistenmuster werden für kritische Systemprozesse für diese Mod berücksichtigt (festgelegt im Erweitert-Register)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "Vorabversion"
@@ -287,6 +297,8 @@ app:
       title: "Quellcode"
       noData: "Mod-Quellcode fehlt."
       collapseExtra: "Readme und Einstellungen einklappen"
+      copy: ~
+      copied: ~
     changelog:
       title: "Änderungsprotokoll"
       loadingFailed: "Laden des Änderungsprotokolls fehlgeschlagen. <0>Hier klicken</0> um das Änderungsprotokoll auf GitHub zu lesen."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Berücksichtige Einschlusslistenmuster für kritische Systemprozesse"
         description: "Standardmäßig lädt Windhawk Mods in kritischen Systemprozessen nur, wenn der Prozess ohne Muster angegeben wird, z.B. <0>critical.exe</0>, nicht <0>*</0> oder <0>*.exe</0>. Weitere Details zu kritischen Systemprozessen sind in <1>der Dokumentation</1> zu finden."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Letzte Versionsänderungen"
       noData: "Die installierte Version ist identisch mit der ausgewählten Version."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Beliebt und am besten bewertet"
+      trending: ~
       popular: "Beliebt"
       topRated: "Beste Bewertung"
       newest: "Neueste"

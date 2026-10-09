@@ -168,6 +168,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -187,6 +188,11 @@ app:
           contentInvalid: ~
     notRated: "此 Mod 暫無評分"
     loggingEnabledInAdvancedTab: "已在 Mod 的進階分頁中啟用偵錯記錄"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "已安裝版本"
@@ -207,6 +213,10 @@ app:
           excluded: "排除"
           customListsNote: "已在「進階」分頁中為此 Mod 定義了自訂處理程序包含/排除清單"
           patternsMatchCriticalSystemProcessesNote: "包含清單模式將應用於此 Mod 的關鍵系統處理程序（在「進階」分頁中設定）"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "預覽版"
@@ -283,6 +293,8 @@ app:
       title: "原始碼"
       noData: "模組原始碼缺失。"
       collapseExtra: "折疊 Readme 和設定"
+      copy: ~
+      copied: ~
     changelog:
       title: "更新日誌"
       loadingFailed: "加載更新日誌失敗。<0>點擊這裡</0> 在 GitHub 上查看。"
@@ -315,6 +327,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "考慮針對關鍵系統處理程序的包含清單模式"
         description: "預設情況下，Windhawk 僅在關鍵系統處理程序被包含時才會載入 Mod，例如像 <0>critical.exe</0> 這樣的形式，而不是 <0>*</0> 或者 <0>*.exe</0> 這樣的形式。如需了解有關關鍵系統處理程序的更多詳細資訊，請參閱 <1>文件</1>。"
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "最新版本變更"
       noData: "已安裝的版本與所選版本相同。"
@@ -406,6 +429,7 @@ app:
   explore:
     search:
       popularAndTopRated: "熱門與高評價"
+      trending: ~
       popular: "熱門"
       topRated: "高評價"
       newest: "最新"

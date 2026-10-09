@@ -172,6 +172,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -191,6 +192,11 @@ app:
           contentInvalid: ~
     notRated: "Ce mod n’a pas encore été évalué"
     loggingEnabledInAdvancedTab: "Le journal de débogage est activé dans l’onglet Avancé du mod"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Version installée"
@@ -211,6 +217,10 @@ app:
           excluded: "Exclus"
           customListsNote: "Des listes personnalisées d’inclusion/exclusion de processus ont été définies pour ce mod dans l’onglet Avancé"
           patternsMatchCriticalSystemProcessesNote: "Les motifs de la liste d’inclusion sont pris en compte pour les processus système critiques pour ce mod (défini dans l’onglet Avancé)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "préversion"
@@ -291,6 +301,8 @@ app:
       title: "Code source"
       noData: "Le code source du mod est manquant."
       collapseExtra: "Replier le Lisez-moi et les paramètres"
+      copy: ~
+      copied: ~
     changelog:
       title: "Historique des modifications"
       loadingFailed: "Échec du chargement de l’historique des modifications. <0>Cliquez ici</0> pour l’afficher sur GitHub."
@@ -323,6 +335,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Prendre en compte les motifs de la liste d’inclusion pour les processus système critiques"
         description: "Par défaut, Windhawk ne charge les mods dans les processus système critiques que si le processus est inclus sans motif, par exemple <0>critical.exe</0>, et non <0>*</0> ou <0>*.exe</0>. Pour plus de détails sur les processus système critiques, consultez <1>la documentation</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Modifications du code source"
       noData: "La version installée est identique à la version sélectionnée."
@@ -436,6 +459,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populaires et les mieux notés"
+      trending: ~
       popular: "Populaires"
       topRated: "Les mieux notés"
       newest: "Les plus récents"

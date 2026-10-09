@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Den här modden har inte betygsatts ännu"
     loggingEnabledInAdvancedTab: "Felsökningsloggning är aktiverad i fliken Avancerat"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Installerad version"
@@ -209,6 +215,10 @@ app:
           excluded: "Undantagna"
           customListsNote: "Anpassade processinkluderings-/exkluderingslistor har definierats för den här modden i fliken Avancerat"
           patternsMatchCriticalSystemProcessesNote: "Inkluderingslistans mönster beaktas för kritiska systemprocesser för den här modden (angivet i fliken Avancerat)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "förhandsversion"
@@ -287,6 +297,8 @@ app:
       title: "Källkod"
       noData: "Moddens källa saknas."
       collapseExtra: "Dölj Readme och Inställningar"
+      copy: ~
+      copied: ~
     changelog:
       title: "Ändringslogg"
       loadingFailed: "Det gick inte att läsa in ändringsloggen. <0>Klicka här</0> för att visa den på GitHub."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Beakta inkluderingslistans mönster för kritiska systemprocesser"
         description: "Som standard laddar Windhawk bara moddar i kritiska systemprocesser om processen inkluderas utan mönster, t.ex. <0>critical.exe</0>, inte <0>*</0> eller <0>*.exe</0>. För mer information om kritiska systemprocesser, se <1>dokumentationen</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Källkodsändringar"
       noData: "Den installerade versionen är identisk med den valda versionen."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populära och topprankade"
+      trending: ~
       popular: "Populära"
       topRated: "Topprankade"
       newest: "Nyaste"

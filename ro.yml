@@ -172,6 +172,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -191,6 +192,11 @@ app:
           contentInvalid: ~
     notRated: "Acest mod nu a fost evaluat încă"
     loggingEnabledInAdvancedTab: "Jurnalele pentru depanare sunt activate în fila Avansat a modului"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Versiune instalată"
@@ -211,6 +217,10 @@ app:
           excluded: "Excluse"
           customListsNote: "Au fost definite liste personalizate de includere/excludere a proceselor pentru acest mod în fila Avansat"
           patternsMatchCriticalSystemProcessesNote: "Pattern-urile din lista de includere sunt luate în considerare pentru procesele critice de sistem pentru acest mod (setate în fila Avansat)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: "Selectează o versiune"
       preRelease: "prelansare"
@@ -291,6 +301,8 @@ app:
       title: "Cod sursă"
       noData: "Codul sursă lipsește."
       collapseExtra: "Restrânge Readme și Setări"
+      copy: ~
+      copied: ~
     changelog:
       title: "Jurnal de modificări"
       loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Dă clic aici</0> pentru a-l vedea pe GitHub."
@@ -323,6 +335,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Ia în considerare pattern-urile pentru lista de includere a procesele de sistem critice"
         description: "În mod normal, Windhawk încarcă moduri în procesele de sistem critice numai dacă procesul este inclus fără pattern-uri, de exemplu <0>proces_critic.exe</0>, nu <0>*</0> sau <0>*.exe</0>. Pentru mai multe detalii despre procesele de sistem critice, consultă <1>documentația</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Modificări în cea mai recentă versiune"
       noData: "Versiunea instalată este identică cu cea selectată."
@@ -436,6 +459,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populare și top evaluate"
+      trending: ~
       popular: "Populare"
       topRated: "Top evaluate"
       newest: "Cele mai noi"

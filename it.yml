@@ -172,6 +172,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -191,6 +192,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Versione installata"
@@ -211,6 +217,10 @@ app:
           excluded: "Esclusi"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -291,6 +301,8 @@ app:
       title: "Codice sorgente"
       noData: "Manca la fonte della mod."
       collapseExtra: "Comprimi Readme e impostazioni"
+      copy: ~
+      copied: ~
     changelog:
       title: "Changelog"
       loadingFailed: "Impossibile caricare il registro delle modifiche. <0>Fai clic qui</0> per visualizzarlo su GitHub."
@@ -323,6 +335,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Ultime modifiche della versione"
       noData: "La versione installata è identica alla versione selezionata."
@@ -436,6 +459,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Popolare e più votato"
+      trending: ~
       popular: "Popolare"
       topRated: "Più votato"
       newest: "Recente"

@@ -168,6 +168,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -187,6 +188,11 @@ app:
           contentInvalid: ~
     notRated: "Mod này chưa được đánh giá"
     loggingEnabledInAdvancedTab: "Debug log đang được bật trong tab Nâng cao của mod"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Phiên bản đã cài"
@@ -207,6 +213,10 @@ app:
           excluded: "Bị loại trừ"
           customListsNote: "Danh sách Bao gồm/Loại trừ tiến trình tùy chỉnh đã được định nghĩa cho mod này trong tab Nâng cao"
           patternsMatchCriticalSystemProcessesNote: "Các pattern trong danh sách bao gồm được áp dụng cho cả các tiến trình hệ thống quan trọng đối với mod này (thiết lập trong tab Nâng cao)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: "Chọn phiên bản"
       preRelease: "pre-release (thử nghiệm)"
@@ -283,6 +293,8 @@ app:
       title: "Mã nguồn"
       noData: "Không có mã nguồn của mod."
       collapseExtra: "Thu gọn Readme và Cài đặt"
+      copy: ~
+      copied: ~
     changelog:
       title: "Lịch sử thay đổi (Changelog)"
       loadingFailed: "Tải changelog thất bại. <0>Nhấn vào đây</0> để xem trên GitHub."
@@ -315,6 +327,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Áp dụng pattern trong danh sách bao gồm cho cả tiến trình hệ thống quan trọng"
         description: "Mặc định, Windhawk chỉ tải mod vào các tiến trình hệ thống quan trọng nếu nó được chỉ định chính xác (VD: <0>critical.exe</0>), không dùng pattern (VD: <0>*</0> hoặc <0>*.exe</0>). Để biết thêm chi tiết, vui lòng xem <1>tài liệu</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Thay đổi mã nguồn"
       noData: "Phiên bản đã cài đặt giống hệt với phiên bản đang chọn."
@@ -406,6 +429,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Phổ biến & Đánh giá cao"
+      trending: ~
       popular: "Phổ biến"
       topRated: "Đánh giá cao nhất"
       newest: "Mới nhất"

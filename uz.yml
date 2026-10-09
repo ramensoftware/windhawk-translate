@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Ushbu mod hali baholanmagan"
     loggingEnabledInAdvancedTab: "Nosozliklarni tuzatish jurnali modning kengaytirilgan sozlamalarida yoqilgan"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "O‘rnatilgan versiya"
@@ -209,6 +215,10 @@ app:
           excluded: "Istisno qilingan"
           customListsNote: "Ushbu mod uchun kengaytirilgan yorliqda shaxsiy jarayonlar ro‘yxati belgilangan"
           patternsMatchCriticalSystemProcessesNote: "Kritik tizim jarayonlari uchun ushbu modda kiritish qoliplari hisobga olinadi (Kengaytirilgan yorliqda sozlangan)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "pre-reliz"
@@ -287,6 +297,8 @@ app:
       title: "Manba kodi"
       noData: "Mod manbasi mavjud emas."
       collapseExtra: "Readme va Sozlamalarni yig‘ish"
+      copy: ~
+      copied: ~
     changelog:
       title: "O‘zgarishlar jurnali"
       loadingFailed: "O‘zgarishlar jurnalini yuklab bo‘lmadi. GitHub'da ko‘rish uchun <0>bu yerga bosing</0>."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Kritik tizim jarayonlari uchun kiritish qoliplarini hisobga olish"
         description: "Odatiy bo‘lib, Windhawk modlarni kritik tizim jarayonlariga faqat jarayon qoliplarsiz kiritilganda yuklaydi (masalan, <0>critical.exe</0>, <0>*</0> yoki <0>*.exe</0> emas). Batafsil ma'lumot uchun <1>hujjatlarga</1> qarang."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Manba kodi o‘zgarishlari"
       noData: "O‘rnatilgan versiya tanlangan versiya bilan bir xil."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Ommabop va yuqori baholangan"
+      trending: ~
       popular: "Ommabop"
       topRated: "Yuqori baholangan"
       newest: "Eng yangi"

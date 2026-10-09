@@ -172,6 +172,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -191,6 +192,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Versión instalada"
@@ -211,6 +217,10 @@ app:
           excluded: "Excluido"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -291,6 +301,8 @@ app:
       title: "Código fuente"
       noData: "Falta la fuente de mod."
       collapseExtra: "Ocultar Léame y Configuración"
+      copy: ~
+      copied: ~
     changelog:
       title: "Registro de cambios"
       loadingFailed: "Error al cargar el registro de cambios. <0>Haga clic aquí</0> para verlo en GitHub."
@@ -323,6 +335,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Considerar patrones de lista de inclusión para procesos críticos del sistema."
         description: "Por defecto, Windhawk solo carga mods en procesos críticos si solo está incluido en la lista sin *, por ejemplo: <0>critico.exe</0> pero no <0>*</0> o <0>*.exe</0>. Para más detalles, por favor consulte <1>la documentación</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Últimos cambios de versión"
       noData: "La versión instalada es idéntica a la versión seleccionada."
@@ -436,6 +459,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Popular y mejor valorado"
+      trending: ~
       popular: "Popular"
       topRated: "Los más valorados"
       newest: "El más nuevo"

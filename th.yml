@@ -168,6 +168,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -187,6 +188,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "เวอร์ชั่นที่ติดตั้งไว้"
@@ -207,6 +213,10 @@ app:
           excluded: "กระบวนการที่ยกเว้น"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -283,6 +293,8 @@ app:
       title: "โค้ดต้นฉบับ"
       noData: "ไม่มีโค้ดต้นฉบับของม็อดนี้"
       collapseExtra: "ยุบ Readme และการตั้งค่าต่าง ๆ"
+      copy: ~
+      copied: ~
     changelog:
       title: "บันทึกการเปลี่ยนแปลง"
       loadingFailed: "ไม่สามารถโหลดบันทึกการเปลี่ยนแปลงได้ <0>กดที่นี่</0>เพื่อดูบันทึกการเปลี่ยนแปลงบน GitHub"
@@ -315,6 +327,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "พิจารณารูปแบบรายการกระบวนการที่ถูกรวมสำหรับกระบวนการระบบที่สำคัญ"
         description: "โดยปกติ Windhawk จะโหลดม็อดในกระบวนการระบบที่สำคัญถ้ากระบวนการไม่รวมอยู่ในรูปแบบต่าง ๆ เท่านั้น เช่น <0>critical.exe</0> ไม่ใช่ <0>*</0> หรือ <0>*.exe</0> สำหรับรายละเอียดเกี่ยวกับกระบวนการระบบที่สำคัญ โปรดอ่าน<0>เอกสาร</0>"
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "การเปลี่ยนแปลงเวอร์ชั่นล่าสุด"
       noData: "เวอร์ชั่นที่ติดตั้งไว้เหมือนกับเวอร์ชั่นที่เลือก"
@@ -406,6 +429,7 @@ app:
   explore:
     search:
       popularAndTopRated: "ยอดนิยมและอันดับสูงสุด"
+      trending: ~
       popular: "ยอดนิยม"
       topRated: "อันดับสูงสุด"
       newest: "ใหม่ที่สุด"

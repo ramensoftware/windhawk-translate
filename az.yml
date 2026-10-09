@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Hələ qiymətləndirilməyib"
     loggingEnabledInAdvancedTab: "Sazlama jurnalı modun genişləndirilmiş bölməsində aktivdir"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Quraşdırılmış versiya"
@@ -209,6 +215,10 @@ app:
           excluded: "İstisna"
           customListsNote: "Xüsusi siyahılar Genişləndirilmiş bölməsində konfiqurasiya edilə bilər."
           patternsMatchCriticalSystemProcessesNote: "Bu mod üçün kritik sistem proseslərinə aid daxil etmə siyahısı nümunələri nəzərə alınır (Genişləndirilmiş bölməsində təyin olunur)."
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "Ön buraxılış"
@@ -287,6 +297,8 @@ app:
       title: "Mənbə kodu"
       noData: "Modun mənbə kodu yoxdur."
       collapseExtra: "README və parametrləri yığ"
+      copy: ~
+      copied: ~
     changelog:
       title: "Dəyişikliklər"
       loadingFailed: "Dəyişikliklər yüklənə bilmədi. GitHub-da baxmaq üçün <0>buraya klikləyin</0>."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Kritik sistem prosesləri ilə uyğunluq"
         description: "Təyin edilmiş nümunələr <0>critical.exe</0> kimi kritik sistem prosesləri ilə uyğun gəlir. Təhlükəsizlik və sistem sabitliyi səbəbilə Windhawk standart olaraq bu proseslərə mod yükləmir. Daha çox məlumat üçün <1>sənədlərə</1> baxın."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Son versiyanın dəyişiklikləri"
       noData: "Quraşdırılmış versiya seçilmiş versiya ilə eynidir."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populyar və ən yüksək qiymətləndirilənlər"
+      trending: ~
       popular: "Populyar"
       topRated: "Ən yüksək qiymətləndirilənlər"
       newest: "Ən yenilər"

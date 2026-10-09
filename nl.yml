@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Deze mod is nog niet beoordeeld."
     loggingEnabledInAdvancedTab: "Debug loggen is ingeschakeld in het 'Geavanceerd' tabblad van de mod."
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Geïnstalleerde versie"
@@ -209,6 +215,10 @@ app:
           excluded: "Uitgesloten"
           customListsNote: "Aangepaste proces opname-/uitsluitingslijsten zijn voor deze mod gedefinieerd in het Geavanceerd tabblad."
           patternsMatchCriticalSystemProcessesNote: "Opnamelijst patronen worden overwogen voor kritieke systeemprocessen voor deze mod (ingesteld in het Geavanceerd tabblad)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "pre-release"
@@ -287,6 +297,8 @@ app:
       title: "Broncode"
       noData: "Bron van mod ontbreekt."
       collapseExtra: "Leesmij en instellingen samenvouwen"
+      copy: ~
+      copied: ~
     changelog:
       title: "Wijzigingslog"
       loadingFailed: "Wijzigingslog laden mislukt. <0>Klik hier</0> om het op GitHub te bekijken."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Overweeg opnamelijst-patronen voor kritieke systeemprocessen"
         description: "Standaard laadt Windhawk alleen mods in kritieke systeemprocessen als het proces zonder patronen is opgenomen, bijv. <0>critical.exe</0>, niet <0>*</0> of <0>*.exe</0>. Raadpleeg <1>de documentatie</1> voor meer informatie over kritieke systeemprocessen."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Wijzigingen laatste versie"
       noData: "Geïnstalleerde versie is identiek aan de geselecteerde versie."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populair en best beoordeeld"
+      trending: ~
       popular: "Populair"
       topRated: "Best beoordeeld"
       newest: "Nieuwste"

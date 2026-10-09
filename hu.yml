@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Telepített verzió"
@@ -209,6 +215,10 @@ app:
           excluded: "Kizárva"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -287,6 +297,8 @@ app:
       title: "Forráskód"
       noData: "Hiányzik a mod forrása."
       collapseExtra: "Readme és Beállítások összecsukása"
+      copy: ~
+      copied: ~
     changelog:
       title: "Változásnapló"
       loadingFailed: "Változásnapló betöltése sikertelen. <0>Kattintson ide</0> a GitHub megtekintéséhez."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Legújabb verzió változásai"
       noData: "A telepített verzió megegyezik a kiválasztott verzióval."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Népszerű és legjobbra értékelt"
+      trending: ~
       popular: "Népszerű"
       topRated: "Legjobbra értékelt"
       newest: "Legújabb"

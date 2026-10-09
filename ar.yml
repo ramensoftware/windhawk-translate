@@ -178,6 +178,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -197,6 +198,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "الإصدار المثبت"
@@ -217,6 +223,10 @@ app:
           excluded: "مستبعد"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -303,6 +313,8 @@ app:
       title: "كود المصدر"
       noData: "مصدر المود مفقود."
       collapseExtra: "طي ملف Readme والإعدادات"
+      copy: ~
+      copied: ~
     changelog:
       title: "سجل التغييرات"
       loadingFailed: "فشل تحميل سجل التغييرات. <0>انقر هنا</0> لعرضه على GitHub."
@@ -335,6 +347,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "اعتبر أنماط قائمة التضمين للعمليات النظامية الحرجة"
         description: "افتراضيًا، يقوم Windhawk بتحميل المودات في العمليات النظامية الحرجة فقط إذا تم تضمين العملية بدون أنماط، مثل <0>critical.exe</0>، وليس <0>*</0> أو <0>*.exe</0>. لمزيد من التفاصيل حول العمليات النظامية الحرجة، يرجى الرجوع إلى <1>التوثيق</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "تغييرات أحدث إصدار"
       noData: "الإصدار المثبت مطابق للإصدار المحدد."
@@ -481,6 +504,7 @@ app:
   explore:
     search:
       popularAndTopRated: "الأكثر شهرة والأعلى تقييماً"
+      trending: ~
       popular: "الأكثر شهرة"
       topRated: "الأعلى تقييماً"
       newest: "الأحدث"

@@ -168,6 +168,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -187,6 +188,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Versi yang terpasang"
@@ -207,6 +213,10 @@ app:
           excluded: "Dikecualikan"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -283,6 +293,8 @@ app:
       title: "Kode Sumber"
       noData: "Sumber mod hilang."
       collapseExtra: "Perluas Readme dan Pengaturan"
+      copy: ~
+      copied: ~
     changelog:
       title: "Catatan perubahan"
       loadingFailed: "Gagal memuat catatan perubahan. <0>Klik disini</0> untuk melihat di Github."
@@ -315,6 +327,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Perubahan Versi Saat Ini"
       noData: "Versi yang terpasang identik dengan versi yang dipilih."
@@ -406,6 +429,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populer dan rating tertinggi"
+      trending: ~
       popular: "Populer"
       topRated: "Rating tertinggi"
       newest: "Terbaru"

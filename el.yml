@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Εγκατεστημένη έκδοση"
@@ -209,6 +215,10 @@ app:
           excluded: "Εξαιρείται"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -287,6 +297,8 @@ app:
       title: "Πηγαίος κώδικας"
       noData: "Η πηγή mod λείπει."
       collapseExtra: "Σύμπτυξη Readme και Ρυθμίσεων"
+      copy: ~
+      copied: ~
     changelog:
       title: "Καταγραφή αλλαγών"
       loadingFailed: "Η φόρτωση του αρχείου καταγραφής αλλαγών απέτυχε <0>Click here</0> να το δείτε στο GitHub."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Εξετάστε τα μοτίβα λίστας συμπερίληψης για κρίσιμες διαδικασίες συστήματος"
         description: "Από προεπιλογή, το Windhawk φορτώνει mods μόνο σε κρίσιμες διεργασίες συστήματος εάν η διαδικασία περιλαμβάνεται χωρίς πρότυπα, e.g. <0>critical.exe</0>, not <0>*</0> or <0>*.exe</0>. Για περισσότερες λεπτομέρειες σχετικά με τις κρίσιμες διαδικασίες του συστήματος, ανατρέξτε <1>στην τεκμηρίωση</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Τελευταίες αλλαγές έκδοσης"
       noData: "Η εγκατεστημένη έκδοση είναι πανομοιότυπη με την επιλεγμένη έκδοση."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Δημοφιλής και κορυφαία βαθμολογία"
+      trending: ~
       popular: "Δημοφιλία"
       topRated: "Κορυφαία βαθμολογία"
       newest: "Νεότερο"

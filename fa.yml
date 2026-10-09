@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "به این ماد هنوز امتیازی داده نشده است"
     loggingEnabledInAdvancedTab: "ثبت وقایع دیباگ در زبانه پیشرفته ماد فعال است"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "نسخه نصب شده"
@@ -209,6 +215,10 @@ app:
           excluded: "مستثنی شده"
           customListsNote: "لیست‌های سفارشی برای شامل یا رد کردن پردازش‌ها در زبانه پیشرفته برای این ماد تعریف شده‌اند"
           patternsMatchCriticalSystemProcessesNote: "الگوهای لیست شمول برای پردازش‌های حیاتی سیستم در نظر گرفته می‌شوند (تنظیم شده در زبانه پیشرفته)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "پیش‌انتشار"
@@ -287,6 +297,8 @@ app:
       title: "کد منبع"
       noData: "منبع ماد موجود نیست."
       collapseExtra: "بستن راهنما و تنظیمات"
+      copy: ~
+      copied: ~
     changelog:
       title: "لیست تغییرات"
       loadingFailed: "بارگذاری لیست تغییرات ناموفق بود. <0>اینجا کلیک کنید</0> تا آن را در گیت‌هاب ببینید."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "در نظر گرفتن الگوهای لیست شمول برای پردازش‌های حیاتی سیستم"
         description: "به‌طور پیش‌فرض، ویندهاک مادها را در پردازش‌های حیاتی سیستم تنها در صورتی بارگذاری می‌کند که پردازش بدون الگو (Wildcard) ذکر شده باشد، مثلاً <0>critical.exe</0>، نه <0>*</0> یا <0>*.exe</0>. برای جزئیات بیشتر درباره پردازش‌های حیاتی سیستم، لطفاً به <1>مستندات</1> مراجعه کنید."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "تغییرات کد منبع"
       noData: "نسخه نصب شده با نسخه انتخاب شده یکسان است."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "محبوب و پرامتیاز"
+      trending: ~
       popular: "محبوب"
       topRated: "پرامتیاز"
       newest: "جدیدترین"

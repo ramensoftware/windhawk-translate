@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "स्थापित संस्करण"
@@ -209,6 +215,10 @@ app:
           excluded: "बहिष्कृत"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -287,6 +297,8 @@ app:
       title: "स्रोत कोड"
       noData: "मॉड स्रोत अनुपस्थित है।"
       collapseExtra: "रीडमी और सेटिंग्स संक्षिप्त करें"
+      copy: ~
+      copied: ~
     changelog:
       title: "परिवर्तन लॉग"
       loadingFailed: "परिवर्तन लॉग लोड करने में विफल। <0>GitHub पर देखने के लिए यहाँ क्लिक करें</0>।"
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "महत्वपूर्ण सिस्टम प्रक्रियाओं के लिए समावेशन सूची पैटर्न पर विचार करें"
         description: "डिफ़ॉल्ट रूप से, विंडहॉक केवल तभी महत्वपूर्ण सिस्टम प्रक्रियाओं में मॉड्स लोड करता है जब प्रक्रिया बिना पैटर्न के शामिल हो, जैसे <0>critical.exe</0>, न कि <0>*</0> या <0>*.exe</0>। महत्वपूर्ण सिस्टम प्रक्रियाओं के बारे में अधिक जानकारी के लिए, कृपया <1>दस्तावेज़ीकरण</1> देखें।"
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "नवीनतम संस्करण परिवर्तन"
       noData: "स्थापित संस्करण चयनित संस्करण के समान है।"
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "लोकप्रिय और शीर्ष रेटेड"
+      trending: ~
       popular: "लोकप्रिय"
       topRated: "शीर्ष रेटेड"
       newest: "नवीनतम"

@@ -172,6 +172,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -191,6 +192,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Instalirana verzija"
@@ -211,6 +217,10 @@ app:
           excluded: "Isključeno"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -291,6 +301,8 @@ app:
       title: "Izvorni kôd"
       noData: "Nedostaje izvorni kôd dodatka."
       collapseExtra: "Sažmi Readme i Postavke"
+      copy: ~
+      copied: ~
     changelog:
       title: "Povijest promjena"
       loadingFailed: "Učitavanje povijesti promjena nije uspjelo. <0>Kliknite ovdje</0> za pregled na GitHubu."
@@ -323,6 +335,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Uvažavaj obrasce za kritične procese sustava"
         description: "Po zadanom, Windhawk učitava dodatke u kritične procese sustava samo ako su izravno navedeni (npr. <0>critical.exe</0>), a ne putem uzoraka (<0>*</0> ili <0>*.exe</0>). Za više detalja o kritičnim procesima sustava, pogledajte <1>dokumentaciju</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Promjene u najnovijoj verziji"
       noData: "Instalirana verzija jednaka je odabranoj verziji."
@@ -436,6 +459,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Popularni i najbolje ocijenjeni"
+      trending: ~
       popular: "Popularni"
       topRated: "Najbolje ocijenjeni"
       newest: "Najnoviji"

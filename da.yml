@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: ~
     loggingEnabledInAdvancedTab: ~
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Installeret version"
@@ -209,6 +215,10 @@ app:
           excluded: "Ekskluderede"
           customListsNote: ~
           patternsMatchCriticalSystemProcessesNote: ~
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: ~
@@ -287,6 +297,8 @@ app:
       title: "Kildekode"
       noData: "Modifikationskilde mangler."
       collapseExtra: "Kollaps Readme og Indstillinger"
+      copy: ~
+      copied: ~
     changelog:
       title: "Ændringslog"
       loadingFailed: "Indlæsning af ændringslog fejlede. <0>Klik her</0> for at vise den på GitHub."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: ~
         description: ~
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Seneste versionsændringer"
       noData: "Den installerede version er identisk med den valgte version."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populær og topbedømte"
+      trending: ~
       popular: "Populær"
       topRated: "Topbedømte"
       newest: "Nyeste"

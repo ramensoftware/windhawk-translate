@@ -168,6 +168,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -187,6 +188,11 @@ app:
           contentInvalid: ~
     notRated: "この Mod はまだ評価されていません"
     loggingEnabledInAdvancedTab: "デバッグログは Mod の高度タブで有効になっています"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "インストール済みのバージョン"
@@ -207,6 +213,10 @@ app:
           excluded: "除外"
           customListsNote: "この Mod は高度タブのカスタムプロセス対象/除外リストに定義されています"
           patternsMatchCriticalSystemProcessesNote: "重要なシステムプロセスの内包リストパターンがこの Mod に対して考慮されます (高度タブで設定されています)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "プレリリース"
@@ -283,6 +293,8 @@ app:
       title: "ソースコード"
       noData: "Mod のソースはありません。"
       collapseExtra: "README と設定を折りたたむ"
+      copy: ~
+      copied: ~
     changelog:
       title: "更新履歴"
       loadingFailed: "更新履歴の読み込みに失敗しました。GitHub で表示するには、<0>ここをクリック</0>してください。"
@@ -315,6 +327,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "重要なシステムプロセスの内包リストパターンを考慮"
         description: "説明: 既定では Windhawk はプロセスのパターンなし (例: <0>*</0> または <0>*.exe</0> ではなく <0>critical.exe</0>) で内包されている場合でのみ、重要なシステムプロセスに Mod を読み込みます。重要なシステムプロセスの詳細については<1>ドキュメント</1>を参照してください。"
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "最新バージョンの変更点"
       noData: "インストールされているバージョンは選択したバージョンと同一です。"
@@ -406,6 +429,7 @@ app:
   explore:
     search:
       popularAndTopRated: "人気で高評価"
+      trending: ~
       popular: "人気"
       topRated: "高評価"
       newest: "最新"

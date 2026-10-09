@@ -170,6 +170,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -189,6 +190,11 @@ app:
           contentInvalid: ~
     notRated: "Denne modden har ikke blitt vurdert ennå"
     loggingEnabledInAdvancedTab: "Feilsøkingslogging er aktivert i Avansert-fanen til modden"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Installert versjon"
@@ -209,6 +215,10 @@ app:
           excluded: "Ekskludert"
           customListsNote: "Egendefinerte inkluderings-/ekskluderingslister for prosesser er definert for denne modden i Avansert-fanen"
           patternsMatchCriticalSystemProcessesNote: "Mønstre i inkluderingslisten tas i betraktning for kritiske systemprosesser for denne modden (angitt i Avansert-fanen)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "forhåndsutgivelse"
@@ -287,6 +297,8 @@ app:
       title: "Kildekode"
       noData: "Mod-kildekoden mangler."
       collapseExtra: "Fold sammen Readme og Innstillinger"
+      copy: ~
+      copied: ~
     changelog:
       title: "Endringslogg"
       loadingFailed: "Kunne ikke laste inn endringsloggen. <0>Klikk her</0> for å se den på GitHub."
@@ -319,6 +331,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Ta hensyn til mønstre i inkluderingslisten for kritiske systemprosesser"
         description: "Som standard laster Windhawk kun inn mods i kritiske systemprosesser hvis prosessen er inkludert uten mønstre, f.eks. <0>critical.exe</0>, ikke <0>*</0> eller <0>*.exe</0>. For mer informasjon om kritiske systemprosesser, se <1>dokumentasjonen</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Kildekodeendringer"
       noData: "Den installerte versjonen er identisk med den valgte versjonen."
@@ -421,6 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Populære og topprangerte"
+      trending: ~
       popular: "Populære"
       topRated: "Topprangerte"
       newest: "Nyeste"

@@ -174,6 +174,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -193,6 +194,11 @@ app:
           contentInvalid: ~
     notRated: "Ten mod nie został jeszcze oceniony"
     loggingEnabledInAdvancedTab: "Logi debugowania są włączone w karcie Zaawansowane moda"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "Zainstalowana wersja"
@@ -213,6 +219,10 @@ app:
           excluded: "Wyjątki"
           customListsNote: "Niestandardowa lista uwzględnień/wykluczeń procesów została zdefiniowana dla tego moda w karcie Zaawansowane"
           patternsMatchCriticalSystemProcessesNote: "Wzorce listy dozwolonych procesów mają zastosowanie do krytycznych procesów systemowych dla tego modułu (ustawienia w zakładce Zaawansowane)"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "wersja przedpremierowa"
@@ -295,6 +305,8 @@ app:
       title: "Kod źródłowy"
       noData: "Kod źródłowy moda jest niedostępny."
       collapseExtra: "Zwiń ustawienia i Readme"
+      copy: ~
+      copied: ~
     changelog:
       title: "Dziennik zmian"
       loadingFailed: "Ładowanie dziennika zmian zakończone niepowodzeniem. <0>Kliknij tutaj</0> aby zobaczyć na GitHubie."
@@ -327,6 +339,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "Rozważ zawarcie dozwolonych list wzorców dla procesów krytycznych"
         description: "Domyślnie Windhawk ładuje mody tylko w krytycznych procesach systemowych, jeśli proces jest uwzględniony bez użycia wzorców, np. <0>critical.exe</0>, a nie <0>*</0> lub <0>*.exe</0>. Po więcej informacji o krytycznych procesach systemowych, prosimy o zapoznanie się z <1>dokumentacją</1>."
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "Zmiany w Najnowszej Wersji"
       noData: "Zainstalowana wersja jest identyczna z wybraną wersją."
@@ -451,6 +474,7 @@ app:
   explore:
     search:
       popularAndTopRated: "Popularne i najbardziej ocenianie"
+      trending: ~
       popular: "Popularne"
       topRated: "Najbardziej oceniane"
       newest: "Najnowsze"

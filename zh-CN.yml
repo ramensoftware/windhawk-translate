@@ -168,6 +168,7 @@ app:
         nameTooLong: ~
         emailInvalid: ~
         review:
+          purpose: ~
           content: ~
           version: ~
           posted: ~
@@ -187,6 +188,11 @@ app:
           contentInvalid: ~
     notRated: "此模组暂无评分"
     loggingEnabledInAdvancedTab: "已在模组的高级选项卡中启用调试日志"
+    nuked:
+      badge: ~
+      title: ~
+      restoredByUpdate: ~
+      staysDisabled: ~
   modDetails:
     header:
       installedVersion: "已安装版本"
@@ -207,6 +213,10 @@ app:
           excluded: "不包括"
           customListsNote: "已在“高级”选项卡中为此模组定义了自定义进程包含/排除列表"
           patternsMatchCriticalSystemProcessesNote: "包含列表模式将应用于此模组的关键系统进程（在“高级”选项卡中设置）"
+    userConfig:
+      label: ~
+      tooltip: ~
+      unknownUserName: ~
     version:
       title: ~
       preRelease: "预览版"
@@ -283,6 +293,8 @@ app:
       title: "源代码"
       noData: "无源代码"
       collapseExtra: "折叠README和设置"
+      copy: ~
+      copied: ~
     changelog:
       title: "更新日志"
       loadingFailed: "无法加载更新日志。<0>点击此处</0>访问Github。"
@@ -315,6 +327,17 @@ app:
       patternsMatchCriticalSystemProcesses:
         title: "匹配系统关键进程"
         description: "为了安全起见，Windhawk 默认仅在明确指定了系统关键进程名称时（即不使用通配符，如 <0>critical.exe</0> 时）才会在相应的关键进程中加载模组，对于通配符（如 <0>*</0> 或 <0>*.exe</0>）默认是不会匹配到系统关键进程的。有关系统关键进程的详细信息，请参阅 <1>相关文档</1>。"
+      userScope:
+        title: ~
+        description: ~
+        currentUser: ~
+        confirmTitle: ~
+        confirmDescription: ~
+        confirmDescriptionOthers: ~
+        confirmOk: ~
+        delete: ~
+        deleteConfirm: ~
+        deleteConfirmOk: ~
     changes:
       title: "新版本更新内容"
       noData: "安装的版本与所选版本相同。"
@@ -406,6 +429,7 @@ app:
   explore:
     search:
       popularAndTopRated: "高分且热门的模组"
+      trending: ~
       popular: "受欢迎的模组"
       topRated: "高分模组"
       newest: "最新模组"
