@@ -138,61 +138,61 @@ app:
     editedLocally: "모드가 로컬에서 편집되었습니다"
     noDescription: "(설명 없음)"
     users_other: "사용자 {{formattedCount}}명"
-    reviews_other: ~
+    reviews_other: "리뷰 {{formattedCount}}개"
     reviews:
-      label: ~
-      title: ~
-      none: ~
-      showMore: ~
-      loadFailed: ~
-      write: ~
-      reply: ~
-      collapse: ~
-      expand: ~
-      vote: ~
-      voted: ~
-      voteFailed: ~
-      undo: ~
-      undoFailed: ~
+      label: "리뷰"
+      title: "{{name}} 리뷰"
+      none: "아직 리뷰가 없습니다"
+      showMore: "더 보기"
+      loadFailed: "리뷰를 불러올 수 없습니다"
+      write: "리뷰 쓰기"
+      reply: "답글"
+      collapse: "{{name}}의 리뷰 접기"
+      expand: "{{name}}의 리뷰 펼치기"
+      vote: "유용함"
+      voted: "이 리뷰가 유용하다고 표시했습니다"
+      voteFailed: "투표를 기록할 수 없습니다"
+      undo: "되돌리려면 다시 클릭하세요"
+      undoFailed: "투표를 되돌릴 수 없습니다"
       sort:
-        label: ~
-        top: ~
-        newest: ~
+        label: "정렬"
+        top: "인기"
+        newest: "최신"
       form:
-        name: ~
-        email: ~
-        emailHint: ~
-        contentHint: ~
-        submit: ~
-        nameRequired: ~
-        nameTooLong: ~
-        emailInvalid: ~
+        name: "이름"
+        email: "이메일"
+        emailHint: "공개되지 않습니다"
+        contentHint: "마크다운 서식이 지원됩니다"
+        submit: "게시"
+        nameRequired: "이름을 입력해 주세요"
+        nameTooLong: "이름이 너무 깁니다"
+        emailInvalid: "올바른 이메일 주소를 입력해 주세요"
         review:
-          purpose: ~
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          purpose: "다른 사용자가 이 모드를 설치할지 결정하는 데 도움이 될 수 있도록 모드 사용 경험을 공유하세요. 버그를 찾았거나 기능 아이디어가 있나요? 대신 <0>GitHub에서 이슈를 열여 주세요</0>."
+          content: "리뷰"
+          version: "{{version}} 버전 리뷰하기"
+          posted: "감사합니다 - 리뷰는 검토되고 나면 나타납니다"
+          failed: "리뷰를 게시할 수 없습니다"
+          contentRequired: "리뷰를 작성해 주세요"
+          contentTooShort: "유용한 리뷰를 남기기 위해 더 자세한 내용을 추가하거나, 대신 이 모드에 평점을 남기거나 동의하는 리뷰에 투표하세요."
+          contentTooLong: "리뷰가 너무 깁니다"
+          contentInvalid: "리뷰에 게시할 수 없는 글자가 포함되어 있습니다"
         reply:
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          content: "답글"
+          version: "설치된 {{version}} 버전으로 답글 달기"
+          posted: "감사합니다 - 답글은 검토되고 나면 나타납니다"
+          failed: "답글을 게시할 수 없습니다"
+          contentRequired: "답글을 작성해 주세요"
+          contentTooShort: "유용한 답글을 남기기 위해 더 자세한 내용을 추가하거나, 또는 동의하는 리뷰에 투표하세요."
+          contentTooLong: "답글이 너무 깁니다"
+          contentInvalid: "답글에 게시할 수 없는 글자가 포함되어 있습니다"
     notRated: "이 모드는 아직 평점이 없습니다"
-    loggingEnabledInAdvancedTab: "이 모드의 [고급] 탭에서 디버그 로깅이 활성화됨"
+    loggingEnabledInAdvancedTab: "이 모드의 [고급] 탭에서 디버그 로깅이 활성화되어 있음"
     nuked:
-      badge: ~
-      title: ~
-      restoredByUpdate: ~
-      staysDisabled: ~
+      badge: "카탈로그에 의해 비활성화됨"
+      title: "Windhawk 모드 카탈로그에 의해 비활성화됨"
+      restoredByUpdate: "최신 버전으로 업데이트하면 모드가 복원됩니다."
+      staysDisabled: "이슈가 해결되기 전까지 모드를 활성화할 수 없습니다."
   modDetails:
     header:
       installedVersion: "설치된 버전"
@@ -211,12 +211,12 @@ app:
         tooltip:
           targets: "대상 프로세스"
           excluded: "제외 프로세스"
-          customListsNote: "사용자 지정 프로세스 포함/제외 목록은 모드의 [고급] 탭에서 정의됩니다"
-          patternsMatchCriticalSystemProcessesNote: "포함 목록 패턴은 이 모드의 중대한 시스템 프로세스를 위해 고려됩니다 ([고급] 탭에서 설정)"
+          customListsNote: "이 모드의 [고급] 탭에서 사용자 지정 프로세스 포함/제외 목록이 정의되어 있습니다"
+          patternsMatchCriticalSystemProcessesNote: "이 모드에 중대한 시스템 프로세스를 위해 포함 목록 패턴이 고려되고 있습니다 ([고급] 탭에서 설정)"
     userConfig:
-      label: ~
-      tooltip: ~
-      unknownUserName: ~
+      label: "사용자 구성"
+      tooltip: "이 모드에 표시된 설정 및 구성이 다음 현재 사용자에게만 적용됩니다: {{userName}}"
+      unknownUserName: "(알 수 없음)"
     version:
       title: "버전을 선택하세요"
       preRelease: "프리릴리스"
@@ -229,28 +229,28 @@ app:
       title: "세부 정보"
       noData: "모드 세부 정보가 없습니다."
     modLink:
-      openInBrowser: ~
-      copyLink: ~
-      copied: ~
-      share: ~
-      linkCopied: ~
+      openInBrowser: "브라우저에서 열기"
+      copyLink: "링크 복사"
+      copied: "복사됨"
+      share: "공유"
+      linkCopied: "링크 복사됨"
     settings:
       title: "설정"
       noData: "사용 가능한 모드 설정이 없습니다."
       saveButton: "설정 저장"
       sampleValue: "샘플 값"
-      pickColor: ~
-      browseFile: ~
-      browseFolder: ~
-      hotkeyEmpty: ~
-      hotkeyNotSet: ~
-      hotkeyPressKey: ~
-      hotkeyClear: ~
-      hotkeyEdit: ~
-      hotkeyKey: ~
-      hotkeyStoredAs: ~
-      hotkeyNotRecorded: ~
-      hotkeyCaptureUnavailable: ~
+      pickColor: "색 선택"
+      browseFile: "파일 찾아보기"
+      browseFolder: "폴더 찾아보기"
+      hotkeyEmpty: "바로 가기를 설정하려면 클릭하세요"
+      hotkeyNotSet: "설정 안 됨"
+      hotkeyPressKey: "바로 가기를 누르세요..."
+      hotkeyClear: "지우기"
+      hotkeyEdit: "바로 가기 편집"
+      hotkeyKey: "키"
+      hotkeyStoredAs: "저장된 키: "
+      hotkeyNotRecorded: "바로 가기가 기록되지 않음"
+      hotkeyCaptureUnavailable: "바로 가기를 기록할 수 없습니다. 수동으로 설정해 주세요."
       arrayItemAdd: "새 항목 추가"
       arrayItemMoveUp: "위로 항목 이동"
       arrayItemMoveDown: "아래로 항목 이동"
@@ -293,8 +293,8 @@ app:
       title: "소스 코드"
       noData: "모드 소스가 없습니다."
       collapseExtra: "Readme와 설정 접기"
-      copy: ~
-      copied: ~
+      copy: "소스 코드 복사"
+      copied: "복사됨"
     changelog:
       title: "변경 로그"
       loadingFailed: "변경 로그를 불러오는 데 실패했습니다. GitHub에서 보려면 <0>여기를 누르세요</0>."
@@ -303,7 +303,7 @@ app:
       title: "고급"
       debugLogging:
         title: "디버그 로깅"
-        description: "모드의 문제 해결에 유용할 수 있습니다."
+        description: "모드의 문제 해결에 도움이 될 수 있습니다."
         none: "없음"
         modLogs: "모드 로그"
         detailedLogs: "자세한 디버그 로그"
@@ -325,19 +325,19 @@ app:
         title: "모드 포함/제외 목록 무시"
         description: "모드의 프로세스 포함/제외 목록을 무시하고 상기의 사용자 지정 목록만을 사용합니다."
       patternsMatchCriticalSystemProcesses:
-        title: "중대한 시스템 프로세스를 목록에 포함하기 위해 패턴(와일드카드) 고려"
+        title: "중대한 시스템 프로세스를 위해 포함 목록 패턴(와일드카드) 고려"
         description: "기본값으로 Windhawk는 프로세스가 패턴(와일드카드)으로 포함될 경우(예: <0>*</0> 또는 <0>*.exe</0>)에는 모드를 중대한 시스템 프로세스 내에서는 불러오지 않습니다. (허용하는 예: <0>critical.exe</0>) 중대한 시스템 프로세스에 대한 자세한 정보는 <1>문서</1>를 참조해주세요."
       userScope:
-        title: ~
-        description: ~
-        currentUser: ~
-        confirmTitle: ~
-        confirmDescription: ~
-        confirmDescriptionOthers: ~
-        confirmOk: ~
-        delete: ~
-        deleteConfirm: ~
-        deleteConfirmOk: ~
+        title: "현재 사용자용으로 구성 분리"
+        description: "모드 설정을 구성하기 위해 이 모드를 활성화하면 다른 사용자에게 영향을 미치지 않고 현재 Windows 사용자에게 해당 기능의 활성화 상태 및 이 탭의 기타 옵션을 각각 지정할 수 있습니다."
+        currentUser: "현재 사용자: {{userName}}"
+        confirmTitle: "현재 사용자용으로 분리 구성을 사용할까요?"
+        confirmDescription: "이 모드의 활성화 상태 및 이 탭의 기타 옵션 등의 모드 설정은 현재 사용자에게만 적용됩니다. 글로벌 구성이 시작점으로서 복사됩니다."
+        confirmDescriptionOthers: "다른 사용자는 글로벌 구성을 계속 사용하고 이 옵션이 켜져 있는 동안 변경 내용은 현재 사용자에게 영향을 미치지 않습니다. 이 모드가 현재 사용자의 실행 중인 프로그램으로 다시 불러와 집니다."
+        confirmOk: "분리 구성 사용"
+        delete: "현재 사용자의 구성 삭제"
+        deleteConfirm: "이 모드의 현재 사용자 구성을 삭제하시겠습니까? 이 모드의 설정 및 옵션이 손실되고 글로벌 구성이 사용됩니다."
+        deleteConfirmOk: "구성 삭제"
     changes:
       title: "소스 코드 변경 내용"
       noData: "설치되어 있는 버전이 선택한 버전과 동일합니다."
@@ -386,12 +386,12 @@ app:
     noGroup: "그룹 없음"
     newGroup: "새 그룹"
     groupName: "그룹명"
-    nameTaken: "이 그룹의 이름이 이미 존재합니다"
+    nameTaken: "이 그룹의 이름이 이미 있습니다"
     selectGroup: "{{name}} 선택"
     expandGroup: "{{name}} 펼치기"
     collapseGroup: "{{name}} 접기"
     groupActions: "{{name}} 작업"
-    modCount_other: "{{count}}개 mods"
+    modCount_other: "모드 {{count}}개"
     empty: "이 그룹에 모드가 없습니다"
     moveUp: "위로 그룹 이동"
     moveDown: "아래로 그룹 이동"
@@ -399,12 +399,12 @@ app:
     renameTitle: "그룹 이름 바꾸기"
     renameOk: "이름 바꾸기"
     delete: "그룹 삭제"
-    deleteConfirm_other: "이 그룹을 삭제할까요? 모드 {{count}}개가 그룹 해제로 돌아갑니다."
+    deleteConfirm_other: "이 그룹을 삭제할까요? 모드 {{count}}개가 그룹 없음으로 돌아갑니다."
     deleteConfirmEmpty: "이 그룹을 삭제할까요?"
     deleteOk: "그룹 삭제"
   modSearch:
     placeholder: "모드 검색..."
-    placeholderWithHint: "모드 검색... 초점을 맞추려면 '/' 입력"
+    placeholderWithHint: "모드 검색... 검색창에 초점을 맞추려면 '/' 입력"
     noResults: "현재 필터와 일치하는 모드가 없습니다"
   home:
     browse: "모드 탐색"
@@ -424,12 +424,12 @@ app:
         status: "상태"
     featuredMods:
       title: "추천 모드"
-      noMods: "설치한 적 없는 추천 모드가 아직 없습니다"
+      noMods: "설치하지 않은 추천 모드가 아직 없습니다"
       explore: "다른 모드 탐색"
   explore:
     search:
       popularAndTopRated: "인기 및 평점"
-      trending: ~
+      trending: "트렌드"
       popular: "인기"
       topRated: "평점"
       newest: "최신"
@@ -465,7 +465,7 @@ app:
     advancedSettings: "고급 설정"
     hideTrayIcon:
       title: "트레이 아이콘 숨기기"
-      description: "이 옵션을 비활성화하려면 Windhawk를 종료해야 합니다."
+      description: "Windhawk를 종료하려면 이 옵션을 비활성화해야 합니다."
     alwaysCompileModsLocally:
       title: "항상 모드를 로컬에서 컴파일"
       description: "기본값으로는 Windhawk가 사용 가능할 때 미리 컴파일된 모드 바이너리를 Windhawk 서버에서 다운로드합니다. 이 옵션을 활성화하면 그러는 대신 항상 모드를 로컬에서 컴파일합니다."
@@ -505,7 +505,7 @@ app:
       excludeGames: "익히 알려진 게임 제외"
       titleInclusion: "프로세스 포함 목록"
       descriptionInclusion: "제외 목록에 있어도 Windhawk가 인젝션할 프로세스 이름/경로 목록입니다."
-      inclusionWithoutExclusionNotice: "프로세스 포함 목록은 빈 프로세스 제외 목록에 영향을 주지 않습니다."
+      inclusionWithoutExclusionNotice: "프로세스 제외 목록이 비어 있으면 프로세스 포함 목록은 아무런 효과가 없습니다."
       inclusionWithoutTotalExclusionNotice: "여기의 프로세스들 이외의 모든 프로세스를 제외하려면 프로세스 제외 목록에 \"*\"를 설정할 수 있습니다."
       processListPlaceholder: "1줄당 프로세스 이름/경로 1개, 예:"
       invalidCharactersWarning: "프로세스 목록에 올바르지 않은 글자가 들어 있습니다. 제거된 글자: {{invalidCharacters}}"
@@ -515,7 +515,7 @@ app:
       exportAction: "내보내기..."
       importAction: "가져오기..."
       appSettings: "앱 설정"
-      notInArchive: "이 아카이브에는 아님"
+      notInArchive: "이 아카이브에 없음"
       mods: "모드"
       settings: "설정"
       config: "구성"
@@ -570,13 +570,13 @@ app:
         doneWithFailuresTitle: "문제가 있지만 가져오기 완료됨"
         doneSubtitle: "모드 {{installed}}개가 설치되었고, {{skipped}}개 건너뛰었으며, {{failed}}개 실패했습니다."
         abortedTitle: "가져오기 취소됨"
-        abortedSubtitle: "모드 {{total}}개 중 {{done}}개 가져온 후 취소되었습니다. 나머지는 그대로 남았습니다. 이미 설치된 모드는 남았습니다."
+        abortedSubtitle: "모드 {{total}}개 중 {{done}}개를 가져온 후 취소되었습니다. 나머지는 가져오지 않았습니다. 이미 설치된 모드는 그대로 유지됩니다."
         failedTitle: "가져오기 실패"
         failedSubtitle: "가져오기를 완료할 수 없습니다. 자세한 내용을 보려면 오류를 확인하세요."
   about:
     title: "Windhawk v{{version}}"
     beta: "베타"
-    subtitle: "Windows 프로그램용 사용자 정의 마켓플레이스"
+    subtitle: "Windows와 프로그램을 위한 사용자 정의 마켓플레이스"
     credit: "By <0>{{author}}</0>"
     update:
       title: "업데이트를 사용할 수 있음"
@@ -642,11 +642,11 @@ app:
     stopCompilation: "컴파일 중지"
     preview: "모드 미리 보기"
     showLogOutput: "로그 출력 표시"
-    remove: ~
+    remove: "모드 제거"
     exit: "편집 모드 나가기"
     exitConfirmation: "마지막 컴파일 성공 후의 변경이 사라집니다"
     exitButtonOk: "나가기"
-    exitButtonCancel: "남아 있기"
+    exitButtonCancel: "계속 편집"
   website:
     appHeader:
       mods: "모드"
@@ -655,7 +655,7 @@ app:
       toggleTheme: "라이트/다크 테마 전환"
       contributeTranslation: "새 번역 기여하기"
     home:
-      tagline: "Windows 프로그램용 사용자 정의 마켓플레이스"
+      tagline: "Windows와 프로그램을 위한 사용자 정의 마켓플레이스"
       getInvolved: "참여하기"
       joinDiscord: "Discord의 Windhawk 커뮤니티에 가입하기"
       discussWindhawk: "GitHub Discussions에서 Windhawk 논의하기"
@@ -663,15 +663,15 @@ app:
       browseLinks: "기타 유용한 링크 찾아보기"
       highlights: "하이라이트"
       robust: "강건함"
-      robustDescription: "Windhawk는 안정성과 성능을 가장 우선합니다. 시스템에 눈에 띄는 영향 없이 끊임없게 실행되도록 디자인되었습니다."
+      robustDescription: "Windhawk는 안정성과 성능을 매우 중요하게 여깁니다. 시스템에 눈에 띄는 영향 없이 끊임없이 실행되도록 디자인되었습니다."
       simple: "간단함"
       simpleDescription: "Windhawk를 사용하기 위해 컴퓨터 전문가가 될 필요가 없으며 누구든지 사용할 수 있습니다. 정교한 모드들이 클릭 두 번 만에 설치되며 사용자 친화적인 옵션을 통해 모드를 사용자 정의할 수 있습니다."
       transparent: "투명함"
       transparentDescription: "Windhawk에서 제공하는 모드들은 블랙 박스가 아닙니다. 각 모드는 설명 그대로 작동하는지 검토할 수 있는 소스 코드 형태로 옵니다."
     modDetails:
       getWindhawk: "Windhawk를 받고 이 모드 설치하기"
-      openInWindhawk: ~
-      notInstalled: ~
+      openInWindhawk: "Windhawk에서 열기"
+      notInstalled: "Windhawk가 설치되어 있지 않은 것 같습니다. 이 모드를 설치하려면 <0>Windhawk를 받으세요</0>."
     links:
       news: "뉴스"
       windhawkNews: "Windhawk 뉴스 - Ramen Software"
@@ -684,7 +684,7 @@ app:
       creatingNewMod: "새 모드 만들기"
       otherTopics: "기타 주제"
       feedback: "피드백"
-      reportIssue: "문제 제보하기"
+      reportIssue: "이슈 제보하기"
       contactRamenSoftware: "Ramen Software에 연락하기"
     download:
       title: "Windhawk 업데이트하기"
