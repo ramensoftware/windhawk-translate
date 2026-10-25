@@ -299,6 +299,19 @@ app:
       collapseExtra: "Dölj Readme och Inställningar"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Ändringslogg"
       loadingFailed: "Det gick inte att läsa in ändringsloggen. <0>Klicka här</0> för att visa den på GitHub."
@@ -346,6 +359,8 @@ app:
       title: "Källkodsändringar"
       noData: "Den installerade versionen är identisk med den valda versionen."
       splitView: "Delad vy"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Expandera en dold rad"
       expandLines_other: "Expandera {{count}} dolda rader"
   modUpdates:

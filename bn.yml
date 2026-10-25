@@ -299,6 +299,19 @@ app:
       collapseExtra: "রিডমি এবং সেটিংস সংকুচিত করুন"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "পরিবর্তনের তালিকা (Changelog)"
       loadingFailed: "চেঞ্জলগ লোড করা সম্ভব হয়নি। GitHub-এ দেখতে <0>এখানে ক্লিক করুন</0>।"
@@ -346,6 +359,8 @@ app:
       title: "সোর্স কোড পরিবর্তনসমূহ"
       noData: "ইনস্টল করা ভার্সনটি নির্বাচিত ভার্সনের একদম হুবহু।"
       splitView: "স্প্লিট ভিউ"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "১টি লুকানো লাইন দেখান"
       expandLines_other: "{{count}}টি লুকানো লাইন দেখান"
   modUpdates:

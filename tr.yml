@@ -299,6 +299,19 @@ app:
       collapseExtra: "Beni Oku ve Ayarları Daralt"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Değişiklikler"
       loadingFailed: "Değişiklikler yüklenemedi. GitHub'da görüntülemek için <0>burayı tıklayın</0>."
@@ -346,6 +359,8 @@ app:
       title: "Son Sürüm Değişiklikleri"
       noData: "Yüklü sürüm, seçilen sürümle aynı."
       splitView: "Bölünmüş görünüm"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Bir gizli satırı genişlet"
       expandLines_other: "{{count}} gizli satırı genişlet"
   modUpdates:

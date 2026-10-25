@@ -299,6 +299,19 @@ app:
       collapseExtra: "Readme és Beállítások összecsukása"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Változásnapló"
       loadingFailed: "Változásnapló betöltése sikertelen. <0>Kattintson ide</0> a GitHub megtekintéséhez."
@@ -346,6 +359,8 @@ app:
       title: "Legújabb verzió változásai"
       noData: "A telepített verzió megegyezik a kiválasztott verzióval."
       splitView: "Megosztott nézet"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Egy rejtett sor kibontása"
       expandLines_other: "{{count}} rejtett sor kibontása"
   modUpdates:

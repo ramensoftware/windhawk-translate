@@ -295,6 +295,19 @@ app:
       collapseExtra: "折疊 Readme 和設定"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "更新日誌"
       loadingFailed: "加載更新日誌失敗。<0>點擊這裡</0> 在 GitHub 上查看。"
@@ -342,6 +355,8 @@ app:
       title: "最新版本變更"
       noData: "已安裝的版本與所選版本相同。"
       splitView: "分割視窗"
+      oldSource: ~
+      newSource: ~
       expandLines_other: "展開 {{count}} 條隱藏的行"
   modUpdates:
     bar:

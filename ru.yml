@@ -307,6 +307,19 @@ app:
       collapseExtra: "Скрыть настройки и Readme"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Список изменений"
       loadingFailed: "Не удалось загрузить список изменений. Нажмите <0>сюда</0>, чтобы просмотреть на GitHub."
@@ -354,6 +367,8 @@ app:
       title: "Изменения в последней версии"
       noData: "Установленная версия совпадает с выбранной."
       splitView: "Раздельный просмотр"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Раскрыть {{count}} скрытую строку"
       expandLines_few: "Раскрыть {{count}} скрытые строки"
       expandLines_many: "Раскрыть {{count}} скрытых строк"

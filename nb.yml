@@ -299,6 +299,19 @@ app:
       collapseExtra: "Fold sammen Readme og Innstillinger"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Endringslogg"
       loadingFailed: "Kunne ikke laste inn endringsloggen. <0>Klikk her</0> for å se den på GitHub."
@@ -346,6 +359,8 @@ app:
       title: "Kildekodeendringer"
       noData: "Den installerte versjonen er identisk med den valgte versjonen."
       splitView: "Delt visning"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Vis én skjult linje"
       expandLines_other: "Vis {{count}} skjulte linjer"
   modUpdates:

@@ -303,6 +303,19 @@ app:
       collapseExtra: "Recolher Leia-me e Configurações"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Log de alterações"
       loadingFailed: "Falha ao carregar a Log de Alterações. <0>Clique aqui</0> para visualizá-lo no GitHub."
@@ -350,6 +363,8 @@ app:
       title: "Últimas alterações da versão"
       noData: "A versão instalada é idêntica à versão selecionada."
       splitView: "Viualização dividida"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Expandir uma linha oculta"
       expandLines_many: "Expandir {{count}} linhas ocultas"
       expandLines_other: "Expandir {{count}} linhas ocultas"

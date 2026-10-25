@@ -299,6 +299,19 @@ app:
       collapseExtra: "README və parametrləri yığ"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Dəyişikliklər"
       loadingFailed: "Dəyişikliklər yüklənə bilmədi. GitHub-da baxmaq üçün <0>buraya klikləyin</0>."
@@ -346,6 +359,8 @@ app:
       title: "Son versiyanın dəyişiklikləri"
       noData: "Quraşdırılmış versiya seçilmiş versiya ilə eynidir."
       splitView: "Bölünmüş görünüş"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Bir gizli sətri genişləndir"
       expandLines_other: "{{count}} gizli sətri genişləndir"
   modUpdates:

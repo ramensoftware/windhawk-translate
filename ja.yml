@@ -295,6 +295,19 @@ app:
       collapseExtra: "README と設定を折りたたむ"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "更新履歴"
       loadingFailed: "更新履歴の読み込みに失敗しました。GitHub で表示するには、<0>ここをクリック</0>してください。"
@@ -342,6 +355,8 @@ app:
       title: "最新バージョンの変更点"
       noData: "インストールされているバージョンは選択したバージョンと同一です。"
       splitView: "分割で表示"
+      oldSource: ~
+      newSource: ~
       expandLines_other: "{{count}} 個の隠れた行を展開"
   modUpdates:
     bar:

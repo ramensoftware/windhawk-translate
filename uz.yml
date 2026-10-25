@@ -299,6 +299,19 @@ app:
       collapseExtra: "Readme va Sozlamalarni yig‘ish"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "O‘zgarishlar jurnali"
       loadingFailed: "O‘zgarishlar jurnalini yuklab bo‘lmadi. GitHub'da ko‘rish uchun <0>bu yerga bosing</0>."
@@ -346,6 +359,8 @@ app:
       title: "Manba kodi o‘zgarishlari"
       noData: "O‘rnatilgan versiya tanlangan versiya bilan bir xil."
       splitView: "Alohida ko‘rinish"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Bitta yashirin qatorni ochish"
       expandLines_other: "{{count}} ta yashirin qatorni ochish"
   modUpdates:

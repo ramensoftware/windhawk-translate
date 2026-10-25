@@ -295,6 +295,19 @@ app:
       collapseExtra: "Thu gọn Readme và Cài đặt"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Lịch sử thay đổi (Changelog)"
       loadingFailed: "Tải changelog thất bại. <0>Nhấn vào đây</0> để xem trên GitHub."
@@ -342,6 +355,8 @@ app:
       title: "Thay đổi mã nguồn"
       noData: "Phiên bản đã cài đặt giống hệt với phiên bản đang chọn."
       splitView: "Chế độ chia đôi màn hình"
+      oldSource: ~
+      newSource: ~
       expandLines_other: "Mở rộng {{count}} dòng bị ẩn"
   modUpdates:
     bar:

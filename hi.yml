@@ -299,6 +299,19 @@ app:
       collapseExtra: "रीडमी और सेटिंग्स संक्षिप्त करें"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "परिवर्तन लॉग"
       loadingFailed: "परिवर्तन लॉग लोड करने में विफल। <0>GitHub पर देखने के लिए यहाँ क्लिक करें</0>।"
@@ -346,6 +359,8 @@ app:
       title: "नवीनतम संस्करण परिवर्तन"
       noData: "स्थापित संस्करण चयनित संस्करण के समान है।"
       splitView: "विभाजित दृश्य"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "एक छिपी पंक्ति विस्तार करें"
       expandLines_other: "{{count}} छिपी पंक्तियाँ विस्तार करें"
   modUpdates:

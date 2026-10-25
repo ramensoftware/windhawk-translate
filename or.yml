@@ -299,6 +299,19 @@ app:
       collapseExtra: "Readme ଏବଂ ସେଟିଙ୍ଗସକୁ ସଙ୍କୁଚିତ କରନ୍ତୁ"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "ଚେଞ୍ଜଲଗ୍"
       loadingFailed: "ଚେଞ୍ଜଲଗ୍ ଲୋଡ୍ ହେବାରେ ବିଫଳ। GitHub ରେ ଦେଖିବା ପାଇଁ <0>ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ</0>।"
@@ -346,6 +359,8 @@ app:
       title: "ସୋର୍ସ କୋଡ୍ ପରିବର୍ତ୍ତନ"
       noData: "ଇନଷ୍ଟଲ୍ ହୋଇଥିବା ସଂସ୍କରଣ ଚୟନିତ ସଂସ୍କରଣ ସହିତ ସମାନ।"
       splitView: "ସ୍ପ୍ଲିଟ୍ ଭ୍ୟୁ"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "ଗୋଟିଏ ଲୁକ୍କାୟିତ ଧାଡ଼ି ଦେଖାନ୍ତୁ"
       expandLines_other: "{{count}} ଟି ଲୁକ୍କାୟିତ ଧାଡ଼ି ଦେଖାନ୍ତୁ"
   modUpdates:

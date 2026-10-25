@@ -303,6 +303,19 @@ app:
       collapseExtra: "Recolher o Leia-me e as definições"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Histórico de alterações"
       loadingFailed: "Falha ao carregar o histórico de alterações. <0>Clique aqui</0> para o ver no GitHub."
@@ -350,6 +363,8 @@ app:
       title: "Alterações ao código-fonte"
       noData: "A versão instalada é idêntica à versão selecionada."
       splitView: "Vista dividida"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Expandir uma linha oculta"
       expandLines_many: "Expandir {{count}} linhas ocultas"
       expandLines_other: "Expandir {{count}} linhas ocultas"

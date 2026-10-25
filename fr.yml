@@ -303,6 +303,19 @@ app:
       collapseExtra: "Replier le Lisez-moi et les paramètres"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Historique des modifications"
       loadingFailed: "Échec du chargement de l’historique des modifications. <0>Cliquez ici</0> pour l’afficher sur GitHub."
@@ -350,6 +363,8 @@ app:
       title: "Modifications du code source"
       noData: "La version installée est identique à la version sélectionnée."
       splitView: "Vue scindée"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Afficher une ligne masquée"
       expandLines_many: "Afficher {{count}} lignes masquées"
       expandLines_other: "Afficher {{count}} lignes masquées"

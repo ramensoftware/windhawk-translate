@@ -307,6 +307,19 @@ app:
       collapseExtra: "Skrýt nastavení a soubor Readme"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Seznam změn"
       loadingFailed: "Nelze načíst protokol změn. Kliknutím <0>sem</0> jej zobrazíte na GitHubu."
@@ -354,6 +367,8 @@ app:
       title: "Změny v nejnovější verzi"
       noData: "Nainstalovaná verze je shodná s vybranou verzí."
       splitView: "Oddělené prohlížení"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Rozbalit jeden skrytý řádek"
       expandLines_few: "Rozbalit {{count}} skryté řádky"
       expandLines_many: "Rozbalit {{count}} skrytých řádků"

@@ -299,6 +299,19 @@ app:
       collapseExtra: "Readme und Einstellungen einklappen"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Änderungsprotokoll"
       loadingFailed: "Laden des Änderungsprotokolls fehlgeschlagen. <0>Hier klicken</0> um das Änderungsprotokoll auf GitHub zu lesen."
@@ -346,6 +359,8 @@ app:
       title: "Letzte Versionsänderungen"
       noData: "Die installierte Version ist identisch mit der ausgewählten Version."
       splitView: "Ansicht aufteilen"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Zeige eine versteckte Zeile"
       expandLines_other: "Zeige {{count}} versteckte Zeilen"
   modUpdates:

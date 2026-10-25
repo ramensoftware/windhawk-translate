@@ -307,6 +307,19 @@ app:
       collapseExtra: "Zwiń ustawienia i Readme"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Dziennik zmian"
       loadingFailed: "Ładowanie dziennika zmian zakończone niepowodzeniem. <0>Kliknij tutaj</0> aby zobaczyć na GitHubie."
@@ -354,6 +367,8 @@ app:
       title: "Zmiany w Najnowszej Wersji"
       noData: "Zainstalowana wersja jest identyczna z wybraną wersją."
       splitView: "Widok podzielony"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Rozwiń jedną ukrytą linię"
       expandLines_few: "Rozwiń {{count}} ukryte linie"
       expandLines_many: "Rozwiń {{count}} ukrytych linii"

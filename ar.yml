@@ -315,6 +315,19 @@ app:
       collapseExtra: "طي ملف Readme والإعدادات"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "سجل التغييرات"
       loadingFailed: "فشل تحميل سجل التغييرات. <0>انقر هنا</0> لعرضه على GitHub."
@@ -362,6 +375,8 @@ app:
       title: "تغييرات أحدث إصدار"
       noData: "الإصدار المثبت مطابق للإصدار المحدد."
       splitView: "عرض مقسم"
+      oldSource: ~
+      newSource: ~
       expandLines_zero: "لا توجد أسطر مخفية"
       expandLines_one: "توسيع سطر مخفي واحد"
       expandLines_two: "توسيع سطرين مخفيين"

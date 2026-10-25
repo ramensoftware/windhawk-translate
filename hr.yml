@@ -303,6 +303,19 @@ app:
       collapseExtra: "Sažmi Readme i Postavke"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Povijest promjena"
       loadingFailed: "Učitavanje povijesti promjena nije uspjelo. <0>Kliknite ovdje</0> za pregled na GitHubu."
@@ -350,6 +363,8 @@ app:
       title: "Promjene u najnovijoj verziji"
       noData: "Instalirana verzija jednaka je odabranoj verziji."
       splitView: "Podijeljeni prikaz"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Proširi {{count}} skrivenu liniju"
       expandLines_few: "Proširi {{count}} skrivene linije"
       expandLines_other: "Proširi {{count}} skrivenih linija"

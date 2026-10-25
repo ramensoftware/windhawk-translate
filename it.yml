@@ -303,6 +303,19 @@ app:
       collapseExtra: "Comprimi Readme e impostazioni"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Changelog"
       loadingFailed: "Impossibile caricare il registro delle modifiche. <0>Fai clic qui</0> per visualizzarlo su GitHub."
@@ -350,6 +363,8 @@ app:
       title: "Ultime modifiche della versione"
       noData: "La versione installata è identica alla versione selezionata."
       splitView: "Dividi vista"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Espandi una linea nascosta"
       expandLines_many: "Espandi {{count}} linee nascoste"
       expandLines_other: "Espandi {{count}} linee nascoste"

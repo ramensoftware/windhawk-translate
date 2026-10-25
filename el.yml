@@ -299,6 +299,19 @@ app:
       collapseExtra: "Σύμπτυξη Readme και Ρυθμίσεων"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Καταγραφή αλλαγών"
       loadingFailed: "Η φόρτωση του αρχείου καταγραφής αλλαγών απέτυχε <0>Click here</0> να το δείτε στο GitHub."
@@ -346,6 +359,8 @@ app:
       title: "Τελευταίες αλλαγές έκδοσης"
       noData: "Η εγκατεστημένη έκδοση είναι πανομοιότυπη με την επιλεγμένη έκδοση."
       splitView: "Διαίρεση προβολής"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Ανάπτυξη μιας κρυφής γραμμής"
       expandLines_other: "Ανάπτυξη {{count}} κρυφών γραμμών"
   modUpdates:

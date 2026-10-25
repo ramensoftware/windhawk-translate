@@ -303,6 +303,19 @@ app:
       collapseExtra: "Restrânge Readme și Setări"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Jurnal de modificări"
       loadingFailed: "Nu s-a putut încărca jurnalul de modificări. <0>Dă clic aici</0> pentru a-l vedea pe GitHub."
@@ -350,6 +363,8 @@ app:
       title: "Modificări în cea mai recentă versiune"
       noData: "Versiunea instalată este identică cu cea selectată."
       splitView: "Vizualizare divizată"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Extinde o linie ascunsă"
       expandLines_few: "Extinde {{count}} linii ascunse"
       expandLines_other: "Extinde {{count}} de linii ascunse"

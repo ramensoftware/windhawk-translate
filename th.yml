@@ -295,6 +295,19 @@ app:
       collapseExtra: "ยุบ Readme และการตั้งค่าต่าง ๆ"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "บันทึกการเปลี่ยนแปลง"
       loadingFailed: "ไม่สามารถโหลดบันทึกการเปลี่ยนแปลงได้ <0>กดที่นี่</0>เพื่อดูบันทึกการเปลี่ยนแปลงบน GitHub"
@@ -342,6 +355,8 @@ app:
       title: "การเปลี่ยนแปลงเวอร์ชั่นล่าสุด"
       noData: "เวอร์ชั่นที่ติดตั้งไว้เหมือนกับเวอร์ชั่นที่เลือก"
       splitView: "มุมมองแยก"
+      oldSource: ~
+      newSource: ~
       expandLines_other: "ขยาย {{count}} บรรทัดที่ซ่อนอยู่"
   modUpdates:
     bar:

@@ -299,6 +299,19 @@ app:
       collapseExtra: "Leesmij en instellingen samenvouwen"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Wijzigingslog"
       loadingFailed: "Wijzigingslog laden mislukt. <0>Klik hier</0> om het op GitHub te bekijken."
@@ -346,6 +359,8 @@ app:
       title: "Wijzigingen laatste versie"
       noData: "Geïnstalleerde versie is identiek aan de geselecteerde versie."
       splitView: "Gesplitste weergave"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Eén verborgen regel uitvouwen"
       expandLines_other: "{{count}} verborgen regels uitvouwen"
   modUpdates:

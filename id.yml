@@ -295,6 +295,19 @@ app:
       collapseExtra: "Perluas Readme dan Pengaturan"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Catatan perubahan"
       loadingFailed: "Gagal memuat catatan perubahan. <0>Klik disini</0> untuk melihat di Github."
@@ -342,6 +355,8 @@ app:
       title: "Perubahan Versi Saat Ini"
       noData: "Versi yang terpasang identik dengan versi yang dipilih."
       splitView: "Tampilan berbagi"
+      oldSource: ~
+      newSource: ~
       expandLines_other: "Perlebar {{count}} baris tersembunyi"
   modUpdates:
     bar:

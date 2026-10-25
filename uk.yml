@@ -307,6 +307,19 @@ app:
       collapseExtra: "Приховати Readme та Налаштування"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Журнал змін"
       loadingFailed: "Не вдалося завантажити журнал змін. <0>Натисніть тут</0> щоб переглянути його на GitHub."
@@ -354,6 +367,8 @@ app:
       title: "Зміни в останній версії:"
       noData: "Встановлена версія ідентична обраній версії."
       splitView: "Розділити вид"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Розгорнути {{count}} прихований рядок"
       expandLines_few: "Розгорнути {{count}} приховані рядки"
       expandLines_many: "Розгорнути {{count}} прихованих рядків"

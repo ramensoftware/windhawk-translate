@@ -299,6 +299,19 @@ app:
       collapseExtra: "بستن راهنما و تنظیمات"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "لیست تغییرات"
       loadingFailed: "بارگذاری لیست تغییرات ناموفق بود. <0>اینجا کلیک کنید</0> تا آن را در گیت‌هاب ببینید."
@@ -346,6 +359,8 @@ app:
       title: "تغییرات کد منبع"
       noData: "نسخه نصب شده با نسخه انتخاب شده یکسان است."
       splitView: "نمای دو قسمتی"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "باز کردن یک خط پنهان"
       expandLines_other: "باز کردن {{count}} خط پنهان"
   modUpdates:

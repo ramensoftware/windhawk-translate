@@ -303,6 +303,19 @@ app:
       collapseExtra: "Ocultar Léame y Configuración"
       copy: ~
       copied: ~
+      editor:
+        find: ~
+        next: ~
+        previous: ~
+        matchCase: ~
+        regexp: ~
+        byWord: ~
+        close: ~
+        currentMatch: ~
+        onLine: ~
+        goToLine: ~
+        go: ~
+        controlCharacter: ~
     changelog:
       title: "Registro de cambios"
       loadingFailed: "Error al cargar el registro de cambios. <0>Haga clic aquí</0> para verlo en GitHub."
@@ -350,6 +363,8 @@ app:
       title: "Últimos cambios de versión"
       noData: "La versión instalada es idéntica a la versión seleccionada."
       splitView: "Vista dividida"
+      oldSource: ~
+      newSource: ~
       expandLines_one: "Expandir una línea oculta"
       expandLines_many: "Expandir {{count}} líneas ocultas"
       expandLines_other: "Expandir {{count}} líneas ocultas"
