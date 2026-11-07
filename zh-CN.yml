@@ -258,8 +258,8 @@ app:
       arrayItemCollapse: ~
       arrayItemExpand: ~
       arrayItemNumber: ~
-      arrayItemsRemoveAll: ~
-      arrayItemsRemoveAllConfirm: ~
+      arrayItemsRemoveAll: "清除全部条目"
+      arrayItemsRemoveAllConfirm: "确定要清除这项设置的全部条目吗？"
       nonDefault: ~
       unsaved: ~
       nonDefaultUnsaved: ~
