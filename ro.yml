@@ -450,6 +450,7 @@ app:
   modSearch:
     placeholder: "Caută moduri..."
     placeholderWithHint: "Caută moduri... tastează '/' pentru focus"
+    autoFocus: ~
     noResults: "Niciun mod nu corespunde filtrelor curente"
   home:
     browse: "Răsfoiește moduri"

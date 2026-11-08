@@ -465,6 +465,7 @@ app:
   modSearch:
     placeholder: "Искать модификации..."
     placeholderWithHint: "Искать модификации... нажмите '/' для фокуса"
+    autoFocus: ~
     noResults: "Ни одна модификация не подходит под текущие фильтры"
   home:
     browse: "Поиск модификаций"

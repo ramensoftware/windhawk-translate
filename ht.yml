@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Chèche mod yo..."
     placeholderWithHint: "Chèche mod yo... tape '/' pou fokis"
+    autoFocus: ~
     noResults: "Pa gen okenn mod ki koresponn ak filtè aktyèl yo"
   home:
     browse: "Chèche mod yo"

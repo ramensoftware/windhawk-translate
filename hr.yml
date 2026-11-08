@@ -450,6 +450,7 @@ app:
   modSearch:
     placeholder: "Pretraži dodatke..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "Pretraži dodatke"

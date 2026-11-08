@@ -450,6 +450,7 @@ app:
   modSearch:
     placeholder: "Cerca mod..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "Cerca Mod"

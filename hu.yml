@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Modok keresése..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "Modok böngészése"

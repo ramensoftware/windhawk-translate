@@ -420,6 +420,7 @@ app:
   modSearch:
     placeholder: "搜尋模組..."
     placeholderWithHint: "搜尋模組... 按 / 鍵聚焦"
+    autoFocus: ~
     noResults: "沒有模組符合目前的篩選條件"
   home:
     browse: "瀏覽模組"

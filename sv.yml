@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Sök efter moddar..."
     placeholderWithHint: "Sök efter moddar... tryck 'Skift' + '7' för att fokusera"
+    autoFocus: ~
     noResults: "Inga moddar matchar de aktuella filtren"
   home:
     browse: "Bläddra bland moddar"

@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "मॉड्स खोजें..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "मॉड्स के लिए ब्राउज़ करें"

@@ -420,6 +420,7 @@ app:
   modSearch:
     placeholder: "Mod を検索..."
     placeholderWithHint: "Mod を検索... 「/」キーでフォーカス"
+    autoFocus: ~
     noResults: "現在のフィルターに一致する Mod はありません"
   home:
     browse: "Mod を探す"

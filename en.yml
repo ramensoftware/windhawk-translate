@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Search for mods..."
     placeholderWithHint: "Search for mods... type '/' to focus"
+    autoFocus: "Focus automatically"
     noResults: "No mods match the current filters"
   home:
     browse: "Browse for mods"

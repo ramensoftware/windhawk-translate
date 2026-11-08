@@ -450,6 +450,7 @@ app:
   modSearch:
     placeholder: "Buscar en mods..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "Explorar los Mod"

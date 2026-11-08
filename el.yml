@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Αναζήτηση για mods..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "Περιήγηση για Mods"

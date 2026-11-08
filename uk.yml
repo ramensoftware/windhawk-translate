@@ -465,6 +465,7 @@ app:
   modSearch:
     placeholder: "Шукати моди..."
     placeholderWithHint: "Пошук модів... введіть «/» для фокусування"
+    autoFocus: ~
     noResults: "Жоден мод не відповідає поточним фільтрам"
   home:
     browse: "Шукати моди:"

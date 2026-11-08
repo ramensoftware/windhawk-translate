@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Modlarni qidirish..."
     placeholderWithHint: "Modlarni qidirish... fokuslash uchun '/' bosing"
+    autoFocus: ~
     noResults: "Hozirgi filtrlarga mos keladigan modlar topilmadi"
   home:
     browse: "Modlarni ko‘zdan kechirish"

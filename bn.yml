@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "মড খুঁজুন..."
     placeholderWithHint: "মড খুঁজুন... কার্সার নিতে '/' চাপুন"
+    autoFocus: ~
     noResults: "বর্তমান ফিল্টারের সাথে কোনো মড মেলেনি"
   home:
     browse: "মড ব্রাউজ করুন"

@@ -420,6 +420,7 @@ app:
   modSearch:
     placeholder: "ค้นหาม็อด..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "สำรวจม็อด"

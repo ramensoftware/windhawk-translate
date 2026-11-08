@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "جستجوی مادها..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: "هیچ مادی با فیلترهای فعلی مطابقت ندارد"
   home:
     browse: "مرور مادها"

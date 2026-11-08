@@ -420,6 +420,7 @@ app:
   modSearch:
     placeholder: "Tìm kiếm mod..."
     placeholderWithHint: "Tìm kiếm mod... gõ '/' để bắt đầu"
+    autoFocus: ~
     noResults: "Không có mod nào khớp với bộ lọc hiện tại"
   home:
     browse: "Duyệt tìm mod"

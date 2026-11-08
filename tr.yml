@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Modları ara..."
     placeholderWithHint: "Mod arayın... odaklanmak için '/' tuşuna basın"
+    autoFocus: ~
     noResults: "Sonuç bulunamadı."
   home:
     browse: "Modlara Göz At"

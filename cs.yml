@@ -465,6 +465,7 @@ app:
   modSearch:
     placeholder: "Hledat úpravy..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "Vyhledat úpravy"

@@ -450,6 +450,7 @@ app:
   modSearch:
     placeholder: "Pesquisar mods…"
     placeholderWithHint: "Pesquisar mods… escreva '/' para focar"
+    autoFocus: ~
     noResults: "Nenhum mod corresponde aos filtros atuais"
   home:
     browse: "Procurar mods"

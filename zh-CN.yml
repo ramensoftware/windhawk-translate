@@ -420,6 +420,7 @@ app:
   modSearch:
     placeholder: "搜索您想要的模组..."
     placeholderWithHint: "搜索您想要的模组... 按 / 键聚焦"
+    autoFocus: ~
     noResults: "没有模组匹配当前的筛选条件"
   home:
     browse: "浏览模组"

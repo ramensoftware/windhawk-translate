@@ -420,6 +420,7 @@ app:
   modSearch:
     placeholder: "모드 검색..."
     placeholderWithHint: "모드 검색... 초점을 맞추려면 '/' 입력"
+    autoFocus: ~
     noResults: "현재 필터와 일치하는 모드가 없습니다"
   home:
     browse: "모드 탐색"

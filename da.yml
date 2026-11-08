@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Søg efter modifikationer..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "Gennemse modifikationer"

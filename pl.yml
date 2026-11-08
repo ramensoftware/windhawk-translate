@@ -465,6 +465,7 @@ app:
   modSearch:
     placeholder: "Szukaj modów.."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: "Żadne mody nie pasują do aktualnych filtrów"
   home:
     browse: "Przeglądaj w poszukiwaniu modów"

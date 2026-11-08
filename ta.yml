@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "மாற்றங்களை தேடவும்..."
     placeholderWithHint: ~
+    autoFocus: ~
     noResults: ~
   home:
     browse: "மாற்றங்களைத் தேடவும்"

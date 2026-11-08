@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "ମଡ୍ ଖୋଜନ୍ତୁ..."
     placeholderWithHint: "ମଡ୍ ଖୋଜନ୍ତୁ... ଫୋକସ୍ କରିବା ପାଇଁ '/' ଟିପନ୍ତୁ"
+    autoFocus: ~
     noResults: "କୌଣସି ମଡ୍ ବର୍ତ୍ତମାନର ଫିଲ୍ଟର୍ ସହିତ ମେଳ ଖାଉନାହିଁ"
   home:
     browse: "ମଡ୍ ବ୍ରାଉଜ୍ କରନ୍ତୁ"

@@ -435,6 +435,7 @@ app:
   modSearch:
     placeholder: "Søk etter mods..."
     placeholderWithHint: "Søk etter mods... trykk '/' for å fokusere"
+    autoFocus: ~
     noResults: "Ingen mods samsvarer med de gjeldende filtrene"
   home:
     browse: "Bla gjennom mods"
