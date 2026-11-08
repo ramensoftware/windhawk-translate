@@ -345,7 +345,7 @@ app:
         description: "启用后，可为当前 Windows 用户单独调整模组设置、启用状态和此选项卡上的其他选项。"
         currentUser: "当前用户：{{userName}}"
         confirmTitle: "为当前用户使用独立配置吗？"
-        confirmDescription: "此选项卡上的模组设置、启用状态和其他选项将仅适用于当前 Windows 用户。Windhawk 会复制全局配置作为初始配置。"
+        confirmDescription: "模组的设置、启用状态以及此选项卡上的其他选项将仅适用于当前 Windows 用户。Windhawk 会复制全局配置作为初始配置。"
         confirmDescriptionOthers: "其他用户将继续使用全局配置。启用期间，全局配置的变更不会影响当前用户。Windhawk 会在当前用户正在运行的程序中重新加载此模组。"
         confirmOk: "使用独立配置"
         delete: "删除当前用户的配置"
