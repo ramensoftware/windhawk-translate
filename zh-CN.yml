@@ -87,7 +87,7 @@ app:
       updating: "更新中..."
       installing: "安装中..."
       compiling: "编译中..."
-      canceling: ~
+      canceling: "正在取消…"
       loggingEnabled: "调试日志已启用"
     contextMenu:
       cut: "剪切"
@@ -106,19 +106,19 @@ app:
       github: "GitHub主页"
       twitter: "X (Twitter)主页"
   errors:
-    commandFailed: ~
+    commandFailed: "操作失败"
   appHeader:
     home: "主页"
     explore: "探索"
     settings: "设置"
     about: "关于"
   logPane:
-    title: ~
-    clear: ~
-    wrapOn: ~
-    wrapOff: ~
-    autoScrollOn: ~
-    autoScrollOff: ~
+    title: "调试日志"
+    clear: "清除输出"
+    wrapOn: "开启自动换行"
+    wrapOff: "关闭自动换行"
+    autoScrollOn: "开启自动滚动"
+    autoScrollOff: "关闭自动滚动"
   mod:
     updateAvailable: "更新可用"
     installed: "已安装"
@@ -138,61 +138,61 @@ app:
     editedLocally: "模组已在本地编辑"
     noDescription: "（无描述）"
     users_other: "{{formattedCount}} 用户"
-    reviews_other: ~
+    reviews_other: "{{formattedCount}} 条评价"
     reviews:
-      label: ~
-      title: ~
-      none: ~
-      showMore: ~
-      loadFailed: ~
-      write: ~
-      reply: ~
-      collapse: ~
-      expand: ~
-      vote: ~
-      voted: ~
-      voteFailed: ~
-      undo: ~
-      undoFailed: ~
+      label: "评价"
+      title: "{{name}} 的评价"
+      none: "暂无评价"
+      showMore: "显示更多"
+      loadFailed: "无法加载评价"
+      write: "撰写评价"
+      reply: "回复"
+      collapse: "折叠 {{name}} 的评价"
+      expand: "展开 {{name}} 的评价"
+      vote: "有帮助"
+      voted: "你认为这条评价有帮助"
+      voteFailed: "无法记录投票"
+      undo: "再次点击可撤销"
+      undoFailed: "无法撤销投票"
       sort:
-        label: ~
-        top: ~
-        newest: ~
+        label: "排序方式"
+        top: "最有帮助"
+        newest: "最新"
       form:
-        name: ~
-        email: ~
-        emailHint: ~
-        contentHint: ~
-        submit: ~
-        nameRequired: ~
-        nameTooLong: ~
-        emailInvalid: ~
+        name: "名称"
+        email: "电子邮件"
+        emailHint: "不会公开显示"
+        contentHint: "支持 Markdown 格式"
+        submit: "发布"
+        nameRequired: "请输入你的名称"
+        nameTooLong: "名称过长"
+        emailInvalid: "请输入有效的电子邮件地址"
         review:
-          purpose: ~
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          purpose: "分享你使用此模组的体验，帮助其他人决定是否安装。发现问题或有功能建议？请<0>在 GitHub 上提交议题</0>。"
+          content: "评价"
+          version: "评价版本 {{version}}"
+          posted: "感谢你的评价，审核通过后将公开显示"
+          failed: "无法发布评价"
+          contentRequired: "请填写评价"
+          contentTooShort: "请补充使用细节，也可以给模组评分，或为你认同的评价投票"
+          contentTooLong: "评价过长"
+          contentInvalid: "评价包含无法发布的字符"
         reply:
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          content: "回复"
+          version: "使用已安装的版本 {{version}} 回复"
+          posted: "感谢你的回复，审核通过后将公开显示"
+          failed: "无法发布回复"
+          contentRequired: "请填写回复"
+          contentTooShort: "请补充回复内容。如果你认同这条评价，也可以为它投票"
+          contentTooLong: "回复过长"
+          contentInvalid: "回复包含无法发布的字符"
     notRated: "此模组暂无评分"
     loggingEnabledInAdvancedTab: "已在模组的高级选项卡中启用调试日志"
     nuked:
-      badge: ~
-      title: ~
-      restoredByUpdate: ~
-      staysDisabled: ~
+      badge: "已被模组目录禁用"
+      title: "已被 Windhawk 模组目录禁用"
+      restoredByUpdate: "更新至最新版本即可恢复模组。"
+      staysDisabled: "问题解决后才能启用此模组。"
   modDetails:
     header:
       installedVersion: "已安装版本"
@@ -214,62 +214,62 @@ app:
           customListsNote: "已在“高级”选项卡中为此模组定义了自定义进程包含/排除列表"
           patternsMatchCriticalSystemProcessesNote: "包含列表模式将应用于此模组的关键系统进程（在“高级”选项卡中设置）"
     userConfig:
-      label: ~
-      tooltip: ~
-      unknownUserName: ~
+      label: "用户配置"
+      tooltip: "此模组显示的设置和配置仅适用于当前用户 {{userName}}"
+      unknownUserName: "（未知）"
     version:
-      title: ~
+      title: "选择版本"
       preRelease: "预览版"
       select: "选择"
     updates:
-      disableForVersion: ~
-      disableAll: ~
-      allow: ~
+      disableForVersion: "跳过版本 {{version}}"
+      disableAll: "不再提示更新"
+      allow: "允许更新"
     details:
       title: "详情"
       noData: "无详情"
     modLink:
-      openInBrowser: ~
-      copyLink: ~
-      copied: ~
-      share: ~
-      linkCopied: ~
+      openInBrowser: "在浏览器中打开"
+      copyLink: "复制链接"
+      copied: "已复制"
+      share: "分享"
+      linkCopied: "链接已复制"
     settings:
       title: "设置"
       noData: "当前模组无设置。"
       saveButton: "保存"
       sampleValue: "示例值"
-      pickColor: ~
-      browseFile: ~
-      browseFolder: ~
-      hotkeyEmpty: ~
-      hotkeyNotSet: ~
-      hotkeyPressKey: ~
-      hotkeyClear: ~
-      hotkeyEdit: ~
-      hotkeyKey: ~
-      hotkeyStoredAs: ~
-      hotkeyNotRecorded: ~
-      hotkeyCaptureUnavailable: ~
+      pickColor: "选择颜色"
+      browseFile: "浏览文件"
+      browseFolder: "浏览文件夹"
+      hotkeyEmpty: "点击设置快捷键"
+      hotkeyNotSet: "未设置"
+      hotkeyPressKey: "请按下快捷键…"
+      hotkeyClear: "清除"
+      hotkeyEdit: "编辑快捷键"
+      hotkeyKey: "按键"
+      hotkeyStoredAs: "保存格式"
+      hotkeyNotRecorded: "快捷键未通过录制设置"
+      hotkeyCaptureUnavailable: "无法录制此快捷键，请手动设置。"
       arrayItemAdd: "增加新的条目"
-      arrayItemMoveUp: ~
-      arrayItemMoveDown: ~
+      arrayItemMoveUp: "上移条目"
+      arrayItemMoveDown: "下移条目"
       arrayItemRemove: "移除条目"
-      arrayItemCollapse: ~
-      arrayItemExpand: ~
-      arrayItemNumber: ~
-      arrayItemsRemoveAll: ~
-      arrayItemsRemoveAllConfirm: ~
-      nonDefault: ~
-      unsaved: ~
-      nonDefaultUnsaved: ~
-      descriptionOf: ~
-      resetToDefault: ~
-      resetToDefaultValue: ~
-      resetToDefaultOf: ~
-      resetToDefaultValueOf: ~
-      resetAll: ~
-      resetAllConfirm: ~
+      arrayItemCollapse: "折叠第 {{number}} 项"
+      arrayItemExpand: "展开第 {{number}} 项"
+      arrayItemNumber: "第 {{number}} 项"
+      arrayItemsRemoveAll: "清除全部条目"
+      arrayItemsRemoveAllConfirm: "确定要清除这项设置的全部条目吗？"
+      nonDefault: "非默认值"
+      unsaved: "未保存"
+      nonDefaultUnsaved: "非默认值，未保存"
+      descriptionOf: "{{name}} 的说明"
+      resetToDefault: "恢复默认值"
+      resetToDefaultValue: "恢复默认值（{{value}}）"
+      resetToDefaultOf: "恢复 {{name}} 的默认值"
+      resetToDefaultValueOf: "恢复 {{name}} 的默认值（{{value}}）"
+      resetAll: "全部恢复默认值"
+      resetAllConfirm: "确定要将所有设置恢复为此模组的默认值吗？"
       yamlMode: "文本模式"
       uiMode: "可视化模式"
       yamlInvalid: "无效的 YAML 格式"
@@ -281,37 +281,37 @@ app:
       unsavedChangesLeave: "放弃更改"
       unsavedChangesStay: "继续编辑"
       readOnlyPreview: "正在预览模组设置，安装模组以进行配置。"
-      compactView: ~
-      wordWrap: ~
-      expand: ~
-      collapse: ~
-      expandSetting: ~
-      collapseSetting: ~
-      foldedItems_other: ~
-      foldedSettings_other: ~
+      compactView: "紧凑视图"
+      wordWrap: "自动换行"
+      expand: "展开"
+      collapse: "折叠"
+      expandSetting: "展开 {{name}}"
+      collapseSetting: "折叠 {{name}}"
+      foldedItems_other: "{{count}} 个条目"
+      foldedSettings_other: "{{count}} 项设置"
     code:
       title: "源代码"
       noData: "无源代码"
       collapseExtra: "折叠README和设置"
-      copy: ~
-      copied: ~
+      copy: "复制源代码"
+      copied: "已复制"
       editor:
-        find: ~
-        next: ~
-        previous: ~
-        matchCase: ~
-        regexp: ~
-        byWord: ~
-        close: ~
-        currentMatch: ~
-        onLine: ~
-        goToLine: ~
-        go: ~
-        controlCharacter: ~
+        find: "查找"
+        next: "下一个"
+        previous: "上一个"
+        matchCase: "区分大小写"
+        regexp: "正则表达式"
+        byWord: "全字匹配"
+        close: "关闭"
+        currentMatch: "当前匹配项"
+        onLine: "所在行"
+        goToLine: "跳转到行"
+        go: "跳转"
+        controlCharacter: "控制字符"
     changelog:
       title: "更新日志"
       loadingFailed: "无法加载更新日志。<0>点击此处</0>访问Github。"
-      olderEntries: ~
+      olderEntries: "更早的记录"
     advanced:
       title: "高级设置"
       debugLogging:
@@ -341,82 +341,82 @@ app:
         title: "匹配系统关键进程"
         description: "为了安全起见，Windhawk 默认仅在明确指定了系统关键进程名称时（即不使用通配符，如 <0>critical.exe</0> 时）才会在相应的关键进程中加载模组，对于通配符（如 <0>*</0> 或 <0>*.exe</0>）默认是不会匹配到系统关键进程的。有关系统关键进程的详细信息，请参阅 <1>相关文档</1>。"
       userScope:
-        title: ~
-        description: ~
-        currentUser: ~
-        confirmTitle: ~
-        confirmDescription: ~
-        confirmDescriptionOthers: ~
-        confirmOk: ~
-        delete: ~
-        deleteConfirm: ~
-        deleteConfirmOk: ~
+        title: "为当前用户使用独立配置"
+        description: "启用后，可为当前 Windows 用户单独调整模组设置、启用状态和此选项卡上的其他选项。"
+        currentUser: "当前用户：{{userName}}"
+        confirmTitle: "为当前用户使用独立配置吗？"
+        confirmDescription: "模组的设置、启用状态以及此选项卡上的其他选项将仅适用于当前 Windows 用户。Windhawk 会复制全局配置作为初始配置。"
+        confirmDescriptionOthers: "其他用户将继续使用全局配置。启用期间，全局配置的变更不会影响当前用户。Windhawk 会在当前用户正在运行的程序中重新加载此模组。"
+        confirmOk: "使用独立配置"
+        delete: "删除当前用户的配置"
+        deleteConfirm: "确定要删除当前用户对此模组的配置吗？该用户的设置和选项将被清除，之后将使用全局配置。"
+        deleteConfirmOk: "删除配置"
     changes:
       title: "新版本更新内容"
       noData: "安装的版本与所选版本相同。"
       splitView: "拆分视图"
-      oldSource: ~
-      newSource: ~
+      oldSource: "已安装的源代码"
+      newSource: "待安装的源代码"
       expandLines_other: "展开{{count}}行隐藏行"
   modUpdates:
     bar:
-      message_other: ~
-      openButton: ~
-    title: ~
-    selectAll: ~
+      message_other: "有 {{count}} 个模组可更新"
+      openButton: "查看更新"
+    title: "更新模组"
+    selectAll: "全选"
     columns:
-      mod: ~
-      installed: ~
-      new: ~
-    sourceFailed: ~
-    updateButton_other: ~
-    runningStatus: ~
+      mod: "模组"
+      installed: "已安装版本"
+      new: "新版本"
+    sourceFailed: "无法加载此模组的更新"
+    updateButton_other: "更新 {{count}} 个模组"
+    runningStatus: "正在更新第 {{current}} 个模组，共 {{total}} 个"
     modStatus:
-      updated: ~
-      failed: ~
-      aborted: ~
-    doneTitle: ~
-    doneWithFailuresTitle: ~
-    doneSubtitle: ~
-    abortedTitle: ~
-    abortedSubtitle: ~
-    failedTitle: ~
-    failedSubtitle: ~
+      updated: "已更新"
+      failed: "失败"
+      aborted: "未更新"
+    doneTitle: "更新完成"
+    doneWithFailuresTitle: "更新结束，部分操作失败"
+    doneSubtitle: "已更新 {{updated}} 个，失败 {{failed}} 个。"
+    abortedTitle: "更新已取消"
+    abortedSubtitle: "更新在处理完 {{done}} 个模组后取消，共 {{total}} 个。其余模组未改动。"
+    failedTitle: "更新失败"
+    failedSubtitle: "无法完成更新。本机需要安装开发工具才能编译模组。请安装开发工具后重试。"
   modSelection:
-    selected_other: ~
-    selectMod: ~
-    selectAll: ~
-    clear: ~
-    enableCount_other: ~
-    disableCount_other: ~
-    removeCount_other: ~
-    nothingToEnable: ~
-    nothingToDisable: ~
-    removeConfirm_other: ~
-    removeConfirmOk: ~
+    selected_other: "已选择 {{count}} 个模组"
+    selectMod: "选择 {{name}}"
+    selectAll: "全选"
+    clear: "清除选择"
+    enableCount_other: "启用 {{count}} 个模组"
+    disableCount_other: "禁用 {{count}} 个模组"
+    removeCount_other: "移除 {{count}} 个模组"
+    nothingToEnable: "所选模组中没有可启用的模组"
+    nothingToDisable: "所选模组中没有可禁用的模组"
+    removeConfirm_other: "确定要移除 {{count}} 个模组吗？"
+    removeConfirmOk: "移除模组"
   modGroups:
-    moveToGroup: ~
-    moveTitle_other: ~
-    moveOk: ~
-    noGroup: ~
-    newGroup: ~
-    groupName: ~
-    nameTaken: ~
-    selectGroup: ~
-    expandGroup: ~
-    collapseGroup: ~
-    groupActions: ~
-    modCount_other: ~
-    empty: ~
-    moveUp: ~
-    moveDown: ~
-    rename: ~
-    renameTitle: ~
-    renameOk: ~
-    delete: ~
-    deleteConfirm_other: ~
-    deleteConfirmEmpty: ~
-    deleteOk: ~
+    moveToGroup: "移至分组"
+    moveTitle_other: "将 {{count}} 个模组移至分组"
+    moveOk: "移动"
+    noGroup: "未分组"
+    newGroup: "新建分组"
+    groupName: "分组名称"
+    nameTaken: "此分组名称已存在"
+    selectGroup: "选择 {{name}}"
+    expandGroup: "展开 {{name}}"
+    collapseGroup: "折叠 {{name}}"
+    groupActions: "{{name}} 的操作"
+    modCount_other: "{{count}} 个模组"
+    empty: "此分组暂无模组"
+    moveUp: "上移分组"
+    moveDown: "下移分组"
+    rename: "重命名分组"
+    renameTitle: "重命名分组"
+    renameOk: "重命名"
+    delete: "删除分组"
+    deleteConfirm_other: "删除此分组吗？其中的 {{count}} 个模组将移至未分组。"
+    deleteConfirmEmpty: "删除此分组吗？"
+    deleteOk: "删除分组"
   modSearch:
     placeholder: "搜索您想要的模组..."
     placeholderWithHint: "搜索您想要的模组... 按 / 键聚焦"
@@ -444,7 +444,7 @@ app:
   explore:
     search:
       popularAndTopRated: "高分且热门的模组"
-      trending: ~
+      trending: "热门趋势"
       popular: "受欢迎的模组"
       topRated: "高分模组"
       newest: "最新模组"
@@ -466,11 +466,11 @@ app:
       credits: "简体中文翻译由<0>Shifeng Zhao 和 Kevin Wang</0>提供。"
       creditsLink: "mailto:1193008599@qq.com,wmk153024@gmail.com"
     theme:
-      title: ~
-      description: ~
-      dark: ~
-      light: ~
-      system: ~
+      title: "主题"
+      description: "选择浅色、深色主题，或跟随系统设置。"
+      dark: "深色"
+      light: "浅色"
+      system: "跟随系统"
     updates:
       title: "检查软件更新"
       description: "定期检查最新版本的Windhawk和模组"
@@ -491,8 +491,8 @@ app:
       title: "禁止自动显示Toolkit窗口。"
       description: "默认情况下，当Windhawk检测到任务栏无法访问时（可能是由于系统不稳定或其他原因），会自动显示Toolkit窗口。Toolkit窗口允许退出Windhawk，切换到安全模式和进行其他操作。禁用后仍可以使用Ctrl+Win+W键盘快捷键显示Toolkit窗口。"
     disableToolkitHotkey:
-      title: ~
-      description: ~
+      title: "禁用工具箱窗口快捷键"
+      description: "默认按 Ctrl+Win+W 可打开工具箱窗口。启用此选项后将不再注册该快捷键，可用于解决与其他程序的快捷键冲突。"
     modInitDialogDelay:
       title: "Mod初始化对话延迟"
       description: "在显示Mod初始化进度对话框之前需要等待的毫秒数。"
@@ -500,10 +500,10 @@ app:
       title: "更多高级设置"
       restartNotice: "Windhawk将重启以应用软件设置。"
       saveButton: "保存并重启Windhawk"
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
+      unsavedChangesTitle: "有未保存的设置"
+      unsavedChangesMessage: "高级设置中有未保存的更改。确定要放弃这些更改吗？"
+      unsavedChangesLeave: "放弃更改"
+      unsavedChangesStay: "继续编辑"
     loggingVerbosity:
       appLoggingTitle: "Windhawk日志等级"
       engineLoggingTitle: "Windhawk引擎的日志等级"
@@ -525,69 +525,69 @@ app:
       processListPlaceholder: "进程名/路径，每行一个，例如:"
       invalidCharactersWarning: "进程列表中包含无效字符，这些无效字符将会被去除：{{invalidCharacters}}"
     userData:
-      title: ~
-      description: ~
-      exportAction: ~
-      importAction: ~
-      appSettings: ~
-      notInArchive: ~
-      mods: ~
-      settings: ~
-      config: ~
-      applyToAll: ~
-      noMods: ~
-      local: ~
-      alreadyInstalled: ~
+      title: "备份与还原"
+      description: "将 Windhawk 的应用设置、模组以及各模组的设置和配置备份到文件，或从文件还原。"
+      exportAction: "导出…"
+      importAction: "导入…"
+      appSettings: "应用设置"
+      notInArchive: "备份中不包含此项"
+      mods: "模组"
+      settings: "设置"
+      config: "配置"
+      applyToAll: "应用到全部"
+      noMods: "没有可包含的模组。"
+      local: "本地"
+      alreadyInstalled: "此模组已安装，导入会替换当前设置和配置。勾选的部分使用备份中的值，未勾选的部分恢复为模组默认值。"
       export:
-        title: ~
-        description: ~
-        exportButton: ~
-        doneButton: ~
-        doneTitle: ~
-        doneSubtitle: ~
-        warningsTitle: ~
-        offlineTitle: ~
-        offlineDescription: ~
+        title: "导出用户数据"
+        description: "选择要包含的内容。每个模组的设置是可调选项，配置则包括启用状态、自定义进程包含和排除列表、调试日志等高级选项。"
+        exportButton: "导出"
+        doneButton: "完成"
+        doneTitle: "导出完成"
+        doneSubtitle: "Windhawk 用户数据已保存到所选文件。"
+        warningsTitle: "部分数据已跳过"
+        offlineTitle: "包含源码以便离线还原"
+        offlineDescription: "在备份中包含各模组的源码，以便离线还原。备份文件会变大，本地模组的源码始终会包含在内。"
       importSource:
-        description: ~
-        fileOption: ~
-        textOption: ~
-        textPlaceholder: ~
-        browseButton: ~
-        continueButton: ~
+        description: "选择要导入的备份。"
+        fileOption: "从备份文件导入"
+        textOption: "从文本导入"
+        textPlaceholder: "在此粘贴备份文件的内容"
+        browseButton: "浏览…"
+        continueButton: "继续"
       import:
-        title: ~
-        trustTitle: ~
-        trustDescription: ~
-        importButton: ~
-        overwriteWarning_other: ~
-        installedUnknownWarning: ~
-        noPrecompiledTitle: ~
-        noPrecompiledDescription: ~
+        title: "导入用户数据"
+        trustTitle: "请谨慎继续"
+        trustDescription: "导入会在你的电脑上安装并运行此文件中的所有模组，效果与手动安装相同。恶意模组可能损坏设备或侵犯隐私，请仅导入可信的文件。"
+        importButton: "导入"
+        overwriteWarning_other: "有 {{count}} 个所选模组已安装，导入时会覆盖这些模组。"
+        installedUnknownWarning: "无法检查哪些模组已安装，部分模组可能直接被覆盖。"
+        noPrecompiledTitle: "在本机编译模组"
+        noPrecompiledDescription: "在本机编译每个模组。"
         network:
-          none: ~
-          source: ~
-          precompiled: ~
-          sourceAndPrecompiled: ~
-        runningStatus: ~
-        compilingFor: ~
+          none: "导入无需联网"
+          source: "导入需要联网下载模组源码"
+          precompiled: "导入需要联网下载预编译的模组文件"
+          sourceAndPrecompiled: "导入需要联网下载模组源码和预编译的模组文件"
+        runningStatus: "正在导入第 {{current}} 个模组，共 {{total}} 个"
+        compilingFor: "正在为 {{target}} 编译 {{mod}}…"
         modStatus:
-          installed: ~
-          skipped: ~
-          aborted: ~
-          failed: ~
+          installed: "已安装"
+          skipped: "已跳过"
+          aborted: "已取消"
+          failed: "失败"
         appSettingsStatus:
-          pending: ~
-          applying: ~
-          applied: ~
-          aborted: ~
-        doneTitle: ~
-        doneWithFailuresTitle: ~
-        doneSubtitle: ~
-        abortedTitle: ~
-        abortedSubtitle: ~
-        failedTitle: ~
-        failedSubtitle: ~
+          pending: "等待中"
+          applying: "正在应用…"
+          applied: "已应用"
+          aborted: "未应用"
+        doneTitle: "导入完成"
+        doneWithFailuresTitle: "导入结束，部分操作失败"
+        doneSubtitle: "已安装 {{installed}} 个，跳过 {{skipped}} 个，失败 {{failed}} 个。"
+        abortedTitle: "导入已取消"
+        abortedSubtitle: "导入在处理完 {{done}} 个模组后取消，共 {{total}} 个。其余模组未导入，已安装的内容予以保留。"
+        failedTitle: "导入失败"
+        failedSubtitle: "无法完成导入，请查看错误详情。"
   about:
     title: "Windhawk版本{{version}}"
     beta: "beta版本"
@@ -611,7 +611,7 @@ app:
       documentation: "文档"
     builtWith:
       title: "使用以下项目"
-      tauri: ~
+      tauri: "用于构建轻量、快速的 Web 前端应用的框架"
       vscodium: "由社区维护的 Microsoft VSCode 编辑器"
       llvmMingw: "基于LLVM、Clang和LLD的mingw-w64工具链"
       minHook: "Windows平台下简单好用的API钩子库"
@@ -627,14 +627,14 @@ app:
     title: "新建模组"
   devTools:
     install:
-      description: ~
-      installButton: ~
+      description: "创建、编辑或派生模组需要安装开发工具。"
+      installButton: "安装开发工具"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
+        title: "需要开发工具"
+        downloading: "正在下载开发工具…"
+        installing: "正在安装开发工具…"
+        installingNote: "安装完成后，Windhawk 将自动重启。"
+        failed: "安装失败"
   devModeAction:
     message: "创建和修改模组需要一定的Windows C/C++开发知识。如果您不了解相关知识，建议您不要进行相关操作。"
     hideOptionsCheckbox: "隐藏所有与开发相关的选项"
@@ -657,7 +657,7 @@ app:
     stopCompilation: "停止编译"
     preview: "预览模组"
     showLogOutput: "显示输出的日志"
-    remove: ~
+    remove: "移除模组"
     exit: "退出编辑模式"
     exitConfirmation: "确认退出？自上次成功编译以来的更改将丢失"
     exitButtonOk: "退出"
@@ -666,8 +666,8 @@ app:
     appHeader:
       mods: "模组"
       links: "链接"
-      language: ~
-      toggleTheme: ~
+      language: "语言"
+      toggleTheme: "切换浅色或深色主题"
       contributeTranslation: "贡献新的翻译"
     home:
       tagline: "Windows 和程序的自定义插件市场"
@@ -685,8 +685,8 @@ app:
       transparentDescription: "Windhawk 提供的模组绝非“黑箱”。每个模组都提供源代码，用户可以查阅代码，确保模组的功能与其描述完全一致。"
     modDetails:
       getWindhawk: "获取 Windhawk 以安装此模组"
-      openInWindhawk: ~
-      notInstalled: ~
+      openInWindhawk: "在 Windhawk 中打开"
+      notInstalled: "似乎还没有安装 Windhawk。请先<0>获取 Windhawk</0>，再安装此模组。"
     links:
       news: "新闻"
       windhawkNews: "Windhawk 新闻 - Ramen Software"
