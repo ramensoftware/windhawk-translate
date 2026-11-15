@@ -452,7 +452,7 @@ app:
         description: "תיאור"
         author: "יוצר"
         version: "גרסה"
-        status: "ססטוס"
+        status: "סטטוס"
     featuredMods:
       title: "מודים מומלצים"
       noMods: "אין מודים מומלצים שטרם הותקנו"
@@ -688,10 +688,10 @@ app:
       contributeTranslation: "תרום תרגום חדש"
     home:
       tagline: "חנות ההתאמות האישיות עבור Windows ותוכניות"
-      getInvolved: "Get involved"
+      getInvolved: "הצטרפו לפעילות"
       joinDiscord: "הצטרפו לקהילת Windhawk ב-Discord"
-      discussWindhawk: "Discuss Windhawk on GitHub Discussions"
-      discussMods: "Discuss Windhawk mods on GitHub Discussions"
+      discussWindhawk: "דונו על Windhawk ב-GitHub Discussions"
+      discussMods: "דונו על מודים של Windhawk ב-GitHub Discussions"
       browseLinks: "עיין בקישורים שימושיים אחרים"
       highlights: "דגשים"
       robust: "משוכלל"
