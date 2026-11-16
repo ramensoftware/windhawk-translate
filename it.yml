@@ -380,7 +380,7 @@ app:
       mod: "Mod"
       installed: "Installata"
       new: "Nuova"
-      sourceFailed: "Impossibile caricare l'aggiornamento di questa mod"
+    sourceFailed: "Impossibile caricare l'aggiornamento di questa mod"
     updateButton_one: "Aggiorna una mod"
     updateButton_many: "Aggiorna {{count}} mod"
     updateButton_other: "Aggiorna {{count}} mod"
