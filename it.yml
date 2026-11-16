@@ -33,7 +33,7 @@ setup:
   INETC_MINUTE: "minuti"
   INETC_HOUR: "ore"
   INETC_PROGRESS: "%dkB (%d%%) di %dkB @ %d.%01dkB/s"
-  INETC_REMAINING: " (%d %s rimanenti)"
+  INETC_REMAINING: " (%d %s%s rimanenti)"
 tray:
   TRAY_OPEN: "Apri &Windhawk"
   TRAY_LOADED_MODS: "&Mod caricate"
