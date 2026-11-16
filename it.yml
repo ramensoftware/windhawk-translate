@@ -5,14 +5,14 @@ setup:
   SECTION_STARTMENU: "Collegamenti al Menu Start"
   SECTION_DESKTOP: "Collegamento al Desktop"
   SECTION_DEVTOOLS: "Strumenti di sviluppo"
-  INSTALLER_RUNNING: "$(^Name) Un altra installazione è già in esecuzione"
-  NON_EMPTY_FOLDER_ERROR: "$(^Name) non può essere installato in una cartella vuota"
+  INSTALLER_RUNNING: "$(^Name) Un'altra installazione è già in esecuzione"
+  NON_EMPTY_FOLDER_ERROR: "$(^Name) non può essere installato in una cartella non vuota"
   OPEN_PROGRAM: "Apri $(^NameDA)"
   CLEANCONFIRM: "&Rimuovi le impostazioni del programma"
   INSTALLED_HEADER: "Già installato"
   INSTALLED_TEXT: "Selezionare l'operazione da eseguire."
   INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} è già installato. Seleziona l'operazione che desideri eseguire."
-  INSTALLED_OLD: "Una vecchia versione di $(^NameDA) è installato sul tuo sistema. Seleziona l'operazione che desideri eseguire."
+  INSTALLED_OLD: "Una vecchia versione di $(^NameDA) è installata sul tuo sistema. Seleziona l'operazione che desideri eseguire."
   INSTALLED_NEW: "Una versione più recente di $(^NameDA) è già installata! Non è consigliabile installare una versione precedente. Se vuoi davvero installare questa versione precedente, è meglio disinstallare prima la versione corrente. Seleziona l'operazione che desideri eseguire."
   REINSTALL: "&Reinstalla"
   UPDATE: "&Aggiorna"
@@ -21,19 +21,19 @@ setup:
   NO_UNINSTALL: "&Non disinstallare"
   INSTTYPE_HEADER: "Tipo di installazione"
   INSTTYPE_TEXT: "Selezionare il tipo di installazione da eseguire."
-  INSTTYPE_INTRO: "Benvenuto nel $(^NameDA) installazione guidata. Per iniziare, seleziona il tipo di installazione desiderato."
+  INSTTYPE_INTRO: "Benvenuto nell'installazione guidata di $(^NameDA). Per iniziare, seleziona il tipo di installazione desiderato."
   INSTTYPE_STANDARD: "&Installazione Standard (raccomandata)"
   INSTTYPE_STANDARD_DESC: "Installa $(^NameDA) per tutti gli utenti in questo computer."
   INSTTYPE_PORTABLE: "&Installazione portatile"
   INSTTYPE_PORTABLE_DESC: "Estrai una versione portatile di $(^NameDA). In modalità portatile, tutti i dati di configurazione vengono archiviati nella cartella dell'applicazione e nessuna informazione viene scritta nel registro."
-  EXTRACTING_FILES: "Extracting files... %s"
-  INETC_DOWNLOADING: "Downloading %s"
-  INETC_CONNECTING: "Connecting..."
-  INETC_SECOND: "seconds"
-  INETC_MINUTE: "minutes"
-  INETC_HOUR: "hours"
-  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
-  INETC_REMAINING: " (%d %s%s remaining)"
+  EXTRACTING_FILES: "Estrazione file... %s"
+  INETC_DOWNLOADING: "Download di %s"
+  INETC_CONNECTING: "Connessione..."
+  INETC_SECOND: "secondi"
+  INETC_MINUTE: "minuti"
+  INETC_HOUR: "ore"
+  INETC_PROGRESS: "%dkB (%d%%) di %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s rimanenti)"
 tray:
   TRAY_OPEN: "Apri &Windhawk"
   TRAY_LOADED_MODS: "Carica le &mod"
@@ -61,7 +61,7 @@ tray:
   TASKDLG_STATUS_LOADED: "Caricato"
   TASKDLG_STATUS_UNLOADED: "Non caricato"
   TASKDLG_TASK_INITIALIZING: "Inizializzazione..."
-  TASKDLG_TASK_LOADING_SYMBOLS: "Simboli di caricamento..."
+  TASKDLG_TASK_LOADING_SYMBOLS: "Caricamento dei simboli..."
   TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
   TASKDLG_TASK_UNINITIALIZING: ~
   TASKDLG_PROCESS_SUSPENDED: ~
@@ -110,7 +110,7 @@ app:
   appHeader:
     home: "Home"
     explore: "Esplora"
-    settings: "impostazioni"
+    settings: "Impostazioni"
     about: "Informazioni"
   logPane:
     title: ~
@@ -136,7 +136,7 @@ app:
     donate: ~
     notCompiled: "La mod deve essere compilata"
     editedLocally: "La mod è stata modificata localmente"
-    noDescription: "(nessuna descizione)"
+    noDescription: "(nessuna descrizione)"
     users_one: "{{formattedCount}} utente"
     users_many: "{{formattedCount}} utenti"
     users_other: "{{formattedCount}} utenti"
@@ -210,7 +210,7 @@ app:
       lastUpdated: ~
       processes:
         all: "Tutti i processi"
-        allBut: "Tutto ma {{list}}"
+        allBut: "Tutti tranne {{list}}"
         except: "{{included}} eccetto {{excluded}}"
         tooltip:
           targets: "Processi inclusi nel targeting"
@@ -258,7 +258,7 @@ app:
       arrayItemAdd: "Aggiungi un nuovo elemento"
       arrayItemMoveUp: ~
       arrayItemMoveDown: ~
-      arrayItemRemove: "Riumuovi elemento"
+      arrayItemRemove: "Rimuovi elemento"
       arrayItemCollapse: ~
       arrayItemExpand: ~
       arrayItemNumber: ~
@@ -299,7 +299,7 @@ app:
       foldedSettings_other: ~
     code:
       title: "Codice sorgente"
-      noData: "Manca la fonte della mod."
+      noData: "Manca il codice sorgente della mod."
       collapseExtra: "Comprimi Readme e impostazioni"
       copy: ~
       copied: ~
@@ -327,8 +327,8 @@ app:
         description: "Può essere utile per la risoluzione dei problemi con il mod."
         none: "Nessuno"
         modLogs: "Registri mod"
-        detailedLogs: "Mostra l'output del registro"
-        showLogButton: "Mostra l'output del registro"
+        detailedLogs: "Mostra log dettagliati"
+        showLogButton: "Mostra log dettagliati"
       modSettings:
         title: "Impostazioni delle mod"
         description: "Esporta o condividi facilmente le tue impostazioni delle mod."
@@ -517,7 +517,7 @@ app:
       description: ~
     requireElevation:
       title: "Richiedi l'elevazione UAC per l'esecuzione di Windhawk"
-      description: "Windhawk richiede i diritti di amministratore, ma per un computer con un solo utente, aprire il prompt UAC ogni volta può essere fastidioso, ma puoi scegliere di far ignorare questa opzione a Windhawk. Abilita questa opzione per richiedere l'elevazione UAC per l'esecuzione di Windhawk."
+      description: "Windhawk richiede i diritti di amministratore. Su un computer con un solo utente, confermare ogni volta il prompt UAC può risultare fastidioso, perciò puoi scegliere di far ignorare questo controllo a Windhawk. Abilita questa opzione per richiedere sempre l'elevazione UAC all'avvio."
     dontAutoShowToolkit:
       title: ~
       description: ~
@@ -672,7 +672,7 @@ app:
     message: "La creazione e la modifica di mod richiede una certa conoscenza dello sviluppo C/C++ per Windows. Se non sei sicuro di cosa significhi, forse queste opzioni non fanno per te."
     hideOptionsCheckbox: "Nascondi tutte le opzioni relative allo sviluppo"
     hideOptionsButton: "Nascondi opzioni"
-    beginCodingButton: "Inizia la codifica"
+    beginCodingButton: "Inizia a scrivere codice"
   safeMode:
     alert: ~
     offButton: ~
