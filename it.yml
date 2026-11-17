@@ -5,14 +5,14 @@ setup:
   SECTION_STARTMENU: "Collegamenti al Menu Start"
   SECTION_DESKTOP: "Collegamento al Desktop"
   SECTION_DEVTOOLS: "Strumenti di sviluppo"
-  INSTALLER_RUNNING: "$(^Name) Un altra installazione è già in esecuzione"
-  NON_EMPTY_FOLDER_ERROR: "$(^Name) non può essere installato in una cartella vuota"
-  OPEN_PROGRAM: "Apri $(^NameDA)"
+  INSTALLER_RUNNING: "Un'altra installazione di $(^Name) è già in esecuzione"
+  NON_EMPTY_FOLDER_ERROR: "$(^Name) non può essere installato in una cartella non vuota"
+  OPEN_PROGRAM: "&Apri $(^NameDA)"
   CLEANCONFIRM: "&Rimuovi le impostazioni del programma"
   INSTALLED_HEADER: "Già installato"
   INSTALLED_TEXT: "Selezionare l'operazione da eseguire."
   INSTALLED_SAME: "$(^NameDA) v${VERSION_DISPLAY} è già installato. Seleziona l'operazione che desideri eseguire."
-  INSTALLED_OLD: "Una vecchia versione di $(^NameDA) è installato sul tuo sistema. Seleziona l'operazione che desideri eseguire."
+  INSTALLED_OLD: "Una vecchia versione di $(^NameDA) è installata sul tuo sistema. Seleziona l'operazione che desideri eseguire."
   INSTALLED_NEW: "Una versione più recente di $(^NameDA) è già installata! Non è consigliabile installare una versione precedente. Se vuoi davvero installare questa versione precedente, è meglio disinstallare prima la versione corrente. Seleziona l'operazione che desideri eseguire."
   REINSTALL: "&Reinstalla"
   UPDATE: "&Aggiorna"
@@ -21,23 +21,23 @@ setup:
   NO_UNINSTALL: "&Non disinstallare"
   INSTTYPE_HEADER: "Tipo di installazione"
   INSTTYPE_TEXT: "Selezionare il tipo di installazione da eseguire."
-  INSTTYPE_INTRO: "Benvenuto nel $(^NameDA) installazione guidata. Per iniziare, seleziona il tipo di installazione desiderato."
+  INSTTYPE_INTRO: "Benvenuto nell'installazione guidata di $(^NameDA). Per iniziare, seleziona il tipo di installazione desiderato."
   INSTTYPE_STANDARD: "&Installazione Standard (raccomandata)"
   INSTTYPE_STANDARD_DESC: "Installa $(^NameDA) per tutti gli utenti in questo computer."
   INSTTYPE_PORTABLE: "&Installazione portatile"
   INSTTYPE_PORTABLE_DESC: "Estrai una versione portatile di $(^NameDA). In modalità portatile, tutti i dati di configurazione vengono archiviati nella cartella dell'applicazione e nessuna informazione viene scritta nel registro."
-  EXTRACTING_FILES: "Extracting files... %s"
-  INETC_DOWNLOADING: "Downloading %s"
-  INETC_CONNECTING: "Connecting..."
-  INETC_SECOND: "seconds"
-  INETC_MINUTE: "minutes"
-  INETC_HOUR: "hours"
-  INETC_PROGRESS: "%dkB (%d%%) of %dkB @ %d.%01dkB/s"
-  INETC_REMAINING: " (%d %s%s remaining)"
+  EXTRACTING_FILES: "Estrazione file... %s"
+  INETC_DOWNLOADING: "Download di %s"
+  INETC_CONNECTING: "Connessione..."
+  INETC_SECOND: "secondi"
+  INETC_MINUTE: "minuti"
+  INETC_HOUR: "ore"
+  INETC_PROGRESS: "%dkB (%d%%) di %dkB @ %d.%01dkB/s"
+  INETC_REMAINING: " (%d %s%s rimanenti)"
 tray:
   TRAY_OPEN: "Apri &Windhawk"
-  TRAY_LOADED_MODS: "Carica le &mod"
-  TRAY_TOOLKIT: ~
+  TRAY_LOADED_MODS: "&Mod caricate"
+  TRAY_TOOLKIT: "&Toolkit"
   TRAY_EXIT: "&Esci"
   EXITDLG_TITLE: "Esci da Windhawk"
   EXITDLG_CONTENT: "Windhawk verrà chiuso e tutte le mod non verranno caricate. Windhawk verrà avviato automaticamente al successivo avvio del sistema, a meno che non sia selezionata l'opzione seguente."
@@ -51,7 +51,7 @@ tray:
   NOTIFICATION_UPDATE_MODS: "%d mod di Windhawk possono essere aggiornate"
   TASKDLG_TITLE_LOADED_MODS: "Mod caricate"
   TASKDLG_TITLE_TASKS_IN_PROGRESS: "Processi delle mod in esecuzione"
-  TASKDLG_BUTTON_OPEN_APP: "&Apri Windhawk"
+  TASKDLG_BUTTON_OPEN_APP: "Apri &Windhawk"
   TASKDLG_COLUMN_MOD: "Mod"
   TASKDLG_COLUMN_PROCESS: "Processo"
   TASKDLG_COLUMN_PID: "PID"
@@ -61,69 +61,69 @@ tray:
   TASKDLG_STATUS_LOADED: "Caricato"
   TASKDLG_STATUS_UNLOADED: "Non caricato"
   TASKDLG_TASK_INITIALIZING: "Inizializzazione..."
-  TASKDLG_TASK_LOADING_SYMBOLS: "Simboli di caricamento..."
-  TASKDLG_TASK_WAITING_FOR_SYMBOLS: ~
-  TASKDLG_TASK_UNINITIALIZING: ~
-  TASKDLG_PROCESS_SUSPENDED: ~
-  TOOLKITDLG_TITLE: ~
-  TOOLKITDLG_EXPLANATION_CRASH: ~
-  TOOLKITDLG_BUTTON_OPEN: ~
-  TOOLKITDLG_BUTTON_LOADED_MODS: ~
-  TOOLKITDLG_BUTTON_EXIT: ~
-  TOOLKITDLG_BUTTON_SAFE_MODE: ~
-  TOOLKITDLG_BUTTON_CLOSE: ~
-  SAFE_MODE_TITLE: ~
-  SAFE_MODE_TEXT: ~
-  SAFE_MODE_DETECTED_TITLE: ~
-  SAFE_MODE_DETECTED_TEXT: ~
+  TASKDLG_TASK_LOADING_SYMBOLS: "Caricamento dei simboli..."
+  TASKDLG_TASK_WAITING_FOR_SYMBOLS: "In attesa dei simboli..."
+  TASKDLG_TASK_UNINITIALIZING: "Deinizializzazione..."
+  TASKDLG_PROCESS_SUSPENDED: "(sospeso)"
+  TOOLKITDLG_TITLE: "Toolkit di Windhawk"
+  TOOLKITDLG_EXPLANATION_CRASH: "È stata rilevata un'instabilità del sistema, che potrebbe essere causata da una delle mod di Windhawk. Uscire da Windhawk o riavviarlo in modalità provvisoria potrebbe aiutare a risolvere il problema."
+  TOOLKITDLG_BUTTON_OPEN: "&Apri Windhawk"
+  TOOLKITDLG_BUTTON_LOADED_MODS: "&Mod caricate"
+  TOOLKITDLG_BUTTON_EXIT: "&Esci da Windhawk"
+  TOOLKITDLG_BUTTON_SAFE_MODE: "Modalità &provvisoria"
+  TOOLKITDLG_BUTTON_CLOSE: "&Chiudi toolkit"
+  SAFE_MODE_TITLE: "Riavvia in modalità provvisoria"
+  SAFE_MODE_TEXT: "Windhawk verrà riavviato con tutte le funzionalità di iniezione del codice disattivate."
+  SAFE_MODE_DETECTED_TITLE: "Modalità provvisoria"
+  SAFE_MODE_DETECTED_TEXT: "Windows è in esecuzione in modalità provvisoria. Vuoi attivare la modalità provvisoria in Windhawk? Tutte le funzionalità di iniezione del codice verranno disattivate."
 app:
   general:
     status:
       loading: "Caricamento..."
-      loadingFailed: "Caricamento fallito, per favore controlla la tua connessione Internet."
+      loadingFailed: "Caricamento fallito, per favore controlla la tua connessione Internet"
       loadingFailedTitle: "Caricamento fallito"
       loadingFailedSubtitle: "Per favore controlla la tua connessione Internet e prova di nuovo"
-      tryAgain: "Riprova ancora"
+      tryAgain: "Riprova"
       updating: "Aggiornamento..."
       installing: "Installazione..."
       compiling: "Compilazione..."
-      canceling: ~
-      loggingEnabled: ~
+      canceling: "Annullamento..."
+      loggingEnabled: "La registrazione di debug è abilitata"
     contextMenu:
-      cut: ~
-      copy: ~
-      paste: ~
-      selectAll: ~
+      cut: "Taglia"
+      copy: "Copia"
+      paste: "Incolla"
+      selectAll: "Seleziona tutto"
     actions:
       cancel: "Annulla"
-      close: ~
+      close: "Chiudi"
       save: "Salva"
       update: "Aggiorna"
-      download: ~
+      download: "Scarica"
     modAuthor:
       title: "Autore della mod"
       homepage: "Homepage"
       github: "GitHub"
       twitter: "X (Twitter)"
   errors:
-    commandFailed: ~
+    commandFailed: "Qualcosa è andato storto"
   appHeader:
     home: "Home"
     explore: "Esplora"
-    settings: "impostazioni"
+    settings: "Impostazioni"
     about: "Informazioni"
   logPane:
-    title: ~
-    clear: ~
-    wrapOn: ~
-    wrapOff: ~
-    autoScrollOn: ~
-    autoScrollOff: ~
+    title: "Log di debug"
+    clear: "Cancella output"
+    wrapOn: "Attiva a capo automatico"
+    wrapOff: "Disattiva a capo automatico"
+    autoScrollOn: "Attiva scorrimento automatico"
+    autoScrollOff: "Disattiva scorrimento automatico"
   mod:
     updateAvailable: "Aggiornamento disponibile"
     installed: "Installato"
     details: "Dettagli"
-    downgrade: ~
+    downgrade: "Versione precedente"
     install: "Installa"
     compile: "Compila"
     disable: "Disabilita"
@@ -133,202 +133,202 @@ app:
     remove: "Rimuovi"
     removeConfirm: "Sei sicuro di voler rimuovere questa mod?"
     removeConfirmOk: "Rimuovi mod"
-    donate: ~
+    donate: "Dona"
     notCompiled: "La mod deve essere compilata"
     editedLocally: "La mod è stata modificata localmente"
-    noDescription: "(nessuna descizione)"
+    noDescription: "(nessuna descrizione)"
     users_one: "{{formattedCount}} utente"
     users_many: "{{formattedCount}} utenti"
     users_other: "{{formattedCount}} utenti"
-    reviews_one: ~
-    reviews_many: ~
-    reviews_other: ~
+    reviews_one: "{{formattedCount}} recensione"
+    reviews_many: "{{formattedCount}} recensioni"
+    reviews_other: "{{formattedCount}} recensioni"
     reviews:
-      label: ~
-      title: ~
-      none: ~
-      showMore: ~
-      loadFailed: ~
-      write: ~
-      reply: ~
-      collapse: ~
-      expand: ~
-      vote: ~
-      voted: ~
-      voteFailed: ~
-      undo: ~
-      undoFailed: ~
+      label: "Recensioni"
+      title: "Recensioni per {{name}}"
+      none: "Ancora nessuna recensione"
+      showMore: "Mostra altro"
+      loadFailed: "Impossibile caricare le recensioni"
+      write: "Scrivi una recensione"
+      reply: "Rispondi"
+      collapse: "Comprimi la recensione di {{name}}"
+      expand: "Espandi la recensione di {{name}}"
+      vote: "Utile"
+      voted: "Hai trovato utile questa recensione"
+      voteFailed: "Impossibile registrare il voto"
+      undo: "Fai clic di nuovo per annullare"
+      undoFailed: "Impossibile annullare il voto"
       sort:
-        label: ~
-        top: ~
-        newest: ~
+        label: "Ordina per"
+        top: "Più votate"
+        newest: "Più recenti"
       form:
-        name: ~
-        email: ~
-        emailHint: ~
-        contentHint: ~
-        submit: ~
-        nameRequired: ~
-        nameTooLong: ~
-        emailInvalid: ~
+        name: "Nome"
+        email: "Email"
+        emailHint: "Non mostrata pubblicamente"
+        contentHint: "La formattazione Markdown è supportata"
+        submit: "Pubblica"
+        nameRequired: "Inserisci il tuo nome"
+        nameTooLong: "Il nome è troppo lungo"
+        emailInvalid: "Inserisci un indirizzo email valido"
         review:
-          purpose: ~
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
+          purpose: "Condividi la tua esperienza con la mod per aiutare gli altri a decidere se installarla. Hai trovato un bug o hai un'idea per una funzionalità? In alternativa, <0>apri una segnalazione su GitHub</0>."
+          content: "Recensione"
+          version: "Recensione per la versione {{version}}"
+          posted: "Grazie - la tua recensione apparirà una volta revisionata"
+          failed: "Impossibile pubblicare la recensione"
+          contentRequired: "Scrivi la tua recensione"
+          contentTooShort: "Aggiungi maggiori dettagli per rendere la recensione più utile, oppure valuta la mod o vota una recensione con cui sei d'accordo"
+          contentTooLong: "La recensione è troppo lunga"
+          contentInvalid: "La recensione contiene caratteri che non possono essere pubblicati"
         reply:
-          content: ~
-          version: ~
-          posted: ~
-          failed: ~
-          contentRequired: ~
-          contentTooShort: ~
-          contentTooLong: ~
-          contentInvalid: ~
-    notRated: ~
-    loggingEnabledInAdvancedTab: ~
+          content: "Risposta"
+          version: "Risposta con la versione {{version}} installata"
+          posted: "Grazie - la tua risposta apparirà una volta revisionata"
+          failed: "Impossibile pubblicare la risposta"
+          contentRequired: "Scrivi la tua risposta"
+          contentTooShort: "Aggiungi maggiori dettagli per rendere la risposta più utile, oppure vota la recensione se sei d'accordo"
+          contentTooLong: "La risposta è troppo lunga"
+          contentInvalid: "La risposta contiene caratteri che non possono essere pubblicati"
+    notRated: "Questa mod non è ancora stata valutata"
+    loggingEnabledInAdvancedTab: "La registrazione di debug è abilitata nella scheda Avanzate della mod"
     nuked:
-      badge: ~
-      title: ~
-      restoredByUpdate: ~
-      staysDisabled: ~
+      badge: "Disabilitata dal catalogo"
+      title: "Disabilitata dal catalogo delle mod di Windhawk"
+      restoredByUpdate: "L'aggiornamento all'ultima versione ripristina la mod."
+      staysDisabled: "La mod non può essere abilitata finché il problema non viene risolto."
   modDetails:
     header:
       installedVersion: "Versione installata"
       latestVersion: "Ultima versione"
       loading: "caricamento..."
       loadingFailed: "caricamento fallito"
-      otherVersions: ~
-      selectedVersion: ~
+      otherVersions: "Altre versioni"
+      selectedVersion: "Selezionata: {{version}}"
       modId: "Identificatore della mod"
       modVersion: "Versione della mod"
-      lastUpdated: ~
+      lastUpdated: "Ultimo aggiornamento"
       processes:
         all: "Tutti i processi"
-        allBut: "Tutto ma {{list}}"
+        allBut: "Tutti tranne {{list}}"
         except: "{{included}} eccetto {{excluded}}"
         tooltip:
           targets: "Processi inclusi nel targeting"
           excluded: "Esclusi"
-          customListsNote: ~
-          patternsMatchCriticalSystemProcessesNote: ~
+          customListsNote: "Per questa mod sono stati definiti elenchi personalizzati di inclusione/esclusione processi nella scheda Avanzate"
+          patternsMatchCriticalSystemProcessesNote: "I pattern dell'elenco di inclusione vengono considerati per i processi critici di sistema per questa mod (impostato nella scheda Avanzate)"
     userConfig:
-      label: ~
-      tooltip: ~
-      unknownUserName: ~
+      label: "Configurazione utente"
+      tooltip: "Le impostazioni e la configurazione mostrate per questa mod si applicano solo all'utente corrente: {{userName}}"
+      unknownUserName: "(sconosciuto)"
     version:
-      title: ~
-      preRelease: ~
-      select: ~
+      title: "Seleziona una versione"
+      preRelease: "pre-rilascio"
+      select: "Seleziona"
     updates:
-      disableForVersion: ~
-      disableAll: ~
-      allow: ~
+      disableForVersion: "Salta versione {{version}}"
+      disableAll: "Non proporre mai aggiornamenti"
+      allow: "Consenti aggiornamenti"
     details:
       title: "Dettagli"
       noData: "Mancano i dettagli della mod."
     modLink:
-      openInBrowser: ~
-      copyLink: ~
-      copied: ~
-      share: ~
-      linkCopied: ~
+      openInBrowser: "Apri nel browser"
+      copyLink: "Copia link"
+      copied: "Copiato"
+      share: "Condividi"
+      linkCopied: "Link copiato"
     settings:
       title: "Impostazioni"
       noData: "In questa mod non sono disponibili le impostazioni."
       saveButton: "Salva impostazioni"
       sampleValue: "Valore campione"
-      pickColor: ~
-      browseFile: ~
-      browseFolder: ~
-      hotkeyEmpty: ~
-      hotkeyNotSet: ~
-      hotkeyPressKey: ~
-      hotkeyClear: ~
-      hotkeyEdit: ~
-      hotkeyKey: ~
-      hotkeyStoredAs: ~
-      hotkeyNotRecorded: ~
-      hotkeyCaptureUnavailable: ~
+      pickColor: "Scegli un colore"
+      browseFile: "Seleziona un file"
+      browseFolder: "Seleziona una cartella"
+      hotkeyEmpty: "Fai clic per impostare una scorciatoia"
+      hotkeyNotSet: "Non impostata"
+      hotkeyPressKey: "Premi una scorciatoia..."
+      hotkeyClear: "Cancella"
+      hotkeyEdit: "Modifica scorciatoia"
+      hotkeyKey: "Tasto"
+      hotkeyStoredAs: "Salvata come"
+      hotkeyNotRecorded: "Scorciatoia non registrata"
+      hotkeyCaptureUnavailable: "La scorciatoia non può essere registrata. Impostala manualmente."
       arrayItemAdd: "Aggiungi un nuovo elemento"
-      arrayItemMoveUp: ~
-      arrayItemMoveDown: ~
-      arrayItemRemove: "Riumuovi elemento"
-      arrayItemCollapse: ~
-      arrayItemExpand: ~
-      arrayItemNumber: ~
-      arrayItemsRemoveAll: ~
-      arrayItemsRemoveAllConfirm: ~
-      nonDefault: ~
-      unsaved: ~
-      nonDefaultUnsaved: ~
-      descriptionOf: ~
-      resetToDefault: ~
-      resetToDefaultValue: ~
-      resetToDefaultOf: ~
-      resetToDefaultValueOf: ~
-      resetAll: ~
-      resetAllConfirm: ~
-      yamlMode: ~
-      uiMode: ~
-      yamlInvalid: ~
-      yamlParseError: ~
-      yamlInvalidKey: ~
-      yamlTypeMismatch: ~
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
-      readOnlyPreview: ~
-      compactView: ~
-      wordWrap: ~
-      expand: ~
-      collapse: ~
-      expandSetting: ~
-      collapseSetting: ~
-      foldedItems_one: ~
-      foldedItems_many: ~
-      foldedItems_other: ~
-      foldedSettings_one: ~
-      foldedSettings_many: ~
-      foldedSettings_other: ~
+      arrayItemMoveUp: "Sposta elemento in alto"
+      arrayItemMoveDown: "Sposta elemento in basso"
+      arrayItemRemove: "Rimuovi elemento"
+      arrayItemCollapse: "Comprimi elemento {{number}}"
+      arrayItemExpand: "Espandi elemento {{number}}"
+      arrayItemNumber: "Elemento {{number}}"
+      arrayItemsRemoveAll: "Rimuovi tutti gli elementi"
+      arrayItemsRemoveAllConfirm: "Sei sicuro di voler rimuovere tutti gli elementi di questa impostazione?"
+      nonDefault: "Non predefinito"
+      unsaved: "Non salvato"
+      nonDefaultUnsaved: "Non predefinito, non salvato"
+      descriptionOf: "Descrizione di {{name}}"
+      resetToDefault: "Ripristina predefinito"
+      resetToDefaultValue: "Ripristina predefinito: {{value}}"
+      resetToDefaultOf: "Ripristina {{name}} al valore predefinito"
+      resetToDefaultValueOf: "Ripristina {{name}} al valore predefinito: {{value}}"
+      resetAll: "Ripristina tutto ai valori predefiniti"
+      resetAllConfirm: "Sei sicuro di voler ripristinare tutte le impostazioni ai valori predefiniti della mod?"
+      yamlMode: "Modalità testuale"
+      uiMode: "Modalità visuale"
+      yamlInvalid: "Formato YAML non valido"
+      yamlParseError: "Errore di analisi YAML: {{error}}"
+      yamlInvalidKey: "Chiave non valida in YAML: '{{key}}' non è un'impostazione valida"
+      yamlTypeMismatch: "Tipo non corrispondente per '{{key}}': previsto {{expected}}, ricevuto {{actual}}"
+      unsavedChangesTitle: "Impostazioni non salvate"
+      unsavedChangesMessage: "Hai modifiche alle impostazioni non salvate. Sei sicuro di volerle scartare?"
+      unsavedChangesLeave: "Scarta modifiche"
+      unsavedChangesStay: "Continua a modificare"
+      readOnlyPreview: "Questa è un'anteprima delle impostazioni della mod. Installa la mod per configurare le impostazioni."
+      compactView: "Vista compatta"
+      wordWrap: "A capo automatico"
+      expand: "Espandi"
+      collapse: "Comprimi"
+      expandSetting: "Espandi {{name}}"
+      collapseSetting: "Comprimi {{name}}"
+      foldedItems_one: "{{count}} elemento"
+      foldedItems_many: "{{count}} elementi"
+      foldedItems_other: "{{count}} elementi"
+      foldedSettings_one: "{{count}} impostazione"
+      foldedSettings_many: "{{count}} impostazioni"
+      foldedSettings_other: "{{count}} impostazioni"
     code:
       title: "Codice sorgente"
-      noData: "Manca la fonte della mod."
+      noData: "Manca il codice sorgente della mod."
       collapseExtra: "Comprimi Readme e impostazioni"
-      copy: ~
-      copied: ~
+      copy: "Copia codice sorgente"
+      copied: "Copiato"
       editor:
-        find: ~
-        next: ~
-        previous: ~
-        matchCase: ~
-        regexp: ~
-        byWord: ~
-        close: ~
-        currentMatch: ~
-        onLine: ~
-        goToLine: ~
-        go: ~
-        controlCharacter: ~
+        find: "Trova"
+        next: "Successivo"
+        previous: "Precedente"
+        matchCase: "Maiuscole/minuscole"
+        regexp: "Espressione regolare"
+        byWord: "Parola intera"
+        close: "Chiudi"
+        currentMatch: "corrispondenza attuale"
+        onLine: "alla riga"
+        goToLine: "Vai alla riga"
+        go: "Vai"
+        controlCharacter: "Carattere di controllo"
     changelog:
-      title: "Changelog"
+      title: "Note di rilascio"
       loadingFailed: "Impossibile caricare il registro delle modifiche. <0>Fai clic qui</0> per visualizzarlo su GitHub."
-      olderEntries: ~
+      olderEntries: "Voci precedenti"
     advanced:
       title: "Avanzate"
       debugLogging:
         title: "Registrazione di debug"
-        description: "Può essere utile per la risoluzione dei problemi con il mod."
+        description: "Può essere utile per la risoluzione dei problemi con la mod."
         none: "Nessuno"
-        modLogs: "Registri mod"
-        detailedLogs: "Mostra l'output del registro"
-        showLogButton: "Mostra l'output del registro"
+        modLogs: "Log delle mod"
+        detailedLogs: "Log di debug dettagliati"
+        showLogButton: "Mostra output dei log"
       modSettings:
         title: "Impostazioni delle mod"
         description: "Esporta o condividi facilmente le tue impostazioni delle mod."
@@ -336,138 +336,138 @@ app:
         loadFormattedButton: "Carica formattato"
         invalidData: "Dati JSON non validi"
       customList:
-        titleInclusion: "Elenco di inclusione di processi personalizzati"
+        titleInclusion: "Elenco personalizzato di processi inclusi"
         descriptionInclusion: "Un elenco personalizzato di nomi/percorsi di file eseguibili aggiuntivi che la mod includerà nel targeting. L'elenco viene aggiunto all'elenco di inclusione che l'autore della mod ha definito per determinare quali processi includere nel targeting. Per ogni processo, la mod viene caricata se il percorso del file eseguibile corrisponde a una delle voci di inclusione e non corrisponde a nessuna voce di esclusione."
-        titleExclusion: "Elenco di esclusione processo personalizzato"
+        titleExclusion: "Elenco personalizzato di processi esclusi"
         descriptionExclusion: "Un elenco personalizzato di nomi/percorsi di file eseguibili aggiuntivi che la mod escluderà dal targeting. L'elenco viene aggiunto all'elenco di esclusione definito dall'autore della mod per determinare quali processi includere nel targeting. Per ogni processo, la mod viene caricata se il percorso del file eseguibile corrisponde a una delle voci di inclusione e non corrisponde a nessuna voce di esclusione."
         processListPlaceholder: "Nomi/percorsi dei processi, uno per riga, ad esempio:"
-        invalidCharactersWarning: ~
+        invalidCharactersWarning: "L'elenco dei processi contiene caratteri non validi che verranno rimossi: {{invalidCharacters}}"
       includeExcludeCustomOnly:
-        title: ~
-        description: ~
+        title: "Ignora gli elenchi di inclusione/esclusione della mod"
+        description: "Ignora gli elenchi di inclusione/esclusione processi della mod e utilizza solo gli elenchi personalizzati qui sopra."
       patternsMatchCriticalSystemProcesses:
-        title: ~
-        description: ~
+        title: "Considera i pattern dell'elenco di inclusione per i processi critici di sistema"
+        description: "Per impostazione predefinita, Windhawk carica le mod nei processi critici di sistema solo se il processo è incluso senza pattern, ad es. <0>critical.exe</0>, non <0>*</0> o <0>*.exe</0>. Per maggiori dettagli sui processi critici di sistema, consulta <1>la documentazione</1>."
       userScope:
-        title: ~
-        description: ~
-        currentUser: ~
-        confirmTitle: ~
-        confirmDescription: ~
-        confirmDescriptionOthers: ~
-        confirmOk: ~
-        delete: ~
-        deleteConfirm: ~
-        deleteConfirmOk: ~
+        title: "Configurazione separata per l'utente corrente"
+        description: "Abilita questa opzione per configurare le impostazioni della mod, il suo stato di attivazione e le altre opzioni di questa scheda separatamente per l'utente Windows corrente, senza influire sugli altri utenti."
+        currentUser: "Utente corrente: {{userName}}"
+        confirmTitle: "Utilizzare una configurazione separata per l'utente corrente?"
+        confirmDescription: "Le impostazioni della mod, il suo stato di attivazione e le altre opzioni di questa scheda si applicheranno solo all'utente Windows corrente. La configurazione globale viene copiata come punto di partenza."
+        confirmDescriptionOthers: "Gli altri utenti continueranno a utilizzare la configurazione globale e, finché questa opzione è attiva, le modifiche ad essa non influiranno sull'utente corrente. La mod verrà ricaricata nei programmi in esecuzione dell'utente corrente."
+        confirmOk: "Usa configurazione separata"
+        delete: "Elimina la configurazione dell'utente corrente"
+        deleteConfirm: "Sei sicuro di voler eliminare la configurazione dell'utente corrente per questa mod? Le sue impostazioni e opzioni andranno perse e verrà utilizzata la configurazione globale."
+        deleteConfirmOk: "Elimina configurazione"
     changes:
       title: "Ultime modifiche della versione"
       noData: "La versione installata è identica alla versione selezionata."
       splitView: "Dividi vista"
-      oldSource: ~
-      newSource: ~
-      expandLines_one: "Espandi una linea nascosta"
-      expandLines_many: "Espandi {{count}} linee nascoste"
-      expandLines_other: "Espandi {{count}} linee nascoste"
+      oldSource: "Codice sorgente installato"
+      newSource: "Codice sorgente da installare"
+      expandLines_one: "Espandi una riga nascosta"
+      expandLines_many: "Espandi {{count}} righe nascoste"
+      expandLines_other: "Espandi {{count}} righe nascoste"
   modUpdates:
     bar:
-      message_one: ~
-      message_many: ~
-      message_other: ~
-      openButton: ~
-    title: ~
-    selectAll: ~
+      message_one: "È disponibile un aggiornamento per una mod"
+      message_many: "Sono disponibili aggiornamenti per {{count}} mod"
+      message_other: "Sono disponibili aggiornamenti per {{count}} mod"
+      openButton: "Esamina aggiornamenti"
+    title: "Aggiorna mod"
+    selectAll: "Seleziona tutto"
     columns:
-      mod: ~
-      installed: ~
-      new: ~
-    sourceFailed: ~
-    updateButton_one: ~
-    updateButton_many: ~
-    updateButton_other: ~
-    runningStatus: ~
+      mod: "Mod"
+      installed: "Installata"
+      new: "Nuova"
+    sourceFailed: "Impossibile caricare l'aggiornamento di questa mod"
+    updateButton_one: "Aggiorna una mod"
+    updateButton_many: "Aggiorna {{count}} mod"
+    updateButton_other: "Aggiorna {{count}} mod"
+    runningStatus: "Aggiornamento mod {{current}} di {{total}}"
     modStatus:
-      updated: ~
-      failed: ~
-      aborted: ~
-    doneTitle: ~
-    doneWithFailuresTitle: ~
-    doneSubtitle: ~
-    abortedTitle: ~
-    abortedSubtitle: ~
-    failedTitle: ~
-    failedSubtitle: ~
+      updated: "Aggiornata"
+      failed: "Non riuscita"
+      aborted: "Non aggiornata"
+    doneTitle: "Aggiornamento completato"
+    doneWithFailuresTitle: "Aggiornamento completato con problemi"
+    doneSubtitle: "{{updated}} aggiornate, {{failed}} non riuscite."
+    abortedTitle: "Aggiornamento annullato"
+    abortedSubtitle: "L'aggiornamento è stato annullato dopo {{done}} di {{total}} mod. Le rimanenti non sono state modificate."
+    failedTitle: "Aggiornamento fallito"
+    failedSubtitle: "Impossibile completare l'aggiornamento. La compilazione di una mod su questo computer richiede gli strumenti di sviluppo, che non sono installati. Installali ed esegui nuovamente l'aggiornamento."
   modSelection:
-    selected_one: ~
-    selected_many: ~
-    selected_other: ~
-    selectMod: ~
-    selectAll: ~
-    clear: ~
-    enableCount_one: ~
-    enableCount_many: ~
-    enableCount_other: ~
-    disableCount_one: ~
-    disableCount_many: ~
-    disableCount_other: ~
-    removeCount_one: ~
-    removeCount_many: ~
-    removeCount_other: ~
-    nothingToEnable: ~
-    nothingToDisable: ~
-    removeConfirm_one: ~
-    removeConfirm_many: ~
-    removeConfirm_other: ~
-    removeConfirmOk: ~
+    selected_one: "{{count}} mod selezionata"
+    selected_many: "{{count}} mod selezionate"
+    selected_other: "{{count}} mod selezionate"
+    selectMod: "Seleziona {{name}}"
+    selectAll: "Seleziona tutto"
+    clear: "Annulla selezione"
+    enableCount_one: "Abilita {{count}} mod"
+    enableCount_many: "Abilita {{count}} mod"
+    enableCount_other: "Abilita {{count}} mod"
+    disableCount_one: "Disabilita {{count}} mod"
+    disableCount_many: "Disabilita {{count}} mod"
+    disableCount_other: "Disabilita {{count}} mod"
+    removeCount_one: "Rimuovi {{count}} mod"
+    removeCount_many: "Rimuovi {{count}} mod"
+    removeCount_other: "Rimuovi {{count}} mod"
+    nothingToEnable: "Nessuna delle mod selezionate può essere abilitata"
+    nothingToDisable: "Nessuna delle mod selezionate può essere disabilitata"
+    removeConfirm_one: "Sei sicuro di voler rimuovere la mod selezionata?"
+    removeConfirm_many: "Sei sicuro di voler rimuovere {{count}} mod?"
+    removeConfirm_other: "Sei sicuro di voler rimuovere {{count}} mod?"
+    removeConfirmOk: "Rimuovi mod"
   modGroups:
-    moveToGroup: ~
-    moveTitle_one: ~
-    moveTitle_many: ~
-    moveTitle_other: ~
-    moveOk: ~
-    noGroup: ~
-    newGroup: ~
-    groupName: ~
-    nameTaken: ~
-    selectGroup: ~
-    expandGroup: ~
-    collapseGroup: ~
-    groupActions: ~
-    modCount_one: ~
-    modCount_many: ~
-    modCount_other: ~
-    empty: ~
-    moveUp: ~
-    moveDown: ~
-    rename: ~
-    renameTitle: ~
-    renameOk: ~
-    delete: ~
-    deleteConfirm_one: ~
-    deleteConfirm_many: ~
-    deleteConfirm_other: ~
-    deleteConfirmEmpty: ~
-    deleteOk: ~
+    moveToGroup: "Sposta nel gruppo"
+    moveTitle_one: "Sposta una mod in un gruppo"
+    moveTitle_many: "Sposta {{count}} mod in un gruppo"
+    moveTitle_other: "Sposta {{count}} mod in un gruppo"
+    moveOk: "Sposta"
+    noGroup: "Nessun gruppo"
+    newGroup: "Nuovo gruppo"
+    groupName: "Nome del gruppo"
+    nameTaken: "Esiste già un gruppo con questo nome"
+    selectGroup: "Seleziona {{name}}"
+    expandGroup: "Espandi {{name}}"
+    collapseGroup: "Comprimi {{name}}"
+    groupActions: "Azioni per {{name}}"
+    modCount_one: "{{count}} mod"
+    modCount_many: "{{count}} mod"
+    modCount_other: "{{count}} mod"
+    empty: "Nessuna mod in questo gruppo"
+    moveUp: "Sposta gruppo in alto"
+    moveDown: "Sposta gruppo in basso"
+    rename: "Rinomina gruppo"
+    renameTitle: "Rinomina gruppo"
+    renameOk: "Rinomina"
+    delete: "Elimina gruppo"
+    deleteConfirm_one: "Eliminare questo gruppo? Una mod tornerà a non essere raggruppata."
+    deleteConfirm_many: "Eliminare questo gruppo? {{count}} mod torneranno a non essere raggruppate."
+    deleteConfirm_other: "Eliminare questo gruppo? {{count}} mod torneranno a non essere raggruppate."
+    deleteConfirmEmpty: "Eliminare questo gruppo?"
+    deleteOk: "Elimina gruppo"
   modSearch:
     placeholder: "Cerca mod..."
-    placeholderWithHint: ~
-    autoFocus: ~
-    noResults: ~
+    placeholderWithHint: "Cerca mod... digita '/' per attivare"
+    autoFocus: "Attiva automaticamente"
+    noResults: "Nessuna mod corrisponde ai filtri attuali"
   home:
     browse: "Cerca Mod"
     filter:
-      enabled: ~
-      disabled: ~
-      updateAvailable: ~
-      clearFilters: ~
+      enabled: "Mod abilitate"
+      disabled: "Mod disabilitate"
+      updateAvailable: "Mod con aggiornamento disponibile"
+      clearFilters: "Cancella filtri"
     installedMods:
       title: "Mod installate"
       noMods: "Non è installata nessuna mod"
       grid:
-        name: ~
-        description: ~
-        author: ~
-        version: ~
-        status: ~
+        name: "Nome"
+        description: "Descrizione"
+        author: "Autore"
+        version: "Versione"
+        status: "Stato"
     featuredMods:
       title: "Mod in primo piano"
       noMods: "Non ci sono mod in primo piano che non sono state ancora installate"
@@ -475,20 +475,20 @@ app:
   explore:
     search:
       popularAndTopRated: "Popolare e più votato"
-      trending: ~
+      trending: "Di tendenza"
       popular: "Popolare"
       topRated: "Più votato"
       newest: "Recente"
       lastUpdated: "Ultimo aggiornamento"
       alphabeticalOrder: "Ordine alfabetico"
     filter:
-      installationStatus: ~
-      installed: ~
-      notInstalled: ~
-      author: ~
-      process: ~
-      showMore: ~
-      clearFilters: ~
+      installationStatus: "Stato di installazione"
+      installed: "Installate"
+      notInstalled: "Non installate"
+      author: "Autore della mod"
+      process: "Processo di destinazione"
+      showMore: "Mostra altro..."
+      clearFilters: "Cancella filtri"
   settings:
     language:
       title: "Lingua"
@@ -497,11 +497,11 @@ app:
       credits: "Traduzione italiana di <0>Marco Petrucci</0>."
       creditsLink: "https://github.com/marco00petrucci"
     theme:
-      title: ~
-      description: ~
-      dark: ~
-      light: ~
-      system: ~
+      title: "Tema"
+      description: "Scegli una combinazione di colori chiara o scura, oppure segui l'impostazione di sistema."
+      dark: "Scuro"
+      light: "Chiaro"
+      system: "Sistema"
     updates:
       title: "Ricerca aggiornamenti"
       description: "Verifica periodicamente la presenza di nuove versioni di Windhawk e delle mod installate."
@@ -513,17 +513,17 @@ app:
       title: "Nascondi l'icona nella barra delle applicazioni"
       description: "Dovrai disabilitare questa opzione per uscire da Windhawk."
     alwaysCompileModsLocally:
-      title: ~
-      description: ~
+      title: "Compila sempre le mod localmente"
+      description: "Per impostazione predefinita, Windhawk scarica i file binari precompilati delle mod dal server di Windhawk quando disponibili. Abilita questa opzione per compilare sempre le mod localmente."
     requireElevation:
       title: "Richiedi l'elevazione UAC per l'esecuzione di Windhawk"
-      description: "Windhawk richiede i diritti di amministratore, ma per un computer con un solo utente, aprire il prompt UAC ogni volta può essere fastidioso, ma puoi scegliere di far ignorare questa opzione a Windhawk. Abilita questa opzione per richiedere l'elevazione UAC per l'esecuzione di Windhawk."
+      description: "Windhawk richiede i diritti di amministratore. Su un computer con un solo utente, confermare ogni volta il prompt UAC può risultare fastidioso, perciò puoi scegliere di far ignorare questo controllo a Windhawk. Abilita questa opzione per richiedere sempre l'elevazione UAC all'avvio."
     dontAutoShowToolkit:
-      title: ~
-      description: ~
+      title: "Non mostrare automaticamente la finestra di dialogo del toolkit"
+      description: "Per impostazione predefinita, Windhawk mostra automaticamente la finestra di dialogo del toolkit quando rileva che la barra delle applicazioni non è accessibile, a causa di instabilità del sistema o per un altro motivo. La finestra di dialogo del toolkit consente di uscire da Windhawk, passare alla modalità provvisoria ed eseguire altre operazioni. È inoltre possibile aprire il toolkit con la scorciatoia da tastiera Ctrl+Win+W."
     disableToolkitHotkey:
-      title: ~
-      description: ~
+      title: "Disabilita la scorciatoia da tastiera del toolkit"
+      description: "Per impostazione predefinita, è possibile aprire la finestra di dialogo del toolkit con la scorciatoia da tastiera Ctrl+Win+W. Abilita questa opzione per non registrare la scorciatoia, ad esempio se entra in conflitto con un altro programma."
     modInitDialogDelay:
       title: "Ritardo nella finestra di dialogo di inizializzazione delle mod"
       description: "Quantità di millisecondi da attendere prima di mostrare la finestra di dialogo di avanzamento per l'inizializzazione della mod."
@@ -531,10 +531,10 @@ app:
       title: "Altre impostazioni avanzate"
       restartNotice: "Windhawk sarà riavviato per applicare le impostazioni."
       saveButton: "Salva e riavvia Windhawk"
-      unsavedChangesTitle: ~
-      unsavedChangesMessage: ~
-      unsavedChangesLeave: ~
-      unsavedChangesStay: ~
+      unsavedChangesTitle: "Impostazioni non salvate"
+      unsavedChangesMessage: "Hai modifiche alle impostazioni avanzate non salvate. Sei sicuro di volerle scartare?"
+      unsavedChangesLeave: "Scarta modifiche"
+      unsavedChangesStay: "Continua a modificare"
     loggingVerbosity:
       appLoggingTitle: "Verbosità della registrazione di Windhawk"
       engineLoggingTitle: "Verbosità della registrazione del motore di Windhawk"
@@ -545,106 +545,106 @@ app:
     processList:
       titleExclusion: "Elenco di processi esclusi"
       descriptionExclusion: "Un elenco di nomi/percorsi di processo in cui Windhawk non verrà eseguito. Può essere utile nei casi in cui Windhawk non è compatibile con un programma specifico. Tieni presente che l'aggiunta di un processo a questo elenco non solo impedirà a Windhawk di personalizzarlo, ma impedirà anche a Windhawk di intercettare i processi figlio creati da questo processo. Ciò farà sì che Windhawk carichi le mod con un leggero ritardo in questi casi."
-      descriptionExclusionWiki: ~
-      excludeCriticalProcesses: ~
-      excludeIncompatiblePrograms: ~
-      excludeGames: ~
-      titleInclusion: "Elenco di inclusione del processo"
+      descriptionExclusionWiki: "Per maggiori dettagli sull'esclusione dei processi e sugli elenchi di esclusione predefiniti, consulta <0>la documentazione</0>."
+      excludeCriticalProcesses: "Escludi i processi critici di sistema"
+      excludeIncompatiblePrograms: "Escludi programmi incompatibili noti"
+      excludeGames: "Escludi giochi noti"
+      titleInclusion: "Elenco di processi inclusi"
       descriptionInclusion: "Un elenco di nomi/percorsi di processo in cui Windhawk verrà eseguito, anche se sono nell'elenco di esclusione."
       inclusionWithoutExclusionNotice: "L'elenco di inclusione processi non ha effetto con un elenco di esclusione processi vuoto."
-      inclusionWithoutTotalExclusionNotice: "Se intendevi escludere tutti i processi tranne questi, puoi impostare \"*\" nell'elenco di esclusione dei processi."
+      inclusionWithoutTotalExclusionNotice: "Se intendevi escludere tutti i processi tranne questi, puoi impostare '*' nell'elenco di esclusione dei processi."
       processListPlaceholder: "Nomi/percorsi dei processi, uno per riga, ad esempio:"
-      invalidCharactersWarning: ~
+      invalidCharactersWarning: "L'elenco dei processi contiene caratteri non validi che verranno rimossi: {{invalidCharacters}}"
     userData:
-      title: ~
-      description: ~
-      exportAction: ~
-      importAction: ~
-      appSettings: ~
-      notInArchive: ~
-      mods: ~
-      settings: ~
-      config: ~
-      applyToAll: ~
-      noMods: ~
-      local: ~
-      alreadyInstalled: ~
+      title: "Backup e ripristino"
+      description: "Esegui il backup della tua configurazione di Windhawk - le impostazioni dell'app e le tue mod con le relative impostazioni e configurazioni - su un file, oppure ripristinala da un file."
+      exportAction: "Esporta..."
+      importAction: "Importa..."
+      appSettings: "Impostazioni dell'app"
+      notInArchive: "Non presente in questo archivio"
+      mods: "Mod"
+      settings: "Impostazioni"
+      config: "Configurazione"
+      applyToAll: "Applica a tutte"
+      noMods: "Nessuna mod da includere."
+      local: "Locale"
+      alreadyInstalled: "Già installata - l'importazione sostituisce le impostazioni e la configurazione attuali: le parti selezionate assumono i valori dell'archivio, mentre quelle non selezionate vengono ripristinate ai valori predefiniti della mod."
       export:
-        title: ~
-        description: ~
-        exportButton: ~
-        doneButton: ~
-        doneTitle: ~
-        doneSubtitle: ~
-        warningsTitle: ~
-        offlineTitle: ~
-        offlineDescription: ~
+        title: "Esporta dati utente"
+        description: "Scegli cosa includere. Per ciascuna mod, Impostazioni indica le relative opzioni regolabili, mentre Configurazione indica lo stato di attivazione e le opzioni avanzate, come gli elenchi personalizzati di inclusione/esclusione processi e la registrazione di debug."
+        exportButton: "Esporta"
+        doneButton: "Fatto"
+        doneTitle: "Esportazione completata"
+        doneSubtitle: "I tuoi dati utente di Windhawk sono stati salvati nel file selezionato."
+        warningsTitle: "Alcuni dati sono stati saltati"
+        offlineTitle: "Incorpora il codice sorgente per il ripristino offline"
+        offlineDescription: "Includi il codice sorgente di ogni mod nell'archivio in modo da poterlo ripristinare senza connessione Internet. Aumenta le dimensioni del file. Le mod locali vengono sempre incorporate."
       importSource:
-        description: ~
-        fileOption: ~
-        textOption: ~
-        textPlaceholder: ~
-        browseButton: ~
-        continueButton: ~
+        description: "Scegli il backup da importare."
+        fileOption: "Da un file di backup"
+        textOption: "Da testo"
+        textPlaceholder: "Incolla qui il contenuto di un file di backup"
+        browseButton: "Sfoglia..."
+        continueButton: "Continua"
       import:
-        title: ~
-        trustTitle: ~
-        trustDescription: ~
-        importButton: ~
-        overwriteWarning_one: ~
-        overwriteWarning_many: ~
-        overwriteWarning_other: ~
-        installedUnknownWarning: ~
-        noPrecompiledTitle: ~
-        noPrecompiledDescription: ~
+        title: "Importa dati utente"
+        trustTitle: "Procedi con cura"
+        trustDescription: "L'importazione installa ed esegue ogni mod presente in questo file sul tuo computer, proprio come se le installassi manualmente. Le mod dannose possono danneggiare il tuo computer o violare la tua privacy, quindi importa solo file di cui ti fidi."
+        importButton: "Importa"
+        overwriteWarning_one: "Una mod selezionata è già installata e verrà sovrascritta."
+        overwriteWarning_many: "{{count}} mod selezionate sono già installate e verranno sovrascritte."
+        overwriteWarning_other: "{{count}} mod selezionate sono già installate e verranno sovrascritte."
+        installedUnknownWarning: "Impossibile verificare quali mod sono già installate, quindi alcune potrebbero essere sovrascritte senza preavviso."
+        noPrecompiledTitle: "Compila le mod localmente"
+        noPrecompiledDescription: "Compila ogni mod localmente invece di scaricare una versione precompilata."
         network:
-          none: ~
-          source: ~
-          precompiled: ~
-          sourceAndPrecompiled: ~
-        runningStatus: ~
-        compilingFor: ~
+          none: "L'importazione non richiede una connessione Internet"
+          source: "L'importazione richiede una connessione Internet per scaricare il codice sorgente delle mod"
+          precompiled: "L'importazione richiede una connessione Internet per scaricare i file binari precompilati delle mod"
+          sourceAndPrecompiled: "L'importazione richiede una connessione Internet per scaricare il codice sorgente e i file binari precompilati delle mod"
+        runningStatus: "Importazione mod {{current}} di {{total}}"
+        compilingFor: "Compilazione di {{mod}} per {{target}}..."
         modStatus:
-          installed: ~
-          skipped: ~
-          aborted: ~
-          failed: ~
+          installed: "Installata"
+          skipped: "Saltata"
+          aborted: "Annullata"
+          failed: "Non riuscita"
         appSettingsStatus:
-          pending: ~
-          applying: ~
-          applied: ~
-          aborted: ~
-        doneTitle: ~
-        doneWithFailuresTitle: ~
-        doneSubtitle: ~
-        abortedTitle: ~
-        abortedSubtitle: ~
-        failedTitle: ~
-        failedSubtitle: ~
+          pending: "In attesa"
+          applying: "Applicazione..."
+          applied: "Applicata"
+          aborted: "Non applicata"
+        doneTitle: "Importazione completata"
+        doneWithFailuresTitle: "Importazione completata con problemi"
+        doneSubtitle: "{{installed}} installate, {{skipped}} saltate, {{failed}} non riuscite."
+        abortedTitle: "Importazione annullata"
+        abortedSubtitle: "L'importazione è stata annullata dopo {{done}} di {{total}} mod. Le rimanenti non sono state importate. Le mod già installate sono state mantenute."
+        failedTitle: "Importazione fallita"
+        failedSubtitle: "Impossibile completare l'importazione. Consulta l'errore per i dettagli."
   about:
     title: "Windhawk v{{version}}"
     beta: "beta"
-    subtitle: "Il mercato della personalizzazione per i programmi Windows"
+    subtitle: "La piattaforma di personalizzazione per Windows e i suoi programmi"
     credit: "Di <0>{{author}}</0>"
     update:
       title: "È disponibile un aggiornamento"
       subtitle: "Prendi in considerazione l'aggiornamento di Windhawk per ottenere le ultime funzionalità e correzioni di bug"
-      changelogButton: ~
+      changelogButton: "Note di rilascio"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
+        title: "Aggiornamento di Windhawk"
+        downloading: "Download dell'aggiornamento..."
+        installing: "Installazione dell'aggiornamento..."
+        installingNote: "Windhawk verrà riavviato automaticamente al termine dell'installazione."
+        failed: "Aggiornamento fallito"
     changelog:
-      title: ~
+      title: "Novità in Windhawk"
     links:
       title: "Link"
       homepage: "Homepage"
       documentation: "Documentazione"
     builtWith:
       title: "Realizzato con"
-      tauri: ~
+      tauri: "Un framework per creare applicazioni leggere e veloci con un frontend web"
       vscodium: "Una distribuzione guidata dalla comunità dell'editor VSCode di Microsoft"
       llvmMingw: "Una toolchain mingw-w64 basata su LLVM/Clang/LLD"
       minHook: "La libreria di hook API minimalista per Windows"
@@ -660,83 +660,83 @@ app:
     title: "Crea una nuova mod"
   devTools:
     install:
-      description: ~
-      installButton: ~
+      description: "Gli strumenti di sviluppo non sono installati. Installali per creare, modificare e fare fork delle mod."
+      installButton: "Installa strumenti di sviluppo"
       modal:
-        title: ~
-        downloading: ~
-        installing: ~
-        installingNote: ~
-        failed: ~
+        title: "Strumenti di sviluppo richiesti"
+        downloading: "Download degli strumenti di sviluppo..."
+        installing: "Installazione degli strumenti di sviluppo..."
+        installingNote: "Windhawk verrà riavviato automaticamente al termine dell'installazione."
+        failed: "Installazione fallita"
   devModeAction:
     message: "La creazione e la modifica di mod richiede una certa conoscenza dello sviluppo C/C++ per Windows. Se non sei sicuro di cosa significhi, forse queste opzioni non fanno per te."
     hideOptionsCheckbox: "Nascondi tutte le opzioni relative allo sviluppo"
     hideOptionsButton: "Nascondi opzioni"
-    beginCodingButton: "Inizia la codifica"
+    beginCodingButton: "Inizia a scrivere codice"
   safeMode:
-    alert: ~
-    offButton: ~
-    offConfirm: ~
-    offConfirmOk: ~
+    alert: "Windhawk è in esecuzione in modalità provvisoria, tutte le funzionalità di iniezione del codice sono disattivate."
+    offButton: "Disattiva modalità provvisoria"
+    offConfirm: "Windhawk verrà riavviato per applicare le impostazioni."
+    offConfirmOk: "Riavvia Windhawk"
   modPreview:
     notCompiled: "La mod deve essere compilata prima di poter essere visualizzata in anteprima"
   sidebar:
-    modId: "Identificativo della mod"
+    modId: "Identificatore della mod"
     enableMod: "Abilita mod"
     enableLogging: "Abilita la registrazione"
     notCompiled: "La mod deve essere compilata"
     compile: "Compila la mod"
     compilationFailed: "Compilazione fallita"
-    stopCompilation: ~
+    stopCompilation: "Interrompi compilazione"
     preview: "Anteprima della mod"
-    showLogOutput: "Mostra output registro"
-    remove: ~
+    showLogOutput: "Mostra output dei log"
+    remove: "Rimuovi mod"
     exit: "Esci dalla modalità di modifica"
     exitConfirmation: "Le modifiche apportate dall'ultima compilazione andata a buon fine andranno perse"
     exitButtonOk: "Esci"
     exitButtonCancel: "Resta"
   website:
     appHeader:
-      mods: ~
+      mods: "Mod"
       links: "Link"
-      language: ~
-      toggleTheme: ~
+      language: "Lingua"
+      toggleTheme: "Cambia tema chiaro/scuro"
       contributeTranslation: "Contribuisci con una nuova traduzione"
     home:
-      tagline: "Il mercato della personalizzazione per i programmi Windows"
-      getInvolved: ~
-      joinDiscord: ~
-      discussWindhawk: ~
-      discussMods: ~
-      browseLinks: ~
-      highlights: ~
-      robust: ~
-      robustDescription: ~
-      simple: ~
-      simpleDescription: ~
-      transparent: ~
-      transparentDescription: ~
+      tagline: "La piattaforma di personalizzazione per Windows e i suoi programmi"
+      getInvolved: "Partecipa"
+      joinDiscord: "Unisciti alla community di Windhawk su Discord"
+      discussWindhawk: "Discuti di Windhawk su GitHub Discussions"
+      discussMods: "Discuti delle mod di Windhawk su GitHub Discussions"
+      browseLinks: "Esplora altri link utili"
+      highlights: "Punti di forza"
+      robust: "Robusto"
+      robustDescription: "Stabilità e prestazioni sono una priorità assoluta per Windhawk. È progettato per rimanere costantemente in esecuzione in background senza avere un impatto percepibile sul sistema."
+      simple: "Semplice"
+      simpleDescription: "Non serve essere esperti di informatica per usare Windhawk, è adatto a chiunque. Le mod più sofisticate possono essere installate con un paio di clic e personalizzate tramite opzioni intuitive."
+      transparent: "Trasparente"
+      transparentDescription: "Le mod offerte da Windhawk non sono scatole nere. Ogni mod è fornita sotto forma di codice sorgente, che può essere esaminato per assicurarsi che la mod faccia esattamente ciò che dichiara."
     modDetails:
-      getWindhawk: ~
-      openInWindhawk: ~
-      notInstalled: ~
+      getWindhawk: "Scarica Windhawk per installare questa mod"
+      openInWindhawk: "Apri in Windhawk"
+      notInstalled: "Windhawk non sembra essere installato. <0>Scarica Windhawk</0> per installare questa mod."
     links:
-      news: ~
-      windhawkNews: ~
-      windhawkChangelog: ~
-      community: ~
-      discord: ~
-      windhawkDiscussions: ~
-      modsDiscussions: ~
-      documentation: ~
-      creatingNewMod: ~
-      otherTopics: ~
-      feedback: ~
-      reportIssue: ~
-      contactRamenSoftware: ~
+      news: "Notizie"
+      windhawkNews: "Notizie su Windhawk - Ramen Software"
+      windhawkChangelog: "Note di rilascio di Windhawk"
+      community: "Community"
+      discord: "Discord"
+      windhawkDiscussions: "Windhawk - GitHub Discussions"
+      modsDiscussions: "Mod di Windhawk - GitHub Discussions"
+      documentation: "Documentazione"
+      creatingNewMod: "Creare una nuova mod"
+      otherTopics: "Altri argomenti"
+      feedback: "Feedback"
+      reportIssue: "Segnala un problema"
+      contactRamenSoftware: "Contatta Ramen Software"
     download:
-      title: ~
-      newVersionAvailable: ~
-      whatsNew: ~
+      title: "Aggiorna Windhawk"
+      newVersionAvailable: "È disponibile una nuova versione di Windhawk"
+      whatsNew: "Novità"
     footer:
-      copyright: ~
+      copyright: "Copyright"
