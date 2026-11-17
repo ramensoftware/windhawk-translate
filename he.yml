@@ -83,6 +83,7 @@ app:
       loadingFailed: "הטעינה נכשלה, בדקו את חיבור האינטרנט"
       loadingFailedTitle: "הטעינה נכשלה"
       loadingFailedSubtitle: "אנא בדקו את חיבור האינטרנט שלכם ונסו שנית"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "נסה שוב"
       updating: "מעדכן..."
       installing: "מתקין..."
@@ -136,10 +137,13 @@ app:
     donate: "תרומה"
     notCompiled: "המוד צריך לעבור קימפול"
     editedLocally: "המוד נערך באופן מקומי"
+    external: ~
     noDescription: "(אין תיאור)"
     users_one: "{{formattedCount}} משתמש"
+    users_two: "{{formattedCount}} משתמשים"
     users_other: "{{formattedCount}} משתמשים"
     reviews_one: "{{formattedCount}} ביקורת"
+    reviews_two: "{{formattedCount}} ביקורות"
     reviews_other: "{{formattedCount}} ביקורות"
     reviews:
       label: "ביקורות"
@@ -290,8 +294,10 @@ app:
       expandSetting: "הרחב את {{name}}"
       collapseSetting: "הקטן את {{name}}"
       foldedItems_one: "{{count}} פריטים"
+      foldedItems_two: "{{count}} פריטים"
       foldedItems_other: "{{count}} פריטים"
       foldedSettings_one: "{{count}} הגדרה"
+      foldedSettings_two: "{{count}} הגדרות"
       foldedSettings_other: "{{count}} הגדרות"
     code:
       title: "קוד מקור"
@@ -362,10 +368,23 @@ app:
       oldSource: "קוד המקור המותקן"
       newSource: "קוד מקור להתקנה"
       expandLines_one: "הרחב שורה מוסתרת"
+      expandLines_two: "הרחב {{count}} שורות מוסתרות"
       expandLines_other: "הרחב {{count}} שורות מוסתרות"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: "עדכון זמין למוד אחד"
+      message_two: "עדכונים זמינים עבור {{count}} מודים"
       message_other: "עדכונים זמינים עבור {{count}} מודים"
       openButton: "סקירת עדכונים"
     title: "עדכון מודים"
@@ -376,6 +395,7 @@ app:
       new: "חדש"
     sourceFailed: "טעינת העדכון למוד זה נכשלה"
     updateButton_one: "עדכן מוד אחד"
+    updateButton_two: "עדכן {{count}} מודים"
     updateButton_other: "עדכן {{count}} מודים"
     runningStatus: "מעדכן את מוד {{current}} מתוך {{total}}"
     modStatus:
@@ -391,24 +411,30 @@ app:
     failedSubtitle: "לא ניתן היה להשלים את העדכון. קימפול מוד במכשיר זה דורש את כלי הפיתוח, שאינם מותקנים. התקן אותם והרץ את העדכון שוב."
   modSelection:
     selected_one: "מוד {{count}} נבחר"
+    selected_two: "{{count}} מודים נבחרו"
     selected_other: "{{count}} מודים נבחרו"
     selectMod: "בחר את {{name}}"
     selectAll: "בחר הכל"
     clear: "נקה בחירה"
     enableCount_one: "הפעל מוד {{count}}"
+    enableCount_two: "הפעל {{count}} מודים"
     enableCount_other: "הפעל {{count}} מודים"
     disableCount_one: "השבת מוד {{count}}"
+    disableCount_two: "השבת {{count}} מודים"
     disableCount_other: "השבת {{count}} מודים"
     removeCount_one: "הסר מוד {{count}}"
+    removeCount_two: "הסר {{count}} מודים"
     removeCount_other: "הסר {{count}} מודים"
     nothingToEnable: "אף אחד מהמודים שנבחרו לא יכול להיות מופעל"
     nothingToDisable: "אף אחד מהמודים שנבחרו לא יכול להיות מושבת"
     removeConfirm_one: "האם את/ה בטוח/ה שברצונך להסיר את המוד הנבחר?"
+    removeConfirm_two: "האם את/ה בטוח/ה שברצונך להסיר {{count}} מודים?"
     removeConfirm_other: "האם את/ה בטוח/ה שברצונך להסיר {{count}} מודים?"
     removeConfirmOk: "הסרת מודים"
   modGroups:
     moveToGroup: "העברה לקבוצה"
     moveTitle_one: "העבר מוד אחד לקבוצה"
+    moveTitle_two: "העבר {{count}} מודים לקבוצה"
     moveTitle_other: "העבר {{count}} מודים לקבוצה"
     moveOk: "העבר"
     noGroup: "ללא קבוצה"
@@ -420,6 +446,7 @@ app:
     collapseGroup: "הקטנת {{name}}"
     groupActions: "פעולות עבור {{name}}"
     modCount_one: "מוד {{count}}"
+    modCount_two: "{{count}} מודים"
     modCount_other: "{{count}} מודים"
     empty: "אין מודים בקבוצה זו"
     moveUp: "העבר את הקבוצה מעלה"
@@ -429,6 +456,7 @@ app:
     renameOk: "שנה שם"
     delete: "מחיקת הקבוצה"
     deleteConfirm_one: "למחוק את הקבוצה הזו? מוד אחד ישוב להיות ללא קבוצה."
+    deleteConfirm_two: "למחוק את הקבוצה הזו? {{count}} המודים ישובו להיות ללא קבוצה."
     deleteConfirm_other: "למחוק את הקבוצה הזו? {{count}} המודים ישובו להיות ללא קבוצה."
     deleteConfirmEmpty: "למחוק את הקבוצה הזו?"
     deleteOk: "מחק קבוצה"
@@ -470,10 +498,15 @@ app:
       installationStatus: "ססטוס התקנה"
       installed: "מותקן"
       notInstalled: "לא מותקן"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "יוצר המוד"
       process: "תהליך יעד"
       showMore: "הצג עוד..."
       clearFilters: "נקה מסננים"
+    externalCatalogError: ~
   settings:
     language:
       title: "שפה"
@@ -490,9 +523,24 @@ app:
     updates:
       title: "חפש עדכונים"
       description: "חפש באופן אוטומטי והודע על גרסאות חדשות של Windhawk ומודים מותקנים."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "מצב מפתחים"
       description: "הצגת פעולות למפתחים, כגון יצירה ועריכה של מודים."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "הגדרות מתקדמות"
     hideTrayIcon:
       title: "הסתרת הסמל במגש של שורת המשימות"
@@ -553,6 +601,7 @@ app:
       applyToAll: "החל על הכל"
       noMods: "אין מודים לכלול."
       local: "מקומי"
+      external: ~
       alreadyInstalled: "כבר מותקן - תהליך הייבוא של המוד מחליף את ההגדרות והתצורה הנוכחיות שלו: חלקים מסומנים מקבלים את ערכי הארכיון, וחלקים שאינם מסומנים מאופסים לברירות המחדל של המוד."
       export:
         title: "ייצוא נתוני משתמש"
@@ -577,6 +626,7 @@ app:
         trustDescription: "הייבוא מתקין ומריץ כל מוד בקובץ זה במחשב שלך, בדיוק כאילו התקנת אותם בעצמך. מודים זדוניים עלולים לגרום נזק למחשב שלך או לפגוע בפרטיותך, לכן ייבא רק קבצים שאתה סומך עליהם."
         importButton: "ייבוא"
         overwriteWarning_one: "מוד נבחר אחד כבר מותקן ויוחלף."
+        overwriteWarning_two: "{{count}} מודים נבחרים כבר מותקנים ויוחלפו."
         overwriteWarning_other: "{{count}} מודים נבחרים כבר מותקנים ויוחלפו."
         installedUnknownWarning: "לא ניתן היה לבדוק אילו מודים כבר מותקנים, כך שחלקם עשויים להיות מוחלפים ללא אזהרה."
         noPrecompiledTitle: "קמפל מודים מקומית"
@@ -637,9 +687,13 @@ app:
     title: "התקנת {{mod}}"
     warningTitle: "המשך בזהירות"
     warningDescription: "מודים זדוניים עלולים לגרום נזק למחשב שלך או לפגוע בפרטיותך. התקן מודים אך ורק מאת מחברים שאתה סומך עליהם."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "מאומת"
     verifiedTooltip: "אימתנו שפרופיל זה שייך ליוצר המוד, אך שים לב ש<0>מאומת</0> אינו זהה ל<0>מהימן</0>. ודא שאתה סומך על יוצר המוד, או בדוק היטב את קוד המקור לפני ההתקנה."
     acceptButton: "קבל סיכונים והתקן"
+    externalAcceptButton: ~
   createNewModButton:
     title: "יצירת מוד חדש"
   devTools:
