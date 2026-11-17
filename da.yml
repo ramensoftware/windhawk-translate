@@ -83,6 +83,7 @@ app:
       loadingFailed: "Indlæsning fejlede, tjek din internetforbindelse"
       loadingFailedTitle: "Indlæsning fejlede"
       loadingFailedSubtitle: "Tjek venligst din internetforbindelse og prøv igen"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Prøv igen"
       updating: "Opdaterer..."
       installing: "Installerer..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "Modifikation skal kompileres"
     editedLocally: "Modifikation var redigeret lokalt"
+    external: ~
     noDescription: "(ingen beskrivelse)"
     users_one: "{{formattedCount}} bruger"
     users_other: "{{formattedCount}} brugers"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Udvid en gemt linje"
       expandLines_other: "Udvid {{count}} gemte linjer"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "Sprog"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Tjek efter opdateringer"
       description: "Tjek jævnligt efter nye versioner af Windhawk og af de installerede modifikationer."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Udviklertilstand"
       description: "Vis handlinger for udviklere, såsom at skabe og ændre modifikationer."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Avancerede indstillinger"
     hideTrayIcon:
       title: "Skjul systembakkeikon"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "Installer {{mod}}"
     warningTitle: "Fortsæt med omhu"
     warningDescription: "Ondsindede mods kan beskadige din computer eller krænke dit privatliv. Installer kun mods fra forfattere, som du har tillid til."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "verificeret"
     verifiedTooltip: "Vi har bekræftet, at denne profil tilhører modifikationsforfatteren, men bemærk, at <0>verificeret</0> ikke er det samme som <0>trusted</0>. Sørg for, at du stoler på modifikationsforfatteren, eller inspicer omhyggeligt kildekoden før installation."
     acceptButton: "Accepter risiko og installer"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Skab en ny modifikation"
   devTools:

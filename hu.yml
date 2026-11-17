@@ -83,6 +83,7 @@ app:
       loadingFailed: "Betöltés sikertelen, kérjük, ellenőrizze az internetkapcsolatát"
       loadingFailedTitle: "Betöltés sikertelen"
       loadingFailedSubtitle: "Ellenőrizze az internetkapcsolatot, és próbálja újra"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Próbáld újra"
       updating: "Frissítés..."
       installing: "Telepítés..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "A modot le kell fordítani"
     editedLocally: "A mod helyben szerkesztve lett"
+    external: ~
     noDescription: "(nincs leírás)"
     users_one: "{{formattedCount}} felhasználó"
     users_other: "{{formattedCount}} felhasználók"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Egy rejtett sor kibontása"
       expandLines_other: "{{count}} rejtett sor kibontása"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "Nyelv"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Frissítések keresése"
       description: "Rendszeresen ellenőrzi a Windhawk és a telepített modok új verzióit."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Fejlesztői mód"
       description: "Megjeleníti a fejlesztők számára elérhető műveleteket, például a modok létrehozását és módosítását."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Haladó beállítások"
     hideTrayIcon:
       title: "Tálcaikon elrejtése"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} telepítése"
     warningTitle: "Óvatosan folytassa"
     warningDescription: "A rosszindulatú modok károsíthatják a számítógépet vagy megsérthetik a magánéletét. Csak olyan modokat telepítsen, amelyek szerzőiben megbízik."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "ellenőrzött"
     verifiedTooltip: "Ellenőriztük, hogy ez a profil a mod szerzőjéhez tartozik, de jegyezze meg, hogy az <0>ellenőrzés</0> nem ugyanaz, mint a <0>bizalom</0>. Győződjön meg róla, hogy megbízik a mod szerzőjében, vagy alaposan vizsgálja meg a forráskódot a telepítés előtt."
     acceptButton: "Kockázat elfogadása és telepítés"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Új mod létrehozása"
   devTools:

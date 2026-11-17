@@ -83,6 +83,7 @@ app:
       loadingFailed: "Tải thất bại, vui lòng kiểm tra kết nối internet"
       loadingFailedTitle: "Tải thất bại"
       loadingFailedSubtitle: "Vui lòng kiểm tra kết nối internet và thử lại"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Thử lại"
       updating: "Đang cập nhật..."
       installing: "Đang cài đặt..."
@@ -136,6 +137,7 @@ app:
     donate: "Ủng hộ (Donate)"
     notCompiled: "Mod cần được biên dịch"
     editedLocally: "Mod đã được chỉnh sửa trên máy"
+    external: ~
     noDescription: "(không có mô tả)"
     users_other: "{{formattedCount}} người dùng"
     reviews_other: ~
@@ -358,6 +360,17 @@ app:
       oldSource: ~
       newSource: ~
       expandLines_other: "Mở rộng {{count}} dòng bị ẩn"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_other: "Có bản cập nhật cho {{count}} mod"
@@ -455,10 +468,15 @@ app:
       installationStatus: "Trạng thái cài đặt"
       installed: "Đã cài đặt"
       notInstalled: "Chưa cài đặt"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Tác giả"
       process: "Tiến trình mục tiêu"
       showMore: "Hiển thị thêm..."
       clearFilters: "Xóa bộ lọc"
+    externalCatalogError: ~
   settings:
     language:
       title: "Ngôn ngữ"
@@ -475,9 +493,24 @@ app:
     updates:
       title: "Kiểm tra cập nhật"
       description: "Tự động kiểm tra và thông báo về các phiên bản mới của Windhawk và các mod đã cài đặt."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Chế độ Nhà phát triển"
       description: "Hiển thị các công cụ dành cho nhà phát triển, chẳng hạn như tạo và chỉnh sửa mod."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Cài đặt nâng cao"
     hideTrayIcon:
       title: "Ẩn biểu tượng dưới khay hệ thống"
@@ -538,6 +571,7 @@ app:
       applyToAll: "Áp dụng cho tất cả"
       noMods: "Không có mod nào để chọn."
       local: "Trên máy (Local)"
+      external: ~
       alreadyInstalled: "Đã cài sẵn - nhập dữ liệu sẽ ghi đè lên cài đặt và cấu hình hiện tại: các phần được chọn sẽ lấy dữ liệu từ bản sao lưu, các phần không được chọn sẽ reset về mặc định của mod."
       export:
         title: "Xuất dữ liệu người dùng"
@@ -621,9 +655,13 @@ app:
     title: "Cài đặt {{mod}}"
     warningTitle: "Cẩn trọng khi cài đặt"
     warningDescription: "Các mod độc hại có thể làm hỏng máy tính hoặc vi phạm quyền riêng tư của bạn. Chỉ cài đặt mod từ những tác giả mà bạn tin tưởng."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "đã xác minh"
     verifiedTooltip: "Chúng tôi xác nhận tài khoản này thuộc về tác giả mod, nhưng lưu ý rằng <0>đã xác minh</0> KHÔNG đồng nghĩa với <0>đáng tin cậy</0>. Hãy chắc chắn bạn tin tưởng tác giả, hoặc hãy kiểm tra kỹ mã nguồn trước khi cài đặt."
     acceptButton: "Chấp nhận rủi ro và cài đặt"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Tạo mod mới"
   devTools:

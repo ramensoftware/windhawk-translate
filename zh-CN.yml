@@ -83,6 +83,7 @@ app:
       loadingFailed: "加载失败，请检查您的网络连接"
       loadingFailedTitle: "加载失败"
       loadingFailedSubtitle: "请检查您的网络连接并重试"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "请重试"
       updating: "更新中..."
       installing: "安装中..."
@@ -136,6 +137,7 @@ app:
     donate: "捐赠"
     notCompiled: "模组需要编译"
     editedLocally: "模组已在本地编辑"
+    external: ~
     noDescription: "（无描述）"
     users_other: "{{formattedCount}} 用户"
     reviews_other: "{{formattedCount}} 条评价"
@@ -358,6 +360,17 @@ app:
       oldSource: "已安装的源代码"
       newSource: "待安装的源代码"
       expandLines_other: "展开{{count}}行隐藏行"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_other: "有 {{count}} 个模组可更新"
@@ -455,10 +468,15 @@ app:
       installationStatus: "安装状态"
       installed: "已安装"
       notInstalled: "未安装"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "模组作者"
       process: "目标进程"
       showMore: "显示更多..."
       clearFilters: "清除筛选"
+    externalCatalogError: ~
   settings:
     language:
       title: "语言"
@@ -475,9 +493,24 @@ app:
     updates:
       title: "检查软件更新"
       description: "定期检查最新版本的Windhawk和模组"
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "开发者选项"
       description: "为开发者显示的操作，例如创建和修改模组。"
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "高级设置"
     hideTrayIcon:
       title: "隐藏托盘图标"
@@ -538,6 +571,7 @@ app:
       applyToAll: "应用到全部"
       noMods: "没有可包含的模组。"
       local: "本地"
+      external: ~
       alreadyInstalled: "此模组已安装，导入会替换当前设置和配置。勾选的部分使用备份中的值，未勾选的部分恢复为模组默认值。"
       export:
         title: "导出用户数据"
@@ -621,9 +655,13 @@ app:
     title: "安装{{mod}}"
     warningTitle: "请谨慎安装模组"
     warningDescription: "恶意的模组可能会破坏您的电脑系统或侵犯您的个人隐私。确保只从您信任的开发者那里安装模组。"
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "已验证"
     verifiedTooltip: "我们已验证此配置文件属于此模组开发者，但请您注意<0>已验证</0>不等于<0>可信</0>。请确保您信任对应的模组开发者，或仔细检查源代码后再进行安装。"
     acceptButton: "接受风险并安装"
+    externalAcceptButton: ~
   createNewModButton:
     title: "新建模组"
   devTools:

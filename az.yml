@@ -83,6 +83,7 @@ app:
       loadingFailed: "Yükləmə uğursuz oldu, lütfən internet bağlantınızı yoxlayın"
       loadingFailedTitle: "Yükləmə uğursuz oldu"
       loadingFailedSubtitle: "Lütfən internet bağlantınızı yoxlayın və yenidən cəhd edin"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Yenidən cəhd et"
       updating: "Yenilənir..."
       installing: "Quraşdırılır..."
@@ -136,6 +137,7 @@ app:
     donate: "İanə et"
     notCompiled: "Mod kompilyasiya edilməlidir"
     editedLocally: "Mod lokal olaraq redaktə edilib"
+    external: ~
     noDescription: "(təsvir yoxdur)"
     users_one: "{{formattedCount}} istifadəçi"
     users_other: "{{formattedCount}} istifadəçi"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Bir gizli sətri genişləndir"
       expandLines_other: "{{count}} gizli sətri genişləndir"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "Quraşdırma statusu"
       installed: "Quraşdırılıb"
       notInstalled: "Quraşdırılmayıb"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Müəllif"
       process: "Proses"
       showMore: "Daha çox göstər"
       clearFilters: "Filtrləri təmizlə"
+    externalCatalogError: ~
   settings:
     language:
       title: "Dil"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Yeniləmələri yoxla"
       description: "Windhawk və quraşdırılmış modların yeni versiyalarını müntəzəm olaraq yoxla."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Tərtibatçı rejimi"
       description: "Mod yaratma və dəyişdirmə kimi tərtibatçı əməliyyatlarını göstər."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Genişləndirilmiş parametrlər"
     hideTrayIcon:
       title: "Trey nişanını gizlət"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} quraşdır"
     warningTitle: "Ehtiyatlı davam edin"
     warningDescription: "Zərərli modlar kompüterinizə zərər verə və ya məxfiliyinizi poza bilər. Yalnız etibar etdiyiniz müəlliflərin modlarını quraşdırın."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "təsdiqlənib"
     verifiedTooltip: "Bu profilin modun müəllifinə aid olduğunu təsdiqləmişik, lakin <0>təsdiqlənmiş</0> olması onun <0>etibarlı</0> olduğu anlamına gəlmir. Mod müəllifinə etibar etdiyinizə əmin olun və ya quraşdırmadan əvvəl mənbə kodunu diqqətlə yoxlayın."
     acceptButton: "Riski qəbul et və quraşdır"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Yeni mod yarat"
   devTools:

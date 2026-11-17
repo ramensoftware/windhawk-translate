@@ -83,6 +83,7 @@ app:
       loadingFailed: "Échec du chargement. Vérifiez votre connexion Internet"
       loadingFailedTitle: "Échec du chargement"
       loadingFailedSubtitle: "Vérifiez votre connexion Internet et réessayez"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Réessayer"
       updating: "Mise à jour…"
       installing: "Installation…"
@@ -136,6 +137,7 @@ app:
     donate: "Faire un don"
     notCompiled: "Le mod doit être compilé"
     editedLocally: "Le mod a été modifié localement"
+    external: ~
     noDescription: "(aucune description)"
     users_one: "{{formattedCount}} utilisateur"
     users_many: "{{formattedCount}} utilisateurs"
@@ -368,6 +370,17 @@ app:
       expandLines_one: "Afficher une ligne masquée"
       expandLines_many: "Afficher {{count}} lignes masquées"
       expandLines_other: "Afficher {{count}} lignes masquées"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -485,10 +498,15 @@ app:
       installationStatus: "État de l’installation"
       installed: "Installé"
       notInstalled: "Non installé"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Auteur du mod"
       process: "Processus cible"
       showMore: "Afficher plus…"
       clearFilters: "Effacer les filtres"
+    externalCatalogError: ~
   settings:
     language:
       title: "Langue"
@@ -507,9 +525,24 @@ app:
     updates:
       title: "Rechercher des mises à jour"
       description: "Vérifier automatiquement et notifier les nouvelles versions de Windhawk et des mods installés."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Mode développeur"
       description: "Afficher des actions pour les développeurs, comme créer et modifier des mods."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Paramètres avancés"
     hideTrayIcon:
       title: "Masquer l’icône dans la zone de notification"
@@ -570,6 +603,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -655,9 +689,13 @@ app:
     title: "Installer {{mod}}"
     warningTitle: "Procédez avec prudence"
     warningDescription: "Des mods malveillants peuvent endommager votre ordinateur ou porter atteinte à votre vie privée. N’installez que des mods provenant d’auteurs en qui vous avez confiance."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "vérifié"
     verifiedTooltip: "Nous avons vérifié que ce profil appartient à l’auteur du mod, mais notez que <0>vérifié</0> ne signifie pas <0>de confiance</0>. Assurez-vous de faire confiance à l’auteur du mod ou inspectez soigneusement le code source avant d’installer."
     acceptButton: "Accepter le risque et installer"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Créer un nouveau mod"
   devTools:

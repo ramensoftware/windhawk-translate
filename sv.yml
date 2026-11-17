@@ -83,6 +83,7 @@ app:
       loadingFailed: "Det gick inte att ladda, kontrollera din internetanslutning"
       loadingFailedTitle: "Det gick inte att ladda"
       loadingFailedSubtitle: "Kontrollera din internetanslutning och försök igen"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Försök igen"
       updating: "Uppdaterar..."
       installing: "Installerar..."
@@ -136,6 +137,7 @@ app:
     donate: "Donera"
     notCompiled: "Modden behöver kompileras"
     editedLocally: "Modden har redigerats lokalt"
+    external: ~
     noDescription: "(ingen beskrivning)"
     users_one: "{{formattedCount}} användare"
     users_other: "{{formattedCount}} användare"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Expandera en dold rad"
       expandLines_other: "Expandera {{count}} dolda rader"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "Installationsstatus"
       installed: "Installerade"
       notInstalled: "Ej installerade"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Utvecklare"
       process: "Målprocess"
       showMore: "Visa fler..."
       clearFilters: "Rensa filter"
+    externalCatalogError: ~
   settings:
     language:
       title: "Språk"
@@ -491,9 +509,24 @@ app:
     updates:
       title: "Sök efter uppdateringar"
       description: "Sök automatiskt efter och meddela om nya versioner av Windhawk och installerade moddar."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Utvecklarläge"
       description: "Visa åtgärder för utvecklare, till exempel att skapa och ändra moddar."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Avancerade inställningar"
     hideTrayIcon:
       title: "Dölj systemfältsikon"
@@ -554,6 +587,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -638,9 +672,13 @@ app:
     title: "Installera {{mod}}"
     warningTitle: "Fortsätt, men ta det försiktigt"
     warningDescription: "Skadliga moddar kan skada din dator eller kränka din integritet. Installera endast moddar från utvecklare som du litar på."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "verifierad"
     verifiedTooltip: "Vi har verifierat att den här profilen tillhör utvecklaren av modden, men observera att <0>verifierad</0> inte är detsamma som <0>betrodd</0>. Se till att du litar på utvecklaren eller granska källkoden noggrant innan du installerar."
     acceptButton: "Acceptera risken och installera"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Skapa en ny mod"
   devTools:

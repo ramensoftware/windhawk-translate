@@ -83,6 +83,7 @@ app:
       loadingFailed: "ไม่สามารถโหลดได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ"
       loadingFailedTitle: "ไม่สามารถโหลดได้"
       loadingFailedSubtitle: "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณและลองอีกครั้ง"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "ลองอีกครั้ง"
       updating: "กำลังอัปเดต..."
       installing: "กำลังติดตั้ง..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "ม็อดจำเป็นต้องได้รับการคอมไพล์"
     editedLocally: "ม็อดถูกแก้ไขในเครื่อง"
+    external: ~
     noDescription: "(ไม่มีคำอธิบาย)"
     users_other: "ผู้ใช้ {{formattedCount}} คน"
     reviews_other: ~
@@ -358,6 +360,17 @@ app:
       oldSource: ~
       newSource: ~
       expandLines_other: "ขยาย {{count}} บรรทัดที่ซ่อนอยู่"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_other: ~
@@ -455,10 +468,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "ภาษา"
@@ -475,9 +493,24 @@ app:
     updates:
       title: "ตรวจสอบการอัปเดต"
       description: "ตรวจสอบเวอร์ชั่นที่ใหม่กว่าของ Windhawk และม็อดที่ติดตั้งไว้เป็นระยะ ๆ"
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "โหมดผู้พัฒนา"
       description: "แสดงตัวเลือกสำหรับผู้พัฒนา เช่นการสร้างและการแก้ไขม็อด"
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "การตั้งค่าขั้นสูง"
     hideTrayIcon:
       title: "ซ่อนไอคอนถาด"
@@ -538,6 +571,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -621,9 +655,13 @@ app:
     title: "ติดตั้ง {{mod}}"
     warningTitle: "ดำเนินการอย่างมีสติ"
     warningDescription: "ม็อดที่เป็นอันตรายสามารถสร้างความเสียหายให้กับคอมพิวเตอร์ของคุณหรือละเมิดความเป็นส่วนตัวของคุณได้ ควรติดตั้งม็อดจากผู้สร้างที่คุณเชื่อถือเท่านั้น"
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "ยืนยันแล้ว"
     verifiedTooltip: "เรายืนยันแล้วว่าโปรไฟล์นี้เป็นของผู้สร้างม็อด แต่โปรดทราบว่าถึงแม้จะ<0>มีการยืนยันแล้ว</0>ไม่ได้หมายความว่าจะ</0>มีความน่าเชื่อถือ</0>เสมอไป อย่าลืมตรวจสอบด้วยว่าผู้สร้างมีความน่าเชื่อถือหรือไม่ หรือตรวจสอบโค้ดต้นฉบับให้ดีก่อนติดตั้ง"
     acceptButton: "ยอมรับความเสี่ยงและติดตั้ง"
+    externalAcceptButton: ~
   createNewModButton:
     title: "สร้างม็อดใหม่"
   devTools:

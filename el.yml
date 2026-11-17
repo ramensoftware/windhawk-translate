@@ -83,6 +83,7 @@ app:
       loadingFailed: "Η φόρτωση απέτυχε, ελέγξτε τη σύνδεσή σας στο Διαδίκτυο"
       loadingFailedTitle: "Η φόρτωση απέτυχε"
       loadingFailedSubtitle: "Ελέγξτε τη σύνδεσή σας στο Διαδίκτυο και δοκιμάστε ξανά"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Προσπαθήστε ξανά"
       updating: "Ενημέρωση..."
       installing: "Εγκατάσταση..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "Το Mod πρέπει να μεταγλωττιστεί"
     editedLocally: "Το Mod επεξεργάστηκε τοπικά"
+    external: ~
     noDescription: "(καμία περιγραφή)"
     users_one: "{{formattedCount}} χρήστης"
     users_other: "{{formattedCount}} χρήστες"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Ανάπτυξη μιας κρυφής γραμμής"
       expandLines_other: "Ανάπτυξη {{count}} κρυφών γραμμών"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "Γλώσσα"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Έλεγχος για ενημερώσεις"
       description: "Ελέγχετε περιοδικά για νέες εκδόσεις του Windhawk και των εγκατεστημένων mods."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Λειτουργία προγραμματιστή"
       description: "Εμφάνιση ενεργειών για προγραμματιστές, όπως δημιουργία και τροποποίηση mods."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Ρυθμίσεις για προχωρημένους"
     hideTrayIcon:
       title: "Απόκρυψη εικονιδίου παρασκηνίου"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "Εγκατάσταση {{mod}}"
     warningTitle: "Προχωρήστε με προσοχή"
     warningDescription: "Κακόβουλα mods μπορεί να βλάψουν τον υπολογιστή σας ή να παραβιάσουν το απόρρητό σας. Εγκαταστήστε mods μόνο από συγγραφείς που εμπιστεύεστε."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "επαληθεύτηκε"
     verifiedTooltip: "Επαληθεύσαμε ότι αυτό το προφίλ ανήκει στον συγγραφέα του mod, αλλά σημειώστε ότι <0>η επαλήθευση</0> δεν είναι <0>εμπιστοσύνης</0>. Βεβαιωθείτε ότι εμπιστεύεστε τον συγγραφέα του mod ή ελέγξτε προσεκτικά τον πηγαίο κώδικα πριν από την εγκατάσταση"
     acceptButton: "Αποδοχή κινδύνου και εγκατάσταση"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Δημιουργήστε ένα νέο Mod"
   devTools:

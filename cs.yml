@@ -83,6 +83,7 @@ app:
       loadingFailed: "Stahování se nezdařilo, zkontrolujte prosím své připojení k internetu"
       loadingFailedTitle: "Načítání se nezdařilo"
       loadingFailedSubtitle: "Zkontrolujte prosím své připojení k internetu a zkuste to znovu"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Zkuste to znovu"
       updating: "Aktualizuji..."
       installing: "Instaluji..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "Modifikace musí být zkompilována"
     editedLocally: "Úprava upravena místně"
+    external: ~
     noDescription: "(žádný popis)"
     users_one: "{{formattedCount}} uživatel"
     users_few: "{{formattedCount}} uživatelé"
@@ -373,6 +375,17 @@ app:
       expandLines_few: "Rozbalit {{count}} skryté řádky"
       expandLines_many: "Rozbalit {{count}} skrytých řádků"
       expandLines_other: "Rozbalit {{count}} skrytých řádků"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -500,10 +513,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "Jazyk"
@@ -520,9 +538,24 @@ app:
     updates:
       title: "Zkontrolovat aktualizace"
       description: "Pravidelně kontrolujte aktualizace Windhawk a nainstalované modifikace."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Režim pro vývojáře"
       description: "Zobrazit akce vývojáře, jako je vytváření a úpravy modů."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Pokročilá nastavení"
     hideTrayIcon:
       title: "Skrýt ikonu na liště"
@@ -583,6 +616,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -669,9 +703,13 @@ app:
     title: "Instalovat {{mod}}"
     warningTitle: "Postupujte opatrně"
     warningDescription: "Škodlivé úpravy mohou poškodit váš počítač a narušit vaše soukromí. Instalujte úpravy pouze od autorů, kterým důvěřujete."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "ověřeno"
     verifiedTooltip: "Potvrzujeme, že tento profil patří autorovi modu, ale mějte na paměti, že <0>ověřený</0> neznamená <0>důvěryhodný</0>. Ujistěte se, že důvěřujete autorovi modu, nebo před instalací pečlivě zkontrolujte zdrojový kód."
     acceptButton: "Přijměte riziko a pokračujte"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Vytvořit novou úpravu"
   devTools:

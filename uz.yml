@@ -83,6 +83,7 @@ app:
       loadingFailed: "Yuklash muvaffaqiyatsiz tugadi, internet ulanishini tekshiring"
       loadingFailedTitle: "Yuklash muvaffaqiyatsiz tugadi"
       loadingFailedSubtitle: "Iltimos, internet ulanishingizni tekshiring va qaytadan urinib ko‘ring"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Qaytadan urinish"
       updating: "Yangilanmoqda..."
       installing: "O‘rnatilmoqda..."
@@ -136,6 +137,7 @@ app:
     donate: "Xayriya qilish"
     notCompiled: "Mod kompilyatsiya qilinishi kerak"
     editedLocally: "Mod mahalliy darajada tahrirlangan"
+    external: ~
     noDescription: "(tavsif yo‘q)"
     users_one: "{{formattedCount}} foydalanuvchi"
     users_other: "{{formattedCount}} foydalanuvchilar"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Bitta yashirin qatorni ochish"
       expandLines_other: "{{count}} ta yashirin qatorni ochish"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "O‘rnatish holati"
       installed: "O‘rnatilgan"
       notInstalled: "O‘rnatilmagan"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Mod muallifi"
       process: "Maqsadli jarayon"
       showMore: "Ko‘proq ko‘rsatish..."
       clearFilters: "Filtrlarni tozalash"
+    externalCatalogError: ~
   settings:
     language:
       title: "Til"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Yangilanishlarni tekshirish"
       description: "Windhawk va o‘rnatilgan modlarning yangi versiyalarini avtomatik tekshirish va xabar berish."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Dasturchi rejimi"
       description: "Dasturchilar uchun amallarni ko‘rsatish, masalan, modlar yaratish va o‘zgartirish."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Kengaytirilgan sozlamalar"
     hideTrayIcon:
       title: "Trey belgisini yashirish"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} modini o‘rnatish"
     warningTitle: "Ehtiyotkorlik bilan davom eting"
     warningDescription: "Zararli modlar kompyuteringizga zarar yetkazishi yoki maxfiyligingizni buzishi mumkin. Modlarni faqat siz ishonadigan mualliflardan o‘rnating."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "tasdiqlangan"
     verifiedTooltip: "Biz ushbu profil mod muallifiga tegishli ekanligini tasdiqladik, ammo <0>tasdiqlangan</0> degani <0>ishonchli</0> degani emas. Muallifga ishonishingizga amin bo‘ling yoki o‘rnatishdan oldin manba kodini diqqat bilan tekshiring."
     acceptButton: "Xavfni qabul qilaman va o‘rnataman"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Yangi mod yaratish"
   devTools:

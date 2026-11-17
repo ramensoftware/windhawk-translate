@@ -83,6 +83,7 @@ app:
       loadingFailed: "लोडिंग विफल, कृपया अपना इंटरनेट कनेक्शन जांचें"
       loadingFailedTitle: "लोडिंग विफल"
       loadingFailedSubtitle: "कृपया अपना इंटरनेट कनेक्शन जांचें और फिर से प्रयास करें"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "फिर से प्रयास करें"
       updating: "अपडेट हो रहा है..."
       installing: "स्थापित हो रहा है..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "मॉड को कंपाइल करने की आवश्यकता है"
     editedLocally: "मॉड को स्थानीय रूप से संपादित किया गया था"
+    external: ~
     noDescription: "(कोई विवरण नहीं)"
     users_one: "{{formattedCount}} उपयोगकर्ता"
     users_other: "{{formattedCount}} उपयोगकर्ता"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "एक छिपी पंक्ति विस्तार करें"
       expandLines_other: "{{count}} छिपी पंक्तियाँ विस्तार करें"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "भाषा"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "अपडेट के लिए जांचें"
       description: "विंडहॉक और स्थापित मॉड्स के नए संस्करणों की समय-समय पर जांच करें।"
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "डेवलपर मोड"
       description: "डेवलपर्स के लिए कार्रवाइयाँ दिखाएँ, जैसे मॉड्स बनाना और संशोधित करना।"
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "उन्नत सेटिंग्स"
     hideTrayIcon:
       title: "ट्रे आइकन छिपाएँ"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} स्थापित करें"
     warningTitle: "सावधानी से आगे बढ़ें"
     warningDescription: "दुर्भावनापूर्ण मॉड्स आपके कंप्यूटर को नुकसान पहुंचा सकते हैं या आपकी गोपनीयता का उल्लंघन कर सकते हैं। केवल उन लेखकों से मॉड्स स्थापित करें जिन पर आप भरोसा करते हैं।"
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "सत्यापित"
     verifiedTooltip: "हमने सत्यापित किया है कि यह प्रोफाइल मॉड लेखक की है, लेकिन ध्यान दें कि <0>सत्यापित</0> का मतलब <0>विश्वसनीय</0> नहीं है। सुनिश्चित करें कि आप मॉड लेखक पर भरोसा करते हैं, या स्थापना से पहले स्रोत कोड का सावधानीपूर्वक निरीक्षण करें।"
     acceptButton: "जोखिम स्वीकार करें और स्थापित करें"
+    externalAcceptButton: ~
   createNewModButton:
     title: "नया मॉड बनाएँ"
   devTools:

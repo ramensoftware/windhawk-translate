@@ -83,6 +83,7 @@ app:
       loadingFailed: "Falha ao carregar. Verifique a sua ligação à Internet"
       loadingFailedTitle: "Falha ao carregar"
       loadingFailedSubtitle: "Verifique a sua ligação à Internet e tente novamente"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Tentar novamente"
       updating: "A atualizar…"
       installing: "A instalar…"
@@ -136,6 +137,7 @@ app:
     donate: "Doar"
     notCompiled: "O mod precisa de ser compilado"
     editedLocally: "O mod foi editado localmente"
+    external: ~
     noDescription: "(sem descrição)"
     users_one: "{{formattedCount}} utilizador"
     users_many: "{{formattedCount}} utilizadores"
@@ -368,6 +370,17 @@ app:
       expandLines_one: "Expandir uma linha oculta"
       expandLines_many: "Expandir {{count}} linhas ocultas"
       expandLines_other: "Expandir {{count}} linhas ocultas"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -485,10 +498,15 @@ app:
       installationStatus: "Estado da instalação"
       installed: "Instalado"
       notInstalled: "Não instalado"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Autor do mod"
       process: "Processo alvo"
       showMore: "Mostrar mais…"
       clearFilters: "Limpar filtros"
+    externalCatalogError: ~
   settings:
     language:
       title: "Idioma"
@@ -506,9 +524,24 @@ app:
     updates:
       title: "Procurar atualizações"
       description: "Verificar automaticamente e notificar sobre novas versões do Windhawk e dos mods instalados."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Modo de programador"
       description: "Mostrar ações para programadores, como criar e modificar mods."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Definições avançadas"
     hideTrayIcon:
       title: "Ocultar o ícone no tabuleiro do sistema"
@@ -569,6 +602,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -654,9 +688,13 @@ app:
     title: "Instalar {{mod}}"
     warningTitle: "Proceda com cuidado"
     warningDescription: "Mods maliciosos podem danificar o seu computador ou violar a sua privacidade. Instale apenas mods de autores em quem confia."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "verificado"
     verifiedTooltip: "Verificámos que este perfil pertence ao autor do mod, mas note que <0>verificado</0> não é o mesmo que <0>de confiança</0>. Certifique-se de que confia no autor do mod ou inspecione cuidadosamente o código-fonte antes de instalar."
     acceptButton: "Aceitar o risco e instalar"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Criar um novo mod"
   devTools:

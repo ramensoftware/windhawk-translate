@@ -83,6 +83,7 @@ app:
       loadingFailed: "লোড করা ব্যর্থ হয়েছে, অনুগ্রহ করে আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন"
       loadingFailedTitle: "লোড করা ব্যর্থ হয়েছে"
       loadingFailedSubtitle: "অনুগ্রহ করে ইন্টারনেট সংযোগ পরীক্ষা করে পুনরায় চেষ্টা করুন"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "পুনরায় চেষ্টা করুন"
       updating: "আপডেট হচ্ছে..."
       installing: "ইনস্টল হচ্ছে..."
@@ -136,6 +137,7 @@ app:
     donate: "ডোনেট করুন"
     notCompiled: "মডটি কম্পাইল করা প্রয়োজন"
     editedLocally: "মডটি লোকালি এডিট করা হয়েছে"
+    external: ~
     noDescription: "(কোনো বিবরণ নেই)"
     users_one: "{{formattedCount}} জন ব্যবহারকারী"
     users_other: "{{formattedCount}} জন ব্যবহারকারী"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "১টি লুকানো লাইন দেখান"
       expandLines_other: "{{count}}টি লুকানো লাইন দেখান"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "ইনস্টলেশন স্ট্যাটাস"
       installed: "ইনস্টল করা হয়েছে"
       notInstalled: "ইনস্টল করা হয়নি"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "মড লেখক"
       process: "টার্গেট প্রসেস"
       showMore: "আরও দেখান..."
       clearFilters: "ফিল্টার মুছে ফেলুন"
+    externalCatalogError: ~
   settings:
     language:
       title: "ভাষা (Language)"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "আপডেট চেক করুন"
       description: "Windhawk এবং ইনস্টল করা মডগুলির নতুন ভার্সনের জন্য স্বয়ংক্রিয়ভাবে চেক করুন এবং নোটিফিকেশন দিন।"
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "ডেভেলপার মোড"
       description: "ডেভেলপারদের জন্য অপশনগুলো দেখান (যেমন মড তৈরি বা পরিবর্তন করা)।"
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "অ্যাডভান্সড সেটিংস"
     hideTrayIcon:
       title: "ট্রে আইকন লুকান"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} ইনস্টল করুন"
     warningTitle: "সতর্কতার সাথে এগিয়ে যান"
     warningDescription: "ক্ষতিকর মড আপনার পিসির ক্ষতি করতে পারে বা গোপনীয়তা লঙ্ঘন করতে পারে। কেবল বিশ্বস্ত লেখকের মড ইনস্টল করুন।"
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "যাচাইকৃত (Verified)"
     verifiedTooltip: "আমরা যাচাই করেছি যে এই প্রোফাইলটি মড লেখকের, তবে মনে রাখবেন <0>যাচাইকৃত</0> মানেই <0>বিশ্বস্ত</0> নয়। নিশ্চিত করুন যে আপনি লেখককে বিশ্বাস করেন।"
     acceptButton: "ঝুঁকি গ্রহণ করে ইনস্টল করুন"
+    externalAcceptButton: ~
   createNewModButton:
     title: "নতুন মড তৈরি করুন"
   devTools:

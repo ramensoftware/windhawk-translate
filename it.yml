@@ -83,6 +83,7 @@ app:
       loadingFailed: "Caricamento fallito, per favore controlla la tua connessione Internet"
       loadingFailedTitle: "Caricamento fallito"
       loadingFailedSubtitle: "Per favore controlla la tua connessione Internet e prova di nuovo"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Riprova"
       updating: "Aggiornamento..."
       installing: "Installazione..."
@@ -136,6 +137,7 @@ app:
     donate: "Dona"
     notCompiled: "La mod deve essere compilata"
     editedLocally: "La mod è stata modificata localmente"
+    external: ~
     noDescription: "(nessuna descrizione)"
     users_one: "{{formattedCount}} utente"
     users_many: "{{formattedCount}} utenti"
@@ -368,6 +370,17 @@ app:
       expandLines_one: "Espandi una riga nascosta"
       expandLines_many: "Espandi {{count}} righe nascoste"
       expandLines_other: "Espandi {{count}} righe nascoste"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: "È disponibile un aggiornamento per una mod"
@@ -485,10 +498,15 @@ app:
       installationStatus: "Stato di installazione"
       installed: "Installate"
       notInstalled: "Non installate"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Autore della mod"
       process: "Processo di destinazione"
       showMore: "Mostra altro..."
       clearFilters: "Cancella filtri"
+    externalCatalogError: ~
   settings:
     language:
       title: "Lingua"
@@ -505,9 +523,24 @@ app:
     updates:
       title: "Ricerca aggiornamenti"
       description: "Verifica periodicamente la presenza di nuove versioni di Windhawk e delle mod installate."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Modalità sviluppatore"
       description: "Mostra azioni per sviluppatori, come la creazione e la modifica di mod."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Impostazioni avanzate"
     hideTrayIcon:
       title: "Nascondi l'icona nella barra delle applicazioni"
@@ -568,6 +601,7 @@ app:
       applyToAll: "Applica a tutte"
       noMods: "Nessuna mod da includere."
       local: "Locale"
+      external: ~
       alreadyInstalled: "Già installata - l'importazione sostituisce le impostazioni e la configurazione attuali: le parti selezionate assumono i valori dell'archivio, mentre quelle non selezionate vengono ripristinate ai valori predefiniti della mod."
       export:
         title: "Esporta dati utente"
@@ -653,9 +687,13 @@ app:
     title: "Installa {{mod}}"
     warningTitle: "Procedi con cura"
     warningDescription: "Le mod dannose possono danneggiare il tuo computer o violare la tua privacy. Installa mod solo da autori di cui ti fidi."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "verificato"
     verifiedTooltip: "Abbiamo verificato che questo profilo appartiene all'autore della mod, ma tieni presente che <0>verificato</0> non equivale a <0>attendibile</0>. Assicurati di fidarti dell'autore della mod o ispeziona attentamente il codice sorgente prima dell'installazione."
     acceptButton: "Accetta il rischio e installa"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Crea una nuova mod"
   devTools:

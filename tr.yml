@@ -83,6 +83,7 @@ app:
       loadingFailed: "Yükleme başarısız, lütfen internet bağlantınızı kontrol edin"
       loadingFailedTitle: "Yükleme başarısız"
       loadingFailedSubtitle: "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Tekrar dene"
       updating: "Güncelleniyor..."
       installing: "Yükleniyor..."
@@ -136,6 +137,7 @@ app:
     donate: "Bağış yap"
     notCompiled: "Modun derlenmesi gerekiyor"
     editedLocally: "Mod yerel olarak düzenlendi"
+    external: ~
     noDescription: "(açıklama yok)"
     users_one: "{{formattedCount}} kullanıcı"
     users_other: "{{formattedCount}} kullanıcı"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Bir gizli satırı genişlet"
       expandLines_other: "{{count}} gizli satırı genişlet"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "Yükleme durumu"
       installed: "Yüklendi"
       notInstalled: "Yüklü değil"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Yapımcı"
       process: "İşlem"
       showMore: "Daha fazla göster"
       clearFilters: "Filtreleri temizle"
+    externalCatalogError: ~
   settings:
     language:
       title: "Dil"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Güncellemeleri denetle"
       description: "Windhawk'ın ve yüklü modların yeni sürümlerini düzenli olarak denetle."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Geliştirici modu"
       description: "Mod oluşturma ve değiştirme gibi geliştirici eylemlerini göster."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Gelişmiş ayarlar"
     hideTrayIcon:
       title: "Tepsi simgesini gizle"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} Yükle"
     warningTitle: "Dikkatli ilerleyin"
     warningDescription: "Kötü amaçlı modlar bilgisayarınıza zarar verebilir veya gizliliğinizi ihlal edebilir. Yalnızca güvendiğiniz yapımcıların modlarını yükleyin."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "doğrulanmış"
     verifiedTooltip: "Bu profilin modun yapımcısına ait olduğunu doğruladık ancak <0>doğrulanmış</0> olması <0>güvenilir</0> olduğu anlamına gelmiyor. Mod yapımcısına güvendiğinizden emin olun veya yüklemeden önce kaynak kodunu dikkatlice inceleyin."
     acceptButton: "Riski Kabul Et ve Yükle"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Yeni Mod Oluştur"
   devTools:

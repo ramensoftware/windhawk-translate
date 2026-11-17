@@ -83,6 +83,7 @@ app:
       loadingFailed: "Loading failed, please check your internet connection"
       loadingFailedTitle: "Loading failed"
       loadingFailedSubtitle: "Please check your internet connection and try again"
+      sourceHashMismatchSubtitle: "The downloaded code doesn't match the version listed for this mod. The author might have updated or removed it."
       tryAgain: "Try again"
       updating: "Updating..."
       installing: "Installing..."
@@ -136,6 +137,7 @@ app:
     donate: "Donate"
     notCompiled: "Mod needs to be compiled"
     editedLocally: "Mod was edited locally"
+    external: "External mod: not reviewed. Use at your own risk."
     noDescription: "(no description)"
     users_one: "{{formattedCount}} user"
     users_other: "{{formattedCount}} users"
@@ -363,6 +365,17 @@ app:
       newSource: "Source code to install"
       expandLines_one: "Expand one hidden line"
       expandLines_other: "Expand {{count}} hidden lines"
+    external:
+      unlisted: "This mod is no longer listed. It keeps running, and is offered no updates."
+      viewSubmission: "View the submission on GitHub"
+      switchToCatalog: "Switch to the catalog version"
+      switchTitle: "Switch {{mod}} to the catalog version"
+      switchNote: "The Windhawk mod catalog now lists this mod. The catalog version will replace the external version, and the mod's settings will be kept."
+      switchOk: "Switch"
+      replaceCatalog: "Replace the catalog version"
+      replaceCatalogNote: "The catalog version of this mod is installed. This version will replace it, and the mod's settings will be kept."
+      replaceExternal: "Replace the external version"
+      replaceExternalNote: "The external version of this mod is installed. This version will replace it, and the mod's settings will be kept."
   modUpdates:
     bar:
       message_one: "An update is available for one mod"
@@ -470,10 +483,15 @@ app:
       installationStatus: "Installation status"
       installed: "Installed"
       notInstalled: "Not installed"
+      source:
+        title: "Source"
+        catalog: "Catalog"
+        external: "External"
       author: "Mod author"
       process: "Target process"
       showMore: "Show more..."
       clearFilters: "Clear filters"
+    externalCatalogError: "External mods could not be loaded. Only catalog mods are listed."
   settings:
     language:
       title: "Language"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Check for updates"
       description: "Automatically check for and notify about new versions of Windhawk and installed mods."
+    runAtStartup:
+      title: "Run at startup"
+      description: "Start Windhawk in the background when you sign in to Windows. Unlike other options of the portable version, this one is not stored in the Windhawk folder: it creates a shortcut in the Windows Startup folder."
+      replaceTitle: "Replace the startup shortcut?"
+      replaceDescription: "The Windows Startup folder already has a Windhawk shortcut, and it starts a different file."
+      replaceQuestion: "Replace it with a shortcut that starts this copy of Windhawk?"
+      replaceOk: "Replace"
     devMode:
       title: "Developer mode"
       description: "Show actions for developers, such as creating and modifying mods."
+    showExternalMods:
+      title: "Show external mods"
+      description: "Show mods that are waiting for review in the mod catalog."
+      warningTitle: "Show mods that nobody has reviewed?"
+      warningNotReviewed: "External mods are submitted to Windhawk and wait for review. Nobody has reviewed their code."
+      warningRisk: "A mod runs inside other programs with your rights, and can do anything they can."
+      warningResponsibility: "You are responsible for any external mod you install. Install only mods whose authors you trust with your computer."
+      warningOk: "Show external mods"
     advancedSettings: "Advanced settings"
     hideTrayIcon:
       title: "Hide tray icon"
@@ -553,6 +586,7 @@ app:
       applyToAll: "Apply to all"
       noMods: "No mods to include."
       local: "Local"
+      external: "External"
       alreadyInstalled: "Already installed - importing it replaces its current settings and configuration: checked parts take the archive's values, and unchecked parts reset to the mod's defaults."
       export:
         title: "Export user data"
@@ -637,9 +671,13 @@ app:
     title: "Install {{mod}}"
     warningTitle: "Proceed with care"
     warningDescription: "Malicious mods can damage your computer or violate your privacy. Install mods only from authors whom you trust."
+    externalWarningTitle: "Nobody has reviewed this mod"
+    externalWarningDescription: "This is an external mod: it was submitted to Windhawk and is waiting for review. You are responsible for installing it."
+    externalViewSubmission: "<0>View the submission on GitHub</0>."
     verified: "verified"
     verifiedTooltip: "We verified that this profile belongs to the mod author, but note that <0>verified</0> is not the same as <0>trusted</0>. Make sure you trust the mod author, or carefully inspect the source code before installing."
     acceptButton: "Accept risk and install"
+    externalAcceptButton: "Install at your own risk"
   createNewModButton:
     title: "Create a new mod"
   devTools:

@@ -83,6 +83,7 @@ app:
       loadingFailed: "فشل التحميل، يرجى التحقق من اتصال الإنترنت"
       loadingFailedTitle: "فشل التحميل"
       loadingFailedSubtitle: "يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "حاول مرة أخرى"
       updating: "جار التحديث..."
       installing: "جار التثبيت..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "يجب تجميع المود"
     editedLocally: "تم تعديل المود محليًا"
+    external: ~
     noDescription: "(لا يوجد وصف)"
     users_zero: "لا يوجد مستخدمون"
     users_one: "{{formattedCount}} مستخدم"
@@ -383,6 +385,17 @@ app:
       expandLines_few: "توسيع {{count}} أسطر مخفية"
       expandLines_many: "توسيع {{count}} سطراً مخفياً"
       expandLines_other: "توسيع {{count}} سطر مخفي"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_zero: ~
@@ -530,10 +543,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "اللغة"
@@ -550,9 +568,24 @@ app:
     updates:
       title: "التحقق من التحديثات"
       description: "التحقق بشكل دوري من وجود إصدارات جديدة من Windhawk والمودات المثبتة."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "وضع المطور"
       description: "عرض إجراءات المطورين مثل إنشاء وتعديل المودات."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "إعدادات متقدمة"
     hideTrayIcon:
       title: "إخفاء أيقونة الدرج"
@@ -613,6 +646,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -701,9 +735,13 @@ app:
     title: "تثبيت {{mod}}"
     warningTitle: "تابع بحذر"
     warningDescription: "يمكن أن تتسبب المودات الضارة في إتلاف جهاز الكمبيوتر أو انتهاك خصوصيتك. قم بتثبيت المودات فقط من المؤلفين الذين تثق بهم."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "تم التحقق"
     verifiedTooltip: "لقد تحققنا من أن هذا الملف الشخصي يخص مؤلف المود، ولكن لاحظ أن <0>تم التحقق</0> لا تعني <0>موثوق</0>. تأكد من أنك تثق بمؤلف المود، أو تحقق بعناية من الشيفرة المصدرية قبل التثبيت."
     acceptButton: "قبول المخاطرة والتثبيت"
+    externalAcceptButton: ~
   createNewModButton:
     title: "إنشاء مود جديد"
   devTools:

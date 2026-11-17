@@ -83,6 +83,7 @@ app:
       loadingFailed: "Nu s-a putut încărca, verifică-ți conexiunea la internet"
       loadingFailedTitle: "Nu s-a putut încărca"
       loadingFailedSubtitle: "Verifică-ți conexiunea la rețea și încearcă din nou"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Încearcă din nou"
       updating: "Se actualizează..."
       installing: "Se instalează..."
@@ -136,6 +137,7 @@ app:
     donate: "Donează"
     notCompiled: "Modul trebuie să fie compilat"
     editedLocally: "Modul a fost editat local"
+    external: ~
     noDescription: "(fără descriere)"
     users_one: "{{formattedCount}} utilizator"
     users_few: "{{formattedCount}} utilizatori"
@@ -368,6 +370,17 @@ app:
       expandLines_one: "Extinde o linie ascunsă"
       expandLines_few: "Extinde {{count}} linii ascunse"
       expandLines_other: "Extinde {{count}} de linii ascunse"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: "Este disponibilă o actualizare pentru un mod"
@@ -485,10 +498,15 @@ app:
       installationStatus: "Stare instalare"
       installed: "Instalate"
       notInstalled: "Neinstalate"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Autorul modurilor"
       process: "Procese țintă"
       showMore: "Afișează mai multe..."
       clearFilters: "Elimină filtrele"
+    externalCatalogError: ~
   settings:
     language:
       title: "Limbă"
@@ -505,9 +523,24 @@ app:
     updates:
       title: "Verifică pentru actualizări"
       description: "Verifică periodic pentru noi versiuni de Windhawk și pentru modurile instalate."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Mod dezvoltator"
       description: "Arată acțiuni pentru dezvoltatori, cum ar fi crearea și modificarea modurilor."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Setări avansate"
     hideTrayIcon:
       title: "Ascunde pictograma Windhawk din bara de activități"
@@ -568,6 +601,7 @@ app:
       applyToAll: "Aplică la toate"
       noMods: "Niciun mod de inclus."
       local: "Local"
+      external: ~
       alreadyInstalled: "Deja instalat - importarea acestuia îi va înlocui setările și configurațiile curente: părțile bifate vor lua valorile din arhivă, iar cele nebifate vor fi resetate la valorile prestabilite ale modului."
       export:
         title: "Exportă datele de utilizator"
@@ -653,9 +687,13 @@ app:
     title: "Instalează {{mod}}"
     warningTitle: "Continuă cu prudență"
     warningDescription: "Modurile malițioase pot provoca daune calculatorului tău sau pot să-ți încalce confidențialitatea. Instalează moduri numai de la autorii de încredere."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "verificat"
     verifiedTooltip: "Am verificat că acest profil îi aparține autorului modului, dar <0>persoanele verificate</0> nu pot fi întotdeauna <0>de încredere</0>. Asigură-te că autorul acestui mod este de încredere sau inspectează cu atenție codul sursă înainte de instalare."
     acceptButton: "Acceptă riscul și instalează"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Creează un mod"
   devTools:

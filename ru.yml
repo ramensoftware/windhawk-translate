@@ -83,6 +83,7 @@ app:
       loadingFailed: "Загрузка не удалась, пожалуйста, проверьте ваше соединение с интернетом"
       loadingFailedTitle: "Загрузка не удалась"
       loadingFailedSubtitle: "Пожалуйста, проверьте ваше соединение с интернетом и попытайтесь снова"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Попробовать ещё раз"
       updating: "Обновление..."
       installing: "Установка..."
@@ -136,6 +137,7 @@ app:
     donate: "Поддержать"
     notCompiled: "Модификация должна быть скомпилирована"
     editedLocally: "Модификация отредактирована локально"
+    external: ~
     noDescription: "(нет описания)"
     users_one: "{{formattedCount}} пользователь"
     users_few: "{{formattedCount}} пользователя"
@@ -373,6 +375,17 @@ app:
       expandLines_few: "Раскрыть {{count}} скрытые строки"
       expandLines_many: "Раскрыть {{count}} скрытых строк"
       expandLines_other: "Раскрыть {{count}} скрытых строк"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: "Доступно обновление для {{count}} модификации"
@@ -500,10 +513,15 @@ app:
       installationStatus: "Статус установки"
       installed: "Установлено"
       notInstalled: "Не установлено"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Автор модификации"
       process: "Целевой процесс"
       showMore: "Дополнительно..."
       clearFilters: "Очистить фильтры"
+    externalCatalogError: ~
   settings:
     language:
       title: "Язык"
@@ -520,9 +538,24 @@ app:
     updates:
       title: "Проверить обновления"
       description: "Периодически проверять наличие обновлений для Windhawk и установленных модификаций."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Режим разработчика"
       description: "Показать действия для разработчиков, например создание и редактирование модификаций."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Расширенные параметры"
     hideTrayIcon:
       title: "Скрыть значок в трее"
@@ -583,6 +616,7 @@ app:
       applyToAll: "Применить ко всем"
       noMods: "Отсутствуют модификации для выбора."
       local: "Локально"
+      external: ~
       alreadyInstalled: "Уже установлено - импортирование заменит текущие настройки и конфигурацию: выбранные части принимают значения из архива, а невыбранные части сбросятся к настройкам модификации по умолчанию."
       export:
         title: "Экспортировать данные пользователя"
@@ -669,9 +703,13 @@ app:
     title: "Установить {{mod}}"
     warningTitle: "Продолжайте осторожно"
     warningDescription: "Вредоносные модификации могут повредить ваш компьютер и нарушить вашу приватность. Устанавливайте модификации только от авторов, которым доверяете."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "подтверждён"
     verifiedTooltip: "Мы подтверждаем, что этот профиль принадлежит автору модификации, но обратите внимание, что <0>подтверждённый</0> не значит <0>доверенный</0>. Убедитесь, что вы доверяете автору модификации или тщательно проверьте исходный код перед установкой."
     acceptButton: "Принять риск и установить"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Создать новую модификацию"
   devTools:

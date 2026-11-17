@@ -83,6 +83,7 @@ app:
       loadingFailed: "Laden mislukt, controleer je internetverbinding"
       loadingFailedTitle: "Laden mislukt"
       loadingFailedSubtitle: "Controleer je internetverbinding en probeer het opnieuw"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Opnieuw proberen"
       updating: "Bezig met updaten…"
       installing: "Bezig met installeren…"
@@ -136,6 +137,7 @@ app:
     donate: "Doneren"
     notCompiled: "Mod moet worden gecompileerd"
     editedLocally: "Mod is lokaal bewerkt"
+    external: ~
     noDescription: "(geen beschrijving)"
     users_one: "{{formattedCount}} gebruiker"
     users_other: "{{formattedCount}} gebruikers"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Eén verborgen regel uitvouwen"
       expandLines_other: "{{count}} verborgen regels uitvouwen"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "Installatiestatus"
       installed: "Geïnstalleerd"
       notInstalled: "Niet geïnstalleerd"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Mod-auteur"
       process: "Doelproces"
       showMore: "Meer weergeven…"
       clearFilters: "Filters wissen"
+    externalCatalogError: ~
   settings:
     language:
       title: "Taal"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Controleren op updates"
       description: "Controleer regelmatig op nieuwe versies van Windhawk en van de geïnstalleerde mods."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Ontwikkelaarsmodus"
       description: "Acties weergeven voor ontwikkelaars, zoals het maken en aanpassen van mods."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Geavanceerde instellingen"
     hideTrayIcon:
       title: "Systeemvakpictogram verbergen"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} installeren"
     warningTitle: "Ga voorzichtig te werk"
     warningDescription: "Kwaadaardige mods kunnen je computer beschadigen of je privacy schenden. Installeer alleen mods van auteurs die je vertrouwt."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "geverifieerd"
     verifiedTooltip: "We hebben geverifieerd dat dit profiel toebehoort aan de mod-auteur, maar <0>geverifieerd</0> is niet hetzelfde als <0>vertrouwd</0>. Zorg ervoor dat je de mod-auteur vertrouwt of inspecteer de broncode zorgvuldig voordat je installeert."
     acceptButton: "Risico accepteren en installeren"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Een nieuwe mod maken"
   devTools:

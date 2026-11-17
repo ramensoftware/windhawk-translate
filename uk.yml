@@ -83,6 +83,7 @@ app:
       loadingFailed: "Помилка завантаження, будь ласка, перевірте своє інтернет-з'єднання"
       loadingFailedTitle: "Не вдалося завантажити"
       loadingFailedSubtitle: "Будь ласка, перевірте своє інтернет-з'єднання та спробуйте ще раз"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Спробуйте ще раз"
       updating: "Оновлення..."
       installing: "Встановлення..."
@@ -136,6 +137,7 @@ app:
     donate: "Пожертвувати"
     notCompiled: "Мод повинен бути скомпільованим"
     editedLocally: "Мод відредаговано локально"
+    external: ~
     noDescription: "(Опис порожній)"
     users_one: "{{formattedCount}} користувач"
     users_few: "{{formattedCount}} користувачі"
@@ -373,6 +375,17 @@ app:
       expandLines_few: "Розгорнути {{count}} приховані рядки"
       expandLines_many: "Розгорнути {{count}} прихованих рядків"
       expandLines_other: "Розгорнути {{count}} прихованих рядків"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: "Доступне оновлення для {{count}} мода"
@@ -500,10 +513,15 @@ app:
       installationStatus: "Статус встановлення"
       installed: "Встановлені"
       notInstalled: "Не встановлені"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Автор мода"
       process: "Цільовий процес"
       showMore: "Показати більше..."
       clearFilters: "Очистити фільтри"
+    externalCatalogError: ~
   settings:
     language:
       title: "Мова"
@@ -521,9 +539,24 @@ app:
     updates:
       title: "Перевірити наявність оновлення"
       description: "Періодично перевіряти наявність оновлень для Windhawk та встановлених модів."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Режим розробника"
       description: "Відображати дії для розробників, такі як створення та редагування модів."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Просунуті налаштування"
     hideTrayIcon:
       title: "Сховати іконку у системному треї"
@@ -584,6 +617,7 @@ app:
       applyToAll: "Застосувати для всіх"
       noMods: "Немає модів для включення."
       local: "Локальний"
+      external: ~
       alreadyInstalled: "Вже встановлено — імпорт замінить поточні налаштування та конфігурацію: для позначених елементів будуть застосовані значення з архіву, а для непозначених — відновлено стандартні налаштування модифікації."
       export:
         title: "Експорт даних користувача"
@@ -670,9 +704,13 @@ app:
     title: "Встановити {{mod}}"
     warningTitle: "Дійте з обережністю"
     warningDescription: "Шкідливі моди можуть пошкодити ваш комп'ютер або порушити приватність. Встановлюйте моди лише від авторів, яким ви довіряєте."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "верифіковано"
     verifiedTooltip: "Ми верифікували, що цей профіль належить автору мода, але майте на увазі, що статус <0>верифіковано</0> не означає <0>надійно</0>. Переконайтеся, що ви довіряєте автору мода, або уважно перевірте вихідний код перед встановленням."
     acceptButton: "Прийняти ризики та встановити"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Створити новий мод"
   devTools:

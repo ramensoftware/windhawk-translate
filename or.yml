@@ -83,6 +83,7 @@ app:
       loadingFailed: "ଲୋଡ୍ ହେବାରେ ବିଫଳ ହେଲା, ଦୟାକରି ଆପଣଙ୍କର ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ଯାଞ୍ଚ କରନ୍ତୁ"
       loadingFailedTitle: "ଲୋଡ୍ ହେବାରେ ବିଫଳ"
       loadingFailedSubtitle: "ଦୟାକରି ଆପଣଙ୍କର ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ଯାଞ୍ଚ କରନ୍ତୁ ଏବଂ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ"
       updating: "ଅପଡେଟ୍ ହେଉଛି..."
       installing: "ଇନଷ୍ଟଲ୍ ହେଉଛି..."
@@ -136,6 +137,7 @@ app:
     donate: "ଦାନ କରନ୍ତୁ (Donate)"
     notCompiled: "ମଡ୍ କମ୍ପାଇଲ୍ ହେବା ଆବଶ୍ୟକ"
     editedLocally: "ମଡ୍ ସ୍ଥାନୀୟ ଭାବରେ ଏଡିଟ୍ କରାଯାଇଛି"
+    external: ~
     noDescription: "(କୌଣସି ବର୍ଣ୍ଣନା ନାହିଁ)"
     users_one: "{{formattedCount}} ବ୍ୟବହାରକାରୀ"
     users_other: "{{formattedCount}} ବ୍ୟବହାରକାରୀମାନେ"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "ଗୋଟିଏ ଲୁକ୍କାୟିତ ଧାଡ଼ି ଦେଖାନ୍ତୁ"
       expandLines_other: "{{count}} ଟି ଲୁକ୍କାୟିତ ଧାଡ଼ି ଦେଖାନ୍ତୁ"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "ଇନଷ୍ଟଲେସନ ସ୍ଥିତି"
       installed: "ଇନଷ୍ଟଲ୍ ହୋଇଛି"
       notInstalled: "ଇନଷ୍ଟଲ୍ ହୋଇନାହିଁ"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "ମଡ୍ ଲେଖକ"
       process: "ଲକ୍ଷ୍ୟ ପ୍ରୋସେସ୍"
       showMore: "ଅଧିକ ଦେଖନ୍ତୁ..."
       clearFilters: "ଫିଲ୍ଟର୍ ସଫା କରନ୍ତୁ"
+    externalCatalogError: ~
   settings:
     language:
       title: "ଭାଷା"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "ଅପଡେଟ୍ ଯାଞ୍ଚ କରନ୍ତୁ"
       description: "Windhawk ଏବଂ ଇନଷ୍ଟଲ୍ ହୋଇଥିବା ମଡ୍‌ଗୁଡ଼ିକର ନୂତନ ସଂସ୍କରଣ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଯାଞ୍ଚ କରନ୍ତୁ।"
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "ଡେଭଲପର୍ ମୋଡ୍"
       description: "ଡେଭଲପର୍‌ମାନଙ୍କ ପାଇଁ ଆକ୍ସନ ଦେଖାନ୍ତୁ, ଯେପରିକି ମଡ୍ ତିଆରି ଏବଂ ପରିବର୍ତ୍ତନ କରିବା।"
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "ଆଡଭାନ୍ସଡ୍ ସେଟିଙ୍ଗସ"
     hideTrayIcon:
       title: "ଟ୍ରେ ଆଇକନ୍ ଲୁଚାନ୍ତୁ"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} ଇନଷ୍ଟଲ୍ କରନ୍ତୁ"
     warningTitle: "ସାବଧାନତାର ସହିତ ଆଗକୁ ବଢ଼ନ୍ତୁ"
     warningDescription: "ଖରାପ ମଡ୍ ଆପଣଙ୍କ କମ୍ପ୍ୟୁଟରକୁ କ୍ଷତି ପହଞ୍ଚାଇପାରେ କିମ୍ବା ଆପଣଙ୍କ ଗୋପନୀୟତା ନଷ୍ଟ କରିପାରେ। କେବଳ ବିଶ୍ୱସ୍ତ ଲେଖକଙ୍କ ମଡ୍ ଇନଷ୍ଟଲ୍ କରନ୍ତୁ।"
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "ଯାଞ୍ଚ ହୋଇଛି"
     verifiedTooltip: "ଆମେ ଯାଞ୍ଚ କରିଛୁ ଯେ ଏହି ପ୍ରୋଫାଇଲ୍ ମଡ୍ ଲେଖକଙ୍କର ଅଟେ, କିନ୍ତୁ ମନେରଖନ୍ତୁ ଯେ 'ଯାଞ୍ଚ' ଏବଂ 'ବିଶ୍ୱସ୍ତ' ସମାନ ନୁହେଁ। ଇନଷ୍ଟଲ୍ କରିବା ପୂର୍ବରୁ ସୋର୍ସ କୋଡ୍ ଯାଞ୍ଚ କରନ୍ତୁ।"
     acceptButton: "ବିପଦ ଗ୍ରହଣ କରନ୍ତୁ ଏବଂ ଇନଷ୍ଟଲ୍ କରନ୍ତୁ"
+    externalAcceptButton: ~
   createNewModButton:
     title: "ଏକ ନୂତନ ମଡ୍ ତିଆରି କରନ୍ତୁ"
   devTools:

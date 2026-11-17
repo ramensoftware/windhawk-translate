@@ -83,6 +83,7 @@ app:
       loadingFailed: "Innlastingen mislyktes, sjekk internettilkoblingen din"
       loadingFailedTitle: "Innlastingen mislyktes"
       loadingFailedSubtitle: "Sjekk internettilkoblingen din og prøv på nytt"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Prøv igjen"
       updating: "Oppdaterer..."
       installing: "Installerer..."
@@ -136,6 +137,7 @@ app:
     donate: "Donér"
     notCompiled: "Modden må kompileres"
     editedLocally: "Modden ble redigert lokalt"
+    external: ~
     noDescription: "(ingen beskrivelse)"
     users_one: "{{formattedCount}} bruker"
     users_other: "{{formattedCount}} brukere"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Vis én skjult linje"
       expandLines_other: "Vis {{count}} skjulte linjer"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "Installasjonsstatus"
       installed: "Installert"
       notInstalled: "Ikke installert"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Mod-forfatter"
       process: "Målprosess"
       showMore: "Vis mer..."
       clearFilters: "Fjern filtre"
+    externalCatalogError: ~
   settings:
     language:
       title: "Språk"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Se etter oppdateringer"
       description: "Se automatisk etter og varsle om nye versjoner av Windhawk og installerte mods."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Utviklermodus"
       description: "Vis handlinger for utviklere, som å opprette og endre mods."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Avanserte innstillinger"
     hideTrayIcon:
       title: "Skjul ikonet i systemstatusfeltet"
@@ -553,6 +586,7 @@ app:
       applyToAll: "Bruk på alle"
       noMods: "Ingen mods å inkludere."
       local: "Lokal"
+      external: ~
       alreadyInstalled: "Allerede installert – import erstatter moddens nåværende innstillinger og konfigurasjon: avhukede deler får verdiene fra arkivet, mens deler som ikke er huket av, tilbakestilles til moddens standardverdier."
       export:
         title: "Eksporter brukerdata"
@@ -637,9 +671,13 @@ app:
     title: "Installer {{mod}}"
     warningTitle: "Vær forsiktig"
     warningDescription: "Ondsinnede mods kan skade datamaskinen din eller krenke personvernet ditt. Installer kun mods fra forfattere du stoler på."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "verifisert"
     verifiedTooltip: "Vi har verifisert at denne profilen tilhører mod-forfatteren, men merk at <0>verifisert</0> ikke er det samme som <0>pålitelig</0>. Sørg for at du stoler på mod-forfatteren, eller gå nøye gjennom kildekoden før du installerer."
     acceptButton: "Godta risiko og installer"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Opprett en ny mod"
   devTools:

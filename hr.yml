@@ -83,6 +83,7 @@ app:
       loadingFailed: "Učitavanje nije uspjelo, provjerite internetsku vezu"
       loadingFailedTitle: "Učitavanje nije uspjelo"
       loadingFailedSubtitle: "Provjerite internetsku vezu i pokušajte ponovno"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Pokušaj ponovno"
       updating: "Ažuriram..."
       installing: "Instaliram..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "Dodatak je potrebno kompilirati"
     editedLocally: "Dodatak je lokalno izmijenjen"
+    external: ~
     noDescription: "(nema opisa)"
     users_one: "{{formattedCount}} korisnik"
     users_few: "{{formattedCount}} korisnika"
@@ -368,6 +370,17 @@ app:
       expandLines_one: "Proširi {{count}} skrivenu liniju"
       expandLines_few: "Proširi {{count}} skrivene linije"
       expandLines_other: "Proširi {{count}} skrivenih linija"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -485,10 +498,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "Jezik"
@@ -505,9 +523,24 @@ app:
     updates:
       title: "Provjera ažuriranja"
       description: "Povremeno provjerava dostupnost novih verzija Windhawka i instaliranih dodataka."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Način za razvojne programere"
       description: "Prikazuje radnje za razvojne programere, poput izrade i uređivanja dodataka."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Napredne postavke"
     hideTrayIcon:
       title: "Sakrij ikonu u sistemskoj traci"
@@ -568,6 +601,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -653,9 +687,13 @@ app:
     title: "Instaliraj {{mod}}"
     warningTitle: "Postupajte oprezno"
     warningDescription: "Zlonamjerni dodaci mogu prouzročiti štetu vašem računalu ili narušiti vašu privatnost. Instalirajte dodatke samo od autora kojima vjerujete."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "provjereno"
     verifiedTooltip: "Potvrdili smo da ovaj profil pripada autoru dodatka, no <0>provjereno</0> nije isto što i <0>pouzdano</0>. Pobrinite se da vjerujete autoru ili pažljivo pregledajte izvorni kôd prije instalacije."
     acceptButton: "Prihvati rizik i instaliraj"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Kreiraj novi dodatak"
   devTools:

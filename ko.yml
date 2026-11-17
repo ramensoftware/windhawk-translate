@@ -83,6 +83,7 @@ app:
       loadingFailed: "불러오는 데 실패했습니다, 인터넷 연결을 확인해주세요"
       loadingFailedTitle: "불러오기 실패"
       loadingFailedSubtitle: "인터넷 연결을 확인하고 다시 시도해주세요"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "다시 시도"
       updating: "업데이트 중..."
       installing: "설치 중..."
@@ -136,6 +137,7 @@ app:
     donate: "기부"
     notCompiled: "모드 컴파일이 필요합니다"
     editedLocally: "모드가 로컬에서 편집되었습니다"
+    external: ~
     noDescription: "(설명 없음)"
     users_other: "사용자 {{formattedCount}}명"
     reviews_other: ~
@@ -358,6 +360,17 @@ app:
       oldSource: ~
       newSource: ~
       expandLines_other: "숨겨진 줄 {{count}}개 펼치기"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_other: "모드 업데이트가 {{count}}개 있습니다"
@@ -455,10 +468,15 @@ app:
       installationStatus: "설치 상태"
       installed: "설치됨"
       notInstalled: "설치 안 됨"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "모드 작성자"
       process: "대상 프로세스"
       showMore: "더 보기..."
       clearFilters: "필터 지우기"
+    externalCatalogError: ~
   settings:
     language:
       title: "언어"
@@ -475,9 +493,24 @@ app:
     updates:
       title: "업데이트 확인"
       description: "Windhawk와 설치된 모드의 새로운 버전을 자동으로 확인하고 알립니다."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "개발자 모드"
       description: "모드 만들기와 수정하기와 같은 개발자들을 위한 기능을 표시합니다."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "고급 설정"
     hideTrayIcon:
       title: "트레이 아이콘 숨기기"
@@ -538,6 +571,7 @@ app:
       applyToAll: "모두에게 적용"
       noMods: "포함된 모드가 없습니다"
       local: "로컬"
+      external: ~
       alreadyInstalled: "이미 설치된 경우, 가져오면 현재 설정과 구성이 덮어씌워집니다. 선택된 부분은 압축 파일의 값을 사용하고 선택되지 않은 부분은 모드의 기본값으로 재설정됩니다."
       export:
         title: "사용자 데이터 내보내기"
@@ -621,9 +655,13 @@ app:
     title: "{{mod}} 설치"
     warningTitle: "신중히 진행하세요"
     warningDescription: "악성 모드는 컴퓨터를 손상시키거나 개인 정보를 침해할 수 있습니다. 신뢰할 수 있는 작성자의 모드만 설치하세요."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "인증됨"
     verifiedTooltip: "이 프로필이 모드 작성자의 것임을 확인했지만 <0>인증됨</0>은 <0>신뢰할 수 있음</0>과 다릅니다. 모드 작성자를 신뢰하는지 확인하거나 설치하기 전에 소스 코드를 신중히 검사하세요."
     acceptButton: "위험을 감수하고 설치"
+    externalAcceptButton: ~
   createNewModButton:
     title: "새 모드 만들기"
   devTools:

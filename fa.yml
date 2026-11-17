@@ -83,6 +83,7 @@ app:
       loadingFailed: "بارگذاری ناموفق بود، لطفاً اتصال اینترنت خود را بررسی کنید"
       loadingFailedTitle: "بارگذاری ناموفق"
       loadingFailedSubtitle: "لطفاً اتصال اینترنت خود را بررسی کرده و دوباره تلاش کنید"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "تلاش مجدد"
       updating: "در حال بروزرسانی..."
       installing: "در حال نصب..."
@@ -136,6 +137,7 @@ app:
     donate: "حمایت مالی"
     notCompiled: "ماد نیاز به کامپایل دارد"
     editedLocally: "ماد به‌صورت محلی ویرایش شده است"
+    external: ~
     noDescription: "(بدون توضیحات)"
     users_one: "{{formattedCount}} کاربر"
     users_other: "{{formattedCount}} کاربر"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "باز کردن یک خط پنهان"
       expandLines_other: "باز کردن {{count}} خط پنهان"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "وضعیت نصب"
       installed: "نصب شده"
       notInstalled: "نصب نشده"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "نویسنده ماد"
       process: "پردازش هدف"
       showMore: "نمایش بیشتر..."
       clearFilters: "پاک کردن فیلترها"
+    externalCatalogError: ~
   settings:
     language:
       title: "زبان"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "بررسی بروزرسانی‌ها"
       description: "بررسی خودکار و اطلاع‌رسانی درباره نسخه‌های جدید ویندهاک و مادهای نصب شده."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "حالت توسعه‌دهنده"
       description: "نمایش عملیات برای توسعه‌دهندگان، مانند ایجاد و تغییر مادها."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "تنظیمات پیشرفته"
     hideTrayIcon:
       title: "مخفی کردن آیکون سینی سیستم (Tray Icon)"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "نصب {{mod}}"
     warningTitle: "با احتیاط ادامه دهید"
     warningDescription: "مادهای مخرب می‌توانند به کامپیوتر شما آسیب برسانند یا حریم خصوصی شما را نقض کنند. مادها را فقط از نویسندگانی که به آن‌ها اعتماد دارید نصب کنید."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "تایید شده"
     verifiedTooltip: "ما تایید کردیم که این پروفایل متعلق به نویسنده ماد است، اما توجه داشته باشید که <0>تایید شده</0> به معنای <0>قابل اعتماد</0> نیست. مطمئن شوید که به نویسنده ماد اعتماد دارید، یا قبل از نصب، کد منبع را با دقت بررسی کنید."
     acceptButton: "پذیرش ریسک و نصب"
+    externalAcceptButton: ~
   createNewModButton:
     title: "ایجاد یک ماد جدید"
   devTools:

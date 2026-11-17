@@ -83,6 +83,7 @@ app:
       loadingFailed: "Gagal dimuat, silahkan periksa koneksi internet anda"
       loadingFailedTitle: "Gagal dimuat"
       loadingFailedSubtitle: "Silahkan periksa koneksi internet anda dan coba lagi"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Coba lagi"
       updating: "Memperbarui..."
       installing: "Memasang..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "Mod needs to be compiled"
     editedLocally: "Mod sudah disunting lokal"
+    external: ~
     noDescription: "(tidak ada deskripsi)"
     users_other: "{{formattedCount}} pengguna"
     reviews_other: ~
@@ -358,6 +360,17 @@ app:
       oldSource: ~
       newSource: ~
       expandLines_other: "Perlebar {{count}} baris tersembunyi"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_other: ~
@@ -455,10 +468,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "Bahasa"
@@ -475,9 +493,24 @@ app:
     updates:
       title: "Periksa pembaruan"
       description: "Periksa secara berkala versi baru Windhawk dan mod yang terinstal."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Mode pengembang"
       description: "Lihat tindakan untuk pengembang, termasuk pembuatan dan memodifikasi mod."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Pengaturan lanjutan"
     hideTrayIcon:
       title: "Sembunyikan ikon baki"
@@ -538,6 +571,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -621,9 +655,13 @@ app:
     title: "Pasang {{mod}}"
     warningTitle: "Lanjutkan dengan hati-hati"
     warningDescription: "Mod berbahaya dapat merusak komputer atau melanggar privasi Anda. Instal mod hanya dari pembuat yang Anda percaya."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "terverifikasi"
     verifiedTooltip: "Kami memverifikasi bahwa profil ini milik pembuat mod, perlu dicatat <0>verifikasi</0> tidak sama dengan <0>terpercaya</0>. Pastikan anda percaya pembuat mod, atau hati-hati menginspect kode sumber sebelum memasang."
     acceptButton: "Terima dengan Hati-hati dan Pasang"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Buat Mod Baru"
   devTools:

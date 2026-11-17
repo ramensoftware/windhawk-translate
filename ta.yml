@@ -83,6 +83,7 @@ app:
       loadingFailed: "ஏற்றல் தோல்வியடைந்தது, உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்"
       loadingFailedTitle: "ஏற்றல் தோல்வியடைந்தது"
       loadingFailedSubtitle: "தயவுசெய்து உங்கள் இணைய இணைப்பைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "மீண்டும் முயற்சிக்கவும்"
       updating: "புதுப்பிக்கிறது..."
       installing: "நிறுவுகிறது..."
@@ -136,6 +137,7 @@ app:
     donate: ~
     notCompiled: "மாற்றம் கணக்கிடப்பட வேண்டும்"
     editedLocally: "மாற்றம் உள்ளூர் முறையில் திருத்தப்பட்டது"
+    external: ~
     noDescription: "(விளக்கம் இல்லை)"
     users_one: "{{formattedCount}} பயனர்"
     users_other: "{{formattedCount}} பயனர்கள்"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "ஒரு மறைக்கப்பட்ட வரியை விரிவாக்கவும்"
       expandLines_other: "{{count}} மறைக்கப்பட்ட வரிகளை விரிவாக்கவும்"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: ~
       installed: ~
       notInstalled: ~
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: ~
       process: ~
       showMore: ~
       clearFilters: ~
+    externalCatalogError: ~
   settings:
     language:
       title: "மொழி"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "புதுப்பிப்புகளை சரிபார்க்கவும்"
       description: "விண்ட்ஹாக் மற்றும் நிறுவப்பட்ட மாற்றங்களின் புதிய பதிப்புகளைக் காண மையமாகத்தோறும் சரிபார்க்கவும்."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "டெவலப்பர் பயன்முறை"
       description: "மாற்றங்களை உருவாக்குவதற்கும் திருத்துவதற்குமான செயற்பாடுகளை காண்பிக்கவும்."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "மேம்பட்ட அமைப்புகள்"
     hideTrayIcon:
       title: "டிரே ஐகானை மறை"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "{{mod}} ஐ நிறுவுக"
     warningTitle: "கவனத்துடன் தொடரவும்"
     warningDescription: "தீங்கான மாற்றங்கள் உங்கள் கணினிக்கு சேதம் செய்யலாம் அல்லது உங்கள் தனிப்பட்ட தகவல்களை மீறலாம். நம்பிக்கையுடன் உள்ள எழுத்தாளர்களிடமிருந்து மட்டுமே மாற்றங்களை நிறுவுங்கள்."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "சரிபார்க்கப்பட்டது"
     verifiedTooltip: "இந்த சுயவிவரம் மாற்ற எழுத்தாளருக்கே சேர்ந்ததாக நாம் உறுதி செய்துள்ளோம். ஆனால் <0>சரிபார்க்கப்பட்டது</0> என்பது <0>நம்பத்தகுந்தது</0> என்பதுடன் சமமாக இல்லை. நீங்கள் எழுத்தாளரை நம்புகிறீர்களா என்பதை உறுதி செய்யவும், இல்லையெனில் மூலக் குறியீட்டை நன்றாக ஆய்வு செய்யவும்."
     acceptButton: "அபாயத்தை ஏற்று நிறுவவும்"
+    externalAcceptButton: ~
   createNewModButton:
     title: "புதிய மாற்றம் உருவாக்கவும்"
   devTools:

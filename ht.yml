@@ -83,6 +83,7 @@ app:
       loadingFailed: "Chaje echwe, tanpri tcheke koneksyon entènèt ou"
       loadingFailedTitle: "Chaje echwe"
       loadingFailedSubtitle: "Tanpri tcheke koneksyon entènèt ou ak eseye ankò"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "Eseye ankò"
       updating: "Mete ajou..."
       installing: "Enstale..."
@@ -136,6 +137,7 @@ app:
     donate: "Bay lajan"
     notCompiled: "Mod bezwen konpile"
     editedLocally: "Mod te modifye lokalman"
+    external: ~
     noDescription: "(pa genyen deskripsyon)"
     users_one: "{{formattedCount}} itilizatè"
     users_other: "{{formattedCount}} itilizatè yo"
@@ -363,6 +365,17 @@ app:
       newSource: ~
       expandLines_one: "Elaji yon liy ki kache"
       expandLines_other: "Elaji {{count}} liy ki kache"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_one: ~
@@ -470,10 +483,15 @@ app:
       installationStatus: "Estati enstalasyon"
       installed: "Enstale"
       notInstalled: "Pa enstale"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Otè mod"
       process: "Pwosesis sib"
       showMore: "Montre plis..."
       clearFilters: "Netwaye filtre yo"
+    externalCatalogError: ~
   settings:
     language:
       title: "Lang"
@@ -490,9 +508,24 @@ app:
     updates:
       title: "Tcheke pou mizajou"
       description: "Tcheke otomatikman epi notifye nouvo vèsyon Windhawk ak mod enstale yo."
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "Mòd devlopè"
       description: "Montre aksyon pou devlopè, tankou kreye ak modifye mod."
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "Paramèt avanse"
     hideTrayIcon:
       title: "Kache ikòn plato"
@@ -553,6 +586,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -637,9 +671,13 @@ app:
     title: "Enstale {{mod}}"
     warningTitle: "Kontinye ak prekosyon"
     warningDescription: "Mod malveyan ka domaj òdinatè ou oswa vyole entimite ou. Sèlman enstale mod sòti otè ki ou konfye."
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "verifye"
     verifiedTooltip: "Nou verifye ke pwofil sa a se pou otè mod la, men remake ke <0>verifye</0> pa menm bagay ak <0>fyab</0>. Asire w ou fè otè mod la konfyans, oubyen enspekte kòd sous la ak anpil atansyon anvan ou enstale li."
     acceptButton: "Aksepte Risk ak Enstale"
+    externalAcceptButton: ~
   createNewModButton:
     title: "Kreye yon Nouvo Mod"
   devTools:

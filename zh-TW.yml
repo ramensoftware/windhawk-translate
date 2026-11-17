@@ -83,6 +83,7 @@ app:
       loadingFailed: "載入失敗，請檢查您的網路連線"
       loadingFailedTitle: "載入失敗"
       loadingFailedSubtitle: "請檢查您的網路連線後再試一次"
+      sourceHashMismatchSubtitle: ~
       tryAgain: "重試"
       updating: "正在更新..."
       installing: "正在安裝..."
@@ -136,6 +137,7 @@ app:
     donate: "贊助"
     notCompiled: "模組需要編譯"
     editedLocally: "模組已在本地編輯"
+    external: ~
     noDescription: "（無描述）"
     users_other: "{{formattedCount}} 位使用者"
     reviews_other: ~
@@ -358,6 +360,17 @@ app:
       oldSource: ~
       newSource: ~
       expandLines_other: "展開 {{count}} 條隱藏的行"
+    external:
+      unlisted: ~
+      viewSubmission: ~
+      switchToCatalog: ~
+      switchTitle: ~
+      switchNote: ~
+      switchOk: ~
+      replaceCatalog: ~
+      replaceCatalogNote: ~
+      replaceExternal: ~
+      replaceExternalNote: ~
   modUpdates:
     bar:
       message_other: ~
@@ -455,10 +468,15 @@ app:
       installationStatus: "安裝狀態"
       installed: "已安裝"
       notInstalled: "未安裝"
+      source:
+        title: ~
+        catalog: ~
+        external: ~
       author: "Mods 作者"
       process: "目標處理程序"
       showMore: "顯示更多..."
       clearFilters: "清除篩選"
+    externalCatalogError: ~
   settings:
     language:
       title: "語言"
@@ -475,9 +493,24 @@ app:
     updates:
       title: "檢查更新"
       description: "定期檢查 Windhawk 及已安裝模組的新版本。"
+    runAtStartup:
+      title: ~
+      description: ~
+      replaceTitle: ~
+      replaceDescription: ~
+      replaceQuestion: ~
+      replaceOk: ~
     devMode:
       title: "開發者模式"
       description: "顯示開發者操作，例如新建和修改模組。"
+    showExternalMods:
+      title: ~
+      description: ~
+      warningTitle: ~
+      warningNotReviewed: ~
+      warningRisk: ~
+      warningResponsibility: ~
+      warningOk: ~
     advancedSettings: "進階設定"
     hideTrayIcon:
       title: "隱藏系統匣圖示"
@@ -538,6 +571,7 @@ app:
       applyToAll: ~
       noMods: ~
       local: ~
+      external: ~
       alreadyInstalled: ~
       export:
         title: ~
@@ -621,9 +655,13 @@ app:
     title: "安裝 {{mod}}"
     warningTitle: "小心操作"
     warningDescription: "惡意的模組可能會損壞您的電腦或侵犯您的隱私。僅安裝您信任的作者的模組。"
+    externalWarningTitle: ~
+    externalWarningDescription: ~
+    externalViewSubmission: ~
     verified: "已驗證"
     verifiedTooltip: "我們已驗證此帳戶屬於模組作者，但請注意 <0>已驗證</0> 不等於 <0>信任</0>。請確保您信任模組作者，或在安裝前仔細檢查原始碼。"
     acceptButton: "接受風險並安裝"
+    externalAcceptButton: ~
   createNewModButton:
     title: "建立新模組"
   devTools:
